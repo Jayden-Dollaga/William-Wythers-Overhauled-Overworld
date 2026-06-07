@@ -1,0 +1,43 @@
+{
+  "feature": "minecraft:patch_dead_bush",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 7,
+      "y_spread": 3
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_blocks",
+          "offset": [
+            0,
+            -1,
+            0
+          ],
+          "blocks": [
+            "minecraft:dirt_path",
+            "minecraft:tall_grass",
+            "minecraft:cactus"
+          ]
+        }
+      }
+    }
+  ]
+}
