@@ -1,12 +1,18 @@
 {
-  "type": "minecraft:random_patch",
-  "config": {
-    "tries": 48,
-    "xz_spread": 3,
-    "y_spread": 3,
-    "feature": {
   "feature": "wythers:vegetation/column/mix_floating_vegetation_plants",
   "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 48
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 3,
+      "y_spread": 3
+    },
     {
       "type": "minecraft:height_range",
       "height": {
@@ -28,7 +34,4 @@
       }
     }
   ]
-}
-
-  }
 }
