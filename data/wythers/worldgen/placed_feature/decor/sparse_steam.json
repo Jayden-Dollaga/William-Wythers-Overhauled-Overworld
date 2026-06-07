@@ -16,8 +16,7 @@
                 "Properties": {
                   "facing": "east",
                   "lit": "true",
-                  "signal_fire": "false",
-                  "waterlogged": "true"
+                  "signal_fire": "false"
                 }
               }
             }
