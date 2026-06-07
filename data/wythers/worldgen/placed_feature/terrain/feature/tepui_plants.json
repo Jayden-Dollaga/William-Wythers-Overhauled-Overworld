@@ -171,8 +171,7 @@
                               "Name": "minecraft:small_dripleaf",
                               "Properties": {
                                 "facing": "north",
-                                "half": "lower",
-                                "waterlogged": "false"
+                                "half": "lower"
                               }
                             }
                           },
@@ -182,8 +181,7 @@
                               "Name": "minecraft:small_dripleaf",
                               "Properties": {
                                 "facing": "south",
-                                "half": "lower",
-                                "waterlogged": "false"
+                                "half": "lower"
                               }
                             }
                           },
@@ -193,8 +191,7 @@
                               "Name": "minecraft:small_dripleaf",
                               "Properties": {
                                 "facing": "west",
-                                "half": "lower",
-                                "waterlogged": "false"
+                                "half": "lower"
                               }
                             }
                           },
@@ -204,8 +201,7 @@
                               "Name": "minecraft:small_dripleaf",
                               "Properties": {
                                 "facing": "east",
-                                "half": "lower",
-                                "waterlogged": "false"
+                                "half": "lower"
                               }
                             }
                           },
@@ -214,8 +210,7 @@
                             "data": {
                               "Name": "minecraft:sea_pickle",
                               "Properties": {
-                                "pickles": "1",
-                                "waterlogged": "false"
+                                "pickles": "1"
                               }
                             }
                           },
@@ -224,8 +219,7 @@
                             "data": {
                               "Name": "minecraft:sea_pickle",
                               "Properties": {
-                                "pickles": "2",
-                                "waterlogged": "false"
+                                "pickles": "2"
                               }
                             }
                           },
@@ -234,8 +228,7 @@
                             "data": {
                               "Name": "minecraft:sea_pickle",
                               "Properties": {
-                                "pickles": "3",
-                                "waterlogged": "false"
+                                "pickles": "3"
                               }
                             }
                           }
@@ -559,8 +552,7 @@
                           "Name": "minecraft:small_dripleaf",
                           "Properties": {
                             "facing": "north",
-                            "half": "lower",
-                            "waterlogged": "true"
+                            "half": "lower"
                           }
                         }
                       },
@@ -570,8 +562,7 @@
                           "Name": "minecraft:small_dripleaf",
                           "Properties": {
                             "facing": "south",
-                            "half": "lower",
-                            "waterlogged": "true"
+                            "half": "lower"
                           }
                         }
                       },
@@ -581,8 +572,7 @@
                           "Name": "minecraft:small_dripleaf",
                           "Properties": {
                             "facing": "west",
-                            "half": "lower",
-                            "waterlogged": "true"
+                            "half": "lower"
                           }
                         }
                       },
@@ -592,8 +582,7 @@
                           "Name": "minecraft:small_dripleaf",
                           "Properties": {
                             "facing": "east",
-                            "half": "lower",
-                            "waterlogged": "true"
+                            "half": "lower"
                           }
                         }
                       },
@@ -602,8 +591,7 @@
                         "data": {
                           "Name": "minecraft:sea_pickle",
                           "Properties": {
-                            "pickles": "1",
-                            "waterlogged": "true"
+                            "pickles": "1"
                           }
                         }
                       },
@@ -612,8 +600,7 @@
                         "data": {
                           "Name": "minecraft:sea_pickle",
                           "Properties": {
-                            "pickles": "2",
-                            "waterlogged": "true"
+                            "pickles": "2"
                           }
                         }
                       },
@@ -622,8 +609,7 @@
                         "data": {
                           "Name": "minecraft:sea_pickle",
                           "Properties": {
-                            "pickles": "3",
-                            "waterlogged": "true"
+                            "pickles": "3"
                           }
                         }
                       }
