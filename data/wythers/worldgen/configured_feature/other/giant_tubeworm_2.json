@@ -500,9 +500,7 @@
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "true"
-                                  }
+                                  "Properties": {}
                                 }
                               }
                             }
@@ -700,9 +698,7 @@
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "true"
-                                  }
+                                  "Properties": {}
                                 }
                               }
                             }
