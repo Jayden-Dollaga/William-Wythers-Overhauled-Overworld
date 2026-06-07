@@ -8,8 +8,7 @@
           "state": {
             "Name": "minecraft:light",
             "Properties": {
-              "level": "10",
-              "waterlogged": "true"
+              "level": "10"
             }
           }
         },
