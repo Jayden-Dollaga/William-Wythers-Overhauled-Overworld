@@ -21,8 +21,7 @@
                         "state": {
                           "Name": "minecraft:andesite_slab",
                           "Properties": {
-                            "type": "bottom",
-                            "waterlogged": "false"
+                            "type": "bottom"
                           }
                         }
                       }
