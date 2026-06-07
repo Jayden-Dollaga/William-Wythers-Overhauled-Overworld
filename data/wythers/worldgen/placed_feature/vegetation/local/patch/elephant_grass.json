@@ -35,8 +35,7 @@
                                   "Properties": {
                                     "age": "0",
                                     "hanging": "false",
-                                    "stage": "0",
-                                    "waterlogged": "false"
+                                    "stage": "0"
                                   }
                                 }
                               },
@@ -47,8 +46,7 @@
                                   "Properties": {
                                     "age": "1",
                                     "hanging": "false",
-                                    "stage": "0",
-                                    "waterlogged": "false"
+                                    "stage": "0"
                                   }
                                 }
                               },
@@ -59,8 +57,7 @@
                                   "Properties": {
                                     "age": "2",
                                     "hanging": "false",
-                                    "stage": "0",
-                                    "waterlogged": "false"
+                                    "stage": "0"
                                   }
                                 }
                               },
@@ -71,8 +68,7 @@
                                   "Properties": {
                                     "age": "3",
                                     "hanging": "false",
-                                    "stage": "0",
-                                    "waterlogged": "false"
+                                    "stage": "0"
                                   }
                                 }
                               }
@@ -85,10 +81,9 @@
                             "type": "minecraft:simple_state_provider",
                             "state": {
                               "Name": "minecraft:light",
-                          "Properties": {
-                            "level": "0",
-                            "waterlogged": "false"
-                          }
+                              "Properties": {
+                                "level": "0"
+                              }
                             }
                           }
                         }
@@ -162,8 +157,7 @@
                               "Properties": {
                                 "age": "0",
                                 "hanging": "false",
-                                "stage": "0",
-                                "waterlogged": "true"
+                                "stage": "0"
                               }
                             }
                           },
@@ -174,8 +168,7 @@
                               "Properties": {
                                 "age": "1",
                                 "hanging": "false",
-                                "stage": "0",
-                                "waterlogged": "true"
+                                "stage": "0"
                               }
                             }
                           },
@@ -186,8 +179,7 @@
                               "Properties": {
                                 "age": "2",
                                 "hanging": "false",
-                                "stage": "0",
-                                "waterlogged": "true"
+                                "stage": "0"
                               }
                             }
                           },
@@ -198,8 +190,7 @@
                               "Properties": {
                                 "age": "3",
                                 "hanging": "false",
-                                "stage": "0",
-                                "waterlogged": "true"
+                                "stage": "0"
                               }
                             }
                           }
@@ -213,8 +204,7 @@
                         "state": {
                           "Name": "minecraft:light",
                           "Properties": {
-                            "level": "0",
-                            "waterlogged": "false"
+                            "level": "0"
                           }
                         }
                       }
