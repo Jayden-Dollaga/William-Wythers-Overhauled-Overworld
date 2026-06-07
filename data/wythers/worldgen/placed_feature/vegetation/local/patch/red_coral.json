@@ -16,18 +16,14 @@
                   "weight": 1,
                   "data": {
                     "Name": "minecraft:fire_coral",
-                    "Properties": {
-                      "waterlogged": "true"
-                    }
+                    "Properties": {}
                   }
                 },
                 {
                   "weight": 1,
                   "data": {
                     "Name": "minecraft:fire_coral_fan",
-                    "Properties": {
-                      "waterlogged": "true"
-                    }
+                    "Properties": {}
                   }
                 }
               ]
