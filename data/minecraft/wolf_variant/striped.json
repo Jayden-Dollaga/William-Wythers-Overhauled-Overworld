@@ -9,11 +9,12 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-    "minecraft:desert",
-    "minecraft:savanna"
-  ]
+          "minecraft:desert",
+          "minecraft:savanna"
+        ]
       },
       "priority": 1
     }
-  ]
+  ],
+  "baby_assets": {}
 }
