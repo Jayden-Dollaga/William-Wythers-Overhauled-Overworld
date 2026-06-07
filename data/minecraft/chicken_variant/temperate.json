@@ -8,13 +8,14 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-    "minecraft:swamp",
-    "minecraft:birch_forest",
-    "minecraft:old_growth_birch_forest",
-    "minecraft:lukewarm_ocean"
-  ]
+          "minecraft:swamp",
+          "minecraft:birch_forest",
+          "minecraft:old_growth_birch_forest",
+          "minecraft:lukewarm_ocean"
+        ]
       },
       "priority": 1
     }
-  ]
+  ],
+  "baby_asset_id": "minecraft:baby_entity/chicken/temperate_chicken"
 }
