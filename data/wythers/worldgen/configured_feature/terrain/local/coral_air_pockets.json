@@ -11,7 +11,6 @@
             "north": "true",
             "south": "true",
             "up": "true",
-            "waterlogged": "false",
             "west": "true"
           }
         }
