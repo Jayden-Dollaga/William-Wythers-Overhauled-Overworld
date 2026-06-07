@@ -9,11 +9,12 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-    "minecraft:dark_forest",
-    "minecraft:swamp"
-  ]
+          "minecraft:dark_forest",
+          "minecraft:swamp"
+        ]
       },
       "priority": 1
     }
-  ]
+  ],
+  "baby_assets": {}
 }
