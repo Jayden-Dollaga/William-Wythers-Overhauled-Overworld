@@ -7,8 +7,7 @@
           "state": {
             "Name": "light",
             "Properties": {
-              "level": "0",
-              "waterlogged": "true"
+              "level": "0"
             }
           }
         },
