@@ -1,6 +1,6 @@
 {
   "feature": {
-    "type": "minecraft:flower",
+    "type": "minecraft:random_patch",
     "config": {
       "tries": 32,
       "xz_spread": 6,
