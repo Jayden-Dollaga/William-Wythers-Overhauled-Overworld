@@ -3,8 +3,16 @@
   "placement": [
     {
       "type": "minecraft:random_offset",
-      "xz_spread": 7,
-      "y_spread": 0
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 7,
+        "min": -7,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      }
     },
     {
       "type": "minecraft:heightmap",
@@ -12,18 +20,42 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": 16
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 16,
+        "min": -16,
+        "plateau": 0
+      }
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": 16
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 16,
+        "min": -16,
+        "plateau": 0
+      }
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": 16
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 16,
+        "min": -16,
+        "plateau": 0
+      }
     },
     {
       "type": "minecraft:biome"
