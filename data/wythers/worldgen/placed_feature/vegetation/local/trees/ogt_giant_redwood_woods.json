@@ -100,7 +100,10 @@
         "max_inclusive": 16,
         "type": "minecraft:uniform"
       },
-      "y_spread": 0,
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
       "type": "minecraft:random_offset"
     },
     {
