@@ -39,9 +39,6 @@
         {
           "type": "minecraft:attached_to_leaves",
           "probability": 1,
-          "exclusion_radius_xz": 0,
-          "exclusion_radius_y": 0,
-          "required_empty_blocks": 1,
           "block_provider": {
             "type": "minecraft:simple_state_provider",
             "state": {
@@ -116,8 +113,7 @@
           0,
           -1,
           0
-        ],
-        "blocks": "minecraft:mycelium"
+        ]
       }
     }
   ]
