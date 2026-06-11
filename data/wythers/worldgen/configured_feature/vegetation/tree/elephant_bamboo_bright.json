@@ -251,6 +251,7 @@
           ]
         }
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
