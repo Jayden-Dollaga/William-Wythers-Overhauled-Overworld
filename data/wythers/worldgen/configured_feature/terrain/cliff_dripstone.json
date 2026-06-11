@@ -13,13 +13,7 @@
     "radius": 8,
     "half_height": 4,
     "target": {
-      "type": "minecraft:matching_blocks",
-      "blocks": [
-        "stone",
-        "granite",
-        "andesite",
-        "diorite"
-      ]
+      "type": "minecraft:matching_blocks"
     }
   }
 }
