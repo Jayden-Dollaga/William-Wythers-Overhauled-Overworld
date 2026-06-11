@@ -19,10 +19,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:water"
                   ]
                 }
               ]
@@ -34,7 +30,7 @@
               }
             }
           },
-		  {
+          {
             "if_true": {
               "type": "minecraft:any_of",
               "predicates": [
@@ -44,9 +40,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:short_grass"
                   ]
                 }
               ]
@@ -75,10 +68,6 @@
               0,
               2,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:water"
             ]
           },
           {
@@ -87,12 +76,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:short_grass",
-              "minecraft:air",
-              "minecraft:water",
-              "minecraft:sand"
             ]
           },
           {
