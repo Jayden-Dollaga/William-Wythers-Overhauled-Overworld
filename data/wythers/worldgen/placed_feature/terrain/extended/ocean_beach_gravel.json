@@ -82,7 +82,8 @@
               }
             }
           }
-        ]
+        ],
+        "type": "minecraft:rule_based_state_provider"
       },
       "target": {
         "type": "minecraft:all_of",
