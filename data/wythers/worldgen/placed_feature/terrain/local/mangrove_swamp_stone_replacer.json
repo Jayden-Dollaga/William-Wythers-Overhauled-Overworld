@@ -111,11 +111,7 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:birch_wood",
-                "minecraft:dark_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           {
@@ -126,9 +122,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:moss_block"
               ]
             }
           }
@@ -159,9 +152,6 @@
               0,
               -2,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           },
           {
@@ -170,9 +160,6 @@
               0,
               -3,
               0
-            ],
-            "blocks": [
-              "minecraft:packed_mud"
             ]
           }
         ]
