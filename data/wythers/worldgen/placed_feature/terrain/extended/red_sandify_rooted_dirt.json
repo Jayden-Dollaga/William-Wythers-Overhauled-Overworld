@@ -38,10 +38,7 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks",
-          "blocks": [
-            "minecraft:sculk"
-          ]
+          "type": "minecraft:matching_blocks"
         }
       }
     },
