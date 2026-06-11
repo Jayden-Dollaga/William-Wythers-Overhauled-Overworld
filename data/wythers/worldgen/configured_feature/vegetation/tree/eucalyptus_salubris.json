@@ -46,7 +46,8 @@
                                       ]
                                     }
                                   }
-                                ]
+                                ],
+                                "type": "minecraft:rule_based_state_provider"
                               },
                               "radius": 8,
                               "half_height": 3,
@@ -89,7 +90,8 @@
                                     "Name": "acacia_wood"
                                   }
                                 },
-                                "rules": []
+                                "rules": [],
+                                "type": "minecraft:rule_based_state_provider"
                               },
                               "radius": 8,
                               "half_height": 2,
@@ -111,7 +113,8 @@
                                     "Name": "acacia_wood"
                                   }
                                 },
-                                "rules": []
+                                "rules": [],
+                                "type": "minecraft:rule_based_state_provider"
                               },
                               "radius": 8,
                               "half_height": 1,
@@ -504,7 +507,8 @@
                           "radius": 2,
                           "tries": 150
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -884,7 +888,8 @@
                           "radius": 2,
                           "tries": 150
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -1263,7 +1268,8 @@
                       "radius": 2,
                       "tries": 150
                     }
-                  ]
+                  ],
+                  "type": "minecraft:tree"
                 }
               },
               "placement": []
