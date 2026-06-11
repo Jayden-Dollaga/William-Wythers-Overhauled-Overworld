@@ -63,8 +63,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:jungle_wood"
+                      "type": "minecraft:matching_blocks"
                     }
                   },
                   {
@@ -74,8 +73,7 @@
                     "target_condition": {
                       "type": "minecraft:not",
                       "predicate": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": "minecraft:jungle_wood"
+                        "type": "minecraft:matching_blocks"
                       }
                     }
                   },
@@ -92,8 +90,7 @@
                               1,
                               0,
                               0
-                            ],
-                            "blocks": "minecraft:jungle_wood"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -101,8 +98,7 @@
                               0,
                               0,
                               1
-                            ],
-                            "blocks": "minecraft:jungle_wood"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -110,8 +106,7 @@
                               -1,
                               0,
                               0
-                            ],
-                            "blocks": "minecraft:jungle_wood"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -119,8 +114,7 @@
                               0,
                               0,
                               -1
-                            ],
-                            "blocks": "minecraft:jungle_wood"
+                            ]
                           }
                         ]
                       }
