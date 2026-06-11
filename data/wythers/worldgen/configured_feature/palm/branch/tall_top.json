@@ -53,8 +53,7 @@
           {
             "type": "minecraft:block_predicate_filter",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "#wythers:tree_branch_replaceable"
+              "type": "minecraft:matching_blocks"
             }
           }
         ]
