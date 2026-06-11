@@ -31,11 +31,7 @@
     },
     "foliage_provider": {
       "state": {
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        },
+        "Properties": {},
         "Name": "minecraft:mangrove_leaves"
       },
       "type": "minecraft:simple_state_provider"
@@ -53,9 +49,7 @@
       },
       "root_provider": {
         "state": {
-          "Properties": {
-            "waterlogged": "false"
-          },
+          "Properties": {},
           "Name": "minecraft:mangrove_roots"
         },
         "type": "minecraft:simple_state_provider"
