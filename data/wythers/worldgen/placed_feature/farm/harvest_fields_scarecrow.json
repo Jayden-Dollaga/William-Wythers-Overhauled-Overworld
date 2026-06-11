@@ -38,11 +38,6 @@
           0,
           -1,
           0
-        ],
-        "blocks": [
-          "minecraft:rooted_dirt",
-          "minecraft:dirt_path",
-          "minecraft:podzol"
         ]
       }
     },
