@@ -14,7 +14,8 @@
                     "Name": "minecraft:smooth_basalt"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "half_height": 4,
               "target": {
