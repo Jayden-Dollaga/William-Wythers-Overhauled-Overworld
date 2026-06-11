@@ -29,10 +29,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:packed_mud"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -50,13 +47,7 @@
       },
       "half_height": 4,
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "rooted_dirt",
-          "dirt",
-          "packed_mud",
-          "mud"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     }
   },
@@ -72,10 +63,7 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks",
-          "blocks": [
-            "minecraft:light_gray_terracotta"
-          ]
+          "type": "minecraft:matching_blocks"
         }
       }
     },
@@ -87,9 +75,6 @@
           0,
           1,
           0
-        ],
-        "blocks": [
-          "minecraft:dripstone_block"
         ]
       }
     },
