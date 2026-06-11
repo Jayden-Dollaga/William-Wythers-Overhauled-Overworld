@@ -17,9 +17,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:grass_block"
               ]
             },
             "then": {
@@ -46,31 +43,10 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:dead_bush",
-              "minecraft:bush",
-              "minecraft:short_grass",
-              "minecraft:short_dry_grass",
-              "minecraft:tall_dry_grass",
-              "minecraft:grass_block"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:red_sand",
-              "minecraft:brown_terracotta",
-              "minecraft:light_gray_terracotta",
-              "minecraft:white_terracotta",
-              "minecraft:orange_terracotta",
-              "minecraft:yellow_terracotta",
-              "minecraft:red_terracotta",
-              "minecraft:terracotta",
-              "minecraft:red_sandstone",
-              "minecraft:smooth_red_sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -83,9 +59,6 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "air"
                   ]
                 },
                 {
@@ -94,9 +67,6 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "air"
                   ]
                 },
                 {
@@ -105,9 +75,6 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": [
-                    "air"
                   ]
                 },
                 {
@@ -116,9 +83,6 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": [
-                    "air"
                   ]
                 }
               ]
@@ -138,10 +102,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:sculk"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
