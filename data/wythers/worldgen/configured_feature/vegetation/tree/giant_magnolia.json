@@ -387,7 +387,8 @@
                               "radius": 8,
                               "tries": 150
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
@@ -775,7 +776,8 @@
                               "radius": 8,
                               "tries": 150
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
