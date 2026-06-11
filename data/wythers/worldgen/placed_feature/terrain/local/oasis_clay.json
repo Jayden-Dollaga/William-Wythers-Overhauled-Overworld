@@ -22,8 +22,7 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   }
                 ]
               }
@@ -38,8 +37,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:coarse_dirt"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 3,
       "half_height": 2
