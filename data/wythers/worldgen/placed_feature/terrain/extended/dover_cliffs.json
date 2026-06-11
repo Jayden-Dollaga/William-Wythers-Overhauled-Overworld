@@ -79,9 +79,6 @@
                       0,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -93,10 +90,6 @@
                           0,
                           1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:air",
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -105,9 +98,6 @@
                           1,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -116,9 +106,6 @@
                           -1,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -127,9 +114,6 @@
                           0,
                           0,
                           1
-                        ],
-                        "blocks": [
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -138,9 +122,6 @@
                           0,
                           0,
                           -1
-                        ],
-                        "blocks": [
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -149,8 +130,7 @@
                           0,
                           -1,
                           0
-                        ],
-                        "blocks": "minecraft:calcite"
+                        ]
                       }
                     ]
                   }
@@ -165,9 +145,6 @@
                       0,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -179,11 +156,6 @@
                           0,
                           1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:dirt",
-                          "minecraft:grass_block",
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -192,11 +164,6 @@
                           1,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:dirt",
-                          "minecraft:grass_block",
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -205,11 +172,6 @@
                           -1,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:dirt",
-                          "minecraft:grass_block",
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -218,11 +180,6 @@
                           0,
                           0,
                           1
-                        ],
-                        "blocks": [
-                          "minecraft:dirt",
-                          "minecraft:grass_block",
-                          "minecraft:calcite"
                         ]
                       },
                       {
@@ -231,11 +188,6 @@
                           0,
                           0,
                           -1
-                        ],
-                        "blocks": [
-                          "minecraft:dirt",
-                          "minecraft:grass_block",
-                          "minecraft:calcite"
                         ]
                       }
                     ]
