@@ -15,10 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:coarse_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
@@ -55,9 +52,6 @@
               10,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -66,9 +60,6 @@
               -10,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -77,9 +68,6 @@
               0,
               0,
               10
-            ],
-            "blocks": [
-              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -88,9 +76,6 @@
               0,
               0,
               -10
-            ],
-            "blocks": [
-              "minecraft:smooth_sandstone"
             ]
           }
         ]
