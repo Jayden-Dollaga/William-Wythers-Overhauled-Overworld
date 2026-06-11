@@ -1,282 +1,291 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "minecraft:random_selector",
   "config": {
-    "tries": 96,
-    "xz_spread": 7,
-    "y_spread": 3,
-    "feature": {
-      "feature": {
-        "type": "minecraft:random_selector",
-        "config": {
-          "features": [
+    "features": [
+      {
+        "chance": 0.0625,
+        "feature": {
+          "feature": "wythers:vegetation/column/pumpkin_and_stem_north",
+          "placement": [
             {
-              "chance": 0.0625,
-              "feature": {
-                "feature": "wythers:vegetation/column/pumpkin_and_stem_north",
-                "placement": [
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
                   {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            -1
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            -1
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            1,
-                            -1
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "chance": 0.0625,
-              "feature": {
-                "feature": "wythers:vegetation/column/pumpkin_and_stem_south",
-                "placement": [
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
                   {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            1
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            1
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            1,
-                            1
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "chance": 0.0625,
-              "feature": {
-                "feature": "wythers:vegetation/column/pumpkin_and_stem_east",
-                "placement": [
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      -1
+                    ]
+                  },
                   {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            1,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            1,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            1,
-                            1,
-                            0
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "chance": 0.0625,
-              "feature": {
-                "feature": "wythers:vegetation/column/pumpkin_and_stem_west",
-                "placement": [
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  },
                   {
-                    "type": "minecraft:block_predicate_filter",
-                    "predicate": {
-                      "type": "minecraft:all_of",
-                      "predicates": [
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            -1,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            0,
-                            -1,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            -1,
-                            0,
-                            0
-                          ]
-                        },
-                        {
-                          "type": "minecraft:matching_blocks",
-                          "offset": [
-                            -1,
-                            1,
-                            0
-                          ]
-                        }
-                      ]
-                    }
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      -1
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      1,
+                      -1
+                    ]
                   }
                 ]
               }
             }
-          ],
-          "default": {
-            "feature": "wythers:vegetation/column/pumpkin_stem",
-            "placement": [
-              {
-                "type": "minecraft:block_predicate_filter",
-                "predicate": {
-                  "type": "minecraft:matching_block_tag",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "tag": "minecraft:dirt"
-                }
-              },
-              {
-                "type": "minecraft:block_predicate_filter",
-                "predicate": {
-                  "type": "minecraft:matching_blocks",
-                  "offset": [
-                    0,
-                    0,
-                    0
-                  ]
-                }
-              }
-            ]
-          }
+          ]
         }
       },
+      {
+        "chance": 0.0625,
+        "feature": {
+          "feature": "wythers:vegetation/column/pumpkin_and_stem_south",
+          "placement": [
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      1
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      1,
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chance": 0.0625,
+        "feature": {
+          "feature": "wythers:vegetation/column/pumpkin_and_stem_east",
+          "placement": [
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      1,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      1,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      1,
+                      1,
+                      0
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "chance": 0.0625,
+        "feature": {
+          "feature": "wythers:vegetation/column/pumpkin_and_stem_west",
+          "placement": [
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      -1,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      -1,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      -1,
+                      1,
+                      0
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "default": {
+      "feature": "wythers:vegetation/column/pumpkin_stem",
       "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "tag": "minecraft:dirt"
+          }
+        },
         {
           "type": "minecraft:block_predicate_filter",
           "predicate": {
             "type": "minecraft:matching_blocks",
             "offset": [
               0,
-              -1,
+              0,
               0
             ]
           }
         }
       ]
     }
-  }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 96
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 7,
+        "min": -7,
+        "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": 3,
+        "min": -3,
+        "plateau": 0
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    }
+  ]
 }
