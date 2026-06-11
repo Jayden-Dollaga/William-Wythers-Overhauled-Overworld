@@ -12,8 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:light_gray_terracotta"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -24,8 +23,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:yellow_terracotta"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -36,8 +34,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:white_terracotta"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -48,8 +45,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:red_terracotta"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -61,14 +57,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:light_gray_terracotta",
-          "minecraft:yellow_terracotta",
-          "minecraft:white_terracotta",
-          "minecraft:red_terracotta",
-          "minecraft:terracotta"
-        ]
+        "type": "minecraft:matching_blocks"
       },
       "radius": {
         "type": "minecraft:uniform",
