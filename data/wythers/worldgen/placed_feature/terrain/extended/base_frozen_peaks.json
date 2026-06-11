@@ -20,10 +20,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:snow"
                   ]
                 },
                 {
@@ -32,10 +28,6 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:snow"
                   ]
                 },
                 {
@@ -44,10 +36,6 @@
                     -1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:snow"
                   ]
                 },
                 {
@@ -56,10 +44,6 @@
                     0,
                     0,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:snow"
                   ]
                 },
                 {
@@ -68,10 +52,6 @@
                     0,
                     0,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:snow"
                   ]
                 }
               ]
@@ -86,11 +66,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:ice",
-          "minecraft:packed_ice"
-        ]
+        "type": "minecraft:matching_blocks"
       },
       "radius": {
         "type": "minecraft:uniform",
