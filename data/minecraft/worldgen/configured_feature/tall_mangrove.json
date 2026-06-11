@@ -22,8 +22,7 @@
                               "Properties": {
                                 "age": "0",
                                 "hanging": "true",
-                                "stage": "0",
-                                "waterlogged": "false"
+                                "stage": "0"
                               }
                             },
                             "type": "minecraft:simple_state_provider"
@@ -59,11 +58,7 @@
                     "foliage_provider": {
                       "state": {
                         "Name": "minecraft:mangrove_leaves",
-                        "Properties": {
-                          "distance": "7",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       },
                       "type": "minecraft:simple_state_provider"
                     },
@@ -106,9 +101,7 @@
                       "root_provider": {
                         "state": {
                           "Name": "minecraft:mangrove_roots",
-                          "Properties": {
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         },
                         "type": "minecraft:simple_state_provider"
                       },
