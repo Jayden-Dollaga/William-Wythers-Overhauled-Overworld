@@ -28,10 +28,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:smooth_red_sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -41,9 +38,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:moss_block"
               ]
             }
           }
