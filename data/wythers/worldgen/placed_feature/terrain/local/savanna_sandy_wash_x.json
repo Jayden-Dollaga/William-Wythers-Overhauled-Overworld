@@ -15,10 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "packed_mud"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -26,9 +23,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "air"
             ]
           },
           {
@@ -37,9 +31,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:packed_mud"
             ]
           }
         ]
@@ -61,10 +52,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:acacia_wood"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -72,9 +60,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           },
           {
@@ -85,9 +70,6 @@
                 0,
                 2,
                 0
-              ],
-              "blocks": [
-                "minecraft:sculk"
               ]
             }
           }
