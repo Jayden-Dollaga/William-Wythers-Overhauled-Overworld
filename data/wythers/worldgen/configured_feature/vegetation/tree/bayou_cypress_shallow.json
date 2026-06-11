@@ -22,11 +22,7 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:acacia_leaves",
-        "Properties": {
-          "persistent": "false",
-          "distance": "7",
-          "waterlogged": "false"
-        }
+        "Properties": {}
       }
     },
     "root_placer": {
