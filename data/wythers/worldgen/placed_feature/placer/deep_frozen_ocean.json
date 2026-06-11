@@ -12,8 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:moss_block"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -28,12 +27,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock",
-              "minecraft:packed_ice",
-              "minecraft:moss_block"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
