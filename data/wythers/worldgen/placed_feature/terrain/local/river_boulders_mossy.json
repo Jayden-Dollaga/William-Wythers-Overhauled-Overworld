@@ -16,16 +16,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:jungle_wood",
-                  "minecraft:bamboo_block",
-                  "minecraft:lime_terracotta",
-                  "minecraft:oak_wood",
-                  "minecraft:birch_log",
-                  "minecraft:spruce_log",
-                  "minecraft:dark_oak_log"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -62,12 +53,10 @@
               0,
               4,
               0
-            ],
-            "blocks": "minecraft:water"
+            ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:water"
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
