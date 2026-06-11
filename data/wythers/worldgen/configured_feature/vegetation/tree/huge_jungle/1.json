@@ -124,12 +124,10 @@
                                     "predicate": {
                                       "predicates": [
                                         {
-                                          "blocks": "minecraft:jungle_log",
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
                                           "predicate": {
-                                            "blocks": "minecraft:jungle_log",
                                             "offset": [
                                               0,
                                               10,
@@ -148,7 +146,6 @@
                                     "direction_of_search": "up",
                                     "max_steps": 10,
                                     "target_condition": {
-                                      "blocks": "#wythers:tree_branch_replaceable",
                                       "type": "minecraft:matching_blocks"
                                     },
                                     "type": "minecraft:environment_scan"
@@ -176,7 +173,6 @@
                                     "direction_of_search": "down",
                                     "max_steps": 2,
                                     "target_condition": {
-                                      "blocks": "minecraft:jungle_log",
                                       "offset": [
                                         0,
                                         -1,
@@ -224,10 +220,7 @@
                                         "directions": [
                                           "down"
                                         ],
-                                        "exclusion_radius_xz": 0,
-                                        "exclusion_radius_y": 0,
                                         "probability": 0.35,
-                                        "required_empty_blocks": 1,
                                         "type": "minecraft:attached_to_leaves"
                                       },
                                       {
@@ -241,10 +234,7 @@
                                         "directions": [
                                           "east"
                                         ],
-                                        "exclusion_radius_xz": 0,
-                                        "exclusion_radius_y": 0,
                                         "probability": 0.7,
-                                        "required_empty_blocks": 1,
                                         "type": "minecraft:attached_to_leaves"
                                       },
                                       {
@@ -258,10 +248,7 @@
                                         "directions": [
                                           "south"
                                         ],
-                                        "exclusion_radius_xz": 0,
-                                        "exclusion_radius_y": 0,
                                         "probability": 0.7,
-                                        "required_empty_blocks": 1,
                                         "type": "minecraft:attached_to_leaves"
                                       },
                                       {
@@ -275,10 +262,7 @@
                                         "directions": [
                                           "west"
                                         ],
-                                        "exclusion_radius_xz": 0,
-                                        "exclusion_radius_y": 0,
                                         "probability": 0.7,
-                                        "required_empty_blocks": 1,
                                         "type": "minecraft:attached_to_leaves"
                                       },
                                       {
@@ -292,10 +276,7 @@
                                         "directions": [
                                           "north"
                                         ],
-                                        "exclusion_radius_xz": 0,
-                                        "exclusion_radius_y": 0,
                                         "probability": 0.7,
-                                        "required_empty_blocks": 1,
                                         "type": "minecraft:attached_to_leaves"
                                       },
                                       {
@@ -344,7 +325,6 @@
                                   {
                                     "predicate": {
                                       "predicate": {
-                                        "blocks": "minecraft:jungle_log",
                                         "offset": [
                                           0,
                                           15,
@@ -419,7 +399,6 @@
                                 "placement": [
                                   {
                                     "predicate": {
-                                      "blocks": "minecraft:jungle_log",
                                       "offset": [
                                         0,
                                         15,
@@ -440,11 +419,9 @@
                                     "target_condition": {
                                       "predicates": [
                                         {
-                                          "blocks": "minecraft:jungle_log",
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "minecraft:jungle_leaves",
                                           "offset": [
                                             0,
                                             1,
@@ -453,7 +430,6 @@
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "minecraft:air",
                                           "offset": [
                                             0,
                                             2,
@@ -488,7 +464,6 @@
                         "placement": [
                           {
                             "predicate": {
-                              "blocks": "minecraft:jungle_log",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -552,7 +527,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:jungle_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -578,11 +552,9 @@
                     "target_condition": {
                       "predicates": [
                         {
-                          "blocks": "minecraft:air",
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "minecraft:jungle_log",
                           "offset": [
                             0,
                             -1,
@@ -592,7 +564,6 @@
                         },
                         {
                           "predicate": {
-                            "blocks": "minecraft:jungle_log",
                             "offset": [
                               1,
                               0,
@@ -618,7 +589,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:jungle_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -630,7 +600,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:jungle_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
