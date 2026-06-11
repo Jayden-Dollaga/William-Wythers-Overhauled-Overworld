@@ -20,10 +20,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:grass_block"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:any_of",
@@ -141,9 +138,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         ]
