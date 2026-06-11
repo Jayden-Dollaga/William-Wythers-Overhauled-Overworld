@@ -69,10 +69,7 @@
                                 "direction_of_search": "up",
                                 "max_steps": 20,
                                 "target_condition": {
-                                  "type": "minecraft:matching_blocks",
-                                  "blocks": [
-                                    "minecraft:cherry_log"
-                                  ]
+                                  "type": "minecraft:matching_blocks"
                                 }
                               }
                             ]
