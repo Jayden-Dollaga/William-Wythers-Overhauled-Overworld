@@ -30,8 +30,7 @@
                       0,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:grass_block"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -39,8 +38,7 @@
                       1,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:sand"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -48,8 +46,7 @@
                       5,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -57,8 +54,7 @@
                       6,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -66,8 +62,7 @@
                       7,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -75,8 +70,7 @@
                       8,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_block_tag",
@@ -326,8 +320,7 @@
                           "config": {
                             "direction": "east",
                             "allowed_placement": {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": "minecraft:air"
+                              "type": "minecraft:matching_blocks"
                             },
                             "prioritize_tip": false,
                             "layers": [
@@ -359,8 +352,7 @@
                                 -3,
                                 -1,
                                 0
-                              ],
-                              "blocks": "minecraft:jungle_wood"
+                              ]
                             }
                           },
                           {
@@ -391,8 +383,7 @@
                                       0,
                                       -1,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -400,8 +391,7 @@
                                       0,
                                       -2,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -409,8 +399,7 @@
                                       0,
                                       -3,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -418,8 +407,7 @@
                                       0,
                                       -4,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   }
                                 ]
                               }
@@ -433,8 +421,7 @@
                           "config": {
                             "direction": "east",
                             "allowed_placement": {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": "minecraft:air"
+                              "type": "minecraft:matching_blocks"
                             },
                             "prioritize_tip": false,
                             "layers": [
@@ -534,8 +521,7 @@
                                       0,
                                       -1,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -543,8 +529,7 @@
                                       0,
                                       -2,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -552,8 +537,7 @@
                                       0,
                                       -3,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -561,8 +545,7 @@
                                       0,
                                       -4,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   }
                                 ]
                               }
@@ -576,8 +559,7 @@
                           "config": {
                             "direction": "east",
                             "allowed_placement": {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": "minecraft:air"
+                              "type": "minecraft:matching_blocks"
                             },
                             "prioritize_tip": false,
                             "layers": [
@@ -605,8 +587,7 @@
                                 -4,
                                 -1,
                                 0
-                              ],
-                              "blocks": "minecraft:jungle_wood"
+                              ]
                             }
                           },
                           {
@@ -637,8 +618,7 @@
                                       0,
                                       -1,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -646,8 +626,7 @@
                                       0,
                                       -2,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -655,8 +634,7 @@
                                       0,
                                       -3,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -664,8 +642,7 @@
                                       0,
                                       -4,
                                       0
-                                    ],
-                                    "blocks": "minecraft:grass_block"
+                                    ]
                                   }
                                 ]
                               }
@@ -732,8 +709,7 @@
                                     -2,
                                     -1,
                                     0
-                                  ],
-                                  "blocks": "minecraft:jungle_wood"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -741,8 +717,7 @@
                                     -1,
                                     -1,
                                     0
-                                  ],
-                                  "blocks": "minecraft:jungle_wood"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -750,8 +725,7 @@
                                     0,
                                     -1,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -759,8 +733,7 @@
                                     0,
                                     -2,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -768,8 +741,7 @@
                                     0,
                                     -3,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -777,8 +749,7 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 }
                               ]
                             }
@@ -813,8 +784,7 @@
                             -1,
                             -1,
                             0
-                          ],
-                          "blocks": "minecraft:jungle_wood"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_block_tag",
