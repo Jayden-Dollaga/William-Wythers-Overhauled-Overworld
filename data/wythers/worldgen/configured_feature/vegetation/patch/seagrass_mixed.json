@@ -13,8 +13,7 @@
                   "config": {
                     "direction": "up",
                     "allowed_placement": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:water"
+                      "type": "minecraft:matching_blocks"
                     },
                     "prioritize_tip": true,
                     "layers": [
@@ -53,70 +52,63 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                      "type": "minecraft:not",
-                      "predicate": {
-                        "type": "minecraft:any_of",
-                        "predicates": [
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              2,
-                              0
-                            ],
-                            "blocks": "hanging_roots"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              1,
-                              1,
-                              0
-                            ],
-                            "blocks": "hanging_roots"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              -1,
-                              1,
-                              0
-                            ],
-                            "blocks": "hanging_roots"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              1,
-                              1
-                            ],
-                            "blocks": "hanging_roots"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              1,
-                              -1
-                            ],
-                            "blocks": "hanging_roots"
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  2,
+                                  0
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  1,
+                                  1,
+                                  0
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  -1,
+                                  1,
+                                  0
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  1
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  -1
+                                ]
+                              }
+                            ]
                           }
-                        ]
-                      }
-                    },
-                    {
+                        },
+                        {
                           "type": "minecraft:matching_blocks",
                           "offset": [
                             0,
                             1,
                             0
-                          ],
-                          "blocks": "minecraft:water"
+                          ]
                         },
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:water"
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:has_sturdy_face",
@@ -163,8 +155,7 @@
                               0,
                               1,
                               0
-                            ],
-                            "blocks": "hanging_roots"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -172,8 +163,7 @@
                               1,
                               0,
                               0
-                            ],
-                            "blocks": "hanging_roots"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -181,8 +171,7 @@
                               -1,
                               0,
                               0
-                            ],
-                            "blocks": "hanging_roots"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -190,8 +179,7 @@
                               0,
                               0,
                               1
-                            ],
-                            "blocks": "hanging_roots"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -199,15 +187,13 @@
                               0,
                               0,
                               -1
-                            ],
-                            "blocks": "hanging_roots"
+                            ]
                           }
                         ]
                       }
                     },
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:water"
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:has_sturdy_face",
