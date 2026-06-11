@@ -20,12 +20,10 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "stone"
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
