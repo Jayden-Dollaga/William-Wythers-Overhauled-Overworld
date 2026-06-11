@@ -76,7 +76,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "type": "minecraft:rule_based_state_provider"
             },
             "radius": 8,
             "half_height": 4,
