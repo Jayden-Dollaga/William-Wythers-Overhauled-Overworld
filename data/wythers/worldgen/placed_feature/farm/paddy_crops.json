@@ -7,11 +7,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:air",
-              "minecraft:grass_block"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
@@ -180,8 +176,7 @@
           0,
           0,
           0
-        ],
-        "blocks": "minecraft:grass_block"
+        ]
       }
     },
     {
@@ -195,9 +190,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:water"
             ]
           },
           {
@@ -206,9 +198,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:water"
             ]
           },
           {
@@ -217,9 +206,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:water"
             ]
           },
           {
@@ -228,9 +214,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:water"
             ]
           }
         ]
@@ -247,8 +230,7 @@
               1,
               -1,
               0
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -256,8 +238,7 @@
               -1,
               -1,
               0
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -265,8 +246,7 @@
               0,
               -1,
               1
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -274,8 +254,7 @@
               0,
               -1,
               -1
-            ],
-            "blocks": "minecraft:clay"
+            ]
           }
         ]
       }
@@ -295,10 +274,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:bamboo_block"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -348,8 +324,7 @@
           0,
           -1,
           0
-        ],
-        "blocks": "minecraft:grass_block"
+        ]
       }
     },
     {
