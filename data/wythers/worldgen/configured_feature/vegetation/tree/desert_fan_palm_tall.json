@@ -354,7 +354,8 @@
                           "radius": 1,
                           "tries": 75
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     },
                     "type": "minecraft:tree"
                   },
