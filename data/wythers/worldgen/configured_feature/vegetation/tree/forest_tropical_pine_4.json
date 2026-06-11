@@ -56,7 +56,8 @@
                           "axis": "y"
                         }
                       }
-                    }
+                    },
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -111,7 +112,8 @@
                           "axis": "y"
                         }
                       }
-                    }
+                    },
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -170,7 +172,8 @@
                           "axis": "y"
                         }
                       }
-                    }
+                    },
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
