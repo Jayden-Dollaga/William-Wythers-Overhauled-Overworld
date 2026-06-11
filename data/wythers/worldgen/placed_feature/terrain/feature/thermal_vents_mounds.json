@@ -90,10 +90,6 @@
           0,
           -1,
           0
-        ],
-        "blocks": [
-          "minecraft:soul_sand",
-          "minecraft:dripstone_block"
         ]
       }
     }
