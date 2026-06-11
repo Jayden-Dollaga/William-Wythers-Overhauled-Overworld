@@ -19,7 +19,8 @@
                             "Name": "minecraft:cave_air"
                           }
                         },
-                        "rules": []
+                        "rules": [],
+                        "type": "minecraft:rule_based_state_provider"
                       },
                       "radius": 8,
                       "half_height": 4,
@@ -152,7 +153,8 @@
                         "radius": 3,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -225,7 +227,8 @@
                         "radius": 4,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -270,7 +273,8 @@
                     "offset": 0,
                     "height": 16
                   },
-                  "decorators": []
+                  "decorators": [],
+                  "type": "minecraft:tree"
                 }
               },
               "placement": [
