@@ -6,13 +6,14 @@
       "condition": {
         "type": "minecraft:biome",
         "biomes": [
-    "minecraft:badlands",
-    "minecraft:eroded_badlands",
-    "minecraft:wooded_badlands",
-    "minecraft:desert"
-  ]
+          "minecraft:badlands",
+          "minecraft:eroded_badlands",
+          "minecraft:wooded_badlands",
+          "minecraft:desert"
+        ]
       },
       "priority": 1
     }
-  ]
+  ],
+  "baby_asset_id": "minecraft:entity/cow/warm_cow_baby"
 }
