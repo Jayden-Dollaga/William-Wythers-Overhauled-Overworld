@@ -29,11 +29,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:rooted_dirt",
-                  "minecraft:coarse_dirt"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -41,9 +37,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "rooted_dirt"
                 ]
               }
             ]
