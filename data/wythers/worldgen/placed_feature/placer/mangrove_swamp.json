@@ -12,10 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -26,10 +23,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:smooth_sandstone"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -40,10 +34,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:acacia_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -54,10 +45,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:mud"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -72,16 +60,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock",
-              "minecraft:deepslate",
-              "minecraft:smooth_sandstone",
-              "minecraft:acacia_wood",
-              "minecraft:oak_wood",
-              "minecraft:mud",
-              "minecraft:sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
