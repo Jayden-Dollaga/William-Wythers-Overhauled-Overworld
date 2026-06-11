@@ -32,12 +32,10 @@
                         0,
                         1,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:cave_air"
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -45,11 +43,6 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:deepslate",
-                        "minecraft:tuff",
-                        "minecraft:dripstone_block"
                       ]
                     }
                   ]
@@ -107,8 +100,7 @@
                         0,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -116,10 +108,6 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:deepslate",
-                        "minecraft:tuff"
                       ]
                     }
                   ]
@@ -241,8 +229,7 @@
                         0,
                         1,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -250,8 +237,7 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -259,8 +245,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -268,8 +253,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -277,8 +261,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -286,8 +269,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     }
                   ]
                 }
@@ -308,8 +290,7 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:cave_air"
+                          "type": "minecraft:matching_blocks"
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -337,8 +318,7 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:cave_air"
+                          "type": "minecraft:matching_blocks"
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -366,8 +346,7 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:cave_air"
+                          "type": "minecraft:matching_blocks"
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -408,8 +387,7 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": "minecraft:cave_air"
+                          "type": "minecraft:matching_blocks"
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -459,8 +437,7 @@
                         0,
                         2,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -468,8 +445,7 @@
                         0,
                         1,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -477,8 +453,7 @@
                         0,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -486,8 +461,7 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -495,8 +469,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -504,8 +477,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -513,8 +485,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -522,8 +493,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:cave_air"
+                      ]
                     }
                   ]
                 }
@@ -622,8 +592,7 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:cave_air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -631,8 +600,7 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": "minecraft:light"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -640,8 +608,7 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": "minecraft:mud"
+                  ]
                 }
               ]
             }
@@ -687,9 +654,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:moss_block"
             ]
           }
         ]
