@@ -16,7 +16,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -171,7 +172,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -213,7 +215,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -295,7 +298,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -377,7 +381,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -459,7 +464,8 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
