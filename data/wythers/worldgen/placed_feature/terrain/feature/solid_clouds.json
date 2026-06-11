@@ -2,46 +2,6 @@
   "feature": {
     "type": "minecraft:geode",
     "config": {
-      "blocks": {
-        "alternate_inner_layer_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:powder_snow"
-          }
-        },
-        "cannot_replace": "#wythers:not_air",
-        "filling_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:powder_snow"
-          }
-        },
-        "inner_layer_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:powder_snow"
-          }
-        },
-        "inner_placements": [
-          {
-            "Name": "minecraft:powder_snow",
-            "Properties": {}
-          }
-        ],
-        "invalid_blocks": "#wythers:not_air",
-        "middle_layer_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:powder_snow"
-          }
-        },
-        "outer_layer_provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:powder_snow"
-          }
-        }
-      },
       "crack": {
         "base_crack_size": 3,
         "crack_point_offset": 2,
