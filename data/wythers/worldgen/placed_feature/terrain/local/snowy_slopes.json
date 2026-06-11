@@ -36,11 +36,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air",
-                  "minecraft:snow"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -51,12 +47,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:snow_block",
-                  "minecraft:grass_block",
-                  "minecraft:mud",
-                  "minecraft:stone"
                 ]
               }
             },
@@ -71,12 +61,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -85,12 +69,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -99,12 +77,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -113,12 +85,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   }
                 ]
@@ -159,11 +125,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air",
-                  "minecraft:snow"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -174,12 +136,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:snow_block",
-                  "minecraft:mud",
-                  "minecraft:stone"
                 ]
               }
             },
@@ -196,12 +152,6 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -210,12 +160,6 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -224,12 +168,6 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -238,12 +176,6 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -252,9 +184,6 @@
                         1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -263,9 +192,6 @@
                         -1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -274,9 +200,6 @@
                         0,
                         -1,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -285,9 +208,6 @@
                         0,
                         -1,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     }
                   ]
@@ -305,12 +225,6 @@
                       2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -319,12 +233,6 @@
                       -2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -333,12 +241,6 @@
                       0,
                       0,
                       2
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -347,12 +249,6 @@
                       0,
                       0,
                       -2
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -361,12 +257,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -375,12 +265,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -389,12 +273,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -403,12 +281,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   }
                 ]
@@ -449,11 +321,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air",
-                  "minecraft:snow"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -464,12 +332,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:snow_block",
-                  "minecraft:mud",
-                  "minecraft:stone"
                 ]
               }
             },
@@ -486,12 +348,6 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -500,12 +356,6 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -514,12 +364,6 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -528,12 +372,6 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -542,9 +380,6 @@
                         1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -553,9 +388,6 @@
                         -1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -564,9 +396,6 @@
                         0,
                         -1,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -575,9 +404,6 @@
                         0,
                         -1,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:air"
                       ]
                     },
                     {
@@ -586,12 +412,6 @@
                         2,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -600,12 +420,6 @@
                         -2,
                         0,
                         0
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -614,12 +428,6 @@
                         0,
                         0,
                         2
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -628,12 +436,6 @@
                         0,
                         0,
                         -2
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -642,12 +444,6 @@
                         1,
                         0,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -656,12 +452,6 @@
                         1,
                         0,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -670,12 +460,6 @@
                         -1,
                         0,
                         1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     },
                     {
@@ -684,12 +468,6 @@
                         -1,
                         0,
                         -1
-                      ],
-                      "blocks": [
-                        "minecraft:grass_block",
-                        "minecraft:snow_block",
-                        "minecraft:mud",
-                        "minecraft:stone"
                       ]
                     }
                   ]
@@ -707,12 +485,6 @@
                       3,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -721,12 +493,6 @@
                       -3,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -735,12 +501,6 @@
                       0,
                       0,
                       3
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   },
                   {
@@ -749,12 +509,6 @@
                       0,
                       0,
                       -3
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:snow_block",
-                      "minecraft:mud",
-                      "minecraft:stone"
                     ]
                   }
                 ]
