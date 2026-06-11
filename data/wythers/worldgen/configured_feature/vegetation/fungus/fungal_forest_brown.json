@@ -5,9 +5,6 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.5,
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
-        "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:weighted_state_provider",
           "entries": [
