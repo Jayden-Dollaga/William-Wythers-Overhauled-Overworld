@@ -59,7 +59,8 @@
                                     "max_inclusive": 3
                                   }
                                 },
-                                "decorators": []
+                                "decorators": [],
+                                "type": "minecraft:tree"
                               },
                               "type": "minecraft:tree"
                             },
@@ -285,7 +286,8 @@
                               "radius": 8,
                               "tries": 300
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
