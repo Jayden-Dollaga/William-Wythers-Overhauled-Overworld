@@ -26,10 +26,7 @@
                                 "rules": [
                                   {
                                     "if_true": {
-                                      "type": "minecraft:matching_blocks",
-                                      "blocks": [
-                                        "minecraft:red_sand"
-                                      ]
+                                      "type": "minecraft:matching_blocks"
                                     },
                                     "then": {
                                       "type": "minecraft:weighted_state_provider",
@@ -57,19 +54,13 @@
                                 "type": "minecraft:any_of",
                                 "predicates": [
                                   {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": [
-                                      "minecraft:stripped_pale_oak_wood"
-                                    ]
+                                    "type": "minecraft:matching_blocks"
                                   },
                                   {
                                     "type": "minecraft:all_of",
                                     "predicates": [
                                       {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "red_sand"
-                                        ]
+                                        "type": "minecraft:matching_blocks"
                                       },
                                       {
                                         "type": "minecraft:matching_blocks",
@@ -77,13 +68,6 @@
                                           0,
                                           1,
                                           0
-                                        ],
-                                        "blocks": [
-                                          "air",
-                                          "minecraft:short_grass",
-                                          "minecraft:leaf_litter",
-                                          "minecraft:short_dry_grass",
-                                          "minecraft:tall_dry_grass"
                                         ]
                                       }
                                     ]
@@ -110,10 +94,7 @@
                               "radius": 8,
                               "half_height": 2,
                               "target": {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:stripped_acacia_wood"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               }
                             },
                             "type": "minecraft:disk"
@@ -135,10 +116,7 @@
                               "radius": 8,
                               "half_height": 1,
                               "target": {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:stripped_acacia_wood"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               }
                             },
                             "type": "minecraft:disk"
