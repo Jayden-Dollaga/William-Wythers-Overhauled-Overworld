@@ -53,7 +53,8 @@
                                         }
                                       },
                                       "type": "minecraft:simple_state_provider"
-                                    }
+                                    },
+                                    "type": "minecraft:tree"
                                   },
                                   "type": "minecraft:tree"
                                 },
@@ -220,7 +221,8 @@
                                         }
                                       },
                                       "type": "minecraft:simple_state_provider"
-                                    }
+                                    },
+                                    "type": "minecraft:tree"
                                   },
                                   "type": "minecraft:tree"
                                 },
@@ -425,7 +427,8 @@
                                                 }
                                               },
                                               "type": "minecraft:simple_state_provider"
-                                            }
+                                            },
+                                            "type": "minecraft:tree"
                                           },
                                           "type": "minecraft:tree"
                                         },
