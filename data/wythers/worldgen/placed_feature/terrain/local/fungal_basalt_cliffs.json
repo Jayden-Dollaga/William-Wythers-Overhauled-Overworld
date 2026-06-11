@@ -30,12 +30,7 @@
                   "type": "minecraft:all_of",
                   "predicates": [
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:mycelium",
-                        "minecraft:dirt",
-                        "minecraft:prismarine"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:any_of",
@@ -46,9 +41,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:basalt"
                           ]
                         }
                       ]
@@ -59,10 +51,7 @@
                   "type": "minecraft:all_of",
                   "predicates": [
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:dirt"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:any_of",
@@ -73,9 +62,6 @@
                             1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air"
                           ]
                         },
                         {
@@ -84,9 +70,6 @@
                             -1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air"
                           ]
                         },
                         {
@@ -95,9 +78,6 @@
                             0,
                             0,
                             1
-                          ],
-                          "blocks": [
-                            "minecraft:air"
                           ]
                         },
                         {
@@ -106,9 +86,6 @@
                             0,
                             0,
                             -1
-                          ],
-                          "blocks": [
-                            "minecraft:air"
                           ]
                         }
                       ]
@@ -119,11 +96,7 @@
                   "type": "minecraft:all_of",
                   "predicates": [
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:mycelium",
-                        "minecraft:prismarine"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:any_of",
@@ -137,9 +110,6 @@
                                 1,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             }
                           ]
@@ -153,9 +123,6 @@
                                 -1,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             }
                           ]
@@ -169,9 +136,6 @@
                                 0,
                                 -1,
                                 1
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             }
                           ]
@@ -185,9 +149,6 @@
                                 0,
                                 -1,
                                 -1
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             }
                           ]
@@ -201,9 +162,6 @@
                                 1,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -212,8 +170,7 @@
                                 1,
                                 0,
                                 0
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -226,9 +183,6 @@
                                 -1,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -237,8 +191,7 @@
                                 -1,
                                 0,
                                 0
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -251,9 +204,6 @@
                                 0,
                                 -1,
                                 1
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -262,8 +212,7 @@
                                 0,
                                 0,
                                 1
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -276,9 +225,6 @@
                                 0,
                                 -1,
                                 -1
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -287,8 +233,7 @@
                                 0,
                                 0,
                                 -1
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -301,9 +246,6 @@
                                 1,
                                 1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -312,8 +254,7 @@
                                 1,
                                 -1,
                                 0
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -326,9 +267,6 @@
                                 -1,
                                 1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -337,8 +275,7 @@
                                 -1,
                                 -1,
                                 0
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -351,9 +288,6 @@
                                 0,
                                 1,
                                 1
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -362,8 +296,7 @@
                                 0,
                                 -1,
                                 1
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         },
@@ -376,9 +309,6 @@
                                 0,
                                 1,
                                 -1
-                              ],
-                              "blocks": [
-                                "minecraft:basalt"
                               ]
                             },
                             {
@@ -387,8 +317,7 @@
                                 0,
                                 -1,
                                 -1
-                              ],
-                              "blocks": "minecraft:air"
+                              ]
                             }
                           ]
                         }
