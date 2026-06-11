@@ -18,11 +18,7 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:air",
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        }
+        "Properties": {}
       }
     },
     "root_placer": {
