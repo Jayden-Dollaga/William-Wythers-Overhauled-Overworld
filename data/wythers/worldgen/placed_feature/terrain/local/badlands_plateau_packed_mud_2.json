@@ -24,10 +24,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:dead_bush"
             ]
           },
           {
@@ -41,8 +37,7 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -50,8 +45,7 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -59,8 +53,7 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -68,8 +61,7 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 }
               ]
             }
@@ -97,10 +89,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:dripstone_block"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
