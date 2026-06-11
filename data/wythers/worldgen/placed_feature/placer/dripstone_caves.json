@@ -15,11 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock",
-              "minecraft:deepslate"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
