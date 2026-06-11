@@ -23,8 +23,7 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": "minecraft:moss_block"
+                    ]
                   },
                   "then": {
                     "type": "minecraft:simple_state_provider",
@@ -44,8 +43,7 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": "minecraft:moss_block"
+                    ]
                   },
                   "then": {
                     "type": "minecraft:simple_state_provider",
@@ -65,8 +63,7 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": "minecraft:moss_block"
+                    ]
                   },
                   "then": {
                     "type": "minecraft:simple_state_provider",
@@ -87,8 +84,7 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:air"
+                  "type": "minecraft:matching_blocks"
                 },
                 {
                   "type": "minecraft:any_of",
@@ -99,8 +95,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -108,8 +103,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -117,8 +111,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -126,8 +119,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:moss_block"
+                      ]
                     }
                   ]
                 },
@@ -140,8 +132,7 @@
                         1,
                         -1,
                         0
-                      ],
-                      "blocks": "minecraft:mangrove_roots"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -149,8 +140,7 @@
                         -1,
                         -1,
                         0
-                      ],
-                      "blocks": "minecraft:mangrove_roots"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -158,8 +148,7 @@
                         0,
                         -1,
                         1
-                      ],
-                      "blocks": "minecraft:mangrove_roots"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -167,8 +156,7 @@
                         0,
                         -1,
                         -1
-                      ],
-                      "blocks": "minecraft:mangrove_roots"
+                      ]
                     }
                   ]
                 }
