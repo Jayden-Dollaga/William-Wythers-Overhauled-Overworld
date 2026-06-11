@@ -9,7 +9,6 @@
                 "feature": {
                   "config": {
                     "allowed_placement": {
-                      "blocks": "#wythers:tree_branch_replaceable",
                       "type": "minecraft:matching_blocks"
                     },
                     "direction": "south",
@@ -56,7 +55,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "#wythers:tree_branch_replaceable",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -72,7 +70,6 @@
                         "placement": [
                           {
                             "predicate": {
-                              "blocks": "#wythers:tree_branch_replaceable",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -91,7 +88,6 @@
                                 "feature": {
                                   "config": {
                                     "allowed_placement": {
-                                      "blocks": "#wythers:tree_branch_replaceable",
                                       "type": "minecraft:matching_blocks"
                                     },
                                     "direction": "south",
@@ -116,7 +112,6 @@
                                 "placement": [
                                   {
                                     "predicate": {
-                                      "blocks": "#wythers:tree_branch_replaceable",
                                       "type": "minecraft:matching_blocks"
                                     },
                                     "type": "minecraft:block_predicate_filter"
@@ -128,7 +123,6 @@
                                 "placement": [
                                   {
                                     "predicate": {
-                                      "blocks": "minecraft:spruce_log",
                                       "type": "minecraft:matching_blocks"
                                     },
                                     "type": "minecraft:block_predicate_filter"
@@ -158,11 +152,9 @@
                                     "predicate": {
                                       "predicates": [
                                         {
-                                          "blocks": "#wythers:tree_branch_replaceable",
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "minecraft:spruce_log",
                                           "offset": [
                                             0,
                                             0,
@@ -171,7 +163,6 @@
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "minecraft:spruce_log",
                                           "offset": [
                                             0,
                                             0,
@@ -180,7 +171,6 @@
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "#wythers:tree_branch_replaceable",
                                           "offset": [
                                             0,
                                             0,
@@ -202,7 +192,6 @@
                         "placement": [
                           {
                             "predicate": {
-                              "blocks": "minecraft:spruce_log",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -236,13 +225,11 @@
                             "predicate": {
                               "predicates": [
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
                                   "predicates": [
                                     {
-                                      "blocks": "minecraft:spruce_log",
                                       "offset": [
                                         1,
                                         1,
@@ -251,7 +238,6 @@
                                       "type": "minecraft:matching_blocks"
                                     },
                                     {
-                                      "blocks": "minecraft:spruce_log",
                                       "offset": [
                                         0,
                                         1,
@@ -260,7 +246,6 @@
                                       "type": "minecraft:matching_blocks"
                                     },
                                     {
-                                      "blocks": "minecraft:spruce_log",
                                       "offset": [
                                         -1,
                                         1,
@@ -272,7 +257,6 @@
                                   "type": "minecraft:any_of"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     -2,
                                     0,
@@ -281,7 +265,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     -1,
                                     0,
@@ -290,7 +273,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     1,
                                     0,
@@ -299,7 +281,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     2,
                                     0,
@@ -308,7 +289,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     1,
                                     0,
@@ -317,7 +297,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     0,
                                     0,
@@ -326,7 +305,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     -1,
                                     0,
@@ -335,7 +313,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     1,
                                     1,
@@ -344,7 +321,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     0,
                                     1,
@@ -353,7 +329,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     -1,
                                     1,
@@ -379,7 +354,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:spruce_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -401,11 +375,9 @@
                     "predicate": {
                       "predicates": [
                         {
-                          "blocks": "minecraft:spruce_leaves",
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "minecraft:spruce_log",
                           "offset": [
                             0,
                             0,
@@ -414,7 +386,6 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "minecraft:spruce_log",
                           "offset": [
                             0,
                             0,
@@ -423,7 +394,6 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "minecraft:spruce_log",
                           "offset": [
                             0,
                             -3,
@@ -432,7 +402,6 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "minecraft:spruce_log",
                           "offset": [
                             0,
                             0,
@@ -441,7 +410,6 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
-                          "blocks": "#wythers:tree_branch_replaceable",
                           "offset": [
                             0,
                             0,
@@ -494,11 +462,9 @@
             "predicate": {
               "predicates": [
                 {
-                  "blocks": "#wythers:tree_branch_replaceable",
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "minecraft:spruce_log",
                   "offset": [
                     0,
                     0,
@@ -507,7 +473,6 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "minecraft:spruce_log",
                   "offset": [
                     0,
                     -3,
@@ -516,7 +481,6 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     1,
                     0,
@@ -525,7 +489,6 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     2,
                     0,
@@ -534,7 +497,6 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     -1,
                     0,
@@ -543,7 +505,6 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
-                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     -2,
                     0,
@@ -553,7 +514,6 @@
                 },
                 {
                   "predicate": {
-                    "blocks": "minecraft:spruce_log",
                     "offset": [
                       0,
                       1,
@@ -565,7 +525,6 @@
                 },
                 {
                   "predicate": {
-                    "blocks": "minecraft:spruce_log",
                     "offset": [
                       0,
                       2,
@@ -577,7 +536,6 @@
                 },
                 {
                   "predicate": {
-                    "blocks": "minecraft:spruce_log",
                     "offset": [
                       0,
                       -1,
@@ -589,7 +547,6 @@
                 },
                 {
                   "predicate": {
-                    "blocks": "minecraft:spruce_log",
                     "offset": [
                       0,
                       -2,
