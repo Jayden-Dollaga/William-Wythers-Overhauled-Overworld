@@ -16,7 +16,8 @@
                           "Name": "minecraft:dead_bubble_coral_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -119,7 +120,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -226,7 +228,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -333,7 +336,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -440,7 +444,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -599,7 +604,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -778,7 +784,8 @@
                           }
                         ]
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -908,7 +915,8 @@
                             ]
                           }
                         }
-                      ]
+                      ],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
