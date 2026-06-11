@@ -53,7 +53,8 @@
                                       "offset": 0,
                                       "height": 12,
                                       "type": "minecraft:fancy_foliage_placer"
-                                    }
+                                    },
+                                    "type": "minecraft:tree"
                                   },
                                   "type": "minecraft:tree"
                                 },
@@ -434,7 +435,8 @@
                                               "offset": 2,
                                               "crown_height": 9,
                                               "type": "minecraft:mega_pine_foliage_placer"
-                                            }
+                                            },
+                                            "type": "minecraft:tree"
                                           },
                                           "type": "minecraft:tree"
                                         },
