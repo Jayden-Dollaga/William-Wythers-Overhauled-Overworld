@@ -27,7 +27,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -55,11 +54,7 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
@@ -118,7 +113,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -146,11 +140,7 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
@@ -209,7 +199,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -237,11 +226,7 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
@@ -309,7 +294,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -337,11 +321,7 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
