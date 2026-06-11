@@ -130,7 +130,8 @@
                               "offset": 3,
                               "height": 5
                             },
-                            "decorators": []
+                            "decorators": [],
+                            "type": "minecraft:tree"
                           }
                         },
                         "placement": []
@@ -189,7 +190,8 @@
                                   "down"
                                 ]
                               }
-                            ]
+                            ],
+                            "type": "minecraft:tree"
                           }
                         },
                         "placement": []
@@ -233,7 +235,8 @@
                               "offset": 4,
                               "crown_height": 6
                             },
-                            "decorators": []
+                            "decorators": [],
+                            "type": "minecraft:tree"
                           }
                         },
                         "placement": []
@@ -292,7 +295,8 @@
                                   "down"
                                 ]
                               }
-                            ]
+                            ],
+                            "type": "minecraft:tree"
                           }
                         },
                         "placement": []
