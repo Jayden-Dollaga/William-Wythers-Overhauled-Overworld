@@ -21,11 +21,7 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:dark_oak_leaves",
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        }
+        "Properties": {}
       }
     },
     "trunk_placer": {
