@@ -289,8 +289,7 @@
                                       "config": {
                                         "direction": "down",
                                         "allowed_placement": {
-                                          "type": "minecraft:matching_blocks",
-                                          "blocks": "minecraft:air"
+                                          "type": "minecraft:matching_blocks"
                                         },
                                         "prioritize_tip": true,
                                         "layers": [
@@ -333,12 +332,6 @@
                                                 1,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air",
-                                                "minecraft:cave_vines_plant",
-                                                "minecraft:mangrove_leaves",
-                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -347,12 +340,6 @@
                                                 -1,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air",
-                                                "minecraft:cave_vines_plant",
-                                                "minecraft:mangrove_leaves",
-                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -361,12 +348,6 @@
                                                 0,
                                                 0,
                                                 1
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air",
-                                                "minecraft:cave_vines_plant",
-                                                "minecraft:mangrove_leaves",
-                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -375,12 +356,6 @@
                                                 0,
                                                 0,
                                                 -1
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air",
-                                                "minecraft:cave_vines_plant",
-                                                "minecraft:mangrove_leaves",
-                                                "minecraft:vine"
                                               ]
                                             }
                                           ]
@@ -405,16 +380,10 @@
                                         0,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "mangrove_wood"
                                       ]
                                     },
                                     {
-                                      "type": "minecraft:matching_blocks",
-                                      "blocks": [
-                                        "air"
-                                      ]
+                                      "type": "minecraft:matching_blocks"
                                     }
                                   ]
                                 },
