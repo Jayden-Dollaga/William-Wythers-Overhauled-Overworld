@@ -60,12 +60,10 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": "minecraft:gravel"
+                  ]
                 },
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:air"
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -83,8 +81,7 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": "ice"
+              ]
             },
             "then": {
               "type": "minecraft:weighted_state_provider",
@@ -120,12 +117,10 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:water"
+                "type": "minecraft:matching_blocks"
               }
             ]
           },
@@ -138,15 +133,10 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:ice",
-                  "minecraft:gravel"
                 ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -173,17 +163,12 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:dripstone_block"
+            ]
           },
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:spruce_wood",
-                "minecraft:dripstone_block"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           }
         ]
