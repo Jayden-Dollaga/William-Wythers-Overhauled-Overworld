@@ -12,10 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "stone"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -47,13 +44,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:dirt",
-              "minecraft:rooted_dirt",
-              "minecraft:mud",
-              "stone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -94,11 +85,7 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:birch_wood",
-                "minecraft:dark_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           {
@@ -109,9 +96,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:moss_block"
               ]
             }
           }
