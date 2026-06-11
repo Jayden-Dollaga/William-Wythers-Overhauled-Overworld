@@ -140,8 +140,7 @@
                             "data": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "8",
-                                "waterlogged": "false"
+                                "level": "8"
                               }
                             }
                           }
@@ -216,27 +215,21 @@
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_brain_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               },
                               {
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               },
                               {
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_horn_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               }
                             ]
@@ -258,8 +251,7 @@
                             "state": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "8",
-                                "waterlogged": "false"
+                                "level": "8"
                               }
                             }
                           }
