@@ -156,9 +156,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:mud"
                           ]
                         },
                         {
@@ -172,9 +169,6 @@
                                   1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "light"
                                 ]
                               },
                               {
@@ -183,9 +177,6 @@
                                   -1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "light"
                                 ]
                               },
                               {
@@ -194,9 +185,6 @@
                                   0,
                                   -1,
                                   1
-                                ],
-                                "blocks": [
-                                  "light"
                                 ]
                               },
                               {
@@ -205,9 +193,6 @@
                                   0,
                                   -1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "light"
                                 ]
                               }
                             ]
@@ -247,11 +232,7 @@
                         {
                           "type": "minecraft:not",
                           "predicate": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "minecraft:light",
-                              "minecraft:campfire"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           }
                         }
                       ]
@@ -273,9 +254,6 @@
                             0,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:blackstone"
                           ]
                         },
                         {
@@ -284,9 +262,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:campfire"
                           ]
                         },
                         {
@@ -295,9 +270,6 @@
                             0,
                             2,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:blackstone"
                           ]
                         }
                       ]
