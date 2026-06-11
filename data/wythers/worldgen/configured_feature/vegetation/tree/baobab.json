@@ -27,11 +27,7 @@
                         "type": "minecraft:all_of",
                         "predicates": [
                           {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -39,11 +35,6 @@
                               0,
                               1,
                               0
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air"
                             ]
                           },
                           {
@@ -52,11 +43,6 @@
                               1,
                               0,
                               0
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air"
                             ]
                           },
                           {
@@ -65,11 +51,6 @@
                               -1,
                               0,
                               0
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air"
                             ]
                           },
                           {
@@ -78,11 +59,6 @@
                               0,
                               0,
                               1
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air"
                             ]
                           },
                           {
@@ -91,11 +67,6 @@
                               0,
                               0,
                               -1
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air"
                             ]
                           },
                           {
@@ -104,13 +75,6 @@
                               0,
                               -1,
                               0
-                            ],
-                            "blocks": [
-                              "acacia_wood",
-                              "acacia_log",
-                              "cave_air",
-                              "dirt",
-                              "rooted_dirt"
                             ]
                           }
                         ]
@@ -313,8 +277,7 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": "minecraft:acacia_wood"
+                    "type": "minecraft:matching_blocks"
                   }
                 }
               ]
