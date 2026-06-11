@@ -37,10 +37,6 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt"
                 ]
               },
               {
@@ -52,11 +48,6 @@
                       1,
                       2,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -65,11 +56,6 @@
                       0,
                       2,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -78,11 +64,6 @@
                       -1,
                       2,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -91,11 +72,6 @@
                       0,
                       2,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -104,11 +80,6 @@
                       1,
                       2,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -117,11 +88,6 @@
                       -1,
                       2,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -130,11 +96,6 @@
                       1,
                       2,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -143,11 +104,6 @@
                       -1,
                       2,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:stone",
-                      "minecraft:dirt"
                     ]
                   }
                 ]
