@@ -25,18 +25,11 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:pointed_dripstone"
                   ]
                 }
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:dripstone_block"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -44,12 +37,6 @@
                   0,
                   6,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:deepslate",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block"
                 ]
               },
               {
@@ -58,13 +45,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:deepslate",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -73,12 +53,6 @@
                   1,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -87,12 +61,6 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -101,12 +69,6 @@
                   1,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -115,12 +77,6 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -129,12 +85,6 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -143,12 +93,6 @@
                   -1,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -157,12 +101,6 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -171,12 +109,6 @@
                   -1,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block",
-                  "minecraft:pointed_dripstone"
                 ]
               },
               {
@@ -185,11 +117,6 @@
                   3,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block"
                 ]
               },
               {
@@ -198,11 +125,6 @@
                   -3,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block"
                 ]
               },
               {
@@ -211,11 +133,6 @@
                   0,
                   0,
                   3
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block"
                 ]
               },
               {
@@ -224,11 +141,6 @@
                   0,
                   0,
                   -3
-                ],
-                "blocks": [
-                  "minecraft:tuff",
-                  "minecraft:cave_air",
-                  "minecraft:dripstone_block"
                 ]
               }
             ]
@@ -244,9 +156,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:pointed_dripstone"
                   ]
                 }
               },
@@ -256,8 +165,7 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -265,8 +173,7 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -274,8 +181,7 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -283,8 +189,7 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": "minecraft:cave_air"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -292,15 +197,10 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": "minecraft:cave_air"
+                ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dripstone_block",
-                  "minecraft:tuff"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -332,9 +232,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:moss_block"
             ]
           }
         ]
