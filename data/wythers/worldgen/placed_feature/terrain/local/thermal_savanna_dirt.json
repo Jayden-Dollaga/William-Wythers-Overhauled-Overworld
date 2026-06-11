@@ -22,11 +22,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -35,11 +30,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -48,11 +38,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -61,11 +46,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -74,11 +54,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -87,11 +62,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -100,11 +70,6 @@
                       2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -113,11 +78,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -126,11 +86,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -139,11 +94,6 @@
                       -2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -152,11 +102,6 @@
                       0,
                       0,
                       2
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -165,11 +110,6 @@
                       0,
                       0,
                       -2
-                    ],
-                    "blocks": [
-                      "minecraft:packed_mud",
-                      "minecraft:coarse_dirt",
-                      "minecraft:air"
                     ]
                   }
                 ]
@@ -188,8 +128,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:packed_mud"
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -202,8 +141,7 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:grass_block"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -211,8 +149,7 @@
                     0,
                     2,
                     0
-                  ],
-                  "blocks": "minecraft:grass_block"
+                  ]
                 }
               ]
             }
@@ -236,10 +173,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:chiseled_sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -247,9 +181,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           }
         ]
