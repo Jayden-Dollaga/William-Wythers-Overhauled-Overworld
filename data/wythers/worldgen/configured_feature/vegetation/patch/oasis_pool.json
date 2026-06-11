@@ -51,11 +51,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "sand",
-                            "minecraft:smooth_sandstone"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -63,10 +59,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "air",
-                            "light"
                           ]
                         },
                         {
@@ -75,13 +67,6 @@
                             1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "clay",
-                            "sand",
-                            "light",
-                            "minecraft:smooth_sandstone",
-                            "minecraft:small_dripleaf"
                           ]
                         },
                         {
@@ -90,13 +75,6 @@
                             -1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "clay",
-                            "sand",
-                            "light",
-                            "minecraft:smooth_sandstone",
-                            "minecraft:small_dripleaf"
                           ]
                         },
                         {
@@ -105,13 +83,6 @@
                             0,
                             0,
                             1
-                          ],
-                          "blocks": [
-                            "clay",
-                            "sand",
-                            "light",
-                            "minecraft:smooth_sandstone",
-                            "minecraft:small_dripleaf"
                           ]
                         },
                         {
@@ -120,13 +91,6 @@
                             0,
                             0,
                             -1
-                          ],
-                          "blocks": [
-                            "clay",
-                            "sand",
-                            "light",
-                            "minecraft:smooth_sandstone",
-                            "minecraft:small_dripleaf"
                           ]
                         }
                       ]
@@ -138,11 +102,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "sand",
-                        "minecraft:smooth_sandstone"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -180,17 +140,10 @@
                                   0,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "air"
                                 ]
                               },
                               {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "sand",
-                                  "minecraft:smooth_sandstone"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -198,12 +151,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "light",
-                                  "minecraft:smooth_sandstone",
-                                  "minecraft:small_dripleaf"
                                 ]
                               },
                               {
@@ -212,12 +159,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "light",
-                                  "minecraft:smooth_sandstone",
-                                  "minecraft:small_dripleaf"
                                 ]
                               },
                               {
@@ -226,12 +167,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "light",
-                                  "minecraft:smooth_sandstone",
-                                  "minecraft:small_dripleaf"
                                 ]
                               },
                               {
@@ -240,12 +175,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "light",
-                                  "minecraft:smooth_sandstone",
-                                  "minecraft:small_dripleaf"
                                 ]
                               },
                               {
@@ -257,9 +186,6 @@
                                       1,
                                       0,
                                       0
-                                    ],
-                                    "blocks": [
-                                      "light"
                                     ]
                                   },
                                   {
@@ -268,9 +194,6 @@
                                       -1,
                                       0,
                                       0
-                                    ],
-                                    "blocks": [
-                                      "light"
                                     ]
                                   },
                                   {
@@ -279,9 +202,6 @@
                                       0,
                                       0,
                                       1
-                                    ],
-                                    "blocks": [
-                                      "light"
                                     ]
                                   },
                                   {
@@ -290,9 +210,6 @@
                                       0,
                                       0,
                                       -1
-                                    ],
-                                    "blocks": [
-                                      "light"
                                     ]
                                   }
                                 ]
@@ -309,10 +226,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "light"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -332,10 +246,7 @@
                     "radius": 8,
                     "half_height": 1,
                     "target": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:smooth_sandstone"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   },
                   "type": "minecraft:disk"
@@ -344,10 +255,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "light"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -402,10 +310,6 @@
                                   1,
                                   -1,
                                   1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -414,10 +318,6 @@
                                   1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -426,10 +326,6 @@
                                   1,
                                   -1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -438,10 +334,6 @@
                                   0,
                                   -1,
                                   1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -450,10 +342,6 @@
                                   0,
                                   -1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -462,10 +350,6 @@
                                   -1,
                                   -1,
                                   1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -474,10 +358,6 @@
                                   -1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               },
                               {
@@ -486,10 +366,6 @@
                                   -1,
                                   -1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "sand",
-                                  "suspicious_sand"
                                 ]
                               }
                             ]
@@ -504,10 +380,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "light"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -550,10 +423,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "light"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -644,9 +514,6 @@
                                   0,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "air"
                                 ]
                               }
                             ]
@@ -661,10 +528,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "light"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
