@@ -25,10 +25,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -37,10 +33,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -49,10 +41,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -61,10 +49,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -73,10 +57,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -85,10 +65,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -97,10 +73,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -109,10 +81,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block",
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -121,10 +89,6 @@
                       0,
                       -1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:rooted_dirt",
-                      "minecraft:dirt"
                     ]
                   },
                   {
@@ -133,8 +97,7 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   }
                 ]
               }
@@ -152,10 +115,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:grass_block"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -163,9 +123,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:dirt"
             ]
           }
         ]
@@ -190,10 +147,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:bamboo_block"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:not",
@@ -203,9 +157,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:moss_block"
                   ]
                 }
               }
