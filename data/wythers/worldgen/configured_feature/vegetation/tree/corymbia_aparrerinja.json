@@ -21,11 +21,7 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:birch_leaves",
-        "Properties": {
-          "persistent": "false",
-          "distance": "7",
-          "waterlogged": "false"
-        }
+        "Properties": {}
       }
     },
     "trunk_placer": {
