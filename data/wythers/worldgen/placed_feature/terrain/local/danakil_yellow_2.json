@@ -25,10 +25,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:yellow_terracotta"
                           ]
                         },
                         {
@@ -37,8 +33,7 @@
                             0,
                             2,
                             0
-                          ],
-                          "blocks": "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -52,8 +47,7 @@
                 ]
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:red_terracotta"
+                "type": "minecraft:matching_blocks"
               },
               "radius": 4,
               "half_height": 4
@@ -83,10 +77,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:yellow_terracotta"
                           ]
                         },
                         {
@@ -95,8 +85,7 @@
                             0,
                             2,
                             0
-                          ],
-                          "blocks": "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -110,8 +99,7 @@
                 ]
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:orange_terracotta"
+                "type": "minecraft:matching_blocks"
               },
               "radius": 4,
               "half_height": 4
@@ -141,10 +129,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:yellow_terracotta"
                           ]
                         },
                         {
@@ -153,8 +137,7 @@
                             0,
                             2,
                             0
-                          ],
-                          "blocks": "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -168,8 +151,7 @@
                 ]
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:terracotta"
+                "type": "minecraft:matching_blocks"
               },
               "radius": 4,
               "half_height": 4
@@ -199,10 +181,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:yellow_terracotta"
                           ]
                         },
                         {
@@ -211,8 +189,7 @@
                             0,
                             2,
                             0
-                          ],
-                          "blocks": "minecraft:air"
+                          ]
                         }
                       ]
                     },
@@ -226,8 +203,7 @@
                 ]
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:packed_mud"
+                "type": "minecraft:matching_blocks"
               },
               "radius": 4,
               "half_height": 4
@@ -251,11 +227,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:smooth_sandstone",
-              "minecraft:cut_sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -263,9 +235,6 @@
               0,
               2,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           }
         ]
