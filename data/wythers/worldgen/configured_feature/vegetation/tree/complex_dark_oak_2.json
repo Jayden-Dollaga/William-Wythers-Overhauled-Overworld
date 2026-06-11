@@ -70,7 +70,8 @@
                                       "down"
                                     ]
                                   }
-                                ]
+                                ],
+                                "type": "minecraft:tree"
                               },
                               "type": "minecraft:tree"
                             },
@@ -159,7 +160,8 @@
                                       "down"
                                     ]
                                   }
-                                ]
+                                ],
+                                "type": "minecraft:tree"
                               },
                               "type": "minecraft:tree"
                             },
@@ -392,7 +394,8 @@
                               "radius": 4,
                               "tries": 200
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
