@@ -198,8 +198,7 @@
                 "tag": "minecraft:base_stone_overworld"
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:dirt_path"
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -228,11 +227,7 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:birch_wood",
-                "minecraft:dark_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           {
@@ -241,9 +236,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           }
         ]
