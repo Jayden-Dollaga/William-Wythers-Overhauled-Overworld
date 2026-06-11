@@ -26,21 +26,10 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:dead_bush",
-              "minecraft:short_grass",
-              "minecraft:short_dry_grass",
-              "minecraft:packed_mud"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:red_sand",
-              "minecraft:orange_terracotta"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
@@ -59,10 +48,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:orange_terracotta"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
@@ -76,10 +62,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:sculk"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
