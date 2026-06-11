@@ -12,8 +12,7 @@
         "rules": []
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:deepslate"
+        "type": "minecraft:matching_blocks"
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -41,9 +40,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:moss_block"
             ]
           }
         ]
