@@ -32,18 +32,12 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:clay"
+                ]
               }
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:dirt",
-              "minecraft:gravel",
-              "minecraft:sand"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
