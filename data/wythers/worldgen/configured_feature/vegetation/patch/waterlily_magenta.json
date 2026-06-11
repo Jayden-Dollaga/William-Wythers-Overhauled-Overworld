@@ -18,11 +18,7 @@
                           "config": {
                             "direction": "up",
                             "allowed_placement": {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": [
-                                "minecraft:air",
-                                "minecraft:water"
-                              ]
+                              "type": "minecraft:matching_blocks"
                             },
                             "prioritize_tip": true,
                             "layers": [
@@ -67,8 +63,7 @@
                                     0,
                                     2,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -76,12 +71,10 @@
                                     0,
                                     1,
                                     0
-                                  ],
-                                  "blocks": "minecraft:air"
+                                  ]
                                 },
                                 {
-                                  "type": "minecraft:matching_blocks",
-                                  "blocks": "minecraft:water"
+                                  "type": "minecraft:matching_blocks"
                                 },
                                 {
                                   "type": "minecraft:matching_blocks",
@@ -89,8 +82,7 @@
                                     0,
                                     -1,
                                     0
-                                  ],
-                                  "blocks": "minecraft:water"
+                                  ]
                                 },
                                 {
                                   "type": "minecraft:not",
@@ -162,8 +154,7 @@
                           "type": "minecraft:all_of",
                           "predicates": [
                             {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": "minecraft:air"
+                              "type": "minecraft:matching_blocks"
                             },
                             {
                               "type": "minecraft:matching_fluids",
