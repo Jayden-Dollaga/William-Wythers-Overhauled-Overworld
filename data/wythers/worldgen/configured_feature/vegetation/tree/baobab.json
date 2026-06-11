@@ -109,8 +109,8 @@
                               "acacia_wood",
                               "acacia_log",
                               "cave_air",
-							  "dirt",
-							  "rooted_dirt"
+                              "dirt",
+                              "rooted_dirt"
                             ]
                           }
                         ]
@@ -128,18 +128,11 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:dirt"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -212,18 +205,11 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:dirt"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -295,15 +281,8 @@
                 "type": "minecraft:tree",
                 "config": {
                   "ignore_vines": true,
-                  "force_dirt": false,
                   "minimum_size": {
                     "type": "minecraft:two_layers_feature_size"
-                  },
-                  "dirt_provider": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "minecraft:dirt"
-                    }
                   },
                   "trunk_provider": {
                     "type": "minecraft:simple_state_provider",
