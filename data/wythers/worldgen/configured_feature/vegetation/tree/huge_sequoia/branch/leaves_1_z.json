@@ -105,7 +105,8 @@
       "radius": 0,
       "offset": 0,
       "type": "minecraft:dark_oak_foliage_placer"
-    }
+    },
+    "type": "minecraft:tree"
   },
   "type": "minecraft:tree"
 }
