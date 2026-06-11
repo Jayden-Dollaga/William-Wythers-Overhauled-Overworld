@@ -15,12 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock",
-              "minecraft:coarse_dirt",
-              "minecraft:rooted_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
