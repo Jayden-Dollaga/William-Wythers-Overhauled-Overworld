@@ -12,11 +12,7 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:pale_oak_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Properties": {}
       }
     },
     "ignore_vines": false,
