@@ -48,10 +48,7 @@
                     ]
                   },
                   {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:sand"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 ]
               }
@@ -73,8 +70,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:muddy_mangrove_roots"
+        "type": "minecraft:matching_blocks"
       }
     },
     {
