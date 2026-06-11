@@ -48,10 +48,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "air",
-                  "water"
                 ]
               },
               {
@@ -65,10 +61,6 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "air",
-                        "water"
                       ]
                     },
                     {
@@ -77,10 +69,6 @@
                         1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "air",
-                        "water"
                       ]
                     },
                     {
@@ -89,10 +77,6 @@
                         -1,
                         -1,
                         0
-                      ],
-                      "blocks": [
-                        "air",
-                        "water"
                       ]
                     },
                     {
@@ -101,10 +85,6 @@
                         0,
                         -1,
                         1
-                      ],
-                      "blocks": [
-                        "air",
-                        "water"
                       ]
                     },
                     {
@@ -113,10 +93,6 @@
                         0,
                         -1,
                         -1
-                      ],
-                      "blocks": [
-                        "air",
-                        "water"
                       ]
                     }
                   ]
@@ -248,9 +224,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "air"
                     ]
                   },
                   {
@@ -259,9 +232,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "air"
                     ]
                   },
                   {
@@ -270,9 +240,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "air"
                     ]
                   },
                   {
@@ -281,9 +248,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "air"
                     ]
                   }
                 ]
@@ -371,10 +335,7 @@
           "type": "minecraft:any_of",
           "predicates": [
             {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "stone"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             {
               "type": "minecraft:matching_block_tag",
@@ -391,10 +352,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             },
             {
@@ -403,10 +360,6 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             },
             {
@@ -415,10 +368,6 @@
                 1,
                 0,
                 0
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             },
             {
@@ -427,10 +376,6 @@
                 -1,
                 0,
                 0
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             },
             {
@@ -439,10 +384,6 @@
                 0,
                 0,
                 1
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             },
             {
@@ -451,10 +392,6 @@
                 0,
                 0,
                 -1
-              ],
-              "blocks": [
-                "minecraft:water",
-                "minecraft:air"
               ]
             }
           ]
