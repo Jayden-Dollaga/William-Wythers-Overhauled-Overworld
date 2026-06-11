@@ -262,7 +262,8 @@
                           "Name": "minecraft:diorite"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 2,
                     "half_height": 1,
@@ -320,7 +321,8 @@
                           "Name": "minecraft:deepslate"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 3,
                     "half_height": 2,
