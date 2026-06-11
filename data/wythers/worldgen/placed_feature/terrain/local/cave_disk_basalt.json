@@ -129,7 +129,8 @@
                       }
                     }
                   }
-                ]
+                ],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
@@ -270,7 +271,8 @@
                       }
                     }
                   }
-                ]
+                ],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
