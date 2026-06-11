@@ -16,7 +16,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -168,7 +169,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -215,7 +217,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -302,7 +305,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -389,7 +393,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -476,7 +481,8 @@
                           "Name": "dripstone_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
