@@ -20,8 +20,7 @@
               0,
               0,
               0
-            ],
-            "blocks": "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:all_of",
@@ -36,13 +35,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:muddy_mangrove_roots",
-                  "minecraft:mud",
-                  "minecraft:smooth_basalt",
-                  "minecraft:deepslate",
-                  "minecraft:tuff"
                 ]
               }
             ]
