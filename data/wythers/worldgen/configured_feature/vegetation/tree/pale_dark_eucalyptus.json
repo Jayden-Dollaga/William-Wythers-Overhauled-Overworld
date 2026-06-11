@@ -130,11 +130,7 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:mangrove_leaves",
-                              "Properties": {
-                                "distance": "7",
-                                "persistent": "false",
-                                "waterlogged": "false"
-                              }
+                              "Properties": {}
                             }
                           }
                         ]
@@ -514,11 +510,7 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:mangrove_leaves",
-                              "Properties": {
-                                "distance": "7",
-                                "persistent": "false",
-                                "waterlogged": "false"
-                              }
+                              "Properties": {}
                             }
                           }
                         ]
@@ -897,11 +889,7 @@
                         "weight": 10,
                         "data": {
                           "Name": "minecraft:mangrove_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         }
                       }
                     ]
