@@ -68,11 +68,7 @@
             "radius": 3,
             "half_height": 4,
             "target": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:air",
-                "minecraft:mushroom_stem"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           "type": "minecraft:disk"
@@ -95,9 +91,6 @@
                     1,
                     2,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -106,16 +99,10 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:mushroom_stem"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -140,10 +127,7 @@
             "radius": 4,
             "half_height": 2,
             "target": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:air"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           "type": "minecraft:disk"
@@ -166,17 +150,10 @@
                     0,
                     5,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 },
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:mushroom_stem",
-                    "minecraft:mushroom_stem"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -201,10 +178,7 @@
             "radius": 5,
             "half_height": 0.5,
             "target": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:air"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           "type": "minecraft:disk"
@@ -227,17 +201,10 @@
                     0,
                     3,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 },
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:mushroom_stem",
-                    "minecraft:mushroom_stem"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -282,9 +249,6 @@
                                 1,
                                 0,
                                 0
-                              ],
-                              "blocks": [
-                                "air"
                               ]
                             },
                             {
@@ -293,9 +257,6 @@
                                 -1,
                                 0,
                                 0
-                              ],
-                              "blocks": [
-                                "air"
                               ]
                             },
                             {
@@ -304,9 +265,6 @@
                                 0,
                                 0,
                                 1
-                              ],
-                              "blocks": [
-                                "air"
                               ]
                             },
                             {
@@ -315,9 +273,6 @@
                                 0,
                                 0,
                                 -1
-                              ],
-                              "blocks": [
-                                "air"
                               ]
                             }
                           ]
@@ -347,9 +302,6 @@
                                 0,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "brown_mushroom_block"
                               ]
                             }
                           ]
@@ -374,11 +326,7 @@
                   "radius": 8,
                   "half_height": 0.5,
                   "target": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "air",
-                      "minecraft:red_mushroom_block"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 },
                 "type": "minecraft:disk"
@@ -397,9 +345,6 @@
                           0,
                           1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:stripped_pale_oak_wood"
                         ]
                       },
                       {
@@ -408,11 +353,6 @@
                           0,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "air",
-                          "minecraft:brown_mushroom_block",
-                          "minecraft:red_mushroom_block"
                         ]
                       }
                     ]
@@ -432,10 +372,7 @@
             "direction_of_search": "up",
             "max_steps": 32,
             "target_condition": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:stripped_pale_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "allowed_search_condition": {
               "type": "minecraft:true"
@@ -470,9 +407,6 @@
                                 0,
                                 1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:brown_mushroom_block"
                               ]
                             },
                             {
@@ -481,9 +415,6 @@
                                 0,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "air"
                               ]
                             }
                           ]
@@ -511,16 +442,10 @@
                               0,
                               1,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:brown_mushroom_block"
                             ]
                           },
                           {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "minecraft:red_mushroom_block"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           }
                         ]
                       },
@@ -533,9 +458,6 @@
                               0,
                               2,
                               0
-                            ],
-                            "blocks": [
-                              "air"
                             ]
                           },
                           {
@@ -544,16 +466,10 @@
                               0,
                               1,
                               0
-                            ],
-                            "blocks": [
-                              "air"
                             ]
                           },
                           {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "air"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           },
                           {
                             "type": "minecraft:any_of",
@@ -564,9 +480,6 @@
                                   1,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:red_mushroom_block"
                                 ]
                               },
                               {
@@ -575,9 +488,6 @@
                                   -1,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:red_mushroom_block"
                                 ]
                               },
                               {
@@ -586,9 +496,6 @@
                                   0,
                                   1,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:red_mushroom_block"
                                 ]
                               },
                               {
@@ -597,9 +504,6 @@
                                   0,
                                   1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:red_mushroom_block"
                                 ]
                               }
                             ]
@@ -613,9 +517,6 @@
                                   2,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:brown_mushroom_block"
                                 ]
                               },
                               {
@@ -624,9 +525,6 @@
                                   -2,
                                   1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:brown_mushroom_block"
                                 ]
                               },
                               {
@@ -635,9 +533,6 @@
                                   0,
                                   1,
                                   2
-                                ],
-                                "blocks": [
-                                  "minecraft:brown_mushroom_block"
                                 ]
                               },
                               {
@@ -646,9 +541,6 @@
                                   0,
                                   1,
                                   -2
-                                ],
-                                "blocks": [
-                                  "minecraft:brown_mushroom_block"
                                 ]
                               }
                             ]
@@ -674,10 +566,6 @@
                           0,
                           1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:brown_mushroom_block",
-                          "minecraft:red_mushroom_block"
                         ]
                       },
                       {
@@ -686,10 +574,6 @@
                           0,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "air",
-                          "minecraft:red_mushroom_block"
                         ]
                       }
                     ]
@@ -709,10 +593,7 @@
             "direction_of_search": "up",
             "max_steps": 32,
             "target_condition": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:stripped_pale_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "allowed_search_condition": {
               "type": "minecraft:true"
@@ -746,9 +627,6 @@
                       0,
                       -1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:brown_mushroom_block"
                     ]
                   }
                 },
@@ -768,9 +646,6 @@
                           0,
                           -1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:brown_mushroom_block"
                         ]
                       },
                       {
@@ -779,9 +654,6 @@
                           0,
                           0,
                           0
-                        ],
-                        "blocks": [
-                          "air"
                         ]
                       }
                     ]
@@ -806,9 +678,6 @@
                 0,
                 0,
                 0
-              ],
-              "blocks": [
-                "minecraft:stripped_pale_oak_wood"
               ]
             },
             "allowed_search_condition": {
@@ -832,10 +701,7 @@
             "radius": 8,
             "half_height": 0.5,
             "target": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:air"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           "type": "minecraft:disk"
@@ -858,9 +724,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 }
               ]
@@ -882,10 +745,6 @@
                     0,
                     2,
                     0
-                  ],
-                  "blocks": [
-                    "air",
-                    "minecraft:red_mushroom_block"
                   ]
                 },
                 {
@@ -894,9 +753,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 },
                 {
@@ -905,10 +761,6 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood",
-                    "minecraft:mushroom_stem"
                   ]
                 }
               ]
@@ -934,10 +786,7 @@
             "radius": 5,
             "half_height": 0.5,
             "target": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:air"
-              ]
+              "type": "minecraft:matching_blocks"
             }
           },
           "type": "minecraft:disk"
@@ -955,10 +804,7 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -979,10 +825,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "air",
-                    "minecraft:red_mushroom_block"
                   ]
                 },
                 {
@@ -991,9 +833,6 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 }
               ]
@@ -1027,10 +866,6 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "air",
-                    "minecraft:red_mushroom_block"
                   ]
                 },
                 {
@@ -1039,9 +874,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 }
               ]
@@ -1062,10 +894,7 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
@@ -1086,9 +915,6 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "air"
                   ]
                 },
                 {
@@ -1097,9 +923,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_pale_oak_wood"
                   ]
                 }
               ]
