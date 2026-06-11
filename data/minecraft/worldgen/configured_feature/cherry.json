@@ -24,11 +24,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:cherry_leaves",
-                        "Properties": {
-                          "distance": "7",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "ignore_vines": true,
