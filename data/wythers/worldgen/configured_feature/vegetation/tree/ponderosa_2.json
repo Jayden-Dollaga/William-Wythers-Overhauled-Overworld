@@ -31,11 +31,7 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:birch_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         }
                       },
                       "ignore_vines": true,
@@ -388,11 +384,7 @@
                     "type": "minecraft:simple_state_provider",
                     "state": {
                       "Name": "minecraft:birch_leaves",
-                      "Properties": {
-                        "distance": "7",
-                        "persistent": "false",
-                        "waterlogged": "false"
-                      }
+                      "Properties": {}
                     }
                   },
                   "ignore_vines": true,
