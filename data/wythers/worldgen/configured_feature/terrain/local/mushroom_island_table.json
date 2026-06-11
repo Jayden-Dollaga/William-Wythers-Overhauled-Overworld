@@ -16,7 +16,8 @@
                           "Name": "minecraft:dead_brain_coral_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -62,7 +63,8 @@
                   "Name": "minecraft:dead_brain_coral_block"
                 }
               },
-              "rules": []
+              "rules": [],
+              "type": "minecraft:rule_based_state_provider"
             },
             "radius": {
               "type": "minecraft:uniform",
