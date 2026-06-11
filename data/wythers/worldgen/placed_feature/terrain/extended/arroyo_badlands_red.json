@@ -28,10 +28,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:orange_terracotta"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -39,9 +36,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           },
           {
@@ -52,10 +46,6 @@
                 0,
                 2,
                 0
-              ],
-              "blocks": [
-                "minecraft:sculk",
-                "minecraft:black_concrete"
               ]
             }
           }
