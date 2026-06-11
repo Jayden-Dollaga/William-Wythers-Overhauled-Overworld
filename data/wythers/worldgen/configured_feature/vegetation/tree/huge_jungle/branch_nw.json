@@ -114,12 +114,6 @@
                                       "type": "minecraft:attached_to_leaves"
                                     }
                                   ],
-                                  "dirt_provider": {
-                                    "state": {
-                                      "Name": "minecraft:air"
-                                    },
-                                    "type": "minecraft:simple_state_provider"
-                                  },
                                   "foliage_placer": {
                                     "offset": 0,
                                     "radius": 3,
@@ -136,7 +130,6 @@
                                     },
                                     "type": "minecraft:simple_state_provider"
                                   },
-                                  "force_dirt": false,
                                   "ignore_vines": true,
                                   "minimum_size": {
                                     "limit": 0,
@@ -197,12 +190,6 @@
                                           "type": "minecraft:attached_to_leaves"
                                         }
                                       ],
-                                      "dirt_provider": {
-                                        "state": {
-                                          "Name": "minecraft:air"
-                                        },
-                                        "type": "minecraft:simple_state_provider"
-                                      },
                                       "foliage_placer": {
                                         "offset": 0,
                                         "radius": 1,
@@ -219,7 +206,6 @@
                                         },
                                         "type": "minecraft:simple_state_provider"
                                       },
-                                      "force_dirt": false,
                                       "ignore_vines": true,
                                       "minimum_size": {
                                         "limit": 0,
