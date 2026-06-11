@@ -32,11 +32,7 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         }
                       },
                       "trunk_placer": {
@@ -398,11 +394,7 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         }
                       },
                       "trunk_placer": {
@@ -791,11 +783,7 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Properties": {}
                         }
                       },
                       "trunk_placer": {
