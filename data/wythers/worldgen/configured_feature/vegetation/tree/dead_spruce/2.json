@@ -220,8 +220,16 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 5
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 5,
+                              "min": -5,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -230,8 +238,16 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 10
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 10,
+                              "min": -10,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -244,8 +260,16 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 13
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 13,
+                              "min": -13,
+                              "plateau": 0
+                            }
                           }
                         ]
                       }
