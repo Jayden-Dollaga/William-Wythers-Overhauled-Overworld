@@ -99,6 +99,7 @@
           "down"
         ]
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
