@@ -7,8 +7,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
@@ -73,8 +72,7 @@
           0,
           -1,
           0
-        ],
-        "blocks": "minecraft:grass_block"
+        ]
       }
     },
     {
@@ -92,8 +90,7 @@
               1,
               -2,
               0
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -101,8 +98,7 @@
               -1,
               -2,
               0
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -110,8 +106,7 @@
               0,
               -2,
               1
-            ],
-            "blocks": "minecraft:clay"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -119,8 +114,7 @@
               0,
               -2,
               -1
-            ],
-            "blocks": "minecraft:clay"
+            ]
           }
         ]
       }
@@ -140,10 +134,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:bamboo_block"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           }
@@ -193,8 +184,7 @@
           0,
           -1,
           0
-        ],
-        "blocks": "minecraft:grass_block"
+        ]
       }
     },
     {
