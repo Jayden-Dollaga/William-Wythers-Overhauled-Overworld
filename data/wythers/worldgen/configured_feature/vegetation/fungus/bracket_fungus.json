@@ -65,7 +65,8 @@
                     "down"
                   ]
                 }
-              ]
+              ],
+              "type": "minecraft:tree"
             }
           },
           "placement": [
@@ -258,7 +259,8 @@
                 "down"
               ]
             }
-          ]
+          ],
+          "type": "minecraft:tree"
         }
       },
       "placement": [
