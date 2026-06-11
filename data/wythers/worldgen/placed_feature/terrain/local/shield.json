@@ -62,12 +62,7 @@
             "tag": "minecraft:base_stone_overworld"
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "air",
-              "dirt",
-              "minecraft:grass_block"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
