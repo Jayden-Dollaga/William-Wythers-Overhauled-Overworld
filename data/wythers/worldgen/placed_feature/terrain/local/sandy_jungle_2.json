@@ -20,12 +20,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:packed_mud",
-              "minecraft:dirt_path",
-              "minecraft:coarse_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -38,9 +33,6 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -49,9 +41,6 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -60,9 +49,6 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -71,9 +57,6 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -102,11 +85,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:lime_terracotta",
-              "minecraft:oak_wood"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -114,8 +93,7 @@
               0,
               2,
               0
-            ],
-            "blocks": "minecraft:dripstone_block"
+            ]
           }
         ]
       }
