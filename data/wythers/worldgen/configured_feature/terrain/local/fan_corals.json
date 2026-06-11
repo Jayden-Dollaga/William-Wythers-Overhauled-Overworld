@@ -19,9 +19,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -41,9 +38,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -63,9 +57,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -85,9 +76,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -107,9 +95,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -129,9 +114,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -151,9 +133,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -173,9 +152,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -195,9 +171,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -217,9 +190,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -239,9 +209,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -261,9 +228,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -283,10 +247,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:horn_coral_block",
-              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -306,10 +266,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:horn_coral_block",
-              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -329,10 +285,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:horn_coral_block",
-              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -352,10 +304,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:horn_coral_block",
-              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -375,9 +323,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -397,9 +342,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -419,9 +361,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -441,9 +380,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -463,9 +399,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -499,9 +432,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -535,9 +465,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -571,9 +498,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -607,9 +531,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -643,9 +564,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -679,9 +597,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -715,9 +630,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -751,9 +663,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -787,9 +696,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -823,9 +729,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -859,9 +762,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -895,9 +795,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -931,9 +828,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -967,9 +861,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -1003,9 +894,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -1039,9 +927,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1075,9 +960,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1111,9 +993,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1147,9 +1026,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1184,10 +1060,7 @@
       "type": "minecraft:all_of",
       "predicates": [
         {
-          "type": "minecraft:matching_blocks",
-          "blocks": [
-            "minecraft:water"
-          ]
+          "type": "minecraft:matching_blocks"
         },
         {
           "type": "minecraft:not",
@@ -1200,9 +1073,6 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:fire_coral_block"
                 ]
               },
               {
@@ -1211,9 +1081,6 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:fire_coral_block"
                 ]
               }
             ]
@@ -1230,9 +1097,6 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:fire_coral_block"
                 ]
               },
               {
@@ -1241,9 +1105,6 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:fire_coral_block"
                 ]
               }
             ]
