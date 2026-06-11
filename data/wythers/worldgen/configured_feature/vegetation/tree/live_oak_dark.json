@@ -402,7 +402,8 @@
                               "radius": 4,
                               "tries": 250
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
@@ -505,7 +506,8 @@
                                 "down"
                               ]
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
