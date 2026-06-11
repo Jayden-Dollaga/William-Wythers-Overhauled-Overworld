@@ -116,10 +116,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt"
                 ]
               }
             }
@@ -240,10 +236,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt"
                 ]
               }
             }
@@ -412,10 +404,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt"
                 ]
               }
             }
@@ -584,10 +572,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:dirt"
                 ]
               }
             }
@@ -707,10 +691,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:grass_block",
-              "minecraft:dirt"
             ]
           }
         }
