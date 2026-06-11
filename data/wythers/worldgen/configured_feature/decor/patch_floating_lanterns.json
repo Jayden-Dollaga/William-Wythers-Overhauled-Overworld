@@ -15,8 +15,7 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -27,8 +26,7 @@
               1,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -39,8 +37,7 @@
               -1,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -51,8 +48,7 @@
               0,
               1,
               1
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -63,8 +59,7 @@
               0,
               1,
               -1
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -75,8 +70,7 @@
               0,
               0,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -87,8 +81,7 @@
               1,
               0,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -99,8 +92,7 @@
               -1,
               0,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -111,8 +103,7 @@
               0,
               0,
               1
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -123,8 +114,7 @@
               0,
               0,
               -1
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -135,9 +125,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -149,9 +136,6 @@
               0,
               2,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -163,9 +147,6 @@
               0,
               3,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -177,9 +158,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -191,9 +169,6 @@
               0,
               -2,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -205,9 +180,6 @@
               0,
               -3,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -219,9 +191,6 @@
               0,
               -4,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
