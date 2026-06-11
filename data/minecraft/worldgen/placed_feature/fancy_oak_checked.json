@@ -11,11 +11,7 @@
       "foliage_provider": {
         "state": {
           "Name": "minecraft:oak_leaves",
-          "Properties": {
-            "distance": "7",
-            "persistent": "false",
-            "waterlogged": "false"
-          }
+          "Properties": {}
         },
         "type": "minecraft:simple_state_provider"
       },
