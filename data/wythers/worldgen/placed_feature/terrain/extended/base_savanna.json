@@ -15,8 +15,7 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": "minecraft:stone"
+                  "type": "minecraft:matching_blocks"
                 },
                 {
                   "type": "minecraft:any_of",
@@ -108,11 +107,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:stone",
-                  "minecraft:dirt"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_block_tag",
@@ -138,11 +133,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:stone",
-                  "minecraft:dirt"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_block_tag",
