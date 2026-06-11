@@ -40,9 +40,6 @@
             "predicates": [
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air"
-                ],
                 "offset": [
                   5,
                   0,
@@ -51,9 +48,6 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air"
-                ],
                 "offset": [
                   0,
                   0,
@@ -62,9 +56,6 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air"
-                ],
                 "offset": [
                   -5,
                   0,
@@ -73,9 +64,6 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:air"
-                ],
                 "offset": [
                   0,
                   0,
