@@ -101,7 +101,6 @@
                                           ],
                                           "direction": "up",
                                           "allowed_placement": {
-                                            "blocks": "#wythers:tree_branch_replaceable",
                                             "type": "minecraft:matching_blocks"
                                           },
                                           "prioritize_tip": false
@@ -130,7 +129,6 @@
                                     "predicate": {
                                       "predicates": [
                                         {
-                                          "blocks": "minecraft:stripped_acacia_log",
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
@@ -149,7 +147,6 @@
                                   {
                                     "direction_of_search": "up",
                                     "target_condition": {
-                                      "blocks": "minecraft:air",
                                       "offset": [
                                         0,
                                         1,
@@ -306,7 +303,6 @@
                                           {
                                             "predicate": {
                                               "predicate": {
-                                                "blocks": "minecraft:acacia_leaves",
                                                 "offset": [
                                                   0,
                                                   13,
@@ -383,7 +379,6 @@
                                 "placement": [
                                   {
                                     "predicate": {
-                                      "blocks": "minecraft:stripped_acacia_log",
                                       "offset": [
                                         0,
                                         10,
@@ -402,7 +397,6 @@
                         "placement": [
                           {
                             "predicate": {
-                              "blocks": "minecraft:stripped_acacia_log",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -422,7 +416,6 @@
                             "target_condition": {
                               "predicates": [
                                 {
-                                  "blocks": "minecraft:air",
                                   "offset": [
                                     0,
                                     1,
@@ -431,7 +424,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "minecraft:stripped_acacia_log",
                                   "type": "minecraft:matching_blocks"
                                 }
                               ],
@@ -468,7 +460,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:stripped_acacia_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -480,7 +471,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:stripped_acacia_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
