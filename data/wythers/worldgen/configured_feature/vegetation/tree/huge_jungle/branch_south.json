@@ -97,11 +97,7 @@
                                 "block_provider": {
                                   "state": {
                                     "Name": "minecraft:jungle_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Properties": {}
                                   },
                                   "type": "minecraft:simple_state_provider"
                                 },
@@ -135,11 +131,7 @@
                             "foliage_provider": {
                               "state": {
                                 "Name": "minecraft:jungle_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Properties": {}
                               },
                               "type": "minecraft:simple_state_provider"
                             },
