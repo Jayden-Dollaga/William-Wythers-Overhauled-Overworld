@@ -25,12 +25,6 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:rooted_dirt",
-                    "minecraft:dirt",
-                    "minecraft:sand",
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -39,12 +33,6 @@
                     -1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:rooted_dirt",
-                    "minecraft:dirt",
-                    "minecraft:sand",
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -53,12 +41,6 @@
                     0,
                     0,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:rooted_dirt",
-                    "minecraft:dirt",
-                    "minecraft:sand",
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -67,12 +49,6 @@
                     0,
                     0,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:rooted_dirt",
-                    "minecraft:dirt",
-                    "minecraft:sand",
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -102,11 +78,7 @@
             "tag": "wythers:air_and_plants"
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:grass_block",
-              "minecraft:rooted_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -119,9 +91,6 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -130,9 +99,6 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -141,9 +107,6 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -152,9 +115,6 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -180,10 +140,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:oak_wood"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
