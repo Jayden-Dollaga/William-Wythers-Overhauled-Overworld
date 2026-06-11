@@ -17,8 +17,7 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": "minecraft:powder_snow"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -34,8 +33,7 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": "minecraft:snow_block"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -50,13 +48,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:grass_block",
-              "dirt",
-              "minecraft:coarse_dirt",
-              "minecraft:rooted_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
@@ -80,8 +72,7 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks",
-          "blocks": "minecraft:spruce_wood"
+          "type": "minecraft:matching_blocks"
         }
       }
     },
