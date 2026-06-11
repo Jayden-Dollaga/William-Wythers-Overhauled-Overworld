@@ -139,7 +139,6 @@
                                   ],
                                   "direction": "up",
                                   "allowed_placement": {
-                                    "blocks": "#wythers:tree_branch_replaceable",
                                     "type": "minecraft:matching_blocks"
                                   },
                                   "prioritize_tip": false
@@ -182,10 +181,6 @@
                             "predicate": {
                               "predicates": [
                                 {
-                                  "blocks": [
-                                    "minecraft:stripped_acacia_log",
-                                    "minecraft:stripped_acacia_log"
-                                  ],
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
@@ -204,7 +199,6 @@
                           {
                             "direction_of_search": "up",
                             "target_condition": {
-                              "blocks": "minecraft:air",
                               "offset": [
                                 0,
                                 1,
@@ -239,10 +233,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": [
-                        "minecraft:stripped_acacia_log",
-                        "minecraft:stripped_acacia_log"
-                      ],
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -254,10 +244,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": [
-                        "minecraft:stripped_acacia_log",
-                        "minecraft:stripped_acacia_log"
-                      ],
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
