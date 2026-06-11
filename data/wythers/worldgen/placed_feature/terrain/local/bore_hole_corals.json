@@ -17,15 +17,7 @@
                 "rules": []
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -51,15 +43,7 @@
                 "rules": []
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -85,15 +69,7 @@
                 "rules": []
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -119,15 +95,7 @@
                 "rules": []
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -153,15 +121,7 @@
                 "rules": []
               },
               "target": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -207,8 +167,7 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:water"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -219,14 +178,6 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:stone"
                 ]
               },
               {
@@ -235,14 +186,6 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:stone"
                 ]
               },
               {
@@ -251,14 +194,6 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:stone"
                 ]
               },
               {
@@ -267,14 +202,6 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:dead_brain_coral_block",
-                  "minecraft:dead_bubble_coral_block",
-                  "minecraft:dead_fire_coral_block",
-                  "minecraft:dead_horn_coral_block",
-                  "minecraft:dead_tube_coral_block",
-                  "minecraft:stone"
                 ]
               }
             ]
@@ -288,8 +215,7 @@
                   2,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -297,8 +223,7 @@
                   -2,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -306,8 +231,7 @@
                   0,
                   -1,
                   2
-                ],
-                "blocks": "minecraft:water"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -315,8 +239,7 @@
                   0,
                   -1,
                   -2
-                ],
-                "blocks": "minecraft:water"
+                ]
               }
             ]
           }
