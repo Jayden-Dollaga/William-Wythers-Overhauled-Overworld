@@ -47,9 +47,6 @@
                 {
                   "type": "minecraft:attached_to_leaves",
                   "probability": 1,
-                  "exclusion_radius_xz": 0,
-                  "exclusion_radius_y": 0,
-                  "required_empty_blocks": 1,
                   "block_provider": {
                     "type": "minecraft:simple_state_provider",
                     "state": {
@@ -83,18 +80,10 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dark_oak_log",
-                      "minecraft:spruce_log"
                     ]
                   },
                   {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:dark_oak_log",
-                      "minecraft:spruce_log"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -102,10 +91,6 @@
                       0,
                       -1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dark_oak_log",
-                      "minecraft:spruce_log"
                     ]
                   },
                   {
@@ -114,10 +99,6 @@
                       0,
                       -2,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dark_oak_log",
-                      "minecraft:spruce_log"
                     ]
                   },
                   {
@@ -126,10 +107,6 @@
                       0,
                       -3,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dark_oak_log",
-                      "minecraft:spruce_log"
                     ]
                   },
                   {
@@ -141,8 +118,7 @@
                           1,
                           0,
                           0
-                        ],
-                        "blocks": "minecraft:air"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -150,8 +126,7 @@
                           -1,
                           0,
                           0
-                        ],
-                        "blocks": "minecraft:air"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -159,8 +134,7 @@
                           0,
                           0,
                           1
-                        ],
-                        "blocks": "minecraft:air"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -168,8 +142,7 @@
                           0,
                           0,
                           -1
-                        ],
-                        "blocks": "minecraft:air"
+                        ]
                       }
                     ]
                   },
@@ -267,9 +240,6 @@
             {
               "type": "minecraft:attached_to_leaves",
               "probability": 1,
-              "exclusion_radius_xz": 0,
-              "exclusion_radius_y": 0,
-              "required_empty_blocks": 1,
               "block_provider": {
                 "type": "minecraft:simple_state_provider",
                 "state": {
@@ -303,18 +273,10 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dark_oak_log",
-                  "minecraft:spruce_log"
                 ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:dark_oak_log",
-                  "minecraft:spruce_log"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -322,10 +284,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dark_oak_log",
-                  "minecraft:spruce_log"
                 ]
               },
               {
@@ -334,10 +292,6 @@
                   0,
                   -2,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dark_oak_log",
-                  "minecraft:spruce_log"
                 ]
               },
               {
@@ -346,10 +300,6 @@
                   0,
                   -3,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dark_oak_log",
-                  "minecraft:spruce_log"
                 ]
               },
               {
@@ -361,8 +311,7 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -370,8 +319,7 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -379,8 +327,7 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -388,8 +335,7 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   }
                 ]
               },
