@@ -235,6 +235,7 @@
           "up"
         ]
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
