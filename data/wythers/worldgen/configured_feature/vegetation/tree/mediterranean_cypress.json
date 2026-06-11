@@ -35,11 +35,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -85,11 +81,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {
-                          "distance": "6",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -167,11 +159,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -217,11 +205,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {
-                          "distance": "6",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -299,11 +283,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -350,11 +330,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -401,11 +377,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {
-                          "distance": "6",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -483,11 +455,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -534,11 +502,7 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {
-                              "distance": "6",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -585,11 +549,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {
-                          "distance": "6",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -666,11 +626,7 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {
-                          "distance": "6",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -716,11 +672,7 @@
                   "type": "minecraft:simple_state_provider",
                   "state": {
                     "Name": "minecraft:spruce_leaves",
-                    "Properties": {
-                      "distance": "6",
-                      "persistent": "false",
-                      "waterlogged": "false"
-                    }
+                    "Properties": {}
                   }
                 },
                 "trunk_placer": {
