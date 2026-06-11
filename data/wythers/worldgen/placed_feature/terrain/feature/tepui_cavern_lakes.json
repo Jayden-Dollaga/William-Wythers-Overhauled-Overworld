@@ -26,10 +26,6 @@
                   2,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -38,10 +34,6 @@
                   -2,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -50,10 +42,6 @@
                   0,
                   1,
                   2
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -62,10 +50,6 @@
                   0,
                   1,
                   -2
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -74,10 +58,6 @@
                   1,
                   1,
                   1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -86,10 +66,6 @@
                   1,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -98,10 +74,6 @@
                   1,
                   1,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -110,10 +82,6 @@
                   0,
                   1,
                   1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -122,10 +90,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -134,10 +98,6 @@
                   0,
                   1,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -146,10 +106,6 @@
                   -1,
                   1,
                   1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -158,10 +114,6 @@
                   -1,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
@@ -170,17 +122,10 @@
                   -1,
                   1,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:light"
                 ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:deepslate"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -188,10 +133,6 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:deepslate",
-                  "minecraft:light"
                 ]
               },
               {
@@ -200,10 +141,6 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:deepslate",
-                  "minecraft:light"
                 ]
               },
               {
@@ -212,10 +149,6 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:deepslate",
-                  "minecraft:light"
                 ]
               },
               {
@@ -224,10 +157,6 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:deepslate",
-                  "minecraft:light"
                 ]
               },
               {
@@ -236,8 +165,7 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:deepslate"
+                ]
               }
             ]
           }
@@ -269,9 +197,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:moss_block"
             ]
           }
         ]
