@@ -23,11 +23,7 @@
                     "foliage_provider": {
                       "state": {
                         "Name": "minecraft:birch_leaves",
-                        "Properties": {
-                          "distance": "7",
-                          "persistent": "false",
-                          "waterlogged": "false"
-                        }
+                        "Properties": {}
                       },
                       "type": "minecraft:simple_state_provider"
                     },
