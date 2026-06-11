@@ -47,17 +47,10 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "tuff",
-              "minecraft:grass_block"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "air"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
