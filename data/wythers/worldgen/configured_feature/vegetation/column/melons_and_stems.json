@@ -16,16 +16,6 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:grass_block",
-                    "minecraft:moss_block",
-                    "minecraft:sand",
-                    "minecraft:coarse_dirt",
-                    "minecraft:podzol",
-                    "minecraft:dirt",
-                    "minecraft:rooted_dirt",
-                    "minecraft:red_sand"
                   ]
                 },
                 {
@@ -34,9 +24,6 @@
                     0,
                     0,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -45,9 +32,6 @@
                     0,
                     1,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -69,16 +53,6 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:grass_block",
-                    "minecraft:moss_block",
-                    "minecraft:sand",
-                    "minecraft:coarse_dirt",
-                    "minecraft:podzol",
-                    "minecraft:dirt",
-                    "minecraft:rooted_dirt",
-                    "minecraft:red_sand"
                   ]
                 },
                 {
@@ -87,9 +61,6 @@
                     0,
                     0,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -98,9 +69,6 @@
                     0,
                     1,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -122,16 +90,6 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:grass_block",
-                    "minecraft:moss_block",
-                    "minecraft:sand",
-                    "minecraft:coarse_dirt",
-                    "minecraft:podzol",
-                    "minecraft:dirt",
-                    "minecraft:rooted_dirt",
-                    "minecraft:red_sand"
                   ]
                 },
                 {
@@ -140,9 +98,6 @@
                     -1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -151,9 +106,6 @@
                     -1,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
@@ -175,16 +127,6 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:grass_block",
-                    "minecraft:moss_block",
-                    "minecraft:sand",
-                    "minecraft:coarse_dirt",
-                    "minecraft:podzol",
-                    "minecraft:dirt",
-                    "minecraft:rooted_dirt",
-                    "minecraft:red_sand"
                   ]
                 },
                 {
@@ -193,9 +135,6 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
@@ -204,9 +143,6 @@
                     1,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 }
               ]
