@@ -14,9 +14,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
-                        "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
@@ -100,9 +97,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
-                        "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
@@ -195,9 +189,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
-                        "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
@@ -292,19 +283,7 @@
                             "type": "minecraft:all_of",
                             "predicates": [
                               {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:air",
-                                  "minecraft:water",
-                                  "minecraft:pale_hanging_moss",
-                                  "minecraft:rooted_dirt",
-                                  "minecraft:dirt",
-                                  "minecraft:grass_block",
-                                  "minecraft:packed_mud",
-                                  "minecraft:mud",
-                                  "minecraft:soul_sand",
-                                  "minecraft:soul_soil"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               },
                               {
                                 "type": "minecraft:any_of",
@@ -324,10 +303,6 @@
                                       0,
                                       -1,
                                       0
-                                    ],
-                                    "blocks": [
-                                      "minecraft:acacia_wood",
-                                      "minecraft:soul_sand"
                                     ]
                                   }
                                 ]
@@ -341,8 +316,7 @@
                                       1,
                                       4,
                                       0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -350,8 +324,7 @@
                                       -1,
                                       4,
                                       0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -359,8 +332,7 @@
                                       0,
                                       4,
                                       1
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -368,8 +340,7 @@
                                       0,
                                       4,
                                       -1
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
+                                    ]
                                   },
                                   {
                                     "type": "minecraft:matching_blocks",
@@ -377,8 +348,7 @@
                                       0,
                                       1,
                                       0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
+                                    ]
                                   }
                                 ]
                               }
