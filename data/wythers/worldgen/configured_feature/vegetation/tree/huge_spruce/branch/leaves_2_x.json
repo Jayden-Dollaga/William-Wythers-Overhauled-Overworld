@@ -12,10 +12,7 @@
         "directions": [
           "down"
         ],
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
         "probability": 0.1,
-        "required_empty_blocks": 2,
         "type": "minecraft:attached_to_leaves"
       },
       {
@@ -29,10 +26,7 @@
         "directions": [
           "east"
         ],
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
         "probability": 0.2,
-        "required_empty_blocks": 1,
         "type": "minecraft:attached_to_leaves"
       },
       {
@@ -46,10 +40,7 @@
         "directions": [
           "south"
         ],
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
         "probability": 0.2,
-        "required_empty_blocks": 1,
         "type": "minecraft:attached_to_leaves"
       },
       {
@@ -63,10 +54,7 @@
         "directions": [
           "west"
         ],
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
         "probability": 0.2,
-        "required_empty_blocks": 1,
         "type": "minecraft:attached_to_leaves"
       },
       {
@@ -80,10 +68,7 @@
         "directions": [
           "south"
         ],
-        "exclusion_radius_xz": 0,
-        "exclusion_radius_y": 0,
         "probability": 0.2,
-        "required_empty_blocks": 1,
         "type": "minecraft:attached_to_leaves"
       }
     ],
