@@ -26,9 +26,6 @@
                     0,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:dirt_path"
                   ]
                 }
               }
@@ -83,10 +80,6 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": [
-                "minecraft:coarse_dirt",
-                "minecraft:hay_block"
               ]
             }
           },
@@ -100,9 +93,6 @@
                   0,
                   -3,
                   0
-                ],
-                "blocks": [
-                  "minecraft:hay_block"
                 ]
               }
             }
