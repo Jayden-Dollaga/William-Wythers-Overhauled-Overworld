@@ -16,10 +16,6 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": [
-                "air",
-                "minecraft:water"
               ]
             },
             "then": {
@@ -62,8 +58,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:brown_terracotta"
+        "type": "minecraft:matching_blocks"
       }
     },
     {
