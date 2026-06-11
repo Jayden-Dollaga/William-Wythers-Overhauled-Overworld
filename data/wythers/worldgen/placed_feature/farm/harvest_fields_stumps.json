@@ -10,10 +10,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:dripstone_block"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
