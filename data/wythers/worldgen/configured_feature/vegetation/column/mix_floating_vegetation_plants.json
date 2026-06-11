@@ -15,8 +15,7 @@
                   0,
                   2,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -27,8 +26,7 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -39,8 +37,7 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": "minecraft:azalea_leaves"
+                ]
               }
             },
             {
@@ -51,9 +48,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:water"
                 ]
               }
             },
@@ -70,8 +64,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -79,8 +72,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -88,8 +80,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -97,8 +88,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     }
                   ]
                 }
@@ -120,8 +110,7 @@
                   0,
                   2,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -132,8 +121,7 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -144,8 +132,7 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": "minecraft:azalea_leaves"
+                ]
               }
             },
             {
@@ -156,9 +143,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:water"
                 ]
               }
             },
@@ -175,8 +159,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -184,8 +167,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -193,8 +175,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -202,8 +183,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     }
                   ]
                 }
@@ -225,8 +205,7 @@
                   0,
                   2,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -237,8 +216,7 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -249,8 +227,7 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": "minecraft:azalea_leaves"
+                ]
               }
             },
             {
@@ -261,9 +238,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:water"
                 ]
               }
             },
@@ -280,8 +254,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -289,8 +262,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -298,8 +270,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -307,8 +278,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     }
                   ]
                 }
@@ -330,8 +300,7 @@
                   0,
                   2,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -342,8 +311,7 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             },
             {
@@ -354,8 +322,7 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": "minecraft:azalea_leaves"
+                ]
               }
             },
             {
@@ -366,9 +333,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:water"
                 ]
               }
             },
@@ -385,8 +349,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -394,8 +357,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -403,8 +365,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -412,8 +373,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:water"
+                      ]
                     }
                   ]
                 }
@@ -434,8 +394,7 @@
               0,
               2,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -446,8 +405,7 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         },
         {
@@ -458,8 +416,7 @@
               0,
               0,
               0
-            ],
-            "blocks": "minecraft:azalea_leaves"
+            ]
           }
         },
         {
@@ -470,9 +427,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:water"
             ]
           }
         },
@@ -489,8 +443,7 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -498,8 +451,7 @@
                     -1,
                     0,
                     0
-                  ],
-                  "blocks": "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -507,8 +459,7 @@
                     0,
                     0,
                     1
-                  ],
-                  "blocks": "minecraft:water"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -516,8 +467,7 @@
                     0,
                     0,
                     -1
-                  ],
-                  "blocks": "minecraft:water"
+                  ]
                 }
               ]
             }
