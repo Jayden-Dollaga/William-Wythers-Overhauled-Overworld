@@ -16,7 +16,8 @@
                       "Name": "minecraft:air"
                     }
                   },
-                  "rules": []
+                  "rules": [],
+                  "type": "minecraft:rule_based_state_provider"
                 },
                 "target": {
                   "type": "minecraft:all_of",
@@ -181,7 +182,8 @@
                   "Name": "minecraft:air"
                 }
               },
-              "rules": []
+              "rules": [],
+              "type": "minecraft:rule_based_state_provider"
             },
             "target": {
               "type": "minecraft:all_of",
