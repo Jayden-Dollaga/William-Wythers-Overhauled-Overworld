@@ -151,10 +151,6 @@
             0,
             1,
             0
-          ],
-          "blocks": [
-            "minecraft:dripstone_block",
-            "minecraft:moss_block"
           ]
         }
       }
