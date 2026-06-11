@@ -616,10 +616,7 @@
                         "rules": []
                       },
                       "target": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": [
-                          "minecraft:grass_block"
-                        ]
+                        "type": "minecraft:matching_blocks"
                       },
                       "radius": {
                         "type": "minecraft:uniform",
@@ -815,10 +812,7 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:pale_oak_wood"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 }
               ]
