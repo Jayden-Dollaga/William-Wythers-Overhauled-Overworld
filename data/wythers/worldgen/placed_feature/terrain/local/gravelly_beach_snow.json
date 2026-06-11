@@ -36,16 +36,10 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:gravel",
-              "minecraft:stone",
-              "minecraft:packed_ice"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
