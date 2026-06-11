@@ -26,14 +26,10 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:calcite"
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:any_of",
@@ -44,10 +40,6 @@
                       1,
                       1,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -56,10 +48,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -73,10 +61,6 @@
                       1,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -85,10 +69,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -102,10 +82,6 @@
                       1,
                       1,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -114,10 +90,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -131,10 +103,6 @@
                       0,
                       1,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -143,10 +111,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -160,10 +124,6 @@
                       0,
                       1,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -172,10 +132,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -189,10 +145,6 @@
                       -1,
                       1,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -201,10 +153,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -218,10 +166,6 @@
                       -1,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -230,10 +174,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
@@ -247,10 +187,6 @@
                       -1,
                       1,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   },
                   {
@@ -259,10 +195,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:calcite",
-                      "minecraft:light"
                     ]
                   }
                 ]
