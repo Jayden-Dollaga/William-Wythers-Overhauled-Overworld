@@ -158,9 +158,6 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 1,
-                              "exclusion_radius_xz": 1,
-                              "exclusion_radius_y": 1,
-                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
@@ -566,9 +563,6 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 1,
-                              "exclusion_radius_xz": 1,
-                              "exclusion_radius_y": 1,
-                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
