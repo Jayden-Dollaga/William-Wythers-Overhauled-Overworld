@@ -25,10 +25,7 @@
             "if_true": {
               "type": "minecraft:not",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:grass_block"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             },
             "then": {
@@ -53,10 +50,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:grass_block"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -64,9 +58,6 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "dirt"
                 ]
               }
             ]
@@ -83,9 +74,6 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:grass_block"
                     ]
                   },
                   {
@@ -103,11 +91,7 @@
                 "type": "minecraft:any_of",
                 "predicates": [
                   {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:dirt",
-                      "minecraft:grass_block"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 ]
               }
@@ -133,10 +117,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:jungle_wood"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -144,9 +125,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:dripstone_block"
                 ]
               }
             ]
@@ -155,10 +133,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:oak_wood"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:not",
@@ -168,9 +143,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:dripstone_block"
                   ]
                 }
               }
