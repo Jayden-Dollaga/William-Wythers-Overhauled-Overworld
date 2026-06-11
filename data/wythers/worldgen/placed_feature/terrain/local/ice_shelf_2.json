@@ -21,21 +21,10 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:packed_ice",
-              "minecraft:blue_ice"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:air",
-              "minecraft:packed_ice",
-              "minecraft:snow_block",
-              "minecraft:snow",
-              "minecraft:blue_ice"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
@@ -59,9 +48,6 @@
             0,
             1,
             0
-          ],
-          "blocks": [
-            "minecraft:moss_block"
           ]
         }
       }
