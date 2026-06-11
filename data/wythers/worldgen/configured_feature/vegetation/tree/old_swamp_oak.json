@@ -763,10 +763,7 @@
                               "config": {
                                 "direction": "down",
                                 "allowed_placement": {
-                                  "type": "minecraft:matching_blocks",
-                                  "blocks": [
-                                    "air"
-                                  ]
+                                  "type": "minecraft:matching_blocks"
                                 },
                                 "prioritize_tip": true,
                                 "layers": [
@@ -816,17 +813,10 @@
                                         0,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "oak_wood",
-                                        "oak_leaves"
                                       ]
                                     },
                                     {
-                                      "type": "minecraft:matching_blocks",
-                                      "blocks": [
-                                        "air"
-                                      ]
+                                      "type": "minecraft:matching_blocks"
                                     }
                                   ]
                                 },
