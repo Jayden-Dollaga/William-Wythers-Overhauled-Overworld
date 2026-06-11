@@ -121,9 +121,6 @@
               0,
               -2,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           },
           {
@@ -132,9 +129,6 @@
               0,
               -3,
               0
-            ],
-            "blocks": [
-              "minecraft:packed_mud"
             ]
           }
         ]
