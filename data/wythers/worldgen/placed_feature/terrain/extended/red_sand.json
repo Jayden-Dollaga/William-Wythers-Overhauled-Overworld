@@ -45,11 +45,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:light_gray_terracotta",
-          "minecraft:gray_terracotta"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
