@@ -28,10 +28,7 @@
                               "radius": 8,
                               "half_height": 3,
                               "target": {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:stripped_pale_oak_wood"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               }
                             },
                             "type": "minecraft:disk"
@@ -53,10 +50,7 @@
                               "radius": 8,
                               "half_height": 2,
                               "target": {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:stripped_pale_oak_wood"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               }
                             },
                             "type": "minecraft:disk"
@@ -78,10 +72,7 @@
                               "radius": 8,
                               "half_height": 1,
                               "target": {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:stripped_pale_oak_wood"
-                                ]
+                                "type": "minecraft:matching_blocks"
                               }
                             },
                             "type": "minecraft:disk"
