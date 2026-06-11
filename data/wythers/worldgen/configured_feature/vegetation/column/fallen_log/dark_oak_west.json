@@ -3,8 +3,7 @@
   "config": {
     "direction": "west",
     "allowed_placement": {
-      "type": "minecraft:matching_blocks",
-      "blocks": "minecraft:air"
+      "type": "minecraft:matching_blocks"
     },
     "prioritize_tip": false,
     "layers": [
