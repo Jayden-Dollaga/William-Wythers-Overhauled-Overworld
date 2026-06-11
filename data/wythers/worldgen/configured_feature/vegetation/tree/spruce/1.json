@@ -99,9 +99,6 @@
                               {
                                 "type": "minecraft:attached_to_leaves",
                                 "probability": 0.075,
-                                "exclusion_radius_xz": 0,
-                                "exclusion_radius_y": 0,
-                                "required_empty_blocks": 2,
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -161,9 +158,6 @@
                               {
                                 "type": "minecraft:attached_to_leaves",
                                 "probability": 0.035,
-                                "exclusion_radius_xz": 0,
-                                "exclusion_radius_y": 0,
-                                "required_empty_blocks": 2,
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -242,8 +236,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:spruce_log"
+                      "type": "minecraft:matching_blocks"
                     }
                   },
                   {
@@ -259,8 +252,7 @@
                               1,
                               14,
                               0
-                            ],
-                            "blocks": "minecraft:spruce_log"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -268,8 +260,7 @@
                               0,
                               14,
                               1
-                            ],
-                            "blocks": "minecraft:spruce_log"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -277,8 +268,7 @@
                               -1,
                               14,
                               0
-                            ],
-                            "blocks": "minecraft:spruce_log"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -286,8 +276,7 @@
                               0,
                               14,
                               -1
-                            ],
-                            "blocks": "minecraft:spruce_log"
+                            ]
                           }
                         ]
                       }
@@ -305,8 +294,7 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": "minecraft:spruce_log"
+                      "type": "minecraft:matching_blocks"
                     }
                   }
                 ]
@@ -333,11 +321,7 @@
                   "type": "minecraft:all_of",
                   "predicates": [
                     {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:air",
-                        "minecraft:snow"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -345,8 +329,7 @@
                         0,
                         -1,
                         0
-                      ],
-                      "blocks": "minecraft:snow_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -354,8 +337,7 @@
                         0,
                         -2,
                         0
-                      ],
-                      "blocks": "minecraft:coarse_dirt"
+                      ]
                     }
                   ]
                 }
