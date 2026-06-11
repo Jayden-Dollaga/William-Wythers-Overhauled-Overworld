@@ -101,6 +101,7 @@
       {
         "type": "minecraft:trunk_vine"
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
