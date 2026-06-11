@@ -37,15 +37,6 @@
         "probability": 0.1
       }
     ],
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:stripped_pale_oak_log",
-        "Properties": {
-          "axis": "y"
-        }
-      }
-    },
     "foliage_placer": {
       "type": "minecraft:mega_pine_foliage_placer",
       "offset": 2,
@@ -85,7 +76,6 @@
         }
       ]
     },
-    "force_dirt": false,
     "ignore_vines": true,
     "minimum_size": {
       "type": "minecraft:three_layers_feature_size",
