@@ -49,6 +49,7 @@
         "max_inclusive": 5
       }
     },
-    "decorators": []
+    "decorators": [],
+    "type": "minecraft:tree"
   }
 }
