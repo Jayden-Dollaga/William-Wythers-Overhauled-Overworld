@@ -20,10 +20,6 @@
                     1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
                   ]
                 },
                 {
@@ -32,10 +28,6 @@
                     -1,
                     0,
                     0
-                  ],
-                  "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
                   ]
                 },
                 {
@@ -44,10 +36,6 @@
                     0,
                     0,
                     1
-                  ],
-                  "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
                   ]
                 },
                 {
@@ -56,10 +44,6 @@
                     0,
                     0,
                     -1
-                  ],
-                  "blocks": [
-                    "calcite",
-                    "white_concrete_powder"
                   ]
                 }
               ]
@@ -83,18 +67,10 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "air"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:smooth_red_sandstone",
-              "minecraft:red_sand",
-              "calcite"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -102,9 +78,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "red_sandstone"
             ]
           },
           {
@@ -118,10 +91,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "air",
-                    "water"
                   ]
                 }
               ]
@@ -146,10 +115,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:smooth_red_sandstone"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
@@ -162,9 +128,6 @@
             0,
             1,
             0
-          ],
-          "blocks": [
-            "minecraft:moss_block"
           ]
         }
       }
@@ -179,10 +142,6 @@
             0,
             2,
             0
-          ],
-          "blocks": [
-            "minecraft:sculk",
-            "minecraft:black_concrete"
           ]
         }
       }
