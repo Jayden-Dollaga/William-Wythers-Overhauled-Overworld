@@ -392,10 +392,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "stone"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           },
@@ -428,12 +425,7 @@
           "type": "minecraft:any_of",
           "predicates": [
             {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:spruce_wood",
-                "minecraft:dark_oak_wood",
-                "minecraft:dark_oak_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             {
               "type": "minecraft:matching_blocks",
@@ -441,9 +433,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:dripstone_block"
               ]
             }
           ]
