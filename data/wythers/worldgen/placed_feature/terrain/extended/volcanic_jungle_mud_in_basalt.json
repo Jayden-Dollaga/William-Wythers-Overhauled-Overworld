@@ -22,12 +22,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -36,12 +30,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -50,12 +38,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -64,12 +46,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -78,12 +54,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -92,12 +62,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -106,12 +70,6 @@
                       2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -120,12 +78,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -134,12 +86,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -148,12 +94,6 @@
                       -2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -162,12 +102,6 @@
                       0,
                       0,
                       2
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -176,12 +110,6 @@
                       0,
                       0,
                       -2
-                    ],
-                    "blocks": [
-                      "minecraft:mud",
-                      "minecraft:grass_block",
-                      "minecraft:smooth_basalt",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -190,10 +118,6 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:air",
-                      "minecraft:mud"
                     ]
                   },
                   {
@@ -202,9 +126,6 @@
                       0,
                       2,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:air"
                     ]
                   }
                 ]
@@ -220,8 +141,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:smooth_basalt"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 4,
       "half_height": 4
