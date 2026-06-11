@@ -17,12 +17,7 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "stone",
-                            "minecraft:andesite",
-                            "minecraft:air"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -63,9 +58,6 @@
                                 0,
                                 1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             },
                             {
@@ -74,10 +66,6 @@
                                 0,
                                 0,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:andesite",
-                                "stone"
                               ]
                             },
                             {
@@ -89,10 +77,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite"
                                   ]
                                 },
                                 {
@@ -101,10 +85,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite"
                                   ]
                                 },
                                 {
@@ -113,10 +93,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite"
                                   ]
                                 },
                                 {
@@ -125,10 +101,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite"
                                   ]
                                 },
                                 {
@@ -137,11 +109,6 @@
                                     1,
                                     1,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite",
-                                    "minecraft:moss_block"
                                   ]
                                 },
                                 {
@@ -150,11 +117,6 @@
                                     -1,
                                     1,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite",
-                                    "minecraft:moss_block"
                                   ]
                                 },
                                 {
@@ -163,11 +125,6 @@
                                     0,
                                     1,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite",
-                                    "minecraft:moss_block"
                                   ]
                                 },
                                 {
@@ -176,11 +133,6 @@
                                     0,
                                     1,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:diorite",
-                                    "minecraft:calcite",
-                                    "minecraft:moss_block"
                                   ]
                                 }
                               ]
