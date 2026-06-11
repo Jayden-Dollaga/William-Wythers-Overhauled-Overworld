@@ -102,7 +102,6 @@
                         -1,
                         0
                       ],
-                      "blocks": "#wythers:dirt",
                       "type": "minecraft:matching_blocks"
                     },
                     {
@@ -111,7 +110,6 @@
                         -1,
                         0
                       ],
-                      "blocks": "minecraft:stripped_acacia_wood",
                       "type": "minecraft:matching_blocks"
                     }
                   ],
@@ -131,10 +129,6 @@
                     3,
                     0
                   ],
-                  "blocks": [
-                    "minecraft:stripped_acacia_log",
-                    "minecraft:stripped_acacia_wood"
-                  ],
                   "type": "minecraft:matching_blocks"
                 },
                 {
@@ -142,10 +136,6 @@
                     0,
                     3,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_acacia_log",
-                    "minecraft:stripped_acacia_wood"
                   ],
                   "type": "minecraft:matching_blocks"
                 },
@@ -155,10 +145,6 @@
                     3,
                     0
                   ],
-                  "blocks": [
-                    "minecraft:stripped_acacia_log",
-                    "minecraft:stripped_acacia_wood"
-                  ],
                   "type": "minecraft:matching_blocks"
                 },
                 {
@@ -166,10 +152,6 @@
                     0,
                     3,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:stripped_acacia_log",
-                    "minecraft:stripped_acacia_wood"
                   ],
                   "type": "minecraft:matching_blocks"
                 }
