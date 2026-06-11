@@ -74,7 +74,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "type": "minecraft:rule_based_state_provider"
             },
             "radius": 8,
             "half_height": 4,
@@ -110,7 +111,8 @@
                   "Name": "minecraft:calcite"
                 }
               },
-              "rules": []
+              "rules": [],
+              "type": "minecraft:rule_based_state_provider"
             },
             "radius": 8,
             "half_height": 4,
