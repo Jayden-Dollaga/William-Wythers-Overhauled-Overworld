@@ -179,7 +179,8 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -385,7 +386,8 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -591,7 +593,8 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -613,7 +616,8 @@
                             }
                           }
                         },
-                        "rules": []
+                        "rules": [],
+                        "type": "minecraft:rule_based_state_provider"
                       },
                       "target": {
                         "type": "minecraft:matching_blocks"
@@ -801,7 +805,8 @@
                       "radius": 5,
                       "tries": 500
                     }
-                  ]
+                  ],
+                  "type": "minecraft:tree"
                 }
               },
               "placement": [
