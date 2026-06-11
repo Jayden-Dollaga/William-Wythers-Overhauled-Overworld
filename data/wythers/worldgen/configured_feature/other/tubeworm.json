@@ -11,10 +11,7 @@
                   "config": {
                     "direction": "up",
                     "allowed_placement": {
-                      "type": "minecraft:matching_blocks",
-                      "blocks": [
-                        "minecraft:water"
-                      ]
+                      "type": "minecraft:matching_blocks"
                     },
                     "prioritize_tip": true,
                     "layers": [
@@ -90,9 +87,6 @@
                                   1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -101,9 +95,6 @@
                                   -1,
                                   -1,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -112,9 +103,6 @@
                                   0,
                                   -1,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -123,9 +111,6 @@
                                   0,
                                   -1,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:light"
                                 ]
                               }
                             ]
@@ -137,11 +122,6 @@
                             1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:fire_coral_fan",
-                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -150,11 +130,6 @@
                             -1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:fire_coral_fan",
-                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -163,11 +138,6 @@
                             0,
                             0,
                             1
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:fire_coral_fan",
-                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -176,11 +146,6 @@
                             0,
                             0,
                             -1
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:fire_coral_fan",
-                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -189,11 +154,6 @@
                             0,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:water",
-                            "minecraft:fire_coral_fan",
-                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -202,9 +162,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:mud"
                           ]
                         }
                       ]
