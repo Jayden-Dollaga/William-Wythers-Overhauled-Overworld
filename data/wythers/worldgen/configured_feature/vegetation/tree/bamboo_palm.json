@@ -38,6 +38,7 @@
       "offset": 1,
       "height": 2
     },
-    "decorators": []
+    "decorators": [],
+    "type": "minecraft:tree"
   }
 }
