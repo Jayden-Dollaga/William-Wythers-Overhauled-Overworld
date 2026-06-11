@@ -22,12 +22,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -36,12 +30,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -50,12 +38,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -64,12 +46,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -78,12 +54,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -92,12 +62,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -106,12 +70,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -120,12 +78,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:muddy_mangrove_roots",
-                      "minecraft:grass_block",
-                      "minecraft:mud",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -134,9 +86,6 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:air"
                     ]
                   }
                 ]
@@ -152,8 +101,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:mud"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 3,
       "half_height": 3
