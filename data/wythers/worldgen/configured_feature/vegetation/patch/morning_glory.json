@@ -19,12 +19,7 @@
                           "config": {
                             "direction": "up",
                             "allowed_placement": {
-                              "type": "minecraft:matching_blocks",
-                              "blocks": [
-                                "minecraft:sand",
-                                "minecraft:leaf_litter",
-                                "minecraft:air"
-                              ]
+                              "type": "minecraft:matching_blocks"
                             },
                             "prioritize_tip": false,
                             "layers": [
@@ -224,10 +219,6 @@
                                     0,
                                     1,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:air"
                                   ]
                                 },
                                 {
@@ -236,9 +227,6 @@
                                     0,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:sand"
                                   ]
                                 },
                                 {
@@ -250,9 +238,6 @@
                                         1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:leaf_litter"
                                       ]
                                     },
                                     {
@@ -261,9 +246,6 @@
                                         -1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:leaf_litter"
                                       ]
                                     },
                                     {
@@ -272,9 +254,6 @@
                                         0,
                                         1,
                                         1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:leaf_litter"
                                       ]
                                     },
                                     {
@@ -283,9 +262,6 @@
                                         0,
                                         1,
                                         -1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:leaf_litter"
                                       ]
                                     }
                                   ]
@@ -301,9 +277,6 @@
                                           1,
                                           1,
                                           0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:pink_petals"
                                         ]
                                       },
                                       {
@@ -312,9 +285,6 @@
                                           -1,
                                           1,
                                           0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:pink_petals"
                                         ]
                                       },
                                       {
@@ -323,9 +293,6 @@
                                           0,
                                           1,
                                           1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:pink_petals"
                                         ]
                                       },
                                       {
@@ -334,9 +301,6 @@
                                           0,
                                           1,
                                           -1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:pink_petals"
                                         ]
                                       }
                                     ]
@@ -359,9 +323,6 @@
                           0,
                           -1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:sand"
                         ]
                       }
                     },
@@ -444,10 +405,6 @@
                                     0,
                                     1,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:air"
                                   ]
                                 },
                                 {
@@ -456,9 +413,6 @@
                                     0,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:sand"
                                   ]
                                 },
                                 {
@@ -467,10 +421,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:pink_petals"
                                   ]
                                 },
                                 {
@@ -479,10 +429,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:pink_petals"
                                   ]
                                 },
                                 {
@@ -491,10 +437,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:pink_petals"
                                   ]
                                 },
                                 {
@@ -503,10 +445,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:leaf_litter",
-                                    "minecraft:pink_petals"
                                   ]
                                 }
                               ]
@@ -526,9 +464,6 @@
                           0,
                           -1,
                           0
-                        ],
-                        "blocks": [
-                          "minecraft:sand"
                         ]
                       }
                     },
@@ -730,9 +665,6 @@
                                 0,
                                 0,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:air"
                               ]
                             },
                             {
@@ -741,9 +673,6 @@
                                 0,
                                 -1,
                                 0
-                              ],
-                              "blocks": [
-                                "minecraft:sand"
                               ]
                             },
                             {
