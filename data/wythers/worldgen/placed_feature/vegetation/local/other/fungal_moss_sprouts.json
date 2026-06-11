@@ -97,7 +97,8 @@
                         "offset": 1,
                         "height": 15
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": [
