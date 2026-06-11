@@ -19,15 +19,10 @@
               "direction_of_search": "down",
               "max_steps": 3,
               "target_condition": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:dripstone_block"
+                "type": "minecraft:matching_blocks"
               },
               "allowed_search_condition": {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:cave_air",
-                  "minecraft:water"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -66,9 +61,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:moss_block"
             ]
           }
         ]
