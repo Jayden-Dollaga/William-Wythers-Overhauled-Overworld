@@ -23,11 +23,6 @@
               1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -36,11 +31,6 @@
               -1,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -49,10 +39,6 @@
               0,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite"
             ]
           },
           {
@@ -61,11 +47,6 @@
               0,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -74,11 +55,6 @@
               0,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -87,11 +63,6 @@
               1,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -100,11 +71,6 @@
               1,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -113,11 +79,6 @@
               -1,
               0,
               1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -126,11 +87,6 @@
               -1,
               0,
               -1
-            ],
-            "blocks": [
-              "minecraft:deepslate",
-              "minecraft:calcite",
-              "minecraft:light"
             ]
           },
           {
@@ -148,8 +104,7 @@
               1,
               1,
               1
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -157,8 +112,7 @@
               1,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -166,8 +120,7 @@
               1,
               1,
               -1
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -175,8 +128,7 @@
               0,
               1,
               1
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -184,8 +136,7 @@
               0,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -193,8 +144,7 @@
               0,
               1,
               -1
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -202,8 +152,7 @@
               -1,
               1,
               1
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -211,8 +160,7 @@
               -1,
               1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -220,8 +168,7 @@
               -1,
               1,
               -1
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         ]
       },
