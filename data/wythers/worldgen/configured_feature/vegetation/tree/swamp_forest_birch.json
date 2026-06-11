@@ -58,6 +58,7 @@
         "type": "minecraft:beehive",
         "probability": 0.01
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
