@@ -14,7 +14,8 @@
                     "Name": "minecraft:brain_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
@@ -40,7 +41,8 @@
                     "Name": "minecraft:fire_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
@@ -66,7 +68,8 @@
                     "Name": "minecraft:horn_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
@@ -92,7 +95,8 @@
                     "Name": "minecraft:bubble_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
@@ -118,7 +122,8 @@
                     "Name": "minecraft:tube_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_blocks"
