@@ -182,8 +182,7 @@
                             "state": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "15",
-                                "waterlogged": "false"
+                                "level": "15"
                               }
                             }
                           }
@@ -276,8 +275,7 @@
                             "state": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "15",
-                                "waterlogged": "false"
+                                "level": "15"
                               }
                             }
                           }
