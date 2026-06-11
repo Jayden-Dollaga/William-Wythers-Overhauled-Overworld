@@ -15,10 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
