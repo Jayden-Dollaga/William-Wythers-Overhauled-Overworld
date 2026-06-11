@@ -40,7 +40,8 @@
                               "offset": 0,
                               "height": 1
                             },
-                            "decorators": []
+                            "decorators": [],
+                            "type": "minecraft:tree"
                           },
                           "type": "minecraft:tree"
                         },
@@ -67,7 +68,8 @@
                           "Name": "minecraft:mushroom_stem"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 3,
                     "half_height": 4,
@@ -126,7 +128,8 @@
                           "Name": "minecraft:mushroom_stem"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 4,
                     "half_height": 2,
@@ -177,7 +180,8 @@
                           "Name": "minecraft:mushroom_stem"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 5,
                     "half_height": 0.5,
@@ -325,7 +329,8 @@
                                   }
                                 }
                               }
-                            ]
+                            ],
+                            "type": "minecraft:rule_based_state_provider"
                           },
                           "radius": 8,
                           "half_height": 0.5,
@@ -430,7 +435,8 @@
                                   }
                                 }
                               }
-                            ]
+                            ],
+                            "type": "minecraft:rule_based_state_provider"
                           },
                           "radius": 8,
                           "half_height": 0.5,
@@ -621,7 +627,8 @@
                                 "Name": "minecraft:red_mushroom_block"
                               }
                             },
-                            "rules": []
+                            "rules": [],
+                            "type": "minecraft:rule_based_state_provider"
                           },
                           "radius": 8,
                           "half_height": 0.5,
@@ -700,7 +707,8 @@
                           "Name": "minecraft:red_mushroom_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 8,
                     "half_height": 0.5,
@@ -785,7 +793,8 @@
                           "Name": "minecraft:red_mushroom_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 5,
                     "half_height": 0.5,
@@ -857,7 +866,8 @@
                           "Name": "minecraft:red_mushroom_block"
                         }
                       },
-                      "rules": []
+                      "rules": [],
+                      "type": "minecraft:rule_based_state_provider"
                     },
                     "radius": 8,
                     "half_height": 0.5,
