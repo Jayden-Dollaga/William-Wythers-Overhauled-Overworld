@@ -22,11 +22,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -35,11 +30,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -48,11 +38,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -61,11 +46,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -74,11 +54,6 @@
                       1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -87,11 +62,6 @@
                       1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -100,11 +70,6 @@
                       2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -113,11 +78,6 @@
                       -1,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -126,11 +86,6 @@
                       -1,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -139,11 +94,6 @@
                       -2,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -152,11 +102,6 @@
                       0,
                       0,
                       2
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   },
                   {
@@ -165,11 +110,6 @@
                       0,
                       0,
                       -2
-                    ],
-                    "blocks": [
-                      "minecraft:terracotta",
-                      "minecraft:red_terracotta",
-                      "minecraft:air"
                     ]
                   }
                 ]
@@ -185,8 +125,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:terracotta"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 3,
       "half_height": 3
@@ -205,11 +144,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:smooth_sandstone",
-              "minecraft:cut_sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -217,9 +152,6 @@
               0,
               2,
               0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
             ]
           }
         ]
