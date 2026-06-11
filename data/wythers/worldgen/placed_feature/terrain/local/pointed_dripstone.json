@@ -62,9 +62,6 @@
           0,
           -1,
           0
-        ],
-        "blocks": [
-          "minecraft:dripstone_block"
         ]
       },
       "allowed_search_condition": {
