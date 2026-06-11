@@ -74,7 +74,8 @@
                         "radius": 2,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -147,7 +148,8 @@
                         "radius": 3,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": []
@@ -192,7 +194,8 @@
                     "offset": 0,
                     "height": 16
                   },
-                  "decorators": []
+                  "decorators": [],
+                  "type": "minecraft:tree"
                 }
               },
               "placement": [
