@@ -9,7 +9,8 @@
             "Name": "minecraft:mossy_cobblestone"
           }
         },
-        "rules": []
+        "rules": [],
+        "type": "minecraft:rule_based_state_provider"
       },
       "target": {
         "type": "minecraft:all_of",
