@@ -22,9 +22,6 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:water"
                     ]
                   },
                   {
@@ -33,9 +30,6 @@
                       1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dripstone_block"
                     ]
                   },
                   {
@@ -44,9 +38,6 @@
                       -1,
                       0,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:dripstone_block"
                     ]
                   },
                   {
@@ -55,9 +46,6 @@
                       0,
                       0,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:dripstone_block"
                     ]
                   },
                   {
@@ -66,9 +54,6 @@
                       0,
                       0,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:dripstone_block"
                     ]
                   },
                   {
@@ -80,8 +65,7 @@
                           1,
                           1,
                           0
-                        ],
-                        "blocks": "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -89,8 +73,7 @@
                           -1,
                           1,
                           0
-                        ],
-                        "blocks": "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -98,8 +81,7 @@
                           0,
                           1,
                           1
-                        ],
-                        "blocks": "minecraft:dripstone_block"
+                        ]
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -107,8 +89,7 @@
                           0,
                           1,
                           -1
-                        ],
-                        "blocks": "minecraft:dripstone_block"
+                        ]
                       }
                     ]
                   }
@@ -125,8 +106,7 @@
         ]
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:dripstone_block"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 3,
       "half_height": 1
