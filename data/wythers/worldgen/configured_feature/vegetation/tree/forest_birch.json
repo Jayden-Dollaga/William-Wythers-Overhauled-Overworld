@@ -220,8 +220,7 @@
                                   0,
                                   -1,
                                   0
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -229,8 +228,7 @@
                                   1,
                                   0,
                                   1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -238,8 +236,7 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -247,8 +244,7 @@
                                   1,
                                   0,
                                   -1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -256,8 +252,7 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -265,8 +260,7 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -274,8 +268,7 @@
                                   -1,
                                   0,
                                   1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -283,8 +276,7 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -292,8 +284,7 @@
                                   -1,
                                   0,
                                   -1
-                                ],
-                                "blocks": "minecraft:birch_wood"
+                                ]
                               }
                             ]
                           }
@@ -308,10 +299,7 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:birch_wood"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 },
                 {
@@ -322,8 +310,7 @@
                     "type": "minecraft:all_of",
                     "predicates": [
                       {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": "minecraft:air"
+                        "type": "minecraft:matching_blocks"
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -331,8 +318,7 @@
                           0,
                           -1,
                           0
-                        ],
-                        "blocks": "minecraft:birch_wood"
+                        ]
                       }
                     ]
                   },
