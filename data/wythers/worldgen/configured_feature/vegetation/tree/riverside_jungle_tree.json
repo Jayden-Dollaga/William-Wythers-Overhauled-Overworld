@@ -109,7 +109,8 @@
                                       "type": "minecraft:leave_vine",
                                       "probability": 0.1
                                     }
-                                  ]
+                                  ],
+                                  "type": "minecraft:tree"
                                 }
                               },
                               "placement": [
@@ -320,7 +321,8 @@
                                       "type": "minecraft:leave_vine",
                                       "probability": 0.1
                                     }
-                                  ]
+                                  ],
+                                  "type": "minecraft:tree"
                                 }
                               },
                               "placement": [
