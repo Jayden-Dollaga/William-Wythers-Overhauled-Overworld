@@ -15,8 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:mycelium"
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -26,8 +25,7 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": "minecraft:cave_air"
+              ]
             }
           }
         ]
@@ -53,10 +51,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:brown_mushroom_block"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
