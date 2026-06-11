@@ -12,10 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:smooth_red_sandstone"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -26,10 +23,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:smooth_sandstone"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -40,12 +34,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:birch_wood",
-              "minecraft:birch_log",
-              "minecraft:stripped_birch_wood"
-              ]
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -60,22 +49,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:bedrock",
-              "minecraft:coarse_dirt",
-              "minecraft:rooted_dirt",
-              "minecraft:smooth_sandstone",
-              "minecraft:smooth_red_sandstone",
-              "minecraft:lime_terracotta",
-              "minecraft:oak_wood",
-              "minecraft:jungle_wood",
-              "minecraft:dark_oak_wood",
-              "minecraft:muddy_mangrove_roots",
-              "minecraft:birch_wood",
-              "minecraft:birch_log",
-              "minecraft:stripped_birch_wood"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
