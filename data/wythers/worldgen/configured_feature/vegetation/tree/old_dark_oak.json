@@ -231,7 +231,8 @@
                               "radius": 8,
                               "tries": 300
                             }
-                          ]
+                          ],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
@@ -487,7 +488,8 @@
                             "hanging_leaves_chance": 0.5,
                             "hanging_leaves_extension_chance": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "type": "minecraft:tree"
                         }
                       },
                       "placement": [
