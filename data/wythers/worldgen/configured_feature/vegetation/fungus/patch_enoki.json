@@ -74,7 +74,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -259,7 +258,6 @@
                           "north": "false",
                           "south": "false",
                           "up": "true",
-                          "waterlogged": "false",
                           "west": "false"
                         }
                       }
