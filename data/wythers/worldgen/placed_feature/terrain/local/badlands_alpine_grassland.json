@@ -26,7 +26,8 @@
               }
             }
           }
-        ]
+        ],
+        "type": "minecraft:rule_based_state_provider"
       },
       "radius": {
         "type": "minecraft:uniform",
