@@ -45,9 +45,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -56,9 +53,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -67,9 +61,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -83,9 +74,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -94,9 +82,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -105,9 +90,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -121,9 +103,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -132,9 +111,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -143,9 +119,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -159,9 +132,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -170,9 +140,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -181,9 +148,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -230,13 +194,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:gravel",
-                            "minecraft:mossy_cobblestone",
-                            "minecraft:moss_block",
-                            "minecraft:stone",
-                            "minecraft:sand"
                           ]
                         }
                       ]
@@ -279,13 +236,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:gravel",
-                            "minecraft:mossy_cobblestone",
-                            "minecraft:moss_block",
-                            "minecraft:stone",
-                            "sand"
                           ]
                         },
                         {
@@ -299,9 +249,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -310,9 +257,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -321,9 +265,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -332,9 +273,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -380,13 +318,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:gravel",
-                            "minecraft:mossy_cobblestone",
-                            "minecraft:moss_block",
-                            "minecraft:stone",
-                            "sand"
                           ]
                         },
                         {
@@ -400,9 +331,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -411,9 +339,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -422,9 +347,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -433,9 +355,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -481,13 +400,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:gravel",
-                            "minecraft:mossy_cobblestone",
-                            "minecraft:moss_block",
-                            "minecraft:stone",
-                            "sand"
                           ]
                         },
                         {
@@ -501,9 +413,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -512,9 +421,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -523,9 +429,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -534,9 +437,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -582,13 +482,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:gravel",
-                            "minecraft:mossy_cobblestone",
-                            "minecraft:moss_block",
-                            "minecraft:stone",
-                            "sand"
                           ]
                         },
                         {
@@ -602,9 +495,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -613,9 +503,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -624,9 +511,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -635,9 +519,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -678,12 +559,6 @@
                     0,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:stone",
-                    "minecraft:gravel",
-                    "minecraft:mossy_cobblestone",
-                    "sand"
                   ]
                 }
               ]
