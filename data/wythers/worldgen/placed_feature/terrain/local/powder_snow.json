@@ -36,8 +36,7 @@
                         0,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:snow_block"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_block_tag",
@@ -51,10 +50,6 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:snow",
-                    "minecraft:powder_snow"
                   ]
                 },
                 {
