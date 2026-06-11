@@ -59,7 +59,8 @@
             "down"
           ]
         }
-      ]
+      ],
+      "type": "minecraft:tree"
     }
   },
   "placement": [
