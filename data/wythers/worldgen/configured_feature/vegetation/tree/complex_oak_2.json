@@ -66,11 +66,7 @@
                                       "type": "minecraft:simple_state_provider",
                                       "state": {
                                         "Name": "minecraft:oak_leaves",
-                                        "Properties": {
-                                          "distance": "7",
-                                          "persistent": "true",
-                                          "waterlogged": "false"
-                                        }
+                                        "Properties": {}
                                       }
                                     },
                                     "directions": [
@@ -168,11 +164,7 @@
                                       "type": "minecraft:simple_state_provider",
                                       "state": {
                                         "Name": "minecraft:oak_leaves",
-                                        "Properties": {
-                                          "distance": "7",
-                                          "persistent": "true",
-                                          "waterlogged": "false"
-                                        }
+                                        "Properties": {}
                                       }
                                     },
                                     "directions": [
