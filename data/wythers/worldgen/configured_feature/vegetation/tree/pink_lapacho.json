@@ -12,11 +12,7 @@
           "type": "minecraft:simple_state_provider",
           "state": {
             "Name": "minecraft:cherry_leaves",
-            "Properties": {
-              "distance": "1",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Properties": {}
           }
         },
         "directions": [
@@ -303,22 +299,14 @@
           "weight": 7,
           "data": {
             "Name": "minecraft:cherry_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Properties": {}
           }
         },
         {
           "weight": 1,
           "data": {
             "Name": "minecraft:azalea_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Properties": {}
           }
         }
       ]
