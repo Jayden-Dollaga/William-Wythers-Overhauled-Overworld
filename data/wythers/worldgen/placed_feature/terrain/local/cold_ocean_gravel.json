@@ -12,8 +12,7 @@
         "rules": []
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:sand"
+        "type": "minecraft:matching_blocks"
       },
       "radius": 8,
       "half_height": 4
