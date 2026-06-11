@@ -16,11 +16,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:sand",
-              "minecraft:sandstone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:any_of",
@@ -36,8 +32,7 @@
                         1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:sand"
+                      ]
                     }
                   },
                   {
@@ -48,8 +43,7 @@
                         -1,
                         0,
                         0
-                      ],
-                      "blocks": "minecraft:sand"
+                      ]
                     }
                   },
                   {
@@ -60,8 +54,7 @@
                         0,
                         0,
                         1
-                      ],
-                      "blocks": "minecraft:sand"
+                      ]
                     }
                   },
                   {
@@ -72,8 +65,7 @@
                         0,
                         0,
                         -1
-                      ],
-                      "blocks": "minecraft:sand"
+                      ]
                     }
                   }
                 ]
@@ -84,10 +76,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:stone",
-                  "minecraft:andesite"
                 ]
               },
               {
@@ -96,9 +84,6 @@
                   1,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               },
               {
@@ -107,9 +92,6 @@
                   -1,
                   -1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               },
               {
@@ -118,9 +100,6 @@
                   0,
                   -1,
                   1
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               },
               {
@@ -129,9 +108,6 @@
                   0,
                   -1,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               }
             ]
