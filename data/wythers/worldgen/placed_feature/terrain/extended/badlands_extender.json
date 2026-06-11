@@ -15,10 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:coarse_dirt"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       },
@@ -47,10 +44,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:orange_terracotta"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     }
   ]
