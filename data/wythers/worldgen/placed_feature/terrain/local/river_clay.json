@@ -18,11 +18,7 @@
         "rules": []
       },
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "minecraft:gravel",
-          "minecraft:soul_soil"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     }
   },
