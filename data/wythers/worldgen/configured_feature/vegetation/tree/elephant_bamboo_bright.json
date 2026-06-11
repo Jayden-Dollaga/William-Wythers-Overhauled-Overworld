@@ -24,11 +24,7 @@
           "weight": 6,
           "data": {
             "Name": "minecraft:azalea_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Properties": {}
           }
         }
       ]
