@@ -21,18 +21,10 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:moss_block"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:andesite",
-              "minecraft:stone"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:any_of",
@@ -43,9 +35,6 @@
                   1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -54,9 +43,6 @@
                   -1,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -65,9 +51,6 @@
                   0,
                   0,
                   1
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -76,9 +59,6 @@
                   0,
                   0,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -87,9 +67,6 @@
                   1,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -98,9 +75,6 @@
                   -1,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -109,9 +83,6 @@
                   0,
                   1,
                   1
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               },
               {
@@ -120,9 +91,6 @@
                   0,
                   1,
                   -1
-                ],
-                "blocks": [
-                  "minecraft:moss_block"
                 ]
               }
             ]
