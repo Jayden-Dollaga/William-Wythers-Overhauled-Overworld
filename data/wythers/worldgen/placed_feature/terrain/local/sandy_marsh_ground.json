@@ -381,10 +381,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "stone"
-                ]
+                "type": "minecraft:matching_blocks"
               }
             ]
           },
@@ -415,11 +412,8 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-              "type": "minecraft:matching_blocks",
-              "blocks": [
-                "minecraft:stripped_mangrove_wood"
-              ]
-            }
+            "type": "minecraft:matching_blocks"
+          }
         ]
       }
     },
