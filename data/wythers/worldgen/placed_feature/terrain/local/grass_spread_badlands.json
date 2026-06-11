@@ -26,8 +26,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:grass_block"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -50,19 +49,10 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:dead_bush",
-              "minecraft:stone_button"
             ]
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:red_sand",
-              "minecraft:grass_block"
-            ]
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:not",
@@ -75,10 +65,6 @@
                     1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:water"
                   ]
                 },
                 {
@@ -87,10 +73,6 @@
                     -1,
                     -1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:water"
                   ]
                 },
                 {
@@ -99,10 +81,6 @@
                     0,
                     -1,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:water"
                   ]
                 },
                 {
@@ -111,10 +89,6 @@
                     0,
                     -1,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:air",
-                    "minecraft:water"
                   ]
                 }
               ]
@@ -153,8 +127,7 @@
               3,
               0,
               0
-            ],
-            "blocks": "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -162,8 +135,7 @@
               -3,
               0,
               0
-            ],
-            "blocks": "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -171,8 +143,7 @@
               0,
               0,
               3
-            ],
-            "blocks": "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -180,8 +151,7 @@
               0,
               0,
               -3
-            ],
-            "blocks": "minecraft:grass_block"
+            ]
           }
         ]
       }
