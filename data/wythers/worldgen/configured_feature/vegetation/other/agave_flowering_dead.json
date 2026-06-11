@@ -69,10 +69,7 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": [
-                          "minecraft:air"
-                        ]
+                        "type": "minecraft:matching_blocks"
                       }
                     }
                   ]
@@ -117,9 +114,6 @@
                                         1,
                                         0,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:stripped_bamboo_block"
                                       ]
                                     },
                                     {
@@ -128,10 +122,6 @@
                                         1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo_fence",
-                                        "minecraft:short_dry_grass"
                                       ]
                                     }
                                   ]
@@ -167,9 +157,6 @@
                                         -1,
                                         0,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:stripped_bamboo_block"
                                       ]
                                     },
                                     {
@@ -178,10 +165,6 @@
                                         -1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo_fence",
-                                        "minecraft:short_dry_grass"
                                       ]
                                     }
                                   ]
@@ -217,9 +200,6 @@
                                         0,
                                         0,
                                         1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:stripped_bamboo_block"
                                       ]
                                     },
                                     {
@@ -228,10 +208,6 @@
                                         0,
                                         1,
                                         1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo_fence",
-                                        "minecraft:short_dry_grass"
                                       ]
                                     }
                                   ]
@@ -267,9 +243,6 @@
                                         0,
                                         0,
                                         -1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:stripped_bamboo_block"
                                       ]
                                     },
                                     {
@@ -278,10 +251,6 @@
                                         0,
                                         1,
                                         -1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo_fence",
-                                        "minecraft:short_dry_grass"
                                       ]
                                     }
                                   ]
@@ -302,10 +271,7 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:stripped_bamboo_block"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 }
               ]
