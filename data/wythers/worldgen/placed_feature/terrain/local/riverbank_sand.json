@@ -16,10 +16,6 @@
                 0,
                 -1,
                 0
-              ],
-              "blocks": [
-                "air",
-                "water"
               ]
             },
             "then": {
@@ -44,16 +40,14 @@
                 "tag": "minecraft:dirt"
               },
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:dirt_path"
+                "type": "minecraft:matching_blocks"
               }
             ]
           },
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:suspicious_sand"
+              "type": "minecraft:matching_blocks"
             }
           }
         ]
@@ -81,16 +75,11 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": "minecraft:moss_block"
+              ]
             }
           },
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:cut_sandstone",
-              "minecraft:brown_terracotta"
-            ]
+            "type": "minecraft:matching_blocks"
           }
         ]
       }
