@@ -10,8 +10,7 @@
             "config": {
               "direction": "down",
               "allowed_placement": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               },
               "prioritize_tip": false,
               "layers": [
@@ -65,14 +64,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:acacia_leaves",
-                  "minecraft:acacia_wood",
-                  "minecraft:oak_wood",
-                  "minecraft:oak_leaves",
-                  "minecraft:mangrove_roots",
-                  "minecraft:dark_oak_wood"
                 ]
               }
             },
@@ -84,9 +75,6 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               }
             },
@@ -98,8 +86,7 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -113,8 +100,7 @@
             "config": {
               "direction": "down",
               "allowed_placement": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               },
               "prioritize_tip": false,
               "layers": [
@@ -168,14 +154,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:acacia_leaves",
-                  "minecraft:acacia_wood",
-                  "minecraft:oak_wood",
-                  "minecraft:oak_leaves",
-                  "minecraft:mangrove_roots",
-                  "minecraft:dark_oak_wood"
                 ]
               }
             },
@@ -187,9 +165,6 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               }
             },
@@ -201,8 +176,7 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -216,8 +190,7 @@
             "config": {
               "direction": "down",
               "allowed_placement": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               },
               "prioritize_tip": false,
               "layers": [
@@ -271,14 +244,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:acacia_leaves",
-                  "minecraft:acacia_wood",
-                  "minecraft:oak_wood",
-                  "minecraft:oak_leaves",
-                  "minecraft:mangrove_roots",
-                  "minecraft:dark_oak_wood"
                 ]
               }
             },
@@ -290,9 +255,6 @@
                   0,
                   0,
                   0
-                ],
-                "blocks": [
-                  "minecraft:air"
                 ]
               }
             },
@@ -304,8 +266,7 @@
                   0,
                   -1,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -318,8 +279,7 @@
         "config": {
           "direction": "down",
           "allowed_placement": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:matching_blocks"
           },
           "prioritize_tip": false,
           "layers": [
@@ -373,14 +333,6 @@
               0,
               1,
               0
-            ],
-            "blocks": [
-              "minecraft:acacia_leaves",
-              "minecraft:acacia_wood",
-              "minecraft:oak_wood",
-              "minecraft:oak_leaves",
-              "minecraft:mangrove_roots",
-              "minecraft:dark_oak_wood"
             ]
           }
         },
@@ -392,9 +344,6 @@
               0,
               0,
               0
-            ],
-            "blocks": [
-              "minecraft:air"
             ]
           }
         },
@@ -406,8 +355,7 @@
               0,
               -1,
               0
-            ],
-            "blocks": "minecraft:air"
+            ]
           }
         }
       ]
