@@ -104,10 +104,7 @@
                                 "directions": [
                                   "down"
                                 ],
-                                "exclusion_radius_xz": 0,
-                                "exclusion_radius_y": 0,
                                 "probability": 0.25,
-                                "required_empty_blocks": 2,
                                 "type": "minecraft:attached_to_leaves"
                               }
                             ],
