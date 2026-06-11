@@ -42,11 +42,7 @@
                               "weight": 10,
                               "data": {
                                 "Name": "minecraft:birch_leaves",
-                                "Properties": {
-                                  "distance": "7",
-                                  "persistent": "false",
-                                  "waterwoodged": "false"
-                                }
+                                "Properties": {}
                               }
                             }
                           ]
@@ -121,11 +117,7 @@
                               "weight": 10,
                               "data": {
                                 "Name": "minecraft:birch_leaves",
-                                "Properties": {
-                                  "distance": "7",
-                                  "persistent": "false",
-                                  "waterwoodged": "false"
-                                }
+                                "Properties": {}
                               }
                             }
                           ]
@@ -199,11 +191,7 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:birch_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterwoodged": "false"
-                            }
+                            "Properties": {}
                           }
                         }
                       ]
@@ -306,11 +294,7 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterwoodged": "false"
-                            }
+                            "Properties": {}
                           }
                         }
                       ]
@@ -385,11 +369,7 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterwoodged": "false"
-                            }
+                            "Properties": {}
                           }
                         }
                       ]
@@ -463,11 +443,7 @@
                       "weight": 10,
                       "data": {
                         "Name": "minecraft:acacia_leaves",
-                        "Properties": {
-                          "distance": "7",
-                          "persistent": "false",
-                          "waterwoodged": "false"
-                        }
+                        "Properties": {}
                       }
                     }
                   ]
