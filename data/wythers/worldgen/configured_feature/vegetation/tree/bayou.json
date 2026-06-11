@@ -19,8 +19,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               }
             }
           ]
@@ -48,8 +47,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:water"
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -60,8 +58,7 @@
                   0,
                   3,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -89,8 +86,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:water"
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -101,8 +97,7 @@
                   0,
                   3,
                   0
-                ],
-                "blocks": "minecraft:water"
+                ]
               }
             },
             {
@@ -113,8 +108,7 @@
                   0,
                   5,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -142,8 +136,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:water"
+                "type": "minecraft:matching_blocks"
               }
             },
             {
@@ -154,8 +147,7 @@
                   0,
                   5,
                   0
-                ],
-                "blocks": "minecraft:water"
+                ]
               }
             },
             {
@@ -166,8 +158,7 @@
                   0,
                   8,
                   0
-                ],
-                "blocks": "minecraft:air"
+                ]
               }
             }
           ]
@@ -195,8 +186,7 @@
             {
               "type": "minecraft:block_predicate_filter",
               "predicate": {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:air"
+                "type": "minecraft:matching_blocks"
               }
             }
           ]
@@ -223,8 +213,7 @@
         {
           "type": "minecraft:block_predicate_filter",
           "predicate": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
+            "type": "minecraft:matching_blocks"
           }
         }
       ]
