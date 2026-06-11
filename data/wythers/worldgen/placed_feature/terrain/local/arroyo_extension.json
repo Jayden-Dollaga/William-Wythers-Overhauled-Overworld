@@ -43,10 +43,6 @@
                       1,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_red_sandstone",
-                      "minecraft:coarse_dirt"
                     ]
                   }
                 ]
@@ -60,10 +56,6 @@
                       -1,
                       1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_red_sandstone",
-                      "minecraft:coarse_dirt"
                     ]
                   }
                 ]
@@ -77,10 +69,6 @@
                       0,
                       1,
                       1
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_red_sandstone",
-                      "minecraft:coarse_dirt"
                     ]
                   }
                 ]
@@ -94,10 +82,6 @@
                       0,
                       1,
                       -1
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_red_sandstone",
-                      "minecraft:coarse_dirt"
                     ]
                   }
                 ]
@@ -108,9 +92,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:coarse_dirt"
                 ]
               }
             ]
