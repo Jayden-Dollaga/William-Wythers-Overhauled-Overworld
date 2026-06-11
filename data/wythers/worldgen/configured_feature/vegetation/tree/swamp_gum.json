@@ -54,6 +54,7 @@
         "type": "minecraft:leave_vine",
         "probability": 0.125
       }
-    ]
+    ],
+    "type": "minecraft:tree"
   }
 }
