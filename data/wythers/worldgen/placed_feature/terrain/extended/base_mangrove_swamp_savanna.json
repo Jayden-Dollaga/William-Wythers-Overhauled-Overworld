@@ -12,8 +12,7 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:smooth_basalt"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -29,8 +28,7 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": "minecraft:air"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -41,8 +39,7 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks",
-              "blocks": "minecraft:deepslate"
+              "type": "minecraft:matching_blocks"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -60,8 +57,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:deepslate"
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -69,10 +65,6 @@
                   0,
                   1,
                   0
-                ],
-                "blocks": [
-                  "minecraft:rooted_dirt",
-                  "minecraft:mud"
                 ]
               }
             ]
@@ -81,8 +73,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": "minecraft:smooth_basalt"
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:any_of",
@@ -93,8 +84,7 @@
                       0,
                       1,
                       0
-                    ],
-                    "blocks": "minecraft:water"
+                    ]
                   },
                   {
                     "type": "minecraft:all_of",
@@ -105,8 +95,7 @@
                           0,
                           2,
                           0
-                        ],
-                        "blocks": "minecraft:air"
+                        ]
                       },
                       {
                         "type": "minecraft:not",
@@ -116,11 +105,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:short_grass",
-                            "minecraft:fern"
                           ]
                         }
                       },
@@ -132,11 +116,6 @@
                             1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:short_grass",
-                            "minecraft:fern"
                           ]
                         }
                       },
@@ -148,11 +127,6 @@
                             -1,
                             0,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:short_grass",
-                            "minecraft:fern"
                           ]
                         }
                       },
@@ -164,11 +138,6 @@
                             0,
                             0,
                             1
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:short_grass",
-                            "minecraft:fern"
                           ]
                         }
                       },
@@ -180,11 +149,6 @@
                             0,
                             0,
                             -1
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:short_grass",
-                            "minecraft:fern"
                           ]
                         }
                       }
@@ -198,10 +162,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:mud"
-                ]
+                "type": "minecraft:matching_blocks"
               },
               {
                 "type": "minecraft:any_of",
@@ -212,9 +173,6 @@
                       0,
                       -1,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -223,9 +181,6 @@
                       0,
                       -2,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -234,9 +189,6 @@
                       0,
                       -3,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -245,9 +197,6 @@
                       0,
                       -4,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -256,9 +205,6 @@
                       0,
                       -5,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -267,9 +213,6 @@
                       0,
                       -6,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -278,9 +221,6 @@
                       0,
                       -7,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -289,9 +229,6 @@
                       0,
                       -8,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   },
                   {
@@ -300,9 +237,6 @@
                       0,
                       -9,
                       0
-                    ],
-                    "blocks": [
-                      "minecraft:smooth_basalt"
                     ]
                   }
                 ]
