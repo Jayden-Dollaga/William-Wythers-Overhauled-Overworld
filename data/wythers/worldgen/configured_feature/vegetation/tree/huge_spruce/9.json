@@ -92,7 +92,6 @@
                                       "feature": {
                                         "config": {
                                           "allowed_placement": {
-                                            "blocks": "#wythers:tree_branch_replaceable",
                                             "type": "minecraft:matching_blocks"
                                           },
                                           "direction": "up",
@@ -130,7 +129,6 @@
                                     "predicate": {
                                       "predicates": [
                                         {
-                                          "blocks": "minecraft:spruce_log",
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
@@ -150,7 +148,6 @@
                                     "direction_of_search": "up",
                                     "max_steps": 8,
                                     "target_condition": {
-                                      "blocks": "minecraft:air",
                                       "offset": [
                                         0,
                                         1,
@@ -441,7 +438,6 @@
                                           {
                                             "predicate": {
                                               "predicate": {
-                                                "blocks": "minecraft:spruce_leaves",
                                                 "offset": [
                                                   0,
                                                   6,
@@ -505,7 +501,6 @@
                                 "placement": [
                                   {
                                     "predicate": {
-                                      "blocks": "minecraft:spruce_log",
                                       "offset": [
                                         0,
                                         10,
@@ -526,7 +521,6 @@
                                     "target_condition": {
                                       "predicates": [
                                         {
-                                          "blocks": "minecraft:air",
                                           "offset": [
                                             0,
                                             1,
@@ -535,7 +529,6 @@
                                           "type": "minecraft:matching_blocks"
                                         },
                                         {
-                                          "blocks": "minecraft:spruce_log",
                                           "type": "minecraft:matching_blocks"
                                         }
                                       ],
@@ -556,7 +549,6 @@
                         "placement": [
                           {
                             "predicate": {
-                              "blocks": "minecraft:spruce_log",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -577,7 +569,6 @@
                             "target_condition": {
                               "predicates": [
                                 {
-                                  "blocks": "minecraft:air",
                                   "offset": [
                                     0,
                                     1,
@@ -586,7 +577,6 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
-                                  "blocks": "minecraft:spruce_log",
                                   "type": "minecraft:matching_blocks"
                                 }
                               ],
@@ -622,7 +612,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:spruce_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -634,7 +623,6 @@
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": "minecraft:spruce_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
