@@ -15,8 +15,7 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:stone"
+            "type": "minecraft:matching_blocks"
           },
           {
             "type": "minecraft:matching_blocks",
@@ -24,10 +23,6 @@
               0,
               -1,
               0
-            ],
-            "blocks": [
-              "minecraft:air",
-              "minecraft:packed_ice"
             ]
           },
           {
@@ -41,8 +36,7 @@
                     1,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -50,8 +44,7 @@
                     -1,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -59,8 +52,7 @@
                     0,
                     1,
                     1
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -68,8 +60,7 @@
                     0,
                     1,
                     -1
-                  ],
-                  "blocks": "minecraft:air"
+                  ]
                 }
               ]
             }
@@ -116,8 +107,7 @@
         "type": "minecraft:solid"
       },
       "allowed_search_condition": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
+        "type": "minecraft:matching_blocks"
       }
     },
     {
