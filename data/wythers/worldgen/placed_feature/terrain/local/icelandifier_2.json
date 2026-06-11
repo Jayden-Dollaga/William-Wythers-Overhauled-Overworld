@@ -17,14 +17,7 @@
       },
       "half_height": 4,
       "target": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "gravel",
-          "minecraft:dirt",
-          "stone",
-          "packed_ice",
-          "gravel"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     "type": "minecraft:disk"
@@ -39,10 +32,7 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": [
-          "moss_block"
-        ]
+        "type": "minecraft:matching_blocks"
       }
     },
     {
