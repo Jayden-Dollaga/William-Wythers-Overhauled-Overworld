@@ -111,10 +111,7 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": [
-                          "minecraft:air"
-                        ]
+                        "type": "minecraft:matching_blocks"
                       }
                     }
                   ]
@@ -160,9 +157,6 @@
                                         1,
                                         0,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -171,9 +165,6 @@
                                         1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -210,9 +201,6 @@
                                         -1,
                                         0,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -221,9 +209,6 @@
                                         -1,
                                         1,
                                         0
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -260,9 +245,6 @@
                                         0,
                                         0,
                                         1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -271,9 +253,6 @@
                                         0,
                                         1,
                                         1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -310,9 +289,6 @@
                                         0,
                                         0,
                                         -1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -321,9 +297,6 @@
                                         0,
                                         1,
                                         -1
-                                      ],
-                                      "blocks": [
-                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -344,10 +317,7 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks",
-                    "blocks": [
-                      "minecraft:cactus"
-                    ]
+                    "type": "minecraft:matching_blocks"
                   }
                 }
               ]
