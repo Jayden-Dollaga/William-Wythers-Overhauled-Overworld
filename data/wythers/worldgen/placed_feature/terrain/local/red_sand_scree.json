@@ -38,9 +38,6 @@
                 0,
                 1,
                 0
-              ],
-              "blocks": [
-                "minecraft:air"
               ]
             }
           },
@@ -55,15 +52,6 @@
                     1,
                     2,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:smooth_red_sandstone",
-                    "minecraft:orange_terracotta",
-                    "minecraft:terracotta",
-                    "minecraft:red_sand",
-                    "minecraft:brown_terracotta",
-                    "minecraft:red_terracotta",
-                    "minecraft:white_terracotta"
                   ]
                 },
                 {
@@ -72,15 +60,6 @@
                     -1,
                     2,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:smooth_red_sandstone",
-                    "minecraft:orange_terracotta",
-                    "minecraft:terracotta",
-                    "minecraft:red_sand",
-                    "minecraft:brown_terracotta",
-                    "minecraft:red_terracotta",
-                    "minecraft:white_terracotta"
                   ]
                 },
                 {
@@ -89,15 +68,6 @@
                     0,
                     2,
                     1
-                  ],
-                  "blocks": [
-                    "minecraft:smooth_red_sandstone",
-                    "minecraft:orange_terracotta",
-                    "minecraft:terracotta",
-                    "minecraft:red_sand",
-                    "minecraft:brown_terracotta",
-                    "minecraft:red_terracotta",
-                    "minecraft:white_terracotta"
                   ]
                 },
                 {
@@ -106,15 +76,6 @@
                     0,
                     2,
                     -1
-                  ],
-                  "blocks": [
-                    "minecraft:smooth_red_sandstone",
-                    "minecraft:orange_terracotta",
-                    "minecraft:terracotta",
-                    "minecraft:red_sand",
-                    "minecraft:brown_terracotta",
-                    "minecraft:red_terracotta",
-                    "minecraft:white_terracotta"
                   ]
                 },
                 {
@@ -123,8 +84,7 @@
                     1,
                     1,
                     1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -132,8 +92,7 @@
                     1,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -141,8 +100,7 @@
                     1,
                     1,
                     -1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -150,8 +108,7 @@
                     0,
                     1,
                     1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -159,8 +116,7 @@
                     0,
                     1,
                     -1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -168,8 +124,7 @@
                     -1,
                     1,
                     1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -177,8 +132,7 @@
                     -1,
                     1,
                     0
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_blocks",
@@ -186,8 +140,7 @@
                     -1,
                     1,
                     -1
-                  ],
-                  "blocks": "minecraft:red_sand"
+                  ]
                 }
               ]
             }
@@ -205,8 +158,7 @@
                       1,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -214,8 +166,7 @@
                       -1,
                       -1,
                       0
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -223,8 +174,7 @@
                       0,
                       -1,
                       1
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -232,8 +182,7 @@
                       0,
                       -1,
                       -1
-                    ],
-                    "blocks": "minecraft:air"
+                    ]
                   }
                 ]
               }
