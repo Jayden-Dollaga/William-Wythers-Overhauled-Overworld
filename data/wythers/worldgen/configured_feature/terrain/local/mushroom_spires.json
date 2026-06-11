@@ -19,8 +19,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -41,16 +40,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:any_of",
@@ -64,9 +54,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -75,9 +62,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -86,9 +70,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 }
                               ]
@@ -102,9 +83,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -113,9 +91,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -124,9 +99,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 }
                               ]
@@ -140,9 +112,6 @@
                                     1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -151,9 +120,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -162,9 +128,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 }
                               ]
@@ -178,9 +141,6 @@
                                     -1,
                                     0,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -189,9 +149,6 @@
                                     0,
                                     0,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 },
                                 {
@@ -200,9 +157,6 @@
                                     0,
                                     0,
                                     -1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:tuff"
                                   ]
                                 }
                               ]
@@ -229,8 +183,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -251,16 +204,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -268,10 +212,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:cave_air"
                           ]
                         },
                         {
@@ -280,10 +220,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:dirt",
-                            "minecraft:tuff"
                           ]
                         }
                       ]
@@ -306,8 +242,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -328,16 +263,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -345,10 +271,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:cave_air"
                           ]
                         },
                         {
@@ -357,10 +279,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:dirt",
-                            "minecraft:tuff"
                           ]
                         },
                         {
@@ -374,9 +292,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -385,9 +300,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -396,9 +308,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -407,9 +316,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -435,8 +341,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -457,16 +362,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -474,10 +370,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:cave_air"
                           ]
                         },
                         {
@@ -486,10 +378,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:dirt",
-                            "minecraft:tuff"
                           ]
                         },
                         {
@@ -503,9 +391,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -514,9 +399,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -525,9 +407,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -536,9 +415,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -564,8 +440,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -586,16 +461,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -603,10 +469,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:cave_air"
                           ]
                         },
                         {
@@ -615,10 +477,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:dirt",
-                            "minecraft:tuff"
                           ]
                         },
                         {
@@ -632,9 +490,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -643,9 +498,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -654,9 +506,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -665,9 +514,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -693,8 +539,7 @@
                       "rules": [
                         {
                           "if_true": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:moss_block"
+                            "type": "minecraft:matching_blocks"
                           },
                           "then": {
                             "type": "minecraft:simple_state_provider",
@@ -715,16 +560,7 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks",
-                          "blocks": [
-                            "minecraft:short_grass",
-                            "minecraft:grass_block",
-                            "minecraft:dirt",
-                            "minecraft:rooted_dirt",
-                            "minecraft:podzol",
-                            "minecraft:air",
-                            "minecraft:moss_block"
-                          ]
+                          "type": "minecraft:matching_blocks"
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -732,10 +568,6 @@
                             0,
                             1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:air",
-                            "minecraft:cave_air"
                           ]
                         },
                         {
@@ -744,10 +576,6 @@
                             0,
                             -1,
                             0
-                          ],
-                          "blocks": [
-                            "minecraft:dirt",
-                            "minecraft:tuff"
                           ]
                         },
                         {
@@ -761,9 +589,6 @@
                                   1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -772,9 +597,6 @@
                                   -1,
                                   0,
                                   0
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -783,9 +605,6 @@
                                   0,
                                   0,
                                   1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -794,9 +613,6 @@
                                   0,
                                   0,
                                   -1
-                                ],
-                                "blocks": [
-                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -839,21 +655,10 @@
                     0,
                     1,
                     0
-                  ],
-                  "blocks": [
-                    "minecraft:air"
                   ]
                 },
                 {
-                  "type": "minecraft:matching_blocks",
-                  "blocks": [
-                    "minecraft:short_grass",
-                    "minecraft:grass_block",
-                    "minecraft:dirt",
-                    "minecraft:rooted_dirt",
-                    "minecraft:podzol",
-                    "minecraft:air"
-                  ]
+                  "type": "minecraft:matching_blocks"
                 }
               ]
             },
