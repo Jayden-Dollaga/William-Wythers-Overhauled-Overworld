@@ -50,7 +50,8 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -96,7 +97,8 @@
                       "offset": 5,
                       "height": 6
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -170,7 +172,8 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -216,7 +219,8 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -290,7 +294,8 @@
                           "offset": 1,
                           "height": 8
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -338,7 +343,8 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -384,7 +390,8 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -458,7 +465,8 @@
                           "offset": 1,
                           "height": 9
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -506,7 +514,8 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": []
+                        "decorators": [],
+                        "type": "minecraft:tree"
                       }
                     },
                     "placement": []
@@ -552,7 +561,8 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -625,7 +635,8 @@
                       "offset": 1,
                       "height": 7
                     },
-                    "decorators": []
+                    "decorators": [],
+                    "type": "minecraft:tree"
                   }
                 },
                 "placement": []
@@ -671,7 +682,8 @@
                   "offset": 6,
                   "height": 7
                 },
-                "decorators": []
+                "decorators": [],
+                "type": "minecraft:tree"
               }
             },
             "placement": []
