@@ -20,12 +20,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:jungle_leaves",
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        }
+        "Name": "minecraft:jungle_leaves"
       }
     },
     "root_placer": {
