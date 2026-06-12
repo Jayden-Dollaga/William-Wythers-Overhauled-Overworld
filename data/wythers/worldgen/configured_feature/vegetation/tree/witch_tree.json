@@ -24,19 +24,12 @@
                             "feature": {
                               "config": {
                                 "ignore_vines": true,
-                                "force_dirt": true,
                                 "minimum_size": {
                                   "type": "minecraft:two_layers_feature_size",
                                   "min_clipped_height": 1,
                                   "limit": 1,
                                   "lower_size": 1,
                                   "upper_size": 1
-                                },
-                                "dirt_provider": {
-                                  "type": "minecraft:simple_state_provider",
-                                  "state": {
-                                    "Name": "minecraft:cherry_wood"
-                                  }
                                 },
                                 "trunk_provider": {
                                   "type": "minecraft:simple_state_provider",
@@ -94,21 +87,11 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
-                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 0
-                          },
-                          "dirt_provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:cherry_wood",
-                              "Properties": {
-                                "axis": "y"
-                              }
-                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",
