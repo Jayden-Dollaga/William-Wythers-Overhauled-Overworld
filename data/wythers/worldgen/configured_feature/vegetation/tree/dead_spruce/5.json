@@ -336,8 +336,16 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 4
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 4,
+                              "min": -4,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -350,8 +358,16 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 8
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 8,
+                              "min": -8,
+                              "plateau": 0
+                            }
                           }
                         ]
                       }
