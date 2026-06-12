@@ -40,12 +40,7 @@
                               {
                                 "weight": 10,
                                 "data": {
-                                  "Name": "minecraft:oak_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:oak_leaves"
                                 }
                               }
                             ]
@@ -130,10 +125,7 @@
                             "root_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:mangrove_roots",
-                                "Properties": {
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:mangrove_roots"
                               }
                             },
                             "trunk_offset_y": {
@@ -159,7 +151,6 @@
                                     "north": "false",
                                     "south": "false",
                                     "up": "true",
-                                    "waterlogged": "false",
                                     "west": "false"
                                   }
                                 }
@@ -197,12 +188,7 @@
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:oak_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:oak_leaves"
                                 }
                               },
                               "directions": [
@@ -429,12 +415,7 @@
                               {
                                 "weight": 10,
                                 "data": {
-                                  "Name": "minecraft:oak_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:oak_leaves"
                                 }
                               },
                               {
@@ -525,10 +506,7 @@
                             "root_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:mangrove_roots",
-                                "Properties": {
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:mangrove_roots"
                               }
                             },
                             "trunk_offset_y": {
@@ -554,7 +532,6 @@
                                     "north": "false",
                                     "south": "false",
                                     "up": "true",
-                                    "waterlogged": "false",
                                     "west": "false"
                                   }
                                 }
@@ -592,12 +569,7 @@
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:oak_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:oak_leaves"
                                 }
                               },
                               "directions": [
