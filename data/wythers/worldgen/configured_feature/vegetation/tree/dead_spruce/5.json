@@ -123,12 +123,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:air",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:air"
                               }
                             },
                             "trunk_placer": {
@@ -171,12 +166,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:air",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:air"
                               }
                             },
                             "trunk_placer": {
@@ -201,12 +191,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:air",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:air"
                                   }
                                 },
                                 "directions": [
@@ -241,12 +226,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:air",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:air"
                               }
                             },
                             "trunk_placer": {
@@ -289,12 +269,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:air",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:air"
                               }
                             },
                             "trunk_placer": {
@@ -319,12 +294,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:air",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:air"
                                   }
                                 },
                                 "directions": [
