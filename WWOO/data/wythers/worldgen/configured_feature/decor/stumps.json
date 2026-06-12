@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:oak_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "minecraft:stripped_oak_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:birch_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:stripped_birch_log",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

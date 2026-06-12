@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "state": {
+        "Properties": {
+          "half": "lower"
+        },
+        "Name": "minecraft:rose_bush"
+      },
+      "type": "minecraft:simple_state_provider"
+    }
+  }
+}

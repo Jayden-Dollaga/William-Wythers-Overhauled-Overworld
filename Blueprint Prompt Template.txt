@@ -1,0 +1,102 @@
+=== WWOO PORT TASK: Round <N> — <Short Description> ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only vanilla reference — NEVER modify)
+SOURCE OF ERROR: <errors_file>.txt (Spyglass) + <Log_Error_file>.txt (game crash log)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only 1.21.11 original — NEVER modify)
+TARGET: Minecraft Java 26.1.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== CRITICAL SAFETY RULES (MUST FOLLOW — NO EXCEPTIONS) ===
+
+1. NEVER delete or modify files in ./26.1.2/ or ./WWOO_ORIGINAL/
+2. NEVER delete a JSON key without first confirming it was removed in 26.1.2
+   by checking the equivalent file in ./26.1.2/data/minecraft/worldgen/
+3. NEVER rename a feature type without confirming the new name exists in ./26.1.2/
+4. NEVER delete any files from data/ — only modify them
+5. If uncertain about ANY change → mark ⚠️ UNCERTAIN, log it, and skip
+6. After EVERY category, run the verification command before moving on
+7. Run check_integrity.py after ALL fixes are done, before committing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== SOURCE OF TRUTH REFERENCE ===
+
+The folder ./26.1.2/ contains the complete extracted vanilla Minecraft 26.1.2
+jar. When encountering any error, check the corresponding file here first:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/
+  ./26.1.2/data/minecraft/worldgen/placed_feature/
+  ./26.1.2/data/minecraft/
+
+DO NOT edit, delete, or add any files inside ./26.1.2/
+
+If the correct format cannot be found in ./26.1.2/, mark the file
+as ⚠️ UNCERTAIN and skip it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== ERRORS TO FIX THIS ROUND ===
+
+<paste specific error categories here>
+Example:
+  CATEGORY 1 — Remove "dirt_provider" and "force_dirt" (650 errors)
+  CATEGORY 2 — Fix random_offset IntProvider format (4 errors)
+  etc.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== EXECUTION ORDER ===
+
+Always fix in this order (safest → most complex):
+1. Pure deletions (dirt_provider, force_dirt, leaf keys)
+2. Small additions (baby assets, type fields)
+3. Format changes (IntProvider, spread values)
+4. Structural changes (random_patch conversion)
+5. Complex/uncertain → skip and log
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== COMMIT FORMAT ===
+
+One commit per file:
+  fix(<short_dir>): <filename> — <category + description>
+
+Examples:
+  fix(configured_feature): oak.json — Cat1 remove dirt_provider
+  fix(wolf_variant): ashen.json — Cat6 fix baby_assets
+  fix(placed_feature): base_frozen_peaks.json — Cat7 IntProvider
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== SKIP ENTIRELY ===
+
+- All "Cannot find worldgen/biome" mod compat errors
+  (terralith:, byg:, biomesoplenty:, tectonic:, regions_unexplored:,
+  terrestria:, jermsy:, promenade:, traverse:, wythers: biome refs)
+- ./26.1.2/ folder
+- ./WWOO_ORIGINAL/ folder
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== FINAL STEPS (REQUIRED BEFORE FINISHING) ===
+
+Step 1 — Run integrity check:
+  python3 check_integrity.py
+
+Step 2 — If any broken/missing files found:
+  python3 check_integrity.py --restore
+  git add data/
+  git commit -m "restore: integrity check auto-restore after Round <N>"
+
+Step 3 — Run verification greps:
+  <paste specific verification commands for this round>
+
+Step 4 — Write a ROUND<N>_COMPLETION_REPORT.md with:
+  - What was fixed
+  - How many files per category
+  - Verification results
+  - Any ⚠️ UNCERTAIN files logged
+  - Git commit count
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

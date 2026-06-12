@@ -1,0 +1,141 @@
+=== WWOO PORT TASK: Round 3 — Fix random_offset IntProvider + Complex random_patch ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+SOURCE OF ERROR: Log_Error2.txt + errors3.txt
+
+TWO ISSUES REMAINING:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 1 — random_offset integer spread → IntProvider object (affects ~300+ files)
+
+CONTEXT: In 26.1.2, the minecraft:random_offset placement modifier no longer
+accepts integer values for xz_spread and y_spread. They must now be IntProvider
+objects. Files using integer values cause "No key type" game errors.
+
+FIND ALL AFFECTED FILES:
+  Run python3 to scan — find any placed_feature file where random_offset has
+  xz_spread or y_spread as a plain integer (not an object with "type" key).
+
+TRANSFORMATION:
+  If xz_spread is integer N → replace with:
+  {
+    "type": "minecraft:trapezoid",
+    "max": N, "min": -N, "plateau": 0
+  }
+  Special case: if N == 0 → use:
+  {
+    "type": "minecraft:constant",
+    "value": 0
+  }
+
+  If y_spread is integer N → replace with:
+  {
+    "type": "minecraft:trapezoid",
+    "max": N, "min": -N, "plateau": 0
+  }
+  Special case: if N == 0 → use:
+  {
+    "type": "minecraft:constant",
+    "value": 0
+  }
+
+VERIFY against vanilla: ./26.1.2/data/minecraft/worldgen/placed_feature/
+Pick any placed_feature with random_offset and confirm the format matches.
+
+EXAMPLE:
+BEFORE:
+{
+  "type": "minecraft:random_offset",
+  "xz_spread": 0,
+  "y_spread": 3
+}
+
+AFTER:
+{
+  "type": "minecraft:random_offset",
+  "xz_spread": { "type": "minecraft:constant", "value": 0 },
+  "y_spread": {
+    "type": "minecraft:trapezoid",
+    "max": 3, "min": -3, "plateau": 0
+  }
+}
+
+Write a Python script to do this recursively across ALL placed_feature files
+in data/wythers/worldgen/placed_feature/ and data/minecraft/worldgen/placed_feature/
+
+One commit per file.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 2 — Complex random_patch files (194 files)
+
+CONTEXT: 194 configured_feature files still contain minecraft:random_patch.
+These are NOT simple patch features — they are complex features (tree selectors,
+column features, tubeworms, giant groundsels) that use random_patch as a wrapper.
+
+MANDATORY: Before touching ANY file, read it and identify the inner feature type
+inside config.feature.feature.
+
+RULE:
+  If inner feature type is "minecraft:simple_block" → convert using standard pattern
+  If inner feature type is anything else (random_selector, block_column, tree,
+  simple_random_selector, or a string reference) → the random_patch wrapper needs
+  to be REMOVED and replaced with the inner feature directly, NOT converted to simple_block.
+
+PATTERN FOR UNWRAPPING (non-simple_block inner features):
+
+BEFORE (random_patch wrapping a tree selector):
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 1,
+    "xspread": 0,
+    "yspread": 0,
+    "zspread": 0,
+    "feature": {
+      "feature": {
+        "type": "minecraft:random_selector",
+        "config": { ... }
+      },
+      "placement": [ ... ]
+    }
+  }
+}
+
+AFTER (unwrap — the inner placed_feature becomes the file content):
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": { ... }
+  },
+  "placement": [ ... existing placement from config.feature.placement ... ]
+}
+
+NOTE: The outer random_patch tries/xspread values become count + random_offset
+placement modifiers prepended to the placement array:
+  { "type": "minecraft:count", "count": <tries> }
+  {
+    "type": "minecraft:random_offset",
+    "xz_spread": { "type": "minecraft:constant", "value": 0 },
+    "y_spread": { "type": "minecraft:constant", "value": 0 }
+  }
+  ... then the existing placement modifiers ...
+
+VERIFY each converted file against ./26.1.2/ to confirm structure is valid.
+If uncertain about any file → mark ⚠️ UNCERTAIN and skip.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTION ORDER:
+1. Fix 1 first — write and run the IntProvider conversion script
+2. Verify Fix 1 — test in-game, should clear most terrain/extended/ errors
+3. Fix 2 — tackle complex random_patch files one by one
+
+SKIP: All mod biome references (Cat F). Do not touch.
+
+FINAL VERIFICATION:
+[ ] No integer xz_spread/y_spread in any random_offset modifier
+[ ] No minecraft:random_patch remaining in any configured_feature
+[ ] Load in-game — validation passes

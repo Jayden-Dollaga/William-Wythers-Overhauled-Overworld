@@ -1,0 +1,5 @@
+python3 check_integrity.py
+
+python3 check_integrity.py --restore
+
+python3 fix_wrong_matching_blocks.py --restore
