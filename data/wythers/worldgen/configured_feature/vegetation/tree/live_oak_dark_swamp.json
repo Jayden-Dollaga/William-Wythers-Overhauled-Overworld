@@ -40,12 +40,7 @@
                               {
                                 "weight": 10,
                                 "data": {
-                                  "Name": "minecraft:birch_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:birch_leaves"
                                 }
                               }
                             ]
@@ -122,10 +117,7 @@
                             "root_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:mangrove_roots",
-                                "Properties": {
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:mangrove_roots"
                               }
                             },
                             "trunk_offset_y": {
@@ -170,12 +162,7 @@
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:birch_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:birch_leaves"
                                 }
                               },
                               "directions": [
@@ -527,12 +514,7 @@
                               {
                                 "weight": 10,
                                 "data": {
-                                  "Name": "minecraft:birch_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:birch_leaves"
                                 }
                               }
                             ]
@@ -586,12 +568,7 @@
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:birch_leaves",
-                                  "Properties": {
-                                    "distance": "7",
-                                    "persistent": "false",
-                                    "waterlogged": "false"
-                                  }
+                                  "Name": "minecraft:birch_leaves"
                                 }
                               },
                               "directions": [
