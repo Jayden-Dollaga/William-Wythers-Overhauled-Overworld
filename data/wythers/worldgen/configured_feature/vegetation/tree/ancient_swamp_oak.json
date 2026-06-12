@@ -96,7 +96,6 @@
                               }
                             },
                             "mangrove_root_placement": {
-                              "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
                               "max_root_length": 15,
                               "max_root_width": 4,
                               "muddy_roots_in": [
