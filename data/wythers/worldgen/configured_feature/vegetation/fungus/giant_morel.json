@@ -52,7 +52,6 @@
           "state": {
             "Name": "minecraft:glow_lichen",
             "Properties": {
-              "waterlogged": "false",
               "down": "false",
               "east": "false",
               "north": "false",
