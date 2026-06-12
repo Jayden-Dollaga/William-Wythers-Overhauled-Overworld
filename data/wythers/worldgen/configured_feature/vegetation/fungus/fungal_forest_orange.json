@@ -21,7 +21,6 @@
                   "north": "false",
                   "south": "false",
                   "up": "true",
-                  "waterlogged": "false",
                   "west": "false"
                 }
               }
@@ -54,7 +53,6 @@
               "north": "false",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -79,7 +77,6 @@
               "north": "false",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -104,7 +101,6 @@
               "north": "true",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -129,7 +125,6 @@
               "north": "false",
               "south": "true",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -154,7 +149,6 @@
               "north": "false",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -179,7 +173,6 @@
               "north": "false",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -204,7 +197,6 @@
               "north": "true",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -229,7 +221,6 @@
               "north": "false",
               "south": "true",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -254,7 +245,6 @@
               "north": "false",
               "south": "false",
               "up": "false",
-              "waterlogged": "false",
               "west": "false"
             }
           }
