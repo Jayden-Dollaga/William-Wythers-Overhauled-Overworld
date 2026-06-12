@@ -27,7 +27,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -54,12 +53,7 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Name": "minecraft:acacia_leaves"
                           },
                           "weight": 3
                         }
@@ -118,7 +112,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -145,12 +138,7 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Name": "minecraft:acacia_leaves"
                           },
                           "weight": 3
                         }
@@ -218,7 +206,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -245,12 +232,7 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Name": "minecraft:acacia_leaves"
                           },
                           "weight": 3
                         }
