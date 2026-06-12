@@ -252,11 +252,6 @@
                                               {
                                                 "block_provider": {
                                                   "state": {
-                                                    "Properties": {
-                                                      "persistent": "false",
-                                                      "distance": "2",
-                                                      "waterlogged": "false"
-                                                    },
                                                     "Name": "minecraft:acacia_leaves"
                                                   },
                                                   "type": "minecraft:simple_state_provider"
@@ -295,11 +290,6 @@
                                             },
                                             "foliage_provider": {
                                               "state": {
-                                                "Properties": {
-                                                  "persistent": "false",
-                                                  "distance": "1",
-                                                  "waterlogged": "false"
-                                                },
                                                 "Name": "minecraft:acacia_leaves"
                                               },
                                               "type": "minecraft:simple_state_provider"
