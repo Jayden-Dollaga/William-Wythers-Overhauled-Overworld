@@ -15,7 +15,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:gravel"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -24,14 +27,18 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "stone",
+              "andesite",
+              "gravel"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -42,6 +49,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -50,6 +60,9 @@
                   1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -58,6 +71,9 @@
                   -1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -66,6 +82,9 @@
                   0,
                   0,
                   1
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -74,6 +93,9 @@
                   0,
                   0,
                   -1
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               }
             ]
@@ -94,7 +116,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:packed_mud"
+        ]
       }
     },
     {
@@ -106,7 +131,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:dripstone_block"
+        ]
       }
     },
     {
@@ -122,16 +150,8 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      },
-      "y_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 5,
-        "min": -5,
-        "plateau": 0
-      }
+      "xz_spread": 0,
+      "y_spread": 5
     }
   ]
 }

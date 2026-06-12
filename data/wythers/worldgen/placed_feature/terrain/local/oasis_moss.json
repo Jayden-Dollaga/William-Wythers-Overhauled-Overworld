@@ -9,8 +9,7 @@
             "Name": "minecraft:moss_block"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -25,7 +24,8 @@
             "tag": "wythers:air_and_plants"
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:sand"
           }
         ]
       },
@@ -50,7 +50,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:smooth_sandstone"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -58,6 +61,9 @@
               0,
               2,
               0
+            ],
+            "blocks": [
+              "minecraft:moss_block"
             ]
           }
         ]

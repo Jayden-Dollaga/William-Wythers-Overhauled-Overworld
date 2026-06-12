@@ -19,8 +19,7 @@
           }
         ]
       },
-      "rules": [],
-      "type": "minecraft:rule_based_state_provider"
+      "rules": []
     },
     "radius": 8,
     "half_height": 4,
@@ -38,6 +37,12 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:water",
+                  "minecraft:air",
+                  "minecraft:cave_vines",
+                  "minecraft:cave_vines_plant"
                 ]
               },
               {
@@ -93,6 +98,10 @@
             0,
             1,
             0
+          ],
+          "blocks": [
+            "sand",
+            "minecraft:suspicious_sand"
           ]
         },
         {
@@ -117,6 +126,10 @@
                 0,
                 2,
                 0
+              ],
+              "blocks": [
+                "minecraft:water",
+                "minecraft:air"
               ]
             },
             {
@@ -125,6 +138,10 @@
                 0,
                 3,
                 0
+              ],
+              "blocks": [
+                "minecraft:water",
+                "minecraft:air"
               ]
             },
             {
@@ -133,6 +150,10 @@
                 0,
                 4,
                 0
+              ],
+              "blocks": [
+                "minecraft:water",
+                "minecraft:air"
               ]
             }
           ]

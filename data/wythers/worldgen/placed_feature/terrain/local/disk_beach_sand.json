@@ -16,6 +16,10 @@
                 0,
                 -1,
                 0
+              ],
+              "blocks": [
+                "air",
+                "minecraft:water"
               ]
             },
             "then": {
@@ -25,8 +29,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "radius": 8,
       "half_height": 3,
@@ -59,7 +62,8 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:brown_terracotta"
       }
     },
     {

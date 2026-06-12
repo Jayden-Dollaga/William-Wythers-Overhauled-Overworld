@@ -9,14 +9,16 @@
             "Name": "minecraft:cut_sandstone"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:coarse_dirt"
+            ]
           }
         ]
       },
@@ -53,6 +55,9 @@
               10,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -61,6 +66,9 @@
               -10,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -69,6 +77,9 @@
               0,
               0,
               10
+            ],
+            "blocks": [
+              "minecraft:smooth_sandstone"
             ]
           },
           {
@@ -77,6 +88,9 @@
               0,
               0,
               -10
+            ],
+            "blocks": [
+              "minecraft:smooth_sandstone"
             ]
           }
         ]

@@ -3,7 +3,10 @@
   "config": {
     "direction": "up",
     "allowed_placement": {
-      "type": "minecraft:matching_blocks"
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "minecraft:air"
+      ]
     },
     "prioritize_tip": true,
     "layers": [
@@ -15,7 +18,8 @@
             "Name": "minecraft:small_dripleaf",
             "Properties": {
               "facing": "north",
-              "half": "lower"
+              "half": "lower",
+              "waterlogged": "false"
             }
           }
         }

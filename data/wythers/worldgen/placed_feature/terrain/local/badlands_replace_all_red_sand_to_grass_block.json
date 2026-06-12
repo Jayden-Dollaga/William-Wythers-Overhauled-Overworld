@@ -17,6 +17,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:grass_block"
               ]
             },
             "then": {
@@ -26,8 +29,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -44,10 +46,26 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:air",
+              "minecraft:dead_bush",
+              "minecraft:sweet_berry_bush",
+              "minecraft:bush",
+              "minecraft:lilac",
+              "minecraft:short_grass",
+              "minecraft:short_dry_grass",
+              "minecraft:tall_dry_grass",
+              "minecraft:grass_block"
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:red_sand",
+              "minecraft:orange_terracotta",
+              "minecraft:red_sandstone"
+            ]
           }
         ]
       }
@@ -65,7 +83,10 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:dripstone_block"
+          ]
         }
       }
     },

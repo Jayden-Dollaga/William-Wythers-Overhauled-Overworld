@@ -12,12 +12,19 @@
                   "feature": {
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "min_clipped_height": 10,
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:air"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -32,7 +39,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:azalea_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -51,8 +62,7 @@
                         "hanging_leaves_chance": 0.5,
                         "hanging_leaves_extension_chance": 1
                       },
-                      "decorators": [],
-                      "type": "minecraft:tree"
+                      "decorators": []
                     },
                     "type": "minecraft:tree"
                   },
@@ -63,7 +73,10 @@
                         "type": "minecraft:all_of",
                         "predicates": [
                           {
-                            "type": "minecraft:matching_blocks"
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "minecraft:air"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -71,6 +84,9 @@
                               0,
                               -1,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:air"
                             ]
                           },
                           {
@@ -79,6 +95,9 @@
                               0,
                               -2,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:air"
                             ]
                           },
                           {
@@ -87,6 +106,9 @@
                               0,
                               -3,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:air"
                             ]
                           },
                           {
@@ -95,6 +117,9 @@
                               0,
                               -4,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           },
                           {
@@ -105,6 +130,10 @@
                                 0,
                                 -4,
                                 -9
+                              ],
+                              "blocks": [
+                                "minecraft:air",
+                                "minecraft:water"
                               ]
                             }
                           }
@@ -142,7 +171,8 @@
                                       "state": {
                                         "Name": "minecraft:light",
                                         "Properties": {
-                                          "level": "0"
+                                          "level": "0",
+                                          "waterlogged": "false"
                                         }
                                       }
                                     }
@@ -167,7 +197,10 @@
                               {
                                 "type": "minecraft:block_predicate_filter",
                                 "predicate": {
-                                  "type": "minecraft:matching_blocks"
+                                  "type": "minecraft:matching_blocks",
+                                  "blocks": [
+                                    "air"
+                                  ]
                                 }
                               },
                               {
@@ -178,6 +211,9 @@
                                     0,
                                     1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "jungle_wood"
                                   ]
                                 }
                               }
@@ -200,6 +236,9 @@
                                 "direction": "north",
                                 "allowed_placement": {
                                   "type": "minecraft:matching_block_tag",
+                                  "blocks": [
+                                    "wythers:palm_tree_replaceable"
+                                  ],
                                   "tag": "wythers:palm_tree_replaceable"
                                 },
                                 "prioritize_tip": false,
@@ -211,7 +250,8 @@
                                       "state": {
                                         "Name": "minecraft:light",
                                         "Properties": {
-                                          "level": "0"
+                                          "level": "0",
+                                          "waterlogged": "false"
                                         }
                                       }
                                     }
@@ -241,6 +281,9 @@
                                     0,
                                     1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:light"
                                   ]
                                 }
                               },
@@ -252,6 +295,9 @@
                                     0,
                                     2,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:jungle_wood"
                                   ]
                                 }
                               }
@@ -285,7 +331,8 @@
                                       "state": {
                                         "Name": "minecraft:light",
                                         "Properties": {
-                                          "level": "0"
+                                          "level": "0",
+                                          "waterlogged": "false"
                                         }
                                       }
                                     }
@@ -315,6 +362,9 @@
                                     0,
                                     1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:light"
                                   ]
                                 }
                               },
@@ -326,6 +376,9 @@
                                     0,
                                     2,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:light"
                                   ]
                                 }
                               },
@@ -337,6 +390,9 @@
                                     0,
                                     3,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:jungle_wood"
                                   ]
                                 }
                               }
@@ -358,7 +414,10 @@
                     "type": "minecraft:all_of",
                     "predicates": [
                       {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:jungle_wood"
+                        ]
                       }
                     ]
                   }

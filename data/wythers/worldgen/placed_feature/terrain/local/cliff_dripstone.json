@@ -32,13 +32,19 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:stone"
+            ]
           },
           {
             "type": "minecraft:any_of",
             "predicates": [
               {
                 "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ],
                 "offset": [
                   5,
                   0,
@@ -47,6 +53,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ],
                 "offset": [
                   0,
                   0,
@@ -55,6 +64,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ],
                 "offset": [
                   -5,
                   0,
@@ -63,6 +75,9 @@
               },
               {
                 "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:air"
+                ],
                 "offset": [
                   0,
                   0,

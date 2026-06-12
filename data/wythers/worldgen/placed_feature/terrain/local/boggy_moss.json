@@ -20,14 +20,16 @@
             }
           ]
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:water"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -35,7 +37,8 @@
               0,
               1,
               0
-            ]
+            ],
+            "blocks": "minecraft:air"
           },
           {
             "type": "minecraft:has_sturdy_face",
@@ -114,6 +117,9 @@
               0,
               2,
               0
+            ],
+            "blocks": [
+              "minecraft:moss_block"
             ]
           }
         ]

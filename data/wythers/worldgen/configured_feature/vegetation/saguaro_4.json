@@ -14,7 +14,10 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:air"
+                        ]
                       }
                     }
                   ]
@@ -47,6 +50,9 @@
                                         0,
                                         0,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:air"
                                       ]
                                     },
                                     {
@@ -55,6 +61,9 @@
                                         -1,
                                         1,
                                         1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:bamboo_block"
                                       ]
                                     },
                                     {
@@ -63,6 +72,9 @@
                                         -1,
                                         2,
                                         1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:cactus"
                                       ]
                                     }
                                   ]
@@ -79,7 +91,10 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:bamboo_block"
+                        ]
                       }
                     }
                   ]
@@ -111,6 +126,9 @@
                                     0,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air"
                                   ]
                                 },
                                 {
@@ -119,6 +137,9 @@
                                     1,
                                     0,
                                     -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:bamboo_block"
                                   ]
                                 },
                                 {
@@ -127,6 +148,9 @@
                                     1,
                                     1,
                                     -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:cactus"
                                   ]
                                 }
                               ]
@@ -143,7 +167,10 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:bamboo_block"
+                    ]
                   }
                 }
               ]

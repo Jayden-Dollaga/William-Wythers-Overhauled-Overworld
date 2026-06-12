@@ -9,11 +9,19 @@
             "Name": "minecraft:packed_mud"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:sand",
+          "minecraft:sandstone",
+          "minecraft:smooth_sandstone",
+          "minecraft:grass_block",
+          "minecraft:rooted_dirt",
+          "minecraft:stone",
+          "minecraft:dirt_path"
+        ]
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -36,7 +44,11 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:smooth_sandstone",
+              "minecraft:cut_sandstone"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -44,6 +56,9 @@
               0,
               2,
               0
+            ],
+            "blocks": [
+              "minecraft:dripstone_block"
             ]
           }
         ]

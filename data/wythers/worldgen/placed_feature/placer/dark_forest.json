@@ -12,7 +12,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:coarse_dirt"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -23,7 +26,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:rooted_dirt"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -32,14 +38,21 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:bedrock",
+              "minecraft:green_terracotta",
+              "minecraft:lime_terracotta",
+              "minecraft:coarse_dirt",
+              "minecraft:rooted_dirt",
+              "minecraft:mud"
+            ]
           }
         ]
       },

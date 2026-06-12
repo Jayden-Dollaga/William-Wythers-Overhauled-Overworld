@@ -22,6 +22,12 @@
                       1,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -30,6 +36,12 @@
                       -1,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -38,6 +50,12 @@
                       0,
                       0,
                       1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -46,6 +64,12 @@
                       0,
                       0,
                       -1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -54,6 +78,12 @@
                       1,
                       0,
                       1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -62,6 +92,12 @@
                       1,
                       0,
                       -1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -70,6 +106,12 @@
                       2,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -78,6 +120,12 @@
                       -1,
                       0,
                       1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -86,6 +134,12 @@
                       -1,
                       0,
                       -1
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -94,6 +148,12 @@
                       -2,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -102,6 +162,12 @@
                       0,
                       0,
                       2
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   },
                   {
@@ -110,6 +176,12 @@
                       0,
                       0,
                       -2
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:brown_terracotta",
+                      "minecraft:air",
+                      "minecraft:gray_terracotta"
                     ]
                   }
                 ]
@@ -122,11 +194,11 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:coarse_dirt"
       },
       "radius": 4,
       "half_height": 4
@@ -145,7 +217,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:chiseled_sandstone"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -153,6 +228,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:dripstone_block"
             ]
           }
         ]

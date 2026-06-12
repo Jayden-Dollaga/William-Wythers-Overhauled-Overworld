@@ -12,7 +12,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:orange_terracotta"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -23,7 +26,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:sandstone"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -34,7 +40,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:muddy_mangrove_roots"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -45,7 +54,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:acacia_wood"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -56,7 +68,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:smooth_red_sandstone"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -65,14 +80,24 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:bedrock",
+              "minecraft:orange_terracotta",
+              "minecraft:coarse_dirt",
+              "minecraft:rooted_dirt",
+              "minecraft:mud",
+              "minecraft:muddy_mangrove_roots",
+              "minecraft:acacia_wood",
+              "minecraft:sandstone",
+              "minecraft:smooth_red_sandstone"
+            ]
           }
         ]
       },

@@ -12,7 +12,8 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": "minecraft:moss_block"
         }
       }
     },

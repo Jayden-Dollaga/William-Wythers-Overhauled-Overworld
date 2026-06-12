@@ -25,7 +25,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:acacia_wood"
+        ]
       }
     },
     {
@@ -37,7 +40,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:dripstone_block"
+        ]
       }
     },
     {

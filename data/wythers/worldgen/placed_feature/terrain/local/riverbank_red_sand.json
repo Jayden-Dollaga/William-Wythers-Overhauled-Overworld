@@ -9,14 +9,20 @@
             "Name": "minecraft:red_sand"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:grass_block",
+              "dirt",
+              "minecraft:coarse_dirt",
+              "minecraft:rooted_dirt",
+              "minecraft:dirt_path"
+            ]
           }
         ]
       },
@@ -41,13 +47,19 @@
         "type": "minecraft:any_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:smooth_red_sandstone"
+            ]
           },
           {
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:orange_terracotta"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -55,6 +67,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:dripstone_block"
                 ]
               },
               {
@@ -65,6 +80,9 @@
                     0,
                     2,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:sculk"
                   ]
                 }
               }

@@ -8,13 +8,18 @@
           "Name": "minecraft:dripstone_block"
         }
       },
-      "rules": [],
-      "type": "minecraft:rule_based_state_provider"
+      "rules": []
     },
     "radius": 8,
     "half_height": 4,
     "target": {
-      "type": "minecraft:matching_blocks"
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "stone",
+        "granite",
+        "andesite",
+        "diorite"
+      ]
     }
   }
 }

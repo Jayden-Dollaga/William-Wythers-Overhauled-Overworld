@@ -38,6 +38,10 @@
           0,
           -1,
           0
+        ],
+        "blocks": [
+          "minecraft:deepslate",
+          "minecraft:mud"
         ]
       }
     },

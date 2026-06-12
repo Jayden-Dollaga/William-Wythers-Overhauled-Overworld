@@ -14,8 +14,7 @@
             }
           ]
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 4,
@@ -30,7 +29,10 @@
                 "tag": "minecraft:dirt"
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:gravel"
+                ]
               }
             ]
           },
@@ -51,7 +53,11 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:moss_block",
+                "minecraft:mossy_cobblestone"
+              ]
             }
           }
         ]
@@ -74,7 +80,8 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:acacia_wood"
               },
               {
                 "type": "minecraft:not",
@@ -84,7 +91,8 @@
                     0,
                     1,
                     0
-                  ]
+                  ],
+                  "blocks": "minecraft:dripstone_block"
                 }
               }
             ]
@@ -93,7 +101,13 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:jungle_wood",
+                  "minecraft:bamboo_block",
+                  "minecraft:lime_terracotta",
+                  "minecraft:spruce_planks"
+                ]
               }
             ]
           }

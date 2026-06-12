@@ -12,7 +12,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:grass_block"
+              ]
             },
             "then": {
               "type": "minecraft:weighted_state_provider",
@@ -44,8 +47,7 @@
               ]
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:any_of",
@@ -54,7 +56,10 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -62,6 +67,9 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:packed_mud"
                 ]
               }
             ]
@@ -72,6 +80,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:grass_block"
             ]
           }
         ]

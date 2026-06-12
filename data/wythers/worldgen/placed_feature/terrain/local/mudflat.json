@@ -13,8 +13,7 @@
                     "Name": "minecraft:mud"
                   }
                 },
-                "rules": [],
-                "type": "minecraft:rule_based_state_provider"
+                "rules": []
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -49,7 +48,10 @@
                     ]
                   },
                   {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:sand"
+                    ]
                   }
                 ]
               }
@@ -71,7 +73,8 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:muddy_mangrove_roots"
       }
     },
     {

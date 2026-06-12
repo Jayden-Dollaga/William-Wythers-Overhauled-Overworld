@@ -16,8 +16,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -29,7 +28,17 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:short_grass",
+                            "minecraft:grass_block",
+                            "minecraft:dirt",
+                            "minecraft:rooted_dirt",
+                            "minecraft:coarse_dirt",
+                            "minecraft:podzol",
+                            "minecraft:air",
+                            "minecraft:coarse_dirt"
+                          ]
                         },
                         {
                           "type": "minecraft:any_of",
@@ -67,8 +76,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -80,7 +88,16 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:short_grass",
+                            "minecraft:grass_block",
+                            "minecraft:dirt",
+                            "minecraft:rooted_dirt",
+                            "minecraft:podzol",
+                            "minecraft:air",
+                            "minecraft:coarse_dirt"
+                          ]
                         },
                         {
                           "type": "minecraft:any_of",
@@ -129,7 +146,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_block_tag",

@@ -172,8 +172,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -199,7 +198,8 @@
                 "tag": "minecraft:base_stone_overworld"
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:dirt_path"
               }
             ]
           }
@@ -228,7 +228,11 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:birch_wood",
+                "minecraft:dark_oak_wood"
+              ]
             }
           },
           {
@@ -237,6 +241,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:dripstone_block"
             ]
           }
         ]

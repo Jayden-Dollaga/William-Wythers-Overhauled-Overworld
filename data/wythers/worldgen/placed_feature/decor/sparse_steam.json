@@ -16,7 +16,8 @@
                 "Properties": {
                   "facing": "east",
                   "lit": "true",
-                  "signal_fire": "false"
+                  "signal_fire": "false",
+                  "waterlogged": "true"
                 }
               }
             }
@@ -34,6 +35,11 @@
                     0,
                     1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:blackstone",
+                    "minecraft:diorite"
                   ]
                 },
                 {
@@ -42,6 +48,10 @@
                     0,
                     2,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:water",
+                    "minecraft:lava"
                   ]
                 },
                 {
@@ -52,6 +62,10 @@
                       1,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:water",
+                      "minecraft:air"
                     ]
                   }
                 },
@@ -63,6 +77,10 @@
                       -1,
                       0,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:water",
+                      "minecraft:air"
                     ]
                   }
                 },
@@ -74,6 +92,10 @@
                       0,
                       0,
                       1
+                    ],
+                    "blocks": [
+                      "minecraft:water",
+                      "minecraft:air"
                     ]
                   }
                 },
@@ -85,6 +107,10 @@
                       0,
                       0,
                       -1
+                    ],
+                    "blocks": [
+                      "minecraft:water",
+                      "minecraft:air"
                     ]
                   }
                 },
@@ -103,7 +129,8 @@
                     0,
                     4,
                     0
-                  ]
+                  ],
+                  "blocks": "minecraft:air"
                 }
               ]
             }

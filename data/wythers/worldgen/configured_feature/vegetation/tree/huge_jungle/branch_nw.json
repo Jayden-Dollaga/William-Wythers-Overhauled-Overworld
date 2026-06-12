@@ -9,6 +9,7 @@
                 "feature": {
                   "config": {
                     "allowed_placement": {
+                      "blocks": "#wythers:tree_branch_replaceable",
                       "type": "minecraft:matching_blocks"
                     },
                     "direction": "up",
@@ -33,6 +34,7 @@
                 "placement": [
                   {
                     "predicate": {
+                      "blocks": "#wythers:tree_branch_replaceable",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
@@ -47,6 +49,7 @@
                         "feature": {
                           "config": {
                             "allowed_placement": {
+                              "blocks": "#wythers:tree_branch_replaceable",
                               "type": "minecraft:matching_blocks"
                             },
                             "direction": "up",
@@ -71,6 +74,7 @@
                         "placement": [
                           {
                             "predicate": {
+                              "blocks": "#wythers:tree_branch_replaceable",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
@@ -92,17 +96,30 @@
                                       "block_provider": {
                                         "state": {
                                           "Name": "minecraft:jungle_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "2",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         },
                                         "type": "minecraft:simple_state_provider"
                                       },
                                       "directions": [
                                         "down"
                                       ],
+                                      "exclusion_radius_xz": 0,
+                                      "exclusion_radius_y": 0,
                                       "probability": 0.25,
+                                      "required_empty_blocks": 2,
                                       "type": "minecraft:attached_to_leaves"
                                     }
                                   ],
+                                  "dirt_provider": {
+                                    "state": {
+                                      "Name": "minecraft:air"
+                                    },
+                                    "type": "minecraft:simple_state_provider"
+                                  },
                                   "foliage_placer": {
                                     "offset": 0,
                                     "radius": 3,
@@ -111,10 +128,15 @@
                                   "foliage_provider": {
                                     "state": {
                                       "Name": "minecraft:jungle_leaves",
-                                      "Properties": {}
+                                      "Properties": {
+                                        "distance": "1",
+                                        "persistent": "false",
+                                        "waterlogged": "false"
+                                      }
                                     },
                                     "type": "minecraft:simple_state_provider"
                                   },
+                                  "force_dirt": false,
                                   "ignore_vines": true,
                                   "minimum_size": {
                                     "limit": 0,
@@ -136,8 +158,7 @@
                                       }
                                     },
                                     "type": "minecraft:simple_state_provider"
-                                  },
-                                  "type": "minecraft:tree"
+                                  }
                                 },
                                 "type": "minecraft:tree"
                               },
@@ -158,17 +179,30 @@
                                           "block_provider": {
                                             "state": {
                                               "Name": "minecraft:jungle_leaves",
-                                              "Properties": {}
+                                              "Properties": {
+                                                "distance": "2",
+                                                "persistent": "false",
+                                                "waterlogged": "false"
+                                              }
                                             },
                                             "type": "minecraft:simple_state_provider"
                                           },
                                           "directions": [
                                             "down"
                                           ],
+                                          "exclusion_radius_xz": 0,
+                                          "exclusion_radius_y": 0,
                                           "probability": 0.25,
+                                          "required_empty_blocks": 2,
                                           "type": "minecraft:attached_to_leaves"
                                         }
                                       ],
+                                      "dirt_provider": {
+                                        "state": {
+                                          "Name": "minecraft:air"
+                                        },
+                                        "type": "minecraft:simple_state_provider"
+                                      },
                                       "foliage_placer": {
                                         "offset": 0,
                                         "radius": 1,
@@ -177,10 +211,15 @@
                                       "foliage_provider": {
                                         "state": {
                                           "Name": "minecraft:jungle_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "1",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         },
                                         "type": "minecraft:simple_state_provider"
                                       },
+                                      "force_dirt": false,
                                       "ignore_vines": true,
                                       "minimum_size": {
                                         "limit": 0,
@@ -202,8 +241,7 @@
                                           }
                                         },
                                         "type": "minecraft:simple_state_provider"
-                                      },
-                                      "type": "minecraft:tree"
+                                      }
                                     },
                                     "type": "minecraft:tree"
                                   },
@@ -217,32 +255,25 @@
                         "placement": [
                           {
                             "predicate": {
+                              "blocks": "minecraft:jungle_log",
                               "type": "minecraft:matching_blocks"
                             },
                             "type": "minecraft:block_predicate_filter"
                           },
                           {
-                            "xz_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 1,
-                              "min": -1,
-                              "plateau": 0
-                            },
-                            "y_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 1,
-                              "min": -1,
-                              "plateau": 0
-                            },
+                            "xz_spread": -1,
+                            "y_spread": 1,
                             "type": "minecraft:random_offset"
                           },
                           {
                             "predicate": {
                               "predicates": [
                                 {
+                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
+                                  "blocks": "minecraft:jungle_log",
                                   "offset": [
                                     1,
                                     0,
@@ -251,6 +282,7 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
+                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     1,
                                     0,
@@ -259,6 +291,7 @@
                                   "type": "minecraft:matching_blocks"
                                 },
                                 {
+                                  "blocks": "#wythers:tree_branch_replaceable",
                                   "offset": [
                                     0,
                                     0,
@@ -280,32 +313,25 @@
                 "placement": [
                   {
                     "predicate": {
+                      "blocks": "minecraft:jungle_log",
                       "type": "minecraft:matching_blocks"
                     },
                     "type": "minecraft:block_predicate_filter"
                   },
                   {
-                    "xz_spread": {
-                      "type": "minecraft:trapezoid",
-                      "max": 1,
-                      "min": -1,
-                      "plateau": 0
-                    },
-                    "y_spread": {
-                      "type": "minecraft:trapezoid",
-                      "max": 1,
-                      "min": -1,
-                      "plateau": 0
-                    },
+                    "xz_spread": -1,
+                    "y_spread": 1,
                     "type": "minecraft:random_offset"
                   },
                   {
                     "predicate": {
                       "predicates": [
                         {
+                          "blocks": "#wythers:tree_branch_replaceable",
                           "type": "minecraft:matching_blocks"
                         },
                         {
+                          "blocks": "minecraft:jungle_log",
                           "offset": [
                             1,
                             0,
@@ -314,6 +340,7 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
+                          "blocks": "#wythers:tree_branch_replaceable",
                           "offset": [
                             1,
                             0,
@@ -322,6 +349,7 @@
                           "type": "minecraft:matching_blocks"
                         },
                         {
+                          "blocks": "#wythers:tree_branch_replaceable",
                           "offset": [
                             0,
                             0,
@@ -346,27 +374,19 @@
         },
         "placement": [
           {
-            "xz_spread": {
-              "type": "minecraft:trapezoid",
-              "max": 1,
-              "min": -1,
-              "plateau": 0
-            },
-            "y_spread": {
-              "type": "minecraft:trapezoid",
-              "max": 1,
-              "min": -1,
-              "plateau": 0
-            },
+            "xz_spread": -1,
+            "y_spread": -1,
             "type": "minecraft:random_offset"
           },
           {
             "predicate": {
               "predicates": [
                 {
+                  "blocks": "#wythers:tree_branch_replaceable",
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "minecraft:jungle_log",
                   "offset": [
                     1,
                     0,
@@ -375,6 +395,7 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     1,
                     0,
@@ -383,6 +404,7 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "#wythers:tree_branch_replaceable",
                   "offset": [
                     0,
                     0,

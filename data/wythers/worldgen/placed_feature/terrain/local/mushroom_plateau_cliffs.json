@@ -12,8 +12,7 @@
             }
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:any_of",
@@ -27,6 +26,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -45,6 +47,10 @@
                           1,
                           -1,
                           0
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -55,7 +61,8 @@
                             -1,
                             0,
                             0
-                          ]
+                          ],
+                          "blocks": "minecraft:mycelium"
                         }
                       }
                     ]
@@ -69,6 +76,10 @@
                           -1,
                           -1,
                           0
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -79,7 +90,8 @@
                             1,
                             0,
                             0
-                          ]
+                          ],
+                          "blocks": "minecraft:mycelium"
                         }
                       }
                     ]
@@ -93,6 +105,10 @@
                           0,
                           -1,
                           1
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -103,7 +119,8 @@
                             0,
                             0,
                             -1
-                          ]
+                          ],
+                          "blocks": "minecraft:mycelium"
                         }
                       }
                     ]
@@ -117,6 +134,10 @@
                           0,
                           -1,
                           -1
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -127,7 +148,8 @@
                             0,
                             0,
                             1
-                          ]
+                          ],
+                          "blocks": "minecraft:mycelium"
                         }
                       }
                     ]
@@ -147,11 +169,20 @@
                     0,
                     1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass"
                   ]
                 }
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt",
+                  "minecraft:rooted_dirt",
+                  "minecraft:coarse_dirt"
+                ]
               },
               {
                 "type": "minecraft:any_of",
@@ -162,7 +193,8 @@
                       1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -170,7 +202,8 @@
                       -1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -178,7 +211,8 @@
                       0,
                       0,
                       1
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -186,7 +220,8 @@
                       0,
                       0,
                       -1
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -194,7 +229,8 @@
                       0,
                       1,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:basalt"
                   }
                 ]
               }

@@ -24,7 +24,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:blue_ice"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -34,6 +37,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:moss_block"
               ]
             }
           }

@@ -19,11 +19,21 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
+                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 0
+                          },
+                          "dirt_provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",
@@ -41,7 +51,11 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               }
                             ]
@@ -119,7 +133,9 @@
                               "type": "minecraft:simple_state_provider",
                               "state": {
                                 "Name": "minecraft:mangrove_roots",
-                                "Properties": {}
+                                "Properties": {
+                                  "waterlogged": "false"
+                                }
                               }
                             },
                             "trunk_offset_y": {
@@ -132,6 +148,9 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 0.1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
@@ -142,6 +161,7 @@
                                     "north": "false",
                                     "south": "false",
                                     "up": "true",
+                                    "waterlogged": "false",
                                     "west": "false"
                                   }
                                 }
@@ -173,19 +193,25 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               },
                               "directions": [
                                 "down"
                               ]
                             }
-                          ],
-                          "type": "minecraft:tree"
+                          ]
                         }
                       },
                       "placement": [
@@ -207,11 +233,21 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
+                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 0
+                          },
+                          "dirt_provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",
@@ -229,7 +265,11 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               }
                             ]
@@ -277,6 +317,9 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 0.1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
@@ -287,6 +330,7 @@
                                     "north": "false",
                                     "south": "false",
                                     "up": "true",
+                                    "waterlogged": "false",
                                     "west": "false"
                                   }
                                 }
@@ -298,19 +342,25 @@
                             {
                               "type": "minecraft:attached_to_leaves",
                               "probability": 1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
                               "block_provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               },
                               "directions": [
                                 "down"
                               ]
                             }
-                          ],
-                          "type": "minecraft:tree"
+                          ]
                         }
                       },
                       "placement": [
@@ -338,7 +388,10 @@
                               "config": {
                                 "direction": "down",
                                 "allowed_placement": {
-                                  "type": "minecraft:matching_blocks"
+                                  "type": "minecraft:matching_blocks",
+                                  "blocks": [
+                                    "air"
+                                  ]
                                 },
                                 "prioritize_tip": true,
                                 "layers": [
@@ -388,10 +441,17 @@
                                         0,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "oak_wood",
+                                        "oak_leaves"
                                       ]
                                     },
                                     {
-                                      "type": "minecraft:matching_blocks"
+                                      "type": "minecraft:matching_blocks",
+                                      "blocks": [
+                                        "air"
+                                      ]
                                     }
                                   ]
                                 },

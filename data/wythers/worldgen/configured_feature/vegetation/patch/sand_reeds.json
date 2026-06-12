@@ -23,7 +23,12 @@
                                 "config": {
                                   "direction": "up",
                                   "allowed_placement": {
-                                    "type": "minecraft:matching_blocks"
+                                    "type": "minecraft:matching_blocks",
+                                    "blocks": [
+                                      "minecraft:suspicious_sand",
+                                      "sand",
+                                      "minecraft:air"
+                                    ]
                                   },
                                   "prioritize_tip": true,
                                   "layers": [
@@ -61,7 +66,12 @@
                             "config": {
                               "direction": "up",
                               "allowed_placement": {
-                                "type": "minecraft:matching_blocks"
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                  "minecraft:suspicious_sand",
+                                  "sand",
+                                  "minecraft:air"
+                                ]
                               },
                               "prioritize_tip": true,
                               "layers": [
@@ -148,6 +158,9 @@
                                 0,
                                 1,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:air"
                               ]
                             },
                             {
@@ -156,6 +169,9 @@
                                 0,
                                 0,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:sand"
                               ]
                             },
                             {

@@ -72,6 +72,10 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:stone",
+                    "minecraft:sand"
                   ]
                 }
               ]
@@ -93,8 +97,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -106,7 +109,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:any_of",
@@ -120,6 +128,9 @@
                                     1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -128,6 +139,9 @@
                                     -1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -136,6 +150,9 @@
                                     0,
                                     0,
                                     1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -149,6 +166,9 @@
                                     1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -157,6 +177,9 @@
                                     -1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -165,6 +188,9 @@
                                     0,
                                     0,
                                     -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -178,6 +204,9 @@
                                     1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -186,6 +215,9 @@
                                     0,
                                     0,
                                     1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -194,6 +226,9 @@
                                     0,
                                     0,
                                     -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -207,6 +242,9 @@
                                     -1,
                                     0,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -215,6 +253,9 @@
                                     0,
                                     0,
                                     1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 },
                                 {
@@ -223,6 +264,9 @@
                                     0,
                                     0,
                                     -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:stone"
                                   ]
                                 }
                               ]
@@ -246,8 +290,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -259,7 +302,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -267,6 +315,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:mossy_cobblestone",
+                            "minecraft:moss_block",
+                            "minecraft:stone"
                           ]
                         }
                       ]
@@ -286,8 +340,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -299,7 +352,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -307,6 +365,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:mossy_cobblestone",
+                            "minecraft:moss_block",
+                            "minecraft:stone"
                           ]
                         },
                         {
@@ -320,6 +384,9 @@
                                   1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -328,6 +395,9 @@
                                   -1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -336,6 +406,9 @@
                                   0,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -344,6 +417,9 @@
                                   0,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -366,8 +442,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -379,7 +454,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -387,6 +467,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:mossy_cobblestone",
+                            "minecraft:moss_block",
+                            "minecraft:stone"
                           ]
                         },
                         {
@@ -400,6 +486,9 @@
                                   1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -408,6 +497,9 @@
                                   -1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -416,6 +508,9 @@
                                   0,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -424,6 +519,9 @@
                                   0,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -446,8 +544,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -459,7 +556,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -467,6 +569,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:mossy_cobblestone",
+                            "minecraft:moss_block",
+                            "minecraft:stone"
                           ]
                         },
                         {
@@ -480,6 +588,9 @@
                                   1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -488,6 +599,9 @@
                                   -1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -496,6 +610,9 @@
                                   0,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -504,6 +621,9 @@
                                   0,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -526,8 +646,7 @@
                           "Name": "stone"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -539,7 +658,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air",
+                            "minecraft:sand"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -547,6 +671,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:mossy_cobblestone",
+                            "minecraft:moss_block",
+                            "minecraft:stone"
                           ]
                         },
                         {
@@ -560,6 +690,9 @@
                                   1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -568,6 +701,9 @@
                                   -1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -576,6 +712,9 @@
                                   0,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -584,6 +723,9 @@
                                   0,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -624,6 +766,11 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:stone",
+                    "minecraft:sand",
+                    "minecraft:mossy_cobblestone"
                   ]
                 }
               ]

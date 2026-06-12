@@ -15,7 +15,8 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:smooth_sandstone"
                 },
                 {
                   "type": "minecraft:not",
@@ -43,17 +44,18 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:smooth_sandstone"
                 },
                 {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "fluids": "#minecraft:water"
-                }
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "fluids": "#minecraft:water"
+                  }
               ]
             },
             "then": {
@@ -68,7 +70,8 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:red_sandstone"
                 },
                 {
                   "type": "minecraft:not",
@@ -96,17 +99,18 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:red_sandstone"
                 },
                 {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "fluids": "#minecraft:water"
-                }
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "fluids": "#minecraft:water"
+                  }
               ]
             },
             "then": {
@@ -116,14 +120,19 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "packed_mud",
+              "grass_block",
+              "minecraft:smooth_sandstone",
+              "minecraft:red_sandstone"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -131,6 +140,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "air"
             ]
           }
         ]
@@ -151,7 +163,10 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:smooth_sandstone"
+          ]
         }
       }
     },

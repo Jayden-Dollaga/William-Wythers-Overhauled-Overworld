@@ -8,13 +8,15 @@
             "Name": "water"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 4,
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "packed_ice"
+        ]
       }
     },
     "type": "minecraft:disk"
@@ -31,7 +33,8 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": "minecraft:blue_ice"
         }
       }
     },
@@ -45,7 +48,8 @@
             0,
             2,
             0
-          ]
+          ],
+          "blocks": "minecraft:moss_block"
         }
       }
     },

@@ -9,15 +9,17 @@
             "Name": "red_sand"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "half_height": 4,
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:smooth_red_sandstone"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -30,6 +32,10 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "air",
+                    "water"
                   ]
                 }
               ]
@@ -54,7 +60,11 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:smooth_red_sandstone",
+          "minecraft:orange_terracotta"
+        ]
       }
     },
     {

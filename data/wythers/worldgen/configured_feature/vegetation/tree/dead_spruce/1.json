@@ -8,84 +8,93 @@
           "config": {
             "features": [
               {
-                "feature": {
-                  "config": {
-                    "tries": 4,
-                    "xz_spread": 4,
-                    "y_spread": 0,
-                    "feature": {
                       "feature": {
                         "config": {
-                          "direction": "down",
-                          "allowed_placement": {
-                            "type": "minecraft:matching_blocks"
-                          },
-                          "prioritize_tip": true,
-                          "layers": [
-                            {
-                              "height": {
-                                "type": "minecraft:uniform",
-                                "min_inclusive": 0,
-                                "max_inclusive": 2
-                              },
-                              "provider": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                  "Name": "minecraft:pale_hanging_moss",
-                                  "Properties": {
-                                    "tip": "false"
+                          "tries": 4,
+                          "xz_spread": 4,
+                          "y_spread": 0,
+                          "feature": {
+                            "feature": {
+                              "config": {
+                                "direction": "down",
+                                "allowed_placement": {
+                                  "type": "minecraft:matching_blocks",
+                                  "blocks": [
+                                    "air"
+                                  ]
+                                },
+                                "prioritize_tip": true,
+                                "layers": [
+                                  {
+                                    "height": {
+                                      "type": "minecraft:uniform",
+                                      "min_inclusive": 0,
+                                      "max_inclusive": 2
+                                    },
+                                    "provider": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:pale_hanging_moss",
+                                        "Properties": {
+                                          "tip": "false"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "height": 1,
+                                    "provider": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:pale_hanging_moss",
+                                        "Properties": {
+                                          "tip": "true"
+                                        }
+                                      }
+                                    }
                                   }
-                                }
-                              }
-                            },
-                            {
-                              "height": 1,
-                              "provider": {
-                                "type": "minecraft:simple_state_provider",
-                                "state": {
-                                  "Name": "minecraft:pale_hanging_moss",
-                                  "Properties": {
-                                    "tip": "true"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        "type": "minecraft:block_column"
-                      },
-                      "placement": [
-                        {
-                          "type": "minecraft:environment_scan",
-                          "direction_of_search": "up",
-                          "max_steps": 32,
-                          "target_condition": {
-                            "type": "minecraft:all_of",
-                            "predicates": [
-                              {
-                                "type": "minecraft:matching_blocks",
-                                "offset": [
-                                  0,
-                                  1,
-                                  0
                                 ]
                               },
+                              "type": "minecraft:block_column"
+                            },
+                            "placement": [
                               {
-                                "type": "minecraft:matching_blocks"
+                                "type": "minecraft:environment_scan",
+                                "direction_of_search": "up",
+                                "max_steps": 32,
+                                "target_condition": {
+                                  "type": "minecraft:all_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "stripped_spruce_log"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "blocks": [
+                                        "air"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                "allowed_search_condition": {
+                                  "type": "minecraft:true"
+                                }
                               }
                             ]
-                          },
-                          "allowed_search_condition": {
-                            "type": "minecraft:true"
                           }
-                        }
-                      ]
-                    }
-                  },
-                  "type": "minecraft:random_patch"
-                },
-                "placement": []
-              },
+                        },
+                        "type": "minecraft:random_patch"
+                      },
+                      "placement": []
+                    },
               {
                 "feature": {
                   "type": "minecraft:simple_random_selector",
@@ -96,11 +105,18 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
+                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
+                            },
+                            "dirt_provider": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:rooted_dirt"
+                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -115,7 +131,11 @@
                               "type": "minecraft:simple_state_provider",
                               "state": {
                                 "Name": "minecraft:air",
-                                "Properties": {}
+                                "Properties": {
+                                  "distance": "1",
+                                  "persistent": "false",
+                                  "waterlogged": "false"
+                                }
                               }
                             },
                             "trunk_placer": {
@@ -130,8 +150,7 @@
                               "offset": 3,
                               "height": 5
                             },
-                            "decorators": [],
-                            "type": "minecraft:tree"
+                            "decorators": []
                           }
                         },
                         "placement": []
@@ -141,11 +160,18 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
+                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
+                            },
+                            "dirt_provider": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:rooted_dirt"
+                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -160,7 +186,11 @@
                               "type": "minecraft:simple_state_provider",
                               "state": {
                                 "Name": "minecraft:air",
-                                "Properties": {}
+                                "Properties": {
+                                  "distance": "1",
+                                  "persistent": "false",
+                                  "waterlogged": "false"
+                                }
                               }
                             },
                             "trunk_placer": {
@@ -179,19 +209,25 @@
                               {
                                 "type": "minecraft:attached_to_leaves",
                                 "probability": 0.075,
+                                "exclusion_radius_xz": 0,
+                                "exclusion_radius_y": 0,
+                                "required_empty_blocks": 2,
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
                                     "Name": "minecraft:air",
-                                    "Properties": {}
+                                    "Properties": {
+                                      "distance": "2",
+                                      "persistent": "false",
+                                      "waterlogged": "false"
+                                    }
                                   }
                                 },
                                 "directions": [
                                   "down"
                                 ]
                               }
-                            ],
-                            "type": "minecraft:tree"
+                            ]
                           }
                         },
                         "placement": []
@@ -201,11 +237,18 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
+                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
+                            },
+                            "dirt_provider": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:rooted_dirt"
+                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -220,7 +263,11 @@
                               "type": "minecraft:simple_state_provider",
                               "state": {
                                 "Name": "minecraft:air",
-                                "Properties": {}
+                                "Properties": {
+                                  "distance": "1",
+                                  "persistent": "false",
+                                  "waterlogged": "false"
+                                }
                               }
                             },
                             "trunk_placer": {
@@ -239,19 +286,25 @@
                               {
                                 "type": "minecraft:attached_to_leaves",
                                 "probability": 0.035,
+                                "exclusion_radius_xz": 0,
+                                "exclusion_radius_y": 0,
+                                "required_empty_blocks": 2,
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
                                     "Name": "minecraft:air",
-                                    "Properties": {}
+                                    "Properties": {
+                                      "distance": "2",
+                                      "persistent": "false",
+                                      "waterlogged": "false"
+                                    }
                                   }
                                 },
                                 "directions": [
                                   "down"
                                 ]
                               }
-                            ],
-                            "type": "minecraft:tree"
+                            ]
                           }
                         },
                         "placement": []
@@ -272,7 +325,7 @@
                   }
                 ]
               },
-              {
+                    {
                 "feature": {
                   "type": "minecraft:simple_random_selector",
                   "config": {
@@ -282,16 +335,8 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": {
-                              "type": "minecraft:constant",
-                              "value": 0
-                            },
-                            "y_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 6,
-                              "min": -6,
-                              "plateau": 0
-                            }
+                            "xz_spread": 0,
+                            "y_spread": 6
                           }
                         ]
                       },
@@ -300,16 +345,8 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": {
-                              "type": "minecraft:constant",
-                              "value": 0
-                            },
-                            "y_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 11,
-                              "min": -11,
-                              "plateau": 0
-                            }
+                            "xz_spread": 0,
+                            "y_spread": 11
                           }
                         ]
                       },
@@ -322,16 +359,8 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": {
-                              "type": "minecraft:constant",
-                              "value": 0
-                            },
-                            "y_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 14,
-                              "min": -14,
-                              "plateau": 0
-                            }
+                            "xz_spread": 0,
+                            "y_spread": 14
                           }
                         ]
                       }
@@ -342,7 +371,8 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:stripped_spruce_log"
                     }
                   },
                   {
@@ -358,7 +388,8 @@
                               1,
                               14,
                               0
-                            ]
+                            ],
+                            "blocks": "minecraft:stripped_spruce_log"
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -366,7 +397,8 @@
                               0,
                               14,
                               1
-                            ]
+                            ],
+                            "blocks": "minecraft:stripped_spruce_log"
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -374,7 +406,8 @@
                               -1,
                               14,
                               0
-                            ]
+                            ],
+                            "blocks": "minecraft:stripped_spruce_log"
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -382,7 +415,8 @@
                               0,
                               14,
                               -1
-                            ]
+                            ],
+                            "blocks": "minecraft:stripped_spruce_log"
                           }
                         ]
                       }
@@ -400,7 +434,8 @@
                   {
                     "type": "minecraft:block_predicate_filter",
                     "predicate": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:stripped_spruce_log"
                     }
                   }
                 ]
@@ -427,7 +462,11 @@
                   "type": "minecraft:all_of",
                   "predicates": [
                     {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:air",
+                        "minecraft:snow"
+                      ]
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -435,7 +474,8 @@
                         0,
                         -1,
                         0
-                      ]
+                      ],
+                      "blocks": "minecraft:snow_block"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -443,7 +483,8 @@
                         0,
                         -2,
                         0
-                      ]
+                      ],
+                      "blocks": "minecraft:coarse_dirt"
                     }
                   ]
                 }

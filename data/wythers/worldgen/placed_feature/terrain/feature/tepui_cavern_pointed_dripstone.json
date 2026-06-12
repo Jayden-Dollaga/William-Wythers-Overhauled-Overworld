@@ -56,6 +56,9 @@
               0,
               11,
               0
+            ],
+            "blocks": [
+              "minecraft:air"
             ]
           },
           {
@@ -64,10 +67,16 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:dripstone_block"
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:cave_air"
+            ]
           }
         ]
       },

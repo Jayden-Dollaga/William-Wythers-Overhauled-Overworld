@@ -16,8 +16,7 @@
                           "Name": "minecraft:dead_brain_coral_block"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -26,7 +25,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "air"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -63,8 +65,7 @@
                   "Name": "minecraft:dead_brain_coral_block"
                 }
               },
-              "rules": [],
-              "type": "minecraft:rule_based_state_provider"
+              "rules": []
             },
             "radius": {
               "type": "minecraft:uniform",
@@ -76,7 +77,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_block_tag",
@@ -111,7 +115,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "air"
+                  ]
                 },
                 {
                   "type": "minecraft:matching_block_tag",

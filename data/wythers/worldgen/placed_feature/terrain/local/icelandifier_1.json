@@ -21,7 +21,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:moss_block"
+        ]
       }
     },
     {

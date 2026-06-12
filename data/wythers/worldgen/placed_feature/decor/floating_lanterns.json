@@ -21,6 +21,9 @@
                   0,
                   2,
                   0
+                ],
+                "blocks": [
+                  "minecraft:sculk"
                 ]
               }
             ]
@@ -36,6 +39,9 @@
                     0,
                     1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:moss_block"
                   ]
                 }
               },
@@ -47,6 +53,9 @@
                     0,
                     2,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:sculk"
                   ]
                 }
               }
@@ -74,6 +83,9 @@
           0,
           -1,
           0
+        ],
+        "blocks": [
+          "water"
         ]
       }
     },
@@ -87,6 +99,9 @@
           0,
           -7,
           0
+        ],
+        "blocks": [
+          "water"
         ]
       }
     },

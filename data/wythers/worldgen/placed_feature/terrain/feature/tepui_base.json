@@ -14,8 +14,7 @@
                     "Name": "minecraft:smooth_basalt"
                   }
                 },
-                "rules": [],
-                "type": "minecraft:rule_based_state_provider"
+                "rules": []
               },
               "half_height": 4,
               "target": {
@@ -34,6 +33,9 @@
                           0,
                           1,
                           0
+                        ],
+                        "blocks": [
+                          "smooth_basalt"
                         ]
                       }
                     ]
@@ -42,7 +44,10 @@
                     "type": "minecraft:all_of",
                     "predicates": [
                       {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:grass_block"
+                        ]
                       },
                       {
                         "type": "minecraft:any_of",
@@ -88,7 +93,14 @@
                     ]
                   },
                   {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:stone",
+                      "minecraft:dirt",
+                      "minecraft:coarse_dirt",
+                      "minecraft:rooted_dirt",
+                      "minecraft:dripstone_block"
+                    ]
                   }
                 ]
               },
@@ -114,7 +126,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:tuff"
+        ]
       }
     },
     {

@@ -149,6 +149,10 @@
                     0,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass"
                   ]
                 },
                 {
@@ -157,6 +161,11 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:grass_block",
+                    "minecraft:mud",
+                    "minecraft:muddy_mangrove_roots"
                   ]
                 },
                 {
@@ -165,6 +174,11 @@
                     2,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -173,6 +187,11 @@
                     -2,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -181,6 +200,11 @@
                     0,
                     0,
                     2
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -189,6 +213,11 @@
                     0,
                     0,
                     -2
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -197,6 +226,11 @@
                     1,
                     0,
                     1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -205,6 +239,11 @@
                     1,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -213,6 +252,11 @@
                     1,
                     1,
                     -1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -221,6 +265,11 @@
                     0,
                     0,
                     1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -229,6 +278,11 @@
                     0,
                     0,
                     -1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -237,6 +291,11 @@
                     -1,
                     0,
                     1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -245,6 +304,11 @@
                     -1,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 },
                 {
@@ -253,6 +317,11 @@
                     -1,
                     0,
                     -1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass",
+                    "minecraft:grass_block"
                   ]
                 }
               ]

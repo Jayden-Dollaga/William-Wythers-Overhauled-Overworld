@@ -111,7 +111,10 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:air"
+                        ]
                       }
                     }
                   ]
@@ -137,7 +140,8 @@
                                     "Name": "minecraft:big_dripleaf",
                                     "Properties": {
                                       "facing": "west",
-                                      "tilt": "partial"
+                                      "tilt": "partial",
+                                      "waterlogged": "false"
                                     }
                                   }
                                 },
@@ -157,6 +161,9 @@
                                         1,
                                         0,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -165,6 +172,9 @@
                                         1,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -181,7 +191,8 @@
                                     "Name": "minecraft:big_dripleaf",
                                     "Properties": {
                                       "facing": "east",
-                                      "tilt": "partial"
+                                      "tilt": "partial",
+                                      "waterlogged": "false"
                                     }
                                   }
                                 },
@@ -201,6 +212,9 @@
                                         -1,
                                         0,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -209,6 +223,9 @@
                                         -1,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -225,7 +242,8 @@
                                     "Name": "minecraft:big_dripleaf",
                                     "Properties": {
                                       "facing": "north",
-                                      "tilt": "partial"
+                                      "tilt": "partial",
+                                      "waterlogged": "false"
                                     }
                                   }
                                 },
@@ -245,6 +263,9 @@
                                         0,
                                         0,
                                         1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -253,6 +274,9 @@
                                         0,
                                         1,
                                         1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -269,7 +293,8 @@
                                     "Name": "minecraft:big_dripleaf",
                                     "Properties": {
                                       "facing": "south",
-                                      "tilt": "partial"
+                                      "tilt": "partial",
+                                      "waterlogged": "false"
                                     }
                                   }
                                 },
@@ -289,6 +314,9 @@
                                         0,
                                         0,
                                         -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:cactus"
                                       ]
                                     },
                                     {
@@ -297,6 +325,9 @@
                                         0,
                                         1,
                                         -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:bamboo"
                                       ]
                                     }
                                   ]
@@ -317,7 +348,10 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:cactus"
+                    ]
                   }
                 }
               ]

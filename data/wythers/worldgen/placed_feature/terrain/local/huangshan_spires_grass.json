@@ -8,8 +8,7 @@
             "Name": "minecraft:grass_block"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 4,
@@ -17,7 +16,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:dripstone_block"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -25,6 +27,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "air"
             ]
           }
         ]

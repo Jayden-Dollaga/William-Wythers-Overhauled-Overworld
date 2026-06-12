@@ -8,8 +8,7 @@
             "Name": "packed_ice"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 4,
@@ -28,6 +27,10 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "packed_ice",
+              "blue_ice"
             ]
           }
         ]
@@ -47,7 +50,8 @@
       "predicate": {
         "type": "minecraft:not",
         "predicate": {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": "minecraft:spruce_wood"
         }
       }
     },
@@ -59,6 +63,10 @@
           0,
           2,
           0
+        ],
+        "blocks": [
+          "minecraft:black_concrete",
+          "minecraft:sculk"
         ]
       }
     },

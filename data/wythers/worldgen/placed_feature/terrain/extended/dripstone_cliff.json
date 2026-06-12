@@ -30,7 +30,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:grass_block"
+                  ]
                 },
                 {
                   "type": "minecraft:any_of",
@@ -82,8 +85,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:any_of",
@@ -99,6 +101,10 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "air",
+                    "water"
                   ]
                 }
               },
@@ -108,6 +114,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air"
                 ]
               },
               {
@@ -280,7 +289,10 @@
                 "tag": "wythers:air_and_plants"
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -288,6 +300,11 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:stone",
+                  "minecraft:air",
+                  "minecraft:water"
                 ]
               }
             ]
@@ -296,7 +313,13 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt",
+                  "minecraft:rooted_dirt",
+                  "minecraft:coarse_dirt",
+                  "minecraft:packed_mud"
+                ]
               },
               {
                 "type": "minecraft:any_of",
@@ -307,6 +330,10 @@
                       1,
                       -1,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:water"
                     ]
                   },
                   {
@@ -315,6 +342,10 @@
                       -1,
                       -1,
                       0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:water"
                     ]
                   },
                   {
@@ -323,6 +354,10 @@
                       0,
                       -1,
                       1
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:water"
                     ]
                   },
                   {
@@ -331,6 +366,10 @@
                       0,
                       -1,
                       -1
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:water"
                     ]
                   }
                 ]

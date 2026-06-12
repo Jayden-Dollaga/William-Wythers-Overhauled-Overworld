@@ -19,6 +19,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -26,7 +29,8 @@
             "state": {
               "Name": "minecraft:brain_coral_wall_fan",
               "Properties": {
-                "facing": "west"
+                "facing": "west",
+                "waterlogged": "true"
               }
             }
           }
@@ -38,6 +42,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -45,7 +52,8 @@
             "state": {
               "Name": "minecraft:brain_coral_wall_fan",
               "Properties": {
-                "facing": "east"
+                "facing": "east",
+                "waterlogged": "true"
               }
             }
           }
@@ -57,6 +65,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -64,7 +75,8 @@
             "state": {
               "Name": "minecraft:brain_coral_wall_fan",
               "Properties": {
-                "facing": "north"
+                "facing": "north",
+                "waterlogged": "true"
               }
             }
           }
@@ -76,6 +88,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:brain_coral_block"
             ]
           },
           "then": {
@@ -83,7 +98,8 @@
             "state": {
               "Name": "minecraft:brain_coral_wall_fan",
               "Properties": {
-                "facing": "south"
+                "facing": "south",
+                "waterlogged": "true"
               }
             }
           }
@@ -95,6 +111,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -102,7 +121,8 @@
             "state": {
               "Name": "minecraft:bubble_coral_wall_fan",
               "Properties": {
-                "facing": "west"
+                "facing": "west",
+                "waterlogged": "true"
               }
             }
           }
@@ -114,6 +134,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -121,7 +144,8 @@
             "state": {
               "Name": "minecraft:bubble_coral_wall_fan",
               "Properties": {
-                "facing": "east"
+                "facing": "east",
+                "waterlogged": "true"
               }
             }
           }
@@ -133,6 +157,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -140,7 +167,8 @@
             "state": {
               "Name": "minecraft:bubble_coral_wall_fan",
               "Properties": {
-                "facing": "north"
+                "facing": "north",
+                "waterlogged": "true"
               }
             }
           }
@@ -152,6 +180,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:bubble_coral_block"
             ]
           },
           "then": {
@@ -159,7 +190,8 @@
             "state": {
               "Name": "minecraft:bubble_coral_wall_fan",
               "Properties": {
-                "facing": "south"
+                "facing": "south",
+                "waterlogged": "true"
               }
             }
           }
@@ -171,6 +203,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -178,7 +213,8 @@
             "state": {
               "Name": "minecraft:fire_coral_wall_fan",
               "Properties": {
-                "facing": "west"
+                "facing": "west",
+                "waterlogged": "true"
               }
             }
           }
@@ -190,6 +226,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -197,7 +236,8 @@
             "state": {
               "Name": "minecraft:fire_coral_wall_fan",
               "Properties": {
-                "facing": "east"
+                "facing": "east",
+                "waterlogged": "true"
               }
             }
           }
@@ -209,6 +249,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -216,7 +259,8 @@
             "state": {
               "Name": "minecraft:fire_coral_wall_fan",
               "Properties": {
-                "facing": "north"
+                "facing": "north",
+                "waterlogged": "true"
               }
             }
           }
@@ -228,6 +272,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:fire_coral_block"
             ]
           },
           "then": {
@@ -235,7 +282,8 @@
             "state": {
               "Name": "minecraft:fire_coral_wall_fan",
               "Properties": {
-                "facing": "south"
+                "facing": "south",
+                "waterlogged": "true"
               }
             }
           }
@@ -247,6 +295,10 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:horn_coral_block",
+              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -254,7 +306,8 @@
             "state": {
               "Name": "minecraft:horn_coral_wall_fan",
               "Properties": {
-                "facing": "west"
+                "facing": "west",
+                "waterlogged": "true"
               }
             }
           }
@@ -266,6 +319,10 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:horn_coral_block",
+              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -273,7 +330,8 @@
             "state": {
               "Name": "minecraft:horn_coral_wall_fan",
               "Properties": {
-                "facing": "east"
+                "facing": "east",
+                "waterlogged": "true"
               }
             }
           }
@@ -285,6 +343,10 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:horn_coral_block",
+              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -292,7 +354,8 @@
             "state": {
               "Name": "minecraft:horn_coral_wall_fan",
               "Properties": {
-                "facing": "north"
+                "facing": "north",
+                "waterlogged": "true"
               }
             }
           }
@@ -304,6 +367,10 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:horn_coral_block",
+              "minecraft:wet_sponge"
             ]
           },
           "then": {
@@ -311,7 +378,8 @@
             "state": {
               "Name": "minecraft:horn_coral_wall_fan",
               "Properties": {
-                "facing": "south"
+                "facing": "south",
+                "waterlogged": "true"
               }
             }
           }
@@ -323,6 +391,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -330,7 +401,8 @@
             "state": {
               "Name": "minecraft:tube_coral_wall_fan",
               "Properties": {
-                "facing": "west"
+                "facing": "west",
+                "waterlogged": "true"
               }
             }
           }
@@ -342,6 +414,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -349,7 +424,8 @@
             "state": {
               "Name": "minecraft:tube_coral_wall_fan",
               "Properties": {
-                "facing": "east"
+                "facing": "east",
+                "waterlogged": "true"
               }
             }
           }
@@ -361,6 +437,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -368,7 +447,8 @@
             "state": {
               "Name": "minecraft:tube_coral_wall_fan",
               "Properties": {
-                "facing": "north"
+                "facing": "north",
+                "waterlogged": "true"
               }
             }
           }
@@ -380,6 +460,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:tube_coral_block"
             ]
           },
           "then": {
@@ -387,7 +470,8 @@
             "state": {
               "Name": "minecraft:tube_coral_wall_fan",
               "Properties": {
-                "facing": "south"
+                "facing": "south",
+                "waterlogged": "true"
               }
             }
           }
@@ -399,6 +483,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -418,7 +505,8 @@
                 "data": {
                   "Name": "minecraft:dead_brain_coral_wall_fan",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -432,6 +520,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -451,7 +542,8 @@
                 "data": {
                   "Name": "minecraft:dead_brain_coral_wall_fan",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -465,6 +557,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -484,7 +579,8 @@
                 "data": {
                   "Name": "minecraft:dead_brain_coral_wall_fan",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -498,6 +594,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:dead_brain_coral_block"
             ]
           },
           "then": {
@@ -517,7 +616,8 @@
                 "data": {
                   "Name": "minecraft:dead_brain_coral_wall_fan",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -531,6 +631,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -550,7 +653,8 @@
                 "data": {
                   "Name": "minecraft:dead_bubble_coral_wall_fan",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -564,6 +668,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -583,7 +690,8 @@
                 "data": {
                   "Name": "minecraft:dead_bubble_coral_wall_fan",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -597,6 +705,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -616,7 +727,8 @@
                 "data": {
                   "Name": "minecraft:dead_bubble_coral_wall_fan",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -630,6 +742,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:dead_bubble_coral_block"
             ]
           },
           "then": {
@@ -649,7 +764,8 @@
                 "data": {
                   "Name": "minecraft:dead_bubble_coral_wall_fan",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -663,6 +779,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -682,7 +801,8 @@
                 "data": {
                   "Name": "minecraft:dead_fire_coral_wall_fan",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -696,6 +816,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -715,7 +838,8 @@
                 "data": {
                   "Name": "minecraft:dead_fire_coral_wall_fan",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -729,6 +853,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -748,7 +875,8 @@
                 "data": {
                   "Name": "minecraft:dead_fire_coral_wall_fan",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -762,6 +890,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:dead_fire_coral_block"
             ]
           },
           "then": {
@@ -781,7 +912,8 @@
                 "data": {
                   "Name": "minecraft:dead_fire_coral_wall_fan",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -795,6 +927,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -814,7 +949,8 @@
                 "data": {
                   "Name": "minecraft:dead_horn_coral_wall_fan",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -828,6 +964,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -847,7 +986,8 @@
                 "data": {
                   "Name": "minecraft:dead_horn_coral_wall_fan",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -861,6 +1001,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -880,7 +1023,8 @@
                 "data": {
                   "Name": "minecraft:dead_horn_coral_wall_fan",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -894,6 +1038,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:dead_horn_coral_block"
             ]
           },
           "then": {
@@ -913,7 +1060,8 @@
                 "data": {
                   "Name": "minecraft:dead_horn_coral_wall_fan",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -927,6 +1075,9 @@
               1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -946,7 +1097,8 @@
                 "data": {
                   "Name": "minecraft:dead_tube_coral_wall_fan",
                   "Properties": {
-                    "facing": "west"
+                    "facing": "west",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -960,6 +1112,9 @@
               -1,
               0,
               0
+            ],
+            "blocks": [
+              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -979,7 +1134,8 @@
                 "data": {
                   "Name": "minecraft:dead_tube_coral_wall_fan",
                   "Properties": {
-                    "facing": "east"
+                    "facing": "east",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -993,6 +1149,9 @@
               0,
               0,
               1
+            ],
+            "blocks": [
+              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1012,7 +1171,8 @@
                 "data": {
                   "Name": "minecraft:dead_tube_coral_wall_fan",
                   "Properties": {
-                    "facing": "north"
+                    "facing": "north",
+                    "waterlogged": "true"
                   }
                 }
               }
@@ -1026,6 +1186,9 @@
               0,
               0,
               -1
+            ],
+            "blocks": [
+              "minecraft:dead_tube_coral_block"
             ]
           },
           "then": {
@@ -1045,15 +1208,15 @@
                 "data": {
                   "Name": "minecraft:dead_tube_coral_wall_fan",
                   "Properties": {
-                    "facing": "south"
+                    "facing": "south",
+                    "waterlogged": "true"
                   }
                 }
               }
             ]
           }
         }
-      ],
-      "type": "minecraft:rule_based_state_provider"
+      ]
     },
     "radius": 8,
     "half_height": 4,
@@ -1061,7 +1224,10 @@
       "type": "minecraft:all_of",
       "predicates": [
         {
-          "type": "minecraft:matching_blocks"
+          "type": "minecraft:matching_blocks",
+          "blocks": [
+            "minecraft:water"
+          ]
         },
         {
           "type": "minecraft:not",
@@ -1074,6 +1240,9 @@
                   -1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:fire_coral_block"
                 ]
               },
               {
@@ -1082,6 +1251,9 @@
                   1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:fire_coral_block"
                 ]
               }
             ]
@@ -1098,6 +1270,9 @@
                   0,
                   0,
                   1
+                ],
+                "blocks": [
+                  "minecraft:fire_coral_block"
                 ]
               },
               {
@@ -1106,6 +1281,9 @@
                   0,
                   0,
                   -1
+                ],
+                "blocks": [
+                  "minecraft:fire_coral_block"
                 ]
               }
             ]

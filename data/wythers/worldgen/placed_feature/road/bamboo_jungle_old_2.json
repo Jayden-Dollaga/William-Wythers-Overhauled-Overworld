@@ -1,5 +1,5 @@
 {
-  "feature": {
+    "feature": {
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
@@ -12,7 +12,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:grass_block"
+              ]
             },
             "then": {
               "type": "minecraft:weighted_state_provider",
@@ -44,8 +47,7 @@
               ]
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:any_of",
@@ -54,7 +56,10 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -62,6 +67,9 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:packed_mud"
                 ]
               }
             ]
@@ -72,6 +80,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:grass_block"
             ]
           }
         ]
@@ -84,48 +95,48 @@
       "half_height": 4
     }
   },
-  "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 50
-    },
-    {
-      "type": "minecraft:height_range",
-      "height": {
-        "absolute": 0
-      }
-    },
-    {
-      "type": "minecraft:in_square"
-    },
-    {
-      "type": "minecraft:surface_relative_threshold_filter",
-      "heightmap": "WORLD_SURFACE_WG",
-      "min_inclusive": -100,
-      "max_inclusive": -63
-    },
-    {
-      "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
-    },
-    {
-      "type": "minecraft:noise_based_count",
-      "noise_to_count_ratio": 1,
-      "noise_factor": 250,
-      "noise_offset": 0.025
-    },
-    {
-      "type": "minecraft:noise_based_count",
-      "noise_to_count_ratio": -1,
-      "noise_factor": 250,
-      "noise_offset": -0.025
-    },
-    {
-      "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
-    },
-    {
-      "type": "minecraft:biome"
-    }
-  ]
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 50
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "absolute": 0
+            }
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:surface_relative_threshold_filter",
+            "heightmap": "WORLD_SURFACE_WG",
+            "min_inclusive": -100,
+            "max_inclusive": -63
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        },
+        {
+            "type": "minecraft:noise_based_count",
+            "noise_to_count_ratio": 1,
+            "noise_factor": 250,
+            "noise_offset": 0.025
+        },
+        {
+            "type": "minecraft:noise_based_count",
+            "noise_to_count_ratio": -1,
+            "noise_factor": 250,
+            "noise_offset": -0.025
+        },
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        },
+        {
+            "type": "minecraft:biome"
+        }
+    ]
 }

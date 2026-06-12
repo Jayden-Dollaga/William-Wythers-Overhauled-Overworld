@@ -20,6 +20,10 @@
                     0,
                     5,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -28,7 +32,8 @@
                     0,
                     4,
                     0
-                  ]
+                  ],
+                  "blocks": "minecraft:cave_air"
                 }
               ]
             },
@@ -39,8 +44,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -51,10 +55,21 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:cave_air",
+              "air",
+              "minecraft:powder_snow",
+              "minecraft:snow"
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:packed_ice",
+              "minecraft:blue_ice",
+              "minecraft:snow_block"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -67,6 +82,10 @@
                     1,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -75,6 +94,10 @@
                     -1,
                     0,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -83,6 +106,10 @@
                     0,
                     0,
                     1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 },
                 {
@@ -91,6 +118,10 @@
                     0,
                     0,
                     -1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:snow"
                   ]
                 }
               ]
@@ -123,6 +154,9 @@
             0,
             1,
             0
+          ],
+          "blocks": [
+            "minecraft:moss_block"
           ]
         }
       }
@@ -183,6 +217,9 @@
                 0,
                 -5,
                 0
+              ],
+              "blocks": [
+                "water"
               ]
             }
           }

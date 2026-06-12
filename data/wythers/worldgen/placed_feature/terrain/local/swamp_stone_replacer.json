@@ -9,8 +9,7 @@
             "Name": "minecraft:packed_mud"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -122,6 +121,9 @@
               0,
               -2,
               0
+            ],
+            "blocks": [
+              "minecraft:air"
             ]
           },
           {
@@ -130,6 +132,9 @@
               0,
               -3,
               0
+            ],
+            "blocks": [
+              "minecraft:packed_mud"
             ]
           }
         ]

@@ -20,7 +20,8 @@
                 0,
                 1,
                 0
-              ]
+              ],
+              "blocks": "minecraft:basalt"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -32,11 +33,14 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:mycelium",
+          "minecraft:dirt"
+        ]
       },
       "radius": 8,
       "half_height": 4

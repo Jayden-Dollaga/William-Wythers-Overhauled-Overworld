@@ -20,7 +20,8 @@
                 0,
                 1,
                 0
-              ]
+              ],
+              "blocks": "minecraft:snow"
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -29,11 +30,13 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:grass_block"
+        ]
       },
       "radius": 4,
       "half_height": 4
@@ -56,6 +59,9 @@
             0,
             1,
             0
+          ],
+          "blocks": [
+            "minecraft:moss_block"
           ]
         }
       }

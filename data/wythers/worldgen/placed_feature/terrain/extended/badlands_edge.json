@@ -12,8 +12,7 @@
             }
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -21,7 +20,11 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:brown_terracotta",
+                "minecraft:gray_terracotta"
+              ]
             }
           },
           {
@@ -30,7 +33,8 @@
               0,
               1,
               0
-            ]
+            ],
+            "blocks": "minecraft:air"
           },
           {
             "type": "minecraft:any_of",
@@ -45,7 +49,11 @@
                 "tag": "minecraft:terracotta"
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:red_sand",
+                  "minecraft:smooth_red_sandstone"
+                ]
               }
             ]
           },
@@ -72,6 +80,10 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:smooth_red_sandstone",
+                  "minecraft:red_sand"
                 ]
               }
             ]
@@ -87,6 +99,12 @@
                     1,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:water",
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_basalt"
                   ]
                 },
                 {
@@ -95,6 +113,12 @@
                     -1,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:water",
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_basalt"
                   ]
                 },
                 {
@@ -103,6 +127,12 @@
                     0,
                     -1,
                     1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:water",
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_basalt"
                   ]
                 },
                 {
@@ -111,6 +141,12 @@
                     0,
                     -1,
                     -1
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:water",
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_basalt"
                   ]
                 },
                 {
@@ -119,6 +155,10 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -127,6 +167,10 @@
                     0,
                     -2,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -135,6 +179,10 @@
                     0,
                     -3,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -143,6 +191,10 @@
                     0,
                     -4,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -151,6 +203,10 @@
                     0,
                     -5,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -159,6 +215,10 @@
                     0,
                     -6,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 },
                 {
@@ -167,6 +227,10 @@
                     0,
                     -7,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:yellow_terracotta",
+                    "minecraft:smooth_sandstone"
                   ]
                 }
               ]
@@ -199,7 +263,8 @@
             0,
             2,
             0
-          ]
+          ],
+          "blocks": "minecraft:dripstone_block"
         }
       }
     },

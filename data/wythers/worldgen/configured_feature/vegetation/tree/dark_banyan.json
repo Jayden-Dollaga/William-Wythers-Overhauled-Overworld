@@ -19,11 +19,21 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
+                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 2
+                          },
+                          "dirt_provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dark_oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",
@@ -41,7 +51,11 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:dark_oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               },
                               {
@@ -124,8 +138,7 @@
                                 ]
                               }
                             }
-                          ],
-                          "type": "minecraft:tree"
+                          ]
                         }
                       },
                       "placement": [
@@ -145,11 +158,21 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
+                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 2
+                          },
+                          "dirt_provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dark_oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",
@@ -167,7 +190,11 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:dark_oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false",
+                                    "waterlogged": "false"
+                                  }
                                 }
                               },
                               {
@@ -250,8 +277,7 @@
                                 ]
                               }
                             }
-                          ],
-                          "type": "minecraft:tree"
+                          ]
                         }
                       },
                       "placement": [
@@ -283,7 +309,8 @@
                                       "config": {
                                         "direction": "down",
                                         "allowed_placement": {
-                                          "type": "minecraft:matching_blocks"
+                                          "type": "minecraft:matching_blocks",
+                                          "blocks": "minecraft:air"
                                         },
                                         "prioritize_tip": true,
                                         "layers": [
@@ -297,7 +324,9 @@
                                               "type": "minecraft:simple_state_provider",
                                               "state": {
                                                 "Name": "minecraft:mangrove_roots",
-                                                "Properties": {}
+                                                "Properties": {
+                                                  "waterlogged": "false"
+                                                }
                                               }
                                             }
                                           },
@@ -307,7 +336,9 @@
                                               "type": "minecraft:simple_state_provider",
                                               "state": {
                                                 "Name": "minecraft:hanging_roots",
-                                                "Properties": {}
+                                                "Properties": {
+                                                  "waterlogged": "false"
+                                                }
                                               }
                                             }
                                           }
@@ -326,6 +357,12 @@
                                                 1,
                                                 0,
                                                 0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:air",
+                                                "minecraft:cave_vines_plant",
+                                                "minecraft:dark_oak_leaves",
+                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -334,6 +371,12 @@
                                                 -1,
                                                 0,
                                                 0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:air",
+                                                "minecraft:cave_vines_plant",
+                                                "minecraft:dark_oak_leaves",
+                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -342,6 +385,12 @@
                                                 0,
                                                 0,
                                                 1
+                                              ],
+                                              "blocks": [
+                                                "minecraft:air",
+                                                "minecraft:cave_vines_plant",
+                                                "minecraft:dark_oak_leaves",
+                                                "minecraft:vine"
                                               ]
                                             },
                                             {
@@ -350,6 +399,12 @@
                                                 0,
                                                 0,
                                                 -1
+                                              ],
+                                              "blocks": [
+                                                "minecraft:air",
+                                                "minecraft:cave_vines_plant",
+                                                "minecraft:dark_oak_leaves",
+                                                "minecraft:vine"
                                               ]
                                             }
                                           ]
@@ -374,10 +429,16 @@
                                         0,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "dark_oak_wood"
                                       ]
                                     },
                                     {
-                                      "type": "minecraft:matching_blocks"
+                                      "type": "minecraft:matching_blocks",
+                                      "blocks": [
+                                        "air"
+                                      ]
                                     }
                                   ]
                                 },

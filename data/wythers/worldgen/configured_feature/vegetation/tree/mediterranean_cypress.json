@@ -16,11 +16,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -35,7 +42,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -50,8 +61,7 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -63,11 +73,18 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
+                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
+                    },
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -82,7 +99,11 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "distance": "6",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
                       }
                     },
                     "trunk_placer": {
@@ -97,8 +118,7 @@
                       "offset": 5,
                       "height": 6
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": []
@@ -118,6 +138,10 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
                 ]
               }
             }
@@ -138,11 +162,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -157,7 +188,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -172,8 +207,7 @@
                           "offset": 1,
                           "height": 6
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -185,11 +219,18 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
+                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
+                    },
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -204,7 +245,11 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "distance": "6",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
                       }
                     },
                     "trunk_placer": {
@@ -219,8 +264,7 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": []
@@ -240,6 +284,10 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
                 ]
               }
             }
@@ -260,11 +308,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -279,7 +334,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -294,8 +353,7 @@
                           "offset": 1,
                           "height": 8
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -308,11 +366,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -327,7 +392,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -343,8 +412,7 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -356,11 +424,18 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
+                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
+                    },
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -375,7 +450,11 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "distance": "6",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
                       }
                     },
                     "trunk_placer": {
@@ -390,8 +469,7 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": []
@@ -411,6 +489,10 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
                 ]
               }
             }
@@ -431,11 +513,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -450,7 +539,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -465,8 +558,7 @@
                           "offset": 1,
                           "height": 9
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -479,11 +571,18 @@
                       "type": "minecraft:tree",
                       "config": {
                         "ignore_vines": true,
+                        "force_dirt": true,
                         "minimum_size": {
                           "type": "minecraft:two_layers_feature_size",
                           "limit": 1,
                           "lower_size": 1,
                           "upper_size": 1
+                        },
+                        "dirt_provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
                         },
                         "trunk_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -498,7 +597,11 @@
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "6",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           }
                         },
                         "trunk_placer": {
@@ -514,8 +617,7 @@
                           "foliage_height": 2,
                           "leaf_placement_attempts": 100
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": []
@@ -527,11 +629,18 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
+                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
+                    },
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -546,7 +655,11 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "distance": "6",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
                       }
                     },
                     "trunk_placer": {
@@ -561,8 +674,7 @@
                       "offset": 6,
                       "height": 7
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": []
@@ -582,6 +694,10 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
                 ]
               }
             }
@@ -601,11 +717,18 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
+                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 1,
                       "upper_size": 1
+                    },
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -620,7 +743,11 @@
                       "type": "minecraft:simple_state_provider",
                       "state": {
                         "Name": "minecraft:spruce_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "distance": "6",
+                          "persistent": "false",
+                          "waterlogged": "false"
+                        }
                       }
                     },
                     "trunk_placer": {
@@ -635,8 +762,7 @@
                       "offset": 1,
                       "height": 7
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": []
@@ -648,11 +774,18 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
+                "force_dirt": true,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "limit": 1,
                   "lower_size": 1,
                   "upper_size": 1
+                },
+                "dirt_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:dirt"
+                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -667,7 +800,11 @@
                   "type": "minecraft:simple_state_provider",
                   "state": {
                     "Name": "minecraft:spruce_leaves",
-                    "Properties": {}
+                    "Properties": {
+                      "distance": "6",
+                      "persistent": "false",
+                      "waterlogged": "false"
+                    }
                   }
                 },
                 "trunk_placer": {
@@ -682,8 +819,7 @@
                   "offset": 6,
                   "height": 7
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": []
@@ -703,6 +839,10 @@
               0,
               -1,
               0
+            ],
+            "blocks": [
+              "minecraft:grass_block",
+              "minecraft:dirt"
             ]
           }
         }

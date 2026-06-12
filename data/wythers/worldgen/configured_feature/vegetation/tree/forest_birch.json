@@ -6,12 +6,19 @@
         "feature": {
           "config": {
             "ignore_vines": true,
+            "force_dirt": true,
             "minimum_size": {
               "type": "minecraft:two_layers_feature_size",
               "min_clipped_height": 1,
               "limit": 1,
               "lower_size": 1,
               "upper_size": 1
+            },
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:rooted_dirt"
+              }
             },
             "trunk_provider": {
               "type": "minecraft:simple_state_provider",
@@ -37,8 +44,7 @@
               "offset": 0,
               "height": 2
             },
-            "decorators": [],
-            "type": "minecraft:tree"
+            "decorators": []
           },
           "type": "minecraft:tree"
         },
@@ -124,12 +130,30 @@
                               "feature": {
                                 "config": {
                                   "ignore_vines": true,
+                                  "force_dirt": true,
                                   "minimum_size": {
                                     "type": "minecraft:two_layers_feature_size",
                                     "min_clipped_height": 1,
                                     "limit": 1,
                                     "lower_size": 1,
                                     "upper_size": 1
+                                  },
+                                  "dirt_provider": {
+                                    "type": "minecraft:weighted_state_provider",
+                                    "entries": [
+                                      {
+                                        "weight": 1,
+                                        "data": {
+                                          "Name": "minecraft:birch_wood"
+                                        }
+                                      },
+                                      {
+                                        "weight": 1,
+                                        "data": {
+                                          "Name": "minecraft:air"
+                                        }
+                                      }
+                                    ]
                                   },
                                   "trunk_provider": {
                                     "type": "minecraft:simple_state_provider",
@@ -155,8 +179,7 @@
                                     "offset": 0,
                                     "height": 2
                                   },
-                                  "decorators": [],
-                                  "type": "minecraft:tree"
+                                  "decorators": []
                                 },
                                 "type": "minecraft:tree"
                               },
@@ -168,12 +191,30 @@
                           "feature": {
                             "config": {
                               "ignore_vines": true,
+                              "force_dirt": false,
                               "minimum_size": {
                                 "type": "minecraft:two_layers_feature_size",
                                 "min_clipped_height": 1,
                                 "limit": 1,
                                 "lower_size": 1,
                                 "upper_size": 1
+                              },
+                              "dirt_provider": {
+                                "type": "minecraft:weighted_state_provider",
+                                "entries": [
+                                  {
+                                    "weight": 1,
+                                    "data": {
+                                      "Name": "minecraft:birch_wood"
+                                    }
+                                  },
+                                  {
+                                    "weight": 1,
+                                    "data": {
+                                      "Name": "minecraft:air"
+                                    }
+                                  }
+                                ]
                               },
                               "trunk_provider": {
                                 "type": "minecraft:simple_state_provider",
@@ -199,8 +240,7 @@
                                 "offset": 0,
                                 "height": 2
                               },
-                              "decorators": [],
-                              "type": "minecraft:tree"
+                              "decorators": []
                             },
                             "type": "minecraft:tree"
                           },
@@ -223,7 +263,8 @@
                                   0,
                                   -1,
                                   0
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -231,7 +272,8 @@
                                   1,
                                   0,
                                   1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -239,7 +281,8 @@
                                   1,
                                   0,
                                   0
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -247,7 +290,8 @@
                                   1,
                                   0,
                                   -1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -255,7 +299,8 @@
                                   0,
                                   0,
                                   1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -263,7 +308,8 @@
                                   0,
                                   0,
                                   -1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -271,7 +317,8 @@
                                   -1,
                                   0,
                                   1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -279,7 +326,8 @@
                                   -1,
                                   0,
                                   0
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               },
                               {
                                 "type": "minecraft:matching_blocks",
@@ -287,7 +335,8 @@
                                   -1,
                                   0,
                                   -1
-                                ]
+                                ],
+                                "blocks": "minecraft:birch_wood"
                               }
                             ]
                           }
@@ -302,7 +351,10 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:birch_wood"
+                    ]
                   }
                 },
                 {
@@ -313,7 +365,8 @@
                     "type": "minecraft:all_of",
                     "predicates": [
                       {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
                       },
                       {
                         "type": "minecraft:matching_blocks",
@@ -321,7 +374,8 @@
                           0,
                           -1,
                           0
-                        ]
+                        ],
+                        "blocks": "minecraft:birch_wood"
                       }
                     ]
                   },

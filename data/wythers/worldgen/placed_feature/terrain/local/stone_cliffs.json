@@ -9,8 +9,7 @@
             "Name": "minecraft:stone"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:any_of",
@@ -21,7 +20,11 @@
               {
                 "type": "minecraft:not",
                 "predicate": {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:mud",
+                    "minecraft:muddy_mangrove_roots"
+                  ]
                 }
               },
               {
@@ -30,6 +33,11 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:short_grass",
+                  "minecraft:fern"
                 ]
               },
               {
@@ -48,6 +56,10 @@
                           1,
                           -1,
                           0
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -58,7 +70,8 @@
                             -1,
                             0,
                             0
-                          ]
+                          ],
+                          "blocks": "minecraft:grass_block"
                         }
                       }
                     ]
@@ -72,6 +85,10 @@
                           -1,
                           -1,
                           0
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -82,7 +99,8 @@
                             1,
                             0,
                             0
-                          ]
+                          ],
+                          "blocks": "minecraft:grass_block"
                         }
                       }
                     ]
@@ -96,6 +114,10 @@
                           0,
                           -1,
                           1
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -106,7 +128,8 @@
                             0,
                             0,
                             -1
-                          ]
+                          ],
+                          "blocks": "minecraft:grass_block"
                         }
                       }
                     ]
@@ -120,6 +143,10 @@
                           0,
                           -1,
                           -1
+                        ],
+                        "blocks": [
+                          "minecraft:short_grass",
+                          "minecraft:air"
                         ]
                       },
                       {
@@ -130,7 +157,8 @@
                             0,
                             0,
                             1
-                          ]
+                          ],
+                          "blocks": "minecraft:grass_block"
                         }
                       }
                     ]
@@ -150,11 +178,20 @@
                     0,
                     1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:short_grass"
                   ]
                 }
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt",
+                  "minecraft:rooted_dirt",
+                  "minecraft:coarse_dirt"
+                ]
               },
               {
                 "type": "minecraft:any_of",
@@ -165,7 +202,8 @@
                       1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -173,7 +211,8 @@
                       -1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -181,7 +220,8 @@
                       0,
                       0,
                       1
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -189,7 +229,8 @@
                       0,
                       0,
                       -1
-                    ]
+                    ],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -197,7 +238,8 @@
                       0,
                       1,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:stone"
                   }
                 ]
               }
@@ -207,7 +249,8 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:packed_mud"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -215,7 +258,8 @@
                   0,
                   1,
                   0
-                ]
+                ],
+                "blocks": "minecraft:stone"
               }
             ]
           }

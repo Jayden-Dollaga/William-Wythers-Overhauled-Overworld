@@ -22,6 +22,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "water"
                 ]
               },
               {
@@ -35,6 +38,9 @@
                         0,
                         -1,
                         0
+                      ],
+                      "blocks": [
+                        "water"
                       ]
                     },
                     {
@@ -43,6 +49,9 @@
                         1,
                         -1,
                         0
+                      ],
+                      "blocks": [
+                        "water"
                       ]
                     },
                     {
@@ -51,6 +60,9 @@
                         -1,
                         -1,
                         0
+                      ],
+                      "blocks": [
+                        "water"
                       ]
                     },
                     {
@@ -59,6 +71,9 @@
                         0,
                         -1,
                         1
+                      ],
+                      "blocks": [
+                        "water"
                       ]
                     },
                     {
@@ -67,6 +82,9 @@
                         0,
                         -1,
                         -1
+                      ],
+                      "blocks": [
+                        "water"
                       ]
                     }
                   ]
@@ -86,8 +104,7 @@
             ]
           }
         }
-      ],
-      "type": "minecraft:rule_based_state_provider"
+      ]
     },
     "radius": 8,
     "half_height": 4,
@@ -98,14 +115,26 @@
           "type": "minecraft:any_of",
           "predicates": [
             {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "stone",
+                "deepslate"
+              ]
             },
             {
               "type": "minecraft:matching_block_tag",
               "tag": "wythers:dead_coral_blocks"
             },
             {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:dripstone_block",
+                "minecraft:sand",
+                "minecraft:suspicious_sand",
+                "minecraft:clay",
+                "minecraft:dirt",
+                "minecraft:moss_block"
+              ]
             }
           ]
         },
@@ -118,6 +147,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:water"
               ]
             },
             {
@@ -126,6 +158,9 @@
                 1,
                 0,
                 0
+              ],
+              "blocks": [
+                "minecraft:water"
               ]
             },
             {
@@ -134,6 +169,9 @@
                 -1,
                 0,
                 0
+              ],
+              "blocks": [
+                "minecraft:water"
               ]
             },
             {
@@ -142,6 +180,9 @@
                 0,
                 0,
                 1
+              ],
+              "blocks": [
+                "minecraft:water"
               ]
             },
             {
@@ -150,6 +191,9 @@
                 0,
                 0,
                 -1
+              ],
+              "blocks": [
+                "minecraft:water"
               ]
             }
           ]

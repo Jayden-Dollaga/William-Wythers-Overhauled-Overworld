@@ -19,8 +19,7 @@
                             "Name": "minecraft:cave_air"
                           }
                         },
-                        "rules": [],
-                        "type": "minecraft:rule_based_state_provider"
+                        "rules": []
                       },
                       "radius": 8,
                       "half_height": 4,
@@ -28,7 +27,11 @@
                         "type": "minecraft:all_of",
                         "predicates": [
                           {
-                            "type": "minecraft:matching_blocks"
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log"
+                            ]
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -36,6 +39,11 @@
                               0,
                               1,
                               0
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air"
                             ]
                           },
                           {
@@ -44,6 +52,11 @@
                               1,
                               0,
                               0
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air"
                             ]
                           },
                           {
@@ -52,6 +65,11 @@
                               -1,
                               0,
                               0
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air"
                             ]
                           },
                           {
@@ -60,6 +78,11 @@
                               0,
                               0,
                               1
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air"
                             ]
                           },
                           {
@@ -68,6 +91,11 @@
                               0,
                               0,
                               -1
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air"
                             ]
                           },
                           {
@@ -76,6 +104,13 @@
                               0,
                               -1,
                               0
+                            ],
+                            "blocks": [
+                              "acacia_wood",
+                              "acacia_log",
+                              "cave_air",
+							  "dirt",
+							  "rooted_dirt"
                             ]
                           }
                         ]
@@ -93,11 +128,18 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -112,7 +154,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:acacia_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -153,8 +199,7 @@
                         "radius": 3,
                         "offset": 0
                       },
-                      "decorators": [],
-                      "type": "minecraft:tree"
+                      "decorators": []
                     }
                   },
                   "placement": []
@@ -167,11 +212,18 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -186,7 +238,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:acacia_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -227,8 +283,7 @@
                         "radius": 4,
                         "offset": 0
                       },
-                      "decorators": [],
-                      "type": "minecraft:tree"
+                      "decorators": []
                     }
                   },
                   "placement": []
@@ -240,8 +295,15 @@
                 "type": "minecraft:tree",
                 "config": {
                   "ignore_vines": true,
+                  "force_dirt": false,
                   "minimum_size": {
                     "type": "minecraft:two_layers_feature_size"
+                  },
+                  "dirt_provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:dirt"
+                    }
                   },
                   "trunk_provider": {
                     "type": "minecraft:simple_state_provider",
@@ -273,15 +335,15 @@
                     "offset": 0,
                     "height": 16
                   },
-                  "decorators": [],
-                  "type": "minecraft:tree"
+                  "decorators": []
                 }
               },
               "placement": [
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:acacia_wood"
                   }
                 }
               ]

@@ -14,10 +14,17 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -32,7 +39,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -362,8 +373,7 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ],
-                      "type": "minecraft:tree"
+                      ]
                     }
                   },
                   "placement": []
@@ -376,11 +386,18 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -395,7 +412,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -752,8 +773,7 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ],
-                      "type": "minecraft:tree"
+                      ]
                     }
                   },
                   "placement": []
@@ -766,11 +786,18 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -785,7 +812,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -1142,8 +1173,7 @@
                           "radius": 4,
                           "tries": 250
                         }
-                      ],
-                      "type": "minecraft:tree"
+                      ]
                     }
                   },
                   "placement": []
@@ -1155,8 +1185,15 @@
                 "type": "minecraft:tree",
                 "config": {
                   "ignore_vines": true,
+                  "force_dirt": false,
                   "minimum_size": {
                     "type": "minecraft:two_layers_feature_size"
+                  },
+                  "dirt_provider": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:dirt"
+                    }
                   },
                   "trunk_provider": {
                     "type": "minecraft:simple_state_provider",
@@ -1504,8 +1541,7 @@
                       "radius": 4,
                       "tries": 250
                     }
-                  ],
-                  "type": "minecraft:tree"
+                  ]
                 }
               },
               "placement": [
@@ -1516,7 +1552,8 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:oak_wood"
                   }
                 }
               ]

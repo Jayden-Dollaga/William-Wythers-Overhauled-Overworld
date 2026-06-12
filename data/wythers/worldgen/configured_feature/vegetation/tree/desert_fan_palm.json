@@ -12,12 +12,19 @@
                   "feature": {
                     "config": {
                       "ignore_vines": true,
+                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "min_clipped_height": 10,
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
+                      },
+                      "dirt_provider": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:rooted_dirt"
+                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -32,7 +39,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:azalea_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -354,8 +365,7 @@
                           "radius": 1,
                           "tries": 75
                         }
-                      ],
-                      "type": "minecraft:tree"
+                      ]
                     },
                     "type": "minecraft:tree"
                   },
@@ -363,7 +373,10 @@
                     {
                       "type": "minecraft:block_predicate_filter",
                       "predicate": {
-                        "type": "minecraft:matching_blocks"
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:air"
+                        ]
                       }
                     }
                   ]
@@ -420,6 +433,9 @@
                                         0,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:azalea_leaves"
                                       ]
                                     },
                                     {
@@ -428,6 +444,10 @@
                                         0,
                                         0,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:air",
+                                        "minecraft:leaf_litter"
                                       ]
                                     },
                                     {
@@ -439,6 +459,9 @@
                                             1,
                                             0,
                                             1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -447,6 +470,9 @@
                                             1,
                                             0,
                                             -1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -455,6 +481,9 @@
                                             -1,
                                             0,
                                             1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -463,6 +492,9 @@
                                             -1,
                                             0,
                                             -1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         }
                                       ]
@@ -470,7 +502,15 @@
                                   ]
                                 },
                                 "allowed_search_condition": {
-                                  "type": "minecraft:matching_blocks"
+                                  "type": "minecraft:matching_blocks",
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:leaf_litter",
+                                    "minecraft:short_grass",
+                                    "minecraft:tall_grass",
+                                    "minecraft:short_dry_grass",
+                                    "minecraft:tall_dry_grass"
+                                  ]
                                 }
                               }
                             ]
@@ -515,6 +555,9 @@
                                         0,
                                         1,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:azalea_leaves"
                                       ]
                                     },
                                     {
@@ -523,6 +566,10 @@
                                         0,
                                         0,
                                         0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:air",
+                                        "minecraft:leaf_litter"
                                       ]
                                     },
                                     {
@@ -534,6 +581,9 @@
                                             1,
                                             0,
                                             0
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -542,6 +592,9 @@
                                             0,
                                             0,
                                             1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -550,6 +603,9 @@
                                             0,
                                             0,
                                             -1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         },
                                         {
@@ -558,6 +614,9 @@
                                             -1,
                                             0,
                                             0
+                                          ],
+                                          "blocks": [
+                                            "minecraft:mangrove_wood"
                                           ]
                                         }
                                       ]
@@ -565,7 +624,11 @@
                                   ]
                                 },
                                 "allowed_search_condition": {
-                                  "type": "minecraft:matching_blocks"
+                                  "type": "minecraft:matching_blocks",
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:leaf_litter"
+                                  ]
                                 }
                               }
                             ]
@@ -583,7 +646,10 @@
                 {
                   "type": "minecraft:block_predicate_filter",
                   "predicate": {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:mangrove_wood"
+                    ]
                   }
                 }
               ]

@@ -9,8 +9,7 @@
             "Name": "minecraft:packed_mud"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -27,10 +26,21 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:air",
+              "minecraft:dead_bush",
+              "minecraft:short_grass",
+              "minecraft:short_dry_grass",
+              "minecraft:packed_mud"
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:red_sand",
+              "minecraft:orange_terracotta"
+            ]
           }
         ]
       }
@@ -49,7 +59,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:orange_terracotta"
+            ]
           }
         ]
       }
@@ -63,7 +76,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:sculk"
+        ]
       }
     },
     {

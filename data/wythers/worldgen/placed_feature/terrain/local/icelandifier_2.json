@@ -8,8 +8,7 @@
             "Name": "deepslate"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -18,7 +17,14 @@
       },
       "half_height": 4,
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "gravel",
+          "minecraft:dirt",
+          "stone",
+          "packed_ice",
+          "gravel"
+        ]
       }
     },
     "type": "minecraft:disk"
@@ -33,7 +39,10 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "moss_block"
+        ]
       }
     },
     {

@@ -34,6 +34,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:grass_block"
               ]
             },
             "then": {
@@ -43,8 +46,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -59,7 +61,10 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -67,6 +72,9 @@
                   0,
                   -1,
                   0
+                ],
+                "blocks": [
+                  "rooted_dirt"
                 ]
               }
             ]
@@ -80,6 +88,9 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block"
                 ]
               },
               {
@@ -117,7 +128,11 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:lime_terracotta",
+                  "minecraft:jungle_wood"
+                ]
               },
               {
                 "type": "minecraft:not",
@@ -127,6 +142,9 @@
                     0,
                     1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:moss_block"
                   ]
                 }
               }
@@ -185,6 +203,9 @@
             0,
             -2,
             0
+          ],
+          "blocks": [
+            "minecraft:smooth_basalt"
           ]
         }
       }

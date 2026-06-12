@@ -56,6 +56,11 @@
           0,
           -2,
           0
+        ],
+        "blocks": [
+          "minecraft:water",
+          "minecraft:blue_ice",
+          "minecraft:packed_ice"
         ]
       }
     }

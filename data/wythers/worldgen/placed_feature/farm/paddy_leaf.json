@@ -18,7 +18,8 @@
                     "Name": "minecraft:small_dripleaf",
                     "Properties": {
                       "facing": "north",
-                      "half": "lower"
+                      "half": "lower",
+                      "waterlogged": "true"
                     }
                   }
                 },
@@ -28,7 +29,8 @@
                     "Name": "minecraft:small_dripleaf",
                     "Properties": {
                       "facing": "south",
-                      "half": "lower"
+                      "half": "lower",
+                      "waterlogged": "true"
                     }
                   }
                 },
@@ -38,7 +40,8 @@
                     "Name": "minecraft:small_dripleaf",
                     "Properties": {
                       "facing": "west",
-                      "half": "lower"
+                      "half": "lower",
+                      "waterlogged": "true"
                     }
                   }
                 },
@@ -48,7 +51,8 @@
                     "Name": "minecraft:small_dripleaf",
                     "Properties": {
                       "facing": "east",
-                      "half": "lower"
+                      "half": "lower",
+                      "waterlogged": "true"
                     }
                   }
                 }
@@ -66,7 +70,8 @@
                 0,
                 -1,
                 0
-              ]
+              ],
+              "blocks": "minecraft:clay"
             }
           },
           {
@@ -93,7 +98,10 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:bamboo_block"
+                ]
               }
             ]
           }
@@ -137,7 +145,8 @@
           0,
           -1,
           0
-        ]
+        ],
+        "blocks": "minecraft:clay"
       }
     },
     {

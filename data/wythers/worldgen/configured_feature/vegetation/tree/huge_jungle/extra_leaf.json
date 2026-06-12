@@ -7,7 +7,11 @@
             "to_place": {
               "state": {
                 "Name": "minecraft:jungle_leaves",
-                "Properties": {}
+                "Properties": {
+                  "distance": "2",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
               },
               "type": "minecraft:simple_state_provider"
             }
@@ -21,6 +25,7 @@
             "target_condition": {
               "predicates": [
                 {
+                  "blocks": "minecraft:jungle_leaves",
                   "offset": [
                     1,
                     0,
@@ -29,6 +34,7 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "minecraft:jungle_leaves",
                   "offset": [
                     0,
                     0,
@@ -37,6 +43,7 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "minecraft:jungle_leaves",
                   "offset": [
                     -1,
                     0,
@@ -45,6 +52,7 @@
                   "type": "minecraft:matching_blocks"
                 },
                 {
+                  "blocks": "minecraft:jungle_leaves",
                   "offset": [
                     0,
                     0,
@@ -59,6 +67,10 @@
           },
           {
             "predicate": {
+              "blocks": [
+                "minecraft:air",
+                "minecraft:vine"
+              ],
               "type": "minecraft:matching_blocks"
             },
             "type": "minecraft:block_predicate_filter"

@@ -13,8 +13,7 @@
                     "Name": "minecraft:dirt_path"
                   }
                 },
-                "rules": [],
-                "type": "minecraft:rule_based_state_provider"
+                "rules": []
               },
               "radius": {
                 "type": "minecraft:uniform",
@@ -35,7 +34,11 @@
                     "tag": "wythers:air_and_plants"
                   },
                   {
-                    "type": "minecraft:matching_blocks"
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:grass_block",
+                      "packed_mud"
+                    ]
                   }
                 ]
               }

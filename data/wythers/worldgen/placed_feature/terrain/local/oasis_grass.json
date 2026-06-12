@@ -20,6 +20,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:grass_block"
               ]
             },
             "then": {
@@ -39,7 +42,8 @@
                     0,
                     1,
                     0
-                  ]
+                  ],
+                  "blocks": "minecraft:air"
                 },
                 {
                   "type": "minecraft:any_of",
@@ -50,7 +54,8 @@
                         1,
                         0,
                         0
-                      ]
+                      ],
+                      "blocks": "minecraft:water"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -58,7 +63,8 @@
                         -1,
                         0,
                         0
-                      ]
+                      ],
+                      "blocks": "minecraft:water"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -66,7 +72,8 @@
                         0,
                         0,
                         1
-                      ]
+                      ],
+                      "blocks": "minecraft:water"
                     },
                     {
                       "type": "minecraft:matching_blocks",
@@ -74,7 +81,8 @@
                         0,
                         0,
                         -1
-                      ]
+                      ],
+                      "blocks": "minecraft:water"
                     }
                   ]
                 }
@@ -96,6 +104,10 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:air"
                 ]
               }
             },
@@ -106,11 +118,13 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
-        "type": "minecraft:matching_blocks"
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:sand"
+        ]
       },
       "radius": {
         "type": "minecraft:uniform",

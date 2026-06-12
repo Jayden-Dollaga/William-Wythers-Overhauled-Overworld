@@ -9,8 +9,7 @@
             "Name": "minecraft:dirt"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -21,10 +20,12 @@
               0,
               1,
               0
-            ]
+            ],
+            "blocks": "minecraft:air"
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": "stone"
           }
         ]
       },

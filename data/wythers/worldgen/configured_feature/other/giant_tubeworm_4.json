@@ -197,6 +197,9 @@
                               0,
                               3,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           }
                         },
@@ -208,6 +211,9 @@
                               0,
                               2,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           }
                         },
@@ -219,6 +225,9 @@
                               0,
                               1,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           }
                         },
@@ -230,6 +239,9 @@
                               0,
                               0,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           }
                         },
@@ -241,6 +253,9 @@
                               0,
                               -1,
                               0
+                            ],
+                            "blocks": [
+                              "minecraft:water"
                             ]
                           }
                         }
@@ -262,8 +277,7 @@
                           "Name": "minecraft:diorite"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": 2,
                     "half_height": 1,
@@ -281,6 +295,9 @@
                                   0,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:magma_block"
                                 ]
                               }
                             ]
@@ -289,7 +306,11 @@
                         {
                           "type": "minecraft:not",
                           "predicate": {
-                            "type": "minecraft:matching_blocks"
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "minecraft:magma_block",
+                              "minecraft:andesite"
+                            ]
                           }
                         }
                       ]
@@ -303,7 +324,10 @@
                     "direction_of_search": "down",
                     "max_steps": 5,
                     "target_condition": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:magma_block"
+                      ]
                     },
                     "allowed_search_condition": {
                       "type": "minecraft:true"
@@ -321,8 +345,7 @@
                           "Name": "minecraft:deepslate"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": 3,
                     "half_height": 2,
@@ -330,7 +353,10 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         },
                         {
                           "type": "minecraft:any_of",
@@ -341,6 +367,10 @@
                                 0,
                                 1,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:diorite",
+                                "minecraft:andesite"
                               ]
                             },
                             {
@@ -349,6 +379,9 @@
                                 1,
                                 0,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:diorite"
                               ]
                             },
                             {
@@ -357,6 +390,9 @@
                                 -1,
                                 0,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:diorite"
                               ]
                             },
                             {
@@ -365,6 +401,9 @@
                                 0,
                                 0,
                                 1
+                              ],
+                              "blocks": [
+                                "minecraft:diorite"
                               ]
                             },
                             {
@@ -373,6 +412,9 @@
                                 0,
                                 0,
                                 -1
+                              ],
+                              "blocks": [
+                                "minecraft:diorite"
                               ]
                             }
                           ]
@@ -388,7 +430,10 @@
                     "direction_of_search": "down",
                     "max_steps": 5,
                     "target_condition": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:magma_block"
+                      ]
                     },
                     "allowed_search_condition": {
                       "type": "minecraft:true"
@@ -477,7 +522,9 @@
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:fire_coral",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "waterlogged": "true"
+                                  }
                                 }
                               }
                             }
@@ -503,6 +550,9 @@
                                           1,
                                           0,
                                           0
+                                        ],
+                                        "blocks": [
+                                          "minecraft:andesite"
                                         ]
                                       },
                                       {
@@ -513,6 +563,9 @@
                                             -1,
                                             0,
                                             0
+                                          ],
+                                          "blocks": [
+                                            "minecraft:andesite"
                                           ]
                                         }
                                       }
@@ -527,6 +580,9 @@
                                           -1,
                                           0,
                                           0
+                                        ],
+                                        "blocks": [
+                                          "minecraft:andesite"
                                         ]
                                       },
                                       {
@@ -537,6 +593,9 @@
                                             1,
                                             0,
                                             0
+                                          ],
+                                          "blocks": [
+                                            "minecraft:andesite"
                                           ]
                                         }
                                       }
@@ -561,7 +620,10 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:andesite"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -569,6 +631,9 @@
                             0,
                             1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:magma_block"
                           ]
                         }
                       ]
@@ -657,7 +722,9 @@
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
                                   "Name": "minecraft:fire_coral",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "waterlogged": "true"
+                                  }
                                 }
                               }
                             }
@@ -683,6 +750,9 @@
                                           0,
                                           0,
                                           1
+                                        ],
+                                        "blocks": [
+                                          "minecraft:andesite"
                                         ]
                                       },
                                       {
@@ -693,6 +763,9 @@
                                             0,
                                             0,
                                             -1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:andesite"
                                           ]
                                         }
                                       }
@@ -707,6 +780,9 @@
                                           0,
                                           0,
                                           -1
+                                        ],
+                                        "blocks": [
+                                          "minecraft:andesite"
                                         ]
                                       },
                                       {
@@ -717,6 +793,9 @@
                                             0,
                                             0,
                                             1
+                                          ],
+                                          "blocks": [
+                                            "minecraft:andesite"
                                           ]
                                         }
                                       }
@@ -741,7 +820,10 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:andesite"
+                          ]
                         },
                         {
                           "type": "minecraft:matching_blocks",
@@ -749,6 +831,9 @@
                             0,
                             1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:magma_block"
                           ]
                         }
                       ]

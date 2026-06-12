@@ -20,10 +20,12 @@
                     0,
                     1,
                     0
-                  ]
+                  ],
+                  "blocks": "minecraft:dripstone_block"
                 },
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:deepslate"
                 }
               ]
             },
@@ -39,7 +41,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:deepslate"
+                  ]
                 },
                 {
                   "type": "minecraft:not",
@@ -49,7 +54,8 @@
                       0,
                       1,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   }
                 }
               ]
@@ -89,7 +95,10 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:smooth_basalt"
+                  ]
                 },
                 {
                   "type": "minecraft:not",
@@ -99,7 +108,8 @@
                       0,
                       1,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   }
                 }
               ]
@@ -127,7 +137,11 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                  "type": "minecraft:matching_blocks"
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:stone",
+                    "minecraft:blackstone"
+                  ]
                 },
                 {
                   "type": "minecraft:not",
@@ -137,7 +151,8 @@
                       0,
                       1,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   }
                 }
               ]
@@ -199,13 +214,13 @@
               "state": {
                 "Name": "minecraft:sea_pickle",
                 "Properties": {
-                  "pickles": "1"
+                  "pickles": "1",
+                  "waterlogged": "true"
                 }
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:any_of",
@@ -219,10 +234,30 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:cave_air"
                 ]
               },
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:deepslate",
+                  "minecraft:tuff",
+                  "minecraft:dripstone_block",
+                  "minecraft:smooth_basalt",
+                  "minecraft:blackstone",
+                  "minecraft:stone",
+                  "minecraft:coal_ore",
+                  "minecraft:iron_ore",
+                  "minecraft:copper_ore",
+                  "minecraft:clay",
+                  "minecraft:deepslate_emerald_ore",
+                  "minecraft:deepslate_coal_ore",
+                  "minecraft:infested_deepslate",
+                  "minecraft:grass_block",
+                  "minecraft:dirt"
+                ]
               }
             ]
           },
@@ -230,7 +265,13 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:stone",
+                  "minecraft:deepslate",
+                  "minecraft:smooth_basalt",
+                  "minecraft:blackstone"
+                ]
               },
               {
                 "type": "minecraft:any_of",
@@ -241,7 +282,8 @@
                       1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -249,7 +291,8 @@
                       -1,
                       0,
                       0
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -257,7 +300,8 @@
                       0,
                       0,
                       1
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -265,7 +309,8 @@
                       0,
                       0,
                       -1
-                    ]
+                    ],
+                    "blocks": "minecraft:cave_air"
                   }
                 ]
               }
@@ -299,6 +344,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:moss_block"
             ]
           }
         ]
@@ -349,7 +397,11 @@
           {
             "type": "minecraft:not",
             "predicate": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "air",
+                "minecraft:cave_air"
+              ]
             }
           }
         ]

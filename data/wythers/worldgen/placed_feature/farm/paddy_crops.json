@@ -1,264 +1,278 @@
 {
   "feature": {
-    "type": "minecraft:block_column",
+    "type": "minecraft:random_patch",
     "config": {
-      "direction": "up",
-      "allowed_placement": {
-        "type": "minecraft:all_of",
-        "predicates": [
-          {
-            "type": "minecraft:matching_blocks"
-          }
-        ]
-      },
-      "prioritize_tip": false,
-      "layers": [
-        {
-          "height": 1,
-          "provider": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "minecraft:farmland",
-              "Properties": {
-                "moisture": "7"
-              }
-            }
-          }
-        },
-        {
-          "height": {
-            "type": "minecraft:uniform",
-            "min_inclusive": 1,
-            "max_inclusive": 1
-          },
-          "provider": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
+      "tries": 64,
+      "xz_spread": 6,
+      "y_spread": 3,
+      "feature": {
+        "feature": {
+          "type": "minecraft:block_column",
+          "config": {
+            "direction": "up",
+            "allowed_placement": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:air",
+                    "minecraft:grass_block"
+                  ]
+                }
+              ]
+            },
+            "prioritize_tip": false,
+            "layers": [
               {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "0"
+                "height": 1,
+                "provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:farmland",
+                    "Properties": {
+                      "moisture": "7"
+                    }
                   }
                 }
               },
               {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "1"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "2"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "3"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "4"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "5"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "6"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:carrots",
-                  "Properties": {
-                    "age": "7"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:beetroots",
-                  "Properties": {
-                    "age": "0"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:beetroots",
-                  "Properties": {
-                    "age": "1"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:beetroots",
-                  "Properties": {
-                    "age": "2"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:beetroots",
-                  "Properties": {
-                    "age": "3"
-                  }
+                "height": {
+                  "type": "minecraft:uniform",
+                  "min_inclusive": 1,
+                  "max_inclusive": 1
+                },
+                "provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "0"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "1"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "2"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "3"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "4"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "5"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "6"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:carrots",
+                        "Properties": {
+                          "age": "7"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:beetroots",
+                        "Properties": {
+                          "age": "0"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:beetroots",
+                        "Properties": {
+                          "age": "1"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:beetroots",
+                        "Properties": {
+                          "age": "2"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:beetroots",
+                        "Properties": {
+                          "age": "3"
+                        }
+                      }
+                    }
+                  ]
                 }
               }
             ]
           }
-        }
-      ]
+        },
+        "placement": [
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "blocks": "minecraft:grass_block"
+            }
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:water"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    -1,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:water"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "blocks": [
+                    "minecraft:water"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    -1
+                  ],
+                  "blocks": [
+                    "minecraft:water"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    1,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:clay"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    -1,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:clay"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    1
+                  ],
+                  "blocks": "minecraft:clay"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    -1
+                  ],
+                  "blocks": "minecraft:clay"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 64
-    },
-    {
-      "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 6,
-        "min": -6,
-        "plateau": 0
-      },
-      "y_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 3,
-        "min": -3,
-        "plateau": 0
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:matching_blocks",
-        "offset": [
-          0,
-          0,
-          0
-        ]
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:any_of",
-        "predicates": [
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              1,
-              0,
-              0
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              -1,
-              0,
-              0
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              0,
-              1
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              0,
-              -1
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:any_of",
-        "predicates": [
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              1,
-              -1,
-              0
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              -1,
-              -1,
-              0
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              -1,
-              1
-            ]
-          },
-          {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              -1,
-              -1
-            ]
-          }
-        ]
-      }
-    },
     {
       "type": "minecraft:height_range",
       "height": {
@@ -274,7 +288,10 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:bamboo_block"
+                ]
               }
             ]
           }
@@ -324,7 +341,8 @@
           0,
           -1,
           0
-        ]
+        ],
+        "blocks": "minecraft:grass_block"
       }
     },
     {

@@ -12,7 +12,10 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:oak_wood"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -23,7 +26,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:smooth_sandstone"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -34,7 +40,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:acacia_wood"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -45,7 +54,10 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:mud"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -54,14 +66,22 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:bedrock",
+              "minecraft:deepslate",
+              "minecraft:smooth_sandstone",
+              "minecraft:acacia_wood",
+              "minecraft:oak_wood",
+              "minecraft:mud",
+              "minecraft:sandstone"
+            ]
           }
         ]
       },

@@ -17,6 +17,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "oak_wood"
               ]
             },
             "then": {
@@ -33,6 +36,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "oak_log"
               ]
             },
             "then": {
@@ -49,6 +55,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "dark_oak_wood"
               ]
             },
             "then": {
@@ -65,6 +74,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "dark_oak_log"
               ]
             },
             "then": {
@@ -81,6 +93,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "pale_oak_wood"
               ]
             },
             "then": {
@@ -97,6 +112,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "pale_oak_log"
               ]
             },
             "then": {
@@ -113,6 +131,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "birch_wood"
               ]
             },
             "then": {
@@ -129,6 +150,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "birch_log"
               ]
             },
             "then": {
@@ -145,6 +169,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "spruce_wood"
               ]
             },
             "then": {
@@ -161,6 +188,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "spruce_log"
               ]
             },
             "then": {
@@ -177,6 +207,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "acacia_wood"
               ]
             },
             "then": {
@@ -193,6 +226,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "acacia_log"
               ]
             },
             "then": {
@@ -209,6 +245,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "jungle_wood"
               ]
             },
             "then": {
@@ -225,6 +264,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "jungle_log"
               ]
             },
             "then": {
@@ -241,6 +283,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "mangrove_wood"
               ]
             },
             "then": {
@@ -257,6 +302,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "mangrove_log"
               ]
             },
             "then": {
@@ -273,6 +321,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "cherry_wood"
               ]
             },
             "then": {
@@ -289,6 +340,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "cherry_log"
               ]
             },
             "then": {
@@ -305,6 +359,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "mangrove_roots"
               ]
             },
             "then": {
@@ -314,8 +371,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -328,6 +384,9 @@
                 0,
                 -1,
                 0
+              ],
+              "blocks": [
+                "minecraft:hanging_roots"
               ]
             }
           },
@@ -339,6 +398,9 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:sand"
               ]
             }
           },
@@ -346,7 +408,11 @@
             "type": "minecraft:any_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt_path",
+                  "minecraft:gravel"
+                ]
               },
               {
                 "type": "minecraft:matching_block_tag",
@@ -435,13 +501,16 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              1,
-              0
-            ]
-          }
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": [
+                "minecraft:moss_block"
+              ]
+            }
         ]
       }
     },
@@ -473,6 +542,9 @@
               0,
               -2,
               0
+            ],
+            "blocks": [
+              "minecraft:air"
             ]
           },
           {
@@ -481,6 +553,11 @@
               0,
               -3,
               0
+            ],
+            "blocks": [
+              "minecraft:packed_mud",
+              "minecraft:mud",
+              "minecraft:muddy_mangrove_roots"
             ]
           }
         ]

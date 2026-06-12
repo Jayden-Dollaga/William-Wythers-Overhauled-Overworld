@@ -16,8 +16,7 @@
                           "Name": "minecraft:dead_bubble_coral_block"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -26,7 +25,11 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water",
+                        "minecraft:sand"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -43,6 +46,9 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand"
                           ]
                         },
                         {
@@ -51,6 +57,9 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water"
                           ]
                         },
                         {
@@ -59,6 +68,9 @@
                             0,
                             2,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water"
                           ]
                         }
                       ]
@@ -87,6 +99,9 @@
                                   0,
                                   1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -97,6 +112,9 @@
                                     0,
                                     -1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:water"
                                   ]
                                 }
                               }
@@ -120,8 +138,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -130,7 +147,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -156,6 +176,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block",
+                            "minecraft:dead_bubble_coral_block"
                           ]
                         },
                         {
@@ -164,6 +190,10 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -195,6 +225,9 @@
                                   0,
                                   1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -205,6 +238,9 @@
                                     0,
                                     -1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:water"
                                   ]
                                 }
                               }
@@ -228,8 +264,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -238,7 +273,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -264,6 +302,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_horn_coral_block",
+                            "minecraft:dead_bubble_coral_block"
                           ]
                         },
                         {
@@ -272,6 +316,10 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -303,6 +351,9 @@
                                   0,
                                   1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -313,6 +364,9 @@
                                     0,
                                     -1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:water"
                                   ]
                                 }
                               }
@@ -336,8 +390,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -346,7 +399,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -372,6 +428,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block",
+                            "minecraft:dead_bubble_coral_block"
                           ]
                         },
                         {
@@ -380,6 +442,10 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -411,6 +477,9 @@
                                   0,
                                   1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -421,6 +490,9 @@
                                     0,
                                     -1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:water"
                                   ]
                                 }
                               }
@@ -444,8 +516,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -454,7 +525,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -480,6 +554,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_bubble_coral_block"
                           ]
                         },
                         {
@@ -488,6 +568,10 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -503,22 +587,22 @@
                   "config": {
                     "state_provider": {
                       "fallback": {
-                        "type": "minecraft:weighted_state_provider",
-                        "entries": [
-                          {
-                            "weight": 15,
-                            "data": {
-                              "Name": "sand"
-                            }
+                            "type": "minecraft:weighted_state_provider",
+                            "entries": [
+                              {
+                                "weight": 15,
+                                "data": {
+                                  "Name": "sand"
+                                }
+                              },
+                              {
+                                "weight": 1,
+                                "data": {
+                                  "Name": "minecraft:suspicious_sand"
+                                }
+                              }
+                            ]
                           },
-                          {
-                            "weight": 1,
-                            "data": {
-                              "Name": "minecraft:suspicious_sand"
-                            }
-                          }
-                        ]
-                      },
                       "rules": [
                         {
                           "if_true": {
@@ -530,6 +614,12 @@
                                   0,
                                   1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:dead_tube_coral_block",
+                                  "minecraft:dead_fire_coral_block",
+                                  "minecraft:dead_brain_coral_block",
+                                  "minecraft:dead_horn_coral_block"
                                 ]
                               },
                               {
@@ -538,6 +628,9 @@
                                   0,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -546,6 +639,9 @@
                                   1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -554,6 +650,9 @@
                                   -1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -562,6 +661,9 @@
                                   0,
                                   -1,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               },
                               {
@@ -570,6 +672,9 @@
                                   0,
                                   -1,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:air"
                                 ]
                               }
                             ]
@@ -604,8 +709,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -617,7 +721,14 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block"
+                          ]
                         },
                         {
                           "type": "minecraft:not",
@@ -630,6 +741,9 @@
                                   1,
                                   -1,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -638,6 +752,9 @@
                                   1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -646,6 +763,9 @@
                                   1,
                                   -1,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -654,6 +774,9 @@
                                   0,
                                   -1,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -662,6 +785,9 @@
                                   0,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -670,6 +796,9 @@
                                   0,
                                   -1,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -678,6 +807,9 @@
                                   -1,
                                   -1,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -686,6 +818,9 @@
                                   -1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -694,6 +829,9 @@
                                   -1,
                                   -1,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               }
                             ]
@@ -725,6 +863,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block"
                           ]
                         },
                         {
@@ -733,6 +877,14 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block",
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:water",
+                            "minecraft:sand"
                           ]
                         },
                         {
@@ -741,6 +893,9 @@
                             0,
                             2,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -784,8 +939,7 @@
                           }
                         ]
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -794,7 +948,10 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:air"
+                      ]
                     }
                   },
                   "type": "minecraft:disk"
@@ -820,6 +977,12 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:dead_tube_coral_block",
+                            "minecraft:dead_brain_coral_block",
+                            "minecraft:dead_fire_coral_block",
+                            "minecraft:dead_horn_coral_block"
                           ]
                         }
                       ]
@@ -870,6 +1033,9 @@
                                     0,
                                     1,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air"
                                   ]
                                 }
                               },
@@ -881,6 +1047,9 @@
                                     0,
                                     2,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air"
                                   ]
                                 }
                               },
@@ -892,6 +1061,9 @@
                                     0,
                                     3,
                                     0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air"
                                   ]
                                 }
                               }
@@ -915,8 +1087,7 @@
                             ]
                           }
                         }
-                      ],
-                      "type": "minecraft:rule_based_state_provider"
+                      ]
                     },
                     "radius": {
                       "type": "minecraft:uniform",
@@ -928,7 +1099,12 @@
                       "type": "minecraft:all_of",
                       "predicates": [
                         {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:sand",
+                            "minecraft:suspicious_sand",
+                            "minecraft:grass_block"
+                          ]
                         },
                         {
                           "type": "minecraft:not",
@@ -941,6 +1117,9 @@
                                   0,
                                   -2,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -949,6 +1128,9 @@
                                   1,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -957,6 +1139,9 @@
                                   1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -965,6 +1150,9 @@
                                   1,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -973,6 +1161,9 @@
                                   0,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -981,6 +1172,9 @@
                                   0,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -989,6 +1183,9 @@
                                   -1,
                                   0,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -997,6 +1194,9 @@
                                   -1,
                                   0,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               },
                               {
@@ -1005,6 +1205,9 @@
                                   -1,
                                   0,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:water"
                                 ]
                               }
                             ]
@@ -1036,6 +1239,9 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:sand"
                           ]
                         },
                         {
@@ -1044,6 +1250,9 @@
                             0,
                             1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:air"
                           ]
                         }
                       ]
@@ -1082,6 +1291,14 @@
                     0,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "minecraft:sand",
+                    "minecraft:dead_bubble_coral_block",
+                    "minecraft:dead_tube_coral_block",
+                    "minecraft:dead_brain_coral_block",
+                    "minecraft:dead_fire_coral_block",
+                    "minecraft:dead_horn_coral_block"
                   ]
                 }
               ]

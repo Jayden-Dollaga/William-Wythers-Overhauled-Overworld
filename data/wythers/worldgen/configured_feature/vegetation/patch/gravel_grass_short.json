@@ -17,7 +17,11 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:gravel",
+                            "minecraft:air"
+                          ]
                         },
                         "prioritize_tip": true,
                         "layers": [
@@ -58,6 +62,9 @@
                                 0,
                                 2,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:air"
                               ]
                             },
                             {
@@ -66,6 +73,9 @@
                                 0,
                                 1,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:air"
                               ]
                             },
                             {
@@ -74,6 +84,9 @@
                                 0,
                                 0,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:gravel"
                               ]
                             },
                             {

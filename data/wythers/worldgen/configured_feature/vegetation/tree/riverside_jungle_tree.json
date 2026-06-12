@@ -24,11 +24,21 @@
                                 "type": "minecraft:tree",
                                 "config": {
                                   "ignore_vines": true,
+                                  "force_dirt": true,
                                   "minimum_size": {
                                     "type": "minecraft:two_layers_feature_size",
                                     "limit": 1,
                                     "lower_size": 0,
                                     "upper_size": 2
+                                  },
+                                  "dirt_provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                      "Name": "minecraft:jungle_wood",
+                                      "Properties": {
+                                        "axis": "y"
+                                      }
+                                    }
                                   },
                                   "trunk_provider": {
                                     "type": "minecraft:simple_state_provider",
@@ -46,7 +56,11 @@
                                         "weight": 10,
                                         "data": {
                                           "Name": "minecraft:jungle_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "7",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         }
                                       },
                                       {
@@ -109,8 +123,7 @@
                                       "type": "minecraft:leave_vine",
                                       "probability": 0.1
                                     }
-                                  ],
-                                  "type": "minecraft:tree"
+                                  ]
                                 }
                               },
                               "placement": [
@@ -136,7 +149,10 @@
                                       "config": {
                                         "direction": "down",
                                         "allowed_placement": {
-                                          "type": "minecraft:matching_blocks"
+                                          "type": "minecraft:matching_blocks",
+                                          "blocks": [
+                                            "air"
+                                          ]
                                         },
                                         "prioritize_tip": true,
                                         "layers": [
@@ -186,10 +202,17 @@
                                                 0,
                                                 1,
                                                 0
+                                              ],
+                                              "blocks": [
+                                                "jungle_wood",
+                                                "jungle_leaves"
                                               ]
                                             },
                                             {
-                                              "type": "minecraft:matching_blocks"
+                                              "type": "minecraft:matching_blocks",
+                                              "blocks": [
+                                                "air"
+                                              ]
                                             }
                                           ]
                                         },
@@ -230,11 +253,21 @@
                                 "type": "minecraft:tree",
                                 "config": {
                                   "ignore_vines": true,
+                                  "force_dirt": true,
                                   "minimum_size": {
                                     "type": "minecraft:two_layers_feature_size",
                                     "limit": 1,
                                     "lower_size": 0,
                                     "upper_size": 2
+                                  },
+                                  "dirt_provider": {
+                                    "type": "minecraft:simple_state_provider",
+                                    "state": {
+                                      "Name": "minecraft:jungle_wood",
+                                      "Properties": {
+                                        "axis": "y"
+                                      }
+                                    }
                                   },
                                   "trunk_provider": {
                                     "type": "minecraft:simple_state_provider",
@@ -252,7 +285,11 @@
                                         "weight": 10,
                                         "data": {
                                           "Name": "minecraft:jungle_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "7",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         }
                                       },
                                       {
@@ -306,11 +343,18 @@
                                     {
                                       "type": "minecraft:attached_to_leaves",
                                       "probability": 0.3,
+                                      "exclusion_radius_xz": 0,
+                                      "exclusion_radius_y": 0,
+                                      "required_empty_blocks": 1,
                                       "block_provider": {
                                         "type": "minecraft:simple_state_provider",
                                         "state": {
                                           "Name": "minecraft:jungle_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "7",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         }
                                       },
                                       "directions": [
@@ -321,8 +365,7 @@
                                       "type": "minecraft:leave_vine",
                                       "probability": 0.1
                                     }
-                                  ],
-                                  "type": "minecraft:tree"
+                                  ]
                                 }
                               },
                               "placement": [
@@ -348,7 +391,10 @@
                                       "config": {
                                         "direction": "down",
                                         "allowed_placement": {
-                                          "type": "minecraft:matching_blocks"
+                                          "type": "minecraft:matching_blocks",
+                                          "blocks": [
+                                            "air"
+                                          ]
                                         },
                                         "prioritize_tip": true,
                                         "layers": [
@@ -398,10 +444,17 @@
                                                 0,
                                                 1,
                                                 0
+                                              ],
+                                              "blocks": [
+                                                "jungle_wood",
+                                                "jungle_leaves"
                                               ]
                                             },
                                             {
-                                              "type": "minecraft:matching_blocks"
+                                              "type": "minecraft:matching_blocks",
+                                              "blocks": [
+                                                "air"
+                                              ]
                                             }
                                           ]
                                         },

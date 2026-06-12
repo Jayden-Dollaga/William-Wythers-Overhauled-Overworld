@@ -8,8 +8,7 @@
             "Name": "minecraft:snow_block"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 4,
@@ -24,11 +23,21 @@
                 0,
                 1,
                 0
+              ],
+              "blocks": [
+                "minecraft:short_grass",
+                "minecraft:spruce_log"
               ]
             }
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:dirt",
+              "minecraft:coarse_dirt",
+              "minecraft:rooted_dirt",
+              "minecraft:grass_block"
+            ]
           },
           {
             "type": "minecraft:any_of",
@@ -39,6 +48,10 @@
                   1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:snow"
                 ]
               },
               {
@@ -47,6 +60,10 @@
                   -1,
                   0,
                   0
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:snow"
                 ]
               },
               {
@@ -55,6 +72,10 @@
                   0,
                   0,
                   1
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:snow"
                 ]
               },
               {
@@ -63,6 +84,10 @@
                   0,
                   0,
                   -1
+                ],
+                "blocks": [
+                  "minecraft:air",
+                  "minecraft:snow"
                 ]
               }
             ]

@@ -11,7 +11,10 @@
                   "config": {
                     "direction": "up",
                     "allowed_placement": {
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:water"
+                      ]
                     },
                     "prioritize_tip": true,
                     "layers": [
@@ -30,6 +33,7 @@
                               "north": "none",
                               "south": "none",
                               "up": "true",
+                              "waterlogged": "true",
                               "west": "none"
                             }
                           }
@@ -46,6 +50,7 @@
                               "north": "none",
                               "south": "none",
                               "up": "true",
+                              "waterlogged": "true",
                               "west": "none"
                             }
                           }
@@ -59,7 +64,8 @@
                             "Name": "minecraft:red_candle",
                             "Properties": {
                               "candles": "4",
-                              "lit": "false"
+                              "lit": "false",
+                              "waterlogged": "true"
                             }
                           }
                         }
@@ -87,6 +93,9 @@
                                   1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -95,6 +104,9 @@
                                   -1,
                                   -1,
                                   0
+                                ],
+                                "blocks": [
+                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -103,6 +115,9 @@
                                   0,
                                   -1,
                                   1
+                                ],
+                                "blocks": [
+                                  "minecraft:light"
                                 ]
                               },
                               {
@@ -111,6 +126,9 @@
                                   0,
                                   -1,
                                   -1
+                                ],
+                                "blocks": [
+                                  "minecraft:light"
                                 ]
                               }
                             ]
@@ -122,6 +140,11 @@
                             1,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:fire_coral_fan",
+                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -130,6 +153,11 @@
                             -1,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:fire_coral_fan",
+                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -138,6 +166,11 @@
                             0,
                             0,
                             1
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:fire_coral_fan",
+                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -146,6 +179,11 @@
                             0,
                             0,
                             -1
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:fire_coral_fan",
+                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -154,6 +192,11 @@
                             0,
                             0,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:water",
+                            "minecraft:fire_coral_fan",
+                            "minecraft:fire_coral"
                           ]
                         },
                         {
@@ -162,6 +205,9 @@
                             0,
                             -1,
                             0
+                          ],
+                          "blocks": [
+                            "minecraft:mud"
                           ]
                         }
                       ]

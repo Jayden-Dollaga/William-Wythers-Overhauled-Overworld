@@ -9,8 +9,7 @@
             "Name": "minecraft:moss_block"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -21,10 +20,20 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "air",
+              "snow"
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mud",
+              "minecraft:smooth_basalt",
+              "minecraft:deepslate",
+              "minecraft:basalt"
+            ]
           },
           {
             "type": "minecraft:not",
@@ -37,6 +46,10 @@
                     1,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "air",
+                    "snow"
                   ]
                 },
                 {
@@ -45,6 +58,10 @@
                     -1,
                     -1,
                     0
+                  ],
+                  "blocks": [
+                    "air",
+                    "snow"
                   ]
                 },
                 {
@@ -53,6 +70,10 @@
                     0,
                     -1,
                     1
+                  ],
+                  "blocks": [
+                    "air",
+                    "snow"
                   ]
                 },
                 {
@@ -61,6 +82,10 @@
                     0,
                     -1,
                     -1
+                  ],
+                  "blocks": [
+                    "air",
+                    "snow"
                   ]
                 }
               ]

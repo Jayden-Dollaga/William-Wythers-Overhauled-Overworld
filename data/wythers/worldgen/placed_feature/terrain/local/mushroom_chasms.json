@@ -12,7 +12,8 @@
         "rules": [
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:dirt"
             },
             "then": {
               "type": "minecraft:weighted_state_provider",
@@ -34,7 +35,11 @@
           },
           {
             "if_true": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:mycelium"
+              ]
             },
             "then": {
               "type": "minecraft:simple_state_provider",
@@ -43,8 +48,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:any_of",
@@ -53,7 +57,8 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks"
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:dirt"
               },
               {
                 "type": "minecraft:matching_blocks",
@@ -61,12 +66,23 @@
                   0,
                   1,
                   0
+                ],
+                "blocks": [
+                  "minecraft:moss_block",
+                  "minecraft:pale_moss_block",
+                  "minecraft:grass_block",
+                  "minecraft:mycelium"
                 ]
               }
             ]
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:grass_block",
+              "minecraft:mycelium",
+              "minecraft:air"
+            ]
           }
         ]
       },

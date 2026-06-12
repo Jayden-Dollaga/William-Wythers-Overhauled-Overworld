@@ -17,7 +17,10 @@
                       "config": {
                         "direction": "up",
                         "allowed_placement": {
-                          "type": "minecraft:matching_blocks"
+                          "type": "minecraft:matching_blocks",
+                          "blocks": [
+                            "minecraft:air"
+                          ]
                         },
                         "prioritize_tip": false,
                         "layers": [
@@ -365,6 +368,9 @@
                                 0,
                                 0,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:air"
                               ]
                             },
                             {
@@ -373,6 +379,9 @@
                                 0,
                                 -1,
                                 0
+                              ],
+                              "blocks": [
+                                "minecraft:water"
                               ]
                             },
                             {
@@ -386,6 +395,9 @@
                                       0,
                                       -2,
                                       0
+                                    ],
+                                    "blocks": [
+                                      "minecraft:soul_sand"
                                     ]
                                   },
                                   {

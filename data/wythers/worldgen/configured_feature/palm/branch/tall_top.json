@@ -7,12 +7,19 @@
           "type": "minecraft:tree",
           "config": {
             "ignore_vines": true,
+            "force_dirt": false,
             "minimum_size": {
               "type": "minecraft:two_layers_feature_size",
               "min_clipped_height": 0,
               "limit": 0,
               "lower_size": 0,
               "upper_size": 0
+            },
+            "dirt_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:air"
+              }
             },
             "trunk_provider": {
               "type": "minecraft:simple_state_provider",
@@ -27,7 +34,11 @@
               "type": "minecraft:simple_state_provider",
               "state": {
                 "Name": "minecraft:azalea_leaves",
-                "Properties": {}
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
               }
             },
             "trunk_placer": {
@@ -46,15 +57,15 @@
               "hanging_leaves_chance": 0.5,
               "hanging_leaves_extension_chance": 1
             },
-            "decorators": [],
-            "type": "minecraft:tree"
+            "decorators": []
           }
         },
         "placement": [
           {
             "type": "minecraft:block_predicate_filter",
             "predicate": {
-              "type": "minecraft:matching_blocks"
+              "type": "minecraft:matching_blocks",
+              "blocks": "#wythers:tree_branch_replaceable"
             }
           }
         ]

@@ -13,7 +13,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:smooth_sandstone"
+            ]
           },
           {
             "type": "minecraft:matching_blocks",
@@ -21,6 +24,9 @@
               0,
               2,
               0
+            ],
+            "blocks": [
+              "minecraft:dripstone_block"
             ]
           }
         ]

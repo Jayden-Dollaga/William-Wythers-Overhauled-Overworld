@@ -8,8 +8,7 @@
             "Name": "stone"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -63,7 +62,12 @@
             "tag": "minecraft:base_stone_overworld"
           },
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "air",
+              "dirt",
+              "minecraft:grass_block"
+            ]
           }
         ]
       },

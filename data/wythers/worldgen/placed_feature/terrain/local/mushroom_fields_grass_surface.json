@@ -8,8 +8,7 @@
             "Name": "minecraft:grass_block"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": {
         "type": "minecraft:uniform",
@@ -21,7 +20,10 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks"
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:mycelium"
+            ]
           }
         ]
       }

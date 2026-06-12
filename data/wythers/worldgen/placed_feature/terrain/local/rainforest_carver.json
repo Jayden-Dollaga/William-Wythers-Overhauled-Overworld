@@ -9,8 +9,7 @@
             "Name": "minecraft:air"
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:all_of",
@@ -25,6 +24,9 @@
               0,
               1,
               0
+            ],
+            "blocks": [
+              "minecraft:air"
             ]
           }
         ]
@@ -50,13 +52,16 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              1,
-              0
-            ]
-          }
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": [
+                "minecraft:moss_block"
+              ]
+            }
         ]
       }
     },
