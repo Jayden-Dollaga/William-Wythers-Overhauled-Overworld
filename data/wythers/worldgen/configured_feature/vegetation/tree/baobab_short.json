@@ -32,12 +32,7 @@
                       "foliage_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:acacia_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Name": "minecraft:acacia_leaves"
                         }
                       },
                       "trunk_placer": {
@@ -109,12 +104,7 @@
                       "foliage_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:acacia_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Name": "minecraft:acacia_leaves"
                         }
                       },
                       "trunk_placer": {
