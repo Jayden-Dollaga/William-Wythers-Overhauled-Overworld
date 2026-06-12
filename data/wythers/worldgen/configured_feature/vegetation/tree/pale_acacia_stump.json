@@ -20,20 +20,8 @@
     "trunk_placer": {
       "type": "minecraft:upwards_branching_trunk_placer",
       "base_height": 5,
-      "can_grow_through": "#minecraft:mangrove_logs_can_grow_through",
-      "extra_branch_length": {
-        "type": "minecraft:uniform",
-        "max_inclusive": 1,
-        "min_inclusive": 0
-      },
-      "extra_branch_steps": {
-        "type": "minecraft:uniform",
-        "max_inclusive": 5,
-        "min_inclusive": 1
-      },
       "height_rand_a": 1,
-      "height_rand_b": 4,
-      "place_branch_per_log_probability": 0.2
+      "height_rand_b": 4
     },
     "foliage_placer": {
       "type": "minecraft:acacia_foliage_placer",
