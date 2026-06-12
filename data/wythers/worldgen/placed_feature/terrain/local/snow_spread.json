@@ -24,14 +24,14 @@
               "type": "minecraft:all_of",
               "predicates": [
                 {
-                    "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      1,
-                      0
-                    ],
-                    "blocks": "minecraft:air"
-                  },
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                },
                 {
                   "type": "minecraft:matching_blocks",
                   "blocks": [
@@ -226,8 +226,14 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": 0
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      }
     }
   ]
 }
