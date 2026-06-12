@@ -521,10 +521,7 @@
                               "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "true"
-                                  }
+                                  "Name": "minecraft:fire_coral"
                                 }
                               }
                             }
@@ -721,10 +718,7 @@
                               "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "true"
-                                  }
+                                  "Name": "minecraft:fire_coral"
                                 }
                               }
                             }
