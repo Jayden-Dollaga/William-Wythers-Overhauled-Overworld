@@ -24,12 +24,19 @@
                             "feature": {
                               "config": {
                                 "ignore_vines": true,
+                                "force_dirt": true,
                                 "minimum_size": {
                                   "type": "minecraft:two_layers_feature_size",
                                   "min_clipped_height": 1,
                                   "limit": 1,
                                   "lower_size": 1,
                                   "upper_size": 1
+                                },
+                                "dirt_provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dark_oak_wood"
+                                  }
                                 },
                                 "trunk_provider": {
                                   "type": "minecraft:simple_state_provider",
@@ -47,7 +54,19 @@
                                   "type": "minecraft:upwards_branching_trunk_placer",
                                   "base_height": 8,
                                   "height_rand_a": 1,
-                                  "height_rand_b": 3
+                                  "height_rand_b": 3,
+                                  "extra_branch_steps": {
+                                    "type": "minecraft:uniform",
+                                    "min_inclusive": 1,
+                                    "max_inclusive": 6
+                                  },
+                                  "extra_branch_length": {
+                                    "type": "minecraft:uniform",
+                                    "min_inclusive": 0,
+                                    "max_inclusive": 1
+                                  },
+                                  "place_branch_per_log_probability": 0.5,
+                                  "can_grow_through": "#minecraft:mangrove_logs_can_grow_through"
                                 },
                                 "foliage_placer": {
                                   "type": "minecraft:jungle_foliage_placer",
@@ -56,23 +75,28 @@
                                   "height": 0
                                 },
                                 "decorators": [
-                                  {
-                                    "type": "minecraft:attached_to_leaves",
-                                    "probability": 1,
-                                    "exclusion_radius_xz": 1,
-                                    "exclusion_radius_y": 1,
-                                    "required_empty_blocks": 1,
-                                    "block_provider": {
-                                      "type": "minecraft:simple_state_provider",
-                                      "state": {
-                                        "Name": "minecraft:dark_oak_leaves"
-                                      }
-                                    },
-                                    "directions": [
-                                      "down"
-                                    ]
+                            {
+                              "type": "minecraft:attached_to_leaves",
+                              "probability": 1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
+                              "block_provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dark_oak_leaves",
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "true",
+                                    "waterlogged": "false"
                                   }
-                                ]
+                                }
+                              },
+                              "directions": [
+                                "down"
+                              ]
+                            }
+                          ]
                               },
                               "type": "minecraft:tree"
                             },
@@ -121,12 +145,19 @@
                             "feature": {
                               "config": {
                                 "ignore_vines": true,
+                                "force_dirt": true,
                                 "minimum_size": {
                                   "type": "minecraft:two_layers_feature_size",
                                   "min_clipped_height": 1,
                                   "limit": 1,
                                   "lower_size": 1,
                                   "upper_size": 1
+                                },
+                                "dirt_provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dark_oak_wood"
+                                  }
                                 },
                                 "trunk_provider": {
                                   "type": "minecraft:simple_state_provider",
@@ -144,7 +175,19 @@
                                   "type": "minecraft:upwards_branching_trunk_placer",
                                   "base_height": 6,
                                   "height_rand_a": 1,
-                                  "height_rand_b": 3
+                                  "height_rand_b": 3,
+                                  "extra_branch_steps": {
+                                    "type": "minecraft:uniform",
+                                    "min_inclusive": 1,
+                                    "max_inclusive": 3
+                                  },
+                                  "extra_branch_length": {
+                                    "type": "minecraft:uniform",
+                                    "min_inclusive": 0,
+                                    "max_inclusive": 1
+                                  },
+                                  "place_branch_per_log_probability": 0.5,
+                                  "can_grow_through": "#minecraft:mangrove_logs_can_grow_through"
                                 },
                                 "foliage_placer": {
                                   "type": "minecraft:jungle_foliage_placer",
@@ -153,23 +196,28 @@
                                   "height": 0
                                 },
                                 "decorators": [
-                                  {
-                                    "type": "minecraft:attached_to_leaves",
-                                    "probability": 1,
-                                    "exclusion_radius_xz": 1,
-                                    "exclusion_radius_y": 1,
-                                    "required_empty_blocks": 1,
-                                    "block_provider": {
-                                      "type": "minecraft:simple_state_provider",
-                                      "state": {
-                                        "Name": "minecraft:dark_oak_leaves"
-                                      }
-                                    },
-                                    "directions": [
-                                      "down"
-                                    ]
+                            {
+                              "type": "minecraft:attached_to_leaves",
+                              "probability": 1,
+                              "exclusion_radius_xz": 1,
+                              "exclusion_radius_y": 1,
+                              "required_empty_blocks": 1,
+                              "block_provider": {
+                                "type": "minecraft:simple_state_provider",
+                                "state": {
+                                  "Name": "minecraft:dark_oak_leaves",
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "true",
+                                    "waterlogged": "false"
                                   }
-                                ]
+                                }
+                              },
+                              "directions": [
+                                "down"
+                              ]
+                            }
+                          ]
                               },
                               "type": "minecraft:tree"
                             },
@@ -213,11 +261,21 @@
                         "type": "minecraft:tree",
                         "config": {
                           "ignore_vines": true,
+                          "force_dirt": true,
                           "minimum_size": {
                             "type": "minecraft:two_layers_feature_size",
                             "limit": 1,
                             "lower_size": 0,
                             "upper_size": 0
+                          },
+                          "dirt_provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:dark_oak_wood",
+                              "Properties": {
+                                "axis": "y"
+                              }
+                            }
                           },
                           "trunk_provider": {
                             "type": "minecraft:simple_state_provider",

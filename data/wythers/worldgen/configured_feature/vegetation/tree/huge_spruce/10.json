@@ -257,7 +257,10 @@
                                             "type": "minecraft:count"
                                           },
                                           {
-                                            "xz_spread": 0,
+                                            "xz_spread": {
+                                              "type": "minecraft:constant",
+                                              "value": 0
+                                            },
                                             "y_spread": {
                                               "min_inclusive": -11,
                                               "max_inclusive": -9,
@@ -271,7 +274,10 @@
                                         "feature": "wythers:vegetation/tree/huge_spruce/branch_set/4",
                                         "placement": [
                                           {
-                                            "xz_spread": 0,
+                                            "xz_spread": {
+                                              "type": "minecraft:constant",
+                                              "value": 0
+                                            },
                                             "y_spread": {
                                               "min_inclusive": -5,
                                               "max_inclusive": -3,
@@ -285,7 +291,10 @@
                                         "feature": "wythers:vegetation/tree/huge_spruce/branch_set/4",
                                         "placement": [
                                           {
-                                            "xz_spread": 0,
+                                            "xz_spread": {
+                                              "type": "minecraft:constant",
+                                              "value": 0
+                                            },
                                             "y_spread": {
                                               "min_inclusive": 1,
                                               "max_inclusive": 3,
@@ -458,7 +467,10 @@
                                                 "feature": "wythers:vegetation/tree/huge_spruce/branch_set/5",
                                                 "placement": [
                                                   {
-                                                    "xz_spread": 0,
+                                                    "xz_spread": {
+                                                      "type": "minecraft:constant",
+                                                      "value": 0
+                                                    },
                                                     "y_spread": {
                                                       "min_inclusive": -8,
                                                       "max_inclusive": -6,
@@ -472,7 +484,10 @@
                                                 "feature": "wythers:vegetation/tree/huge_spruce/branch_set/5",
                                                 "placement": [
                                                   {
-                                                    "xz_spread": 0,
+                                                    "xz_spread": {
+                                                      "type": "minecraft:constant",
+                                                      "value": 0
+                                                    },
                                                     "y_spread": {
                                                       "min_inclusive": -2,
                                                       "max_inclusive": 0,
@@ -511,8 +526,16 @@
                                     "type": "minecraft:block_predicate_filter"
                                   },
                                   {
-                                    "xz_spread": 0,
-                                    "y_spread": 14,
+                                    "xz_spread": {
+                                      "type": "minecraft:constant",
+                                      "value": 0
+                                    },
+                                    "y_spread": {
+                                      "type": "minecraft:trapezoid",
+                                      "max": 14,
+                                      "min": -14,
+                                      "plateau": 0
+                                    },
                                     "type": "minecraft:random_offset"
                                   },
                                   {
@@ -557,13 +580,29 @@
                             "type": "minecraft:block_predicate_filter"
                           },
                           {
-                            "xz_spread": 0,
-                            "y_spread": 15,
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 15,
+                              "min": -15,
+                              "plateau": 0
+                            },
                             "type": "minecraft:random_offset"
                           },
                           {
-                            "xz_spread": 0,
-                            "y_spread": 6,
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 6,
+                              "min": -6,
+                              "plateau": 0
+                            },
                             "type": "minecraft:random_offset"
                           },
                           {
