@@ -11,8 +11,7 @@
                   "Name": "minecraft:big_dripleaf",
                   "Properties": {
                     "facing": "west",
-                    "tilt": "none",
-                    "waterlogged": "false"
+                    "tilt": "none"
                   }
                 }
               },
@@ -33,8 +32,7 @@
                       "Name": "minecraft:big_dripleaf",
                       "Properties": {
                         "facing": "east",
-                        "tilt": "none",
-                        "waterlogged": "false"
+                        "tilt": "none"
                       }
                     }
                   }
@@ -55,8 +53,7 @@
                       "Name": "minecraft:big_dripleaf",
                       "Properties": {
                         "facing": "north",
-                        "tilt": "none",
-                        "waterlogged": "false"
+                        "tilt": "none"
                       }
                     }
                   }
@@ -77,8 +74,7 @@
                       "Name": "minecraft:big_dripleaf",
                       "Properties": {
                         "facing": "south",
-                        "tilt": "none",
-                        "waterlogged": "false"
+                        "tilt": "none"
                       }
                     }
                   }
