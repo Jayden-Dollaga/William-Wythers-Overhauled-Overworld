@@ -37,7 +37,6 @@
         "max_root_width": 3,
         "max_root_length": 12,
         "random_skew_chance": 0.25,
-        "can_grow_through": "#minecraft:terracotta",
         "muddy_roots_in": [
           "minecraft:terracotta",
           "minecraft:red_terracotta",
