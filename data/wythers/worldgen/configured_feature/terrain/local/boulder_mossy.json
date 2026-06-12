@@ -8,6 +8,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:gravel"
@@ -17,6 +18,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -26,6 +28,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -36,6 +39,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -46,6 +50,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -67,6 +72,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -76,6 +82,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -86,6 +93,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -96,6 +104,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -117,6 +126,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -126,6 +136,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -136,6 +147,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -146,6 +158,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -167,6 +180,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -176,6 +190,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -186,6 +201,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -196,6 +212,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -217,6 +234,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -226,6 +244,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -236,6 +255,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -246,6 +266,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -267,6 +288,7 @@
           "config": {
             "targets": [
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -276,6 +298,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -286,6 +309,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:random_block_match",
                   "block": "minecraft:water",
@@ -296,6 +320,7 @@
                 }
               },
               {
+                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"

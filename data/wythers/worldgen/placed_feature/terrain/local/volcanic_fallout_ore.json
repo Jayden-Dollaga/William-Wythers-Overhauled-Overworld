@@ -6,6 +6,7 @@
       "discard_chance_on_air_exposure": 0,
       "targets": [
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:grass_block"
@@ -15,6 +16,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:dirt"
@@ -24,6 +26,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:coarse_dirt"
@@ -33,6 +36,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:podzol"
@@ -42,6 +46,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:rooted_dirt"
@@ -51,6 +56,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:sand"
@@ -60,6 +66,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:stone"

@@ -6,6 +6,7 @@
       "discard_chance_on_air_exposure": 0,
       "targets": [
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:packed_mud"
@@ -15,6 +16,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:brown_terracotta"
@@ -24,6 +26,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:gray_terracotta"
@@ -33,6 +36,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:soul_sand"
@@ -42,6 +46,7 @@
           }
         },
         {
+          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:dripstone_block"

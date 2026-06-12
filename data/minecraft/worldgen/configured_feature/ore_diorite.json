@@ -5,6 +5,7 @@
     "size": 64,
     "targets": [
       {
+        "type": "minecraft:simple_state_provider",
         "state": {
           "Name": "minecraft:diorite"
         },
