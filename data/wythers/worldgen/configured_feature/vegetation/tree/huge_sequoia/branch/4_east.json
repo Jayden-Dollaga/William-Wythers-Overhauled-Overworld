@@ -150,7 +150,10 @@
                                       ],
                                       "type": "minecraft:weighted_list"
                                     },
-                                    "y_spread": 0,
+                                    "y_spread": {
+                                      "type": "minecraft:constant",
+                                      "value": 0
+                                    },
                                     "type": "minecraft:random_offset"
                                   },
                                   {
@@ -224,7 +227,12 @@
                               ],
                               "type": "minecraft:weighted_list"
                             },
-                            "y_spread": -1,
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 1,
+                              "min": -1,
+                              "plateau": 0
+                            },
                             "type": "minecraft:random_offset"
                           },
                           {
@@ -303,7 +311,10 @@
                       "max_inclusive": 1,
                       "type": "minecraft:uniform"
                     },
-                    "y_spread": 0,
+                    "y_spread": {
+                      "type": "minecraft:constant",
+                      "value": 0
+                    },
                     "type": "minecraft:random_offset"
                   },
                   {
@@ -396,7 +407,12 @@
               ],
               "type": "minecraft:weighted_list"
             },
-            "y_spread": -1,
+            "y_spread": {
+              "type": "minecraft:trapezoid",
+              "max": 1,
+              "min": -1,
+              "plateau": 0
+            },
             "type": "minecraft:random_offset"
           },
           {
