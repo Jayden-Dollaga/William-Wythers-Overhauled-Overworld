@@ -23,23 +23,13 @@
         {
           "weight": 4,
           "data": {
-            "Name": "minecraft:azalea_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Name": "minecraft:azalea_leaves"
           }
         },
         {
           "weight": 1,
           "data": {
-            "Name": "minecraft:flowering_azalea_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Name": "minecraft:flowering_azalea_leaves"
           }
         }
       ]
