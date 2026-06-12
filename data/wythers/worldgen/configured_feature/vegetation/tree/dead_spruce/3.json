@@ -349,8 +349,16 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 6
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 6,
+                              "min": -6,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -363,8 +371,16 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 9
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 9,
+                              "min": -9,
+                              "plateau": 0
+                            }
                           }
                         ]
                       }
