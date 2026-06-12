@@ -40,7 +40,6 @@
         "max_root_width": 4,
         "max_root_length": 8,
         "random_skew_chance": 0.5,
-        "can_grow_through": "#minecraft:mangrove_roots_can_grow_through",
         "muddy_roots_in": [
           "minecraft:mud",
           "minecraft:muddy_mangrove_roots",
