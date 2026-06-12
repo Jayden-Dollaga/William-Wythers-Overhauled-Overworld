@@ -20,12 +20,7 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:birch_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Name": "minecraft:birch_leaves"
       }
     },
     "root_placer": {
@@ -33,10 +28,7 @@
       "root_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:mangrove_roots",
-          "Properties": {
-            "waterlogged": "false"
-          }
+          "Name": "minecraft:mangrove_roots"
         }
       },
       "trunk_offset_y": {
@@ -99,8 +91,7 @@
               "Properties": {
                 "age": "0",
                 "hanging": "true",
-                "stage": "0",
-                "waterlogged": "false"
+                "stage": "0"
               }
             }
           }
