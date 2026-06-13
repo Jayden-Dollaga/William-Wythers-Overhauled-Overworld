@@ -12,19 +12,12 @@
                   "feature": {
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "min_clipped_height": 10,
                         "limit": 1,
                         "lower_size": 0,
                         "upper_size": 2
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:air"
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -38,12 +31,7 @@
                       "foliage_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:azalea_leaves",
-                          "Properties": {
-                            "distance": "7",
-                            "persistent": "false",
-                            "waterlogged": "false"
-                          }
+                          "Name": "minecraft:azalea_leaves"
                         }
                       },
                       "trunk_placer": {
@@ -73,10 +61,7 @@
                         "type": "minecraft:all_of",
                         "predicates": [
                           {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "minecraft:air"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           },
                           {
                             "type": "minecraft:matching_blocks",
@@ -84,9 +69,6 @@
                               0,
                               -1,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:air"
                             ]
                           },
                           {
@@ -95,9 +77,6 @@
                               0,
                               -2,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:air"
                             ]
                           },
                           {
@@ -106,9 +85,6 @@
                               0,
                               -3,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:air"
                             ]
                           },
                           {
@@ -117,9 +93,6 @@
                               0,
                               -4,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:air"
                             ]
                           },
                           {
@@ -128,9 +101,6 @@
                               0,
                               -5,
                               0
-                            ],
-                            "blocks": [
-                              "minecraft:air"
                             ]
                           },
                           {
@@ -141,10 +111,6 @@
                                 0,
                                 -8,
                                 -3
-                              ],
-                              "blocks": [
-                                "minecraft:water",
-                                "minecraft:air"
                               ]
                             }
                           }
@@ -209,9 +175,6 @@
                                     0,
                                     1,
                                     0
-                                  ],
-                                  "blocks": [
-                                    "minecraft:azalea_leaves"
                                   ]
                                 }
                               },
@@ -223,9 +186,6 @@
                                     0,
                                     1,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "jungle_wood"
                                   ]
                                 }
                               }
@@ -248,9 +208,6 @@
                                 "direction": "down",
                                 "allowed_placement": {
                                   "type": "minecraft:matching_block_tag",
-                                  "blocks": [
-                                    "wythers:palm_tree_replaceable"
-                                  ],
                                   "tag": "wythers:palm_tree_replaceable"
                                 },
                                 "prioritize_tip": false,
@@ -289,9 +246,6 @@
                                     0,
                                     1,
                                     1
-                                  ],
-                                  "blocks": [
-                                    "minecraft:azalea_leaves"
                                   ]
                                 }
                               },
@@ -303,9 +257,6 @@
                                     0,
                                     1,
                                     2
-                                  ],
-                                  "blocks": [
-                                    "minecraft:jungle_wood"
                                   ]
                                 }
                               }
@@ -388,9 +339,6 @@
                                                 0,
                                                 1,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:azalea_leaves"
                                               ]
                                             },
                                             {
@@ -399,9 +347,6 @@
                                                 0,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air"
                                               ]
                                             },
                                             {
@@ -413,9 +358,6 @@
                                                     1,
                                                     0,
                                                     0
-                                                  ],
-                                                  "blocks": [
-                                                    "minecraft:jungle_wood"
                                                   ]
                                                 }
                                               ]
@@ -423,10 +365,7 @@
                                           ]
                                         },
                                         "allowed_search_condition": {
-                                          "type": "minecraft:matching_blocks",
-                                          "blocks": [
-                                            "minecraft:air"
-                                          ]
+                                          "type": "minecraft:matching_blocks"
                                         }
                                       }
                                     ]
@@ -493,9 +432,6 @@
                                                 0,
                                                 1,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:azalea_leaves"
                                               ]
                                             },
                                             {
@@ -504,9 +440,6 @@
                                                 0,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air"
                                               ]
                                             },
                                             {
@@ -518,9 +451,6 @@
                                                     -1,
                                                     0,
                                                     0
-                                                  ],
-                                                  "blocks": [
-                                                    "minecraft:jungle_wood"
                                                   ]
                                                 }
                                               ]
@@ -528,10 +458,7 @@
                                           ]
                                         },
                                         "allowed_search_condition": {
-                                          "type": "minecraft:matching_blocks",
-                                          "blocks": [
-                                            "minecraft:air"
-                                          ]
+                                          "type": "minecraft:matching_blocks"
                                         }
                                       }
                                     ]
@@ -598,9 +525,6 @@
                                                 0,
                                                 1,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:azalea_leaves"
                                               ]
                                             },
                                             {
@@ -609,9 +533,6 @@
                                                 0,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air"
                                               ]
                                             },
                                             {
@@ -623,9 +544,6 @@
                                                     0,
                                                     0,
                                                     1
-                                                  ],
-                                                  "blocks": [
-                                                    "minecraft:jungle_wood"
                                                   ]
                                                 }
                                               ]
@@ -633,10 +551,7 @@
                                           ]
                                         },
                                         "allowed_search_condition": {
-                                          "type": "minecraft:matching_blocks",
-                                          "blocks": [
-                                            "minecraft:air"
-                                          ]
+                                          "type": "minecraft:matching_blocks"
                                         }
                                       }
                                     ]
@@ -703,9 +618,6 @@
                                                 0,
                                                 1,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:azalea_leaves"
                                               ]
                                             },
                                             {
@@ -714,9 +626,6 @@
                                                 0,
                                                 0,
                                                 0
-                                              ],
-                                              "blocks": [
-                                                "minecraft:air"
                                               ]
                                             },
                                             {
@@ -728,9 +637,6 @@
                                                     0,
                                                     0,
                                                     -1
-                                                  ],
-                                                  "blocks": [
-                                                    "minecraft:jungle_wood"
                                                   ]
                                                 }
                                               ]
@@ -738,10 +644,7 @@
                                           ]
                                         },
                                         "allowed_search_condition": {
-                                          "type": "minecraft:matching_blocks",
-                                          "blocks": [
-                                            "minecraft:air"
-                                          ]
+                                          "type": "minecraft:matching_blocks"
                                         }
                                       }
                                     ]
@@ -759,10 +662,7 @@
                         {
                           "type": "minecraft:block_predicate_filter",
                           "predicate": {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": [
-                              "minecraft:jungle_wood"
-                            ]
+                            "type": "minecraft:matching_blocks"
                           }
                         }
                       ]
@@ -778,10 +678,7 @@
                     "type": "minecraft:all_of",
                     "predicates": [
                       {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": [
-                          "minecraft:jungle_wood"
-                        ]
+                        "type": "minecraft:matching_blocks"
                       }
                     ]
                   }
