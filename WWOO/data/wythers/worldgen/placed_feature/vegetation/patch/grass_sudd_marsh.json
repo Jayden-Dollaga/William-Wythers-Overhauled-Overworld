@@ -15,6 +15,11 @@
         "max": 7,
         "min": -7,
         "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 0,
+        "max_inclusive": 0
       }
     },
     {
