@@ -106,7 +106,6 @@
                     },
                     "half_height": 4,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
@@ -299,7 +298,6 @@
                     },
                     "half_height": 4,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
@@ -349,7 +347,6 @@
                     },
                     "half_height": 3,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
@@ -451,7 +448,6 @@
                     },
                     "half_height": 2,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
@@ -553,7 +549,6 @@
                     },
                     "half_height": 1,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
@@ -655,7 +650,6 @@
                     },
                     "half_height": 0.5,
                     "target": {
-                      "type": "minecraft:all_of",
                       "predicates": [
                         {
                           "type": "minecraft:matching_blocks",
