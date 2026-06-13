@@ -32,9 +32,7 @@
                               "type": "minecraft:simple_state_provider",
                               "state": {
                                 "Name": "minecraft:moss_block",
-                                "Properties": {
-                                  "dusted": "1"
-                                }
+                                "Properties": {}
                               }
                             }
                           },
