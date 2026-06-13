@@ -7,9 +7,7 @@
           "type": "minecraft:simple_state_provider",
           "state": {
             "Name": "minecraft:stone",
-            "Properties": {
-              "snowy": "false"
-            }
+            "Properties": {}
           }
         },
         "rules": [
