@@ -134,13 +134,13 @@
               "state": {
                 "Name": "minecraft:creaking_heart",
                 "Properties": {
-                  "axis": "y",
-                  "creaking": "dormant"
+                  "axis": "y"
                 }
               }
             }
           }
-        ]
+        ],
+        "type": "minecraft:rule_based_state_provider"
       },
       "target": {
         "type": "minecraft:all_of",
