@@ -134,7 +134,8 @@
                     "Name": "minecraft:brain_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_fluids",
@@ -161,7 +162,8 @@
                     "Name": "minecraft:fire_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_fluids",
@@ -188,7 +190,8 @@
                     "Name": "minecraft:horn_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_fluids",
@@ -215,7 +218,8 @@
                     "Name": "minecraft:bubble_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_fluids",
@@ -242,7 +246,8 @@
                     "Name": "minecraft:tube_coral_block"
                   }
                 },
-                "rules": []
+                "rules": [],
+                "type": "minecraft:rule_based_state_provider"
               },
               "target": {
                 "type": "minecraft:matching_fluids",

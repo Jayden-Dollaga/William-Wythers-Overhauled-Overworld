@@ -10,19 +10,12 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
-                "force_dirt": false,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "min_clipped_height": 4,
                   "limit": 0,
                   "lower_size": 0,
                   "upper_size": 0
-                },
-                "dirt_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:sculk"
-                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -48,7 +41,8 @@
                   "offset": 4,
                   "height": 7
                 },
-                "decorators": []
+                "decorators": [],
+                "type": "minecraft:tree"
               }
             },
             "placement": []
@@ -61,19 +55,12 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
-                "force_dirt": false,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "min_clipped_height": 4,
                   "limit": 0,
                   "lower_size": 0,
                   "upper_size": 0
-                },
-                "dirt_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:sculk"
-                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -99,7 +86,8 @@
                   "offset": 4,
                   "height": 6
                 },
-                "decorators": []
+                "decorators": [],
+                "type": "minecraft:tree"
               }
             },
             "placement": []
@@ -112,19 +100,12 @@
               "type": "minecraft:tree",
               "config": {
                 "ignore_vines": true,
-                "force_dirt": false,
                 "minimum_size": {
                   "type": "minecraft:two_layers_feature_size",
                   "min_clipped_height": 4,
                   "limit": 0,
                   "lower_size": 0,
                   "upper_size": 0
-                },
-                "dirt_provider": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:sculk"
-                  }
                 },
                 "trunk_provider": {
                   "type": "minecraft:simple_state_provider",
@@ -150,7 +131,8 @@
                   "offset": 4,
                   "height": 5
                 },
-                "decorators": []
+                "decorators": [],
+                "type": "minecraft:tree"
               }
             },
             "placement": []
@@ -162,19 +144,12 @@
           "type": "minecraft:tree",
           "config": {
             "ignore_vines": true,
-            "force_dirt": false,
             "minimum_size": {
               "type": "minecraft:two_layers_feature_size",
               "min_clipped_height": 4,
               "limit": 0,
               "lower_size": 0,
               "upper_size": 0
-            },
-            "dirt_provider": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:sculk"
-              }
             },
             "trunk_provider": {
               "type": "minecraft:simple_state_provider",
@@ -200,7 +175,8 @@
               "offset": 4,
               "height": 4
             },
-            "decorators": []
+            "decorators": [],
+            "type": "minecraft:tree"
           }
         },
         "placement": []

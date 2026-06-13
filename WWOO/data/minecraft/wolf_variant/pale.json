@@ -24,5 +24,9 @@
       "priority": 1
     }
   ],
-  "baby_assets": {}
+  "baby_assets": {
+    "angry": "minecraft:entity/wolf/wolf_angry_baby",
+    "tame": "minecraft:entity/wolf/wolf_tame_baby",
+    "wild": "minecraft:entity/wolf/wolf_baby"
+  }
 }

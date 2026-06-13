@@ -182,7 +182,8 @@
               ]
             }
           }
-        ]
+        ],
+        "type": "minecraft:rule_based_state_provider"
       },
       "radius": 1,
       "half_height": 0,

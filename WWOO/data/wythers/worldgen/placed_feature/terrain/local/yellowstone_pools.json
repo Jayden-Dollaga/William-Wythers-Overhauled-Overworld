@@ -9,7 +9,8 @@
             "Name": "minecraft:water"
           }
         },
-        "rules": []
+        "rules": [],
+        "type": "minecraft:rule_based_state_provider"
       },
       "target": {
         "type": "minecraft:any_of",

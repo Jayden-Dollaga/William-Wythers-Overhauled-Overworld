@@ -17,18 +17,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -42,12 +35,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -72,18 +60,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -97,12 +78,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -127,12 +103,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:acacia_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:acacia_leaves"
                                   }
                                 },
                                 "directions": [
@@ -149,18 +120,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -174,12 +138,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -204,12 +163,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:acacia_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:acacia_leaves"
                                   }
                                 },
                                 "directions": [
@@ -226,18 +180,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -251,12 +198,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -281,12 +223,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:acacia_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:acacia_leaves"
                                   }
                                 },
                                 "directions": [
@@ -303,18 +240,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -328,12 +258,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -358,12 +283,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:acacia_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:acacia_leaves"
                                   }
                                 },
                                 "directions": [
@@ -380,18 +300,11 @@
                           "type": "minecraft:tree",
                           "config": {
                             "ignore_vines": true,
-                            "force_dirt": false,
                             "minimum_size": {
                               "type": "minecraft:two_layers_feature_size",
                               "limit": 1,
                               "lower_size": 0,
                               "upper_size": 0
-                            },
-                            "dirt_provider": {
-                              "type": "minecraft:simple_state_provider",
-                              "state": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
                             },
                             "trunk_provider": {
                               "type": "minecraft:simple_state_provider",
@@ -405,12 +318,7 @@
                             "foliage_provider": {
                               "type": "minecraft:simple_state_provider",
                               "state": {
-                                "Name": "minecraft:acacia_leaves",
-                                "Properties": {
-                                  "distance": "1",
-                                  "persistent": "false",
-                                  "waterlogged": "false"
-                                }
+                                "Name": "minecraft:acacia_leaves"
                               }
                             },
                             "trunk_placer": {
@@ -435,12 +343,7 @@
                                 "block_provider": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
-                                    "Name": "minecraft:acacia_leaves",
-                                    "Properties": {
-                                      "distance": "2",
-                                      "persistent": "false",
-                                      "waterlogged": "false"
-                                    }
+                                    "Name": "minecraft:acacia_leaves"
                                   }
                                 },
                                 "directions": [
@@ -478,8 +381,16 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 6
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 6,
+                              "min": -6,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -488,8 +399,16 @@
                         "placement": [
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 11
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 11,
+                              "min": -11,
+                              "plateau": 0
+                            }
                           }
                         ]
                       },
@@ -502,8 +421,16 @@
                           },
                           {
                             "type": "minecraft:random_offset",
-                            "xz_spread": 0,
-                            "y_spread": 14
+                            "xz_spread": {
+                              "type": "minecraft:constant",
+                              "value": 0
+                            },
+                            "y_spread": {
+                              "type": "minecraft:trapezoid",
+                              "max": 14,
+                              "min": -14,
+                              "plateau": 0
+                            }
                           }
                         ]
                       }

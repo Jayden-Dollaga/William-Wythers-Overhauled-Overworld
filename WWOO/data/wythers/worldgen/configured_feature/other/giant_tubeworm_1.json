@@ -499,8 +499,7 @@
                               "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:fire_coral",
-                                  "Properties": {}
+                                  "Name": "minecraft:fire_coral"
                                 }
                               }
                             }
@@ -697,8 +696,7 @@
                               "provider": {
                                 "type": "minecraft:simple_state_provider",
                                 "state": {
-                                  "Name": "minecraft:fire_coral",
-                                  "Properties": {}
+                                  "Name": "minecraft:fire_coral"
                                 }
                               }
                             }

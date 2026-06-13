@@ -17,22 +17,12 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "min_clipped_height": 4,
                         "limit": 0,
                         "lower_size": 0,
                         "upper_size": 0
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:mycelium",
-                          "Properties": {
-                            "snowy": "false"
-                          }
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -77,7 +67,8 @@
                         "offset": 0,
                         "height": 5
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": [
@@ -116,26 +107,11 @@
                     "type": "minecraft:tree",
                     "config": {
                       "ignore_vines": true,
-                      "force_dirt": false,
                       "minimum_size": {
                         "type": "minecraft:two_layers_feature_size",
                         "limit": 1,
                         "lower_size": 1,
                         "upper_size": 1
-                      },
-                      "dirt_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:mushroom_stem",
-                          "Properties": {
-                            "down": "false",
-                            "east": "true",
-                            "north": "true",
-                            "south": "true",
-                            "up": "false",
-                            "west": "true"
-                          }
-                        }
                       },
                       "trunk_provider": {
                         "type": "minecraft:simple_state_provider",
@@ -165,8 +141,7 @@
                             "data": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "8",
-                                "waterlogged": "false"
+                                "level": "8"
                               }
                             }
                           }
@@ -184,7 +159,8 @@
                         "offset": 1,
                         "height": 15
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "type": "minecraft:tree"
                     }
                   },
                   "placement": [
@@ -241,27 +217,21 @@
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_brain_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               },
                               {
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_fire_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               },
                               {
                                 "weight": 1,
                                 "data": {
                                   "Name": "minecraft:dead_horn_coral",
-                                  "Properties": {
-                                    "waterlogged": "false"
-                                  }
+                                  "Properties": {}
                                 }
                               }
                             ]
@@ -283,8 +253,7 @@
                             "state": {
                               "Name": "minecraft:light",
                               "Properties": {
-                                "level": "8",
-                                "waterlogged": "false"
+                                "level": "8"
                               }
                             }
                           }

@@ -32,9 +32,7 @@
           -1,
           0
         ],
-        "blocks": [
-          "minecraft:dripstone_block"
-        ]
+        "blocks": "minecraft:air"
       }
     }
   ]

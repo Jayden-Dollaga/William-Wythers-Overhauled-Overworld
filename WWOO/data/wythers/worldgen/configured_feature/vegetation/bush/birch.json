@@ -11,12 +11,7 @@
         "block_provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "minecraft:birch_leaves",
-            "Properties": {
-              "distance": "7",
-              "persistent": "false",
-              "waterlogged": "false"
-            }
+            "Name": "minecraft:birch_leaves"
           }
         },
         "directions": [
@@ -28,12 +23,6 @@
         ]
       }
     ],
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:sand"
-      }
-    },
     "foliage_placer": {
       "type": "minecraft:fancy_foliage_placer",
       "height": 2,
@@ -47,15 +36,9 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:birch_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Name": "minecraft:birch_leaves"
       }
     },
-    "force_dirt": false,
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
