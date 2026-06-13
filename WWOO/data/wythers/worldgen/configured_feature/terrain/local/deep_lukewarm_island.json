@@ -110,7 +110,6 @@
           },
           {
             "type": "minecraft:height_range",
-            "heightmap": "OCEAN_FLOOR",
             "height": {
               "absolute": 62
             }
