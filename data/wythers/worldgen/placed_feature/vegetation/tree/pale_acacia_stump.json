@@ -1,9 +1,19 @@
 {
-  "feature": "wythers:vegetation/column/mix_thin_jungle_bamboo",
+  "feature": "wythers:vegetation/tree/pale_acacia_stump",
   "placement": [
     {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
       "type": "minecraft:count",
-      "count": 48
+      "count": 128
     },
     {
       "type": "minecraft:random_offset",
@@ -21,15 +31,8 @@
       "predicate": {
         "type": "minecraft:would_survive",
         "state": {
-          "Name": "minecraft:bamboo_sapling"
+          "Name": "minecraft:acacia_sapling"
         }
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
       }
     }
   ]
