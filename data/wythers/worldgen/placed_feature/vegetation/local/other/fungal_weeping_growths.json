@@ -1,362 +1,351 @@
 {
   "feature": {
-    "type": "minecraft:random_patch",
+    "type": "minecraft:random_selector",
     "config": {
-      "tries": 16,
-      "xz_spread": 8,
-      "y_spread": 8,
-      "feature": {
-        "feature": {
-          "type": "minecraft:random_selector",
-          "config": {
-            "features": [
+      "features": [
+        {
+          "chance": 0.1,
+          "feature": {
+            "feature": {
+              "type": "minecraft:multiface_growth",
+              "config": {
+                "block": "minecraft:glow_lichen",
+                "search_range": 20,
+                "chance_of_spreading": 1,
+                "can_place_on_floor": true,
+                "can_place_on_ceiling": true,
+                "can_place_on_wall": true,
+                "can_be_placed_on": [
+                  "minecraft:basalt",
+                  "minecraft:mycelium"
+                ]
+              }
+            },
+            "placement": [
               {
-                "chance": 0.1,
-                "feature": {
-                  "feature": {
-                    "type": "minecraft:multiface_growth",
-                    "config": {
-                      "block": "minecraft:glow_lichen",
-                      "search_range": 20,
-                      "chance_of_spreading": 1,
-                      "can_place_on_floor": true,
-                      "can_place_on_ceiling": true,
-                      "can_place_on_wall": true,
-                      "can_be_placed_on": [
-                        "minecraft:basalt",
-                        "minecraft:mycelium"
-                      ]
-                    }
-                  },
-                  "placement": [
-                    {
-                      "type": "minecraft:count",
-                      "count": 10
-                    },
-                    {
-                      "type": "minecraft:heightmap",
-                      "heightmap": "WORLD_SURFACE_WG"
-                    }
-                  ]
-                }
+                "type": "minecraft:count",
+                "count": 10
               },
               {
-                "chance": 0.02,
-                "feature": {
-                  "feature": {
-                    "type": "minecraft:tree",
-                    "config": {
-                      "ignore_vines": true,
-                      "minimum_size": {
-                        "type": "minecraft:two_layers_feature_size",
-                        "limit": 1,
-                        "lower_size": 1,
-                        "upper_size": 1
-                      },
-                      "trunk_provider": {
-                        "type": "minecraft:simple_state_provider",
-                        "state": {
-                          "Name": "minecraft:nether_wart_block"
+                "type": "minecraft:heightmap",
+                "heightmap": "WORLD_SURFACE_WG"
+              }
+            ]
+          }
+        },
+        {
+          "chance": 0.02,
+          "feature": {
+            "feature": {
+              "type": "minecraft:tree",
+              "config": {
+                "ignore_vines": true,
+                "minimum_size": {
+                  "type": "minecraft:two_layers_feature_size",
+                  "limit": 1,
+                  "lower_size": 1,
+                  "upper_size": 1
+                },
+                "trunk_provider": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:nether_wart_block"
+                  }
+                },
+                "foliage_provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 10,
+                      "data": {
+                        "Name": "minecraft:air"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:ochre_froglight",
+                        "Properties": {
+                          "axis": "y"
                         }
-                      },
-                      "foliage_provider": {
-                        "type": "minecraft:weighted_state_provider",
-                        "entries": [
-                          {
-                            "weight": 10,
-                            "data": {
-                              "Name": "minecraft:air"
-                            }
-                          },
-                          {
-                            "weight": 1,
-                            "data": {
-                              "Name": "minecraft:ochre_froglight",
-                              "Properties": {
-                                "axis": "y"
-                              }
-                            }
-                          }
-                        ]
-                      },
-                      "trunk_placer": {
-                        "type": "minecraft:straight_trunk_placer",
-                        "base_height": 13,
-                        "height_rand_a": 20,
-                        "height_rand_b": 5
-                      },
-                      "foliage_placer": {
-                        "type": "minecraft:fancy_foliage_placer",
-                        "radius": 1,
-                        "offset": 1,
-                        "height": 15
-                      },
-                      "decorators": [],
-                      "type": "minecraft:tree"
-                    }
-                  },
-                  "placement": [
-                    {
-                      "type": "minecraft:heightmap",
-                      "heightmap": "WORLD_SURFACE_WG"
-                    },
-                    {
-                      "type": "minecraft:block_predicate_filter",
-                      "predicate": {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          -1,
-                          0
-                        ],
-                        "blocks": "minecraft:mycelium"
-                      }
-                    },
-                    {
-                      "type": "minecraft:block_predicate_filter",
-                      "predicate": {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          0
-                        ],
-                        "blocks": "minecraft:air"
                       }
                     }
                   ]
+                },
+                "trunk_placer": {
+                  "type": "minecraft:straight_trunk_placer",
+                  "base_height": 13,
+                  "height_rand_a": 20,
+                  "height_rand_b": 5
+                },
+                "foliage_placer": {
+                  "type": "minecraft:fancy_foliage_placer",
+                  "radius": 1,
+                  "offset": 1,
+                  "height": 15
+                },
+                "decorators": [],
+                "type": "minecraft:tree"
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:heightmap",
+                "heightmap": "WORLD_SURFACE_WG"
+              },
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:mycelium"
                 }
               },
               {
-                "chance": 0.05,
-                "feature": {
-                  "feature": {
-                    "type": "minecraft:block_column",
-                    "config": {
-                      "direction": "up",
-                      "allowed_placement": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": "minecraft:air"
-                      },
-                      "prioritize_tip": true,
-                      "layers": [
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "chance": 0.05,
+          "feature": {
+            "feature": {
+              "type": "minecraft:block_column",
+              "config": {
+                "direction": "up",
+                "allowed_placement": {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
+                },
+                "prioritize_tip": true,
+                "layers": [
+                  {
+                    "height": {
+                      "type": "minecraft:uniform",
+                      "min_inclusive": 15,
+                      "max_inclusive": 30
+                    },
+                    "provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:weeping_vines_plant"
+                      }
+                    }
+                  },
+                  {
+                    "height": 1,
+                    "provider": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
                         {
-                          "height": {
-                            "type": "minecraft:uniform",
-                            "min_inclusive": 15,
-                            "max_inclusive": 30
-                          },
-                          "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:weeping_vines_plant"
-                            }
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:nether_wart_block"
                           }
                         },
                         {
-                          "height": 1,
-                          "provider": {
-                            "type": "minecraft:weighted_state_provider",
-                            "entries": [
-                              {
-                                "weight": 1,
-                                "data": {
-                                  "Name": "minecraft:nether_wart_block"
-                                }
-                              },
-                              {
-                                "weight": 1,
-                                "data": {
-                                  "Name": "minecraft:ochre_froglight",
-                                  "Properties": {
-                                    "axis": "y"
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "height": 1,
-                          "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:light",
-                              "Properties": {
-                                "level": "15"
-                              }
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:ochre_froglight",
+                            "Properties": {
+                              "axis": "y"
                             }
                           }
                         }
                       ]
                     }
                   },
-                  "placement": [
-                    {
-                      "type": "minecraft:heightmap",
-                      "heightmap": "WORLD_SURFACE_WG"
-                    },
-                    {
-                      "type": "minecraft:block_predicate_filter",
-                      "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              -1,
-                              0
-                            ],
-                            "blocks": "minecraft:mycelium"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:air"
-                          }
-                        ]
+                  {
+                    "height": 1,
+                    "provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:light",
+                        "Properties": {
+                          "level": "15"
+                        }
                       }
                     }
-                  ]
-                }
+                  }
+                ]
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:heightmap",
+                "heightmap": "WORLD_SURFACE_WG"
               },
               {
-                "chance": 0.2,
-                "feature": {
-                  "feature": {
-                    "type": "minecraft:block_column",
-                    "config": {
-                      "direction": "up",
-                      "allowed_placement": {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": "minecraft:air"
-                      },
-                      "prioritize_tip": true,
-                      "layers": [
-                        {
-                          "height": {
-                            "type": "minecraft:uniform",
-                            "min_inclusive": 3,
-                            "max_inclusive": 20
-                          },
-                          "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:weeping_vines_plant"
-                            }
-                          }
-                        },
-                        {
-                          "height": 1,
-                          "provider": {
-                            "type": "minecraft:weighted_state_provider",
-                            "entries": [
-                              {
-                                "weight": 20,
-                                "data": {
-                                  "Name": "minecraft:nether_wart_block"
-                                }
-                              },
-                              {
-                                "weight": 1,
-                                "data": {
-                                  "Name": "minecraft:ochre_froglight",
-                                  "Properties": {
-                                    "axis": "y"
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "height": 1,
-                          "provider": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:light",
-                              "Properties": {
-                                "level": "15"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  "placement": [
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:all_of",
+                  "predicates": [
                     {
-                      "type": "minecraft:heightmap",
-                      "heightmap": "WORLD_SURFACE_WG"
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:mycelium"
                     },
                     {
-                      "type": "minecraft:block_predicate_filter",
-                      "predicate": {
-                        "type": "minecraft:all_of",
-                        "predicates": [
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "offset": [
-                              0,
-                              -1,
-                              0
-                            ],
-                            "blocks": "minecraft:mycelium"
-                          },
-                          {
-                            "type": "minecraft:matching_blocks",
-                            "blocks": "minecraft:air"
-                          }
-                        ]
-                      }
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:air"
                     }
                   ]
                 }
               }
-            ],
-            "default": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:simple_state_provider",
-                    "state": {
-                      "Name": "minecraft:crimson_roots"
+            ]
+          }
+        },
+        {
+          "chance": 0.2,
+          "feature": {
+            "feature": {
+              "type": "minecraft:block_column",
+              "config": {
+                "direction": "up",
+                "allowed_placement": {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
+                },
+                "prioritize_tip": true,
+                "layers": [
+                  {
+                    "height": {
+                      "type": "minecraft:uniform",
+                      "min_inclusive": 3,
+                      "max_inclusive": 20
+                    },
+                    "provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:weeping_vines_plant"
+                      }
+                    }
+                  },
+                  {
+                    "height": 1,
+                    "provider": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
+                        {
+                          "weight": 20,
+                          "data": {
+                            "Name": "minecraft:nether_wart_block"
+                          }
+                        },
+                        {
+                          "weight": 1,
+                          "data": {
+                            "Name": "minecraft:ochre_froglight",
+                            "Properties": {
+                              "axis": "y"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "height": 1,
+                    "provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:light",
+                        "Properties": {
+                          "level": "15"
+                        }
+                      }
                     }
                   }
-                }
+                ]
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:heightmap",
+                "heightmap": "WORLD_SURFACE_WG"
               },
-              "placement": [
+              {
+                "type": "minecraft:block_predicate_filter",
+                "predicate": {
+                  "type": "minecraft:all_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:mycelium"
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:air"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "default": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:crimson_roots"
+              }
+            }
+          }
+        },
+        "placement": [
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "OCEAN_FLOOR"
+          },
+          {
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:all_of",
+              "predicates": [
                 {
-                  "type": "minecraft:heightmap",
-                  "heightmap": "OCEAN_FLOOR"
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:mycelium"
                 },
                 {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:all_of",
-                    "predicates": [
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          -1,
-                          0
-                        ],
-                        "blocks": "minecraft:mycelium"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": "minecraft:air"
-                      }
-                    ]
-                  }
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
                 }
               ]
             }
           }
-        },
-        "placement": []
+        ]
       }
     }
   },

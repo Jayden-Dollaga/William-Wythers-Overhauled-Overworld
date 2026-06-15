@@ -154,119 +154,45 @@
       ],
       "default": {
         "feature": {
-          "type": "minecraft:random_patch",
+          "type": "minecraft:simple_block",
           "config": {
-            "tries": 32,
-            "xz_spread": 8,
-            "y_spread": 4,
-            "feature": {
-              "feature": {
-                "type": "minecraft:simple_block",
-                "config": {
-                  "to_place": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:sweet_berry_bush",
-                          "Properties": {
-                            "age": "0"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:sweet_berry_bush",
-                          "Properties": {
-                            "age": "1"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:sweet_berry_bush",
-                          "Properties": {
-                            "age": "2"
-                          }
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:sweet_berry_bush",
-                          "Properties": {
-                            "age": "3"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                }
-              },
-              "placement": [
+            "to_place": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
                 {
-                  "type": "minecraft:block_predicate_filter",
-                  "predicate": {
-                    "type": "minecraft:all_of",
-                    "predicates": [
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          -1,
-                          0
-                        ],
-                        "blocks": "minecraft:grass_block"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          0
-                        ],
-                        "blocks": "minecraft:air"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          1,
-                          0,
-                          0
-                        ],
-                        "blocks": "minecraft:air"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          -1,
-                          0,
-                          0
-                        ],
-                        "blocks": "minecraft:air"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          1
-                        ],
-                        "blocks": "minecraft:air"
-                      },
-                      {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                          0,
-                          0,
-                          -1
-                        ],
-                        "blocks": "minecraft:air"
-                      }
-                    ]
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:sweet_berry_bush",
+                    "Properties": {
+                      "age": "0"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:sweet_berry_bush",
+                    "Properties": {
+                      "age": "1"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:sweet_berry_bush",
+                    "Properties": {
+                      "age": "2"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:sweet_berry_bush",
+                    "Properties": {
+                      "age": "3"
+                    }
                   }
                 }
               ]

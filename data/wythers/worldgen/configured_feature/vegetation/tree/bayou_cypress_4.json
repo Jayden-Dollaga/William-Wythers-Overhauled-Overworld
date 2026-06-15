@@ -267,125 +267,14 @@
               {
                 "feature": {
                   "config": {
-                    "tries": 128,
-                    "xz_spread": 1,
-                    "y_spread": 4,
-                    "feature": {
-                      "feature": {
-                        "config": {
-                          "to_place": {
-                            "type": "minecraft:simple_state_provider",
-                            "state": {
-                              "Name": "minecraft:acacia_wood"
-                            }
-                          }
-                        },
-                        "type": "minecraft:simple_block"
-                      },
-                      "placement": [
-                        {
-                          "type": "minecraft:block_predicate_filter",
-                          "predicate": {
-                            "type": "minecraft:all_of",
-                            "predicates": [
-                              {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "minecraft:air",
-                                  "minecraft:water",
-                                  "minecraft:pale_hanging_moss",
-                                  "minecraft:rooted_dirt",
-                                  "minecraft:dirt",
-                                  "minecraft:grass_block",
-                                  "minecraft:packed_mud",
-                                  "minecraft:mud",
-                                  "minecraft:soul_sand",
-                                  "minecraft:soul_soil"
-                                ]
-                              },
-                              {
-                                "type": "minecraft:any_of",
-                                "predicates": [
-                                  {
-                                    "type": "minecraft:matching_block_tag",
-                                    "offset": [
-                                      0,
-                                      -1,
-                                      0
-                                    ],
-                                    "tag": "dirt"
-                                  },
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      0,
-                                      -1,
-                                      0
-                                    ],
-                                    "blocks": [
-                                      "minecraft:acacia_wood",
-                                      "minecraft:soul_sand"
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "type": "minecraft:any_of",
-                                "predicates": [
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      1,
-                                      4,
-                                      0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
-                                  },
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      -1,
-                                      4,
-                                      0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
-                                  },
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      0,
-                                      4,
-                                      1
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
-                                  },
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      0,
-                                      4,
-                                      -1
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
-                                  },
-                                  {
-                                    "type": "minecraft:matching_blocks",
-                                    "offset": [
-                                      0,
-                                      1,
-                                      0
-                                    ],
-                                    "blocks": "minecraft:acacia_wood"
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        }
-                      ]
+                    "to_place": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:acacia_wood"
+                      }
                     }
                   },
-                  "type": "minecraft:random_patch"
+                  "type": "minecraft:simple_block"
                 },
                 "placement": []
               }

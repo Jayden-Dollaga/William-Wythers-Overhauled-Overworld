@@ -1,12 +1,21 @@
 {
-  "type": "minecraft:random_patch",
-  "config": {
-    "tries": 48,
-    "xz_spread": 3,
-    "y_spread": 3,
-    "feature": {
   "feature": "wythers:vegetation/column/mix_thin_jungle_bamboo",
   "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 48
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      }
+    },
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
@@ -24,7 +33,4 @@
       }
     }
   ]
-}
-
-  }
 }
