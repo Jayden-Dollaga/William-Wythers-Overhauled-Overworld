@@ -257,288 +257,246 @@
               },
               {
                 "feature": {
+                  "type": "minecraft:simple_random_selector",
                   "config": {
-                    "tries": 12,
-                    "xz_spread": 16,
-                    "y_spread": 0,
-                    "feature": {
-                      "feature": {
-                        "type": "minecraft:simple_random_selector",
-                        "config": {
-                          "features": [
-                            {
-                              "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                  "direction": "down",
-                                  "allowed_placement": {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": "minecraft:air"
-                                  },
-                                  "prioritize_tip": true,
-                                  "layers": [
-                                    {
-                                      "height": {
-                                        "type": "minecraft:uniform",
-                                        "min_inclusive": 3,
-                                        "max_inclusive": 10
-                                      },
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:mangrove_roots"
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "height": 0,
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:hanging_roots"
-                                        }
-                                      }
-                                    }
-                                  ]
-                                }
-                              },
-                              "placement": [
-                                {
-                                  "type": "minecraft:block_predicate_filter",
-                                  "predicate": {
-                                    "type": "minecraft:all_of",
-                                    "predicates": [
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          1,
-                                          0,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          -1,
-                                          0,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          0,
-                                          1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          0,
-                                          -1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:vine"
-                                        ]
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
+                    "features": [
+                      {
+                        "feature": {
+                          "type": "minecraft:block_column",
+                          "config": {
+                            "direction": "down",
+                            "allowed_placement": {
+                              "type": "minecraft:matching_blocks",
+                              "blocks": "minecraft:air"
                             },
-                            {
-                              "feature": {
-                                "type": "minecraft:block_column",
-                                "config": {
-                                  "direction": "down",
-                                  "allowed_placement": {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": "minecraft:air"
-                                  },
-                                  "prioritize_tip": true,
-                                  "layers": [
-                                    {
-                                      "height": {
-                                        "type": "minecraft:uniform",
-                                        "min_inclusive": 4,
-                                        "max_inclusive": 10
-                                      },
-                                      "provider": {
-                                        "type": "minecraft:weighted_state_provider",
-                                        "entries": [
-                                          {
-                                            "weight": 10,
-                                            "data": {
-                                              "Name": "minecraft:cave_vines_plant",
-                                              "Properties": {
-                                                "berries": "false"
-                                              }
-                                            }
-                                          },
-                                          {
-                                            "weight": 1,
-                                            "data": {
-                                              "Name": "minecraft:cave_vines_plant",
-                                              "Properties": {
-                                                "berries": "true"
-                                              }
-                                            }
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "height": 1,
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:cave_vines",
-                                          "Properties": {
-                                            "age": "0",
-                                            "berries": "false"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  ]
+                            "prioritize_tip": true,
+                            "layers": [
+                              {
+                                "height": {
+                                  "type": "minecraft:uniform",
+                                  "min_inclusive": 3,
+                                  "max_inclusive": 10
+                                },
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:mangrove_roots"
+                                  }
                                 }
                               },
-                              "placement": [
-                                {
-                                  "type": "minecraft:block_predicate_filter",
-                                  "predicate": {
-                                    "type": "minecraft:all_of",
-                                    "predicates": [
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          1,
-                                          0,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:mangrove_roots",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:mangrove_wood",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          -1,
-                                          0,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:mangrove_roots",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:mangrove_wood",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          0,
-                                          1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:mangrove_roots",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:mangrove_wood",
-                                          "minecraft:vine"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          0,
-                                          -1
-                                        ],
-                                        "blocks": [
-                                          "minecraft:air",
-                                          "minecraft:cave_vines_plant",
-                                          "minecraft:mangrove_roots",
-                                          "minecraft:azalea_leaves",
-                                          "minecraft:mangrove_wood",
-                                          "minecraft:vine"
-                                        ]
-                                      }
-                                    ]
+                              {
+                                "height": 0,
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:hanging_roots"
                                   }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "placement": [
+                          {
+                            "type": "minecraft:block_predicate_filter",
+                            "predicate": {
+                              "type": "minecraft:all_of",
+                              "predicates": [
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:vine"
+                                  ]
                                 }
                               ]
                             }
-                          ]
-                        }
+                          }
+                        ]
                       },
-                      "placement": [
-                        {
-                          "type": "minecraft:environment_scan",
-                          "direction_of_search": "up",
-                          "max_steps": 32,
-                          "target_condition": {
-                            "type": "minecraft:all_of",
-                            "predicates": [
+                      {
+                        "feature": {
+                          "type": "minecraft:block_column",
+                          "config": {
+                            "direction": "down",
+                            "allowed_placement": {
+                              "type": "minecraft:matching_blocks",
+                              "blocks": "minecraft:air"
+                            },
+                            "prioritize_tip": true,
+                            "layers": [
                               {
-                                "type": "minecraft:matching_blocks",
-                                "offset": [
-                                  0,
-                                  1,
-                                  0
-                                ],
-                                "blocks": [
-                                  "mangrove_wood"
-                                ]
+                                "height": {
+                                  "type": "minecraft:uniform",
+                                  "min_inclusive": 4,
+                                  "max_inclusive": 10
+                                },
+                                "provider": {
+                                  "type": "minecraft:weighted_state_provider",
+                                  "entries": [
+                                    {
+                                      "weight": 10,
+                                      "data": {
+                                        "Name": "minecraft:cave_vines_plant",
+                                        "Properties": {
+                                          "berries": "false"
+                                        }
+                                      }
+                                    },
+                                    {
+                                      "weight": 1,
+                                      "data": {
+                                        "Name": "minecraft:cave_vines_plant",
+                                        "Properties": {
+                                          "berries": "true"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                }
                               },
                               {
-                                "type": "minecraft:matching_blocks",
-                                "blocks": [
-                                  "air"
-                                ]
+                                "height": 1,
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:cave_vines",
+                                    "Properties": {
+                                      "age": "0",
+                                      "berries": "false"
+                                    }
+                                  }
+                                }
                               }
                             ]
-                          },
-                          "allowed_search_condition": {
-                            "type": "minecraft:true"
                           }
-                        }
-                      ]
-                    }
-                  },
-                  "type": "minecraft:random_patch"
+                        },
+                        "placement": [
+                          {
+                            "type": "minecraft:block_predicate_filter",
+                            "predicate": {
+                              "type": "minecraft:all_of",
+                              "predicates": [
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:mangrove_roots",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:mangrove_wood",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    -1,
+                                    0,
+                                    0
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:mangrove_roots",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:mangrove_wood",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    0,
+                                    0,
+                                    1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:mangrove_roots",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:mangrove_wood",
+                                    "minecraft:vine"
+                                  ]
+                                },
+                                {
+                                  "type": "minecraft:matching_blocks",
+                                  "offset": [
+                                    0,
+                                    0,
+                                    -1
+                                  ],
+                                  "blocks": [
+                                    "minecraft:air",
+                                    "minecraft:cave_vines_plant",
+                                    "minecraft:mangrove_roots",
+                                    "minecraft:azalea_leaves",
+                                    "minecraft:mangrove_wood",
+                                    "minecraft:vine"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 },
                 "placement": []
               }

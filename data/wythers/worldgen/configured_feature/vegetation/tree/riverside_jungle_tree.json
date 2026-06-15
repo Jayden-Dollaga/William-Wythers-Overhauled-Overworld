@@ -119,89 +119,46 @@
                       {
                         "feature": {
                           "config": {
-                            "tries": 8,
-                            "xz_spread": 16,
-                            "y_spread": 0,
-                            "feature": {
-                              "feature": {
-                                "config": {
-                                  "direction": "down",
-                                  "allowed_placement": {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": [
-                                      "air"
-                                    ]
-                                  },
-                                  "prioritize_tip": true,
-                                  "layers": [
-                                    {
-                                      "height": {
-                                        "type": "minecraft:uniform",
-                                        "min_inclusive": 0,
-                                        "max_inclusive": 2
-                                      },
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:pale_hanging_moss",
-                                          "Properties": {
-                                            "tip": "false"
-                                          }
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "height": 1,
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:pale_hanging_moss",
-                                          "Properties": {
-                                            "tip": "true"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  ]
+                            "direction": "down",
+                            "allowed_placement": {
+                              "type": "minecraft:matching_blocks",
+                              "blocks": [
+                                "air"
+                              ]
+                            },
+                            "prioritize_tip": true,
+                            "layers": [
+                              {
+                                "height": {
+                                  "type": "minecraft:uniform",
+                                  "min_inclusive": 0,
+                                  "max_inclusive": 2
                                 },
-                                "type": "minecraft:block_column"
-                              },
-                              "placement": [
-                                {
-                                  "type": "minecraft:environment_scan",
-                                  "direction_of_search": "up",
-                                  "max_steps": 32,
-                                  "target_condition": {
-                                    "type": "minecraft:all_of",
-                                    "predicates": [
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          1,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "jungle_wood",
-                                          "jungle_leaves"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "air"
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  "allowed_search_condition": {
-                                    "type": "minecraft:true"
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:pale_hanging_moss",
+                                    "Properties": {
+                                      "tip": "false"
+                                    }
                                   }
                                 }
-                              ]
-                            }
+                              },
+                              {
+                                "height": 1,
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:pale_hanging_moss",
+                                    "Properties": {
+                                      "tip": "true"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
                           },
-                          "type": "minecraft:random_patch"
+                          "type": "minecraft:block_column"
                         },
                         "placement": []
                       }
@@ -330,89 +287,46 @@
                       {
                         "feature": {
                           "config": {
-                            "tries": 8,
-                            "xz_spread": 16,
-                            "y_spread": 0,
-                            "feature": {
-                              "feature": {
-                                "config": {
-                                  "direction": "down",
-                                  "allowed_placement": {
-                                    "type": "minecraft:matching_blocks",
-                                    "blocks": [
-                                      "air"
-                                    ]
-                                  },
-                                  "prioritize_tip": true,
-                                  "layers": [
-                                    {
-                                      "height": {
-                                        "type": "minecraft:uniform",
-                                        "min_inclusive": 0,
-                                        "max_inclusive": 2
-                                      },
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:pale_hanging_moss",
-                                          "Properties": {
-                                            "tip": "false"
-                                          }
-                                        }
-                                      }
-                                    },
-                                    {
-                                      "height": 1,
-                                      "provider": {
-                                        "type": "minecraft:simple_state_provider",
-                                        "state": {
-                                          "Name": "minecraft:pale_hanging_moss",
-                                          "Properties": {
-                                            "tip": "true"
-                                          }
-                                        }
-                                      }
-                                    }
-                                  ]
+                            "direction": "down",
+                            "allowed_placement": {
+                              "type": "minecraft:matching_blocks",
+                              "blocks": [
+                                "air"
+                              ]
+                            },
+                            "prioritize_tip": true,
+                            "layers": [
+                              {
+                                "height": {
+                                  "type": "minecraft:uniform",
+                                  "min_inclusive": 0,
+                                  "max_inclusive": 2
                                 },
-                                "type": "minecraft:block_column"
-                              },
-                              "placement": [
-                                {
-                                  "type": "minecraft:environment_scan",
-                                  "direction_of_search": "up",
-                                  "max_steps": 32,
-                                  "target_condition": {
-                                    "type": "minecraft:all_of",
-                                    "predicates": [
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "offset": [
-                                          0,
-                                          1,
-                                          0
-                                        ],
-                                        "blocks": [
-                                          "jungle_wood",
-                                          "jungle_leaves"
-                                        ]
-                                      },
-                                      {
-                                        "type": "minecraft:matching_blocks",
-                                        "blocks": [
-                                          "air"
-                                        ]
-                                      }
-                                    ]
-                                  },
-                                  "allowed_search_condition": {
-                                    "type": "minecraft:true"
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:pale_hanging_moss",
+                                    "Properties": {
+                                      "tip": "false"
+                                    }
                                   }
                                 }
-                              ]
-                            }
+                              },
+                              {
+                                "height": 1,
+                                "provider": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:pale_hanging_moss",
+                                    "Properties": {
+                                      "tip": "true"
+                                    }
+                                  }
+                                }
+                              }
+                            ]
                           },
-                          "type": "minecraft:random_patch"
+                          "type": "minecraft:block_column"
                         },
                         "placement": []
                       }
