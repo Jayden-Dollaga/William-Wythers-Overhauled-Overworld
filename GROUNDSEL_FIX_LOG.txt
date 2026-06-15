@@ -1,0 +1,20 @@
+============================================================
+Fix giant_groundsel and complex random_patch files
+============================================================
+
+Found 3 top-level random_patch files
+
+  Fixed: data\wythers\worldgen\configured_feature\decor\patch_floating_lanterns.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\floating_vegetation_plants.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\fungus\patch_morel.json
+
+============================================================
+SUMMARY
+============================================================
+  Fixed: 3
+  Remaining random_patch: 32
+    data\wythers\worldgen\configured_feature\vegetation\giant_groundsel_121.json
+    data\wythers\worldgen\configured_feature\vegetation\giant_groundsel_122.json
+    data\wythers\worldgen\configured_feature\vegetation\giant_groundsel_123.json
+    data\wythers\worldgen\configured_feature\vegetation\giant_groundsel_124.json
+    data\wythers\worldgen\configured_feature\vegetation\giant_groundsel_131.json

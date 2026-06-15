@@ -1,0 +1,44 @@
+{
+  "feature": {
+    "type": "minecraft:simple_block",
+    "config": {
+      "to_place": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:fire_coral",
+              "Properties": {}
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:fire_coral_fan",
+              "Properties": {}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 10,
+      "noise_factor": 150,
+      "noise_offset": 0
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

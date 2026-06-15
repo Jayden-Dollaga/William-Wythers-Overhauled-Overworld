@@ -1,5 +1,37 @@
+
+git add . && git commit -m "Export all"
+
+
+git remote add origin https://github.com/Jayden-Dollaga/William-Wythers-Overhauled-Overworld.git
+git branch -M main
+git push -u origin main
+
+git push -u origin main --force
+
+
+
+
+
+
 python3 check_integrity.py
 
 python3 check_integrity.py --restore
 
+
+
+
 python3 fix_wrong_matching_blocks.py --restore
+
+python3 fix_missing_types.py
+
+
+
+
+python3 fix_round8_unwrap.py
+
+python3 find_patch.py
+
+python3 fix_round9_nested.py
+
+
+python3 fix_groundsel.py

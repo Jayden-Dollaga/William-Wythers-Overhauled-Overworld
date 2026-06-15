@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:air",
+                        "minecraft:water",
+                        "minecraft:kelp",
+                        "minecraft:kelp_plant",
+                        "minecraft:seagrass",
+                        "minecraft:tall_seagrass"
+                      ]
+                    },
+                    "prioritize_tip": true,
+                    "layers": [
+                      {
+                        "height": 10,
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "stone"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:sand"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "type": "minecraft:block_column"
+                },
+                "placement": []
+              }
+            ]
+          },
+          "type": "minecraft:simple_random_selector"
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 5,
+              "max_inclusive": 10
+            }
+          },
+          {
+            "type": "minecraft:height_range",
+            "heightmap": "OCEAN_FLOOR",
+            "height": {
+              "absolute": 62
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

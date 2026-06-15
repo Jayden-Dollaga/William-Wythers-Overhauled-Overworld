@@ -1,0 +1,66 @@
+=== WWOO PORT TASK: Round 6 Part 2 ===
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only)
+RULE: Only touch exact files listed. No broad scans. No file deletions.
+
+FIX 1 — Remove leaf keys from terracotta_mound (3 files)
+FILES:
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_orange.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_red.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_yellow.json
+Remove "waterlogged", "persistent", "distance" from inside "Properties" objects ONLY.
+COMMIT per file: fix(terrain): <filename> — remove leaf blockstate keys
+
+FIX 2 — Remove extra branch keys from elephant bamboo (4 files)
+FILES:
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical.json
+Remove: "extra_branch_steps", "extra_branch_length",
+        "place_branch_per_log_probability", "can_grow_through"
+COMMIT per file: fix(tree): <filename> — remove extra branch keys
+
+FIX 3 — Remove ColumnPlacer keys (2 files ONLY)
+FILES:
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_orange.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_omphalotus_illudens.json
+Remove from ColumnPlacer config objects ONLY (verify parent type contains "column"):
+  "exclusion_radius_xz", "exclusion_radius_y", "required_empty_blocks"
+COMMIT per file: fix(fungus): <filename> — remove ColumnPlacer keys
+
+FIX 4 — Remove misc invalid keys (exact files + line numbers)
+"heightmap" (not inside placement modifier):
+  data/wythers/worldgen/configured_feature/terrain/local/deep_lukewarm_island.json line 113
+  data/wythers/worldgen/configured_feature/terrain/local/island.json line 112
+"dusted":
+  data/wythers/worldgen/configured_feature/vegetation/patch/cold_island_grass.json line 36
+"snowy":
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dead_pale_oak.json line 214
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_pale_oak.json line 610
+  data/wythers/worldgen/placed_feature/terrain/extended/dripstone_cliff.json line 12
+  data/wythers/worldgen/placed_feature/terrain/local/packed_mud_canyons.json line 12
+  data/wythers/worldgen/placed_feature/terrain/local/sea_cliff.json line 12
+"creaking":
+  data/wythers/worldgen/placed_feature/vegetation/local/other/creaking_heart.json line 138
+"predicate" (invalid placement context):
+  data/wythers/worldgen/placed_feature/terrain/extended/coastal_forest_sand.json line 95
+  data/wythers/worldgen/placed_feature/terrain/local/sandy_forest.json line 95
+  data/wythers/worldgen/placed_feature/terrain/local/sandy_jungle.json line 95
+"sapling_provider":
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_tall.json line 11
+"blocks" (wrongly added to palm foliage):
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_east.json line 239
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_east.json line 226
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_west.json
+"placement" (wrongly inside configured_feature):
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab_small.json line 99
+COMMIT per file: fix(<dir>): <filename> — remove invalid key <keyname>
+
+FINAL: python3 check_integrity.py → git add data/ → git commit

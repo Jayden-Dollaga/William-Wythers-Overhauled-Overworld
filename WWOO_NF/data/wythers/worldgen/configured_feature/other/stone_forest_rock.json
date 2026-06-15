@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:forest_rock",
+  "config": {
+    "type": "minecraft:simple_state_provider",
+    "state": {
+      "Name": "minecraft:stone"
+    }
+  }
+}

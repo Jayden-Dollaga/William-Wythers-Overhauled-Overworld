@@ -4,42 +4,103 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   ---File Restorer list---.txt
 |   ---NOTES---.txt
 |   analyze_errors.py
+|   Blueprint Prompt Template.txt
 |   Blueprint Prompt.txt
 |   Blueprint Prompt2.txt
 |   Blueprint Prompt3.txt
+|   Blueprint Prompt4.txt
+|   Blueprint Prompt5.txt
+|   Blueprint Prompt6 - Part 1.txt
+|   Blueprint Prompt6 - Part 2.txt
+|   Blueprint Prompt6 - Part 3.txt
+|   Blueprint Prompt6 - Part 4.txt
+|   Blueprint Prompt6.txt
+|   Blueprint Prompt7.txt
 |   Bug find.py
+|   check_integrity.py
+|   check_integrity_manuwal.txt
+|   check_wrong_types.py
 |   datapack.config.json
 |   errors.txt
 |   errors2.txt
 |   errors3.txt
 |   errors4.txt
 |   errors5.txt
+|   errors6.txt
+|   errors7.txt
+|   errors8.txt
+|   errors8S.txt
+|   errors9.txt
+|   errors9S.txt
 |   FINAL_STATUS_REPORT.md
 |   fix_category_a.py
 |   fix_category_a.sh
 |   fix_category_c.py
 |   fix_category_c_string_ref.py
 |   fix_category_c_v2.py
+|   fix_missing_types.py
+|   fix_part3_type_fields.py
+|   fix_part4_random_patch.py
 |   fix_round2_main.py
 |   fix_round2_quick.py
 |   fix_round3_complex_random_patch.py
 |   fix_round3_intprovider.py
+|   fix_round4_cat1.py
+|   fix_round4_cat2.py
+|   fix_round4_cat3.py
+|   fix_round4_cat3b.py
+|   fix_round4_cat4.py
+|   fix_round4_cat5.py
+|   fix_round4_cat6.py
+|   fix_round4_cat7.py
+|   fix_round4_cat8.py
+|   fix_round5_cat1.py
+|   fix_round5_cat2.py
+|   fix_round5_cat3.py
+|   fix_round5_cat5.py
+|   fix_round5_cat5_alt.py
+|   fix_round5_cat7.py
+|   fix_round6_fix2.py
+|   fix_round6_fix2_corrected.py
+|   fix_round6_fix3.py
+|   fix_round6_fix4.py
+|   fix_round6_fix5.py
+|   fix_round6_fix6.py
 |   fix_working_dir.py
+|   fix_wrong_matching_blocks.py
+|   fix_y_spread.py
 |   list.txt
 |   list_files.bat
 |   Log_Error.txt
 |   Log_Error2.txt
 |   Log_Error3.txt
 |   Log_Error4.txt
+|   Log_Error5.txt
+|   Log_Error6.txt
 |   MIGRATION_COMPLETE.txt
 |   MIGRATION_REPORT.md
+|   output.txt
 |   pack.mcmeta
 |   pack.png
+|   package-lock.json
 |   ROUND2_COMPLETION_REPORT.md
 |   ROUND3_COMPLETION_REPORT.md
+|   ROUND4_COMPLETION_REPORT.md
+|   ROUND5_COMPLETION_REPORT.md
+|   ROUND6_COMPLETE_REPORT.md
+|   ROUND6_COMPLETION_REPORT.md
+|   ROUND6_PART1_REPORT.md
+|   ROUND6_PART3_REPORT.md
+|   ROUND7_COMPLETION_REPORT.md
 |   verify_files.py
 |   verify_round3_fix2.py
+|   William Wythers' Overhauled Overworld v2.6.7.code-workspace
 |   
++---.fallow
+|       .gitignore
+|       cache.bin
+|       churn.bin
+|       
 +---26.1.2
 |   |   flightrecorder-config.jfc
 |   |   pack.png
@@ -33867,7 +33928,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                       \---spruce
 |                               rooted_dirt.json
 |                               
-+---WWOO
++---WWOO_NF
 |   |   pack.mcmeta
 |   |   pack.png
 |   |   
