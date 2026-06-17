@@ -18,8 +18,8 @@
       },
       "y_spread": {
         "type": "minecraft:trapezoid",
-        "max": 20,
-        "min": -20,
+        "max": 16,
+        "min": -16,
         "plateau": 0
       }
     },

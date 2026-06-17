@@ -1,5 +1,5 @@
 
-git add . && git commit -m "Export all"
+git add . && git commit -m "Update"
 
 
 git remote add origin https://github.com/Jayden-Dollaga/William-Wythers-Overhauled-Overworld.git
@@ -35,3 +35,78 @@ python3 fix_round9_nested.py
 
 
 python3 fix_groundsel.py
+
+
+
+
+
+
+
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "import os; print([f for f in os.listdir('26.1.2/data/minecraft/worldgen/configured_feature') if 'cact' in f])"
+['cactus.json']
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "                                                  
+>> import os, json                                          
+>> 
+>> renames = {
+>>     'minecraft:patch_berry_bush': 'minecraft:berry_bush',
+>>     'minecraft:patch_bush': 'minecraft:bush',
+>>     'minecraft:patch_firefly_bush': 'minecraft:firefly_bush',
+>>     'minecraft:patch_large_fern': 'minecraft:large_fern',
+>>     'minecraft:patch_sugar_cane': 'minecraft:sugar_cane',
+>>     'minecraft:patch_sunflower': 'minecraft:sunflower',
+>>     'minecraft:patch_tall_grass': 'minecraft:tall_grass',
+>>     'minecraft:patch_waterlily': 'minecraft:waterlily',
+>>     'minecraft:wildflowers_birch_forest': 'minecraft:wildflower',
+>> }
+>> 
+>> fixed = 0
+>> for root, dirs, files in os.walk('data'):
+>>     for f in files:
+>>         if not f.endswith('.json'): continue
+>>         path = os.path.join(root, f)
+>>         try:
+>>             c = open(path, encoding='utf-8').read()
+>>             changed = False
+>>             for old, new in renames.items():
+>>                 if old in c:
+>>                     c = c.replace(old, new)
+>>                     changed = True
+>>             if changed:
+>>                 open(path, 'w', encoding='utf-8').write(c)
+>>                 fixed += 1
+>>                 print(f'Fixed: {path}')
+>>         except: pass
+>> 
+>> print(f'Total: {fixed}')
+>> "
+Fixed: data\minecraft\worldgen\biome\birch_forest.json
+Fixed: data\minecraft\worldgen\biome\cherry_grove.json
+Fixed: data\minecraft\worldgen\biome\jungle.json
+Fixed: data\minecraft\worldgen\biome\lukewarm_ocean.json
+Fixed: data\minecraft\worldgen\biome\lush_caves.json
+Fixed: data\minecraft\worldgen\biome\old_growth_birch_forest.json
+Fixed: data\minecraft\worldgen\biome\old_growth_pine_taiga.json
+Fixed: data\minecraft\worldgen\biome\plains.json
+Fixed: data\minecraft\worldgen\biome\savanna.json
+Fixed: data\minecraft\worldgen\biome\savanna_plateau.json
+Fixed: data\minecraft\worldgen\biome\sparse_jungle.json
+Fixed: data\minecraft\worldgen\biome\sunflower_plains.json
+Fixed: data\minecraft\worldgen\biome\swamp.json
+Fixed: data\minecraft\worldgen\biome\windswept_savanna.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\berry_range.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_ferns_dense_forests.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_forest.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_taiga.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\marsh_grass.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\paddy_fireflies.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\sugar_cane_desert.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\sunflower_birch_forest.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\tall_grass_savanna.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\waterlily_dense.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\wildflowers_birch_forest.json
+Total: 25
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> git add data/                                       
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> git commit -m "fix: rename old patch_* vanilla CF references to 26.1.2 names"
+[main 54ae60d8] fix: rename old patch_* vanilla CF references to 26.1.2 names
+ 25 files changed, 32 insertions(+), 32 deletions(-)
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> 
