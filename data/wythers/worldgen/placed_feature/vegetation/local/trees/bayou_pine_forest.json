@@ -95,6 +95,10 @@
         "max": 8,
         "min": -8,
         "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
       }
     },
     {
