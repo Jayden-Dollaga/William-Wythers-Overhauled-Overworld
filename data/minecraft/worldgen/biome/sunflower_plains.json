@@ -84,7 +84,7 @@
     [
       "minecraft:glow_lichen",
       "wythers:vegetation/extended/trees/mediterranean_woods",
-      "minecraft:patch_tall_grass_2",
+      "minecraft:tall_grass_2",
       "wythers:vegetation/extended/patch/sunflower",
       "wythers:vegetation/extended/trees/sclerophyllous_woods",
       "wythers:vegetation/extended/trees/savanna_mediterranean_woods",
@@ -94,7 +94,7 @@
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane"
+      "minecraft:sugar_cane"
     ],
     [
       "minecraft:freeze_top_layer",

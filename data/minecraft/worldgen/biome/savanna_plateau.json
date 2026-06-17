@@ -194,11 +194,11 @@
       "wythers:vegetation/local/trees/tropical_woods",
       "wythers:vegetation/local/trees/tropical_savanna",
       "wythers:vegetation/extended/trees/savanna_oaks",
-      "minecraft:patch_tall_grass_2",
+      "minecraft:tall_grass_2",
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
+      "minecraft:sugar_cane",
       "wythers:vegetation/local/patch/giant_groundsels"
     ],
     [
