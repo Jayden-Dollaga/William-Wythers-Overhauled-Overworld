@@ -124,7 +124,7 @@
       "wythers:vegetation/local/patch/island_grass",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:sugar_cane",
+      "minecraft:patch_sugar_cane",
       "minecraft:seagrass_warm",
       "wythers:vegetation/local/other/cocoanuts",
       "wythers:vegetation/local/patch/sea_vines"

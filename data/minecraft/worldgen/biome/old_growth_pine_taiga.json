@@ -88,7 +88,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:large_fern",
+      "minecraft:patch_large_fern",
       "wythers:vegetation/local/trees/ogt_sequoia_woods",
       "wythers:vegetation/local/trees/ogt_redwood_woods",
       "minecraft:patch_grass_taiga",
