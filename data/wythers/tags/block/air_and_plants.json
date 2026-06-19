@@ -6,7 +6,6 @@
     "minecraft:short_grass",
     "minecraft:fern",
     "minecraft:tall_grass",
-    "minecraft:large_fern",
     "minecraft:dead_bush",
     "minecraft:stone_button",
     "minecraft:bamboo",
@@ -17,7 +16,6 @@
     "minecraft:bush",
     "minecraft:firefly_bush",
     "minecraft:short_dry_grass",
-    "minecraft:tall_dry_grass",
-    "minecraft:sugar_cane"
+    "minecraft:tall_dry_grass"
   ]
 }
