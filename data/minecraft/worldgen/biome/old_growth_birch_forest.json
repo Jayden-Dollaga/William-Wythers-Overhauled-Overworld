@@ -7,18 +7,7 @@
         "sound": "minecraft:music.overworld.forest"
       }
     },
-    "minecraft:visual/sky_color": 6269917,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 331305,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#7aa5ff"
   },
   "carvers": [
     "minecraft:cave",
@@ -27,33 +16,30 @@
   ],
   "downfall": 0.0,
   "effects": {
-    "dry_foliage_color": 16679230,
-    "water_color": 4562649,
-    "foliage_color": 16679230
+    "water_color": "#3f76e4"
   },
   "features": [
     [
+      "wythers:farm/harvest_fields_1",
+      "wythers:farm/harvest_fields_2",
+      "wythers:farm/harvest_fields_3",
       "wythers:placer/birch_forests",
-      "wythers:terrain/local/granite_boulders",
-      "wythers:terrain/local/stone_cliffs",
       "wythers:road/harvest_fields_1",
       "wythers:road/harvest_fields_1b",
       "wythers:road/harvest_fields_2",
       "wythers:road/harvest_fields_2b",
       "wythers:road/harvest_fields_3",
       "wythers:road/harvest_fields_4",
-      "wythers:farm/harvest_fields_1",
-      "wythers:farm/harvest_fields_2",
-      "wythers:farm/harvest_fields_3",
-      "wythers:terrain/extended/replace_stone_to_granite"
+      "wythers:terrain/extended/replace_stone_to_granite",
+      "wythers:terrain/local/granite_boulders",
+      "wythers:terrain/local/stone_cliffs"
     ],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "minecraft:lake_lava_surface",
+      "minecraft:lake_lava_underground"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:large_dripstone"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -62,69 +48,77 @@
     [],
     [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "minecraft:disk_sand",
       "minecraft:ore_andesite_lower",
-      "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
+      "minecraft:ore_andesite_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_copper",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_medium",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_dirt",
       "minecraft:ore_gold",
       "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_gravel",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_iron_upper",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/disk_gravel_birch_forest",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "wythers:terrain/local/disk_gravel_birch_forest"
     ],
     [
       "wythers:terrain/feature/dripstone_cluster",
       "wythers:terrain/feature/pointed_dripstone",
-      "wythers:vegetation/local/trees/ancient_spring_woods",
       "wythers:vegetation/local/trees/ancient_beech_woods",
-      "wythers:vegetation/local/trees/ancient_beech_woods_2"
+      "wythers:vegetation/local/trees/ancient_beech_woods_2",
+      "wythers:vegetation/local/trees/ancient_spring_woods"
     ],
     [
+      "minecraft:spring_lava",
       "minecraft:spring_water",
       "wythers:terrain/feature/spring_lava"
     ],
     [
+      "minecraft:birch_tall",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:flower_default",
+      "minecraft:forest_flowers",
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/patch/flower_sunny",
-      "wythers:vegetation/local/trees/birch_forest",
-      "wythers:vegetation/local/trees/spring_birch_forest",
-      "wythers:vegetation/local/trees/boreal_forest",
-      "wythers:vegetation/local/trees/aspen_woods",
-      "wythers:farm/harvest_fields_scarecrow",
+      "minecraft:patch_bush",
+      "minecraft:patch_firefly_bush_near_water",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:red_mushroom_normal",
+      "minecraft:wildflowers_birch_forest",
       "wythers:farm/harvest_fields_hay",
       "wythers:farm/harvest_fields_hay_2",
       "wythers:farm/harvest_fields_pumpkin",
+      "wythers:farm/harvest_fields_scarecrow",
+      "wythers:farm/harvest_fields_stumps",
       "wythers:farm/harvest_fields_wheat",
       "wythers:farm/harvest_fields_wheat_2",
-      "minecraft:patch_tall_grass_2",
+      "wythers:vegetation/local/patch/flower_sunny",
       "wythers:vegetation/local/patch/sunflower_birch_forest",
-      "wythers:farm/harvest_fields_stumps",
+      "wythers:vegetation/local/trees/aspen_woods",
+      "wythers:vegetation/local/trees/birch_forest",
+      "wythers:vegetation/local/trees/boreal_forest",
       "wythers:vegetation/local/trees/harvest_fields_woods_1",
       "wythers:vegetation/local/trees/harvest_fields_woods_2",
-      "minecraft:patch_grass_plain",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin"
+      "wythers:vegetation/local/trees/spring_birch_forest"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -166,18 +160,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 8
-      },
-      {
-        "type": "minecraft:horse",
-        "maxCount": 6,
-        "minCount": 2,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:donkey",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 1
       }
     ],
     "misc": [],

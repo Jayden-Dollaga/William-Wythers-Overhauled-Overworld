@@ -1,18 +1,6 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {},
-    "minecraft:visual/sky_color": 2381962,
-    "minecraft:visual/fog_color": 13224393,
-    "minecraft:visual/water_fog_color": 2171215,
-    "minecraft:audio/music_volume": 1,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#7ba4ff"
   },
   "carvers": [
     "minecraft:cave",
@@ -21,79 +9,91 @@
   ],
   "downfall": 0.5,
   "effects": {
-    "dry_foliage_color": 12638463,
-    "water_color": 3778282
+    "water_color": "#3938c9"
   },
   "features": [
     [
       "wythers:placer/deep_frozen_ocean",
-      "wythers:terrain/local/pelagic_clay",
       "wythers:terrain/local/ocean_bore_holes",
-      "wythers:terrain/local/volcanic_flooded_cavern_mud",
-      "wythers:terrain/local/ocean_rock"
+      "wythers:terrain/local/ocean_rock",
+      "wythers:terrain/local/pelagic_clay",
+      "wythers:terrain/local/volcanic_flooded_cavern_mud"
     ],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
+      "minecraft:lake_lava_surface",
+      "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode",
+      "minecraft:iceberg_blue",
+      "minecraft:iceberg_packed",
+      "wythers:terrain/local/ice_shelf_0",
       "wythers:terrain/local/ice_shelf_1",
       "wythers:terrain/local/ice_shelf_2",
-      "wythers:terrain/local/ice_shelf_3",
-      "wythers:terrain/local/ice_shelf_0"
+      "wythers:terrain/local/ice_shelf_3"
     ],
     [
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
+    [
+      "minecraft:blue_ice"
+    ],
     [],
     [
-      "minecraft:ore_dirt",
-      "minecraft:ore_gravel",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_andesite_upper",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "minecraft:disk_sand",
       "minecraft:ore_andesite_lower",
-      "minecraft:ore_tuff",
-      "minecraft:ore_coal_upper",
+      "minecraft:ore_andesite_upper",
       "minecraft:ore_coal_lower",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_copper",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_medium",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_dirt",
       "minecraft:ore_gold",
       "minecraft:ore_gold_lower",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_buried",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_gravel",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_iron_upper",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
-      "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:disk_gravel"
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_tuff",
+      "minecraft:underwater_magma"
     ],
     [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
+      "minecraft:spring_lava",
+      "minecraft:spring_water"
     ],
     [
-      "minecraft:glow_lichen",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:flower_default",
+      "minecraft:glow_lichen",
+      "minecraft:patch_firefly_bush_near_water",
+      "minecraft:patch_grass_badlands",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:red_mushroom_normal",
+      "minecraft:trees_water"
     ],
     [
       "minecraft:freeze_top_layer",
       "wythers:terrain/feature/crevasse",
       "wythers:terrain/feature/ice_tunnel",
       "wythers:terrain/feature/ice_tunnel_mid",
-      "wythers:terrain/local/ice_shelf_4",
       "wythers:terrain/local/hydrothermal_vents",
+      "wythers:terrain/local/ice_shelf_4",
       "wythers:vegetation/local/patch/tube_worms"
     ]
   ],
@@ -188,12 +188,6 @@
         "maxCount": 5,
         "minCount": 1,
         "weight": 15
-      },
-      {
-        "type": "minecraft:cod",
-        "maxCount": 5,
-        "minCount": 1,
-        "weight": 15
       }
     ],
     "water_creature": [
@@ -202,12 +196,6 @@
         "maxCount": 4,
         "minCount": 1,
         "weight": 1
-      },
-      {
-        "type": "minecraft:dolphin",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 2
       },
       {
         "type": "minecraft:nautilus",
