@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:patch_sunflower",
+  "feature": "minecraft:sunflower",
   "placement": [
     {
       "type": "minecraft:height_range",
