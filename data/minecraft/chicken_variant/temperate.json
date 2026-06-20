@@ -1,21 +1,9 @@
 {
-  "asset_id": "minecraft:entity/chicken/temperate_chicken",
+  "asset_id": "minecraft:entity/chicken/chicken_temperate",
+  "baby_asset_id": "minecraft:entity/chicken/chicken_temperate_baby",
   "spawn_conditions": [
     {
       "priority": 0
-    },
-    {
-      "condition": {
-        "type": "minecraft:biome",
-        "biomes": [
-          "minecraft:swamp",
-          "minecraft:birch_forest",
-          "minecraft:old_growth_birch_forest",
-          "minecraft:lukewarm_ocean"
-        ]
-      },
-      "priority": 1
     }
-  ],
-  "baby_asset_id": "minecraft:baby_entity/chicken/temperate_chicken"
+  ]
 }

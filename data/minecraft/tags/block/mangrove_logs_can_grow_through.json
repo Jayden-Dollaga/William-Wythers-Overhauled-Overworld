@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "minecraft:mud",
     "minecraft:muddy_mangrove_roots",
@@ -7,10 +6,7 @@
     "minecraft:mangrove_leaves",
     "minecraft:mangrove_log",
     "minecraft:mangrove_propagule",
-    "minecraft:brown_mushroom",
-    "minecraft:lily_pad",
-    "minecraft:big_dripleaf",
-    "minecraft:big_dripleaf_stem",
+    "minecraft:moss_carpet",
     "minecraft:vine"
   ]
 }

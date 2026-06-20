@@ -7,53 +7,32 @@
         "sound": "minecraft:music.overworld.flower_forest"
       }
     },
-    "minecraft:visual/sky_color": 7391487,
-    "minecraft:visual/fog_color": 14598542,
-    "minecraft:visual/water_fog_color": 270131,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#79a6ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.0,
+  "downfall": 0.8,
   "effects": {
-    "foliage_color": 11123575,
-    "water_color": 4445678
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:terrain/local/stone_cliffs_plus",
-      "wythers:road/andesite",
-      "wythers:terrain/extended/replace_stone_to_diorite"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "wythers:terrain/local/replace_granite_to_diorite"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
     [],
-    [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
-      "wythers:terrain/local/cave_disk_magma"
-    ],
+    [],
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -74,18 +53,16 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/disk_sand_shore",
-      "wythers:terrain/extended/disk_clay_dirt_only",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "wythers:terrain/local/replace_volcanics_flower_forest"
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -94,25 +71,18 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/bushes/mediterranean",
-      "wythers:vegetation/extended/trees/mediterranean_woods",
-      "wythers:vegetation/local/patch/flower_mediterranean_lilacs",
-      "wythers:vegetation/extended/trees/sclerophyllous_woods",
-      "wythers:vegetation/extended/trees/savanna_mediterranean_woods",
-      "wythers:vegetation/extended/trees/windbreak_1",
-      "wythers:vegetation/extended/trees/windbreak_2",
-      "wythers:vegetation/extended/patch/flower_dry_mediterranean",
-      "wythers:vegetation/local/patch/grass_standard",
+      "minecraft:flower_forest_flowers",
+      "minecraft:trees_flower_forest",
+      "minecraft:flower_flower_forest",
+      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/pamukkale_diorite",
-      "wythers:terrain/local/pamukkale_calcite",
-      "wythers:terrain/local/pamukkale_pools",
-      "wythers:terrain/extended/volcanic_extinction",
-      "wythers:decor/dense_steam"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -221,5 +191,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 1.2
+  "temperature": 0.7
 }

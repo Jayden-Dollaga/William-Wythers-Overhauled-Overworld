@@ -1,22 +1,14 @@
 {
-  "asset_id": "minecraft:entity/chicken/cold_chicken",
+  "asset_id": "minecraft:entity/chicken/chicken_cold",
+  "baby_asset_id": "minecraft:entity/chicken/chicken_cold_baby",
   "model": "cold",
   "spawn_conditions": [
     {
       "condition": {
         "type": "minecraft:biome",
-        "biomes": [
-          "minecraft:swamp",
-          "minecraft:mangrove_swamp",
-          "minecraft:jungle",
-          "minecraft:dark_forest",
-          "minecraft:old_growth_spruce_taiga",
-          "minecraft:birch_forest",
-          "minecraft:old_growth_birch_forest"
-        ]
+        "biomes": "#minecraft:spawns_cold_variant_farm_animals"
       },
       "priority": 1
     }
-  ],
-  "baby_asset_id": "minecraft:baby_entity/chicken/cold_chicken"
+  ]
 }

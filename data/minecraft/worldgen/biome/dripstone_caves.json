@@ -7,18 +7,7 @@
         "sound": "minecraft:music.overworld.dripstone_caves"
       }
     },
-    "minecraft:visual/sky_color": 7907327,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 2302743,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#78a7ff"
   },
   "carvers": [
     "minecraft:cave",
@@ -27,15 +16,10 @@
   ],
   "downfall": 0.4,
   "effects": {
-    "water_color": 6388580
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:placer/dripstone_caves",
-      "wythers:placer/dripstone_caves_deep",
-      "wythers:placer/bedrock_sealer",
-      "wythers:terrain/local/sunken_soil"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -70,6 +54,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -90,9 +75,13 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/trees/sunken_jungle",
+      "minecraft:patch_tall_grass_2",
+      "minecraft:trees_plains",
+      "minecraft:flower_plains",
+      "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin"
     ],
     [
       "minecraft:freeze_top_layer"

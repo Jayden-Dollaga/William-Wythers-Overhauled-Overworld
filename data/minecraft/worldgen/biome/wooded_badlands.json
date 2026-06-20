@@ -1,6 +1,5 @@
 {
   "attributes": {
-    "minecraft:gameplay/snow_golem_melts": true,
     "minecraft:audio/background_music": {
       "default": {
         "max_delay": 24000,
@@ -8,43 +7,26 @@
         "sound": "minecraft:music.overworld.badlands"
       }
     },
-    "minecraft:visual/sky_color": 6269917,
-    "minecraft:visual/fog_color": 16697483,
-    "minecraft:visual/water_fog_color": 2302743,
-    "minecraft:audio/music_volume": 1,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:gameplay/snow_golem_melts": true,
+    "minecraft:visual/sky_color": "#6eb1ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0,
+  "creature_spawn_probability": 0.04,
+  "downfall": 0.0,
   "effects": {
-    "water_color": 6388580,
-    "grass_color": 13548644,
-    "dry_foliage_color": 9404502,
-    "foliage_color": 11123575
+    "foliage_color": "#9e814d",
+    "grass_color": "#90814d",
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:placer/wooded_badlands",
-      "wythers:terrain/local/badlands_alpine_grassland",
-      "wythers:terrain/local/uluru_cap",
-      "wythers:terrain/local/wooded_badlands_replace_some_red_sand_to_grass_block",
-      "wythers:terrain/local/wooded_badlands_replace_most_red_sand_to_grass_block",
-      "wythers:terrain/local/base_wooded_badlands"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
-      "wythers:terrain/extended/arroyo_red"
+      "minecraft:lake_lava_surface"
     ],
     [
       "minecraft:amethyst_geode"
@@ -75,45 +57,38 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/riverbank_plains",
-      "minecraft:ore_gold_extra"
+      "minecraft:ore_gold_extra",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
-    [
-      "wythers:terrain/extended/arroyo_red_salt_pan_2"
-    ],
+    [],
     [
       "minecraft:spring_water",
       "minecraft:spring_lava"
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/trees/gum_swamp",
-      "wythers:vegetation/local/trees/forest_eucalyptus",
-      "wythers:vegetation/local/trees/outback_bushes",
-      "wythers:vegetation/local/trees/eucalyptus_forest",
-      "wythers:vegetation/local/trees/eucalyptus_forest_jungle_edge",
-      "wythers:vegetation/local/trees/alpine_eucalyptus_forest",
-      "wythers:vegetation/local/trees/alpine_eucalyptus_woods",
-      "wythers:vegetation/local/trees/eucalyptus_badlands",
-      "wythers:vegetation/local/trees/eucalyptus_woodland",
-      "wythers:vegetation/local/trees/eucalyptus_salubris_woodland",
-      "wythers:vegetation/local/trees/ghost_gum",
-      "wythers:vegetation/local/patch/grass_standard",
-      "wythers:vegetation/local/patch/salt_lake_grass",
+      "minecraft:trees_badlands",
+      "minecraft:patch_grass_badlands",
       "minecraft:patch_dry_grass_badlands",
       "minecraft:patch_dead_bush_badlands",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane_badlands",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_cactus_decorated",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/badlands_snow_blocks"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": false,
@@ -130,19 +105,19 @@
     "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:armadillo",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 6
-      },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 8,
+        "type": "minecraft:sheep",
+        "maxCount": 4,
         "minCount": 4,
-        "weight": 2
+        "weight": 12
       },
       {
-        "type": "minecraft:rabbit",
+        "type": "minecraft:pig",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:chicken",
         "maxCount": 4,
         "minCount": 4,
         "weight": 10
@@ -154,16 +129,16 @@
         "weight": 8
       },
       {
-        "type": "minecraft:horse",
-        "maxCount": 6,
-        "minCount": 2,
-        "weight": 5
+        "type": "minecraft:armadillo",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 6
       },
       {
-        "type": "minecraft:camel",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 1
+        "type": "minecraft:wolf",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 2
       }
     ],
     "misc": [],
@@ -228,5 +203,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.25
+  "temperature": 2.0
 }

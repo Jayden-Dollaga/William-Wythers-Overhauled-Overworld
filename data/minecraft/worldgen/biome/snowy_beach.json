@@ -1,18 +1,6 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {},
-    "minecraft:visual/sky_color": 16777215,
-    "minecraft:visual/fog_color": 13224393,
-    "minecraft:visual/water_fog_color": 2171215,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#7fa1ff"
   },
   "carvers": [
     "minecraft:cave",
@@ -21,21 +9,15 @@
   ],
   "downfall": 0.3,
   "effects": {
-    "dry_foliage_color": 12638463,
-    "water_color": 4562649,
-    "grass_color": 13081978
+    "water_color": "#3d57d6"
   },
   "features": [
-    [
-      "wythers:terrain/local/base_snowy_beach",
-      "wythers:terrain/local/gravelly_beach_rocks"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
     ],
     [
-      "wythers:terrain/feature/ore_iceberg",
       "minecraft:amethyst_geode"
     ],
     [
@@ -64,6 +46,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -81,13 +64,16 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/patch/grass_snowy_beach",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/gravelly_beach_snow"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -102,14 +88,7 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:polar_bear",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 1
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
       {
@@ -172,5 +151,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.15
+  "temperature": 0.05
 }

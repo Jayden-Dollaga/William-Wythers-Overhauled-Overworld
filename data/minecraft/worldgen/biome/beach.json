@@ -1,38 +1,18 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {},
-    "minecraft:visual/sky_color": 6269917,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 270131,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#78a7ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.0,
+  "downfall": 0.4,
   "effects": {
-    "dry_foliage_color": 11983713,
-    "water_color": 4445678,
-    "foliage_color": 11983713,
-    "grass_color": 14150267
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:placer/beach",
-      "wythers:terrain/extended/sea_cliff",
-      "wythers:terrain/extended/coastal_forest_sand",
-      "wythers:terrain/local/beach_rocks"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -66,6 +46,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -74,8 +55,7 @@
       "minecraft:underwater_magma",
       "minecraft:disk_sand",
       "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "wythers:terrain/local/beach_mossy_stone"
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -83,10 +63,14 @@
       "minecraft:spring_lava"
     ],
     [
-      "wythers:vegetation/local/bushes/kwongan_heath",
       "minecraft:glow_lichen",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
       "minecraft:freeze_top_layer"
@@ -174,5 +158,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 2.0
+  "temperature": 0.8
 }

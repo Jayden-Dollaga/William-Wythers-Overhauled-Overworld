@@ -1,17 +1,11 @@
 {
-  "replace": false,
   "values": [
-    "minecraft:bamboo",
-    "minecraft:bamboo_sapling",
-    "minecraft:short_grass",
-    "minecraft:fern",
-    "minecraft:melon",
-    "minecraft:melon_stem",
-    "minecraft:brown_mushroom",
-    "minecraft:lily_pad",
-    "minecraft:big_dripleaf",
-    "minecraft:big_dripleaf_stem",
+    "minecraft:mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:mangrove_roots",
+    "minecraft:moss_carpet",
     "minecraft:vine",
-    "minecraft:rooted_dirt"
+    "minecraft:mangrove_propagule",
+    "minecraft:snow"
   ]
 }

@@ -17,18 +17,8 @@
         "sound": "minecraft:music.under_water"
       }
     },
-    "minecraft:visual/sky_color": 6269917,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 270131,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#7ba4ff",
+    "minecraft:visual/water_fog_color": "#041633"
   },
   "carvers": [
     "minecraft:cave",
@@ -37,38 +27,16 @@
   ],
   "downfall": 0.5,
   "effects": {
-    "dry_foliage_color": 8033086,
-    "water_color": 4445678,
-    "grass_color": 11122488,
-    "foliage_color": 9285927
+    "water_color": "#45adf2"
   },
   "features": [
-    [
-      "wythers:placer/lukewarm_ocean",
-      "wythers:terrain/carver/ocean",
-      "wythers:terrain/extended/sea_cliff",
-      "wythers:terrain/local/ocean_bore_holes",
-      "wythers:terrain/local/lukewarm_ocean_caves",
-      "wythers:terrain/local/volcanic_flooded_cavern_mud",
-      "wythers:terrain/extended/ocean_beach_sand",
-      "wythers:terrain/extended/dead_coral_stone",
-      "wythers:terrain/extended/dead_coral_stone_2",
-      "wythers:terrain/extended/replace_gravel_to_sand",
-      "wythers:terrain/extended/replace_dirt_to_sand",
-      "wythers:terrain/local/lukewarm_island",
-      "wythers:terrain/local/dead_coral_stack",
-      "wythers:terrain/local/atoll_grass"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface",
-      "wythers:terrain/extended/coral_pools",
-      "wythers:terrain/local/lukewarm_ocean_caves_sand"
+      "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "wythers:terrain/local/dripstone_cluster",
-      "wythers:terrain/local/pointed_dripstone"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -96,21 +64,16 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
-      "wythers:terrain/local/suspicious_ore_wet",
-      "wythers:terrain/local/gravel_in_dead_coral",
       "minecraft:underwater_magma",
-      "wythers:vegetation/local/other/coral_disks",
-      "wythers:vegetation/local/other/coral_disks_ranged",
-      "wythers:vegetation/local/other/coral_disks_small",
-      "wythers:vegetation/local/other/coral_blobs",
-      "wythers:terrain/local/bore_hole_corals",
-      "wythers:terrain/local/sponge_disks",
-      "wythers:vegetation/local/patch/cave_kelp"
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -119,22 +82,19 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/trees/jungle_island",
-      "wythers:vegetation/local/patch/pineapples",
-      "wythers:vegetation/local/patch/island_grass",
+      "minecraft:trees_water",
+      "minecraft:flower_default",
+      "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
+      "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water",
       "minecraft:seagrass_warm",
-      "wythers:vegetation/local/other/cocoanuts",
-      "wythers:vegetation/local/patch/sea_vines"
+      "minecraft:kelp_warm"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/fan_corals",
-      "wythers:terrain/local/coral_air_pockets",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/tube_worms"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -149,40 +109,9 @@
       }
     ],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 100
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 50
-      },
-      {
-        "type": "minecraft:parrot",
-        "maxCount": 6,
-        "minCount": 2,
-        "weight": 100
-      },
-      {
-        "type": "minecraft:turtle",
-        "maxCount": 5,
-        "minCount": 2,
-        "weight": 50
-      }
-    ],
+    "creature": [],
     "misc": [],
     "monster": [
-      {
-        "type": "minecraft:drowned",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
-      },
       {
         "type": "minecraft:spider",
         "maxCount": 4,
@@ -230,6 +159,12 @@
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
+      },
+      {
+        "type": "minecraft:drowned",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
       }
     ],
     "underground_water_creature": [
@@ -242,10 +177,16 @@
     ],
     "water_ambient": [
       {
+        "type": "minecraft:cod",
+        "maxCount": 6,
+        "minCount": 3,
+        "weight": 15
+      },
+      {
         "type": "minecraft:pufferfish",
         "maxCount": 3,
         "minCount": 1,
-        "weight": 15
+        "weight": 5
       },
       {
         "type": "minecraft:tropical_fish",
@@ -257,8 +198,8 @@
     "water_creature": [
       {
         "type": "minecraft:squid",
-        "maxCount": 4,
-        "minCount": 4,
+        "maxCount": 2,
+        "minCount": 1,
         "weight": 10
       },
       {

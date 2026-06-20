@@ -1,51 +1,21 @@
 {
   "attributes": {
-    "minecraft:audio/background_music": {},
-    "minecraft:visual/sky_color": 6269917,
-    "minecraft:visual/fog_color": 12638463,
-    "minecraft:visual/water_fog_color": 331305,
-    "minecraft:audio/music_volume": 1,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#78a7ff"
   },
   "carvers": [
     "minecraft:cave",
     "minecraft:cave_extra_underground",
     "minecraft:canyon"
   ],
-  "downfall": 0.2,
+  "downfall": 0.4,
   "effects": {
-    "water_color": 4562649
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:placer/plains",
-      "wythers:terrain/local/stone_boulders",
-      "wythers:terrain/local/highland_stone_cliffs_surface",
-      "wythers:terrain/local/highland_stone_cliffs",
-      "wythers:terrain/local/stone_cliffs_sheer",
-      "wythers:terrain/local/crust_grass",
-      "wythers:terrain/extended/scree",
-      "wythers:road/harvest_fields_1",
-      "wythers:road/harvest_fields_1b",
-      "wythers:road/harvest_fields_2",
-      "wythers:road/harvest_fields_2b",
-      "wythers:road/harvest_fields_3",
-      "wythers:road/harvest_fields_4",
-      "wythers:farm/harvest_fields_1",
-      "wythers:farm/harvest_fields_2",
-      "wythers:farm/harvest_fields_3"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface",
-      "wythers:terrain/extended/base_mangrove_swamp_plains"
+      "minecraft:lake_lava_surface"
     ],
     [
       "minecraft:amethyst_geode"
@@ -76,14 +46,16 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/riverbank_plains",
-      "wythers:terrain/extended/badlands_edge"
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -92,27 +64,19 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:farm/harvest_fields_scarecrow",
-      "wythers:farm/harvest_fields_hay",
-      "wythers:farm/harvest_fields_hay_2",
-      "wythers:farm/harvest_fields_pumpkin",
-      "wythers:farm/harvest_fields_wheat",
-      "wythers:farm/harvest_fields_wheat_2",
       "minecraft:patch_tall_grass_2",
-      "wythers:vegetation/local/patch/sunflower_birch_forest",
-      "wythers:farm/harvest_fields_stumps",
-      "wythers:vegetation/local/trees/willows",
+      "minecraft:patch_bush",
+      "minecraft:trees_plains",
+      "minecraft:flower_plains",
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "wythers:vegetation/extended/patch/beach_reeds",
-      "wythers:vegetation/local/patch/beach_reeds"
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/extended/volcanic_extinction",
-      "wythers:terrain/local/replace_basalt_to_tuff",
-      "wythers:terrain/extended/replace_basalt_to_deepslate"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -177,10 +141,16 @@
         "type": "minecraft:zombie",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 95
+        "weight": 90
       },
       {
         "type": "minecraft:zombie_villager",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:zombie_horse",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
@@ -211,12 +181,6 @@
       },
       {
         "type": "minecraft:witch",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:zombie_horse",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5

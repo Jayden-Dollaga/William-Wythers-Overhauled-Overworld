@@ -7,18 +7,7 @@
         "sound": "minecraft:music.overworld.old_growth_taiga"
       }
     },
-    "minecraft:visual/sky_color": 11842740,
-    "minecraft:visual/fog_color": 13158600,
-    "minecraft:visual/water_fog_color": 2302743,
-    "minecraft:audio/music_volume": 1.0,
-    "minecraft:audio/ambient_sounds": {
-      "mood": {
-        "block_search_extent": 8,
-        "offset": 2.0,
-        "sound": "minecraft:ambient.cave",
-        "tick_delay": 6000
-      }
-    }
+    "minecraft:visual/sky_color": "#7da3ff"
   },
   "carvers": [
     "minecraft:cave",
@@ -27,12 +16,10 @@
   ],
   "downfall": 0.8,
   "effects": {
-    "water_color": 3156992
+    "water_color": "#3f76e4"
   },
   "features": [
-    [
-      "wythers:terrain/extended/base_taiga"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -46,9 +33,7 @@
       "minecraft:monster_room_deep"
     ],
     [],
-    [
-      "wythers:vegetation/extended/trees/giant_taiga_meadow"
-    ],
+    [],
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -69,18 +54,16 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/disk_gravel_floor",
-      "wythers:terrain/local/disk_gravel_shore",
-      "wythers:terrain/local/disk_muddy_roots_in_podzol",
-      "wythers:terrain/local/disk_mud_in_muddy_roots",
-      "wythers:terrain/local/disk_mossy_cobblestone_in_gravel",
-      "wythers:terrain/local/disk_moss_in_mossy_cobblestone"
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [],
     [
@@ -89,22 +72,22 @@
     ],
     [
       "minecraft:glow_lichen",
-      "wythers:vegetation/local/patch/large_ferns_dense_forests",
-      "wythers:vegetation/local/trees/ogt_giant_redwood_woods",
-      "wythers:vegetation/local/trees/old_growth_spruce_taiga",
+      "minecraft:patch_large_fern",
+      "minecraft:trees_old_growth_spruce_taiga",
+      "minecraft:flower_default",
       "minecraft:patch_grass_taiga",
       "minecraft:patch_dead_bush",
       "minecraft:brown_mushroom_old_growth",
       "minecraft:red_mushroom_old_growth",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_berry_common",
-      "wythers:vegetation/local/patch/temperate_rainforest_undergrowth"
+      "minecraft:patch_pumpkin",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_firefly_bush_near_water",
+      "minecraft:patch_berry_common"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:vegetation/local/patch/temperate_rainforest_vines",
-      "wythers:terrain/local/replace_coarse_dirt_to_moss"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,
@@ -225,5 +208,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.7
+  "temperature": 0.25
 }
