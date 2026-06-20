@@ -1,6 +1,18 @@
 {
   "attributes": {
-    "minecraft:visual/sky_color": "#7da2ff"
+    "minecraft:audio/background_music": {},
+    "minecraft:visual/sky_color": 6269917,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 331305,
+    "minecraft:audio/music_volume": 1.0,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2.0,
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000
+      }
+    }
   },
   "carvers": [
     "minecraft:cave",
@@ -9,10 +21,17 @@
   ],
   "downfall": 0.3,
   "effects": {
-    "water_color": "#3f76e4"
+    "dry_foliage_color": 8033086,
+    "water_color": 3570859,
+    "foliage_color": 11123575
   },
   "features": [
-    [],
+    [
+      "wythers:terrain/extended/stony_shore_placer",
+      "wythers:terrain/extended/beach_cliffs",
+      "wythers:terrain/local/gravelly_beach_rocks",
+      "wythers:terrain/local/stony_shore_tuff"
+    ],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -46,7 +65,6 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
-      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -64,13 +82,9 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
       "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water"
+      "minecraft:red_mushroom_normal"
     ],
     [
       "minecraft:freeze_top_layer"

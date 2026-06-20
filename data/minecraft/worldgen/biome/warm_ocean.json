@@ -17,8 +17,18 @@
         "sound": "minecraft:music.under_water"
       }
     },
-    "minecraft:visual/sky_color": "#7ba4ff",
-    "minecraft:visual/water_fog_color": "#041f33"
+    "minecraft:visual/sky_color": 6269917,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 270131,
+    "minecraft:audio/music_volume": 1,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2,
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000
+      }
+    }
   },
   "carvers": [
     "minecraft:cave",
@@ -27,10 +37,20 @@
   ],
   "downfall": 0.5,
   "effects": {
-    "water_color": "#43d5ee"
+    "dry_foliage_color": 8229694,
+    "water_color": 4445678,
+    "grass_color": 11122488,
+    "foliage_color": 11122488
   },
   "features": [
-    [],
+    [
+      "wythers:placer/warm_ocean",
+      "wythers:terrain/local/ocean_bore_holes",
+      "wythers:terrain/local/volcanic_flooded_cavern_mud",
+      "wythers:terrain/extended/ocean_beach_sand",
+      "wythers:terrain/extended/replace_gravel_to_sand",
+      "wythers:terrain/local/warm_island"
+    ],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface"
@@ -64,7 +84,6 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
-      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",
@@ -82,23 +101,21 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_water",
-      "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
+      "minecraft:patch_dry_grass_desert",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:warm_ocean_vegetation",
-      "minecraft:seagrass_warm",
-      "minecraft:sea_pickle"
+      "wythers:vegetation/local/patch/red_coral"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:vegetation/local/patch/red_coral_tall",
+      "wythers:vegetation/local/patch/seagrass_wrecks",
+      "wythers:terrain/local/hydrothermal_vents",
+      "wythers:vegetation/local/patch/tube_worms"
     ]
   ],
-  "has_precipitation": true,
+  "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
     "ambient": [
@@ -192,12 +209,6 @@
     ],
     "water_creature": [
       {
-        "type": "minecraft:nautilus",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
-      },
-      {
         "type": "minecraft:squid",
         "maxCount": 4,
         "minCount": 4,
@@ -208,6 +219,12 @@
         "maxCount": 2,
         "minCount": 1,
         "weight": 2
+      },
+      {
+        "type": "minecraft:nautilus",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
       }
     ]
   },
