@@ -2,24 +2,37 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": false,
+    "force_dirt": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 0,
       "lower_size": 0,
       "upper_size": 0
     },
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:coarse_dirt"
+      }
+    },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:mangrove_roots",
-        "Properties": {}
+        "Properties": {
+          "waterlogged": "false"
+        }
       }
     },
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:spruce_leaves",
-        "Properties": {}
+        "Properties": {
+          "waterlogged": "false",
+          "persistent": "false",
+          "distance": "7"
+        }
       }
     },
     "trunk_placer": {
@@ -34,7 +47,6 @@
       "offset": 0,
       "height": 2
     },
-    "decorators": [],
-    "type": "minecraft:tree"
+    "decorators": []
   }
 }

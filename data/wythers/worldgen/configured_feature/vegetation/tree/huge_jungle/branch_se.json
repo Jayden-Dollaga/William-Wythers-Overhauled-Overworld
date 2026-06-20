@@ -95,7 +95,12 @@
                                     {
                                       "block_provider": {
                                         "state": {
-                                          "Name": "minecraft:jungle_leaves"
+                                          "Name": "minecraft:jungle_leaves",
+                                          "Properties": {
+                                            "distance": "2",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         },
                                         "type": "minecraft:simple_state_provider"
                                       },
@@ -109,6 +114,12 @@
                                       "type": "minecraft:attached_to_leaves"
                                     }
                                   ],
+                                  "dirt_provider": {
+                                    "state": {
+                                      "Name": "minecraft:air"
+                                    },
+                                    "type": "minecraft:simple_state_provider"
+                                  },
                                   "foliage_placer": {
                                     "offset": 0,
                                     "radius": 3,
@@ -116,10 +127,16 @@
                                   },
                                   "foliage_provider": {
                                     "state": {
-                                      "Name": "minecraft:jungle_leaves"
+                                      "Name": "minecraft:jungle_leaves",
+                                      "Properties": {
+                                        "distance": "1",
+                                        "persistent": "false",
+                                        "waterlogged": "false"
+                                      }
                                     },
                                     "type": "minecraft:simple_state_provider"
                                   },
+                                  "force_dirt": false,
                                   "ignore_vines": true,
                                   "minimum_size": {
                                     "limit": 0,
@@ -161,7 +178,12 @@
                                         {
                                           "block_provider": {
                                             "state": {
-                                              "Name": "minecraft:jungle_leaves"
+                                              "Name": "minecraft:jungle_leaves",
+                                              "Properties": {
+                                                "distance": "2",
+                                                "persistent": "false",
+                                                "waterlogged": "false"
+                                              }
                                             },
                                             "type": "minecraft:simple_state_provider"
                                           },
@@ -175,6 +197,12 @@
                                           "type": "minecraft:attached_to_leaves"
                                         }
                                       ],
+                                      "dirt_provider": {
+                                        "state": {
+                                          "Name": "minecraft:air"
+                                        },
+                                        "type": "minecraft:simple_state_provider"
+                                      },
                                       "foliage_placer": {
                                         "offset": 0,
                                         "radius": 1,
@@ -182,10 +210,16 @@
                                       },
                                       "foliage_provider": {
                                         "state": {
-                                          "Name": "minecraft:jungle_leaves"
+                                          "Name": "minecraft:jungle_leaves",
+                                          "Properties": {
+                                            "distance": "1",
+                                            "persistent": "false",
+                                            "waterlogged": "false"
+                                          }
                                         },
                                         "type": "minecraft:simple_state_provider"
                                       },
+                                      "force_dirt": false,
                                       "ignore_vines": true,
                                       "minimum_size": {
                                         "limit": 0,
@@ -227,18 +261,8 @@
                             "type": "minecraft:block_predicate_filter"
                           },
                           {
-                            "xz_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 1,
-                              "min": -1,
-                              "plateau": 0
-                            },
-                            "y_spread": {
-                              "type": "minecraft:trapezoid",
-                              "max": 1,
-                              "min": -1,
-                              "plateau": 0
-                            },
+                            "xz_spread": 1,
+                            "y_spread": 1,
                             "type": "minecraft:random_offset"
                           },
                           {
@@ -295,18 +319,8 @@
                     "type": "minecraft:block_predicate_filter"
                   },
                   {
-                    "xz_spread": {
-                      "type": "minecraft:trapezoid",
-                      "max": 1,
-                      "min": -1,
-                      "plateau": 0
-                    },
-                    "y_spread": {
-                      "type": "minecraft:trapezoid",
-                      "max": 1,
-                      "min": -1,
-                      "plateau": 0
-                    },
+                    "xz_spread": 1,
+                    "y_spread": 1,
                     "type": "minecraft:random_offset"
                   },
                   {
@@ -360,18 +374,8 @@
         },
         "placement": [
           {
-            "xz_spread": {
-              "type": "minecraft:trapezoid",
-              "max": 1,
-              "min": -1,
-              "plateau": 0
-            },
-            "y_spread": {
-              "type": "minecraft:trapezoid",
-              "max": 1,
-              "min": -1,
-              "plateau": 0
-            },
+            "xz_spread": 1,
+            "y_spread": -1,
             "type": "minecraft:random_offset"
           },
           {

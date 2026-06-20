@@ -2,6 +2,12 @@
   "type": "minecraft:tree",
   "config": {
     "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
     "foliage_placer": {
       "type": "minecraft:bush_foliage_placer",
       "height": 2,
@@ -12,9 +18,14 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:jungle_leaves",
-        "Properties": {}
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
       }
     },
+    "force_dirt": false,
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
@@ -36,7 +47,6 @@
           "axis": "y"
         }
       }
-    },
-    "type": "minecraft:tree"
+    }
   }
 }

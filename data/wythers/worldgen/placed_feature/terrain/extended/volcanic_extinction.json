@@ -6,7 +6,6 @@
       "discard_chance_on_air_exposure": 0,
       "targets": [
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:blackstone"
@@ -16,7 +15,6 @@
           }
         },
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:magma_block"
@@ -24,12 +22,12 @@
           "state": {
             "Name": "minecraft:blackstone_slab",
             "Properties": {
-              "type": "double"
+              "type": "double",
+              "waterlogged": "false"
             }
           }
         },
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:lava"
@@ -37,12 +35,12 @@
           "state": {
             "Name": "minecraft:blackstone_slab",
             "Properties": {
-              "type": "double"
+              "type": "double",
+              "waterlogged": "false"
             }
           }
         },
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:gilded_blackstone"

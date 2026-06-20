@@ -6,7 +6,6 @@
       "discard_chance_on_air_exposure": 0,
       "targets": [
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:granite"
@@ -32,16 +31,8 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      },
-      "y_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 5,
-        "min": -5,
-        "plateau": 0
-      }
+      "xz_spread": 0,
+      "y_spread": -5
     },
     {
       "type": "minecraft:biome"

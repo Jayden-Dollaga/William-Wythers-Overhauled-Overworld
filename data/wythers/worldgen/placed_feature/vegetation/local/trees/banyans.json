@@ -55,16 +55,8 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 8,
-        "min": -8,
-        "plateau": 0
-      },
-      "y_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      }
+      "xz_spread": 8,
+      "y_spread": 0
     },
     {
       "type": "minecraft:noise_based_count",

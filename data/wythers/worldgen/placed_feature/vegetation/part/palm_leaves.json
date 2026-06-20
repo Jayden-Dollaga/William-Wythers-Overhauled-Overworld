@@ -6,11 +6,14 @@
           "type": "minecraft:simple_state_provider",
           "state": {
             "Name": "minecraft:azalea_leaves",
-            "Properties": {}
+            "Properties": {
+              "distance": "1",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 1,

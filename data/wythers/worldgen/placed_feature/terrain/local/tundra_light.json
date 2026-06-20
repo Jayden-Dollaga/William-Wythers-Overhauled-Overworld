@@ -7,12 +7,12 @@
           "state": {
             "Name": "light",
             "Properties": {
-              "level": "0"
+              "level": "0",
+              "waterlogged": "false"
             }
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 0,

@@ -2,13 +2,13 @@
   "feature": {
     "config": {
       "state_provider": {
-        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
             "Name": "light",
             "Properties": {
-              "level": "0"
+              "level": "0",
+              "waterlogged": "true"
             }
           }
         },

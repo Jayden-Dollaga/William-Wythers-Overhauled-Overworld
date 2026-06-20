@@ -26,6 +26,13 @@
       }
     ],
     "ignore_vines": true,
+    "force_dirt": true,
+    "dirt_provider": {
+      "state": {
+        "Name": "minecraft:dirt"
+      },
+      "type": "minecraft:simple_state_provider"
+    },
     "minimum_size": {
       "limit": 0,
       "lower_size": 0,
@@ -35,7 +42,11 @@
     },
     "foliage_provider": {
       "state": {
-        "Properties": {},
+        "Properties": {
+          "waterlogged": "false",
+          "persistent": "false",
+          "distance": "7"
+        },
         "Name": "minecraft:oak_leaves"
       },
       "type": "minecraft:simple_state_provider"
@@ -60,8 +71,7 @@
       "height_rand_a": 2,
       "height_rand_b": 4,
       "type": "minecraft:fancy_trunk_placer"
-    },
-    "type": "minecraft:tree"
+    }
   },
   "type": "minecraft:tree"
 }

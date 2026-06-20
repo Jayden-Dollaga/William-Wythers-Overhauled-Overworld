@@ -1,22 +1,136 @@
 {
   "feature": {
-    "type": "minecraft:simple_block",
+    "type": "minecraft:random_patch",
     "config": {
-      "to_place": {
-        "type": "minecraft:weighted_state_provider",
-        "entries": [
+      "tries": 64,
+      "xz_spread": 8,
+      "y_spread": 8,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:fire_coral",
+                    "Properties": {
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:fire_coral_fan",
+                    "Properties": {
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": [
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:fire_coral",
-              "Properties": {}
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "minecraft:sand"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:water"
+                },
+                {
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          1,
+                          0,
+                          0
+                        ],
+                        "blocks": "minecraft:dead_fire_coral"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          -1,
+                          0,
+                          0
+                        ],
+                        "blocks": "minecraft:dead_fire_coral"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          0,
+                          1
+                        ],
+                        "blocks": "minecraft:dead_fire_coral"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          0,
+                          -1
+                        ],
+                        "blocks": "minecraft:dead_fire_coral"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           },
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:fire_coral_fan",
-              "Properties": {}
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "down",
+            "max_steps": 10,
+            "target_condition": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:sand"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_fluids",
+                  "fluids": [
+                    "minecraft:water"
+                  ]
+                }
+              ]
+            },
+            "allowed_search_condition": {
+              "type": "minecraft:matching_fluids",
+              "fluids": [
+                "minecraft:water"
+              ]
             }
           }
         ]

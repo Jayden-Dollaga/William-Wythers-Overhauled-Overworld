@@ -33,6 +33,7 @@
                               "north": "none",
                               "south": "none",
                               "up": "true",
+                              "waterlogged": "true",
                               "west": "none"
                             }
                           }
@@ -49,6 +50,7 @@
                               "north": "none",
                               "south": "none",
                               "up": "true",
+                              "waterlogged": "true",
                               "west": "none"
                             }
                           }
@@ -62,7 +64,8 @@
                             "Name": "minecraft:red_candle",
                             "Properties": {
                               "candles": "4",
-                              "lit": "false"
+                              "lit": "false",
+                              "waterlogged": "true"
                             }
                           }
                         }

@@ -1,48 +1,138 @@
 {
   "feature": {
-    "type": "minecraft:simple_block",
+    "type": "minecraft:random_patch",
     "config": {
-      "to_place": {
-        "type": "minecraft:weighted_state_provider",
-        "entries": [
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "north",
-                "half": "lower"
-              }
+      "tries": 32,
+      "xz_spread": 5,
+      "y_spread": 1,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "north",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "south",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "waterlogged": "true",
+                      "facing": "west",
+                      "half": "lower"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "east",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
             }
-          },
+          }
+        },
+        "placement": [
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "south",
-                "half": "lower"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "west",
-                "half": "lower"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "east",
-                "half": "lower"
-              }
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                          1,
+                          0,
+                          0
+                        ],
+                        "tag": "wythers:illegal_states"
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                          -1,
+                          0,
+                          0
+                        ],
+                        "tag": "wythers:illegal_states"
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                          0,
+                          0,
+                          1
+                        ],
+                        "tag": "wythers:illegal_states"
+                      },
+                      {
+                        "type": "minecraft:matching_block_tag",
+                        "offset": [
+                          0,
+                          0,
+                          -1
+                        ],
+                        "tag": "wythers:illegal_states"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:water"
+                },
+                {
+                  "type": "minecraft:matching_block_tag",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "tag": "minecraft:dry_vegetation_may_place_on"
+                }
+              ]
             }
           }
         ]

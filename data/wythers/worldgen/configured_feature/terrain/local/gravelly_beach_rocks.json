@@ -7,7 +7,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:gravel"
@@ -17,7 +16,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:water"
@@ -27,7 +25,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:air"
@@ -37,7 +34,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:snow"
@@ -95,7 +91,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -289,7 +284,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -340,7 +334,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -443,7 +436,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -546,7 +538,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
@@ -649,7 +640,6 @@
                 "feature": {
                   "config": {
                     "state_provider": {
-                      "type": "minecraft:rule_based_state_provider",
                       "fallback": {
                         "type": "minecraft:simple_state_provider",
                         "state": {

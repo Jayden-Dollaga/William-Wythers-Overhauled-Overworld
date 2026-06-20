@@ -8,7 +8,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:dirt_path"
@@ -18,7 +17,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -28,7 +26,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "wythers:air_and_plants"
@@ -50,7 +47,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:dirt_path"
@@ -60,7 +56,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -70,7 +65,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "wythers:air_and_plants"
@@ -92,7 +86,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:dirt_path"
@@ -102,7 +95,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -112,7 +104,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "wythers:air_and_plants"
@@ -134,7 +125,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:dirt_path"
@@ -144,7 +134,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -154,7 +143,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "wythers:air_and_plants"
@@ -176,7 +164,6 @@
           "config": {
             "targets": [
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:block_match",
                   "block": "minecraft:dirt_path"
@@ -186,7 +173,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "minecraft:dirt"
@@ -196,7 +182,6 @@
                 }
               },
               {
-                "type": "minecraft:simple_state_provider",
                 "target": {
                   "predicate_type": "minecraft:tag_match",
                   "tag": "wythers:air_and_plants"

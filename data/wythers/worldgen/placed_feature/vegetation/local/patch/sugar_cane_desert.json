@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:sugar_cane",
+  "feature": "minecraft:patch_sugar_cane",
   "placement": [
     {
       "type": "minecraft:noise_based_count",

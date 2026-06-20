@@ -1,11 +1,47 @@
 {
-  "type": "minecraft:simple_block",
   "config": {
-    "to_place": {
-      "state": {
-        "Name": "minecraft:rooted_dirt"
+    "feature": {
+      "feature": {
+        "config": {
+          "to_place": {
+            "state": {
+              "Name": "minecraft:rooted_dirt"
+            },
+            "type": "minecraft:simple_state_provider"
+          }
+        },
+        "type": "minecraft:simple_block"
       },
-      "type": "minecraft:simple_state_provider"
-    }
-  }
+      "placement": [
+        {
+          "predicate": {
+            "predicates": [
+              {
+                "blocks": "#wythers:dirt",
+                "type": "minecraft:matching_blocks"
+              },
+              {
+                "predicate": {
+                  "blocks": "#wythers:dirt",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "type": "minecraft:matching_blocks"
+                },
+                "type": "minecraft:not"
+              }
+            ],
+            "type": "minecraft:all_of"
+          },
+          "type": "minecraft:block_predicate_filter"
+        }
+      ]
+    },
+    "tries": 3,
+    "xz_spread": 1,
+    "y_spread": 1
+  },
+  "type": "minecraft:random_patch"
 }

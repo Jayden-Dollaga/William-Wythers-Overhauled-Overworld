@@ -1,72 +1,116 @@
 {
   "feature": {
-    "type": "minecraft:random_selector",
+    "type": "minecraft:random_patch",
     "config": {
-      "features": [
-        {
-          "chance": 0.5,
-          "feature": {
-            "feature": {
-              "type": "minecraft:simple_block",
-              "config": {
-                "to_place": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:coarse_dirt"
-                  }
-                }
-              }
-            },
-            "placement": [
+      "tries": 128,
+      "xz_spread": 3,
+      "y_spread": 3,
+      "feature": {
+        "feature": {
+          "type": "minecraft:random_selector",
+          "config": {
+            "features": [
               {
-                "type": "minecraft:block_predicate_filter",
-                "predicate": {
-                  "type": "minecraft:matching_blocks",
-                  "offset": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "blocks": [
-                    "minecraft:dirt_path"
+                "chance": 0.5,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:coarse_dirt"
+                        }
+                      }
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:dirt_path"
+                        ]
+                      }
+                    }
                   ]
                 }
               }
-            ]
-          }
-        }
-      ],
-      "default": {
-        "feature": {
-          "type": "minecraft:simple_block",
-          "config": {
-            "to_place": {
-              "type": "minecraft:weighted_state_provider",
-              "entries": [
+            ],
+            "default": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:weighted_state_provider",
+                    "entries": [
+                      {
+                        "weight": 1,
+                        "data": {
+                          "Name": "minecraft:hay_block",
+                          "Properties": {
+                            "axis": "x"
+                          }
+                        }
+                      },
+                      {
+                        "weight": 1,
+                        "data": {
+                          "Name": "minecraft:hay_block",
+                          "Properties": {
+                            "axis": "y"
+                          }
+                        }
+                      },
+                      {
+                        "weight": 1,
+                        "data": {
+                          "Name": "minecraft:hay_block",
+                          "Properties": {
+                            "axis": "z"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "placement": [
                 {
-                  "weight": 1,
-                  "data": {
-                    "Name": "minecraft:hay_block",
-                    "Properties": {
-                      "axis": "x"
-                    }
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:coarse_dirt",
+                      "minecraft:hay_block"
+                    ]
                   }
                 },
                 {
-                  "weight": 1,
-                  "data": {
-                    "Name": "minecraft:hay_block",
-                    "Properties": {
-                      "axis": "y"
-                    }
-                  }
-                },
-                {
-                  "weight": 1,
-                  "data": {
-                    "Name": "minecraft:hay_block",
-                    "Properties": {
-                      "axis": "z"
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:not",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -3,
+                        0
+                      ],
+                      "blocks": [
+                        "minecraft:hay_block"
+                      ]
                     }
                   }
                 }
@@ -74,40 +118,7 @@
             }
           }
         },
-        "placement": [
-          {
-            "type": "minecraft:block_predicate_filter",
-            "predicate": {
-              "type": "minecraft:matching_blocks",
-              "offset": [
-                0,
-                -1,
-                0
-              ],
-              "blocks": [
-                "minecraft:coarse_dirt",
-                "minecraft:hay_block"
-              ]
-            }
-          },
-          {
-            "type": "minecraft:block_predicate_filter",
-            "predicate": {
-              "type": "minecraft:not",
-              "predicate": {
-                "type": "minecraft:matching_blocks",
-                "offset": [
-                  0,
-                  -3,
-                  0
-                ],
-                "blocks": [
-                  "minecraft:hay_block"
-                ]
-              }
-            }
-          }
-        ]
+        "placement": []
       }
     }
   },

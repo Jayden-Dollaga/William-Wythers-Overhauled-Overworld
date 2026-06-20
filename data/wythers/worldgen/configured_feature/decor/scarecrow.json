@@ -25,6 +25,7 @@
               "east": "false",
               "north": "false",
               "south": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }

@@ -27,6 +27,7 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
+                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -42,6 +43,12 @@
                         "ground_probability": 0
                       }
                     ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -53,12 +60,18 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves"
+                            "Name": "minecraft:acacia_leaves",
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -112,6 +125,7 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
+                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -127,6 +141,12 @@
                         "ground_probability": 0
                       }
                     ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -138,12 +158,18 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves"
+                            "Name": "minecraft:acacia_leaves",
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -197,6 +223,7 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
+                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -212,6 +239,12 @@
                         "ground_probability": 0
                       }
                     ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -223,12 +256,18 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves"
+                            "Name": "minecraft:acacia_leaves",
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -291,6 +330,7 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
+                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -306,6 +346,12 @@
                         "ground_probability": 0
                       }
                     ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -317,12 +363,18 @@
                       "entries": [
                         {
                           "data": {
-                            "Name": "minecraft:acacia_leaves"
+                            "Name": "minecraft:acacia_leaves",
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -352,14 +404,125 @@
               {
                 "feature": {
                   "config": {
-                    "to_place": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:acacia_wood"
-                      }
+                    "tries": 128,
+                    "xz_spread": 1,
+                    "y_spread": 4,
+                    "feature": {
+                      "feature": {
+                        "config": {
+                          "to_place": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:acacia_wood"
+                            }
+                          }
+                        },
+                        "type": "minecraft:simple_block"
+                      },
+                      "placement": [
+                        {
+                          "type": "minecraft:block_predicate_filter",
+                          "predicate": {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "blocks": [
+                                  "minecraft:air",
+                                  "minecraft:water",
+                                  "minecraft:pale_hanging_moss",
+                                  "minecraft:rooted_dirt",
+                                  "minecraft:dirt",
+                                  "minecraft:grass_block",
+                                  "minecraft:packed_mud",
+                                  "minecraft:mud",
+                                  "minecraft:soul_sand",
+                                  "minecraft:soul_soil"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                  {
+                                    "type": "minecraft:matching_block_tag",
+                                    "offset": [
+                                      0,
+                                      -1,
+                                      0
+                                    ],
+                                    "tag": "dirt"
+                                  },
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      0,
+                                      -1,
+                                      0
+                                    ],
+                                    "blocks": [
+                                      "minecraft:acacia_wood",
+                                      "minecraft:soul_sand"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "minecraft:any_of",
+                                "predicates": [
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      1,
+                                      4,
+                                      0
+                                    ],
+                                    "blocks": "minecraft:acacia_wood"
+                                  },
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      -1,
+                                      4,
+                                      0
+                                    ],
+                                    "blocks": "minecraft:acacia_wood"
+                                  },
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      0,
+                                      4,
+                                      1
+                                    ],
+                                    "blocks": "minecraft:acacia_wood"
+                                  },
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      0,
+                                      4,
+                                      -1
+                                    ],
+                                    "blocks": "minecraft:acacia_wood"
+                                  },
+                                  {
+                                    "type": "minecraft:matching_blocks",
+                                    "offset": [
+                                      0,
+                                      1,
+                                      0
+                                    ],
+                                    "blocks": "minecraft:acacia_wood"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
                     }
                   },
-                  "type": "minecraft:simple_block"
+                  "type": "minecraft:random_patch"
                 },
                 "placement": []
               }

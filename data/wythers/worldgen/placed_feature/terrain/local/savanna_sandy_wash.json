@@ -3,7 +3,6 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
-        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -49,14 +48,14 @@
                   "blocks": "minecraft:smooth_sandstone"
                 },
                 {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "fluids": "#minecraft:water"
-                }
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "fluids": "#minecraft:water"
+                  }
               ]
             },
             "then": {
@@ -104,14 +103,14 @@
                   "blocks": "minecraft:red_sandstone"
                 },
                 {
-                  "type": "minecraft:matching_fluids",
-                  "offset": [
-                    0,
-                    -1,
-                    0
-                  ],
-                  "fluids": "#minecraft:water"
-                }
+                    "type": "minecraft:matching_fluids",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ],
+                    "fluids": "#minecraft:water"
+                  }
               ]
             },
             "then": {

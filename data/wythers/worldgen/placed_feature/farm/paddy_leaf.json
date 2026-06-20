@@ -1,53 +1,85 @@
 {
   "feature": {
-    "type": "minecraft:simple_block",
+    "type": "minecraft:random_patch",
     "config": {
-      "to_place": {
-        "type": "minecraft:weighted_state_provider",
-        "entries": [
+      "tries": 64,
+      "xz_spread": 6,
+      "y_spread": 3,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "north",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "south",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "west",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "east",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            },
+            "schedule_tick": true
+          }
+        },
+        "placement": [
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "north",
-                "half": "lower"
-              }
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": "minecraft:clay"
             }
           },
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "south",
-                "half": "lower"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "west",
-                "half": "lower"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "east",
-                "half": "lower"
-              }
-            }
+            "type": "minecraft:surface_water_depth_filter",
+            "max_water_depth": 1
           }
         ]
-      },
-      "schedule_tick": true
+      }
     }
   },
   "placement": [

@@ -11,6 +11,12 @@
                   "type": "minecraft:tree",
                   "config": {
                     "decorators": [],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -23,12 +29,17 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -56,8 +67,7 @@
                           "axis": "y"
                         }
                       }
-                    },
-                    "type": "minecraft:tree"
+                    }
                   }
                 },
                 "placement": []
@@ -67,6 +77,12 @@
                   "type": "minecraft:tree",
                   "config": {
                     "decorators": [],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -79,12 +95,17 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -112,8 +133,7 @@
                           "axis": "y"
                         }
                       }
-                    },
-                    "type": "minecraft:tree"
+                    }
                   }
                 },
                 "placement": []
@@ -123,6 +143,12 @@
                   "type": "minecraft:tree",
                   "config": {
                     "decorators": [],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -135,12 +161,17 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -168,8 +199,7 @@
                           "axis": "y"
                         }
                       }
-                    },
-                    "type": "minecraft:tree"
+                    }
                   }
                 },
                 "placement": []
@@ -520,6 +550,12 @@
                         "tries": 150
                       }
                     ],
+                    "dirt_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -532,12 +568,17 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
                       ]
                     },
+                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -559,8 +600,7 @@
                           "axis": "y"
                         }
                       }
-                    },
-                    "type": "minecraft:tree"
+                    }
                   }
                 },
                 "placement": []

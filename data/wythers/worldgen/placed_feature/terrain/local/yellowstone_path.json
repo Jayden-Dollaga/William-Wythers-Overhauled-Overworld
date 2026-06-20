@@ -20,8 +20,7 @@
             }
           ]
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "target": {
         "type": "minecraft:matching_blocks",

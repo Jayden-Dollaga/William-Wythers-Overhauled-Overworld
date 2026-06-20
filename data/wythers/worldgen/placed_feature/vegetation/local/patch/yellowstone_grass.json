@@ -4,25 +4,56 @@
       "features": [
         {
           "feature": {
-            "type": "minecraft:simple_block",
+            "type": "minecraft:random_patch",
             "config": {
-              "to_place": {
-                "type": "minecraft:weighted_state_provider",
-                "entries": [
+              "feature": {
+                "feature": {
+                  "type": "minecraft:simple_block",
+                  "config": {
+                    "to_place": {
+                      "type": "minecraft:weighted_state_provider",
+                      "entries": [
+                        {
+                          "data": {
+                            "Name": "minecraft:short_dry_grass"
+                          },
+                          "weight": 1
+                        },
+                        {
+                          "data": {
+                            "Name": "minecraft:tall_dry_grass"
+                          },
+                          "weight": 1
+                        }
+                      ]
+                    }
+                  }
+                },
+                "placement": [
                   {
-                    "data": {
-                      "Name": "minecraft:short_dry_grass"
-                    },
-                    "weight": 1
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:air"
+                    }
                   },
                   {
-                    "data": {
-                      "Name": "minecraft:tall_dry_grass"
-                    },
-                    "weight": 1
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:dirt_path"
+                    }
                   }
                 ]
-              }
+              },
+              "tries": 64,
+              "xz_spread": 7,
+              "y_spread": 3
             }
           },
           "placement": []

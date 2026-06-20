@@ -1,106 +1,100 @@
 {
   "feature": {
     "config": {
-      "features": [
-        {
-          "chance": 0.2,
-          "feature": {
-            "feature": "wythers:vegetation/tree/bayou_cypress_1",
-            "placement": [
+      "tries": 3,
+      "xz_spread": 8,
+      "y_spread": 0,
+      "feature": {
+        "feature": {
+          "config": {
+            "features": [
               {
-                "type": "minecraft:heightmap",
-                "heightmap": "OCEAN_FLOOR_WG"
+                "chance": 0.2,
+                "feature": {
+                  "feature": "wythers:vegetation/tree/bayou_cypress_1",
+                  "placement": [
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": "OCEAN_FLOOR_WG"
+                    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 4
+    }
+                  ]
+                }
               },
               {
-                "type": "minecraft:surface_water_depth_filter",
-                "max_water_depth": 4
-              }
-            ]
-          }
-        },
-        {
-          "chance": 0.2,
-          "feature": {
-            "feature": "wythers:vegetation/tree/bayou_cypress_2",
-            "placement": [
-              {
-                "type": "minecraft:heightmap",
-                "heightmap": "OCEAN_FLOOR_WG"
+                "chance": 0.2,
+                "feature": {
+                  "feature": "wythers:vegetation/tree/bayou_cypress_2",
+                  "placement": [
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": "OCEAN_FLOOR_WG"
+                    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 4
+    }
+                  ]
+                }
               },
               {
-                "type": "minecraft:surface_water_depth_filter",
-                "max_water_depth": 4
-              }
-            ]
-          }
-        },
-        {
-          "chance": 0.2,
-          "feature": {
-            "feature": "wythers:vegetation/tree/bayou_cypress_3",
-            "placement": [
-              {
-                "type": "minecraft:heightmap",
-                "heightmap": "OCEAN_FLOOR_WG"
+                "chance": 0.2,
+                "feature": {
+                  "feature": "wythers:vegetation/tree/bayou_cypress_3",
+                  "placement": [
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": "OCEAN_FLOOR_WG"
+                    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 4
+    }
+                  ]
+                }
               },
               {
-                "type": "minecraft:surface_water_depth_filter",
-                "max_water_depth": 4
+                "chance": 0.2,
+                "feature": {
+                  "feature": "wythers:vegetation/tree/bayou_cypress_4",
+                  "placement": [
+                    {
+                      "type": "minecraft:heightmap",
+                      "heightmap": "OCEAN_FLOOR_WG"
+                    },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 4
+    }
+                  ]
+                }
               }
-            ]
-          }
-        },
-        {
-          "chance": 0.2,
-          "feature": {
-            "feature": "wythers:vegetation/tree/bayou_cypress_4",
-            "placement": [
-              {
-                "type": "minecraft:heightmap",
-                "heightmap": "OCEAN_FLOOR_WG"
-              },
-              {
-                "type": "minecraft:surface_water_depth_filter",
-                "max_water_depth": 4
-              }
-            ]
-          }
-        }
-      ],
-      "default": {
-        "feature": "wythers:vegetation/tree/bayou_cypress",
-        "placement": [
-          {
-            "type": "minecraft:heightmap",
-            "heightmap": "OCEAN_FLOOR_WG"
+            ],
+            "default": {
+              "feature": "wythers:vegetation/tree/bayou_cypress",
+              "placement": [
+                {
+                  "type": "minecraft:heightmap",
+                  "heightmap": "OCEAN_FLOOR_WG"
+                },
+    {
+      "type": "minecraft:surface_water_depth_filter",
+      "max_water_depth": 4
+    }
+              ]
+            }
           },
-          {
-            "type": "minecraft:surface_water_depth_filter",
-            "max_water_depth": 4
-          }
-        ]
+          "type": "minecraft:random_selector"
+        },
+        "placement": []
       }
     },
-    "type": "minecraft:random_selector"
+    "type": "minecraft:random_patch"
   },
   "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 3
-    },
-    {
-      "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 8,
-        "min": -8,
-        "plateau": 0
-      },
-      "y_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      }
-    },
     {
       "type": "minecraft:height_range",
       "height": {
@@ -113,22 +107,22 @@
         "type": "minecraft:all_of",
         "predicates": [
           {
-            "type": "minecraft:matching_blocks",
-            "blocks": [
-              "minecraft:mangrove_wood"
-            ]
-          },
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "minecraft:mangrove_wood"
+              ]
+            },
           {
-            "type": "minecraft:matching_blocks",
-            "offset": [
-              0,
-              1,
-              0
-            ],
-            "blocks": [
-              "minecraft:dripstone_block"
-            ]
-          }
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": [
+                "minecraft:dripstone_block"
+              ]
+            }
         ]
       }
     },

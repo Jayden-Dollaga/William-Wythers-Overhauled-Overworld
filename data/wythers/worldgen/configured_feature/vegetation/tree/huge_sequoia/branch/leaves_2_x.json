@@ -4,6 +4,11 @@
       {
         "block_provider": {
           "state": {
+            "Properties": {
+              "persistent": "false",
+              "distance": "2",
+              "waterlogged": "false"
+            },
             "Name": "minecraft:acacia_leaves"
           },
           "type": "minecraft:simple_state_provider"
@@ -20,6 +25,11 @@
       {
         "block_provider": {
           "state": {
+            "Properties": {
+              "persistent": "false",
+              "distance": "2",
+              "waterlogged": "false"
+            },
             "Name": "minecraft:acacia_leaves"
           },
           "type": "minecraft:simple_state_provider"
@@ -36,6 +46,11 @@
       {
         "block_provider": {
           "state": {
+            "Properties": {
+              "persistent": "false",
+              "distance": "2",
+              "waterlogged": "false"
+            },
             "Name": "minecraft:acacia_leaves"
           },
           "type": "minecraft:simple_state_provider"
@@ -52,6 +67,11 @@
       {
         "block_provider": {
           "state": {
+            "Properties": {
+              "persistent": "false",
+              "distance": "2",
+              "waterlogged": "false"
+            },
             "Name": "minecraft:acacia_leaves"
           },
           "type": "minecraft:simple_state_provider"
@@ -68,6 +88,11 @@
       {
         "block_provider": {
           "state": {
+            "Properties": {
+              "persistent": "false",
+              "distance": "2",
+              "waterlogged": "false"
+            },
             "Name": "minecraft:acacia_leaves"
           },
           "type": "minecraft:simple_state_provider"
@@ -83,6 +108,13 @@
       }
     ],
     "ignore_vines": true,
+    "force_dirt": false,
+    "dirt_provider": {
+      "state": {
+        "Name": "minecraft:air"
+      },
+      "type": "minecraft:simple_state_provider"
+    },
     "minimum_size": {
       "limit": 0,
       "lower_size": 0,
@@ -106,6 +138,11 @@
     },
     "foliage_provider": {
       "state": {
+        "Properties": {
+          "persistent": "false",
+          "distance": "1",
+          "waterlogged": "false"
+        },
         "Name": "minecraft:acacia_leaves"
       },
       "type": "minecraft:simple_state_provider"
