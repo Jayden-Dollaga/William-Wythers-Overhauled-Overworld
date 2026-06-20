@@ -11,8 +11,7 @@
             "Properties": {
               "facing": "north",
               "lit": "false",
-              "signal_fire": "false",
-              "waterlogged": "false"
+              "signal_fire": "false"
             }
           }
         },
@@ -23,8 +22,7 @@
             "Properties": {
               "facing": "south",
               "lit": "false",
-              "signal_fire": "false",
-              "waterlogged": "false"
+              "signal_fire": "false"
             }
           }
         },
@@ -35,8 +33,7 @@
             "Properties": {
               "facing": "west",
               "lit": "false",
-              "signal_fire": "false",
-              "waterlogged": "false"
+              "signal_fire": "false"
             }
           }
         },
@@ -47,8 +44,7 @@
             "Properties": {
               "facing": "east",
               "lit": "false",
-              "signal_fire": "false",
-              "waterlogged": "false"
+              "signal_fire": "false"
             }
           }
         }

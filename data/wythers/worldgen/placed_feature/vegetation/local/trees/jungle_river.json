@@ -59,8 +59,7 @@
           "Properties": {
             "age": "0",
             "hanging": "false",
-            "stage": "0",
-            "waterlogged": "false"
+            "stage": "0"
           }
         }
       }

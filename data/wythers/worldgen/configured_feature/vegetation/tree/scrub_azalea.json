@@ -2,37 +2,24 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": false,
-    "force_dirt": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 0,
       "lower_size": 0,
       "upper_size": 0
     },
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:coarse_dirt"
-      }
-    },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:mangrove_roots",
-        "Properties": {
-          "waterlogged": "false"
-        }
+        "Properties": {}
       }
     },
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:azalea_leaves",
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        }
+        "Properties": {}
       }
     },
     "trunk_placer": {

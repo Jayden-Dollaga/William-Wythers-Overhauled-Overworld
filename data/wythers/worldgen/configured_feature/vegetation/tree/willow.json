@@ -11,21 +11,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 0,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:oak_wood",
-                        "Properties": {
-                          "axis": "y"
-                        }
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -43,11 +33,7 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:azalea_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         }
                       ]
@@ -91,8 +77,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 1,
-                        "exclusion_radius_xz": 0,
-                        "exclusion_radius_y": 0,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -107,18 +91,12 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:azalea_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "directions": [
@@ -135,21 +113,11 @@
                   "type": "minecraft:tree",
                   "config": {
                     "ignore_vines": true,
-                    "force_dirt": true,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
                       "limit": 1,
                       "lower_size": 0,
                       "upper_size": 1
-                    },
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:oak_wood",
-                        "Properties": {
-                          "axis": "y"
-                        }
-                      }
                     },
                     "trunk_provider": {
                       "type": "minecraft:simple_state_provider",
@@ -167,11 +135,7 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:azalea_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         }
                       ]
@@ -200,18 +164,12 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
                             "Name": "minecraft:azalea_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           }
                         },
                         "directions": [

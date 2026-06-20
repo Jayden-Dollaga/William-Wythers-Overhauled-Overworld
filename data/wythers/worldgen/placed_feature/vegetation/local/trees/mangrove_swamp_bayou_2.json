@@ -28,7 +28,6 @@
         "state": {
           "Name": "minecraft:mangrove_propagule",
           "Properties": {
-            "waterlogged": "false",
             "stage": "0",
             "hanging": "false",
             "age": "0"

@@ -14,8 +14,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -27,7 +25,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -43,12 +40,6 @@
                         "ground_probability": 0
                       }
                     ],
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:rooted_dirt"
-                      }
-                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -61,17 +52,12 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
                       ]
                     },
-                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -112,8 +98,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -125,7 +109,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -141,12 +124,6 @@
                         "ground_probability": 0
                       }
                     ],
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:rooted_dirt"
-                      }
-                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -159,17 +136,12 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
                       ]
                     },
-                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",
@@ -219,8 +191,6 @@
                       {
                         "type": "minecraft:attached_to_leaves",
                         "probability": 0.1,
-                        "exclusion_radius_xz": 1,
-                        "exclusion_radius_y": 1,
                         "required_empty_blocks": 1,
                         "block_provider": {
                           "type": "minecraft:simple_state_provider",
@@ -232,7 +202,6 @@
                               "north": "false",
                               "south": "false",
                               "up": "true",
-                              "waterlogged": "false",
                               "west": "false"
                             }
                           }
@@ -248,12 +217,6 @@
                         "ground_probability": 0
                       }
                     ],
-                    "dirt_provider": {
-                      "type": "minecraft:simple_state_provider",
-                      "state": {
-                        "Name": "minecraft:rooted_dirt"
-                      }
-                    },
                     "foliage_placer": {
                       "type": "minecraft:jungle_foliage_placer",
                       "offset": 1,
@@ -266,17 +229,12 @@
                         {
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {
-                              "distance": "7",
-                              "persistent": "false",
-                              "waterlogged": "false"
-                            }
+                            "Properties": {}
                           },
                           "weight": 3
                         }
                       ]
                     },
-                    "force_dirt": true,
                     "ignore_vines": false,
                     "minimum_size": {
                       "type": "minecraft:two_layers_feature_size",

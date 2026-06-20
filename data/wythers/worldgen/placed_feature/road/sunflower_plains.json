@@ -21,8 +21,7 @@
                         "state": {
                           "Name": "minecraft:mud_brick_slab",
                           "Properties": {
-                            "type": "bottom",
-                            "waterlogged": "false"
+                            "type": "bottom"
                           }
                         }
                       }

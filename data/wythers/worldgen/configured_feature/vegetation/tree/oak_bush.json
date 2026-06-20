@@ -2,13 +2,6 @@
   "config": {
     "decorators": [],
     "ignore_vines": false,
-    "force_dirt": true,
-    "dirt_provider": {
-      "state": {
-        "Name": "minecraft:dirt"
-      },
-      "type": "minecraft:simple_state_provider"
-    },
     "minimum_size": {
       "limit": 0,
       "lower_size": 0,
@@ -17,11 +10,7 @@
     },
     "foliage_provider": {
       "state": {
-        "Properties": {
-          "waterlogged": "false",
-          "persistent": "false",
-          "distance": "7"
-        },
+        "Properties": {},
         "Name": "minecraft:oak_leaves"
       },
       "type": "minecraft:simple_state_provider"

@@ -2,12 +2,6 @@
   "type": "minecraft:tree",
   "config": {
     "decorators": [],
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:dirt"
-      }
-    },
     "foliage_placer": {
       "type": "minecraft:bush_foliage_placer",
       "height": 2,
@@ -18,14 +12,9 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:pale_oak_leaves",
-        "Properties": {
-          "distance": "7",
-          "persistent": "false",
-          "waterlogged": "false"
-        }
+        "Properties": {}
       }
     },
-    "force_dirt": false,
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",

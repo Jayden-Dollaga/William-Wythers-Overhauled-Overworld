@@ -24,8 +24,7 @@
             "Name": "minecraft:small_dripleaf",
             "Properties": {
               "facing": "west",
-              "half": "lower",
-              "waterlogged": "false"
+              "half": "lower"
             }
           }
         }
@@ -38,8 +37,7 @@
             "Name": "minecraft:small_dripleaf",
             "Properties": {
               "facing": "west",
-              "half": "upper",
-              "waterlogged": "false"
+              "half": "upper"
             }
           }
         }
