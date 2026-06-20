@@ -4,21 +4,18 @@
     "tame": "minecraft:entity/wolf/wolf_striped_tame",
     "wild": "minecraft:entity/wolf/wolf_striped"
   },
-  "spawn_conditions": [
-    {
-      "condition": {
-        "type": "minecraft:biome",
-        "biomes": [
-          "minecraft:desert",
-          "minecraft:savanna"
-        ]
-      },
-      "priority": 1
-    }
-  ],
   "baby_assets": {
     "angry": "minecraft:entity/wolf/wolf_striped_angry_baby",
     "tame": "minecraft:entity/wolf/wolf_striped_tame_baby",
     "wild": "minecraft:entity/wolf/wolf_striped_baby"
-  }
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "#minecraft:is_badlands"
+      },
+      "priority": 1
+    }
+  ]
 }

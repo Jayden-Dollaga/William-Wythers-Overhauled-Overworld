@@ -1,0 +1,220 @@
+=== WWOO PORT TASK: FULL DATAPACK SWEEP — 26.1.2 Migration ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only — NEVER modify)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only — NEVER modify)
+TARGET: Minecraft Java 26.1.2
+SWEEP NUMBER: [N]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== WHY THIS VERSION EXISTS ===
+
+The old workflow was: run game → crash → read 1 error log → fix only those
+files → repeat. This means each round only ever fixes whatever Minecraft
+happened to hit first. Every round looks "complete" but the game finds new
+crashes next time because nobody ever checked the OTHER 95% of the datapack
+that just didn't get loaded yet.
+
+This version instead validates the ENTIRE datapack proactively, using known
+26.1.2 breaking-change patterns — not just whatever the latest error log says.
+The error log (if provided) is used as a confirmation/priority signal, not
+the only source of truth.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 0 — COGNITIVE AUDIT (ALWAYS RUN FIRST) ===
+
+1. Run `git status` and `git log -n 10` to review recent commits.
+2. Run `python3 check_integrity.py` to confirm the workspace is structurally sound.
+3. If an error log is attached this session, note it as ERROR_LOG_N but do
+   NOT treat it as the only thing to fix — it's a priority hint, not a scope limit.
+
+Print:
+  "Audit complete. Workspace integrity: [PASS/FAIL].
+   Error log provided: [filename or NONE].
+   Proceeding to full datapack sweep."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 1 — BUILD THE KNOWN BREAKING-CHANGE CHECKLIST ===
+
+Before scanning any files, confirm this checklist by cross-referencing
+./26.1.2/data/minecraft/worldgen/ schemas. This is the full list of every
+breaking change identified across all previous rounds. Do not skip any item
+even if you believe it was "already fixed" — verify, don't assume.
+
+  [ ] dirt_provider / force_dirt — removed from TreeFeatureConfig
+  [ ] Missing "type" field — required at top level of configured_feature
+      AND placed_feature files
+  [ ] minecraft:random_patch — no longer a valid feature type; must be
+      unwrapped into separate configured_feature + placed_feature pair,
+      OR the feature reference corrected to point at the real 26.1.2
+      placed_feature ID
+  [ ] waterlogged / persistent / distance — removed from inline blockstate
+      providers
+  [ ] exclusion_radius_xz / exclusion_radius_y / required_empty_blocks —
+      removed from ColumnPlacer (verify per-feature-type before deleting;
+      some placer types may still use similar keys)
+  [ ] baby_assets / baby_asset_id — now required in wolf_variant /
+      chicken_variant files
+  [ ] extra_branch_steps / extra_branch_length /
+      place_branch_per_log_probability / can_grow_through — removed from
+      FoliagePlacer (verify per-feature-type; some types may still require
+      can_grow_through)
+  [ ] Numeric range violations — IntProvider/y_spread/xz_spread values must
+      fall within ±16 (not ±20 or other out-of-range values used pre-26.1.2)
+  [ ] Missing "blocks" key — required in certain placed_feature configs
+      (e.g. solid_clouds-style features)
+  [ ] Missing "y_spread" — required in random_offset placement modifiers
+  [ ] FEATURE ↔ BLOCK CONFUSION (recurring, highest-priority check):
+      A feature ID (minecraft:patch_large_fern, minecraft:patch_sugar_cane,
+      minecraft:patch_waterlily, minecraft:patch_firefly_bush*, etc.) is
+      ONLY valid in:
+        - a biome's "features" list
+        - a placed_feature's top-level "feature" field
+      NEVER valid in:
+        - block tags (tags/block/, tags/blocks/)
+        - "blocks" lists or block-matching predicates
+        - blockstate "Name" fields
+      If found in a wrong context, replace with the real block ID
+      (patch_large_fern → large_fern, patch_sugar_cane → sugar_cane, etc.)
+  [ ] Unbound registry values — any placed_feature or configured_feature
+      referenced by a biome/feature file but missing its own JSON definition
+      (check if the file needs to be copied from ./26.1.2/ or restored from
+      ./WWOO_ORIGINAL/)
+  [ ] Unknown/removed keys not listed above — heightmap, dusted, predicate,
+      snowy, creaking, sapling_provider — verify against ./26.1.2/ per file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 2 — FULL RECURSIVE SCAN ===
+
+Scan ALL files under these directories — not just files mentioned in an
+error log:
+  ./data/minecraft/worldgen/
+  ./data/minecraft/wolf_variant/
+  ./data/minecraft/chicken_variant/
+  ./data/minecraft/tags/block/
+  ./data/minecraft/tags/blocks/
+  ./data/wythers/worldgen/
+  ./data/wythers/tags/block/
+  ./data/wythers/tags/blocks/
+
+For each file, check it against EVERY item in the Step 1 checklist.
+Do not stop at the first match — a single file can have multiple issues.
+
+Build a full issue list grouped by checklist item, e.g.:
+  "dirt_provider/force_dirt found in: [file1, file2, ...]"
+  "Feature/block confusion found in: [file1, file2, ...]"
+
+Print the complete scan summary before fixing anything:
+  "Full sweep complete. X total issues found across Y files.
+   Breakdown: [checklist item]: [count] files, ..."
+
+DO NOT begin fixing until this full summary is printed.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 3 — VERIFY EACH FIX AGAINST ./26.1.2/ BEFORE APPLYING ===
+
+For every issue found in Step 2:
+  1. Find the equivalent file/feature type in ./26.1.2/data/minecraft/worldgen/
+  2. Confirm the correct value/key/structure with a 100% match
+  3. Only proceed if confirmed — otherwise mark ⚠️ UNCERTAIN and skip
+
+NEVER guess. NEVER use memory. ALWAYS check ./26.1.2/ first.
+
+If a feature must be unwrapped (e.g. random_patch → configured_feature +
+placed_feature pair), follow the established pattern:
+  - configured_feature/xxx.json gets the inner feature's "type" + "config"
+  - placed_feature/xxx.json gets "feature": "<id>" + "placement": [...]
+  - Verify the resulting pair against a real 26.1.2 example of the same
+    placement pattern (count/in_square/random_offset/biome filters etc.)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 4 — FIX FILES ===
+
+Rules:
+  - Fix files in checklist order (Step 1 order) — handle one issue type
+    fully across all affected files before moving to the next type
+  - One file at a time, verify after each file
+  - Do NOT modify ./26.1.2/ or ./WWOO_ORIGINAL/
+  - Do NOT delete any files
+  - If a file needs restoring → copy from ./WWOO_ORIGINAL/ (not delete)
+
+After fixing each file run:
+  python3 -c "import json; json.load(open('[filename]'))"
+  → confirms the file is still valid JSON
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 5 — COMMIT EACH FILE ===
+
+One commit per file:
+  git add [filename]
+  git commit -m "fix(<dir>): <filename> — <checklist item fixed>"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 6 — INTEGRITY CHECK ===
+
+After ALL files are fixed:
+  python3 check_integrity.py
+
+If it reports missing or broken files:
+  python3 check_integrity.py --restore
+  git add data/
+  git commit -m "restore: integrity check after Sweep [N]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 7 — RE-VERIFY AGAINST CHECKLIST ===
+
+Re-run the Step 2 scan one more time across all directories.
+Confirm zero remaining matches for every checklist item except
+items explicitly marked ⚠️ UNCERTAIN.
+
+Print:
+  "Re-verification complete. [X] checklist items fully clear.
+   [Y] items have remaining ⚠️ UNCERTAIN files (listed below)."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 8 — WRITE COMPLETION REPORT ===
+
+Create SWEEP[N]_COMPLETION_REPORT.md with:
+  - Full checklist with pass/fail/uncertain status per item
+  - Total files scanned
+  - Total files fixed (list each one + which checklist item(s))
+  - Total files marked ⚠️ UNCERTAIN (list each one + reason)
+  - Integrity check result
+  - Git commit count this sweep
+  - Recommendation: is the datapack ready for in-game testing, or are
+    there remaining ⚠️ UNCERTAIN items that need manual review first
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== ZERO TOLERANCE RULES ===
+
+1. NEVER modify ./26.1.2/ or ./WWOO_ORIGINAL/
+2. NEVER delete a key without confirming it was removed in ./26.1.2/
+3. NEVER rename a feature without confirming the new name exists in ./26.1.2/
+4. NEVER delete any files from data/
+5. NEVER skip a checklist item just because a previous round claimed it
+   was fixed — verify with a fresh scan every sweep
+6. NEVER guess — if unsure → ⚠️ UNCERTAIN and skip
+7. ALWAYS run check_integrity.py before finishing
+8. ALWAYS run the full Step 2 scan even if an error log is provided —
+   the error log only tells you what crashed FIRST, not everything broken
+9. ALWAYS re-verify with Step 7 before writing the completion report —
+   do not claim "complete" without a fresh re-scan confirming it
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== SKIP ENTIRELY ===
+
+Any error referencing these mod namespaces — not your problem:
+  terralith: / byg: / biomesoplenty: / tectonic: / regions_unexplored:
+  terrestria: / jermsy: / promenade: / traverse: / towns_and_towers:

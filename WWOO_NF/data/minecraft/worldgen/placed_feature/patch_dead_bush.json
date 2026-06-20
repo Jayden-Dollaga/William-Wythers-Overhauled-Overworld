@@ -1,12 +1,19 @@
 {
-  "feature": "minecraft:patch_dead_bush",
+  "feature": "minecraft:dead_bush",
   "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
     {
       "type": "minecraft:count",
       "count": 4
-    },
-    {
-      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:random_offset",
@@ -26,27 +33,8 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:not",
-        "predicate": {
-          "type": "minecraft:matching_blocks",
-          "offset": [
-            0,
-            -1,
-            0
-          ],
-          "blocks": [
-            "minecraft:dirt_path",
-            "minecraft:tall_grass",
-            "minecraft:cactus"
-          ]
-        }
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
       }
     }
   ]

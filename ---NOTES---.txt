@@ -39,24 +39,88 @@ python3 fix_groundsel.py
 
 
 
+python3 wwoo_schema_scan.py
+
+python3 wwoo_schema_scan_v2.py
 
 
 
-PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "import os; print([f for f in os.listdir('26.1.2/data/minecraft/worldgen/configured_feature') if 'cact' in f])"
-['cactus.json']
-PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "                                                  
->> import os, json                                          
+python3 git_audit_debunked.py
+    git revert <hash>
+
+python3 wwoo_schema_scan_v2.py
+
+.Blueprint_Prompt_Full_Sweep_v2.txt
+
+
+
+
+
+
+Yes, proceed. Remember your strict lookup rules: verify everything against ./26.1.2/ and use ⚠️ UNCERTAIN if you cannot find an exact match.
+
+
+
+Status check: You have paused mid-task. State exactly which step (Step 1 through Step 6) you are currently executing, which specific file you were actively processing, and your immediate next action. 
+Do not restart the round. Resume exactly from where you stopped while strictly maintaining the ./26.1.2/ Source of Truth and the Zero Tolerance Rules.
+
+
+
+
+
+
+
+=== COGNITIVE AUDIT & RESUME COMMAND ===
+ERROR LOG: [INSERT ERROR LOG NAME, e.g., Log_Error15.txt]
+BLUEPRINT PROMPT: [INSERT BLUEPRINT NAME, e.g., Blueprint Prompt Template_2.txt]
+
+You have paused or experienced a state reset mid-task. Before making any further file modifications, you must perform a strict double-check of your current progress for Round [INSERT ROUND NUMBER].
+
+STEP A: AUDIT CURRENT PROGRESS
+1. Scan your recent actions and identify exactly which files from [ERROR LOG] have already been modified.
+2. Run `git status` and `git log -n 5` to review your recent commits for this round.
+3. Run `python3 check_integrity.py` right now to ensure the current workspace is structurally sound.
+
+STEP B: DOUBLE-CHECK COMPLIANCE
+For every file modified so far during this round, verify that:
+- No keys or names were guessed.
+- Every single change perfectly matches the exact schema found in the ./26.1.2/ Source of Truth.
+- If any modification is found to violate the Zero Tolerance Rules, roll it back immediately using `git checkout` or by restoring from ./WWOO_ORIGINAL/.
+
+STEP C: RESUME EXECUTION
+Once this audit is complete, print a brief status update to the chat:
+  "Audit complete. [X] files successfully fixed/committed so far. [Y] errors remaining in [ERROR LOG]."
+
+After printing the update, immediately resume execution of STEP 3 (Fixing the files) for the remaining errors, following the "[BLUEPRINT PROMPT]" instructions with absolute precision.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "          
+>> import os
 >> 
 >> renames = {
->>     'minecraft:patch_berry_bush': 'minecraft:berry_bush',
->>     'minecraft:patch_bush': 'minecraft:bush',
->>     'minecraft:patch_firefly_bush': 'minecraft:firefly_bush',
->>     'minecraft:patch_large_fern': 'minecraft:large_fern',
->>     'minecraft:patch_sugar_cane': 'minecraft:sugar_cane',
->>     'minecraft:patch_sunflower': 'minecraft:sunflower',
->>     'minecraft:patch_tall_grass': 'minecraft:tall_grass',
->>     'minecraft:patch_waterlily': 'minecraft:waterlily',
->>     'minecraft:wildflowers_birch_forest': 'minecraft:wildflower',
+>>     'minecraft:firefly_bush_near_water': 'minecraft:patch_firefly_bush_near_water',
+>>     'minecraft:firefly_bush_near_water_swamp': 'minecraft:patch_firefly_bush_near_water_swamp',
+>>     'minecraft:firefly_bush_swamp': 'minecraft:patch_firefly_bush_swamp',
+>>     'minecraft:large_fern': 'minecraft:patch_large_fern',
+>>     'minecraft:sugar_cane': 'minecraft:patch_sugar_cane',
+>>     'minecraft:sugar_cane_swamp': 'minecraft:patch_sugar_cane_swamp',
+>>     'minecraft:tall_grass_2': 'minecraft:patch_tall_grass_2',
+>>     'minecraft:waterlily': 'minecraft:patch_waterlily',
 >> }
 >> 
 >> fixed = 0
@@ -76,9 +140,10 @@ PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> py
 >>                 fixed += 1
 >>                 print(f'Fixed: {path}')
 >>         except: pass
->> 
 >> print(f'Total: {fixed}')
 >> "
+Fixed: data\minecraft\tags\block\mangrove_roots_can_grow_through.json
+Fixed: data\minecraft\tags\blocks\mangrove_roots_can_grow_through.json
 Fixed: data\minecraft\worldgen\biome\birch_forest.json
 Fixed: data\minecraft\worldgen\biome\cherry_grove.json
 Fixed: data\minecraft\worldgen\biome\jungle.json
@@ -93,20 +158,24 @@ Fixed: data\minecraft\worldgen\biome\sparse_jungle.json
 Fixed: data\minecraft\worldgen\biome\sunflower_plains.json
 Fixed: data\minecraft\worldgen\biome\swamp.json
 Fixed: data\minecraft\worldgen\biome\windswept_savanna.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\berry_range.json
+Fixed: data\wythers\tags\block\air_and_plants.json
+Fixed: data\wythers\tags\block\palm_tree_replaceable.json
+Fixed: data\wythers\tags\block\tree_replaceable.json
+Fixed: data\wythers\tags\blocks\air_and_plants.json
+Fixed: data\wythers\worldgen\configured_feature\vegetation\column\fern_cane.json
+Fixed: data\wythers\worldgen\configured_feature\vegetation\fungus\giant_pale_mosshroom.json
+Fixed: data\wythers\worldgen\placed_feature\farm\paddy_cane.json
+Fixed: data\wythers\worldgen\placed_feature\road\bamboo_jungle.json
+Fixed: data\wythers\worldgen\placed_feature\road\cherry_grove.json
+Fixed: data\wythers\worldgen\placed_feature\terrain\carver\river_water.json
+Fixed: data\wythers\worldgen\placed_feature\terrain\local\cherry_pools_edge.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\other\fungal_jungle_undergrowth.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\fern_cane.json
 Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_ferns_dense_forests.json
 Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_forest.json
 Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_taiga.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\marsh_grass.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\paddy_fireflies.json
 Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\sugar_cane_desert.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\sunflower_birch_forest.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\tall_grass_savanna.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\temperate_rainforest_undergrowth.json
 Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\waterlily_dense.json
-Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\wildflowers_birch_forest.json
-Total: 25
-PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> git add data/                                       
-PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> git commit -m "fix: rename old patch_* vanilla CF references to 26.1.2 names"
-[main 54ae60d8] fix: rename old patch_* vanilla CF references to 26.1.2 names
- 25 files changed, 32 insertions(+), 32 deletions(-)
+Total: 35
 PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> 

@@ -1,0 +1,22 @@
+=== COGNITIVE AUDIT & RESUME COMMAND ===
+ERROR LOG: [INSERT ERROR LOG NAME, e.g., Log_Error15.txt]
+BLUEPRINT PROMPT: [INSERT BLUEPRINT NAME, e.g., Blueprint Prompt Template_2.txt]
+
+You have paused or experienced a state reset mid-task. Before making any further file modifications, you must perform a strict double-check of your current progress for Round [INSERT ROUND NUMBER].
+
+STEP A: AUDIT CURRENT PROGRESS
+1. Scan your recent actions and identify exactly which files from [ERROR LOG] have already been modified.
+2. Run `git status` and `git log -n 5` to review your recent commits for this round.
+3. Run `python3 check_integrity.py` right now to ensure the current workspace is structurally sound.
+
+STEP B: DOUBLE-CHECK COMPLIANCE
+For every file modified so far during this round, verify that:
+- No keys or names were guessed.
+- Every single change perfectly matches the exact schema found in the ./26.1.2/ Source of Truth.
+- If any modification is found to violate the Zero Tolerance Rules, roll it back immediately using `git checkout` or by restoring from ./WWOO_ORIGINAL/.
+
+STEP C: RESUME EXECUTION
+Once this audit is complete, print a brief status update to the chat:
+  "Audit complete. [X] files successfully fixed/committed so far. [Y] errors remaining in [ERROR LOG]."
+
+After printing the update, immediately resume execution of STEP 3 (Fixing the files) for the remaining errors, following the "[BLUEPRINT PROMPT]" instructions with absolute precision.
