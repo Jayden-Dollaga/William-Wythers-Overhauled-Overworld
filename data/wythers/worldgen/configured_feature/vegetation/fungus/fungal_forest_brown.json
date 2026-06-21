@@ -5,6 +5,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.5,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:weighted_state_provider",
@@ -19,6 +21,7 @@
                   "north": "false",
                   "south": "false",
                   "up": "true",
+                  "waterlogged": "false",
                   "west": "false"
                 }
               }
@@ -34,6 +37,15 @@
         "probability": 0.1
       }
     ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:stripped_pale_oak_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
     "foliage_placer": {
       "type": "minecraft:jungle_foliage_placer",
       "offset": 1,
@@ -58,6 +70,7 @@
         }
       }
     },
+    "force_dirt": false,
     "ignore_vines": true,
     "minimum_size": {
       "type": "minecraft:three_layers_feature_size",

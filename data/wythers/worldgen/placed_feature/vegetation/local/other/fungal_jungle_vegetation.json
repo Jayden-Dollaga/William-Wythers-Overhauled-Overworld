@@ -3,11 +3,18 @@
     "type": "minecraft:tree",
     "config": {
       "ignore_vines": false,
+      "force_dirt": false,
       "minimum_size": {
         "type": "minecraft:two_layers_feature_size",
         "limit": 1,
         "lower_size": 1,
         "upper_size": 2
+      },
+      "dirt_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:dirt"
+        }
       },
       "trunk_provider": {
         "type": "minecraft:simple_state_provider",
@@ -39,6 +46,8 @@
         {
           "type": "minecraft:attached_to_leaves",
           "probability": 1,
+          "exclusion_radius_xz": 0,
+          "exclusion_radius_y": 0,
           "required_empty_blocks": 1,
           "block_provider": {
             "type": "minecraft:simple_state_provider",
@@ -50,6 +59,7 @@
                 "north": "false",
                 "south": "false",
                 "up": "true",
+                "waterlogged": "false",
                 "west": "false"
               }
             }

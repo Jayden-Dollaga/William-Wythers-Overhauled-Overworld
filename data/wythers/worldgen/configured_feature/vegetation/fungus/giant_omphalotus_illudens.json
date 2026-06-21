@@ -2,11 +2,21 @@
   "type": "minecraft:tree",
   "config": {
     "ignore_vines": true,
+    "force_dirt": true,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 0,
       "lower_size": 0,
       "upper_size": 0
+    },
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:pale_oak_wood",
+        "Properties": {
+          "axis": "y"
+        }
+      }
     },
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
@@ -49,6 +59,8 @@
       {
         "type": "minecraft:attached_to_logs",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -60,6 +72,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -71,6 +84,8 @@
       {
         "type": "minecraft:attached_to_logs",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -82,6 +97,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -93,6 +109,8 @@
       {
         "type": "minecraft:attached_to_logs",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -104,6 +122,7 @@
               "north": "true",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -115,6 +134,8 @@
       {
         "type": "minecraft:attached_to_logs",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -126,6 +147,7 @@
               "north": "false",
               "south": "true",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -137,6 +159,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -148,6 +172,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -159,6 +184,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -170,6 +197,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -181,6 +209,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -192,6 +222,7 @@
               "north": "true",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -203,6 +234,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -214,6 +247,7 @@
               "north": "false",
               "south": "true",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -225,6 +259,8 @@
       {
         "type": "minecraft:attached_to_leaves",
         "probability": 0.3,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
         "required_empty_blocks": 1,
         "block_provider": {
           "type": "minecraft:simple_state_provider",
@@ -236,6 +272,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
