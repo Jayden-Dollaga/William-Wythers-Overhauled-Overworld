@@ -35,7 +35,6 @@
       "radius": 1,
       "offset": 0
     },
-    "decorators": [],
-    "type": "minecraft:tree"
+    "decorators": []
   }
 }

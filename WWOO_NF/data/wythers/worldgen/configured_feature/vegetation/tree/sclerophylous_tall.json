@@ -42,7 +42,9 @@
                               "weight": 10,
                               "data": {
                                 "Name": "minecraft:birch_leaves",
-                                "Properties": {}
+                                "Properties": {
+                                  "waterwoodged": "false"
+                                }
                               }
                             }
                           ]
@@ -58,8 +60,7 @@
                           "radius": 1,
                           "offset": 0
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": [
@@ -118,7 +119,9 @@
                               "weight": 10,
                               "data": {
                                 "Name": "minecraft:birch_leaves",
-                                "Properties": {}
+                                "Properties": {
+                                  "waterwoodged": "false"
+                                }
                               }
                             }
                           ]
@@ -134,8 +137,7 @@
                           "radius": 2,
                           "offset": 0
                         },
-                        "decorators": [],
-                        "type": "minecraft:tree"
+                        "decorators": []
                       }
                     },
                     "placement": [
@@ -193,7 +195,9 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:birch_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "waterwoodged": "false"
+                            }
                           }
                         }
                       ]
@@ -209,8 +213,7 @@
                       "radius": 1,
                       "offset": 0
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": [
@@ -297,7 +300,9 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "waterwoodged": "false"
+                            }
                           }
                         }
                       ]
@@ -313,8 +318,7 @@
                       "radius": 1,
                       "offset": 0
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": [
@@ -373,7 +377,9 @@
                           "weight": 10,
                           "data": {
                             "Name": "minecraft:acacia_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "waterwoodged": "false"
+                            }
                           }
                         }
                       ]
@@ -389,8 +395,7 @@
                       "radius": 2,
                       "offset": 0
                     },
-                    "decorators": [],
-                    "type": "minecraft:tree"
+                    "decorators": []
                   }
                 },
                 "placement": [
@@ -448,7 +453,9 @@
                       "weight": 10,
                       "data": {
                         "Name": "minecraft:acacia_leaves",
-                        "Properties": {}
+                        "Properties": {
+                          "waterwoodged": "false"
+                        }
                       }
                     }
                   ]
@@ -464,8 +471,7 @@
                   "radius": 1,
                   "offset": 0
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": [

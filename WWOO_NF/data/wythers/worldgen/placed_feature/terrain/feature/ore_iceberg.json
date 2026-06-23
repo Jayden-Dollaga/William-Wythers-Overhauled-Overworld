@@ -3,7 +3,6 @@
     "config": {
       "targets": [
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:air"
@@ -13,7 +12,6 @@
           }
         },
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:block_match",
             "block": "minecraft:water"

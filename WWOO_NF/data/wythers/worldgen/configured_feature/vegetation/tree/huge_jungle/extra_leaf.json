@@ -6,7 +6,8 @@
           "config": {
             "to_place": {
               "state": {
-                "Name": "minecraft:jungle_leaves"
+                "Name": "minecraft:jungle_leaves",
+                "Properties": {}
               },
               "type": "minecraft:simple_state_provider"
             }

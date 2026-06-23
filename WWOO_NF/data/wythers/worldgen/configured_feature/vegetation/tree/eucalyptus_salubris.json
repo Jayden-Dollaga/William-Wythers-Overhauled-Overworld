@@ -17,7 +17,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -100,7 +99,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -126,7 +124,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -189,7 +186,8 @@
                           {
                             "weight": 10,
                             "data": {
-                              "Name": "minecraft:acacia_leaves"
+                              "Name": "minecraft:acacia_leaves",
+                              "Properties": {}
                             }
                           }
                         ]
@@ -568,7 +566,8 @@
                           {
                             "weight": 10,
                             "data": {
-                              "Name": "minecraft:acacia_leaves"
+                              "Name": "minecraft:acacia_leaves",
+                              "Properties": {}
                             }
                           }
                         ]
@@ -946,7 +945,8 @@
                       {
                         "weight": 10,
                         "data": {
-                          "Name": "minecraft:acacia_leaves"
+                          "Name": "minecraft:acacia_leaves",
+                          "Properties": {}
                         }
                       }
                     ]

@@ -34,7 +34,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -79,7 +80,8 @@
                     "foliage_provider": {
                       "type": "minecraft:simple_state_provider",
                       "state": {
-                        "Name": "minecraft:spruce_leaves"
+                        "Name": "minecraft:spruce_leaves",
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -156,7 +158,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -201,7 +204,8 @@
                     "foliage_provider": {
                       "type": "minecraft:simple_state_provider",
                       "state": {
-                        "Name": "minecraft:spruce_leaves"
+                        "Name": "minecraft:spruce_leaves",
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -278,7 +282,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -324,7 +329,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -370,7 +376,8 @@
                     "foliage_provider": {
                       "type": "minecraft:simple_state_provider",
                       "state": {
-                        "Name": "minecraft:spruce_leaves"
+                        "Name": "minecraft:spruce_leaves",
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -447,7 +454,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -493,7 +501,8 @@
                         "foliage_provider": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
-                            "Name": "minecraft:spruce_leaves"
+                            "Name": "minecraft:spruce_leaves",
+                            "Properties": {}
                           }
                         },
                         "trunk_placer": {
@@ -539,7 +548,8 @@
                     "foliage_provider": {
                       "type": "minecraft:simple_state_provider",
                       "state": {
-                        "Name": "minecraft:spruce_leaves"
+                        "Name": "minecraft:spruce_leaves",
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -615,7 +625,8 @@
                     "foliage_provider": {
                       "type": "minecraft:simple_state_provider",
                       "state": {
-                        "Name": "minecraft:spruce_leaves"
+                        "Name": "minecraft:spruce_leaves",
+                        "Properties": {}
                       }
                     },
                     "trunk_placer": {
@@ -660,7 +671,8 @@
                 "foliage_provider": {
                   "type": "minecraft:simple_state_provider",
                   "state": {
-                    "Name": "minecraft:spruce_leaves"
+                    "Name": "minecraft:spruce_leaves",
+                    "Properties": {}
                   }
                 },
                 "trunk_placer": {

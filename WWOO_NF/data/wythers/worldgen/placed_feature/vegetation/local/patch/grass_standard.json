@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:grass",
+  "feature": "minecraft:patch_grass",
   "placement": [
     {
       "type": "minecraft:count",

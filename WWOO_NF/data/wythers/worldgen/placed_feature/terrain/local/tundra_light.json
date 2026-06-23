@@ -11,8 +11,7 @@
             }
           }
         },
-        "rules": [],
-        "type": "minecraft:rule_based_state_provider"
+        "rules": []
       },
       "radius": 8,
       "half_height": 0,

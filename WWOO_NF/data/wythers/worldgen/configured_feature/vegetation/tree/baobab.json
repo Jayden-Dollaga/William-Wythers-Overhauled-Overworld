@@ -13,7 +13,6 @@
                   "feature": {
                     "config": {
                       "state_provider": {
-                        "type": "minecraft:rule_based_state_provider",
                         "fallback": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
@@ -147,7 +146,8 @@
                       "foliage_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:acacia_leaves"
+                          "Name": "minecraft:acacia_leaves",
+                          "Properties": {}
                         }
                       },
                       "trunk_placer": {
@@ -219,7 +219,8 @@
                       "foliage_provider": {
                         "type": "minecraft:simple_state_provider",
                         "state": {
-                          "Name": "minecraft:acacia_leaves"
+                          "Name": "minecraft:acacia_leaves",
+                          "Properties": {}
                         }
                       },
                       "trunk_placer": {

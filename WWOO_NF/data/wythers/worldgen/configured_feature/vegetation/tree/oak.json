@@ -60,8 +60,7 @@
       "height_rand_a": 2,
       "height_rand_b": 4,
       "type": "minecraft:fancy_trunk_placer"
-    },
-    "type": "minecraft:tree"
+    }
   },
   "type": "minecraft:tree"
 }

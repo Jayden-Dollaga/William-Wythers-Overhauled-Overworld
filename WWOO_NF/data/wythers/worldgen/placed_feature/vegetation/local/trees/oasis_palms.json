@@ -49,8 +49,7 @@
                   "hanging_leaves_chance": 0.5,
                   "hanging_leaves_extension_chance": 1
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": []
@@ -101,8 +100,7 @@
               "hanging_leaves_chance": 0.5,
               "hanging_leaves_extension_chance": 1
             },
-            "decorators": [],
-            "type": "minecraft:tree"
+            "decorators": []
           }
         },
         "placement": []

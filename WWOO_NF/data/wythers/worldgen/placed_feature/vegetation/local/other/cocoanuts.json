@@ -218,8 +218,7 @@
               ]
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -269,16 +268,8 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      },
-      "y_spread": {
-        "type": "minecraft:trapezoid",
-        "max": 2,
-        "min": -2,
-        "plateau": 0
-      }
+      "xz_spread": 0,
+      "y_spread": -2
     },
     {
       "type": "minecraft:biome"

@@ -3,9 +3,17 @@ Volume serial number is 580C-F87B
 C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   ---File Restorer list---.txt
 |   ---NOTES---.txt
+|   .Blueprint_Prompt_Full_Sweep_v2.txt
 |   analyze_errors.py
+|   audit_report.json
+|   audit_report.md
+|   Blueprint Prompt Error Template.txt
 |   Blueprint Prompt Template.txt
 |   Blueprint Prompt.txt
+|   Blueprint Prompt10.txt
+|   Blueprint Prompt11.txt
+|   Blueprint Prompt12.txt
+|   Blueprint Prompt13.txt
 |   Blueprint Prompt2.txt
 |   Blueprint Prompt3.txt
 |   Blueprint Prompt4.txt
@@ -16,12 +24,16 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   Blueprint Prompt6 - Part 4.txt
 |   Blueprint Prompt6.txt
 |   Blueprint Prompt7.txt
+|   Blueprint_Prompt_Auto.txt
+|   Blueprint_Prompt_Full_Sweep.txt
 |   Bug find.py
 |   check_integrity.py
 |   check_integrity_manuwal.txt
 |   check_wrong_types.py
+|   COMPLETION_REPORT_16.md
 |   datapack.config.json
 |   errors.txt
+|   errors10.txt
 |   errors2.txt
 |   errors3.txt
 |   errors4.txt
@@ -33,12 +45,17 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   errors9.txt
 |   errors9S.txt
 |   FINAL_STATUS_REPORT.md
+|   find_patch.py
 |   fix_category_a.py
 |   fix_category_a.sh
 |   fix_category_c.py
 |   fix_category_c_string_ref.py
 |   fix_category_c_v2.py
+|   fix_groundsel.py
+|   fix_groundsel_deep.py
+|   fix_missing_type.py
 |   fix_missing_types.py
+|   fix_missing_y_spread.py
 |   fix_part3_type_fields.py
 |   fix_part4_random_patch.py
 |   fix_round2_main.py
@@ -66,23 +83,50 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   fix_round6_fix4.py
 |   fix_round6_fix5.py
 |   fix_round6_fix6.py
+|   fix_round8_unwrap.py
+|   fix_round9_nested.py
+|   fix_saguaro_inline_features.py
+|   fix_solid_clouds_blocks.py
 |   fix_working_dir.py
 |   fix_wrong_matching_blocks.py
 |   fix_y_spread.py
+|   git_audit_debunked.py
+|   GROUNDSEL_FIX_LOG.txt
 |   list.txt
 |   list_files.bat
+|   Logs Prompt Template.txt
 |   Log_Error.txt
+|   Log_Error10.txt
+|   Log_Error11.txt
+|   Log_Error12.txt
+|   Log_Error13.txt
+|   Log_Error14.txt
+|   Log_Error15.txt
+|   Log_Error16.txt
+|   Log_Error17.txt
+|   Log_Error18.txt
+|   Log_Error19.txt
 |   Log_Error2.txt
 |   Log_Error3.txt
 |   Log_Error4.txt
 |   Log_Error5.txt
 |   Log_Error6.txt
+|   Log_Error6S.txt
+|   Log_Error7.txt
+|   Log_Error7S.txt
+|   Log_Error8.txt
+|   Log_Error9.txt
+|   Maybe_Error.txt
 |   MIGRATION_COMPLETE.txt
 |   MIGRATION_REPORT.md
 |   output.txt
 |   pack.mcmeta
 |   pack.png
 |   package-lock.json
+|   ROUND10_COMPLETION_REPORT.md
+|   ROUND11_COMPLETION_REPORT.md
+|   ROUND12_COMPLETION_REPORT.md
+|   ROUND13_COMPLETION_REPORT.md
 |   ROUND2_COMPLETION_REPORT.md
 |   ROUND3_COMPLETION_REPORT.md
 |   ROUND4_COMPLETION_REPORT.md
@@ -92,9 +136,25 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   ROUND6_PART1_REPORT.md
 |   ROUND6_PART3_REPORT.md
 |   ROUND7_COMPLETION_REPORT.md
+|   ROUND8_LOG.txt
+|   ROUND9_LOG.txt
+|   scan_report.json
+|   scan_report.md
+|   SWEEP1_COMPLETION_REPORT.md
+|   SWEEP2_COMPLETION_REPORT.md
+|   sweep_2_reverify.json
+|   sweep_2_reverify.md
+|   sweep_3_scan.json
+|   sweep_3_scan.md
+|   sweep_4_scan.json
+|   sweep_4_scan.md
+|   sweep_current.json
+|   sweep_current.md
 |   verify_files.py
 |   verify_round3_fix2.py
 |   William Wythers' Overhauled Overworld v2.6.7.code-workspace
+|   wwoo_schema_scan.py
+|   wwoo_schema_scan_v2.py
 |   
 +---.fallow
 |       .gitignore
@@ -31969,28 +32029,279 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |   |       warm.json
 |   |   |       
 |   |   +---tags
+|   |   |   +---banner_pattern
+|   |   |   |   |   no_item_required.json
+|   |   |   |   |   
+|   |   |   |   \---pattern_item
+|   |   |   |           bordure_indented.json
+|   |   |   |           creeper.json
+|   |   |   |           field_masoned.json
+|   |   |   |           flow.json
+|   |   |   |           flower.json
+|   |   |   |           globe.json
+|   |   |   |           guster.json
+|   |   |   |           mojang.json
+|   |   |   |           piglin.json
+|   |   |   |           skull.json
+|   |   |   |           
 |   |   |   +---block
-|   |   |   |       animals_spawnable_on.json
-|   |   |   |       climbable.json
-|   |   |   |       coral_blocks.json
-|   |   |   |       dead_coral_blocks.json
-|   |   |   |       deepslate_ore_replaceables.json
-|   |   |   |       dirt.json
-|   |   |   |       dry_vegetation_may_place_on.json
-|   |   |   |       foxes_spawnable_on.json
-|   |   |   |       jungle_logs.json
-|   |   |   |       leaves.json
-|   |   |   |       mangrove_logs.json
-|   |   |   |       mangrove_logs_can_grow_through.json
-|   |   |   |       mangrove_roots_can_grow_through.json
-|   |   |   |       mushroom_grow_block.json
-|   |   |   |       nylium.json
-|   |   |   |       replaceable_by_trees.json
-|   |   |   |       sand.json
-|   |   |   |       small_dripleaf_placeable.json
-|   |   |   |       snow_layer_cannot_survive_on.json
-|   |   |   |       water_and_corals.json
-|   |   |   |       
+|   |   |   |   |   acacia_logs.json
+|   |   |   |   |   air.json
+|   |   |   |   |   all_hanging_signs.json
+|   |   |   |   |   all_signs.json
+|   |   |   |   |   ancient_city_replaceable.json
+|   |   |   |   |   animals_spawnable_on.json
+|   |   |   |   |   anvil.json
+|   |   |   |   |   armadillo_spawnable_on.json
+|   |   |   |   |   axolotls_spawnable_on.json
+|   |   |   |   |   azalea_grows_on.json
+|   |   |   |   |   azalea_root_replaceable.json
+|   |   |   |   |   badlands_terracotta.json
+|   |   |   |   |   bamboo_blocks.json
+|   |   |   |   |   banners.json
+|   |   |   |   |   bars.json
+|   |   |   |   |   base_stone_nether.json
+|   |   |   |   |   base_stone_overworld.json
+|   |   |   |   |   bats_spawnable_on.json
+|   |   |   |   |   beacon_base_blocks.json
+|   |   |   |   |   beds.json
+|   |   |   |   |   beehives.json
+|   |   |   |   |   bee_attractive.json
+|   |   |   |   |   bee_growables.json
+|   |   |   |   |   beneath_bamboo_podzol_replaceable.json
+|   |   |   |   |   beneath_tree_podzol_replaceable.json
+|   |   |   |   |   birch_logs.json
+|   |   |   |   |   blocks_wind_charge_explosions.json
+|   |   |   |   |   buttons.json
+|   |   |   |   |   camels_spawnable_on.json
+|   |   |   |   |   camel_sand_step_sound_blocks.json
+|   |   |   |   |   campfires.json
+|   |   |   |   |   candles.json
+|   |   |   |   |   candle_cakes.json
+|   |   |   |   |   cannot_replace_below_tree_trunk.json
+|   |   |   |   |   cannot_support_kelp.json
+|   |   |   |   |   cannot_support_seagrass.json
+|   |   |   |   |   cannot_support_snow_layer.json
+|   |   |   |   |   can_glide_through.json
+|   |   |   |   |   cauldrons.json
+|   |   |   |   |   cave_vines.json
+|   |   |   |   |   ceiling_hanging_signs.json
+|   |   |   |   |   chains.json
+|   |   |   |   |   cherry_logs.json
+|   |   |   |   |   climbable.json
+|   |   |   |   |   coal_ores.json
+|   |   |   |   |   combination_step_sound_blocks.json
+|   |   |   |   |   completes_find_tree_tutorial.json
+|   |   |   |   |   concrete_powder.json
+|   |   |   |   |   convertable_to_mud.json
+|   |   |   |   |   copper.json
+|   |   |   |   |   copper_chests.json
+|   |   |   |   |   copper_golem_statues.json
+|   |   |   |   |   copper_ores.json
+|   |   |   |   |   corals.json
+|   |   |   |   |   coral_blocks.json
+|   |   |   |   |   coral_plants.json
+|   |   |   |   |   crimson_stems.json
+|   |   |   |   |   crops.json
+|   |   |   |   |   crystal_sound_blocks.json
+|   |   |   |   |   dampens_vibrations.json
+|   |   |   |   |   dark_oak_logs.json
+|   |   |   |   |   dead_coral_blocks.json
+|   |   |   |   |   deepslate_ore_replaceables.json
+|   |   |   |   |   diamond_ores.json
+|   |   |   |   |   dirt.json
+|   |   |   |   |   does_not_block_hoppers.json
+|   |   |   |   |   doors.json
+|   |   |   |   |   dragon_immune.json
+|   |   |   |   |   dragon_transparent.json
+|   |   |   |   |   dripstone_replaceable_blocks.json
+|   |   |   |   |   dry_vegetation_may_place_on.json
+|   |   |   |   |   edible_for_sheep.json
+|   |   |   |   |   emerald_ores.json
+|   |   |   |   |   enables_bubble_column_drag_down.json
+|   |   |   |   |   enables_bubble_column_push_up.json
+|   |   |   |   |   enchantment_power_provider.json
+|   |   |   |   |   enchantment_power_transmitter.json
+|   |   |   |   |   enderman_holdable.json
+|   |   |   |   |   fall_damage_resetting.json
+|   |   |   |   |   features_cannot_replace.json
+|   |   |   |   |   fences.json
+|   |   |   |   |   fence_gates.json
+|   |   |   |   |   fire.json
+|   |   |   |   |   flowers.json
+|   |   |   |   |   flower_pots.json
+|   |   |   |   |   forest_rock_can_place_on.json
+|   |   |   |   |   foxes_spawnable_on.json
+|   |   |   |   |   frogs_spawnable_on.json
+|   |   |   |   |   frog_prefer_jump_to.json
+|   |   |   |   |   geode_invalid_blocks.json
+|   |   |   |   |   goats_spawnable_on.json
+|   |   |   |   |   gold_ores.json
+|   |   |   |   |   grass_blocks.json
+|   |   |   |   |   grows_crops.json
+|   |   |   |   |   guarded_by_piglins.json
+|   |   |   |   |   happy_ghast_avoids.json
+|   |   |   |   |   hoglin_repellents.json
+|   |   |   |   |   huge_brown_mushroom_can_place_on.json
+|   |   |   |   |   huge_red_mushroom_can_place_on.json
+|   |   |   |   |   ice.json
+|   |   |   |   |   ice_spike_replaceable.json
+|   |   |   |   |   impermeable.json
+|   |   |   |   |   incorrect_for_copper_tool.json
+|   |   |   |   |   incorrect_for_diamond_tool.json
+|   |   |   |   |   incorrect_for_gold_tool.json
+|   |   |   |   |   incorrect_for_iron_tool.json
+|   |   |   |   |   incorrect_for_netherite_tool.json
+|   |   |   |   |   incorrect_for_stone_tool.json
+|   |   |   |   |   incorrect_for_wooden_tool.json
+|   |   |   |   |   infiniburn_end.json
+|   |   |   |   |   infiniburn_nether.json
+|   |   |   |   |   infiniburn_overworld.json
+|   |   |   |   |   inside_step_sound_blocks.json
+|   |   |   |   |   invalid_spawn_inside.json
+|   |   |   |   |   iron_ores.json
+|   |   |   |   |   jungle_logs.json
+|   |   |   |   |   lanterns.json
+|   |   |   |   |   lapis_ores.json
+|   |   |   |   |   lava_pool_stone_cannot_replace.json
+|   |   |   |   |   leaves.json
+|   |   |   |   |   lightning_rods.json
+|   |   |   |   |   logs.json
+|   |   |   |   |   logs_that_burn.json
+|   |   |   |   |   lush_ground_replaceable.json
+|   |   |   |   |   maintains_farmland.json
+|   |   |   |   |   mangrove_logs.json
+|   |   |   |   |   mangrove_logs_can_grow_through.json
+|   |   |   |   |   mangrove_roots_can_grow_through.json
+|   |   |   |   |   mob_interactable_doors.json
+|   |   |   |   |   mooshrooms_spawnable_on.json
+|   |   |   |   |   moss_blocks.json
+|   |   |   |   |   moss_replaceable.json
+|   |   |   |   |   mud.json
+|   |   |   |   |   mushroom_grow_block.json
+|   |   |   |   |   needs_diamond_tool.json
+|   |   |   |   |   needs_iron_tool.json
+|   |   |   |   |   needs_stone_tool.json
+|   |   |   |   |   nether_carver_replaceables.json
+|   |   |   |   |   nylium.json
+|   |   |   |   |   oak_logs.json
+|   |   |   |   |   occludes_vibration_signals.json
+|   |   |   |   |   overrides_mushroom_light_requirement.json
+|   |   |   |   |   overworld_carver_replaceables.json
+|   |   |   |   |   overworld_natural_logs.json
+|   |   |   |   |   pale_oak_logs.json
+|   |   |   |   |   parrots_spawnable_on.json
+|   |   |   |   |   piglin_repellents.json
+|   |   |   |   |   planks.json
+|   |   |   |   |   polar_bears_spawnable_on_alternate.json
+|   |   |   |   |   portals.json
+|   |   |   |   |   pressure_plates.json
+|   |   |   |   |   prevents_nearby_leaf_decay.json
+|   |   |   |   |   prevent_mob_spawning_inside.json
+|   |   |   |   |   rabbits_spawnable_on.json
+|   |   |   |   |   rails.json
+|   |   |   |   |   redstone_ores.json
+|   |   |   |   |   replaceable.json
+|   |   |   |   |   replaceable_by_mushrooms.json
+|   |   |   |   |   replaceable_by_trees.json
+|   |   |   |   |   sand.json
+|   |   |   |   |   saplings.json
+|   |   |   |   |   sculk_replaceable.json
+|   |   |   |   |   sculk_replaceable_world_gen.json
+|   |   |   |   |   shulker_boxes.json
+|   |   |   |   |   signs.json
+|   |   |   |   |   slabs.json
+|   |   |   |   |   small_dripleaf_placeable.json
+|   |   |   |   |   small_flowers.json
+|   |   |   |   |   smelts_to_glass.json
+|   |   |   |   |   snaps_goat_horn.json
+|   |   |   |   |   sniffer_diggable_block.json
+|   |   |   |   |   sniffer_egg_hatch_boost.json
+|   |   |   |   |   snow.json
+|   |   |   |   |   snow_layer_cannot_survive_on.json
+|   |   |   |   |   soul_fire_base_blocks.json
+|   |   |   |   |   soul_speed_blocks.json
+|   |   |   |   |   spruce_logs.json
+|   |   |   |   |   stairs.json
+|   |   |   |   |   standing_signs.json
+|   |   |   |   |   stone_bricks.json
+|   |   |   |   |   stone_buttons.json
+|   |   |   |   |   stone_ore_replaceables.json
+|   |   |   |   |   stone_pressure_plates.json
+|   |   |   |   |   strider_warm_blocks.json
+|   |   |   |   |   substrate_overworld.json
+|   |   |   |   |   supports_azalea.json
+|   |   |   |   |   supports_bamboo.json
+|   |   |   |   |   supports_big_dripleaf.json
+|   |   |   |   |   supports_cactus.json
+|   |   |   |   |   supports_chorus_flower.json
+|   |   |   |   |   supports_chorus_plant.json
+|   |   |   |   |   supports_cocoa.json
+|   |   |   |   |   supports_crimson_fungus.json
+|   |   |   |   |   supports_crimson_roots.json
+|   |   |   |   |   supports_crops.json
+|   |   |   |   |   supports_dry_vegetation.json
+|   |   |   |   |   supports_frogspawn.json
+|   |   |   |   |   supports_hanging_mangrove_propagule.json
+|   |   |   |   |   supports_lily_pad.json
+|   |   |   |   |   supports_mangrove_propagule.json
+|   |   |   |   |   supports_melon_stem.json
+|   |   |   |   |   supports_melon_stem_fruit.json
+|   |   |   |   |   supports_nether_sprouts.json
+|   |   |   |   |   supports_nether_wart.json
+|   |   |   |   |   supports_pumpkin_stem.json
+|   |   |   |   |   supports_pumpkin_stem_fruit.json
+|   |   |   |   |   supports_small_dripleaf.json
+|   |   |   |   |   supports_stem_crops.json
+|   |   |   |   |   supports_stem_fruit.json
+|   |   |   |   |   supports_sugar_cane.json
+|   |   |   |   |   supports_sugar_cane_adjacently.json
+|   |   |   |   |   supports_vegetation.json
+|   |   |   |   |   supports_warped_fungus.json
+|   |   |   |   |   supports_warped_roots.json
+|   |   |   |   |   supports_wither_rose.json
+|   |   |   |   |   support_override_cactus_flower.json
+|   |   |   |   |   support_override_snow_layer.json
+|   |   |   |   |   sword_efficient.json
+|   |   |   |   |   sword_instantly_mines.json
+|   |   |   |   |   terracotta.json
+|   |   |   |   |   trail_ruins_replaceable.json
+|   |   |   |   |   trapdoors.json
+|   |   |   |   |   triggers_ambient_desert_dry_vegetation_block_sounds.json
+|   |   |   |   |   triggers_ambient_desert_sand_block_sounds.json
+|   |   |   |   |   triggers_ambient_dried_ghast_block_sounds.json
+|   |   |   |   |   underwater_bonemeals.json
+|   |   |   |   |   unstable_bottom_center.json
+|   |   |   |   |   valid_spawn.json
+|   |   |   |   |   vibration_resonators.json
+|   |   |   |   |   walls.json
+|   |   |   |   |   wall_corals.json
+|   |   |   |   |   wall_hanging_signs.json
+|   |   |   |   |   wall_post_override.json
+|   |   |   |   |   wall_signs.json
+|   |   |   |   |   warped_stems.json
+|   |   |   |   |   wart_blocks.json
+|   |   |   |   |   water_and_corals.json
+|   |   |   |   |   wither_immune.json
+|   |   |   |   |   wither_summon_base_blocks.json
+|   |   |   |   |   wolves_spawnable_on.json
+|   |   |   |   |   wooden_buttons.json
+|   |   |   |   |   wooden_doors.json
+|   |   |   |   |   wooden_fences.json
+|   |   |   |   |   wooden_pressure_plates.json
+|   |   |   |   |   wooden_shelves.json
+|   |   |   |   |   wooden_slabs.json
+|   |   |   |   |   wooden_stairs.json
+|   |   |   |   |   wooden_trapdoors.json
+|   |   |   |   |   wool.json
+|   |   |   |   |   wool_carpets.json
+|   |   |   |   |   
+|   |   |   |   \---mineable
+|   |   |   |           axe.json
+|   |   |   |           hoe.json
+|   |   |   |           pickaxe.json
+|   |   |   |           shovel.json
+|   |   |   |           
 |   |   |   +---blocks
 |   |   |   |       deepslate_ore_replaceables.json
 |   |   |   |       mangrove_logs.json
@@ -32000,13 +32311,576 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |   |   |       polar_bears_spawnable_on_alternate.json
 |   |   |   |       snow_layer_cannot_survive_on.json
 |   |   |   |       
+|   |   |   +---damage_type
+|   |   |   |       always_hurts_ender_dragons.json
+|   |   |   |       always_kills_armor_stands.json
+|   |   |   |       always_most_significant_fall.json
+|   |   |   |       always_triggers_silverfish.json
+|   |   |   |       avoids_guardian_thorns.json
+|   |   |   |       burns_armor_stands.json
+|   |   |   |       burn_from_stepping.json
+|   |   |   |       bypasses_armor.json
+|   |   |   |       bypasses_effects.json
+|   |   |   |       bypasses_enchantments.json
+|   |   |   |       bypasses_invulnerability.json
+|   |   |   |       bypasses_resistance.json
+|   |   |   |       bypasses_shield.json
+|   |   |   |       bypasses_wolf_armor.json
+|   |   |   |       can_break_armor_stand.json
+|   |   |   |       damages_helmet.json
+|   |   |   |       ignites_armor_stands.json
+|   |   |   |       is_drowning.json
+|   |   |   |       is_explosion.json
+|   |   |   |       is_fall.json
+|   |   |   |       is_fire.json
+|   |   |   |       is_freezing.json
+|   |   |   |       is_lightning.json
+|   |   |   |       is_player_attack.json
+|   |   |   |       is_projectile.json
+|   |   |   |       mace_smash.json
+|   |   |   |       no_anger.json
+|   |   |   |       no_impact.json
+|   |   |   |       no_knockback.json
+|   |   |   |       panic_causes.json
+|   |   |   |       panic_environmental_causes.json
+|   |   |   |       witch_resistant_to.json
+|   |   |   |       wither_immune_to.json
+|   |   |   |       
+|   |   |   +---dialog
+|   |   |   |       pause_screen_additions.json
+|   |   |   |       quick_actions.json
+|   |   |   |       
+|   |   |   +---enchantment
+|   |   |   |   |   curse.json
+|   |   |   |   |   double_trade_price.json
+|   |   |   |   |   in_enchanting_table.json
+|   |   |   |   |   non_treasure.json
+|   |   |   |   |   on_mob_spawn_equipment.json
+|   |   |   |   |   on_random_loot.json
+|   |   |   |   |   on_traded_equipment.json
+|   |   |   |   |   prevents_bee_spawns_when_mining.json
+|   |   |   |   |   prevents_decorated_pot_shattering.json
+|   |   |   |   |   prevents_ice_melting.json
+|   |   |   |   |   prevents_infested_spawns.json
+|   |   |   |   |   smelts_loot.json
+|   |   |   |   |   tooltip_order.json
+|   |   |   |   |   tradeable.json
+|   |   |   |   |   treasure.json
+|   |   |   |   |   
+|   |   |   |   \---exclusive_set
+|   |   |   |           armor.json
+|   |   |   |           boots.json
+|   |   |   |           bow.json
+|   |   |   |           crossbow.json
+|   |   |   |           damage.json
+|   |   |   |           mining.json
+|   |   |   |           riptide.json
+|   |   |   |           
+|   |   |   +---entity_type
+|   |   |   |       accepts_iron_golem_gift.json
+|   |   |   |       aquatic.json
+|   |   |   |       arrows.json
+|   |   |   |       arthropod.json
+|   |   |   |       axolotl_always_hostiles.json
+|   |   |   |       axolotl_hunt_targets.json
+|   |   |   |       beehive_inhabitors.json
+|   |   |   |       boat.json
+|   |   |   |       burn_in_daylight.json
+|   |   |   |       candidate_for_iron_golem_gift.json
+|   |   |   |       cannot_be_age_locked.json
+|   |   |   |       cannot_be_pushed_onto_boats.json
+|   |   |   |       can_breathe_under_water.json
+|   |   |   |       can_equip_harness.json
+|   |   |   |       can_equip_saddle.json
+|   |   |   |       can_float_while_ridden.json
+|   |   |   |       can_turn_in_boats.json
+|   |   |   |       can_wear_horse_armor.json
+|   |   |   |       can_wear_nautilus_armor.json
+|   |   |   |       deflects_projectiles.json
+|   |   |   |       dismounts_underwater.json
+|   |   |   |       fall_damage_immune.json
+|   |   |   |       followable_friendly_mobs.json
+|   |   |   |       freeze_hurts_extra_types.json
+|   |   |   |       freeze_immune_entity_types.json
+|   |   |   |       frog_food.json
+|   |   |   |       ignores_poison_and_regen.json
+|   |   |   |       illager.json
+|   |   |   |       illager_friends.json
+|   |   |   |       immune_to_infested.json
+|   |   |   |       immune_to_oozing.json
+|   |   |   |       impact_projectiles.json
+|   |   |   |       inverted_healing_and_harm.json
+|   |   |   |       nautilus_hostiles.json
+|   |   |   |       non_controlling_rider.json
+|   |   |   |       not_scary_for_pufferfish.json
+|   |   |   |       no_anger_from_wind_charge.json
+|   |   |   |       powder_snow_walkable_mobs.json
+|   |   |   |       raiders.json
+|   |   |   |       redirectable_projectile.json
+|   |   |   |       sensitive_to_bane_of_arthropods.json
+|   |   |   |       sensitive_to_impaling.json
+|   |   |   |       sensitive_to_smite.json
+|   |   |   |       skeletons.json
+|   |   |   |       undead.json
+|   |   |   |       wither_friends.json
+|   |   |   |       zombies.json
+|   |   |   |       
+|   |   |   +---fluid
+|   |   |   |       bubble_column_can_occupy.json
+|   |   |   |       lava.json
+|   |   |   |       supports_frogspawn.json
+|   |   |   |       supports_lily_pad.json
+|   |   |   |       supports_sugar_cane_adjacently.json
+|   |   |   |       water.json
+|   |   |   |       
+|   |   |   +---game_event
+|   |   |   |       allay_can_listen.json
+|   |   |   |       ignore_vibrations_sneaking.json
+|   |   |   |       shrieker_can_listen.json
+|   |   |   |       vibrations.json
+|   |   |   |       warden_can_listen.json
+|   |   |   |       
+|   |   |   +---instrument
+|   |   |   |       goat_horns.json
+|   |   |   |       regular_goat_horns.json
+|   |   |   |       screaming_goat_horns.json
+|   |   |   |       
+|   |   |   +---item
+|   |   |   |   |   acacia_logs.json
+|   |   |   |   |   anvil.json
+|   |   |   |   |   armadillo_food.json
+|   |   |   |   |   arrows.json
+|   |   |   |   |   axes.json
+|   |   |   |   |   axolotl_food.json
+|   |   |   |   |   bamboo_blocks.json
+|   |   |   |   |   banners.json
+|   |   |   |   |   bars.json
+|   |   |   |   |   beacon_payment_items.json
+|   |   |   |   |   beds.json
+|   |   |   |   |   bee_food.json
+|   |   |   |   |   birch_logs.json
+|   |   |   |   |   boats.json
+|   |   |   |   |   bookshelf_books.json
+|   |   |   |   |   book_cloning_target.json
+|   |   |   |   |   breaks_decorated_pots.json
+|   |   |   |   |   brewing_fuel.json
+|   |   |   |   |   bundles.json
+|   |   |   |   |   buttons.json
+|   |   |   |   |   camel_food.json
+|   |   |   |   |   camel_husk_food.json
+|   |   |   |   |   candles.json
+|   |   |   |   |   cat_collar_dyes.json
+|   |   |   |   |   cat_food.json
+|   |   |   |   |   cauldron_can_remove_dye.json
+|   |   |   |   |   chains.json
+|   |   |   |   |   cherry_logs.json
+|   |   |   |   |   chest_armor.json
+|   |   |   |   |   chest_boats.json
+|   |   |   |   |   chicken_food.json
+|   |   |   |   |   cluster_max_harvestables.json
+|   |   |   |   |   coals.json
+|   |   |   |   |   coal_ores.json
+|   |   |   |   |   compasses.json
+|   |   |   |   |   completes_find_tree_tutorial.json
+|   |   |   |   |   copper.json
+|   |   |   |   |   copper_chests.json
+|   |   |   |   |   copper_golem_statues.json
+|   |   |   |   |   copper_ores.json
+|   |   |   |   |   copper_tool_materials.json
+|   |   |   |   |   cow_food.json
+|   |   |   |   |   creeper_drop_music_discs.json
+|   |   |   |   |   creeper_igniters.json
+|   |   |   |   |   crimson_stems.json
+|   |   |   |   |   dampens_vibrations.json
+|   |   |   |   |   dark_oak_logs.json
+|   |   |   |   |   decorated_pot_ingredients.json
+|   |   |   |   |   decorated_pot_sherds.json
+|   |   |   |   |   diamond_ores.json
+|   |   |   |   |   diamond_tool_materials.json
+|   |   |   |   |   dirt.json
+|   |   |   |   |   doors.json
+|   |   |   |   |   drowned_preferred_weapons.json
+|   |   |   |   |   duplicates_allays.json
+|   |   |   |   |   dyes.json
+|   |   |   |   |   eggs.json
+|   |   |   |   |   emerald_ores.json
+|   |   |   |   |   fences.json
+|   |   |   |   |   fence_gates.json
+|   |   |   |   |   fishes.json
+|   |   |   |   |   flowers.json
+|   |   |   |   |   foot_armor.json
+|   |   |   |   |   fox_food.json
+|   |   |   |   |   freeze_immune_wearables.json
+|   |   |   |   |   frog_food.json
+|   |   |   |   |   furnace_minecart_fuel.json
+|   |   |   |   |   gaze_disguise_equipment.json
+|   |   |   |   |   goat_food.json
+|   |   |   |   |   gold_ores.json
+|   |   |   |   |   gold_tool_materials.json
+|   |   |   |   |   grass_blocks.json
+|   |   |   |   |   hanging_signs.json
+|   |   |   |   |   happy_ghast_food.json
+|   |   |   |   |   happy_ghast_tempt_items.json
+|   |   |   |   |   harnesses.json
+|   |   |   |   |   head_armor.json
+|   |   |   |   |   hoes.json
+|   |   |   |   |   hoglin_food.json
+|   |   |   |   |   horse_food.json
+|   |   |   |   |   horse_tempt_items.json
+|   |   |   |   |   ignored_by_piglin_babies.json
+|   |   |   |   |   iron_ores.json
+|   |   |   |   |   iron_tool_materials.json
+|   |   |   |   |   jungle_logs.json
+|   |   |   |   |   lanterns.json
+|   |   |   |   |   lapis_ores.json
+|   |   |   |   |   leaves.json
+|   |   |   |   |   lectern_books.json
+|   |   |   |   |   leg_armor.json
+|   |   |   |   |   lightning_rods.json
+|   |   |   |   |   llama_food.json
+|   |   |   |   |   llama_tempt_items.json
+|   |   |   |   |   logs.json
+|   |   |   |   |   logs_that_burn.json
+|   |   |   |   |   loom_dyes.json
+|   |   |   |   |   loom_patterns.json
+|   |   |   |   |   mangrove_logs.json
+|   |   |   |   |   map_invisibility_equipment.json
+|   |   |   |   |   meat.json
+|   |   |   |   |   metal_nuggets.json
+|   |   |   |   |   moss_blocks.json
+|   |   |   |   |   mud.json
+|   |   |   |   |   nautilus_bucket_food.json
+|   |   |   |   |   nautilus_food.json
+|   |   |   |   |   nautilus_taming_items.json
+|   |   |   |   |   netherite_tool_materials.json
+|   |   |   |   |   non_flammable_wood.json
+|   |   |   |   |   noteblock_top_instruments.json
+|   |   |   |   |   oak_logs.json
+|   |   |   |   |   ocelot_food.json
+|   |   |   |   |   pale_oak_logs.json
+|   |   |   |   |   panda_eats_from_ground.json
+|   |   |   |   |   panda_food.json
+|   |   |   |   |   parrot_food.json
+|   |   |   |   |   parrot_poisonous_food.json
+|   |   |   |   |   pickaxes.json
+|   |   |   |   |   piglin_food.json
+|   |   |   |   |   piglin_loved.json
+|   |   |   |   |   piglin_preferred_weapons.json
+|   |   |   |   |   piglin_repellents.json
+|   |   |   |   |   piglin_safe_armor.json
+|   |   |   |   |   pig_food.json
+|   |   |   |   |   pillager_preferred_weapons.json
+|   |   |   |   |   planks.json
+|   |   |   |   |   rabbit_food.json
+|   |   |   |   |   rails.json
+|   |   |   |   |   redstone_ores.json
+|   |   |   |   |   repairs_chain_armor.json
+|   |   |   |   |   repairs_copper_armor.json
+|   |   |   |   |   repairs_diamond_armor.json
+|   |   |   |   |   repairs_gold_armor.json
+|   |   |   |   |   repairs_iron_armor.json
+|   |   |   |   |   repairs_leather_armor.json
+|   |   |   |   |   repairs_netherite_armor.json
+|   |   |   |   |   repairs_turtle_helmet.json
+|   |   |   |   |   repairs_wolf_armor.json
+|   |   |   |   |   sand.json
+|   |   |   |   |   saplings.json
+|   |   |   |   |   shearable_from_copper_golem.json
+|   |   |   |   |   sheep_food.json
+|   |   |   |   |   shovels.json
+|   |   |   |   |   shulker_boxes.json
+|   |   |   |   |   signs.json
+|   |   |   |   |   skeleton_preferred_weapons.json
+|   |   |   |   |   skulls.json
+|   |   |   |   |   slabs.json
+|   |   |   |   |   small_flowers.json
+|   |   |   |   |   smelts_to_glass.json
+|   |   |   |   |   sniffer_food.json
+|   |   |   |   |   soul_fire_base_blocks.json
+|   |   |   |   |   spears.json
+|   |   |   |   |   spruce_logs.json
+|   |   |   |   |   stairs.json
+|   |   |   |   |   stone_bricks.json
+|   |   |   |   |   stone_buttons.json
+|   |   |   |   |   stone_crafting_materials.json
+|   |   |   |   |   stone_tool_materials.json
+|   |   |   |   |   strider_food.json
+|   |   |   |   |   strider_tempt_items.json
+|   |   |   |   |   swords.json
+|   |   |   |   |   terracotta.json
+|   |   |   |   |   trapdoors.json
+|   |   |   |   |   trimmable_armor.json
+|   |   |   |   |   trim_materials.json
+|   |   |   |   |   turtle_food.json
+|   |   |   |   |   villager_picks_up.json
+|   |   |   |   |   villager_plantable_seeds.json
+|   |   |   |   |   walls.json
+|   |   |   |   |   warped_stems.json
+|   |   |   |   |   wart_blocks.json
+|   |   |   |   |   wither_skeleton_disliked_weapons.json
+|   |   |   |   |   wolf_collar_dyes.json
+|   |   |   |   |   wolf_food.json
+|   |   |   |   |   wooden_buttons.json
+|   |   |   |   |   wooden_doors.json
+|   |   |   |   |   wooden_fences.json
+|   |   |   |   |   wooden_pressure_plates.json
+|   |   |   |   |   wooden_shelves.json
+|   |   |   |   |   wooden_slabs.json
+|   |   |   |   |   wooden_stairs.json
+|   |   |   |   |   wooden_tool_materials.json
+|   |   |   |   |   wooden_trapdoors.json
+|   |   |   |   |   wool.json
+|   |   |   |   |   wool_carpets.json
+|   |   |   |   |   zombie_horse_food.json
+|   |   |   |   |   
+|   |   |   |   \---enchantable
+|   |   |   |           armor.json
+|   |   |   |           bow.json
+|   |   |   |           chest_armor.json
+|   |   |   |           crossbow.json
+|   |   |   |           durability.json
+|   |   |   |           equippable.json
+|   |   |   |           fire_aspect.json
+|   |   |   |           fishing.json
+|   |   |   |           foot_armor.json
+|   |   |   |           head_armor.json
+|   |   |   |           leg_armor.json
+|   |   |   |           lunge.json
+|   |   |   |           mace.json
+|   |   |   |           melee_weapon.json
+|   |   |   |           mining.json
+|   |   |   |           mining_loot.json
+|   |   |   |           sharp_weapon.json
+|   |   |   |           sweeping.json
+|   |   |   |           trident.json
+|   |   |   |           vanishing.json
+|   |   |   |           weapon.json
+|   |   |   |           
+|   |   |   +---painting_variant
+|   |   |   |       placeable.json
+|   |   |   |       
+|   |   |   +---point_of_interest_type
+|   |   |   |       acquirable_job_site.json
+|   |   |   |       bee_home.json
+|   |   |   |       village.json
+|   |   |   |       
+|   |   |   +---potion
+|   |   |   |       tradeable.json
+|   |   |   |       
+|   |   |   +---timeline
+|   |   |   |       in_end.json
+|   |   |   |       in_nether.json
+|   |   |   |       in_overworld.json
+|   |   |   |       universal.json
+|   |   |   |       
+|   |   |   +---villager_trade
+|   |   |   |   +---armorer
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---butcher
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---cartographer
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---cleric
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---common_smith
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---farmer
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---fisherman
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---fletcher
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---leatherworker
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---librarian
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---mason
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---shepherd
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---toolsmith
+|   |   |   |   |       level_1.json
+|   |   |   |   |       level_2.json
+|   |   |   |   |       level_3.json
+|   |   |   |   |       level_4.json
+|   |   |   |   |       level_5.json
+|   |   |   |   |       
+|   |   |   |   +---wandering_trader
+|   |   |   |   |       buying.json
+|   |   |   |   |       common.json
+|   |   |   |   |       uncommon.json
+|   |   |   |   |       
+|   |   |   |   \---weaponsmith
+|   |   |   |           level_1.json
+|   |   |   |           level_2.json
+|   |   |   |           level_3.json
+|   |   |   |           level_4.json
+|   |   |   |           level_5.json
+|   |   |   |           
 |   |   |   \---worldgen
-|   |   |       \---biome
-|   |   |               spawns_cold_variant_farm_animals.json
-|   |   |               spawns_cold_variant_frogs.json
-|   |   |               spawns_snow_foxes.json
-|   |   |               spawns_warm_variant_farm_animals.json
-|   |   |               spawns_warm_variant_frogs.json
+|   |   |       +---biome
+|   |   |       |   |   allows_surface_slime_spawns.json
+|   |   |       |   |   allows_tropical_fish_spawns_at_any_height.json
+|   |   |       |   |   is_badlands.json
+|   |   |       |   |   is_beach.json
+|   |   |       |   |   is_deep_ocean.json
+|   |   |       |   |   is_end.json
+|   |   |       |   |   is_forest.json
+|   |   |       |   |   is_hill.json
+|   |   |       |   |   is_jungle.json
+|   |   |       |   |   is_mountain.json
+|   |   |       |   |   is_nether.json
+|   |   |       |   |   is_ocean.json
+|   |   |       |   |   is_overworld.json
+|   |   |       |   |   is_river.json
+|   |   |       |   |   is_savanna.json
+|   |   |       |   |   is_taiga.json
+|   |   |       |   |   mineshaft_blocking.json
+|   |   |       |   |   more_frequent_drowned_spawns.json
+|   |   |       |   |   polar_bears_spawn_on_alternate_blocks.json
+|   |   |       |   |   produces_corals_from_bonemeal.json
+|   |   |       |   |   reduce_water_ambient_spawns.json
+|   |   |       |   |   required_ocean_monument_surrounding.json
+|   |   |       |   |   spawns_cold_variant_farm_animals.json
+|   |   |       |   |   spawns_cold_variant_frogs.json
+|   |   |       |   |   spawns_coral_variant_zombie_nautilus.json
+|   |   |       |   |   spawns_gold_rabbits.json
+|   |   |       |   |   spawns_snow_foxes.json
+|   |   |       |   |   spawns_warm_variant_farm_animals.json
+|   |   |       |   |   spawns_warm_variant_frogs.json
+|   |   |       |   |   spawns_white_rabbits.json
+|   |   |       |   |   stronghold_biased_to.json
+|   |   |       |   |   water_on_map_outlines.json
+|   |   |       |   |   without_wandering_trader_spawns.json
+|   |   |       |   |   without_zombie_sieges.json
+|   |   |       |   |   
+|   |   |       |   \---has_structure
+|   |   |       |           ancient_city.json
+|   |   |       |           bastion_remnant.json
+|   |   |       |           buried_treasure.json
+|   |   |       |           desert_pyramid.json
+|   |   |       |           end_city.json
+|   |   |       |           igloo.json
+|   |   |       |           jungle_temple.json
+|   |   |       |           mineshaft.json
+|   |   |       |           mineshaft_mesa.json
+|   |   |       |           nether_fortress.json
+|   |   |       |           nether_fossil.json
+|   |   |       |           ocean_monument.json
+|   |   |       |           ocean_ruin_cold.json
+|   |   |       |           ocean_ruin_warm.json
+|   |   |       |           pillager_outpost.json
+|   |   |       |           ruined_portal_desert.json
+|   |   |       |           ruined_portal_jungle.json
+|   |   |       |           ruined_portal_mountain.json
+|   |   |       |           ruined_portal_nether.json
+|   |   |       |           ruined_portal_ocean.json
+|   |   |       |           ruined_portal_standard.json
+|   |   |       |           ruined_portal_swamp.json
+|   |   |       |           shipwreck.json
+|   |   |       |           shipwreck_beached.json
+|   |   |       |           stronghold.json
+|   |   |       |           swamp_hut.json
+|   |   |       |           trail_ruins.json
+|   |   |       |           trial_chambers.json
+|   |   |       |           village_desert.json
+|   |   |       |           village_plains.json
+|   |   |       |           village_savanna.json
+|   |   |       |           village_snowy.json
+|   |   |       |           village_taiga.json
+|   |   |       |           woodland_mansion.json
+|   |   |       |           
+|   |   |       +---configured_feature
+|   |   |       |       can_spawn_from_bone_meal.json
+|   |   |       |       
+|   |   |       +---flat_level_generator_preset
+|   |   |       |       visible.json
+|   |   |       |       
+|   |   |       +---structure
+|   |   |       |       cats_spawn_as_black.json
+|   |   |       |       cats_spawn_in.json
+|   |   |       |       dolphin_located.json
+|   |   |       |       eye_of_ender_located.json
+|   |   |       |       mineshaft.json
+|   |   |       |       ocean_ruin.json
+|   |   |       |       on_desert_village_maps.json
+|   |   |       |       on_jungle_explorer_maps.json
+|   |   |       |       on_ocean_explorer_maps.json
+|   |   |       |       on_plains_village_maps.json
+|   |   |       |       on_savanna_village_maps.json
+|   |   |       |       on_snowy_village_maps.json
+|   |   |       |       on_swamp_explorer_maps.json
+|   |   |       |       on_taiga_village_maps.json
+|   |   |       |       on_treasure_maps.json
+|   |   |       |       on_trial_chambers_maps.json
+|   |   |       |       on_woodland_explorer_maps.json
+|   |   |       |       ruined_portal.json
+|   |   |       |       shipwreck.json
+|   |   |       |       village.json
+|   |   |       |       
+|   |   |       \---world_preset
+|   |   |               extended.json
+|   |   |               normal.json
 |   |   |               
 |   |   +---wolf_variant
 |   |   |       ashen.json
@@ -32023,10 +32897,12 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |       +---biome
 |   |       |       badlands.json
 |   |       |       bamboo_jungle.json
+|   |       |       basalt_deltas.json
 |   |       |       beach.json
 |   |       |       birch_forest.json
 |   |       |       cherry_grove.json
 |   |       |       cold_ocean.json
+|   |       |       crimson_forest.json
 |   |       |       dark_forest.json
 |   |       |       deep_cold_ocean.json
 |   |       |       deep_dark.json
@@ -32035,6 +32911,9 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |       |       deep_ocean.json
 |   |       |       desert.json
 |   |       |       dripstone_caves.json
+|   |       |       end_barrens.json
+|   |       |       end_highlands.json
+|   |       |       end_midlands.json
 |   |       |       eroded_badlands.json
 |   |       |       flower_forest.json
 |   |       |       forest.json
@@ -32050,6 +32929,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |       |       mangrove_swamp.json
 |   |       |       meadow.json
 |   |       |       mushroom_fields.json
+|   |       |       nether_wastes.json
 |   |       |       ocean.json
 |   |       |       old_growth_birch_forest.json
 |   |       |       old_growth_pine_taiga.json
@@ -32059,79 +32939,1065 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |   |       |       river.json
 |   |       |       savanna.json
 |   |       |       savanna_plateau.json
+|   |       |       small_end_islands.json
 |   |       |       snowy_beach.json
 |   |       |       snowy_plains.json
 |   |       |       snowy_slopes.json
 |   |       |       snowy_taiga.json
+|   |       |       soul_sand_valley.json
 |   |       |       sparse_jungle.json
 |   |       |       stony_peaks.json
 |   |       |       stony_shore.json
 |   |       |       sunflower_plains.json
 |   |       |       swamp.json
 |   |       |       taiga.json
+|   |       |       the_end.json
+|   |       |       the_void.json
 |   |       |       warm_ocean.json
+|   |       |       warped_forest.json
 |   |       |       windswept_forest.json
 |   |       |       windswept_gravelly_hills.json
 |   |       |       windswept_hills.json
 |   |       |       windswept_savanna.json
 |   |       |       wooded_badlands.json
 |   |       |       
+|   |       +---configured_carver
+|   |       |       canyon.json
+|   |       |       cave.json
+|   |       |       cave_extra_underground.json
+|   |       |       nether_cave.json
+|   |       |       
 |   |       +---configured_feature
 |   |       |       acacia.json
+|   |       |       amethyst_geode.json
 |   |       |       azalea_tree.json
+|   |       |       bamboo_no_podzol.json
+|   |       |       bamboo_some_podzol.json
+|   |       |       bamboo_vegetation.json
+|   |       |       basalt_blobs.json
+|   |       |       basalt_pillar.json
+|   |       |       berry_bush.json
 |   |       |       birch.json
+|   |       |       birch_bees_0002.json
+|   |       |       birch_bees_0002_leaf_litter.json
+|   |       |       birch_bees_002.json
 |   |       |       birch_bees_005.json
+|   |       |       birch_leaf_litter.json
+|   |       |       birch_tall.json
+|   |       |       blackstone_blobs.json
+|   |       |       blue_ice.json
+|   |       |       bonus_chest.json
+|   |       |       brown_mushroom.json
+|   |       |       bush.json
+|   |       |       cactus.json
+|   |       |       cave_vine.json
+|   |       |       cave_vine_in_moss.json
 |   |       |       cherry.json
 |   |       |       cherry_bees_005.json
+|   |       |       chorus_plant.json
+|   |       |       clay_pool_with_dripleaves.json
+|   |       |       clay_with_dripleaves.json
+|   |       |       crimson_forest_vegetation.json
+|   |       |       crimson_forest_vegetation_bonemeal.json
+|   |       |       crimson_fungus.json
+|   |       |       crimson_fungus_planted.json
+|   |       |       crimson_roots.json
+|   |       |       dark_forest_vegetation.json
 |   |       |       dark_oak.json
+|   |       |       dark_oak_leaf_litter.json
+|   |       |       dead_bush.json
+|   |       |       delta.json
+|   |       |       desert_well.json
+|   |       |       disk_clay.json
+|   |       |       disk_grass.json
+|   |       |       disk_gravel.json
+|   |       |       disk_sand.json
+|   |       |       dripleaf.json
+|   |       |       dripstone_cluster.json
+|   |       |       dry_grass.json
+|   |       |       end_gateway_delayed.json
+|   |       |       end_gateway_return.json
+|   |       |       end_island.json
+|   |       |       end_platform.json
+|   |       |       end_spike.json
+|   |       |       fallen_birch_tree.json
+|   |       |       fallen_jungle_tree.json
+|   |       |       fallen_oak_tree.json
+|   |       |       fallen_spruce_tree.json
+|   |       |       fallen_super_birch_tree.json
 |   |       |       fancy_oak.json
+|   |       |       fancy_oak_bees.json
+|   |       |       fancy_oak_bees_0002_leaf_litter.json
+|   |       |       fancy_oak_bees_002.json
 |   |       |       fancy_oak_bees_005.json
+|   |       |       fancy_oak_leaf_litter.json
+|   |       |       firefly_bush.json
+|   |       |       flower_cherry.json
+|   |       |       flower_default.json
+|   |       |       flower_flower_forest.json
+|   |       |       flower_meadow.json
+|   |       |       flower_pale_garden.json
+|   |       |       flower_plain.json
+|   |       |       flower_swamp.json
+|   |       |       forest_flowers.json
+|   |       |       forest_rock.json
+|   |       |       fossil_coal.json
+|   |       |       fossil_diamonds.json
+|   |       |       freeze_top_layer.json
+|   |       |       glowstone_extra.json
+|   |       |       glow_lichen.json
+|   |       |       grass.json
+|   |       |       grass_jungle.json
+|   |       |       huge_brown_mushroom.json
+|   |       |       huge_red_mushroom.json
+|   |       |       iceberg_blue.json
+|   |       |       iceberg_packed.json
+|   |       |       ice_patch.json
+|   |       |       ice_spike.json
+|   |       |       jungle_bush.json
+|   |       |       jungle_tree.json
+|   |       |       jungle_tree_no_vine.json
+|   |       |       kelp.json
+|   |       |       lake_lava.json
+|   |       |       large_basalt_columns.json
+|   |       |       large_dripstone.json
+|   |       |       large_fern.json
+|   |       |       leaf_litter.json
+|   |       |       lush_caves_clay.json
 |   |       |       mangrove.json
+|   |       |       mangrove_vegetation.json
+|   |       |       meadow_trees.json
+|   |       |       mega_jungle_tree.json
+|   |       |       mega_pine.json
+|   |       |       mega_spruce.json
+|   |       |       melon.json
+|   |       |       monster_room.json
+|   |       |       moss_patch.json
+|   |       |       moss_patch_bonemeal.json
+|   |       |       moss_patch_ceiling.json
+|   |       |       moss_vegetation.json
+|   |       |       mushroom_island_vegetation.json
+|   |       |       nether_sprouts.json
+|   |       |       nether_sprouts_bonemeal.json
 |   |       |       oak.json
+|   |       |       oak_bees_0002_leaf_litter.json
+|   |       |       oak_bees_002.json
 |   |       |       oak_bees_005.json
+|   |       |       oak_leaf_litter.json
+|   |       |       ore_ancient_debris_large.json
+|   |       |       ore_ancient_debris_small.json
 |   |       |       ore_andesite.json
+|   |       |       ore_blackstone.json
+|   |       |       ore_clay.json
+|   |       |       ore_coal.json
+|   |       |       ore_coal_buried.json
+|   |       |       ore_copper_large.json
+|   |       |       ore_copper_small.json
+|   |       |       ore_diamond_buried.json
+|   |       |       ore_diamond_large.json
+|   |       |       ore_diamond_medium.json
+|   |       |       ore_diamond_small.json
 |   |       |       ore_diorite.json
 |   |       |       ore_dirt.json
+|   |       |       ore_emerald.json
+|   |       |       ore_gold.json
+|   |       |       ore_gold_buried.json
 |   |       |       ore_granite.json
 |   |       |       ore_gravel.json
+|   |       |       ore_gravel_nether.json
+|   |       |       ore_infested.json
+|   |       |       ore_iron.json
+|   |       |       ore_iron_small.json
+|   |       |       ore_lapis.json
+|   |       |       ore_lapis_buried.json
+|   |       |       ore_magma.json
+|   |       |       ore_nether_gold.json
+|   |       |       ore_quartz.json
+|   |       |       ore_redstone.json
+|   |       |       ore_soul_sand.json
+|   |       |       ore_tuff.json
+|   |       |       pale_forest_flower.json
+|   |       |       pale_garden_vegetation.json
+|   |       |       pale_moss_patch.json
+|   |       |       pale_moss_patch_bonemeal.json
+|   |       |       pale_moss_vegetation.json
+|   |       |       pale_oak.json
+|   |       |       pale_oak_bonemeal.json
+|   |       |       pale_oak_creaking.json
 |   |       |       patch_dead_bush.json
+|   |       |       patch_fire.json
 |   |       |       patch_grass.json
+|   |       |       patch_soul_fire.json
+|   |       |       pile_hay.json
+|   |       |       pile_ice.json
+|   |       |       pile_melon.json
+|   |       |       pile_pumpkin.json
+|   |       |       pile_snow.json
+|   |       |       pine.json
+|   |       |       pointed_dripstone.json
+|   |       |       pumpkin.json
+|   |       |       red_mushroom.json
+|   |       |       rooted_azalea_tree.json
+|   |       |       sculk_patch_ancient_city.json
+|   |       |       sculk_patch_deep_dark.json
+|   |       |       sculk_vein.json
+|   |       |       seagrass_mid.json
+|   |       |       seagrass_short.json
+|   |       |       seagrass_slightly_less_short.json
+|   |       |       seagrass_tall.json
+|   |       |       sea_pickle.json
+|   |       |       small_basalt_columns.json
+|   |       |       spore_blossom.json
+|   |       |       spring_lava_frozen.json
+|   |       |       spring_lava_nether.json
+|   |       |       spring_lava_overworld.json
+|   |       |       spring_nether_closed.json
+|   |       |       spring_nether_open.json
+|   |       |       spring_water.json
+|   |       |       spruce.json
+|   |       |       sugar_cane.json
+|   |       |       sunflower.json
+|   |       |       super_birch_bees.json
+|   |       |       super_birch_bees_0002.json
+|   |       |       swamp_oak.json
+|   |       |       taiga_grass.json
+|   |       |       tall_grass.json
 |   |       |       tall_mangrove.json
+|   |       |       trees_badlands.json
+|   |       |       trees_birch.json
+|   |       |       trees_birch_and_oak_leaf_litter.json
+|   |       |       trees_flower_forest.json
+|   |       |       trees_grove.json
+|   |       |       trees_jungle.json
+|   |       |       trees_old_growth_pine_taiga.json
+|   |       |       trees_old_growth_spruce_taiga.json
+|   |       |       trees_plains.json
+|   |       |       trees_savanna.json
+|   |       |       trees_snowy.json
+|   |       |       trees_sparse_jungle.json
+|   |       |       trees_taiga.json
+|   |       |       trees_water.json
+|   |       |       trees_windswept_hills.json
+|   |       |       twisting_vines.json
+|   |       |       twisting_vines_bonemeal.json
+|   |       |       underwater_magma.json
+|   |       |       vines.json
+|   |       |       void_start_platform.json
+|   |       |       warm_ocean_vegetation.json
+|   |       |       warped_forest_vegetation.json
+|   |       |       warped_forest_vegetation_bonemeal.json
+|   |       |       warped_fungus.json
+|   |       |       warped_fungus_planted.json
+|   |       |       waterlily.json
+|   |       |       weeping_vines.json
+|   |       |       wildflower.json
 |   |       |       
-|   |       \---placed_feature
-|   |               acacia.json
-|   |               acacia_checked.json
-|   |               birch_checked.json
-|   |               cherry_bees_005.json
-|   |               cherry_checked.json
-|   |               dark_oak_checked.json
-|   |               fancy_oak_checked.json
-|   |               lake_lava_surface.json
-|   |               lake_lava_underground.json
-|   |               mangrove_checked.json
-|   |               mega_jungle_tree_checked.json
-|   |               mega_pine_checked.json
-|   |               mega_spruce_checked.json
-|   |               oak.json
-|   |               oak_checked.json
-|   |               ore_andesite_lower.json
-|   |               ore_andesite_upper.json
-|   |               ore_diorite_lower.json
-|   |               ore_diorite_upper.json
-|   |               ore_dirt.json
-|   |               ore_granite_lower.json
-|   |               ore_granite_upper.json
-|   |               patch_dead_bush.json
-|   |               patch_grass.json
-|   |               spring_lava.json
-|   |               spring_lava_frozen.json
-|   |               spruce.json
-|   |               spruce_checked.json
-|   |               spruce_on_snow.json
-|   |               tall_mangrove_checked.json
-|   |               trees_badlands.json
-|   |               trees_cherry.json
-|   |               trees_snowy.json
+|   |       +---density_function
+|   |       |   |   shift_x.json
+|   |       |   |   shift_z.json
+|   |       |   |   y.json
+|   |       |   |   zero.json
+|   |       |   |   
+|   |       |   +---end
+|   |       |   |       base_3d_noise.json
+|   |       |   |       sloped_cheese.json
+|   |       |   |       
+|   |       |   +---nether
+|   |       |   |       base_3d_noise.json
+|   |       |   |       
+|   |       |   +---overworld
+|   |       |   |   |   base_3d_noise.json
+|   |       |   |   |   continents.json
+|   |       |   |   |   depth.json
+|   |       |   |   |   erosion.json
+|   |       |   |   |   factor.json
+|   |       |   |   |   jaggedness.json
+|   |       |   |   |   offset.json
+|   |       |   |   |   ridges.json
+|   |       |   |   |   ridges_folded.json
+|   |       |   |   |   sloped_cheese.json
+|   |       |   |   |   
+|   |       |   |   \---caves
+|   |       |   |           entrances.json
+|   |       |   |           noodle.json
+|   |       |   |           pillars.json
+|   |       |   |           spaghetti_2d.json
+|   |       |   |           spaghetti_2d_thickness_modulator.json
+|   |       |   |           spaghetti_roughness_function.json
+|   |       |   |           
+|   |       |   +---overworld_amplified
+|   |       |   |       depth.json
+|   |       |   |       factor.json
+|   |       |   |       jaggedness.json
+|   |       |   |       offset.json
+|   |       |   |       sloped_cheese.json
+|   |       |   |       
+|   |       |   \---overworld_large_biomes
+|   |       |           continents.json
+|   |       |           depth.json
+|   |       |           erosion.json
+|   |       |           factor.json
+|   |       |           jaggedness.json
+|   |       |           offset.json
+|   |       |           sloped_cheese.json
+|   |       |           
+|   |       +---flat_level_generator_preset
+|   |       |       bottomless_pit.json
+|   |       |       classic_flat.json
+|   |       |       desert.json
+|   |       |       overworld.json
+|   |       |       redstone_ready.json
+|   |       |       snowy_kingdom.json
+|   |       |       the_void.json
+|   |       |       tunnelers_dream.json
+|   |       |       water_world.json
+|   |       |       
+|   |       +---multi_noise_biome_source_parameter_list
+|   |       |       nether.json
+|   |       |       overworld.json
+|   |       |       
+|   |       +---noise
+|   |       |   |   aquifer_barrier.json
+|   |       |   |   aquifer_fluid_level_floodedness.json
+|   |       |   |   aquifer_fluid_level_spread.json
+|   |       |   |   aquifer_lava.json
+|   |       |   |   badlands_pillar.json
+|   |       |   |   badlands_pillar_roof.json
+|   |       |   |   badlands_surface.json
+|   |       |   |   calcite.json
+|   |       |   |   cave_cheese.json
+|   |       |   |   cave_entrance.json
+|   |       |   |   cave_layer.json
+|   |       |   |   clay_bands_offset.json
+|   |       |   |   continentalness.json
+|   |       |   |   continentalness_large.json
+|   |       |   |   erosion.json
+|   |       |   |   erosion_large.json
+|   |       |   |   gravel.json
+|   |       |   |   gravel_layer.json
+|   |       |   |   ice.json
+|   |       |   |   iceberg_pillar.json
+|   |       |   |   iceberg_pillar_roof.json
+|   |       |   |   iceberg_surface.json
+|   |       |   |   jagged.json
+|   |       |   |   netherrack.json
+|   |       |   |   nether_state_selector.json
+|   |       |   |   nether_wart.json
+|   |       |   |   noodle.json
+|   |       |   |   noodle_ridge_a.json
+|   |       |   |   noodle_ridge_b.json
+|   |       |   |   noodle_thickness.json
+|   |       |   |   offset.json
+|   |       |   |   ore_gap.json
+|   |       |   |   ore_veininess.json
+|   |       |   |   ore_vein_a.json
+|   |       |   |   ore_vein_b.json
+|   |       |   |   packed_ice.json
+|   |       |   |   patch.json
+|   |       |   |   pillar.json
+|   |       |   |   pillar_rareness.json
+|   |       |   |   pillar_thickness.json
+|   |       |   |   powder_snow.json
+|   |       |   |   ridge.json
+|   |       |   |   soul_sand_layer.json
+|   |       |   |   spaghetti_2d.json
+|   |       |   |   spaghetti_2d_elevation.json
+|   |       |   |   spaghetti_2d_modulator.json
+|   |       |   |   spaghetti_2d_thickness.json
+|   |       |   |   spaghetti_3d_1.json
+|   |       |   |   spaghetti_3d_2.json
+|   |       |   |   spaghetti_3d_rarity.json
+|   |       |   |   spaghetti_3d_thickness.json
+|   |       |   |   spaghetti_roughness.json
+|   |       |   |   spaghetti_roughness_modulator.json
+|   |       |   |   surface.json
+|   |       |   |   surface_secondary.json
+|   |       |   |   surface_swamp.json
+|   |       |   |   temperature.json
+|   |       |   |   temperature_large.json
+|   |       |   |   vegetation.json
+|   |       |   |   vegetation_large.json
+|   |       |   |   
+|   |       |   \---nether
+|   |       |           temperature.json
+|   |       |           vegetation.json
+|   |       |           
+|   |       +---noise_settings
+|   |       |       amplified.json
+|   |       |       caves.json
+|   |       |       end.json
+|   |       |       floating_islands.json
+|   |       |       large_biomes.json
+|   |       |       nether.json
+|   |       |       overworld.json
+|   |       |       
+|   |       +---placed_feature
+|   |       |       acacia.json
+|   |       |       acacia_checked.json
+|   |       |       amethyst_geode.json
+|   |       |       bamboo.json
+|   |       |       bamboo_light.json
+|   |       |       bamboo_vegetation.json
+|   |       |       basalt_blobs.json
+|   |       |       basalt_pillar.json
+|   |       |       birch_bees_0002.json
+|   |       |       birch_bees_0002_leaf_litter.json
+|   |       |       birch_bees_002.json
+|   |       |       birch_checked.json
+|   |       |       birch_leaf_litter.json
+|   |       |       birch_tall.json
+|   |       |       blackstone_blobs.json
+|   |       |       blue_ice.json
+|   |       |       brown_mushroom_nether.json
+|   |       |       brown_mushroom_normal.json
+|   |       |       brown_mushroom_old_growth.json
+|   |       |       brown_mushroom_swamp.json
+|   |       |       brown_mushroom_taiga.json
+|   |       |       cave_vines.json
+|   |       |       cherry_bees_005.json
+|   |       |       cherry_checked.json
+|   |       |       chorus_plant.json
+|   |       |       classic_vines_cave_feature.json
+|   |       |       crimson_forest_vegetation.json
+|   |       |       crimson_fungi.json
+|   |       |       dark_forest_vegetation.json
+|   |       |       dark_oak_checked.json
+|   |       |       dark_oak_leaf_litter.json
+|   |       |       delta.json
+|   |       |       desert_well.json
+|   |       |       disk_clay.json
+|   |       |       disk_grass.json
+|   |       |       disk_gravel.json
+|   |       |       disk_sand.json
+|   |       |       dripstone_cluster.json
+|   |       |       end_gateway_return.json
+|   |       |       end_island_decorated.json
+|   |       |       end_platform.json
+|   |       |       end_spike.json
+|   |       |       fallen_birch_tree.json
+|   |       |       fallen_jungle_tree.json
+|   |       |       fallen_oak_tree.json
+|   |       |       fallen_spruce_tree.json
+|   |       |       fallen_super_birch_tree.json
+|   |       |       fancy_oak_bees.json
+|   |       |       fancy_oak_bees_0002_leaf_litter.json
+|   |       |       fancy_oak_bees_002.json
+|   |       |       fancy_oak_checked.json
+|   |       |       fancy_oak_leaf_litter.json
+|   |       |       flower_cherry.json
+|   |       |       flower_default.json
+|   |       |       flower_flower_forest.json
+|   |       |       flower_forest_flowers.json
+|   |       |       flower_meadow.json
+|   |       |       flower_pale_garden.json
+|   |       |       flower_plain.json
+|   |       |       flower_plains.json
+|   |       |       flower_swamp.json
+|   |       |       flower_warm.json
+|   |       |       forest_flowers.json
+|   |       |       forest_rock.json
+|   |       |       fossil_lower.json
+|   |       |       fossil_upper.json
+|   |       |       freeze_top_layer.json
+|   |       |       glowstone.json
+|   |       |       glowstone_extra.json
+|   |       |       glow_lichen.json
+|   |       |       grass_bonemeal.json
+|   |       |       iceberg_blue.json
+|   |       |       iceberg_packed.json
+|   |       |       ice_patch.json
+|   |       |       ice_spike.json
+|   |       |       jungle_bush.json
+|   |       |       jungle_tree.json
+|   |       |       kelp_cold.json
+|   |       |       kelp_warm.json
+|   |       |       lake_lava_surface.json
+|   |       |       lake_lava_underground.json
+|   |       |       large_basalt_columns.json
+|   |       |       large_dripstone.json
+|   |       |       lush_caves_ceiling_vegetation.json
+|   |       |       lush_caves_clay.json
+|   |       |       lush_caves_vegetation.json
+|   |       |       mangrove_checked.json
+|   |       |       mega_jungle_tree_checked.json
+|   |       |       mega_pine_checked.json
+|   |       |       mega_spruce_checked.json
+|   |       |       monster_room.json
+|   |       |       monster_room_deep.json
+|   |       |       mushroom_island_vegetation.json
+|   |       |       nether_sprouts.json
+|   |       |       oak.json
+|   |       |       oak_bees_0002_leaf_litter.json
+|   |       |       oak_bees_002.json
+|   |       |       oak_checked.json
+|   |       |       oak_leaf_litter.json
+|   |       |       ore_ancient_debris_large.json
+|   |       |       ore_andesite_lower.json
+|   |       |       ore_andesite_upper.json
+|   |       |       ore_blackstone.json
+|   |       |       ore_clay.json
+|   |       |       ore_coal_lower.json
+|   |       |       ore_coal_upper.json
+|   |       |       ore_copper.json
+|   |       |       ore_copper_large.json
+|   |       |       ore_debris_small.json
+|   |       |       ore_diamond.json
+|   |       |       ore_diamond_buried.json
+|   |       |       ore_diamond_large.json
+|   |       |       ore_diamond_medium.json
+|   |       |       ore_diorite_lower.json
+|   |       |       ore_diorite_upper.json
+|   |       |       ore_dirt.json
+|   |       |       ore_emerald.json
+|   |       |       ore_gold.json
+|   |       |       ore_gold_deltas.json
+|   |       |       ore_gold_extra.json
+|   |       |       ore_gold_lower.json
+|   |       |       ore_gold_nether.json
+|   |       |       ore_granite_lower.json
+|   |       |       ore_granite_upper.json
+|   |       |       ore_gravel.json
+|   |       |       ore_gravel_nether.json
+|   |       |       ore_infested.json
+|   |       |       ore_iron_middle.json
+|   |       |       ore_iron_small.json
+|   |       |       ore_iron_upper.json
+|   |       |       ore_lapis.json
+|   |       |       ore_lapis_buried.json
+|   |       |       ore_magma.json
+|   |       |       ore_quartz_deltas.json
+|   |       |       ore_quartz_nether.json
+|   |       |       ore_redstone.json
+|   |       |       ore_redstone_lower.json
+|   |       |       ore_soul_sand.json
+|   |       |       ore_tuff.json
+|   |       |       pale_garden_flowers.json
+|   |       |       pale_garden_vegetation.json
+|   |       |       pale_moss_patch.json
+|   |       |       pale_oak_checked.json
+|   |       |       pale_oak_creaking_checked.json
+|   |       |       patch_berry_bush.json
+|   |       |       patch_berry_common.json
+|   |       |       patch_berry_rare.json
+|   |       |       patch_bush.json
+|   |       |       patch_cactus.json
+|   |       |       patch_cactus_decorated.json
+|   |       |       patch_cactus_desert.json
+|   |       |       patch_crimson_roots.json
+|   |       |       patch_dead_bush.json
+|   |       |       patch_dead_bush_2.json
+|   |       |       patch_dead_bush_badlands.json
+|   |       |       patch_dry_grass_badlands.json
+|   |       |       patch_dry_grass_desert.json
+|   |       |       patch_fire.json
+|   |       |       patch_firefly_bush_near_water.json
+|   |       |       patch_firefly_bush_near_water_swamp.json
+|   |       |       patch_firefly_bush_swamp.json
+|   |       |       patch_grass_badlands.json
+|   |       |       patch_grass_forest.json
+|   |       |       patch_grass_jungle.json
+|   |       |       patch_grass_meadow.json
+|   |       |       patch_grass_normal.json
+|   |       |       patch_grass_plain.json
+|   |       |       patch_grass_savanna.json
+|   |       |       patch_grass_taiga.json
+|   |       |       patch_grass_taiga_2.json
+|   |       |       patch_large_fern.json
+|   |       |       patch_leaf_litter.json
+|   |       |       patch_melon.json
+|   |       |       patch_melon_sparse.json
+|   |       |       patch_pumpkin.json
+|   |       |       patch_soul_fire.json
+|   |       |       patch_sugar_cane.json
+|   |       |       patch_sugar_cane_badlands.json
+|   |       |       patch_sugar_cane_desert.json
+|   |       |       patch_sugar_cane_swamp.json
+|   |       |       patch_sunflower.json
+|   |       |       patch_taiga_grass.json
+|   |       |       patch_tall_grass.json
+|   |       |       patch_tall_grass_2.json
+|   |       |       patch_waterlily.json
+|   |       |       pile_hay.json
+|   |       |       pile_ice.json
+|   |       |       pile_melon.json
+|   |       |       pile_pumpkin.json
+|   |       |       pile_snow.json
+|   |       |       pine.json
+|   |       |       pine_checked.json
+|   |       |       pine_on_snow.json
+|   |       |       pointed_dripstone.json
+|   |       |       red_mushroom_nether.json
+|   |       |       red_mushroom_normal.json
+|   |       |       red_mushroom_old_growth.json
+|   |       |       red_mushroom_swamp.json
+|   |       |       red_mushroom_taiga.json
+|   |       |       rooted_azalea_tree.json
+|   |       |       sculk_patch_ancient_city.json
+|   |       |       sculk_patch_deep_dark.json
+|   |       |       sculk_vein.json
+|   |       |       seagrass_cold.json
+|   |       |       seagrass_deep.json
+|   |       |       seagrass_deep_cold.json
+|   |       |       seagrass_deep_warm.json
+|   |       |       seagrass_normal.json
+|   |       |       seagrass_river.json
+|   |       |       seagrass_swamp.json
+|   |       |       seagrass_warm.json
+|   |       |       sea_pickle.json
+|   |       |       small_basalt_columns.json
+|   |       |       spore_blossom.json
+|   |       |       spring_closed.json
+|   |       |       spring_closed_double.json
+|   |       |       spring_delta.json
+|   |       |       spring_lava.json
+|   |       |       spring_lava_frozen.json
+|   |       |       spring_open.json
+|   |       |       spring_water.json
+|   |       |       spruce.json
+|   |       |       spruce_checked.json
+|   |       |       spruce_on_snow.json
+|   |       |       super_birch_bees.json
+|   |       |       super_birch_bees_0002.json
+|   |       |       tall_mangrove_checked.json
+|   |       |       trees_badlands.json
+|   |       |       trees_birch.json
+|   |       |       trees_birch_and_oak_leaf_litter.json
+|   |       |       trees_cherry.json
+|   |       |       trees_flower_forest.json
+|   |       |       trees_grove.json
+|   |       |       trees_jungle.json
+|   |       |       trees_mangrove.json
+|   |       |       trees_meadow.json
+|   |       |       trees_old_growth_pine_taiga.json
+|   |       |       trees_old_growth_spruce_taiga.json
+|   |       |       trees_plains.json
+|   |       |       trees_savanna.json
+|   |       |       trees_snowy.json
+|   |       |       trees_sparse_jungle.json
+|   |       |       trees_swamp.json
+|   |       |       trees_taiga.json
+|   |       |       trees_water.json
+|   |       |       trees_windswept_forest.json
+|   |       |       trees_windswept_hills.json
+|   |       |       trees_windswept_savanna.json
+|   |       |       twisting_vines.json
+|   |       |       underwater_magma.json
+|   |       |       vines.json
+|   |       |       void_start_platform.json
+|   |       |       warm_ocean_vegetation.json
+|   |       |       warped_forest_vegetation.json
+|   |       |       warped_fungi.json
+|   |       |       weeping_vines.json
+|   |       |       wildflowers_birch_forest.json
+|   |       |       wildflowers_meadow.json
+|   |       |       
+|   |       +---processor_list
+|   |       |       ancient_city_generic_degradation.json
+|   |       |       ancient_city_start_degradation.json
+|   |       |       ancient_city_walls_degradation.json
+|   |       |       bastion_generic_degradation.json
+|   |       |       bottom_rampart.json
+|   |       |       bridge.json
+|   |       |       empty.json
+|   |       |       entrance_replacement.json
+|   |       |       farm_desert.json
+|   |       |       farm_plains.json
+|   |       |       farm_savanna.json
+|   |       |       farm_snowy.json
+|   |       |       farm_taiga.json
+|   |       |       fossil_coal.json
+|   |       |       fossil_diamonds.json
+|   |       |       fossil_rot.json
+|   |       |       high_rampart.json
+|   |       |       high_wall.json
+|   |       |       housing.json
+|   |       |       mossify_10_percent.json
+|   |       |       mossify_20_percent.json
+|   |       |       mossify_70_percent.json
+|   |       |       outpost_rot.json
+|   |       |       rampart_degradation.json
+|   |       |       roof.json
+|   |       |       side_wall_degradation.json
+|   |       |       stable_degradation.json
+|   |       |       street_plains.json
+|   |       |       street_savanna.json
+|   |       |       street_snowy_or_taiga.json
+|   |       |       trail_ruins_houses_archaeology.json
+|   |       |       trail_ruins_roads_archaeology.json
+|   |       |       trail_ruins_tower_top_archaeology.json
+|   |       |       treasure_rooms.json
+|   |       |       trial_chambers_copper_bulb_degradation.json
+|   |       |       zombie_desert.json
+|   |       |       zombie_plains.json
+|   |       |       zombie_savanna.json
+|   |       |       zombie_snowy.json
+|   |       |       zombie_taiga.json
+|   |       |       
+|   |       +---structure
+|   |       |       ancient_city.json
+|   |       |       bastion_remnant.json
+|   |       |       buried_treasure.json
+|   |       |       desert_pyramid.json
+|   |       |       end_city.json
+|   |       |       fortress.json
+|   |       |       igloo.json
+|   |       |       jungle_pyramid.json
+|   |       |       mansion.json
+|   |       |       mineshaft.json
+|   |       |       mineshaft_mesa.json
+|   |       |       monument.json
+|   |       |       nether_fossil.json
+|   |       |       ocean_ruin_cold.json
+|   |       |       ocean_ruin_warm.json
+|   |       |       pillager_outpost.json
+|   |       |       ruined_portal.json
+|   |       |       ruined_portal_desert.json
+|   |       |       ruined_portal_jungle.json
+|   |       |       ruined_portal_mountain.json
+|   |       |       ruined_portal_nether.json
+|   |       |       ruined_portal_ocean.json
+|   |       |       ruined_portal_swamp.json
+|   |       |       shipwreck.json
+|   |       |       shipwreck_beached.json
+|   |       |       stronghold.json
+|   |       |       swamp_hut.json
+|   |       |       trail_ruins.json
+|   |       |       trial_chambers.json
+|   |       |       village_desert.json
+|   |       |       village_plains.json
+|   |       |       village_savanna.json
+|   |       |       village_snowy.json
+|   |       |       village_taiga.json
+|   |       |       
+|   |       +---structure_set
+|   |       |       ancient_cities.json
+|   |       |       buried_treasures.json
+|   |       |       desert_pyramids.json
+|   |       |       end_cities.json
+|   |       |       igloos.json
+|   |       |       jungle_temples.json
+|   |       |       mineshafts.json
+|   |       |       nether_complexes.json
+|   |       |       nether_fossils.json
+|   |       |       ocean_monuments.json
+|   |       |       ocean_ruins.json
+|   |       |       pillager_outposts.json
+|   |       |       ruined_portals.json
+|   |       |       shipwrecks.json
+|   |       |       strongholds.json
+|   |       |       swamp_huts.json
+|   |       |       trail_ruins.json
+|   |       |       trial_chambers.json
+|   |       |       villages.json
+|   |       |       woodland_mansions.json
+|   |       |       
+|   |       +---template_pool
+|   |       |   |   empty.json
+|   |       |   |   
+|   |       |   +---ancient_city
+|   |       |   |   |   city_center.json
+|   |       |   |   |   sculk.json
+|   |       |   |   |   structures.json
+|   |       |   |   |   walls.json
+|   |       |   |   |   
+|   |       |   |   +---city
+|   |       |   |   |       entrance.json
+|   |       |   |   |       
+|   |       |   |   +---city_center
+|   |       |   |   |       walls.json
+|   |       |   |   |       
+|   |       |   |   \---walls
+|   |       |   |           no_corners.json
+|   |       |   |           
+|   |       |   +---bastion
+|   |       |   |   |   starts.json
+|   |       |   |   |   
+|   |       |   |   +---blocks
+|   |       |   |   |       gold.json
+|   |       |   |   |       
+|   |       |   |   +---bridge
+|   |       |   |   |       bridge_pieces.json
+|   |       |   |   |       connectors.json
+|   |       |   |   |       legs.json
+|   |       |   |   |       ramparts.json
+|   |       |   |   |       rampart_plates.json
+|   |       |   |   |       starting_pieces.json
+|   |       |   |   |       walls.json
+|   |       |   |   |       
+|   |       |   |   +---hoglin_stable
+|   |       |   |   |   |   connectors.json
+|   |       |   |   |   |   mirrored_starting_pieces.json
+|   |       |   |   |   |   posts.json
+|   |       |   |   |   |   ramparts.json
+|   |       |   |   |   |   rampart_plates.json
+|   |       |   |   |   |   stairs.json
+|   |       |   |   |   |   starting_pieces.json
+|   |       |   |   |   |   walls.json
+|   |       |   |   |   |   wall_bases.json
+|   |       |   |   |   |   
+|   |       |   |   |   +---large_stables
+|   |       |   |   |   |       inner.json
+|   |       |   |   |   |       outer.json
+|   |       |   |   |   |       
+|   |       |   |   |   \---small_stables
+|   |       |   |   |           inner.json
+|   |       |   |   |           outer.json
+|   |       |   |   |           
+|   |       |   |   +---mobs
+|   |       |   |   |       hoglin.json
+|   |       |   |   |       piglin.json
+|   |       |   |   |       piglin_melee.json
+|   |       |   |   |       
+|   |       |   |   +---treasure
+|   |       |   |   |   |   bases.json
+|   |       |   |   |   |   brains.json
+|   |       |   |   |   |   connectors.json
+|   |       |   |   |   |   entrances.json
+|   |       |   |   |   |   ramparts.json
+|   |       |   |   |   |   roofs.json
+|   |       |   |   |   |   stairs.json
+|   |       |   |   |   |   walls.json
+|   |       |   |   |   |   
+|   |       |   |   |   +---bases
+|   |       |   |   |   |       centers.json
+|   |       |   |   |   |       
+|   |       |   |   |   +---corners
+|   |       |   |   |   |       bottom.json
+|   |       |   |   |   |       edges.json
+|   |       |   |   |   |       middle.json
+|   |       |   |   |   |       top.json
+|   |       |   |   |   |       
+|   |       |   |   |   +---extensions
+|   |       |   |   |   |       houses.json
+|   |       |   |   |   |       large_pool.json
+|   |       |   |   |   |       small_pool.json
+|   |       |   |   |   |       
+|   |       |   |   |   \---walls
+|   |       |   |   |           bottom.json
+|   |       |   |   |           mid.json
+|   |       |   |   |           outer.json
+|   |       |   |   |           top.json
+|   |       |   |   |           
+|   |       |   |   \---units
+|   |       |   |       |   center_pieces.json
+|   |       |   |       |   edges.json
+|   |       |   |       |   edge_wall_units.json
+|   |       |   |       |   large_ramparts.json
+|   |       |   |       |   pathways.json
+|   |       |   |       |   ramparts.json
+|   |       |   |       |   rampart_plates.json
+|   |       |   |       |   wall_units.json
+|   |       |   |       |   
+|   |       |   |       +---fillers
+|   |       |   |       |       stage_0.json
+|   |       |   |       |       
+|   |       |   |       +---stages
+|   |       |   |       |   |   stage_0.json
+|   |       |   |       |   |   stage_1.json
+|   |       |   |       |   |   stage_2.json
+|   |       |   |       |   |   stage_3.json
+|   |       |   |       |   |   
+|   |       |   |       |   \---rot
+|   |       |   |       |           stage_1.json
+|   |       |   |       |           
+|   |       |   |       \---walls
+|   |       |   |               wall_bases.json
+|   |       |   |               
+|   |       |   +---pillager_outpost
+|   |       |   |       base_plates.json
+|   |       |   |       features.json
+|   |       |   |       feature_plates.json
+|   |       |   |       towers.json
+|   |       |   |       
+|   |       |   +---trail_ruins
+|   |       |   |   |   buildings.json
+|   |       |   |   |   decor.json
+|   |       |   |   |   roads.json
+|   |       |   |   |   tower.json
+|   |       |   |   |   
+|   |       |   |   +---buildings
+|   |       |   |   |       grouped.json
+|   |       |   |   |       
+|   |       |   |   \---tower
+|   |       |   |           additions.json
+|   |       |   |           tower_top.json
+|   |       |   |           
+|   |       |   +---trial_chambers
+|   |       |   |   |   atrium.json
+|   |       |   |   |   corridor.json
+|   |       |   |   |   decor.json
+|   |       |   |   |   entrance.json
+|   |       |   |   |   hallway.json
+|   |       |   |   |   
+|   |       |   |   +---chamber
+|   |       |   |   |       addon.json
+|   |       |   |   |       assembly.json
+|   |       |   |   |       end.json
+|   |       |   |   |       entrance_cap.json
+|   |       |   |   |       eruption.json
+|   |       |   |   |       pedestal.json
+|   |       |   |   |       slanted.json
+|   |       |   |   |       
+|   |       |   |   +---chambers
+|   |       |   |   |       end.json
+|   |       |   |   |       
+|   |       |   |   +---chests
+|   |       |   |   |   |   supply.json
+|   |       |   |   |   |   
+|   |       |   |   |   \---contents
+|   |       |   |   |           supply.json
+|   |       |   |   |           
+|   |       |   |   +---corridor
+|   |       |   |   |       slices.json
+|   |       |   |   |       
+|   |       |   |   +---corridors
+|   |       |   |   |   \---addon
+|   |       |   |   |           lower.json
+|   |       |   |   |           middle.json
+|   |       |   |   |           middle_upper.json
+|   |       |   |   |           
+|   |       |   |   +---decor
+|   |       |   |   |       bed.json
+|   |       |   |   |       chamber.json
+|   |       |   |   |       disposal.json
+|   |       |   |   |       
+|   |       |   |   +---dispensers
+|   |       |   |   |       chamber.json
+|   |       |   |   |       
+|   |       |   |   +---hallway
+|   |       |   |   |       fallback.json
+|   |       |   |   |       
+|   |       |   |   +---reward
+|   |       |   |   |   |   all.json
+|   |       |   |   |   |   ominous_vault.json
+|   |       |   |   |   |   
+|   |       |   |   |   \---contents
+|   |       |   |   |           default.json
+|   |       |   |   |           
+|   |       |   |   \---spawner
+|   |       |   |       |   all.json
+|   |       |   |       |   breeze.json
+|   |       |   |       |   melee.json
+|   |       |   |       |   ranged.json
+|   |       |   |       |   slow_ranged.json
+|   |       |   |       |   small_melee.json
+|   |       |   |       |   
+|   |       |   |       +---contents
+|   |       |   |       |       breeze.json
+|   |       |   |       |       
+|   |       |   |       +---melee
+|   |       |   |       |       husk.json
+|   |       |   |       |       spider.json
+|   |       |   |       |       zombie.json
+|   |       |   |       |       
+|   |       |   |       +---ranged
+|   |       |   |       |       poison_skeleton.json
+|   |       |   |       |       skeleton.json
+|   |       |   |       |       stray.json
+|   |       |   |       |       
+|   |       |   |       +---slow_ranged
+|   |       |   |       |       poison_skeleton.json
+|   |       |   |       |       skeleton.json
+|   |       |   |       |       stray.json
+|   |       |   |       |       
+|   |       |   |       \---small_melee
+|   |       |   |               baby_zombie.json
+|   |       |   |               cave_spider.json
+|   |       |   |               silverfish.json
+|   |       |   |               slime.json
+|   |       |   |               
+|   |       |   \---village
+|   |       |       +---common
+|   |       |       |       animals.json
+|   |       |       |       butcher_animals.json
+|   |       |       |       cats.json
+|   |       |       |       iron_golem.json
+|   |       |       |       sheep.json
+|   |       |       |       well_bottoms.json
+|   |       |       |       
+|   |       |       +---desert
+|   |       |       |   |   camel.json
+|   |       |       |   |   decor.json
+|   |       |       |   |   houses.json
+|   |       |       |   |   streets.json
+|   |       |       |   |   terminators.json
+|   |       |       |   |   town_centers.json
+|   |       |       |   |   villagers.json
+|   |       |       |   |   
+|   |       |       |   \---zombie
+|   |       |       |           decor.json
+|   |       |       |           houses.json
+|   |       |       |           streets.json
+|   |       |       |           terminators.json
+|   |       |       |           villagers.json
+|   |       |       |           
+|   |       |       +---plains
+|   |       |       |   |   decor.json
+|   |       |       |   |   houses.json
+|   |       |       |   |   streets.json
+|   |       |       |   |   terminators.json
+|   |       |       |   |   town_centers.json
+|   |       |       |   |   trees.json
+|   |       |       |   |   villagers.json
+|   |       |       |   |   
+|   |       |       |   \---zombie
+|   |       |       |           decor.json
+|   |       |       |           houses.json
+|   |       |       |           streets.json
+|   |       |       |           villagers.json
+|   |       |       |           
+|   |       |       +---savanna
+|   |       |       |   |   decor.json
+|   |       |       |   |   houses.json
+|   |       |       |   |   streets.json
+|   |       |       |   |   terminators.json
+|   |       |       |   |   town_centers.json
+|   |       |       |   |   trees.json
+|   |       |       |   |   villagers.json
+|   |       |       |   |   
+|   |       |       |   \---zombie
+|   |       |       |           decor.json
+|   |       |       |           houses.json
+|   |       |       |           streets.json
+|   |       |       |           terminators.json
+|   |       |       |           villagers.json
+|   |       |       |           
+|   |       |       +---snowy
+|   |       |       |   |   decor.json
+|   |       |       |   |   houses.json
+|   |       |       |   |   streets.json
+|   |       |       |   |   terminators.json
+|   |       |       |   |   town_centers.json
+|   |       |       |   |   trees.json
+|   |       |       |   |   villagers.json
+|   |       |       |   |   
+|   |       |       |   \---zombie
+|   |       |       |           decor.json
+|   |       |       |           houses.json
+|   |       |       |           streets.json
+|   |       |       |           villagers.json
+|   |       |       |           
+|   |       |       \---taiga
+|   |       |           |   decor.json
+|   |       |           |   houses.json
+|   |       |           |   streets.json
+|   |       |           |   terminators.json
+|   |       |           |   town_centers.json
+|   |       |           |   villagers.json
+|   |       |           |   
+|   |       |           \---zombie
+|   |       |                   decor.json
+|   |       |                   houses.json
+|   |       |                   streets.json
+|   |       |                   villagers.json
+|   |       |                   
+|   |       \---world_preset
+|   |               amplified.json
+|   |               debug_all_block_states.json
+|   |               flat.json
+|   |               large_biomes.json
+|   |               normal.json
+|   |               single_biome_surface.json
 |   |               
 |   +---towns_and_towers
 |   |   \---tags
@@ -33068,6 +34934,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |               |       sunflower_plains.json
 |               |       
 |               +---terrain
+|               |   |   dripstone_spikes.json
 |               |   |   dripstone_spikes_1.json
 |               |   |   dripstone_spikes_2.json
 |               |   |   dripstone_spikes_3.json
@@ -33519,6 +35386,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                   |   floating_vegetation_plants.json
 |                   |   melon_patch.json
 |                   |   patch_dead_corals_on_gravel.json
+|                   |   patch_pumpkin_farmed.json
 |                   |   patch_roses.json
 |                   |   patch_wheat_farmed.json
 |                   |   thin_jungle_bamboo_patch.json
@@ -33576,6 +35444,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                   |           windbreak_2.json
 |                   |           
 |                   +---fungus
+|                   |       patch_enoki.json
 |                   |       patch_morel.json
 |                   |       
 |                   +---local
@@ -33914,14 +35783,30 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                   |       grass_marsh.json
 |                   |       grass_sudd_marsh.json
 |                   |       leaf_litter.json
+|                   |       seagrass_mixed.json
+|                   |       sea_vines.json
 |                   |       
 |                   \---tree
+|                       |   pale_acacia_stump.json
+|                       |   
 |                       +---dead_spruce
 |                       |       rooted_dirt.json
 |                       |       
 |                       +---huge_jungle
 |                       |       rooted_dirt.json
 |                       |       
+|                       +---huge_sequoia
+|                       |   \---rooted_dirt
+|                       |           1.json
+|                       |           2.json
+|                       |           3.json
+|                       |           
+|                       +---huge_spruce
+|                       |   \---rooted_dirt
+|                       |           1.json
+|                       |           2.json
+|                       |           3.json
+|                       |           
 |                       +---larch
 |                       |       rooted_dirt.json
 |                       |       
@@ -33960,28 +35845,279 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |   |       warm.json
 |       |   |       
 |       |   +---tags
+|       |   |   +---banner_pattern
+|       |   |   |   |   no_item_required.json
+|       |   |   |   |   
+|       |   |   |   \---pattern_item
+|       |   |   |           bordure_indented.json
+|       |   |   |           creeper.json
+|       |   |   |           field_masoned.json
+|       |   |   |           flow.json
+|       |   |   |           flower.json
+|       |   |   |           globe.json
+|       |   |   |           guster.json
+|       |   |   |           mojang.json
+|       |   |   |           piglin.json
+|       |   |   |           skull.json
+|       |   |   |           
 |       |   |   +---block
-|       |   |   |       animals_spawnable_on.json
-|       |   |   |       climbable.json
-|       |   |   |       coral_blocks.json
-|       |   |   |       dead_coral_blocks.json
-|       |   |   |       deepslate_ore_replaceables.json
-|       |   |   |       dirt.json
-|       |   |   |       dry_vegetation_may_place_on.json
-|       |   |   |       foxes_spawnable_on.json
-|       |   |   |       jungle_logs.json
-|       |   |   |       leaves.json
-|       |   |   |       mangrove_logs.json
-|       |   |   |       mangrove_logs_can_grow_through.json
-|       |   |   |       mangrove_roots_can_grow_through.json
-|       |   |   |       mushroom_grow_block.json
-|       |   |   |       nylium.json
-|       |   |   |       replaceable_by_trees.json
-|       |   |   |       sand.json
-|       |   |   |       small_dripleaf_placeable.json
-|       |   |   |       snow_layer_cannot_survive_on.json
-|       |   |   |       water_and_corals.json
-|       |   |   |       
+|       |   |   |   |   acacia_logs.json
+|       |   |   |   |   air.json
+|       |   |   |   |   all_hanging_signs.json
+|       |   |   |   |   all_signs.json
+|       |   |   |   |   ancient_city_replaceable.json
+|       |   |   |   |   animals_spawnable_on.json
+|       |   |   |   |   anvil.json
+|       |   |   |   |   armadillo_spawnable_on.json
+|       |   |   |   |   axolotls_spawnable_on.json
+|       |   |   |   |   azalea_grows_on.json
+|       |   |   |   |   azalea_root_replaceable.json
+|       |   |   |   |   badlands_terracotta.json
+|       |   |   |   |   bamboo_blocks.json
+|       |   |   |   |   banners.json
+|       |   |   |   |   bars.json
+|       |   |   |   |   base_stone_nether.json
+|       |   |   |   |   base_stone_overworld.json
+|       |   |   |   |   bats_spawnable_on.json
+|       |   |   |   |   beacon_base_blocks.json
+|       |   |   |   |   beds.json
+|       |   |   |   |   beehives.json
+|       |   |   |   |   bee_attractive.json
+|       |   |   |   |   bee_growables.json
+|       |   |   |   |   beneath_bamboo_podzol_replaceable.json
+|       |   |   |   |   beneath_tree_podzol_replaceable.json
+|       |   |   |   |   birch_logs.json
+|       |   |   |   |   blocks_wind_charge_explosions.json
+|       |   |   |   |   buttons.json
+|       |   |   |   |   camels_spawnable_on.json
+|       |   |   |   |   camel_sand_step_sound_blocks.json
+|       |   |   |   |   campfires.json
+|       |   |   |   |   candles.json
+|       |   |   |   |   candle_cakes.json
+|       |   |   |   |   cannot_replace_below_tree_trunk.json
+|       |   |   |   |   cannot_support_kelp.json
+|       |   |   |   |   cannot_support_seagrass.json
+|       |   |   |   |   cannot_support_snow_layer.json
+|       |   |   |   |   can_glide_through.json
+|       |   |   |   |   cauldrons.json
+|       |   |   |   |   cave_vines.json
+|       |   |   |   |   ceiling_hanging_signs.json
+|       |   |   |   |   chains.json
+|       |   |   |   |   cherry_logs.json
+|       |   |   |   |   climbable.json
+|       |   |   |   |   coal_ores.json
+|       |   |   |   |   combination_step_sound_blocks.json
+|       |   |   |   |   completes_find_tree_tutorial.json
+|       |   |   |   |   concrete_powder.json
+|       |   |   |   |   convertable_to_mud.json
+|       |   |   |   |   copper.json
+|       |   |   |   |   copper_chests.json
+|       |   |   |   |   copper_golem_statues.json
+|       |   |   |   |   copper_ores.json
+|       |   |   |   |   corals.json
+|       |   |   |   |   coral_blocks.json
+|       |   |   |   |   coral_plants.json
+|       |   |   |   |   crimson_stems.json
+|       |   |   |   |   crops.json
+|       |   |   |   |   crystal_sound_blocks.json
+|       |   |   |   |   dampens_vibrations.json
+|       |   |   |   |   dark_oak_logs.json
+|       |   |   |   |   dead_coral_blocks.json
+|       |   |   |   |   deepslate_ore_replaceables.json
+|       |   |   |   |   diamond_ores.json
+|       |   |   |   |   dirt.json
+|       |   |   |   |   does_not_block_hoppers.json
+|       |   |   |   |   doors.json
+|       |   |   |   |   dragon_immune.json
+|       |   |   |   |   dragon_transparent.json
+|       |   |   |   |   dripstone_replaceable_blocks.json
+|       |   |   |   |   dry_vegetation_may_place_on.json
+|       |   |   |   |   edible_for_sheep.json
+|       |   |   |   |   emerald_ores.json
+|       |   |   |   |   enables_bubble_column_drag_down.json
+|       |   |   |   |   enables_bubble_column_push_up.json
+|       |   |   |   |   enchantment_power_provider.json
+|       |   |   |   |   enchantment_power_transmitter.json
+|       |   |   |   |   enderman_holdable.json
+|       |   |   |   |   fall_damage_resetting.json
+|       |   |   |   |   features_cannot_replace.json
+|       |   |   |   |   fences.json
+|       |   |   |   |   fence_gates.json
+|       |   |   |   |   fire.json
+|       |   |   |   |   flowers.json
+|       |   |   |   |   flower_pots.json
+|       |   |   |   |   forest_rock_can_place_on.json
+|       |   |   |   |   foxes_spawnable_on.json
+|       |   |   |   |   frogs_spawnable_on.json
+|       |   |   |   |   frog_prefer_jump_to.json
+|       |   |   |   |   geode_invalid_blocks.json
+|       |   |   |   |   goats_spawnable_on.json
+|       |   |   |   |   gold_ores.json
+|       |   |   |   |   grass_blocks.json
+|       |   |   |   |   grows_crops.json
+|       |   |   |   |   guarded_by_piglins.json
+|       |   |   |   |   happy_ghast_avoids.json
+|       |   |   |   |   hoglin_repellents.json
+|       |   |   |   |   huge_brown_mushroom_can_place_on.json
+|       |   |   |   |   huge_red_mushroom_can_place_on.json
+|       |   |   |   |   ice.json
+|       |   |   |   |   ice_spike_replaceable.json
+|       |   |   |   |   impermeable.json
+|       |   |   |   |   incorrect_for_copper_tool.json
+|       |   |   |   |   incorrect_for_diamond_tool.json
+|       |   |   |   |   incorrect_for_gold_tool.json
+|       |   |   |   |   incorrect_for_iron_tool.json
+|       |   |   |   |   incorrect_for_netherite_tool.json
+|       |   |   |   |   incorrect_for_stone_tool.json
+|       |   |   |   |   incorrect_for_wooden_tool.json
+|       |   |   |   |   infiniburn_end.json
+|       |   |   |   |   infiniburn_nether.json
+|       |   |   |   |   infiniburn_overworld.json
+|       |   |   |   |   inside_step_sound_blocks.json
+|       |   |   |   |   invalid_spawn_inside.json
+|       |   |   |   |   iron_ores.json
+|       |   |   |   |   jungle_logs.json
+|       |   |   |   |   lanterns.json
+|       |   |   |   |   lapis_ores.json
+|       |   |   |   |   lava_pool_stone_cannot_replace.json
+|       |   |   |   |   leaves.json
+|       |   |   |   |   lightning_rods.json
+|       |   |   |   |   logs.json
+|       |   |   |   |   logs_that_burn.json
+|       |   |   |   |   lush_ground_replaceable.json
+|       |   |   |   |   maintains_farmland.json
+|       |   |   |   |   mangrove_logs.json
+|       |   |   |   |   mangrove_logs_can_grow_through.json
+|       |   |   |   |   mangrove_roots_can_grow_through.json
+|       |   |   |   |   mob_interactable_doors.json
+|       |   |   |   |   mooshrooms_spawnable_on.json
+|       |   |   |   |   moss_blocks.json
+|       |   |   |   |   moss_replaceable.json
+|       |   |   |   |   mud.json
+|       |   |   |   |   mushroom_grow_block.json
+|       |   |   |   |   needs_diamond_tool.json
+|       |   |   |   |   needs_iron_tool.json
+|       |   |   |   |   needs_stone_tool.json
+|       |   |   |   |   nether_carver_replaceables.json
+|       |   |   |   |   nylium.json
+|       |   |   |   |   oak_logs.json
+|       |   |   |   |   occludes_vibration_signals.json
+|       |   |   |   |   overrides_mushroom_light_requirement.json
+|       |   |   |   |   overworld_carver_replaceables.json
+|       |   |   |   |   overworld_natural_logs.json
+|       |   |   |   |   pale_oak_logs.json
+|       |   |   |   |   parrots_spawnable_on.json
+|       |   |   |   |   piglin_repellents.json
+|       |   |   |   |   planks.json
+|       |   |   |   |   polar_bears_spawnable_on_alternate.json
+|       |   |   |   |   portals.json
+|       |   |   |   |   pressure_plates.json
+|       |   |   |   |   prevents_nearby_leaf_decay.json
+|       |   |   |   |   prevent_mob_spawning_inside.json
+|       |   |   |   |   rabbits_spawnable_on.json
+|       |   |   |   |   rails.json
+|       |   |   |   |   redstone_ores.json
+|       |   |   |   |   replaceable.json
+|       |   |   |   |   replaceable_by_mushrooms.json
+|       |   |   |   |   replaceable_by_trees.json
+|       |   |   |   |   sand.json
+|       |   |   |   |   saplings.json
+|       |   |   |   |   sculk_replaceable.json
+|       |   |   |   |   sculk_replaceable_world_gen.json
+|       |   |   |   |   shulker_boxes.json
+|       |   |   |   |   signs.json
+|       |   |   |   |   slabs.json
+|       |   |   |   |   small_dripleaf_placeable.json
+|       |   |   |   |   small_flowers.json
+|       |   |   |   |   smelts_to_glass.json
+|       |   |   |   |   snaps_goat_horn.json
+|       |   |   |   |   sniffer_diggable_block.json
+|       |   |   |   |   sniffer_egg_hatch_boost.json
+|       |   |   |   |   snow.json
+|       |   |   |   |   snow_layer_cannot_survive_on.json
+|       |   |   |   |   soul_fire_base_blocks.json
+|       |   |   |   |   soul_speed_blocks.json
+|       |   |   |   |   spruce_logs.json
+|       |   |   |   |   stairs.json
+|       |   |   |   |   standing_signs.json
+|       |   |   |   |   stone_bricks.json
+|       |   |   |   |   stone_buttons.json
+|       |   |   |   |   stone_ore_replaceables.json
+|       |   |   |   |   stone_pressure_plates.json
+|       |   |   |   |   strider_warm_blocks.json
+|       |   |   |   |   substrate_overworld.json
+|       |   |   |   |   supports_azalea.json
+|       |   |   |   |   supports_bamboo.json
+|       |   |   |   |   supports_big_dripleaf.json
+|       |   |   |   |   supports_cactus.json
+|       |   |   |   |   supports_chorus_flower.json
+|       |   |   |   |   supports_chorus_plant.json
+|       |   |   |   |   supports_cocoa.json
+|       |   |   |   |   supports_crimson_fungus.json
+|       |   |   |   |   supports_crimson_roots.json
+|       |   |   |   |   supports_crops.json
+|       |   |   |   |   supports_dry_vegetation.json
+|       |   |   |   |   supports_frogspawn.json
+|       |   |   |   |   supports_hanging_mangrove_propagule.json
+|       |   |   |   |   supports_lily_pad.json
+|       |   |   |   |   supports_mangrove_propagule.json
+|       |   |   |   |   supports_melon_stem.json
+|       |   |   |   |   supports_melon_stem_fruit.json
+|       |   |   |   |   supports_nether_sprouts.json
+|       |   |   |   |   supports_nether_wart.json
+|       |   |   |   |   supports_pumpkin_stem.json
+|       |   |   |   |   supports_pumpkin_stem_fruit.json
+|       |   |   |   |   supports_small_dripleaf.json
+|       |   |   |   |   supports_stem_crops.json
+|       |   |   |   |   supports_stem_fruit.json
+|       |   |   |   |   supports_sugar_cane.json
+|       |   |   |   |   supports_sugar_cane_adjacently.json
+|       |   |   |   |   supports_vegetation.json
+|       |   |   |   |   supports_warped_fungus.json
+|       |   |   |   |   supports_warped_roots.json
+|       |   |   |   |   supports_wither_rose.json
+|       |   |   |   |   support_override_cactus_flower.json
+|       |   |   |   |   support_override_snow_layer.json
+|       |   |   |   |   sword_efficient.json
+|       |   |   |   |   sword_instantly_mines.json
+|       |   |   |   |   terracotta.json
+|       |   |   |   |   trail_ruins_replaceable.json
+|       |   |   |   |   trapdoors.json
+|       |   |   |   |   triggers_ambient_desert_dry_vegetation_block_sounds.json
+|       |   |   |   |   triggers_ambient_desert_sand_block_sounds.json
+|       |   |   |   |   triggers_ambient_dried_ghast_block_sounds.json
+|       |   |   |   |   underwater_bonemeals.json
+|       |   |   |   |   unstable_bottom_center.json
+|       |   |   |   |   valid_spawn.json
+|       |   |   |   |   vibration_resonators.json
+|       |   |   |   |   walls.json
+|       |   |   |   |   wall_corals.json
+|       |   |   |   |   wall_hanging_signs.json
+|       |   |   |   |   wall_post_override.json
+|       |   |   |   |   wall_signs.json
+|       |   |   |   |   warped_stems.json
+|       |   |   |   |   wart_blocks.json
+|       |   |   |   |   water_and_corals.json
+|       |   |   |   |   wither_immune.json
+|       |   |   |   |   wither_summon_base_blocks.json
+|       |   |   |   |   wolves_spawnable_on.json
+|       |   |   |   |   wooden_buttons.json
+|       |   |   |   |   wooden_doors.json
+|       |   |   |   |   wooden_fences.json
+|       |   |   |   |   wooden_pressure_plates.json
+|       |   |   |   |   wooden_shelves.json
+|       |   |   |   |   wooden_slabs.json
+|       |   |   |   |   wooden_stairs.json
+|       |   |   |   |   wooden_trapdoors.json
+|       |   |   |   |   wool.json
+|       |   |   |   |   wool_carpets.json
+|       |   |   |   |   
+|       |   |   |   \---mineable
+|       |   |   |           axe.json
+|       |   |   |           hoe.json
+|       |   |   |           pickaxe.json
+|       |   |   |           shovel.json
+|       |   |   |           
 |       |   |   +---blocks
 |       |   |   |       deepslate_ore_replaceables.json
 |       |   |   |       mangrove_logs.json
@@ -33991,13 +36127,576 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |   |   |       polar_bears_spawnable_on_alternate.json
 |       |   |   |       snow_layer_cannot_survive_on.json
 |       |   |   |       
+|       |   |   +---damage_type
+|       |   |   |       always_hurts_ender_dragons.json
+|       |   |   |       always_kills_armor_stands.json
+|       |   |   |       always_most_significant_fall.json
+|       |   |   |       always_triggers_silverfish.json
+|       |   |   |       avoids_guardian_thorns.json
+|       |   |   |       burns_armor_stands.json
+|       |   |   |       burn_from_stepping.json
+|       |   |   |       bypasses_armor.json
+|       |   |   |       bypasses_effects.json
+|       |   |   |       bypasses_enchantments.json
+|       |   |   |       bypasses_invulnerability.json
+|       |   |   |       bypasses_resistance.json
+|       |   |   |       bypasses_shield.json
+|       |   |   |       bypasses_wolf_armor.json
+|       |   |   |       can_break_armor_stand.json
+|       |   |   |       damages_helmet.json
+|       |   |   |       ignites_armor_stands.json
+|       |   |   |       is_drowning.json
+|       |   |   |       is_explosion.json
+|       |   |   |       is_fall.json
+|       |   |   |       is_fire.json
+|       |   |   |       is_freezing.json
+|       |   |   |       is_lightning.json
+|       |   |   |       is_player_attack.json
+|       |   |   |       is_projectile.json
+|       |   |   |       mace_smash.json
+|       |   |   |       no_anger.json
+|       |   |   |       no_impact.json
+|       |   |   |       no_knockback.json
+|       |   |   |       panic_causes.json
+|       |   |   |       panic_environmental_causes.json
+|       |   |   |       witch_resistant_to.json
+|       |   |   |       wither_immune_to.json
+|       |   |   |       
+|       |   |   +---dialog
+|       |   |   |       pause_screen_additions.json
+|       |   |   |       quick_actions.json
+|       |   |   |       
+|       |   |   +---enchantment
+|       |   |   |   |   curse.json
+|       |   |   |   |   double_trade_price.json
+|       |   |   |   |   in_enchanting_table.json
+|       |   |   |   |   non_treasure.json
+|       |   |   |   |   on_mob_spawn_equipment.json
+|       |   |   |   |   on_random_loot.json
+|       |   |   |   |   on_traded_equipment.json
+|       |   |   |   |   prevents_bee_spawns_when_mining.json
+|       |   |   |   |   prevents_decorated_pot_shattering.json
+|       |   |   |   |   prevents_ice_melting.json
+|       |   |   |   |   prevents_infested_spawns.json
+|       |   |   |   |   smelts_loot.json
+|       |   |   |   |   tooltip_order.json
+|       |   |   |   |   tradeable.json
+|       |   |   |   |   treasure.json
+|       |   |   |   |   
+|       |   |   |   \---exclusive_set
+|       |   |   |           armor.json
+|       |   |   |           boots.json
+|       |   |   |           bow.json
+|       |   |   |           crossbow.json
+|       |   |   |           damage.json
+|       |   |   |           mining.json
+|       |   |   |           riptide.json
+|       |   |   |           
+|       |   |   +---entity_type
+|       |   |   |       accepts_iron_golem_gift.json
+|       |   |   |       aquatic.json
+|       |   |   |       arrows.json
+|       |   |   |       arthropod.json
+|       |   |   |       axolotl_always_hostiles.json
+|       |   |   |       axolotl_hunt_targets.json
+|       |   |   |       beehive_inhabitors.json
+|       |   |   |       boat.json
+|       |   |   |       burn_in_daylight.json
+|       |   |   |       candidate_for_iron_golem_gift.json
+|       |   |   |       cannot_be_age_locked.json
+|       |   |   |       cannot_be_pushed_onto_boats.json
+|       |   |   |       can_breathe_under_water.json
+|       |   |   |       can_equip_harness.json
+|       |   |   |       can_equip_saddle.json
+|       |   |   |       can_float_while_ridden.json
+|       |   |   |       can_turn_in_boats.json
+|       |   |   |       can_wear_horse_armor.json
+|       |   |   |       can_wear_nautilus_armor.json
+|       |   |   |       deflects_projectiles.json
+|       |   |   |       dismounts_underwater.json
+|       |   |   |       fall_damage_immune.json
+|       |   |   |       followable_friendly_mobs.json
+|       |   |   |       freeze_hurts_extra_types.json
+|       |   |   |       freeze_immune_entity_types.json
+|       |   |   |       frog_food.json
+|       |   |   |       ignores_poison_and_regen.json
+|       |   |   |       illager.json
+|       |   |   |       illager_friends.json
+|       |   |   |       immune_to_infested.json
+|       |   |   |       immune_to_oozing.json
+|       |   |   |       impact_projectiles.json
+|       |   |   |       inverted_healing_and_harm.json
+|       |   |   |       nautilus_hostiles.json
+|       |   |   |       non_controlling_rider.json
+|       |   |   |       not_scary_for_pufferfish.json
+|       |   |   |       no_anger_from_wind_charge.json
+|       |   |   |       powder_snow_walkable_mobs.json
+|       |   |   |       raiders.json
+|       |   |   |       redirectable_projectile.json
+|       |   |   |       sensitive_to_bane_of_arthropods.json
+|       |   |   |       sensitive_to_impaling.json
+|       |   |   |       sensitive_to_smite.json
+|       |   |   |       skeletons.json
+|       |   |   |       undead.json
+|       |   |   |       wither_friends.json
+|       |   |   |       zombies.json
+|       |   |   |       
+|       |   |   +---fluid
+|       |   |   |       bubble_column_can_occupy.json
+|       |   |   |       lava.json
+|       |   |   |       supports_frogspawn.json
+|       |   |   |       supports_lily_pad.json
+|       |   |   |       supports_sugar_cane_adjacently.json
+|       |   |   |       water.json
+|       |   |   |       
+|       |   |   +---game_event
+|       |   |   |       allay_can_listen.json
+|       |   |   |       ignore_vibrations_sneaking.json
+|       |   |   |       shrieker_can_listen.json
+|       |   |   |       vibrations.json
+|       |   |   |       warden_can_listen.json
+|       |   |   |       
+|       |   |   +---instrument
+|       |   |   |       goat_horns.json
+|       |   |   |       regular_goat_horns.json
+|       |   |   |       screaming_goat_horns.json
+|       |   |   |       
+|       |   |   +---item
+|       |   |   |   |   acacia_logs.json
+|       |   |   |   |   anvil.json
+|       |   |   |   |   armadillo_food.json
+|       |   |   |   |   arrows.json
+|       |   |   |   |   axes.json
+|       |   |   |   |   axolotl_food.json
+|       |   |   |   |   bamboo_blocks.json
+|       |   |   |   |   banners.json
+|       |   |   |   |   bars.json
+|       |   |   |   |   beacon_payment_items.json
+|       |   |   |   |   beds.json
+|       |   |   |   |   bee_food.json
+|       |   |   |   |   birch_logs.json
+|       |   |   |   |   boats.json
+|       |   |   |   |   bookshelf_books.json
+|       |   |   |   |   book_cloning_target.json
+|       |   |   |   |   breaks_decorated_pots.json
+|       |   |   |   |   brewing_fuel.json
+|       |   |   |   |   bundles.json
+|       |   |   |   |   buttons.json
+|       |   |   |   |   camel_food.json
+|       |   |   |   |   camel_husk_food.json
+|       |   |   |   |   candles.json
+|       |   |   |   |   cat_collar_dyes.json
+|       |   |   |   |   cat_food.json
+|       |   |   |   |   cauldron_can_remove_dye.json
+|       |   |   |   |   chains.json
+|       |   |   |   |   cherry_logs.json
+|       |   |   |   |   chest_armor.json
+|       |   |   |   |   chest_boats.json
+|       |   |   |   |   chicken_food.json
+|       |   |   |   |   cluster_max_harvestables.json
+|       |   |   |   |   coals.json
+|       |   |   |   |   coal_ores.json
+|       |   |   |   |   compasses.json
+|       |   |   |   |   completes_find_tree_tutorial.json
+|       |   |   |   |   copper.json
+|       |   |   |   |   copper_chests.json
+|       |   |   |   |   copper_golem_statues.json
+|       |   |   |   |   copper_ores.json
+|       |   |   |   |   copper_tool_materials.json
+|       |   |   |   |   cow_food.json
+|       |   |   |   |   creeper_drop_music_discs.json
+|       |   |   |   |   creeper_igniters.json
+|       |   |   |   |   crimson_stems.json
+|       |   |   |   |   dampens_vibrations.json
+|       |   |   |   |   dark_oak_logs.json
+|       |   |   |   |   decorated_pot_ingredients.json
+|       |   |   |   |   decorated_pot_sherds.json
+|       |   |   |   |   diamond_ores.json
+|       |   |   |   |   diamond_tool_materials.json
+|       |   |   |   |   dirt.json
+|       |   |   |   |   doors.json
+|       |   |   |   |   drowned_preferred_weapons.json
+|       |   |   |   |   duplicates_allays.json
+|       |   |   |   |   dyes.json
+|       |   |   |   |   eggs.json
+|       |   |   |   |   emerald_ores.json
+|       |   |   |   |   fences.json
+|       |   |   |   |   fence_gates.json
+|       |   |   |   |   fishes.json
+|       |   |   |   |   flowers.json
+|       |   |   |   |   foot_armor.json
+|       |   |   |   |   fox_food.json
+|       |   |   |   |   freeze_immune_wearables.json
+|       |   |   |   |   frog_food.json
+|       |   |   |   |   furnace_minecart_fuel.json
+|       |   |   |   |   gaze_disguise_equipment.json
+|       |   |   |   |   goat_food.json
+|       |   |   |   |   gold_ores.json
+|       |   |   |   |   gold_tool_materials.json
+|       |   |   |   |   grass_blocks.json
+|       |   |   |   |   hanging_signs.json
+|       |   |   |   |   happy_ghast_food.json
+|       |   |   |   |   happy_ghast_tempt_items.json
+|       |   |   |   |   harnesses.json
+|       |   |   |   |   head_armor.json
+|       |   |   |   |   hoes.json
+|       |   |   |   |   hoglin_food.json
+|       |   |   |   |   horse_food.json
+|       |   |   |   |   horse_tempt_items.json
+|       |   |   |   |   ignored_by_piglin_babies.json
+|       |   |   |   |   iron_ores.json
+|       |   |   |   |   iron_tool_materials.json
+|       |   |   |   |   jungle_logs.json
+|       |   |   |   |   lanterns.json
+|       |   |   |   |   lapis_ores.json
+|       |   |   |   |   leaves.json
+|       |   |   |   |   lectern_books.json
+|       |   |   |   |   leg_armor.json
+|       |   |   |   |   lightning_rods.json
+|       |   |   |   |   llama_food.json
+|       |   |   |   |   llama_tempt_items.json
+|       |   |   |   |   logs.json
+|       |   |   |   |   logs_that_burn.json
+|       |   |   |   |   loom_dyes.json
+|       |   |   |   |   loom_patterns.json
+|       |   |   |   |   mangrove_logs.json
+|       |   |   |   |   map_invisibility_equipment.json
+|       |   |   |   |   meat.json
+|       |   |   |   |   metal_nuggets.json
+|       |   |   |   |   moss_blocks.json
+|       |   |   |   |   mud.json
+|       |   |   |   |   nautilus_bucket_food.json
+|       |   |   |   |   nautilus_food.json
+|       |   |   |   |   nautilus_taming_items.json
+|       |   |   |   |   netherite_tool_materials.json
+|       |   |   |   |   non_flammable_wood.json
+|       |   |   |   |   noteblock_top_instruments.json
+|       |   |   |   |   oak_logs.json
+|       |   |   |   |   ocelot_food.json
+|       |   |   |   |   pale_oak_logs.json
+|       |   |   |   |   panda_eats_from_ground.json
+|       |   |   |   |   panda_food.json
+|       |   |   |   |   parrot_food.json
+|       |   |   |   |   parrot_poisonous_food.json
+|       |   |   |   |   pickaxes.json
+|       |   |   |   |   piglin_food.json
+|       |   |   |   |   piglin_loved.json
+|       |   |   |   |   piglin_preferred_weapons.json
+|       |   |   |   |   piglin_repellents.json
+|       |   |   |   |   piglin_safe_armor.json
+|       |   |   |   |   pig_food.json
+|       |   |   |   |   pillager_preferred_weapons.json
+|       |   |   |   |   planks.json
+|       |   |   |   |   rabbit_food.json
+|       |   |   |   |   rails.json
+|       |   |   |   |   redstone_ores.json
+|       |   |   |   |   repairs_chain_armor.json
+|       |   |   |   |   repairs_copper_armor.json
+|       |   |   |   |   repairs_diamond_armor.json
+|       |   |   |   |   repairs_gold_armor.json
+|       |   |   |   |   repairs_iron_armor.json
+|       |   |   |   |   repairs_leather_armor.json
+|       |   |   |   |   repairs_netherite_armor.json
+|       |   |   |   |   repairs_turtle_helmet.json
+|       |   |   |   |   repairs_wolf_armor.json
+|       |   |   |   |   sand.json
+|       |   |   |   |   saplings.json
+|       |   |   |   |   shearable_from_copper_golem.json
+|       |   |   |   |   sheep_food.json
+|       |   |   |   |   shovels.json
+|       |   |   |   |   shulker_boxes.json
+|       |   |   |   |   signs.json
+|       |   |   |   |   skeleton_preferred_weapons.json
+|       |   |   |   |   skulls.json
+|       |   |   |   |   slabs.json
+|       |   |   |   |   small_flowers.json
+|       |   |   |   |   smelts_to_glass.json
+|       |   |   |   |   sniffer_food.json
+|       |   |   |   |   soul_fire_base_blocks.json
+|       |   |   |   |   spears.json
+|       |   |   |   |   spruce_logs.json
+|       |   |   |   |   stairs.json
+|       |   |   |   |   stone_bricks.json
+|       |   |   |   |   stone_buttons.json
+|       |   |   |   |   stone_crafting_materials.json
+|       |   |   |   |   stone_tool_materials.json
+|       |   |   |   |   strider_food.json
+|       |   |   |   |   strider_tempt_items.json
+|       |   |   |   |   swords.json
+|       |   |   |   |   terracotta.json
+|       |   |   |   |   trapdoors.json
+|       |   |   |   |   trimmable_armor.json
+|       |   |   |   |   trim_materials.json
+|       |   |   |   |   turtle_food.json
+|       |   |   |   |   villager_picks_up.json
+|       |   |   |   |   villager_plantable_seeds.json
+|       |   |   |   |   walls.json
+|       |   |   |   |   warped_stems.json
+|       |   |   |   |   wart_blocks.json
+|       |   |   |   |   wither_skeleton_disliked_weapons.json
+|       |   |   |   |   wolf_collar_dyes.json
+|       |   |   |   |   wolf_food.json
+|       |   |   |   |   wooden_buttons.json
+|       |   |   |   |   wooden_doors.json
+|       |   |   |   |   wooden_fences.json
+|       |   |   |   |   wooden_pressure_plates.json
+|       |   |   |   |   wooden_shelves.json
+|       |   |   |   |   wooden_slabs.json
+|       |   |   |   |   wooden_stairs.json
+|       |   |   |   |   wooden_tool_materials.json
+|       |   |   |   |   wooden_trapdoors.json
+|       |   |   |   |   wool.json
+|       |   |   |   |   wool_carpets.json
+|       |   |   |   |   zombie_horse_food.json
+|       |   |   |   |   
+|       |   |   |   \---enchantable
+|       |   |   |           armor.json
+|       |   |   |           bow.json
+|       |   |   |           chest_armor.json
+|       |   |   |           crossbow.json
+|       |   |   |           durability.json
+|       |   |   |           equippable.json
+|       |   |   |           fire_aspect.json
+|       |   |   |           fishing.json
+|       |   |   |           foot_armor.json
+|       |   |   |           head_armor.json
+|       |   |   |           leg_armor.json
+|       |   |   |           lunge.json
+|       |   |   |           mace.json
+|       |   |   |           melee_weapon.json
+|       |   |   |           mining.json
+|       |   |   |           mining_loot.json
+|       |   |   |           sharp_weapon.json
+|       |   |   |           sweeping.json
+|       |   |   |           trident.json
+|       |   |   |           vanishing.json
+|       |   |   |           weapon.json
+|       |   |   |           
+|       |   |   +---painting_variant
+|       |   |   |       placeable.json
+|       |   |   |       
+|       |   |   +---point_of_interest_type
+|       |   |   |       acquirable_job_site.json
+|       |   |   |       bee_home.json
+|       |   |   |       village.json
+|       |   |   |       
+|       |   |   +---potion
+|       |   |   |       tradeable.json
+|       |   |   |       
+|       |   |   +---timeline
+|       |   |   |       in_end.json
+|       |   |   |       in_nether.json
+|       |   |   |       in_overworld.json
+|       |   |   |       universal.json
+|       |   |   |       
+|       |   |   +---villager_trade
+|       |   |   |   +---armorer
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---butcher
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---cartographer
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---cleric
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---common_smith
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---farmer
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---fisherman
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---fletcher
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---leatherworker
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---librarian
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---mason
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---shepherd
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---toolsmith
+|       |   |   |   |       level_1.json
+|       |   |   |   |       level_2.json
+|       |   |   |   |       level_3.json
+|       |   |   |   |       level_4.json
+|       |   |   |   |       level_5.json
+|       |   |   |   |       
+|       |   |   |   +---wandering_trader
+|       |   |   |   |       buying.json
+|       |   |   |   |       common.json
+|       |   |   |   |       uncommon.json
+|       |   |   |   |       
+|       |   |   |   \---weaponsmith
+|       |   |   |           level_1.json
+|       |   |   |           level_2.json
+|       |   |   |           level_3.json
+|       |   |   |           level_4.json
+|       |   |   |           level_5.json
+|       |   |   |           
 |       |   |   \---worldgen
-|       |   |       \---biome
-|       |   |               spawns_cold_variant_farm_animals.json
-|       |   |               spawns_cold_variant_frogs.json
-|       |   |               spawns_snow_foxes.json
-|       |   |               spawns_warm_variant_farm_animals.json
-|       |   |               spawns_warm_variant_frogs.json
+|       |   |       +---biome
+|       |   |       |   |   allows_surface_slime_spawns.json
+|       |   |       |   |   allows_tropical_fish_spawns_at_any_height.json
+|       |   |       |   |   is_badlands.json
+|       |   |       |   |   is_beach.json
+|       |   |       |   |   is_deep_ocean.json
+|       |   |       |   |   is_end.json
+|       |   |       |   |   is_forest.json
+|       |   |       |   |   is_hill.json
+|       |   |       |   |   is_jungle.json
+|       |   |       |   |   is_mountain.json
+|       |   |       |   |   is_nether.json
+|       |   |       |   |   is_ocean.json
+|       |   |       |   |   is_overworld.json
+|       |   |       |   |   is_river.json
+|       |   |       |   |   is_savanna.json
+|       |   |       |   |   is_taiga.json
+|       |   |       |   |   mineshaft_blocking.json
+|       |   |       |   |   more_frequent_drowned_spawns.json
+|       |   |       |   |   polar_bears_spawn_on_alternate_blocks.json
+|       |   |       |   |   produces_corals_from_bonemeal.json
+|       |   |       |   |   reduce_water_ambient_spawns.json
+|       |   |       |   |   required_ocean_monument_surrounding.json
+|       |   |       |   |   spawns_cold_variant_farm_animals.json
+|       |   |       |   |   spawns_cold_variant_frogs.json
+|       |   |       |   |   spawns_coral_variant_zombie_nautilus.json
+|       |   |       |   |   spawns_gold_rabbits.json
+|       |   |       |   |   spawns_snow_foxes.json
+|       |   |       |   |   spawns_warm_variant_farm_animals.json
+|       |   |       |   |   spawns_warm_variant_frogs.json
+|       |   |       |   |   spawns_white_rabbits.json
+|       |   |       |   |   stronghold_biased_to.json
+|       |   |       |   |   water_on_map_outlines.json
+|       |   |       |   |   without_wandering_trader_spawns.json
+|       |   |       |   |   without_zombie_sieges.json
+|       |   |       |   |   
+|       |   |       |   \---has_structure
+|       |   |       |           ancient_city.json
+|       |   |       |           bastion_remnant.json
+|       |   |       |           buried_treasure.json
+|       |   |       |           desert_pyramid.json
+|       |   |       |           end_city.json
+|       |   |       |           igloo.json
+|       |   |       |           jungle_temple.json
+|       |   |       |           mineshaft.json
+|       |   |       |           mineshaft_mesa.json
+|       |   |       |           nether_fortress.json
+|       |   |       |           nether_fossil.json
+|       |   |       |           ocean_monument.json
+|       |   |       |           ocean_ruin_cold.json
+|       |   |       |           ocean_ruin_warm.json
+|       |   |       |           pillager_outpost.json
+|       |   |       |           ruined_portal_desert.json
+|       |   |       |           ruined_portal_jungle.json
+|       |   |       |           ruined_portal_mountain.json
+|       |   |       |           ruined_portal_nether.json
+|       |   |       |           ruined_portal_ocean.json
+|       |   |       |           ruined_portal_standard.json
+|       |   |       |           ruined_portal_swamp.json
+|       |   |       |           shipwreck.json
+|       |   |       |           shipwreck_beached.json
+|       |   |       |           stronghold.json
+|       |   |       |           swamp_hut.json
+|       |   |       |           trail_ruins.json
+|       |   |       |           trial_chambers.json
+|       |   |       |           village_desert.json
+|       |   |       |           village_plains.json
+|       |   |       |           village_savanna.json
+|       |   |       |           village_snowy.json
+|       |   |       |           village_taiga.json
+|       |   |       |           woodland_mansion.json
+|       |   |       |           
+|       |   |       +---configured_feature
+|       |   |       |       can_spawn_from_bone_meal.json
+|       |   |       |       
+|       |   |       +---flat_level_generator_preset
+|       |   |       |       visible.json
+|       |   |       |       
+|       |   |       +---structure
+|       |   |       |       cats_spawn_as_black.json
+|       |   |       |       cats_spawn_in.json
+|       |   |       |       dolphin_located.json
+|       |   |       |       eye_of_ender_located.json
+|       |   |       |       mineshaft.json
+|       |   |       |       ocean_ruin.json
+|       |   |       |       on_desert_village_maps.json
+|       |   |       |       on_jungle_explorer_maps.json
+|       |   |       |       on_ocean_explorer_maps.json
+|       |   |       |       on_plains_village_maps.json
+|       |   |       |       on_savanna_village_maps.json
+|       |   |       |       on_snowy_village_maps.json
+|       |   |       |       on_swamp_explorer_maps.json
+|       |   |       |       on_taiga_village_maps.json
+|       |   |       |       on_treasure_maps.json
+|       |   |       |       on_trial_chambers_maps.json
+|       |   |       |       on_woodland_explorer_maps.json
+|       |   |       |       ruined_portal.json
+|       |   |       |       shipwreck.json
+|       |   |       |       village.json
+|       |   |       |       
+|       |   |       \---world_preset
+|       |   |               extended.json
+|       |   |               normal.json
 |       |   |               
 |       |   +---wolf_variant
 |       |   |       ashen.json
@@ -34014,10 +36713,12 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |       +---biome
 |       |       |       badlands.json
 |       |       |       bamboo_jungle.json
+|       |       |       basalt_deltas.json
 |       |       |       beach.json
 |       |       |       birch_forest.json
 |       |       |       cherry_grove.json
 |       |       |       cold_ocean.json
+|       |       |       crimson_forest.json
 |       |       |       dark_forest.json
 |       |       |       deep_cold_ocean.json
 |       |       |       deep_dark.json
@@ -34026,6 +36727,9 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |       |       deep_ocean.json
 |       |       |       desert.json
 |       |       |       dripstone_caves.json
+|       |       |       end_barrens.json
+|       |       |       end_highlands.json
+|       |       |       end_midlands.json
 |       |       |       eroded_badlands.json
 |       |       |       flower_forest.json
 |       |       |       forest.json
@@ -34041,6 +36745,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |       |       mangrove_swamp.json
 |       |       |       meadow.json
 |       |       |       mushroom_fields.json
+|       |       |       nether_wastes.json
 |       |       |       ocean.json
 |       |       |       old_growth_birch_forest.json
 |       |       |       old_growth_pine_taiga.json
@@ -34050,79 +36755,1063 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |       |       |       river.json
 |       |       |       savanna.json
 |       |       |       savanna_plateau.json
+|       |       |       small_end_islands.json
 |       |       |       snowy_beach.json
 |       |       |       snowy_plains.json
 |       |       |       snowy_slopes.json
 |       |       |       snowy_taiga.json
+|       |       |       soul_sand_valley.json
 |       |       |       sparse_jungle.json
 |       |       |       stony_peaks.json
 |       |       |       stony_shore.json
 |       |       |       sunflower_plains.json
 |       |       |       swamp.json
 |       |       |       taiga.json
+|       |       |       the_end.json
+|       |       |       the_void.json
 |       |       |       warm_ocean.json
+|       |       |       warped_forest.json
 |       |       |       windswept_forest.json
 |       |       |       windswept_gravelly_hills.json
 |       |       |       windswept_hills.json
 |       |       |       windswept_savanna.json
 |       |       |       wooded_badlands.json
 |       |       |       
+|       |       +---configured_carver
+|       |       |       canyon.json
+|       |       |       cave.json
+|       |       |       cave_extra_underground.json
+|       |       |       nether_cave.json
+|       |       |       
 |       |       +---configured_feature
 |       |       |       acacia.json
+|       |       |       amethyst_geode.json
 |       |       |       azalea_tree.json
+|       |       |       bamboo_no_podzol.json
+|       |       |       bamboo_some_podzol.json
+|       |       |       bamboo_vegetation.json
+|       |       |       basalt_blobs.json
+|       |       |       basalt_pillar.json
+|       |       |       berry_bush.json
 |       |       |       birch.json
+|       |       |       birch_bees_0002.json
+|       |       |       birch_bees_0002_leaf_litter.json
+|       |       |       birch_bees_002.json
 |       |       |       birch_bees_005.json
+|       |       |       birch_leaf_litter.json
+|       |       |       birch_tall.json
+|       |       |       blackstone_blobs.json
+|       |       |       blue_ice.json
+|       |       |       bonus_chest.json
+|       |       |       brown_mushroom.json
+|       |       |       bush.json
+|       |       |       cactus.json
+|       |       |       cave_vine.json
+|       |       |       cave_vine_in_moss.json
 |       |       |       cherry.json
 |       |       |       cherry_bees_005.json
+|       |       |       chorus_plant.json
+|       |       |       clay_pool_with_dripleaves.json
+|       |       |       clay_with_dripleaves.json
+|       |       |       crimson_forest_vegetation.json
+|       |       |       crimson_forest_vegetation_bonemeal.json
+|       |       |       crimson_fungus.json
+|       |       |       crimson_fungus_planted.json
+|       |       |       crimson_roots.json
+|       |       |       dark_forest_vegetation.json
 |       |       |       dark_oak.json
+|       |       |       dark_oak_leaf_litter.json
+|       |       |       dead_bush.json
+|       |       |       delta.json
+|       |       |       desert_well.json
+|       |       |       disk_clay.json
+|       |       |       disk_grass.json
+|       |       |       disk_gravel.json
+|       |       |       disk_sand.json
+|       |       |       dripleaf.json
+|       |       |       dripstone_cluster.json
+|       |       |       dry_grass.json
+|       |       |       end_gateway_delayed.json
+|       |       |       end_gateway_return.json
+|       |       |       end_island.json
+|       |       |       end_platform.json
+|       |       |       end_spike.json
+|       |       |       fallen_birch_tree.json
+|       |       |       fallen_jungle_tree.json
+|       |       |       fallen_oak_tree.json
+|       |       |       fallen_spruce_tree.json
+|       |       |       fallen_super_birch_tree.json
 |       |       |       fancy_oak.json
+|       |       |       fancy_oak_bees.json
+|       |       |       fancy_oak_bees_0002_leaf_litter.json
+|       |       |       fancy_oak_bees_002.json
 |       |       |       fancy_oak_bees_005.json
+|       |       |       fancy_oak_leaf_litter.json
+|       |       |       firefly_bush.json
+|       |       |       flower_cherry.json
+|       |       |       flower_default.json
+|       |       |       flower_flower_forest.json
+|       |       |       flower_meadow.json
+|       |       |       flower_pale_garden.json
+|       |       |       flower_plain.json
+|       |       |       flower_swamp.json
+|       |       |       forest_flowers.json
+|       |       |       forest_rock.json
+|       |       |       fossil_coal.json
+|       |       |       fossil_diamonds.json
+|       |       |       freeze_top_layer.json
+|       |       |       glowstone_extra.json
+|       |       |       glow_lichen.json
+|       |       |       grass.json
+|       |       |       grass_jungle.json
+|       |       |       huge_brown_mushroom.json
+|       |       |       huge_red_mushroom.json
+|       |       |       iceberg_blue.json
+|       |       |       iceberg_packed.json
+|       |       |       ice_patch.json
+|       |       |       ice_spike.json
+|       |       |       jungle_bush.json
+|       |       |       jungle_tree.json
+|       |       |       jungle_tree_no_vine.json
+|       |       |       kelp.json
+|       |       |       lake_lava.json
+|       |       |       large_basalt_columns.json
+|       |       |       large_dripstone.json
+|       |       |       large_fern.json
+|       |       |       leaf_litter.json
+|       |       |       lush_caves_clay.json
 |       |       |       mangrove.json
+|       |       |       mangrove_vegetation.json
+|       |       |       meadow_trees.json
+|       |       |       mega_jungle_tree.json
+|       |       |       mega_pine.json
+|       |       |       mega_spruce.json
+|       |       |       melon.json
+|       |       |       monster_room.json
+|       |       |       moss_patch.json
+|       |       |       moss_patch_bonemeal.json
+|       |       |       moss_patch_ceiling.json
+|       |       |       moss_vegetation.json
+|       |       |       mushroom_island_vegetation.json
+|       |       |       nether_sprouts.json
+|       |       |       nether_sprouts_bonemeal.json
 |       |       |       oak.json
+|       |       |       oak_bees_0002_leaf_litter.json
+|       |       |       oak_bees_002.json
 |       |       |       oak_bees_005.json
+|       |       |       oak_leaf_litter.json
+|       |       |       ore_ancient_debris_large.json
+|       |       |       ore_ancient_debris_small.json
 |       |       |       ore_andesite.json
+|       |       |       ore_blackstone.json
+|       |       |       ore_clay.json
+|       |       |       ore_coal.json
+|       |       |       ore_coal_buried.json
+|       |       |       ore_copper_large.json
+|       |       |       ore_copper_small.json
+|       |       |       ore_diamond_buried.json
+|       |       |       ore_diamond_large.json
+|       |       |       ore_diamond_medium.json
+|       |       |       ore_diamond_small.json
 |       |       |       ore_diorite.json
 |       |       |       ore_dirt.json
+|       |       |       ore_emerald.json
+|       |       |       ore_gold.json
+|       |       |       ore_gold_buried.json
 |       |       |       ore_granite.json
 |       |       |       ore_gravel.json
-|       |       |       patch_dead_bush.json
-|       |       |       patch_grass.json
+|       |       |       ore_gravel_nether.json
+|       |       |       ore_infested.json
+|       |       |       ore_iron.json
+|       |       |       ore_iron_small.json
+|       |       |       ore_lapis.json
+|       |       |       ore_lapis_buried.json
+|       |       |       ore_magma.json
+|       |       |       ore_nether_gold.json
+|       |       |       ore_quartz.json
+|       |       |       ore_redstone.json
+|       |       |       ore_soul_sand.json
+|       |       |       ore_tuff.json
+|       |       |       pale_forest_flower.json
+|       |       |       pale_garden_vegetation.json
+|       |       |       pale_moss_patch.json
+|       |       |       pale_moss_patch_bonemeal.json
+|       |       |       pale_moss_vegetation.json
+|       |       |       pale_oak.json
+|       |       |       pale_oak_bonemeal.json
+|       |       |       pale_oak_creaking.json
+|       |       |       patch_fire.json
+|       |       |       patch_soul_fire.json
+|       |       |       pile_hay.json
+|       |       |       pile_ice.json
+|       |       |       pile_melon.json
+|       |       |       pile_pumpkin.json
+|       |       |       pile_snow.json
+|       |       |       pine.json
+|       |       |       pointed_dripstone.json
+|       |       |       pumpkin.json
+|       |       |       red_mushroom.json
+|       |       |       rooted_azalea_tree.json
+|       |       |       sculk_patch_ancient_city.json
+|       |       |       sculk_patch_deep_dark.json
+|       |       |       sculk_vein.json
+|       |       |       seagrass_mid.json
+|       |       |       seagrass_short.json
+|       |       |       seagrass_slightly_less_short.json
+|       |       |       seagrass_tall.json
+|       |       |       sea_pickle.json
+|       |       |       small_basalt_columns.json
+|       |       |       spore_blossom.json
+|       |       |       spring_lava_frozen.json
+|       |       |       spring_lava_nether.json
+|       |       |       spring_lava_overworld.json
+|       |       |       spring_nether_closed.json
+|       |       |       spring_nether_open.json
+|       |       |       spring_water.json
+|       |       |       spruce.json
+|       |       |       sugar_cane.json
+|       |       |       sunflower.json
+|       |       |       super_birch_bees.json
+|       |       |       super_birch_bees_0002.json
+|       |       |       swamp_oak.json
+|       |       |       taiga_grass.json
+|       |       |       tall_grass.json
 |       |       |       tall_mangrove.json
+|       |       |       trees_badlands.json
+|       |       |       trees_birch.json
+|       |       |       trees_birch_and_oak_leaf_litter.json
+|       |       |       trees_flower_forest.json
+|       |       |       trees_grove.json
+|       |       |       trees_jungle.json
+|       |       |       trees_old_growth_pine_taiga.json
+|       |       |       trees_old_growth_spruce_taiga.json
+|       |       |       trees_plains.json
+|       |       |       trees_savanna.json
+|       |       |       trees_snowy.json
+|       |       |       trees_sparse_jungle.json
+|       |       |       trees_taiga.json
+|       |       |       trees_water.json
+|       |       |       trees_windswept_hills.json
+|       |       |       twisting_vines.json
+|       |       |       twisting_vines_bonemeal.json
+|       |       |       underwater_magma.json
+|       |       |       vines.json
+|       |       |       void_start_platform.json
+|       |       |       warm_ocean_vegetation.json
+|       |       |       warped_forest_vegetation.json
+|       |       |       warped_forest_vegetation_bonemeal.json
+|       |       |       warped_fungus.json
+|       |       |       warped_fungus_planted.json
+|       |       |       waterlily.json
+|       |       |       weeping_vines.json
+|       |       |       wildflower.json
 |       |       |       
-|       |       \---placed_feature
-|       |               acacia.json
-|       |               acacia_checked.json
-|       |               birch_checked.json
-|       |               cherry_bees_005.json
-|       |               cherry_checked.json
-|       |               dark_oak_checked.json
-|       |               fancy_oak_checked.json
-|       |               lake_lava_surface.json
-|       |               lake_lava_underground.json
-|       |               mangrove_checked.json
-|       |               mega_jungle_tree_checked.json
-|       |               mega_pine_checked.json
-|       |               mega_spruce_checked.json
-|       |               oak.json
-|       |               oak_checked.json
-|       |               ore_andesite_lower.json
-|       |               ore_andesite_upper.json
-|       |               ore_diorite_lower.json
-|       |               ore_diorite_upper.json
-|       |               ore_dirt.json
-|       |               ore_granite_lower.json
-|       |               ore_granite_upper.json
-|       |               patch_dead_bush.json
-|       |               patch_grass.json
-|       |               spring_lava.json
-|       |               spring_lava_frozen.json
-|       |               spruce.json
-|       |               spruce_checked.json
-|       |               spruce_on_snow.json
-|       |               tall_mangrove_checked.json
-|       |               trees_badlands.json
-|       |               trees_cherry.json
-|       |               trees_snowy.json
+|       |       +---density_function
+|       |       |   |   shift_x.json
+|       |       |   |   shift_z.json
+|       |       |   |   y.json
+|       |       |   |   zero.json
+|       |       |   |   
+|       |       |   +---end
+|       |       |   |       base_3d_noise.json
+|       |       |   |       sloped_cheese.json
+|       |       |   |       
+|       |       |   +---nether
+|       |       |   |       base_3d_noise.json
+|       |       |   |       
+|       |       |   +---overworld
+|       |       |   |   |   base_3d_noise.json
+|       |       |   |   |   continents.json
+|       |       |   |   |   depth.json
+|       |       |   |   |   erosion.json
+|       |       |   |   |   factor.json
+|       |       |   |   |   jaggedness.json
+|       |       |   |   |   offset.json
+|       |       |   |   |   ridges.json
+|       |       |   |   |   ridges_folded.json
+|       |       |   |   |   sloped_cheese.json
+|       |       |   |   |   
+|       |       |   |   \---caves
+|       |       |   |           entrances.json
+|       |       |   |           noodle.json
+|       |       |   |           pillars.json
+|       |       |   |           spaghetti_2d.json
+|       |       |   |           spaghetti_2d_thickness_modulator.json
+|       |       |   |           spaghetti_roughness_function.json
+|       |       |   |           
+|       |       |   +---overworld_amplified
+|       |       |   |       depth.json
+|       |       |   |       factor.json
+|       |       |   |       jaggedness.json
+|       |       |   |       offset.json
+|       |       |   |       sloped_cheese.json
+|       |       |   |       
+|       |       |   \---overworld_large_biomes
+|       |       |           continents.json
+|       |       |           depth.json
+|       |       |           erosion.json
+|       |       |           factor.json
+|       |       |           jaggedness.json
+|       |       |           offset.json
+|       |       |           sloped_cheese.json
+|       |       |           
+|       |       +---flat_level_generator_preset
+|       |       |       bottomless_pit.json
+|       |       |       classic_flat.json
+|       |       |       desert.json
+|       |       |       overworld.json
+|       |       |       redstone_ready.json
+|       |       |       snowy_kingdom.json
+|       |       |       the_void.json
+|       |       |       tunnelers_dream.json
+|       |       |       water_world.json
+|       |       |       
+|       |       +---multi_noise_biome_source_parameter_list
+|       |       |       nether.json
+|       |       |       overworld.json
+|       |       |       
+|       |       +---noise
+|       |       |   |   aquifer_barrier.json
+|       |       |   |   aquifer_fluid_level_floodedness.json
+|       |       |   |   aquifer_fluid_level_spread.json
+|       |       |   |   aquifer_lava.json
+|       |       |   |   badlands_pillar.json
+|       |       |   |   badlands_pillar_roof.json
+|       |       |   |   badlands_surface.json
+|       |       |   |   calcite.json
+|       |       |   |   cave_cheese.json
+|       |       |   |   cave_entrance.json
+|       |       |   |   cave_layer.json
+|       |       |   |   clay_bands_offset.json
+|       |       |   |   continentalness.json
+|       |       |   |   continentalness_large.json
+|       |       |   |   erosion.json
+|       |       |   |   erosion_large.json
+|       |       |   |   gravel.json
+|       |       |   |   gravel_layer.json
+|       |       |   |   ice.json
+|       |       |   |   iceberg_pillar.json
+|       |       |   |   iceberg_pillar_roof.json
+|       |       |   |   iceberg_surface.json
+|       |       |   |   jagged.json
+|       |       |   |   netherrack.json
+|       |       |   |   nether_state_selector.json
+|       |       |   |   nether_wart.json
+|       |       |   |   noodle.json
+|       |       |   |   noodle_ridge_a.json
+|       |       |   |   noodle_ridge_b.json
+|       |       |   |   noodle_thickness.json
+|       |       |   |   offset.json
+|       |       |   |   ore_gap.json
+|       |       |   |   ore_veininess.json
+|       |       |   |   ore_vein_a.json
+|       |       |   |   ore_vein_b.json
+|       |       |   |   packed_ice.json
+|       |       |   |   patch.json
+|       |       |   |   pillar.json
+|       |       |   |   pillar_rareness.json
+|       |       |   |   pillar_thickness.json
+|       |       |   |   powder_snow.json
+|       |       |   |   ridge.json
+|       |       |   |   soul_sand_layer.json
+|       |       |   |   spaghetti_2d.json
+|       |       |   |   spaghetti_2d_elevation.json
+|       |       |   |   spaghetti_2d_modulator.json
+|       |       |   |   spaghetti_2d_thickness.json
+|       |       |   |   spaghetti_3d_1.json
+|       |       |   |   spaghetti_3d_2.json
+|       |       |   |   spaghetti_3d_rarity.json
+|       |       |   |   spaghetti_3d_thickness.json
+|       |       |   |   spaghetti_roughness.json
+|       |       |   |   spaghetti_roughness_modulator.json
+|       |       |   |   surface.json
+|       |       |   |   surface_secondary.json
+|       |       |   |   surface_swamp.json
+|       |       |   |   temperature.json
+|       |       |   |   temperature_large.json
+|       |       |   |   vegetation.json
+|       |       |   |   vegetation_large.json
+|       |       |   |   
+|       |       |   \---nether
+|       |       |           temperature.json
+|       |       |           vegetation.json
+|       |       |           
+|       |       +---noise_settings
+|       |       |       amplified.json
+|       |       |       caves.json
+|       |       |       end.json
+|       |       |       floating_islands.json
+|       |       |       large_biomes.json
+|       |       |       nether.json
+|       |       |       overworld.json
+|       |       |       
+|       |       +---placed_feature
+|       |       |       acacia.json
+|       |       |       acacia_checked.json
+|       |       |       amethyst_geode.json
+|       |       |       bamboo.json
+|       |       |       bamboo_light.json
+|       |       |       bamboo_vegetation.json
+|       |       |       basalt_blobs.json
+|       |       |       basalt_pillar.json
+|       |       |       birch_bees_0002.json
+|       |       |       birch_bees_0002_leaf_litter.json
+|       |       |       birch_bees_002.json
+|       |       |       birch_checked.json
+|       |       |       birch_leaf_litter.json
+|       |       |       birch_tall.json
+|       |       |       blackstone_blobs.json
+|       |       |       blue_ice.json
+|       |       |       brown_mushroom_nether.json
+|       |       |       brown_mushroom_normal.json
+|       |       |       brown_mushroom_old_growth.json
+|       |       |       brown_mushroom_swamp.json
+|       |       |       brown_mushroom_taiga.json
+|       |       |       cave_vines.json
+|       |       |       cherry_bees_005.json
+|       |       |       cherry_checked.json
+|       |       |       chorus_plant.json
+|       |       |       classic_vines_cave_feature.json
+|       |       |       crimson_forest_vegetation.json
+|       |       |       crimson_fungi.json
+|       |       |       dark_forest_vegetation.json
+|       |       |       dark_oak_checked.json
+|       |       |       dark_oak_leaf_litter.json
+|       |       |       delta.json
+|       |       |       desert_well.json
+|       |       |       disk_clay.json
+|       |       |       disk_grass.json
+|       |       |       disk_gravel.json
+|       |       |       disk_sand.json
+|       |       |       dripstone_cluster.json
+|       |       |       end_gateway_return.json
+|       |       |       end_island_decorated.json
+|       |       |       end_platform.json
+|       |       |       end_spike.json
+|       |       |       fallen_birch_tree.json
+|       |       |       fallen_jungle_tree.json
+|       |       |       fallen_oak_tree.json
+|       |       |       fallen_spruce_tree.json
+|       |       |       fallen_super_birch_tree.json
+|       |       |       fancy_oak_bees.json
+|       |       |       fancy_oak_bees_0002_leaf_litter.json
+|       |       |       fancy_oak_bees_002.json
+|       |       |       fancy_oak_checked.json
+|       |       |       fancy_oak_leaf_litter.json
+|       |       |       flower_cherry.json
+|       |       |       flower_default.json
+|       |       |       flower_flower_forest.json
+|       |       |       flower_forest_flowers.json
+|       |       |       flower_meadow.json
+|       |       |       flower_pale_garden.json
+|       |       |       flower_plain.json
+|       |       |       flower_plains.json
+|       |       |       flower_swamp.json
+|       |       |       flower_warm.json
+|       |       |       forest_flowers.json
+|       |       |       forest_rock.json
+|       |       |       fossil_lower.json
+|       |       |       fossil_upper.json
+|       |       |       freeze_top_layer.json
+|       |       |       glowstone.json
+|       |       |       glowstone_extra.json
+|       |       |       glow_lichen.json
+|       |       |       grass_bonemeal.json
+|       |       |       iceberg_blue.json
+|       |       |       iceberg_packed.json
+|       |       |       ice_patch.json
+|       |       |       ice_spike.json
+|       |       |       jungle_bush.json
+|       |       |       jungle_tree.json
+|       |       |       kelp_cold.json
+|       |       |       kelp_warm.json
+|       |       |       lake_lava_surface.json
+|       |       |       lake_lava_underground.json
+|       |       |       large_basalt_columns.json
+|       |       |       large_dripstone.json
+|       |       |       lush_caves_ceiling_vegetation.json
+|       |       |       lush_caves_clay.json
+|       |       |       lush_caves_vegetation.json
+|       |       |       mangrove_checked.json
+|       |       |       mega_jungle_tree_checked.json
+|       |       |       mega_pine_checked.json
+|       |       |       mega_spruce_checked.json
+|       |       |       monster_room.json
+|       |       |       monster_room_deep.json
+|       |       |       mushroom_island_vegetation.json
+|       |       |       nether_sprouts.json
+|       |       |       oak.json
+|       |       |       oak_bees_0002_leaf_litter.json
+|       |       |       oak_bees_002.json
+|       |       |       oak_checked.json
+|       |       |       oak_leaf_litter.json
+|       |       |       ore_ancient_debris_large.json
+|       |       |       ore_andesite_lower.json
+|       |       |       ore_andesite_upper.json
+|       |       |       ore_blackstone.json
+|       |       |       ore_clay.json
+|       |       |       ore_coal_lower.json
+|       |       |       ore_coal_upper.json
+|       |       |       ore_copper.json
+|       |       |       ore_copper_large.json
+|       |       |       ore_debris_small.json
+|       |       |       ore_diamond.json
+|       |       |       ore_diamond_buried.json
+|       |       |       ore_diamond_large.json
+|       |       |       ore_diamond_medium.json
+|       |       |       ore_diorite_lower.json
+|       |       |       ore_diorite_upper.json
+|       |       |       ore_dirt.json
+|       |       |       ore_emerald.json
+|       |       |       ore_gold.json
+|       |       |       ore_gold_deltas.json
+|       |       |       ore_gold_extra.json
+|       |       |       ore_gold_lower.json
+|       |       |       ore_gold_nether.json
+|       |       |       ore_granite_lower.json
+|       |       |       ore_granite_upper.json
+|       |       |       ore_gravel.json
+|       |       |       ore_gravel_nether.json
+|       |       |       ore_infested.json
+|       |       |       ore_iron_middle.json
+|       |       |       ore_iron_small.json
+|       |       |       ore_iron_upper.json
+|       |       |       ore_lapis.json
+|       |       |       ore_lapis_buried.json
+|       |       |       ore_magma.json
+|       |       |       ore_quartz_deltas.json
+|       |       |       ore_quartz_nether.json
+|       |       |       ore_redstone.json
+|       |       |       ore_redstone_lower.json
+|       |       |       ore_soul_sand.json
+|       |       |       ore_tuff.json
+|       |       |       pale_garden_flowers.json
+|       |       |       pale_garden_vegetation.json
+|       |       |       pale_moss_patch.json
+|       |       |       pale_oak_checked.json
+|       |       |       pale_oak_creaking_checked.json
+|       |       |       patch_berry_bush.json
+|       |       |       patch_berry_common.json
+|       |       |       patch_berry_rare.json
+|       |       |       patch_bush.json
+|       |       |       patch_cactus.json
+|       |       |       patch_cactus_decorated.json
+|       |       |       patch_cactus_desert.json
+|       |       |       patch_crimson_roots.json
+|       |       |       patch_dead_bush.json
+|       |       |       patch_dead_bush_2.json
+|       |       |       patch_dead_bush_badlands.json
+|       |       |       patch_dry_grass_badlands.json
+|       |       |       patch_dry_grass_desert.json
+|       |       |       patch_fire.json
+|       |       |       patch_firefly_bush_near_water.json
+|       |       |       patch_firefly_bush_near_water_swamp.json
+|       |       |       patch_firefly_bush_swamp.json
+|       |       |       patch_grass_badlands.json
+|       |       |       patch_grass_forest.json
+|       |       |       patch_grass_jungle.json
+|       |       |       patch_grass_meadow.json
+|       |       |       patch_grass_normal.json
+|       |       |       patch_grass_plain.json
+|       |       |       patch_grass_savanna.json
+|       |       |       patch_grass_taiga.json
+|       |       |       patch_grass_taiga_2.json
+|       |       |       patch_large_fern.json
+|       |       |       patch_leaf_litter.json
+|       |       |       patch_melon.json
+|       |       |       patch_melon_sparse.json
+|       |       |       patch_pumpkin.json
+|       |       |       patch_soul_fire.json
+|       |       |       patch_sugar_cane.json
+|       |       |       patch_sugar_cane_badlands.json
+|       |       |       patch_sugar_cane_desert.json
+|       |       |       patch_sugar_cane_swamp.json
+|       |       |       patch_sunflower.json
+|       |       |       patch_taiga_grass.json
+|       |       |       patch_tall_grass.json
+|       |       |       patch_tall_grass_2.json
+|       |       |       patch_waterlily.json
+|       |       |       pile_hay.json
+|       |       |       pile_ice.json
+|       |       |       pile_melon.json
+|       |       |       pile_pumpkin.json
+|       |       |       pile_snow.json
+|       |       |       pine.json
+|       |       |       pine_checked.json
+|       |       |       pine_on_snow.json
+|       |       |       pointed_dripstone.json
+|       |       |       red_mushroom_nether.json
+|       |       |       red_mushroom_normal.json
+|       |       |       red_mushroom_old_growth.json
+|       |       |       red_mushroom_swamp.json
+|       |       |       red_mushroom_taiga.json
+|       |       |       rooted_azalea_tree.json
+|       |       |       sculk_patch_ancient_city.json
+|       |       |       sculk_patch_deep_dark.json
+|       |       |       sculk_vein.json
+|       |       |       seagrass_cold.json
+|       |       |       seagrass_deep.json
+|       |       |       seagrass_deep_cold.json
+|       |       |       seagrass_deep_warm.json
+|       |       |       seagrass_normal.json
+|       |       |       seagrass_river.json
+|       |       |       seagrass_swamp.json
+|       |       |       seagrass_warm.json
+|       |       |       sea_pickle.json
+|       |       |       small_basalt_columns.json
+|       |       |       spore_blossom.json
+|       |       |       spring_closed.json
+|       |       |       spring_closed_double.json
+|       |       |       spring_delta.json
+|       |       |       spring_lava.json
+|       |       |       spring_lava_frozen.json
+|       |       |       spring_open.json
+|       |       |       spring_water.json
+|       |       |       spruce.json
+|       |       |       spruce_checked.json
+|       |       |       spruce_on_snow.json
+|       |       |       super_birch_bees.json
+|       |       |       super_birch_bees_0002.json
+|       |       |       tall_mangrove_checked.json
+|       |       |       trees_badlands.json
+|       |       |       trees_birch.json
+|       |       |       trees_birch_and_oak_leaf_litter.json
+|       |       |       trees_cherry.json
+|       |       |       trees_flower_forest.json
+|       |       |       trees_grove.json
+|       |       |       trees_jungle.json
+|       |       |       trees_mangrove.json
+|       |       |       trees_meadow.json
+|       |       |       trees_old_growth_pine_taiga.json
+|       |       |       trees_old_growth_spruce_taiga.json
+|       |       |       trees_plains.json
+|       |       |       trees_savanna.json
+|       |       |       trees_snowy.json
+|       |       |       trees_sparse_jungle.json
+|       |       |       trees_swamp.json
+|       |       |       trees_taiga.json
+|       |       |       trees_water.json
+|       |       |       trees_windswept_forest.json
+|       |       |       trees_windswept_hills.json
+|       |       |       trees_windswept_savanna.json
+|       |       |       twisting_vines.json
+|       |       |       underwater_magma.json
+|       |       |       vines.json
+|       |       |       void_start_platform.json
+|       |       |       warm_ocean_vegetation.json
+|       |       |       warped_forest_vegetation.json
+|       |       |       warped_fungi.json
+|       |       |       weeping_vines.json
+|       |       |       wildflowers_birch_forest.json
+|       |       |       wildflowers_meadow.json
+|       |       |       
+|       |       +---processor_list
+|       |       |       ancient_city_generic_degradation.json
+|       |       |       ancient_city_start_degradation.json
+|       |       |       ancient_city_walls_degradation.json
+|       |       |       bastion_generic_degradation.json
+|       |       |       bottom_rampart.json
+|       |       |       bridge.json
+|       |       |       empty.json
+|       |       |       entrance_replacement.json
+|       |       |       farm_desert.json
+|       |       |       farm_plains.json
+|       |       |       farm_savanna.json
+|       |       |       farm_snowy.json
+|       |       |       farm_taiga.json
+|       |       |       fossil_coal.json
+|       |       |       fossil_diamonds.json
+|       |       |       fossil_rot.json
+|       |       |       high_rampart.json
+|       |       |       high_wall.json
+|       |       |       housing.json
+|       |       |       mossify_10_percent.json
+|       |       |       mossify_20_percent.json
+|       |       |       mossify_70_percent.json
+|       |       |       outpost_rot.json
+|       |       |       rampart_degradation.json
+|       |       |       roof.json
+|       |       |       side_wall_degradation.json
+|       |       |       stable_degradation.json
+|       |       |       street_plains.json
+|       |       |       street_savanna.json
+|       |       |       street_snowy_or_taiga.json
+|       |       |       trail_ruins_houses_archaeology.json
+|       |       |       trail_ruins_roads_archaeology.json
+|       |       |       trail_ruins_tower_top_archaeology.json
+|       |       |       treasure_rooms.json
+|       |       |       trial_chambers_copper_bulb_degradation.json
+|       |       |       zombie_desert.json
+|       |       |       zombie_plains.json
+|       |       |       zombie_savanna.json
+|       |       |       zombie_snowy.json
+|       |       |       zombie_taiga.json
+|       |       |       
+|       |       +---structure
+|       |       |       ancient_city.json
+|       |       |       bastion_remnant.json
+|       |       |       buried_treasure.json
+|       |       |       desert_pyramid.json
+|       |       |       end_city.json
+|       |       |       fortress.json
+|       |       |       igloo.json
+|       |       |       jungle_pyramid.json
+|       |       |       mansion.json
+|       |       |       mineshaft.json
+|       |       |       mineshaft_mesa.json
+|       |       |       monument.json
+|       |       |       nether_fossil.json
+|       |       |       ocean_ruin_cold.json
+|       |       |       ocean_ruin_warm.json
+|       |       |       pillager_outpost.json
+|       |       |       ruined_portal.json
+|       |       |       ruined_portal_desert.json
+|       |       |       ruined_portal_jungle.json
+|       |       |       ruined_portal_mountain.json
+|       |       |       ruined_portal_nether.json
+|       |       |       ruined_portal_ocean.json
+|       |       |       ruined_portal_swamp.json
+|       |       |       shipwreck.json
+|       |       |       shipwreck_beached.json
+|       |       |       stronghold.json
+|       |       |       swamp_hut.json
+|       |       |       trail_ruins.json
+|       |       |       trial_chambers.json
+|       |       |       village_desert.json
+|       |       |       village_plains.json
+|       |       |       village_savanna.json
+|       |       |       village_snowy.json
+|       |       |       village_taiga.json
+|       |       |       
+|       |       +---structure_set
+|       |       |       ancient_cities.json
+|       |       |       buried_treasures.json
+|       |       |       desert_pyramids.json
+|       |       |       end_cities.json
+|       |       |       igloos.json
+|       |       |       jungle_temples.json
+|       |       |       mineshafts.json
+|       |       |       nether_complexes.json
+|       |       |       nether_fossils.json
+|       |       |       ocean_monuments.json
+|       |       |       ocean_ruins.json
+|       |       |       pillager_outposts.json
+|       |       |       ruined_portals.json
+|       |       |       shipwrecks.json
+|       |       |       strongholds.json
+|       |       |       swamp_huts.json
+|       |       |       trail_ruins.json
+|       |       |       trial_chambers.json
+|       |       |       villages.json
+|       |       |       woodland_mansions.json
+|       |       |       
+|       |       +---template_pool
+|       |       |   |   empty.json
+|       |       |   |   
+|       |       |   +---ancient_city
+|       |       |   |   |   city_center.json
+|       |       |   |   |   sculk.json
+|       |       |   |   |   structures.json
+|       |       |   |   |   walls.json
+|       |       |   |   |   
+|       |       |   |   +---city
+|       |       |   |   |       entrance.json
+|       |       |   |   |       
+|       |       |   |   +---city_center
+|       |       |   |   |       walls.json
+|       |       |   |   |       
+|       |       |   |   \---walls
+|       |       |   |           no_corners.json
+|       |       |   |           
+|       |       |   +---bastion
+|       |       |   |   |   starts.json
+|       |       |   |   |   
+|       |       |   |   +---blocks
+|       |       |   |   |       gold.json
+|       |       |   |   |       
+|       |       |   |   +---bridge
+|       |       |   |   |       bridge_pieces.json
+|       |       |   |   |       connectors.json
+|       |       |   |   |       legs.json
+|       |       |   |   |       ramparts.json
+|       |       |   |   |       rampart_plates.json
+|       |       |   |   |       starting_pieces.json
+|       |       |   |   |       walls.json
+|       |       |   |   |       
+|       |       |   |   +---hoglin_stable
+|       |       |   |   |   |   connectors.json
+|       |       |   |   |   |   mirrored_starting_pieces.json
+|       |       |   |   |   |   posts.json
+|       |       |   |   |   |   ramparts.json
+|       |       |   |   |   |   rampart_plates.json
+|       |       |   |   |   |   stairs.json
+|       |       |   |   |   |   starting_pieces.json
+|       |       |   |   |   |   walls.json
+|       |       |   |   |   |   wall_bases.json
+|       |       |   |   |   |   
+|       |       |   |   |   +---large_stables
+|       |       |   |   |   |       inner.json
+|       |       |   |   |   |       outer.json
+|       |       |   |   |   |       
+|       |       |   |   |   \---small_stables
+|       |       |   |   |           inner.json
+|       |       |   |   |           outer.json
+|       |       |   |   |           
+|       |       |   |   +---mobs
+|       |       |   |   |       hoglin.json
+|       |       |   |   |       piglin.json
+|       |       |   |   |       piglin_melee.json
+|       |       |   |   |       
+|       |       |   |   +---treasure
+|       |       |   |   |   |   bases.json
+|       |       |   |   |   |   brains.json
+|       |       |   |   |   |   connectors.json
+|       |       |   |   |   |   entrances.json
+|       |       |   |   |   |   ramparts.json
+|       |       |   |   |   |   roofs.json
+|       |       |   |   |   |   stairs.json
+|       |       |   |   |   |   walls.json
+|       |       |   |   |   |   
+|       |       |   |   |   +---bases
+|       |       |   |   |   |       centers.json
+|       |       |   |   |   |       
+|       |       |   |   |   +---corners
+|       |       |   |   |   |       bottom.json
+|       |       |   |   |   |       edges.json
+|       |       |   |   |   |       middle.json
+|       |       |   |   |   |       top.json
+|       |       |   |   |   |       
+|       |       |   |   |   +---extensions
+|       |       |   |   |   |       houses.json
+|       |       |   |   |   |       large_pool.json
+|       |       |   |   |   |       small_pool.json
+|       |       |   |   |   |       
+|       |       |   |   |   \---walls
+|       |       |   |   |           bottom.json
+|       |       |   |   |           mid.json
+|       |       |   |   |           outer.json
+|       |       |   |   |           top.json
+|       |       |   |   |           
+|       |       |   |   \---units
+|       |       |   |       |   center_pieces.json
+|       |       |   |       |   edges.json
+|       |       |   |       |   edge_wall_units.json
+|       |       |   |       |   large_ramparts.json
+|       |       |   |       |   pathways.json
+|       |       |   |       |   ramparts.json
+|       |       |   |       |   rampart_plates.json
+|       |       |   |       |   wall_units.json
+|       |       |   |       |   
+|       |       |   |       +---fillers
+|       |       |   |       |       stage_0.json
+|       |       |   |       |       
+|       |       |   |       +---stages
+|       |       |   |       |   |   stage_0.json
+|       |       |   |       |   |   stage_1.json
+|       |       |   |       |   |   stage_2.json
+|       |       |   |       |   |   stage_3.json
+|       |       |   |       |   |   
+|       |       |   |       |   \---rot
+|       |       |   |       |           stage_1.json
+|       |       |   |       |           
+|       |       |   |       \---walls
+|       |       |   |               wall_bases.json
+|       |       |   |               
+|       |       |   +---pillager_outpost
+|       |       |   |       base_plates.json
+|       |       |   |       features.json
+|       |       |   |       feature_plates.json
+|       |       |   |       towers.json
+|       |       |   |       
+|       |       |   +---trail_ruins
+|       |       |   |   |   buildings.json
+|       |       |   |   |   decor.json
+|       |       |   |   |   roads.json
+|       |       |   |   |   tower.json
+|       |       |   |   |   
+|       |       |   |   +---buildings
+|       |       |   |   |       grouped.json
+|       |       |   |   |       
+|       |       |   |   \---tower
+|       |       |   |           additions.json
+|       |       |   |           tower_top.json
+|       |       |   |           
+|       |       |   +---trial_chambers
+|       |       |   |   |   atrium.json
+|       |       |   |   |   corridor.json
+|       |       |   |   |   decor.json
+|       |       |   |   |   entrance.json
+|       |       |   |   |   hallway.json
+|       |       |   |   |   
+|       |       |   |   +---chamber
+|       |       |   |   |       addon.json
+|       |       |   |   |       assembly.json
+|       |       |   |   |       end.json
+|       |       |   |   |       entrance_cap.json
+|       |       |   |   |       eruption.json
+|       |       |   |   |       pedestal.json
+|       |       |   |   |       slanted.json
+|       |       |   |   |       
+|       |       |   |   +---chambers
+|       |       |   |   |       end.json
+|       |       |   |   |       
+|       |       |   |   +---chests
+|       |       |   |   |   |   supply.json
+|       |       |   |   |   |   
+|       |       |   |   |   \---contents
+|       |       |   |   |           supply.json
+|       |       |   |   |           
+|       |       |   |   +---corridor
+|       |       |   |   |       slices.json
+|       |       |   |   |       
+|       |       |   |   +---corridors
+|       |       |   |   |   \---addon
+|       |       |   |   |           lower.json
+|       |       |   |   |           middle.json
+|       |       |   |   |           middle_upper.json
+|       |       |   |   |           
+|       |       |   |   +---decor
+|       |       |   |   |       bed.json
+|       |       |   |   |       chamber.json
+|       |       |   |   |       disposal.json
+|       |       |   |   |       
+|       |       |   |   +---dispensers
+|       |       |   |   |       chamber.json
+|       |       |   |   |       
+|       |       |   |   +---hallway
+|       |       |   |   |       fallback.json
+|       |       |   |   |       
+|       |       |   |   +---reward
+|       |       |   |   |   |   all.json
+|       |       |   |   |   |   ominous_vault.json
+|       |       |   |   |   |   
+|       |       |   |   |   \---contents
+|       |       |   |   |           default.json
+|       |       |   |   |           
+|       |       |   |   \---spawner
+|       |       |   |       |   all.json
+|       |       |   |       |   breeze.json
+|       |       |   |       |   melee.json
+|       |       |   |       |   ranged.json
+|       |       |   |       |   slow_ranged.json
+|       |       |   |       |   small_melee.json
+|       |       |   |       |   
+|       |       |   |       +---contents
+|       |       |   |       |       breeze.json
+|       |       |   |       |       
+|       |       |   |       +---melee
+|       |       |   |       |       husk.json
+|       |       |   |       |       spider.json
+|       |       |   |       |       zombie.json
+|       |       |   |       |       
+|       |       |   |       +---ranged
+|       |       |   |       |       poison_skeleton.json
+|       |       |   |       |       skeleton.json
+|       |       |   |       |       stray.json
+|       |       |   |       |       
+|       |       |   |       +---slow_ranged
+|       |       |   |       |       poison_skeleton.json
+|       |       |   |       |       skeleton.json
+|       |       |   |       |       stray.json
+|       |       |   |       |       
+|       |       |   |       \---small_melee
+|       |       |   |               baby_zombie.json
+|       |       |   |               cave_spider.json
+|       |       |   |               silverfish.json
+|       |       |   |               slime.json
+|       |       |   |               
+|       |       |   \---village
+|       |       |       +---common
+|       |       |       |       animals.json
+|       |       |       |       butcher_animals.json
+|       |       |       |       cats.json
+|       |       |       |       iron_golem.json
+|       |       |       |       sheep.json
+|       |       |       |       well_bottoms.json
+|       |       |       |       
+|       |       |       +---desert
+|       |       |       |   |   camel.json
+|       |       |       |   |   decor.json
+|       |       |       |   |   houses.json
+|       |       |       |   |   streets.json
+|       |       |       |   |   terminators.json
+|       |       |       |   |   town_centers.json
+|       |       |       |   |   villagers.json
+|       |       |       |   |   
+|       |       |       |   \---zombie
+|       |       |       |           decor.json
+|       |       |       |           houses.json
+|       |       |       |           streets.json
+|       |       |       |           terminators.json
+|       |       |       |           villagers.json
+|       |       |       |           
+|       |       |       +---plains
+|       |       |       |   |   decor.json
+|       |       |       |   |   houses.json
+|       |       |       |   |   streets.json
+|       |       |       |   |   terminators.json
+|       |       |       |   |   town_centers.json
+|       |       |       |   |   trees.json
+|       |       |       |   |   villagers.json
+|       |       |       |   |   
+|       |       |       |   \---zombie
+|       |       |       |           decor.json
+|       |       |       |           houses.json
+|       |       |       |           streets.json
+|       |       |       |           villagers.json
+|       |       |       |           
+|       |       |       +---savanna
+|       |       |       |   |   decor.json
+|       |       |       |   |   houses.json
+|       |       |       |   |   streets.json
+|       |       |       |   |   terminators.json
+|       |       |       |   |   town_centers.json
+|       |       |       |   |   trees.json
+|       |       |       |   |   villagers.json
+|       |       |       |   |   
+|       |       |       |   \---zombie
+|       |       |       |           decor.json
+|       |       |       |           houses.json
+|       |       |       |           streets.json
+|       |       |       |           terminators.json
+|       |       |       |           villagers.json
+|       |       |       |           
+|       |       |       +---snowy
+|       |       |       |   |   decor.json
+|       |       |       |   |   houses.json
+|       |       |       |   |   streets.json
+|       |       |       |   |   terminators.json
+|       |       |       |   |   town_centers.json
+|       |       |       |   |   trees.json
+|       |       |       |   |   villagers.json
+|       |       |       |   |   
+|       |       |       |   \---zombie
+|       |       |       |           decor.json
+|       |       |       |           houses.json
+|       |       |       |           streets.json
+|       |       |       |           villagers.json
+|       |       |       |           
+|       |       |       \---taiga
+|       |       |           |   decor.json
+|       |       |           |   houses.json
+|       |       |           |   streets.json
+|       |       |           |   terminators.json
+|       |       |           |   town_centers.json
+|       |       |           |   villagers.json
+|       |       |           |   
+|       |       |           \---zombie
+|       |       |                   decor.json
+|       |       |                   houses.json
+|       |       |                   streets.json
+|       |       |                   villagers.json
+|       |       |                   
+|       |       \---world_preset
+|       |               amplified.json
+|       |               debug_all_block_states.json
+|       |               flat.json
+|       |               large_biomes.json
+|       |               normal.json
+|       |               single_biome_surface.json
 |       |               
 |       +---towns_and_towers
 |       |   \---tags
@@ -35059,6 +38748,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                   |       sunflower_plains.json
 |                   |       
 |                   +---terrain
+|                   |   |   dripstone_spikes.json
 |                   |   |   dripstone_spikes_1.json
 |                   |   |   dripstone_spikes_2.json
 |                   |   |   dripstone_spikes_3.json
@@ -35510,6 +39200,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                       |   floating_vegetation_plants.json
 |                       |   melon_patch.json
 |                       |   patch_dead_corals_on_gravel.json
+|                       |   patch_pumpkin_farmed.json
 |                       |   patch_roses.json
 |                       |   patch_wheat_farmed.json
 |                       |   thin_jungle_bamboo_patch.json
@@ -35567,6 +39258,7 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                       |           windbreak_2.json
 |                       |           
 |                       +---fungus
+|                       |       patch_enoki.json
 |                       |       patch_morel.json
 |                       |       
 |                       +---local
@@ -35905,14 +39597,30 @@ C:\USERS\ENFORCERX\DOWNLOADS\WILLIAM WYTHERS' OVERHAULED OVERWORLD V2.6.7
 |                       |       grass_marsh.json
 |                       |       grass_sudd_marsh.json
 |                       |       leaf_litter.json
+|                       |       seagrass_mixed.json
+|                       |       sea_vines.json
 |                       |       
 |                       \---tree
+|                           |   pale_acacia_stump.json
+|                           |   
 |                           +---dead_spruce
 |                           |       rooted_dirt.json
 |                           |       
 |                           +---huge_jungle
 |                           |       rooted_dirt.json
 |                           |       
+|                           +---huge_sequoia
+|                           |   \---rooted_dirt
+|                           |           1.json
+|                           |           2.json
+|                           |           3.json
+|                           |           
+|                           +---huge_spruce
+|                           |   \---rooted_dirt
+|                           |           1.json
+|                           |           2.json
+|                           |           3.json
+|                           |           
 |                           +---larch
 |                           |       rooted_dirt.json
 |                           |       

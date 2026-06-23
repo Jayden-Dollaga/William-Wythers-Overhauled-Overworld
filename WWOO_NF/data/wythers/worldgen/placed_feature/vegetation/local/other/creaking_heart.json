@@ -140,8 +140,7 @@
               }
             }
           }
-        ],
-        "type": "minecraft:rule_based_state_provider"
+        ]
       },
       "target": {
         "type": "minecraft:all_of",
@@ -206,10 +205,7 @@
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": {
-        "type": "minecraft:constant",
-        "value": 0
-      },
+      "xz_spread": 0,
       "y_spread": {
         "type": "minecraft:uniform",
         "min_inclusive": 7,

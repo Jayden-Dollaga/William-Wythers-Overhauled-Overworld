@@ -17,7 +17,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -43,7 +42,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -69,7 +67,6 @@
                           "feature": {
                             "config": {
                               "state_provider": {
-                                "type": "minecraft:rule_based_state_provider",
                                 "fallback": {
                                   "type": "minecraft:simple_state_provider",
                                   "state": {
@@ -132,7 +129,8 @@
                           {
                             "weight": 10,
                             "data": {
-                              "Name": "minecraft:mangrove_leaves"
+                              "Name": "minecraft:mangrove_leaves",
+                              "Properties": {}
                             }
                           }
                         ]
@@ -511,7 +509,8 @@
                           {
                             "weight": 10,
                             "data": {
-                              "Name": "minecraft:mangrove_leaves"
+                              "Name": "minecraft:mangrove_leaves",
+                              "Properties": {}
                             }
                           }
                         ]
@@ -889,7 +888,8 @@
                       {
                         "weight": 10,
                         "data": {
-                          "Name": "minecraft:mangrove_leaves"
+                          "Name": "minecraft:mangrove_leaves",
+                          "Properties": {}
                         }
                       }
                     ]

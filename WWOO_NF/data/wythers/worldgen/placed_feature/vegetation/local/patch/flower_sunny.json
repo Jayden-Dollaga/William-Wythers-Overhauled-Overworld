@@ -1,191 +1,210 @@
 {
   "feature": {
     "config": {
-      "to_place": {
-        "entries": [
+      "tries": 64,
+      "xz_spread": 7,
+      "y_spread": 3,
+      "feature": {
+        "feature": {
+          "config": {
+            "to_place": {
+              "entries": [
+                {
+                  "data": {
+                    "Name": "minecraft:azure_bluet"
+                  },
+                  "weight": 5
+                },
+                {
+                  "weight": 5,
+                  "data": {
+                    "Name": "minecraft:oxeye_daisy"
+                  }
+                },
+                {
+                  "weight": 5,
+                  "data": {
+                    "Name": "minecraft:dandelion"
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "north",
+                      "flower_amount": "1"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "north",
+                      "flower_amount": "2"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "north",
+                      "flower_amount": "3"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "north",
+                      "flower_amount": "4"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "south",
+                      "flower_amount": "1"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "south",
+                      "flower_amount": "2"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "south",
+                      "flower_amount": "3"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "south",
+                      "flower_amount": "4"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "east",
+                      "flower_amount": "1"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "east",
+                      "flower_amount": "2"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "east",
+                      "flower_amount": "3"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "east",
+                      "flower_amount": "4"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "west",
+                      "flower_amount": "1"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "west",
+                      "flower_amount": "2"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "west",
+                      "flower_amount": "3"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:wildflowers",
+                    "Properties": {
+                      "facing": "west",
+                      "flower_amount": "4"
+                    }
+                  }
+                }
+              ],
+              "type": "minecraft:weighted_state_provider"
+            }
+          },
+          "type": "minecraft:simple_block"
+        },
+        "placement": [
           {
-            "data": {
-              "Name": "minecraft:azure_bluet"
+            "predicate": {
+              "blocks": "minecraft:air",
+              "type": "minecraft:matching_blocks"
             },
-            "weight": 5
-          },
-          {
-            "weight": 5,
-            "data": {
-              "Name": "minecraft:oxeye_daisy"
-            }
-          },
-          {
-            "weight": 5,
-            "data": {
-              "Name": "minecraft:dandelion"
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "north",
-                "flower_amount": "1"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "north",
-                "flower_amount": "2"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "north",
-                "flower_amount": "3"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "north",
-                "flower_amount": "4"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "south",
-                "flower_amount": "1"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "south",
-                "flower_amount": "2"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "south",
-                "flower_amount": "3"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "south",
-                "flower_amount": "4"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "east",
-                "flower_amount": "1"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "east",
-                "flower_amount": "2"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "east",
-                "flower_amount": "3"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "east",
-                "flower_amount": "4"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "west",
-                "flower_amount": "1"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "west",
-                "flower_amount": "2"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "west",
-                "flower_amount": "3"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:wildflowers",
-              "Properties": {
-                "facing": "west",
-                "flower_amount": "4"
-              }
-            }
+            "type": "minecraft:block_predicate_filter"
           }
-        ],
-        "type": "minecraft:weighted_state_provider"
+        ]
       }
     },
-    "type": "minecraft:simple_block"
+    "type": "minecraft:flower"
   },
   "placement": [
     {

@@ -352,7 +352,6 @@
         "radius": 2,
         "tries": 150
       }
-    ],
-    "type": "minecraft:tree"
+    ]
   }
 }

@@ -21,6 +21,7 @@
                   "north": "false",
                   "south": "false",
                   "up": "true",
+                  "waterlogged": "false",
                   "west": "false"
                 }
               }
@@ -53,6 +54,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -77,6 +79,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -101,6 +104,7 @@
               "north": "true",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -125,6 +129,7 @@
               "north": "false",
               "south": "true",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -149,6 +154,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -173,6 +179,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "true"
             }
           }
@@ -197,6 +204,7 @@
               "north": "true",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -221,6 +229,7 @@
               "north": "false",
               "south": "true",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -245,6 +254,7 @@
               "north": "false",
               "south": "false",
               "up": "false",
+              "waterlogged": "false",
               "west": "false"
             }
           }
@@ -258,6 +268,15 @@
         "probability": 0.3
       }
     ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:pale_oak_wood",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    },
     "foliage_placer": {
       "type": "minecraft:jungle_foliage_placer",
       "offset": 1,
@@ -285,6 +304,7 @@
         }
       ]
     },
+    "force_dirt": false,
     "ignore_vines": true,
     "minimum_size": {
       "type": "minecraft:three_layers_feature_size",

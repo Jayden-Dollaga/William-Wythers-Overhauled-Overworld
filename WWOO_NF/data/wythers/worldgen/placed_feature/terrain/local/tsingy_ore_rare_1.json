@@ -6,7 +6,6 @@
       "discard_chance_on_air_exposure": 0,
       "targets": [
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:tag_match",
             "tag": "minecraft:dirt"
@@ -16,10 +15,9 @@
           }
         },
         {
-          "type": "minecraft:simple_state_provider",
           "target": {
             "predicate_type": "minecraft:tag_match",
-            "tag": "minecraft:base_stone_overworld"
+            "tag": "minecraft:stone"
           },
           "state": {
             "Name": "minecraft:tuff"

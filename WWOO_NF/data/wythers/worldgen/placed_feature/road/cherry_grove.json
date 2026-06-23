@@ -3,7 +3,6 @@
     "type": "minecraft:disk",
     "config": {
       "state_provider": {
-        "type": "minecraft:rule_based_state_provider",
         "fallback": {
           "type": "minecraft:simple_state_provider",
           "state": {
@@ -253,7 +252,7 @@
             "blocks": [
               "minecraft:air",
               "minecraft:bamboo",
-              
+              "minecraft:sugar_cane",
               "minecraft:short_grass",
               "minecraft:fern",
               "minecraft:pink_petals",

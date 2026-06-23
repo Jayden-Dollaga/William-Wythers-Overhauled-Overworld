@@ -41,8 +41,7 @@
                   "offset": 4,
                   "height": 7
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": []
@@ -86,8 +85,7 @@
                   "offset": 4,
                   "height": 6
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": []
@@ -131,8 +129,7 @@
                   "offset": 4,
                   "height": 5
                 },
-                "decorators": [],
-                "type": "minecraft:tree"
+                "decorators": []
               }
             },
             "placement": []
@@ -175,8 +172,7 @@
               "offset": 4,
               "height": 4
             },
-            "decorators": [],
-            "type": "minecraft:tree"
+            "decorators": []
           }
         },
         "placement": []

@@ -1,48 +1,108 @@
 {
   "feature": {
-    "type": "minecraft:simple_block",
+    "type": "minecraft:random_patch",
     "config": {
-      "to_place": {
-        "type": "minecraft:weighted_state_provider",
-        "entries": [
+      "tries": 32,
+      "xz_spread": 5,
+      "y_spread": 1,
+      "feature": {
+        "feature": {
+          "type": "minecraft:simple_block",
+          "config": {
+            "to_place": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "north",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "south",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "waterlogged": "true",
+                      "facing": "west",
+                      "half": "lower"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:small_dripleaf",
+                    "Properties": {
+                      "facing": "east",
+                      "half": "lower",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": [
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "north",
-                "half": "lower"
-              }
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": "minecraft:air"
             }
           },
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "south",
-                "half": "lower"
-              }
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_fluids",
+              "offset": [
+                0,
+                0,
+                0
+              ],
+              "fluids": "minecraft:water"
             }
           },
           {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "west",
-                "half": "lower"
-              }
-            }
-          },
-          {
-            "weight": 1,
-            "data": {
-              "Name": "minecraft:small_dripleaf",
-              "Properties": {
-                "facing": "east",
-                "half": "lower"
-              }
+            "type": "minecraft:block_predicate_filter",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": [
+                "minecraft:dirt",
+                "minecraft:mud",
+                "minecraft:coarse_dirt",
+                "minecraft:grass_block",
+                "minecraft:podzol",
+                "minecraft:red_sand",
+                "minecraft:sand"
+              ]
             }
           }
         ]

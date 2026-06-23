@@ -1,5 +1,5 @@
 {
-  "feature": "minecraft:cactus",
+  "feature": "minecraft:patch_cactus",
   "placement": [
     {
       "type": "minecraft:height_range",

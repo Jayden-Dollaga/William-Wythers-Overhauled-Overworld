@@ -16,8 +16,7 @@
                           "Name": "water"
                         }
                       },
-                      "rules": [],
-                      "type": "minecraft:rule_based_state_provider"
+                      "rules": []
                     },
                     "radius": {
                       "type": "minecraft:uniform",

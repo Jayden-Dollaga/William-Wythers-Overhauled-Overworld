@@ -8,14 +8,35 @@
           "feature": {
             "feature": {
               "config": {
-                "to_place": {
-                  "type": "minecraft:simple_state_provider",
-                  "state": {
-                    "Name": "minecraft:azalea"
-                  }
+                "tries": 12,
+                "xz_spread": 4,
+                "y_spread": 4,
+                "feature": {
+                  "feature": {
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:azalea"
+                        }
+                      }
+                    },
+                    "type": "minecraft:simple_block"
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:would_survive",
+                        "state": {
+                          "Name": "fern"
+                        }
+                      }
+                    }
+                  ]
                 }
               },
-              "type": "minecraft:simple_block"
+              "type": "minecraft:random_patch"
             },
             "placement": []
           }
@@ -24,15 +45,36 @@
       "default": {
         "feature": {
           "config": {
-            "to_place": {
-              "type": "minecraft:simple_state_provider",
-              "state": {
-                "Name": "minecraft:lily_of_the_valley"
-              }
-            },
-            "schedule_tick": false
+            "tries": 32,
+            "xz_spread": 4,
+            "y_spread": 4,
+            "feature": {
+              "feature": {
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:lily_of_the_valley"
+                    }
+                  },
+                  "schedule_tick": false
+                },
+                "type": "minecraft:simple_block"
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:would_survive",
+                    "state": {
+                      "Name": "fern"
+                    }
+                  }
+                }
+              ]
+            }
           },
-          "type": "minecraft:simple_block"
+          "type": "minecraft:random_patch"
         },
         "placement": []
       }
