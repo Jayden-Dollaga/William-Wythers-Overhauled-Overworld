@@ -36,8 +36,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -84,7 +82,6 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/dense_steam",
       "wythers:terrain/local/snow_blocks",
       "wythers:terrain/local/snowy_slopes",
       "wythers:vegetation/local/patch/grass_forest"

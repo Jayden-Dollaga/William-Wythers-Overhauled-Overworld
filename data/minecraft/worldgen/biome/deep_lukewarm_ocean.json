@@ -50,8 +50,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -84,7 +82,6 @@
       "minecraft:underwater_magma",
       "wythers:terrain/local/bore_hole_corals"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -106,8 +103,7 @@
     [
       "minecraft:freeze_top_layer",
       "wythers:terrain/local/fan_corals",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,

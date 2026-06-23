@@ -22,19 +22,12 @@
   "features": [
     [
       "wythers:decor/floating_lanterns",
-      "wythers:farm/paddy_water",
-      "wythers:farm/paddy_water_highlands",
-      "wythers:placer/bamboo_jungle",
-      "wythers:road/bamboo_jungle",
-      "wythers:road/rainforest",
-      "wythers:terrain/extended/replace_gravel_to_mud",
       "wythers:terrain/local/cliff",
       "wythers:terrain/local/huangshan_spires"
     ],
     [
       "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground",
-      "wythers:terrain/extended/base_mangrove_swamp_savanna"
+      "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode"
@@ -43,8 +36,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -78,8 +69,7 @@
       "wythers:terrain/extended/badlands_edge",
       "wythers:terrain/extended/disk_clay_dirt_only",
       "wythers:terrain/local/disk_sand_shore",
-      "wythers:terrain/local/huangshan_spires_grass",
-      "wythers:terrain/local/sandy_forest"
+      "wythers:terrain/local/huangshan_spires_grass"
     ],
     [
       "wythers:vegetation/local/trees/ancient_spring_woods"
@@ -101,16 +91,11 @@
       "minecraft:patch_sugar_cane",
       "minecraft:red_mushroom_normal",
       "minecraft:vines",
-      "wythers:farm/paddy_cane",
-      "wythers:farm/paddy_crops",
-      "wythers:farm/paddy_leaf",
       "wythers:vegetation/extended/patch/morning_glory",
-      "wythers:vegetation/extended/patch/tropical_water_plants",
       "wythers:vegetation/extended/trees/jungle_edge_bushes",
       "wythers:vegetation/local/patch/bamboo",
       "wythers:vegetation/local/patch/bamboo_highlands",
       "wythers:vegetation/local/patch/flower_sunny",
-      "wythers:vegetation/local/patch/grass_jungle",
       "wythers:vegetation/local/patch/paddy_fireflies",
       "wythers:vegetation/local/patch/water_grass_jungle",
       "wythers:vegetation/local/patch/waterlily_jungle",

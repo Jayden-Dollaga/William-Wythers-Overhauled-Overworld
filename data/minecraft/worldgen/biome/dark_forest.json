@@ -22,11 +22,8 @@
   },
   "features": [
     [
-      "wythers:placer/dark_forest",
       "wythers:terrain/local/deepslate_boulders",
-      "wythers:terrain/local/swamp_carver",
-      "wythers:terrain/local/swamp_ground",
-      "wythers:terrain/local/swamp_hills"
+      "wythers:terrain/local/swamp_carver"
     ],
     [
       "minecraft:lake_lava_surface",
@@ -39,9 +36,7 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/base_dark_forest",
       "wythers:vegetation/local/trees/dark_forest_river_oaks",
       "wythers:vegetation/local/trees/dark_jungle"
     ],

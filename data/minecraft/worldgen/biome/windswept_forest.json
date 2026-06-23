@@ -27,9 +27,7 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/volcanic_basalt_cliffs",
       "wythers:terrain/local/volcanic_fallout",
       "wythers:terrain/local/volcanic_fallout_ore"
     ],
@@ -86,7 +84,6 @@
       "minecraft:red_mushroom_normal",
       "minecraft:trees_windswept_forest",
       "wythers:vegetation/local/patch/grass_standard",
-      "wythers:vegetation/local/patch/windswept_forest_flowers",
       "wythers:vegetation/local/trees/mosswoods"
     ],
     [

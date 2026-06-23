@@ -32,8 +32,6 @@
   "features": [
     [
       "wythers:placer/warm_ocean",
-      "wythers:terrain/extended/ocean_beach_sand",
-      "wythers:terrain/extended/replace_gravel_to_sand",
       "wythers:terrain/local/ocean_bore_holes",
       "wythers:terrain/local/volcanic_flooded_cavern_mud",
       "wythers:terrain/local/warm_island"
@@ -49,8 +47,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -82,7 +78,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -99,15 +94,11 @@
       "minecraft:sea_pickle",
       "minecraft:seagrass_warm",
       "minecraft:trees_water",
-      "minecraft:warm_ocean_vegetation",
-      "wythers:vegetation/local/patch/red_coral"
+      "minecraft:warm_ocean_vegetation"
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/red_coral_tall",
-      "wythers:vegetation/local/patch/seagrass_wrecks",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,

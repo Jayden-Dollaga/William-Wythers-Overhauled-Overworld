@@ -23,7 +23,6 @@
   },
   "features": [
     [
-      "wythers:road/cherry_grove",
       "wythers:terrain/extended/onsen_calcite",
       "wythers:terrain/extended/onsen_deepslate",
       "wythers:terrain/extended/onsen_pools",
@@ -42,8 +41,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -90,12 +87,9 @@
       "minecraft:patch_tall_grass_2",
       "minecraft:trees_cherry",
       "wythers:decor/floating_lanterns_cherry",
-      "wythers:farm/paddy_cane",
       "wythers:vegetation/extended/trees/cherry_huangshan_pine_snowy",
       "wythers:vegetation/extended/trees/cherry_maple_snowy",
-      "wythers:vegetation/local/patch/elephant_bamboo_cherry",
       "wythers:vegetation/local/patch/flower_cherry",
-      "wythers:vegetation/local/patch/flower_peony",
       "wythers:vegetation/local/patch/waterlily_dense",
       "wythers:vegetation/local/trees/cherry",
       "wythers:vegetation/local/trees/cherry_huangshan_pine",

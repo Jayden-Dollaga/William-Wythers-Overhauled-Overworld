@@ -21,7 +21,6 @@
   },
   "features": [
     [
-      "wythers:terrain/extended/base_frozen_peaks",
       "wythers:terrain/extended/replace_stone_to_andesite"
     ],
     [
@@ -36,8 +35,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -83,7 +80,6 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:terrain/extended/base_frozen_peaks_snow",
       "wythers:terrain/local/snowy_slopes"
     ]
   ],

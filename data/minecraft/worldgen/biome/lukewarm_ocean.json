@@ -35,9 +35,6 @@
       "wythers:terrain/carver/ocean",
       "wythers:terrain/extended/dead_coral_stone",
       "wythers:terrain/extended/dead_coral_stone_2",
-      "wythers:terrain/extended/ocean_beach_sand",
-      "wythers:terrain/extended/replace_dirt_to_sand",
-      "wythers:terrain/extended/replace_gravel_to_sand",
       "wythers:terrain/extended/sea_cliff",
       "wythers:terrain/local/atoll_grass",
       "wythers:terrain/local/dead_coral_stack",
@@ -61,8 +58,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -97,13 +92,10 @@
       "wythers:terrain/local/gravel_in_dead_coral",
       "wythers:terrain/local/sponge_disks",
       "wythers:terrain/local/suspicious_ore_wet",
-      "wythers:vegetation/local/other/coral_blobs",
       "wythers:vegetation/local/other/coral_disks",
       "wythers:vegetation/local/other/coral_disks_ranged",
-      "wythers:vegetation/local/other/coral_disks_small",
-      "wythers:vegetation/local/patch/cave_kelp"
+      "wythers:vegetation/local/other/coral_disks_small"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -120,9 +112,7 @@
       "minecraft:red_mushroom_normal",
       "minecraft:seagrass_warm",
       "minecraft:trees_water",
-      "wythers:vegetation/local/other/cocoanuts",
       "wythers:vegetation/local/patch/island_grass",
-      "wythers:vegetation/local/patch/pineapples",
       "wythers:vegetation/local/patch/sea_vines",
       "wythers:vegetation/local/trees/jungle_island"
     ],
@@ -130,8 +120,7 @@
       "minecraft:freeze_top_layer",
       "wythers:terrain/local/coral_air_pockets",
       "wythers:terrain/local/fan_corals",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,

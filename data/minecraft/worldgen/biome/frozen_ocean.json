@@ -52,7 +52,6 @@
     [
       "minecraft:blue_ice"
     ],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -84,7 +83,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -102,9 +100,7 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/grass_iceland",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,

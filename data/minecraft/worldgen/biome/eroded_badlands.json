@@ -24,8 +24,6 @@
   },
   "features": [
     [
-      "wythers:placer/badlands",
-      "wythers:terrain/extended/badlands_stone_fix",
       "wythers:terrain/local/badlands_replace_most_red_sand_to_grass_block",
       "wythers:terrain/local/badlands_replace_some_red_sand_to_grass_block"
     ],
@@ -34,8 +32,7 @@
       "minecraft:lake_lava_underground",
       "wythers:terrain/extended/arroyo_badlands",
       "wythers:terrain/extended/arroyo_badlands_red",
-      "wythers:terrain/extended/badlands_muddy_canyon",
-      "wythers:terrain/local/savanna_sandy_wash"
+      "wythers:terrain/extended/badlands_muddy_canyon"
     ],
     [
       "minecraft:amethyst_geode"
@@ -44,8 +41,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -78,7 +73,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -94,8 +88,7 @@
       "minecraft:patch_pumpkin",
       "minecraft:patch_sugar_cane_badlands",
       "minecraft:red_mushroom_normal",
-      "wythers:vegetation/local/patch/grass_standard",
-      "wythers:vegetation/local/patch/saguaros"
+      "wythers:vegetation/local/patch/grass_standard"
     ],
     [
       "minecraft:freeze_top_layer",

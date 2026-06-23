@@ -13,7 +13,6 @@
   },
   "features": [
     [
-      "wythers:placer/taiga",
       "wythers:terrain/extended/scree",
       "wythers:terrain/local/stone_boulders",
       "wythers:terrain/local/stone_cliffs"
@@ -32,12 +31,8 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
-      "wythers:terrain/local/cave_disk_magma",
-      "wythers:terrain/local/yellowstone_colours"
+      "wythers:terrain/local/cave_disk_magma"
     ],
     [
       "minecraft:disk_clay",
@@ -72,7 +67,6 @@
       "wythers:terrain/local/disk_gravel_floor",
       "wythers:terrain/local/disk_gravel_shore"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water",
@@ -91,7 +85,6 @@
       "minecraft:patch_sugar_cane",
       "minecraft:red_mushroom_taiga",
       "minecraft:trees_taiga",
-      "wythers:vegetation/local/patch/yellowstone_grass",
       "wythers:vegetation/local/trees/fallen_spruce",
       "wythers:vegetation/local/trees/taiga_larches",
       "wythers:vegetation/local/trees/taiga_spruces_tall",
@@ -99,11 +92,8 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/sparse_steam",
       "wythers:terrain/local/snow_blocks",
-      "wythers:terrain/local/underground_volcanifier",
       "wythers:vegetation/local/patch/berry_range",
-      "wythers:vegetation/local/patch/grass_and_ferns_range",
       "wythers:vegetation/local/patch/large_fern_taiga"
     ]
   ],

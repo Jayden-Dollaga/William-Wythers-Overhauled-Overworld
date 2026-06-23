@@ -24,9 +24,6 @@
   },
   "features": [
     [
-      "wythers:placer/wooded_badlands",
-      "wythers:terrain/local/badlands_alpine_grassland",
-      "wythers:terrain/local/base_wooded_badlands",
       "wythers:terrain/local/uluru_cap",
       "wythers:terrain/local/wooded_badlands_replace_most_red_sand_to_grass_block",
       "wythers:terrain/local/wooded_badlands_replace_some_red_sand_to_grass_block"
@@ -43,8 +40,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -77,9 +72,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
       "wythers:terrain/local/riverbank_plains"
-    ],
-    [
-      "wythers:terrain/extended/arroyo_red_salt_pan_2"
     ],
     [
       "minecraft:spring_lava",

@@ -28,8 +28,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -60,11 +58,8 @@
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/extended/badlands_edge",
-      "wythers:terrain/extended/volcanic_jungle_mud_in_basalt",
-      "wythers:terrain/extended/volcanic_jungle_muddy_roots_on_basalt"
+      "wythers:terrain/extended/badlands_edge"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -81,7 +76,6 @@
       "minecraft:red_mushroom_normal",
       "minecraft:trees_savanna",
       "wythers:vegetation/extended/trees/savanna_oaks",
-      "wythers:vegetation/local/patch/giant_groundsels",
       "wythers:vegetation/local/trees/tropical_savanna",
       "wythers:vegetation/local/trees/tropical_woods"
     ],

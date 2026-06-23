@@ -24,12 +24,9 @@
   },
   "features": [
     [
-      "wythers:placer/badlands",
-      "wythers:terrain/local/badlands_alpine_grassland",
       "wythers:terrain/local/badlands_plateau_packed_mud",
       "wythers:terrain/local/badlands_plateau_packed_mud_2",
       "wythers:terrain/local/badlands_plateau_red_sand",
-      "wythers:terrain/local/badlands_replace_all_red_sand_to_grass_block",
       "wythers:terrain/local/badlands_replace_most_red_sand_to_grass_block",
       "wythers:terrain/local/badlands_replace_some_red_sand_to_grass_block"
     ],
@@ -38,8 +35,7 @@
       "minecraft:lake_lava_underground",
       "wythers:terrain/extended/arroyo_badlands",
       "wythers:terrain/extended/arroyo_badlands_red",
-      "wythers:terrain/extended/badlands_muddy_canyon",
-      "wythers:terrain/local/savanna_sandy_wash"
+      "wythers:terrain/extended/badlands_muddy_canyon"
     ],
     [
       "minecraft:amethyst_geode"
@@ -48,8 +44,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -83,9 +77,6 @@
       "minecraft:underwater_magma"
     ],
     [
-      "wythers:terrain/extended/arroyo_red_salt_pan_2"
-    ],
-    [
       "minecraft:spring_lava",
       "minecraft:spring_water"
     ],
@@ -101,23 +92,16 @@
       "minecraft:patch_sugar_cane_badlands",
       "minecraft:red_mushroom_normal",
       "wythers:vegetation/extended/trees/oak_badlands",
-      "wythers:vegetation/local/patch/grass_badlands",
       "wythers:vegetation/local/patch/grass_standard",
-      "wythers:vegetation/local/patch/saguaros",
       "wythers:vegetation/local/trees/badlands_pine_woods",
       "wythers:vegetation/local/trees/badlands_pinyon_woods",
       "wythers:vegetation/local/trees/forest_badlands",
       "wythers:vegetation/local/trees/jungle_midland",
-      "wythers:vegetation/local/trees/jungle_upland",
-      "wythers:vegetation/local/trees/mesa_shrubs"
+      "wythers:vegetation/local/trees/jungle_upland"
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/badlands",
-      "wythers:terrain/local/badlands_snow_blocks",
-      "wythers:vegetation/local/patch/barrel_cacti",
-      "wythers:vegetation/local/patch/berries_badlands",
-      "wythers:vegetation/local/patch/flower_badlands"
+      "wythers:terrain/local/badlands_snow_blocks"
     ]
   ],
   "has_precipitation": false,

@@ -27,12 +27,8 @@
       "minecraft:monster_room_deep"
     ],
     [
-      "wythers:terrain/local/volcanic_pools"
-    ],
-    [
       "wythers:terrain/extended/volcanic_fallout",
-      "wythers:terrain/extended/volcanic_fallout_ore",
-      "wythers:terrain/local/volcanic_basalt_cliffs"
+      "wythers:terrain/extended/volcanic_fallout_ore"
     ],
     [
       "minecraft:disk_clay",
@@ -93,8 +89,7 @@
       "wythers:vegetation/local/patch/grass_standard"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:decor/sparse_steam"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,

@@ -33,8 +33,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -66,7 +64,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -86,12 +83,10 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:vegetation/local/other/creaking_heart",
       "wythers:vegetation/local/other/pale_lichen",
       "wythers:vegetation/local/other/white_bracket_fungi",
       "wythers:vegetation/local/patch/hanging_moss",
-      "wythers:vegetation/local/patch/pale_moss_vegetation",
-      "wythers:vegetation/local/patch/pale_pumpkin"
+      "wythers:vegetation/local/patch/pale_moss_vegetation"
     ]
   ],
   "has_precipitation": true,

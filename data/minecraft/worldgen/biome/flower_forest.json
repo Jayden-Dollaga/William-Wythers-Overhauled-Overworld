@@ -20,7 +20,6 @@
   },
   "features": [
     [
-      "wythers:road/andesite",
       "wythers:terrain/extended/replace_stone_to_diorite",
       "wythers:terrain/local/stone_cliffs_plus"
     ],
@@ -36,10 +35,7 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma"
     ],
     [
@@ -73,10 +69,8 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
       "wythers:terrain/extended/disk_clay_dirt_only",
-      "wythers:terrain/local/disk_sand_shore",
-      "wythers:terrain/local/replace_volcanics_flower_forest"
+      "wythers:terrain/local/disk_sand_shore"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -99,12 +93,10 @@
       "wythers:vegetation/extended/trees/windbreak_1",
       "wythers:vegetation/extended/trees/windbreak_2",
       "wythers:vegetation/local/bushes/mediterranean",
-      "wythers:vegetation/local/patch/flower_mediterranean_lilacs",
       "wythers:vegetation/local/patch/grass_standard"
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/dense_steam",
       "wythers:terrain/extended/volcanic_extinction",
       "wythers:terrain/local/pamukkale_calcite",
       "wythers:terrain/local/pamukkale_diorite",

@@ -29,7 +29,6 @@
     "water_color": "#3938c9"
   },
   "features": [
-    [],
     [
       "minecraft:lake_lava_surface",
       "minecraft:lake_lava_underground"
@@ -42,10 +41,6 @@
     [
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
-    ],
-    [],
-    [
-      "wythers:terrain/local/riverbank_gravel"
     ],
     [
       "minecraft:disk_clay",
@@ -77,10 +72,8 @@
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/disk_gravel_river",
-      "wythers:terrain/local/frozen_river"
+      "wythers:terrain/local/disk_gravel_river"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"

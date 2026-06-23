@@ -13,7 +13,6 @@
   },
   "features": [
     [
-      "wythers:terrain/local/base_snowy_beach",
       "wythers:terrain/local/gravelly_beach_rocks"
     ],
     [
@@ -28,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -61,7 +58,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"

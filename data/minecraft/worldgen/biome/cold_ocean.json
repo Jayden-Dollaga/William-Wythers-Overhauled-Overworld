@@ -47,8 +47,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -82,7 +80,6 @@
       "wythers:terrain/local/beach_mossy_stone",
       "wythers:terrain/local/cold_island_processor"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -104,10 +101,8 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/cold_ocean",
       "wythers:terrain/local/cold_island_mossy_cobblestone",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,
