@@ -36,17 +36,11 @@
     "water_color": "#3f76e4"
   },
   "features": [
-    [],
-    [],
-    [],
-    [],
     [
       "minecraft:delta",
       "minecraft:small_basalt_columns",
       "minecraft:large_basalt_columns"
     ],
-    [],
-    [],
     [
       "minecraft:basalt_blobs",
       "minecraft:blackstone_blobs",

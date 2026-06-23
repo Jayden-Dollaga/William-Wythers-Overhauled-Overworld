@@ -18,20 +18,12 @@
       "wythers:terrain/extended/thermal_savanna_forest_base",
       "wythers:terrain/local/glacial_scree",
       "wythers:terrain/local/ice_spikes_glacial_dirt",
-      "wythers:terrain/local/ice_spikes_glacial_grass",
-      "wythers:terrain/local/ice_spikes_glacial_stone",
-      "wythers:terrain/local/ice_spikes_grass",
-      "wythers:terrain/local/thermal_steppe_mud"
+      "wythers:terrain/local/ice_spikes_glacial_stone"
     ],
     [
       "minecraft:lake_lava_surface",
       "minecraft:lake_lava_underground",
-      "wythers:terrain/local/ice_spikes_glacial_gravel",
-      "wythers:terrain/local/thermal_steppe_brown",
-      "wythers:terrain/local/thermal_steppe_dirt",
-      "wythers:terrain/local/thermal_steppe_dripstone",
-      "wythers:terrain/local/thermal_steppe_gray",
-      "wythers:terrain/local/thermal_steppe_soul"
+      "wythers:terrain/local/ice_spikes_glacial_gravel"
     ],
     [
       "minecraft:amethyst_geode",
@@ -45,7 +37,6 @@
       "minecraft:ice_patch",
       "minecraft:ice_spike"
     ],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -78,7 +69,6 @@
       "minecraft:underwater_magma",
       "wythers:terrain/local/disk_gravel_river"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water",
@@ -99,8 +89,7 @@
       "wythers:vegetation/local/patch/grass_standard"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:decor/dense_steam"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,

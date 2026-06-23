@@ -13,7 +13,6 @@
   },
   "features": [
     [
-      "wythers:placer/snowy_taiga",
       "wythers:terrain/extended/coarsify_dirt",
       "wythers:terrain/extended/scree",
       "wythers:terrain/feature/stone_pile",
@@ -30,8 +29,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -64,10 +61,8 @@
       "minecraft:underwater_magma",
       "wythers:terrain/extended/windswept_snow",
       "wythers:terrain/local/disk_gravel_floor",
-      "wythers:terrain/local/disk_gravel_shore",
-      "wythers:terrain/local/frozen_river"
+      "wythers:terrain/local/disk_gravel_shore"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -85,14 +80,12 @@
       "minecraft:red_mushroom_taiga",
       "minecraft:trees_taiga",
       "wythers:vegetation/local/other/fallen_log_mix_taiga",
-      "wythers:vegetation/local/patch/grass_snowy_taiga",
       "wythers:vegetation/local/trees/taiga_cold",
       "wythers:vegetation/local/trees/taiga_spruces_tall_snowy"
     ],
     [
       "minecraft:freeze_top_layer",
       "wythers:terrain/local/snowy_edges",
-      "wythers:terrain/local/snowy_ground",
       "wythers:terrain/local/snowy_slopes"
     ]
   ],

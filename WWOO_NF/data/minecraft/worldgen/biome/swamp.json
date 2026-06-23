@@ -30,13 +30,8 @@
   "features": [
     [
       "wythers:placer/swamp",
-      "wythers:terrain/local/fen_ground",
       "wythers:terrain/local/rooted_cave_floor",
       "wythers:terrain/local/swamp_carver",
-      "wythers:terrain/local/swamp_carver_2",
-      "wythers:terrain/local/swamp_ground",
-      "wythers:terrain/local/swamp_hills",
-      "wythers:terrain/local/swamp_pools",
       "wythers:terrain/local/swamp_stone_replacer"
     ],
     [
@@ -53,11 +48,6 @@
       "minecraft:monster_room_deep"
     ],
     [
-      "wythers:terrain/local/swamp_pools"
-    ],
-    [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma"
     ],
     [
@@ -87,8 +77,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
-      "minecraft:underwater_magma",
-      "wythers:terrain/local/swamp_gas"
+      "minecraft:underwater_magma"
     ],
     [
       "wythers:terrain/feature/dripstone_cluster",
@@ -116,7 +105,6 @@
       "minecraft:trees_swamp",
       "wythers:vegetation/local/patch/duckweed_sparse",
       "wythers:vegetation/local/patch/grass_low_swamp",
-      "wythers:vegetation/local/patch/hanging_roots",
       "wythers:vegetation/local/patch/marsh_grass",
       "wythers:vegetation/local/patch/water_grass_swamp",
       "wythers:vegetation/local/trees/birch_swamp",

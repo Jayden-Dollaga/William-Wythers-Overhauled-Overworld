@@ -27,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -60,10 +58,8 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
       "wythers:terrain/extended/windswept_snow",
-      "wythers:terrain/local/disk_gravel_river",
-      "wythers:terrain/local/frozen_river"
+      "wythers:terrain/local/disk_gravel_river"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -86,7 +82,6 @@
     [
       "minecraft:freeze_top_layer",
       "wythers:terrain/local/snowy_edges",
-      "wythers:terrain/local/snowy_ground",
       "wythers:terrain/local/snowy_slopes"
     ]
   ],

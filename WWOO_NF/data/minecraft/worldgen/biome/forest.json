@@ -20,9 +20,7 @@
   },
   "features": [
     [
-      "wythers:placer/forest",
       "wythers:terrain/extended/scree",
-      "wythers:terrain/local/forest_floor",
       "wythers:terrain/local/highland_stone_cliffs",
       "wythers:terrain/local/highland_stone_cliffs_surface",
       "wythers:terrain/local/stone_boulders",
@@ -30,8 +28,7 @@
     ],
     [
       "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground",
-      "wythers:terrain/extended/base_mangrove_swamp_forest"
+      "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode"
@@ -40,8 +37,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -74,10 +69,8 @@
       "minecraft:underwater_magma",
       "wythers:terrain/extended/badlands_edge",
       "wythers:terrain/local/disk_gravel_forest",
-      "wythers:terrain/local/disk_sand_forest",
-      "wythers:terrain/local/sandy_forest"
+      "wythers:terrain/local/disk_sand_forest"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -126,7 +119,6 @@
       "wythers:terrain/local/forest_snow_blocks",
       "wythers:terrain/local/replace_basalt_to_deepslate",
       "wythers:terrain/local/snow_blocks",
-      "wythers:vegetation/local/patch/fern_montane_forest",
       "wythers:vegetation/local/patch/grass_forest",
       "wythers:vegetation/local/patch/large_fern_forest"
     ]

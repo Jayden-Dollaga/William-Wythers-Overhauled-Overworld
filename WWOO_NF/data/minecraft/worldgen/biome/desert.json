@@ -21,13 +21,10 @@
   },
   "features": [
     [
-      "wythers:placer/desert",
       "wythers:placer/warm_ocean_extender_1",
       "wythers:placer/warm_ocean_extender_2",
       "wythers:placer/warm_ocean_extender_3",
-      "wythers:terrain/extended/desert_swamp_sand",
       "wythers:terrain/extended/disk_sand",
-      "wythers:terrain/extended/replace_gravel_to_sand",
       "wythers:terrain/local/replace_sandstone_to_smooth_sandstone"
     ],
     [
@@ -47,7 +44,6 @@
     [
       "minecraft:desert_well"
     ],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -80,13 +76,7 @@
       "minecraft:underwater_magma"
     ],
     [
-      "wythers:terrain/local/danakil_mud",
-      "wythers:terrain/local/danakil_orange",
-      "wythers:terrain/local/danakil_red",
-      "wythers:terrain/local/danakil_terracotta",
-      "wythers:terrain/local/danakil_water",
-      "wythers:terrain/local/danakil_yellow",
-      "wythers:terrain/local/danakil_yellow_2"
+      "wythers:terrain/local/danakil_mud"
     ],
     [
       "minecraft:spring_lava",
@@ -110,19 +100,12 @@
       "wythers:vegetation/local/patch/fan_palm_oases",
       "wythers:vegetation/local/patch/fan_palm_oases_2",
       "wythers:vegetation/local/patch/fan_palm_oases_3",
-      "wythers:vegetation/local/patch/flowering_agaves",
-      "wythers:vegetation/local/patch/flowering_agaves_red_sand",
       "wythers:vegetation/local/patch/grass_desert",
-      "wythers:vegetation/local/patch/saguaros_desert",
-      "wythers:vegetation/local/patch/savanna_water_plants",
       "wythers:vegetation/local/patch/succulents",
-      "wythers:vegetation/local/patch/succulents_sparse",
-      "wythers:vegetation/local/trees/desert_bushes"
+      "wythers:vegetation/local/patch/succulents_sparse"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:decor/dense_steam",
-      "wythers:decor/desert"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": false,

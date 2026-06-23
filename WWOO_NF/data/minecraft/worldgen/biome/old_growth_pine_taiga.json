@@ -19,7 +19,6 @@
     "water_color": "#3f76e4"
   },
   "features": [
-    [],
     [
       "minecraft:lake_lava_surface",
       "minecraft:lake_lava_underground"
@@ -33,7 +32,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
       "wythers:vegetation/extended/trees/giant_taiga_meadow"
     ],
@@ -72,7 +70,6 @@
       "wythers:terrain/local/disk_mud_in_muddy_roots",
       "wythers:terrain/local/disk_muddy_roots_in_podzol"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"

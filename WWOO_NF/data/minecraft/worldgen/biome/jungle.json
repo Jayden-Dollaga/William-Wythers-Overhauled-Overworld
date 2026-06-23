@@ -21,14 +21,8 @@
   },
   "features": [
     [
-      "wythers:placer/jungle",
-      "wythers:road/rainforest",
-      "wythers:road/sparse_jungle",
       "wythers:terrain/local/cliff",
-      "wythers:terrain/local/disk_mud_shore_jungle",
-      "wythers:terrain/local/jungle_floor_1",
-      "wythers:terrain/local/jungle_floor_2",
-      "wythers:terrain/local/jungle_floor_3"
+      "wythers:terrain/local/disk_mud_shore_jungle"
     ],
     [
       "minecraft:lake_lava_surface",
@@ -44,9 +38,6 @@
     ],
     [
       "wythers:terrain/local/cloud_forest_terrain"
-    ],
-    [
-      "wythers:terrain/local/cloud_forest_surface"
     ],
     [
       "minecraft:disk_clay",
@@ -78,11 +69,7 @@
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/extended/badlands_edge",
-      "wythers:terrain/extended/coastal_sand",
-      "wythers:terrain/extended/volcanic_jungle_mud_in_basalt",
-      "wythers:terrain/extended/volcanic_jungle_muddy_roots_on_basalt",
-      "wythers:terrain/local/sandy_forest"
+      "wythers:terrain/extended/badlands_edge"
     ],
     [
       "wythers:vegetation/local/trees/ancient_spring_woods"
@@ -105,21 +92,14 @@
       "minecraft:trees_jungle",
       "minecraft:vines",
       "wythers:vegetation/extended/patch/morning_glory",
-      "wythers:vegetation/extended/patch/tropical_water_plants",
       "wythers:vegetation/extended/trees/jungle_edge_bushes",
-      "wythers:vegetation/extended/trees/jungle_volcanic",
       "wythers:vegetation/local/patch/floating_leaves",
-      "wythers:vegetation/local/patch/flower_cloud_forest",
       "wythers:vegetation/local/patch/flower_sunny",
-      "wythers:vegetation/local/patch/giant_groundsels",
-      "wythers:vegetation/local/patch/grass_jungle",
-      "wythers:vegetation/local/patch/hanging_roots",
       "wythers:vegetation/local/patch/melon",
       "wythers:vegetation/local/patch/water_grass_jungle",
       "wythers:vegetation/local/patch/waterlily_jungle",
       "wythers:vegetation/local/trees/banyans",
       "wythers:vegetation/local/trees/banyans_2",
-      "wythers:vegetation/local/trees/cloud_forest",
       "wythers:vegetation/local/trees/eucalyptus_rainforest",
       "wythers:vegetation/local/trees/jungle_lowland_rainforest",
       "wythers:vegetation/local/trees/jungle_mangroves",

@@ -15,8 +15,7 @@
   },
   "features": [
     [
-      "wythers:terrain/local/mushroom_fields_grass_surface",
-      "wythers:terrain/local/mushroom_fields_shore"
+      "wythers:terrain/local/mushroom_fields_grass_surface"
     ],
     [
       "minecraft:lake_lava_surface",
@@ -29,8 +28,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -62,7 +59,6 @@
       "minecraft:ore_tuff",
       "minecraft:underwater_magma"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -77,10 +73,7 @@
       "wythers:vegetation/local/other/colossal_mushrooms_rare",
       "wythers:vegetation/local/other/colossal_mushrooms_very_rare",
       "wythers:vegetation/local/other/mushroom_fields_fungal_forest",
-      "wythers:vegetation/local/other/mushroom_fields_vegetation",
-      "wythers:vegetation/local/patch/grass_mushroom_fields",
-      "wythers:vegetation/local/patch/hanging_roots",
-      "wythers:vegetation/local/patch/mushrooms"
+      "wythers:vegetation/local/other/mushroom_fields_vegetation"
     ],
     [
       "minecraft:freeze_top_layer"

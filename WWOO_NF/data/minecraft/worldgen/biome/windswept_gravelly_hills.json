@@ -27,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -60,8 +58,7 @@
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/local/shadow_snow",
-      "wythers:terrain/local/snow_spread"
+      "wythers:terrain/local/shadow_snow"
     ],
     [
       "minecraft:ore_infested"

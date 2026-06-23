@@ -37,12 +37,8 @@
       "minecraft:monster_room_deep"
     ],
     [
-      "wythers:terrain/local/volcanic_pools"
-    ],
-    [
       "wythers:terrain/extended/volcanic_flows",
       "wythers:terrain/extended/volcanic_flows_ore",
-      "wythers:terrain/local/volcanic_basalt_cliffs",
       "wythers:terrain/local/volcano_high_snow_blocks"
     ],
     [
@@ -75,8 +71,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
-      "minecraft:underwater_magma",
-      "wythers:terrain/local/snow_spread"
+      "minecraft:underwater_magma"
     ],
     [
       "minecraft:ore_infested"
@@ -90,8 +85,7 @@
       "wythers:vegetation/local/patch/grass_standard"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:decor/sparse_steam"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,

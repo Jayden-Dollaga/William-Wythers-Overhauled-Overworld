@@ -30,16 +30,8 @@
   },
   "features": [
     [
-      "wythers:placer/mangrove_swamp",
       "wythers:terrain/local/mangrove_swamp_carver",
-      "wythers:terrain/local/mangrove_swamp_carver_2",
-      "wythers:terrain/local/mangrove_swamp_ground",
-      "wythers:terrain/local/mangrove_swamp_hills",
-      "wythers:terrain/local/mangrove_swamp_stone_replacer",
-      "wythers:terrain/local/sandy_marsh_ground",
-      "wythers:terrain/local/sandy_marsh_hills",
-      "wythers:terrain/local/sudd_marsh_ground",
-      "wythers:terrain/local/swamp_pools"
+      "wythers:terrain/local/mangrove_swamp_stone_replacer"
     ],
     [
       "minecraft:lake_lava_surface",
@@ -54,10 +46,7 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma"
     ],
     [
@@ -111,15 +100,10 @@
       "wythers:vegetation/local/patch/grass_low_swamp",
       "wythers:vegetation/local/patch/grass_mangrove_swamp",
       "wythers:vegetation/local/patch/grass_sudd_marsh",
-      "wythers:vegetation/local/patch/hanging_roots",
-      "wythers:vegetation/local/patch/sandy_marsh_dripleaf",
       "wythers:vegetation/local/patch/swamp_reeds",
-      "wythers:vegetation/local/patch/tall_grass_sudd_marsh",
       "wythers:vegetation/local/patch/water_grass_mangrove_swamp",
       "wythers:vegetation/local/trees/banyans_swamp",
-      "wythers:vegetation/local/trees/bayou",
       "wythers:vegetation/local/trees/bayou_hills",
-      "wythers:vegetation/local/trees/bayou_pine_forest",
       "wythers:vegetation/local/trees/forest_tropical_pine",
       "wythers:vegetation/local/trees/jungle_palms",
       "wythers:vegetation/local/trees/mangrove_swamp",

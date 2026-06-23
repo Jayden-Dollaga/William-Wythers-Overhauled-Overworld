@@ -34,7 +34,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
       "wythers:vegetation/extended/trees/giant_taiga_meadow"
     ],
@@ -75,7 +74,6 @@
       "wythers:terrain/local/disk_mud_in_muddy_roots",
       "wythers:terrain/local/disk_muddy_roots_in_podzol"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -96,14 +94,12 @@
       "minecraft:red_mushroom_old_growth",
       "minecraft:trees_old_growth_spruce_taiga",
       "wythers:vegetation/local/patch/large_ferns_dense_forests",
-      "wythers:vegetation/local/patch/temperate_rainforest_undergrowth",
       "wythers:vegetation/local/trees/ogt_giant_redwood_woods",
       "wythers:vegetation/local/trees/old_growth_spruce_taiga"
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:terrain/local/replace_coarse_dirt_to_moss",
-      "wythers:vegetation/local/patch/temperate_rainforest_vines"
+      "wythers:terrain/local/replace_coarse_dirt_to_moss"
     ]
   ],
   "has_precipitation": true,

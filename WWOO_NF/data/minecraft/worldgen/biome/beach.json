@@ -13,8 +13,6 @@
   },
   "features": [
     [
-      "wythers:placer/beach",
-      "wythers:terrain/extended/coastal_forest_sand",
       "wythers:terrain/extended/sea_cliff",
       "wythers:terrain/local/beach_rocks"
     ],
@@ -29,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -63,7 +59,6 @@
       "minecraft:underwater_magma",
       "wythers:terrain/local/beach_mossy_stone"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"

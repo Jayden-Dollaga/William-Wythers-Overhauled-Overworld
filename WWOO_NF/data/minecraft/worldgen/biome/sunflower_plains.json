@@ -13,7 +13,6 @@
   },
   "features": [
     [
-      "wythers:road/sunflower_plains",
       "wythers:terrain/extended/replace_stone_to_granite",
       "wythers:terrain/local/stone_cliffs"
     ],
@@ -29,8 +28,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -64,7 +61,6 @@
       "wythers:terrain/extended/disk_clay_dirt_only",
       "wythers:terrain/local/disk_sand_shore"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -82,7 +78,6 @@
       "minecraft:red_mushroom_normal",
       "minecraft:trees_plains",
       "wythers:vegetation/extended/patch/flower_humid_mediterranean",
-      "wythers:vegetation/extended/patch/sunflower",
       "wythers:vegetation/extended/trees/mediterranean_woods",
       "wythers:vegetation/extended/trees/savanna_mediterranean_woods",
       "wythers:vegetation/extended/trees/sclerophyllous_woods",

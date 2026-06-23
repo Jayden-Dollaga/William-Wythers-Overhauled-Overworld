@@ -24,7 +24,6 @@
       "wythers:placer/deep_dark",
       "wythers:placer/deep_dark_extended"
     ],
-    [],
     [
       "minecraft:amethyst_geode"
     ],
@@ -32,10 +31,7 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma"
     ],
     [
@@ -73,7 +69,6 @@
       "minecraft:sculk_patch_deep_dark",
       "minecraft:sculk_vein"
     ],
-    [],
     [
       "minecraft:brown_mushroom_normal",
       "minecraft:flower_plains",
@@ -85,8 +80,7 @@
       "minecraft:trees_plains"
     ],
     [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/underground_volcanifier"
+      "minecraft:freeze_top_layer"
     ]
   ],
   "has_precipitation": true,

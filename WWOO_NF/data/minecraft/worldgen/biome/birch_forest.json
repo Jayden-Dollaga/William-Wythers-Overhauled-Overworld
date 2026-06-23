@@ -23,7 +23,6 @@
       "wythers:farm/harvest_fields_1",
       "wythers:farm/harvest_fields_2",
       "wythers:farm/harvest_fields_3",
-      "wythers:placer/birch_forests",
       "wythers:road/harvest_fields_1",
       "wythers:road/harvest_fields_1b",
       "wythers:road/harvest_fields_2",
@@ -45,8 +44,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -104,8 +101,6 @@
       "minecraft:red_mushroom_normal",
       "minecraft:trees_birch",
       "minecraft:wildflowers_birch_forest",
-      "wythers:farm/harvest_fields_hay",
-      "wythers:farm/harvest_fields_hay_2",
       "wythers:farm/harvest_fields_pumpkin",
       "wythers:farm/harvest_fields_scarecrow",
       "wythers:farm/harvest_fields_stumps",

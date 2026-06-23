@@ -20,13 +20,6 @@
   },
   "features": [
     [
-      "wythers:placer/sparse_jungle",
-      "wythers:road/rainforest",
-      "wythers:road/sparse_jungle",
-      "wythers:terrain/local/jungle_floor_1",
-      "wythers:terrain/local/jungle_floor_2",
-      "wythers:terrain/local/jungle_floor_3",
-      "wythers:terrain/local/sandy_floor",
       "wythers:terrain/local/stone_cliffs",
       "wythers:terrain/local/tsingy_ore_1",
       "wythers:terrain/local/tsingy_ore_2",
@@ -35,8 +28,7 @@
     ],
     [
       "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground",
-      "wythers:terrain/extended/base_mangrove_swamp_sparse_jungle"
+      "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode"
@@ -48,7 +40,6 @@
     [
       "wythers:terrain/feature/tuff_spikes"
     ],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -79,12 +70,7 @@
       "minecraft:ore_redstone_lower",
       "minecraft:ore_tuff",
       "minecraft:underwater_magma",
-      "wythers:terrain/extended/badlands_edge",
-      "wythers:terrain/extended/volcanic_jungle_mud_in_basalt",
-      "wythers:terrain/extended/volcanic_jungle_muddy_roots_on_basalt",
-      "wythers:terrain/local/sandy_forest",
-      "wythers:terrain/local/sandy_jungle",
-      "wythers:terrain/local/sparse_jungle_shore"
+      "wythers:terrain/extended/badlands_edge"
     ],
     [
       "wythers:vegetation/local/trees/ancient_spring_woods"
@@ -107,11 +93,7 @@
       "minecraft:vines",
       "wythers:terrain/local/sandy_jungle_2",
       "wythers:vegetation/extended/patch/morning_glory",
-      "wythers:vegetation/extended/patch/tropical_water_plants",
       "wythers:vegetation/local/patch/flower_sunny",
-      "wythers:vegetation/local/patch/flower_tropical_roses",
-      "wythers:vegetation/local/patch/giant_groundsels",
-      "wythers:vegetation/local/patch/grass_jungle",
       "wythers:vegetation/local/patch/jungle_cactus",
       "wythers:vegetation/local/patch/melon",
       "wythers:vegetation/local/patch/water_grass_jungle",

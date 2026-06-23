@@ -31,8 +31,6 @@
   "features": [
     [
       "wythers:terrain/carver/ocean",
-      "wythers:terrain/extended/coastal_forest_sand",
-      "wythers:terrain/extended/ocean_beach_gravel",
       "wythers:terrain/extended/sea_cliff",
       "wythers:terrain/local/ocean_bore_holes",
       "wythers:terrain/local/ocean_rock",
@@ -49,8 +47,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -83,7 +79,6 @@
       "minecraft:underwater_magma",
       "wythers:terrain/local/beach_mossy_stone"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"
@@ -103,8 +98,7 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:terrain/local/hydrothermal_vents",
-      "wythers:vegetation/local/patch/tube_worms"
+      "wythers:terrain/local/hydrothermal_vents"
     ]
   ],
   "has_precipitation": true,

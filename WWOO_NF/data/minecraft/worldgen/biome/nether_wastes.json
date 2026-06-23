@@ -28,13 +28,6 @@
     "water_color": "#3f76e4"
   },
   "features": [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
     [
       "minecraft:spring_open",
       "minecraft:patch_fire",
@@ -52,7 +45,6 @@
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",

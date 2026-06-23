@@ -27,8 +27,6 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
-    [],
-    [],
     [
       "minecraft:disk_clay",
       "minecraft:disk_gravel",
@@ -63,7 +61,6 @@
       "wythers:terrain/local/disk_sand_floor",
       "wythers:terrain/local/disk_sand_tropical_shore"
     ],
-    [],
     [
       "minecraft:spring_lava",
       "minecraft:spring_water"

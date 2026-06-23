@@ -30,14 +30,11 @@
   },
   "features": [
     [
-      "wythers:placer/river",
-      "wythers:placer/river_extended",
       "wythers:placer/warm_ocean_extender_1",
       "wythers:placer/warm_ocean_extender_2",
       "wythers:placer/warm_ocean_extender_3",
       "wythers:terrain/extended/desert_extender",
       "wythers:terrain/extended/scree",
-      "wythers:terrain/local/disk_beach_sand",
       "wythers:terrain/local/stone_cliffs",
       "wythers:terrain/local/stone_cliffs_surface"
     ],
@@ -50,8 +47,7 @@
       "wythers:terrain/extended/arroyo_red",
       "wythers:terrain/extended/arroyo_savanna",
       "wythers:terrain/extended/arroyo_white",
-      "wythers:terrain/extended/badlands_muddy_canyon",
-      "wythers:terrain/local/savanna_sandy_wash"
+      "wythers:terrain/extended/badlands_muddy_canyon"
     ],
     [
       "minecraft:amethyst_geode",
@@ -60,18 +56,13 @@
     ],
     [
       "minecraft:monster_room",
-      "minecraft:monster_room_deep",
-      "wythers:terrain/local/packed_mud_canyons"
+      "minecraft:monster_room_deep"
     ],
-    [],
     [
-      "wythers:terrain/local/cave_disk_basalt",
-      "wythers:terrain/local/cave_disk_blackstone",
       "wythers:terrain/local/cave_disk_magma",
       "wythers:terrain/local/river_boulders_mossy",
       "wythers:terrain/local/riverbank_packed_mud",
-      "wythers:terrain/local/riverbank_red_sand",
-      "wythers:terrain/local/riverbank_sand"
+      "wythers:terrain/local/riverbank_red_sand"
     ],
     [
       "minecraft:disk_clay",
@@ -110,17 +101,9 @@
       "wythers:terrain/local/river_grass"
     ],
     [
-      "wythers:terrain/extended/arroyo_red_salt_pan",
-      "wythers:terrain/extended/arroyo_red_salt_pan_2",
       "wythers:terrain/feature/dripstone_cluster",
       "wythers:terrain/feature/pointed_dripstone",
       "wythers:terrain/local/danakil_mud",
-      "wythers:terrain/local/danakil_orange",
-      "wythers:terrain/local/danakil_red",
-      "wythers:terrain/local/danakil_terracotta",
-      "wythers:terrain/local/danakil_water",
-      "wythers:terrain/local/danakil_yellow",
-      "wythers:terrain/local/danakil_yellow_2",
       "wythers:terrain/local/oasis_moss"
     ],
     [
@@ -150,7 +133,6 @@
     ],
     [
       "minecraft:freeze_top_layer",
-      "wythers:decor/dense_steam",
       "wythers:vegetation/local/patch/duckweed_tropical_river",
       "wythers:vegetation/local/patch/water_grass_tropical_river"
     ]
