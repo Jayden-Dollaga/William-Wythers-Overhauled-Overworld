@@ -1,7 +1,11 @@
 
 git add . && git commit -m "Update"
 
- git add . && git commit -m "Upload All For Debugging"
+git add . && git commit -m "Upload All For Debugging"
+
+git push -u origin main --force
+
+
 
 
 git remote add origin https://github.com/Jayden-Dollaga/William-Wythers-Overhauled-Overworld.git
