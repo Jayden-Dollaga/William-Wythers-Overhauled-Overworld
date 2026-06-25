@@ -1,0 +1,328 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "config": {
+              "state_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:light",
+                  "Properties": {
+                    "level": "0",
+                    "waterlogged": "true"
+                  }
+                }
+              },
+              "radius": {
+                "type": "minecraft:uniform",
+                "min_inclusive": 4,
+                "max_inclusive": 8
+              },
+              "half_height": 0,
+              "target": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:solid",
+                    "offset": [
+                      0,
+                      -1,
+                      0
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": [
+                      "minecraft:cinnabar",
+                      "minecraft:smooth_red_sandstone",
+                      "minecraft:sulfur",
+                      "minecraft:potent_sulfur"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "blocks": "minecraft:light"
+                          },
+                          {
+                            "type": "minecraft:matching_fluids",
+                            "offset": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "fluids": "minecraft:water"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "minecraft:solid",
+                        "offset": [
+                          1,
+                          0,
+                          0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              -1,
+                              0,
+                              0
+                            ],
+                            "blocks": "minecraft:light"
+                          },
+                          {
+                            "type": "minecraft:matching_fluids",
+                            "offset": [
+                              -1,
+                              0,
+                              0
+                            ],
+                            "fluids": "minecraft:water"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "minecraft:solid",
+                        "offset": [
+                          -1,
+                          0,
+                          0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              1
+                            ],
+                            "blocks": "minecraft:light"
+                          },
+                          {
+                            "type": "minecraft:matching_fluids",
+                            "offset": [
+                              0,
+                              0,
+                              1
+                            ],
+                            "fluids": "minecraft:water"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "minecraft:solid",
+                        "offset": [
+                          0,
+                          0,
+                          1
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              -1
+                            ],
+                            "blocks": "minecraft:light"
+                          },
+                          {
+                            "type": "minecraft:matching_fluids",
+                            "offset": [
+                              0,
+                              0,
+                              -1
+                            ],
+                            "fluids": "minecraft:water"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "minecraft:solid",
+                        "offset": [
+                          0,
+                          0,
+                          -1
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "type": "minecraft:disk"
+          },
+          "placement": [
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      8,
+                      0,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:cinnabar",
+                      "minecraft:smooth_red_sandstone",
+                      "minecraft:sulfur",
+                      "minecraft:potent_sulfur",
+                      "minecraft:light"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      -8,
+                      0,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:cinnabar",
+                      "minecraft:smooth_red_sandstone",
+                      "minecraft:sulfur",
+                      "minecraft:potent_sulfur",
+                      "minecraft:light"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      8
+                    ],
+                    "blocks": [
+                      "minecraft:cinnabar",
+                      "minecraft:smooth_red_sandstone",
+                      "minecraft:sulfur",
+                      "minecraft:potent_sulfur",
+                      "minecraft:light"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      -8
+                    ],
+                    "blocks": [
+                      "minecraft:cinnabar",
+                      "minecraft:smooth_red_sandstone",
+                      "minecraft:sulfur",
+                      "minecraft:potent_sulfur",
+                      "minecraft:light"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 30
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 63
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 1,
+            "data": 1
+          },
+          {
+            "weight": 2,
+            "data": 3
+          },
+          {
+            "weight": 2,
+            "data": 4
+          },
+          {
+            "weight": 1,
+            "data": 5
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 3,
+      "y_spread": 0
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "river",
+          "frozen_river",
+          "taiga",
+          "snowy_taiga",
+          "old_growth_spruce_taiga",
+          "old_growth_pine_taiga",
+          "birch_forest",
+          "old_growth_birch_forest"
+        ]
+      }
+    }
+  ]
+}

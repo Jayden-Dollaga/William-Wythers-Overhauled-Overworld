@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:potent_sulfur",
+    "minecraft:sulfur",
+    "minecraft:soul_sand"
+  ]
+}

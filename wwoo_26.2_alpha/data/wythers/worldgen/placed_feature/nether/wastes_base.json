@@ -1,0 +1,12 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:nether/cinnabar_thick",
+        "wythers:nether/cinnabar_fine"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

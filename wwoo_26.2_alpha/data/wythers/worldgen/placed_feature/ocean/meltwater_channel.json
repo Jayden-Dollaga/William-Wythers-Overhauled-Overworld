@@ -1,0 +1,98 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -5,
+            "amplitudes": [
+              2,
+              2,
+              2
+            ]
+          },
+          "scale": 1,
+          "seed": 7,
+          "states": [
+            {
+              "Name": "minecraft:packed_ice"
+            },
+            {
+              "Name": "minecraft:packed_ice"
+            },
+            {
+              "Name": "minecraft:packed_ice"
+            },
+            {
+              "Name": "minecraft:light",
+              "Properties": {
+                "level": "0",
+                "waterlogged": "false"
+              }
+            },
+            {
+              "Name": "minecraft:packed_ice"
+            },
+            {
+              "Name": "minecraft:packed_ice"
+            },
+            {
+              "Name": "minecraft:packed_ice"
+            }
+          ]
+        },
+        "rules": [],
+        "type": "minecraft:rule_based_state_provider"
+      },
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:packed_ice"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:packed_ice"
+            ]
+          },
+          {
+            "type": "minecraft:matching_biomes",
+            "biomes": "deep_frozen_ocean"
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 8
+      },
+      "half_height": 0
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 80
+      }
+    }
+  ]
+}

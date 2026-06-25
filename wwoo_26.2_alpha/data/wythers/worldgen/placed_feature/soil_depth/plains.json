@@ -1,0 +1,326 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -5,
+            "amplitudes": [
+              2,
+              3
+            ]
+          },
+          "scale": 1,
+          "seed": -817103696,
+          "states": [
+            {
+              "Name": "minecraft:stone"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            }
+          ]
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": "minecraft:grass_block"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                2,
+                0
+              ],
+              "blocks": "minecraft:grass_block"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                3,
+                0
+              ],
+              "blocks": "minecraft:grass_block"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                3,
+                0
+              ],
+              "blocks": "minecraft:grass_block"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:stone"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": "minecraft:stone"
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:stone"
+              }
+            }
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 7
+      },
+      "half_height": 4,
+      "target": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:grass_block"
+          },
+          {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:dirt"
+              },
+              {
+                "type": "minecraft:any_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      1,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:grass_block",
+                      "minecraft:stone"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      2,
+                      0
+                    ],
+                    "blocks": "minecraft:grass_block"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      3,
+                      0
+                    ],
+                    "blocks": "minecraft:grass_block"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      4,
+                      0
+                    ],
+                    "blocks": "minecraft:grass_block"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "plains"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

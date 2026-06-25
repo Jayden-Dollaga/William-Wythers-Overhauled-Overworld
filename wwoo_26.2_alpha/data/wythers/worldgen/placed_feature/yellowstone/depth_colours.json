@@ -1,0 +1,385 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "0",
+              "waterlogged": "true"
+            }
+          }
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "river",
+                    "frozen_river",
+                    "taiga",
+                    "snowy_taiga",
+                    "old_growth_pine_taiga"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:lime_terracotta"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "river",
+                    "frozen_river",
+                    "taiga",
+                    "snowy_taiga",
+                    "old_growth_pine_taiga",
+                    "birch_forest",
+                    "old_growth_birch_forest"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:green_terracotta"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "river",
+                    "frozen_river",
+                    "taiga",
+                    "snowy_taiga",
+                    "old_growth_pine_taiga",
+                    "birch_forest",
+                    "old_growth_birch_forest"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    4,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:cyan_concrete"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "river",
+                    "frozen_river",
+                    "taiga",
+                    "snowy_taiga",
+                    "old_growth_pine_taiga",
+                    "birch_forest",
+                    "old_growth_birch_forest"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    5,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:blue_concrete"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "old_growth_spruce_taiga"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    2,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:sulfur"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "old_growth_spruce_taiga"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    3,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:yellow_terracotta"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "old_growth_spruce_taiga"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    4,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:orange_terracotta"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_biomes",
+                  "biomes": [
+                    "old_growth_spruce_taiga"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    5,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:red_terracotta"
+              }
+            }
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 8
+      },
+      "half_height": 4,
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_biomes",
+            "biomes": [
+              "river",
+              "frozen_river",
+              "taiga",
+              "snowy_taiga",
+              "old_growth_spruce_taiga",
+              "old_growth_pine_taiga",
+              "birch_forest",
+              "old_growth_birch_forest"
+            ]
+          },
+          {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "blocks": "minecraft:light"
+              },
+              {
+                "type": "minecraft:matching_fluids",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "fluids": "minecraft:water"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:calcite",
+              "minecraft:tuff",
+              "minecraft:dripstone_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": -51
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": "dripstone_caves"
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": 20
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE"
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 15,
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": [
+              "light"
+            ]
+          },
+          {
+            "type": "minecraft:solid"
+          }
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          1,
+          0
+        ],
+        "blocks": [
+          "minecraft:light",
+          "minecraft:air"
+        ]
+      }
+    }
+  ]
+}

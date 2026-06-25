@@ -1,0 +1,143 @@
+{
+  "feature": {
+    "config": {
+      "surface": "floor",
+      "depth": 1,
+      "vertical_range": 1,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0,
+      "vegetation_chance": 1,
+      "xz_radius": 8,
+      "replaceable": "minecraft:dripstone_block",
+      "ground_state": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:void_air"
+        }
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "direction": "down",
+            "allowed_placement": {
+              "type": "minecraft:true",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "minecraft:void_air"
+                },
+                {
+                  "type": "minecraft:any_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:void_air"
+                    },
+                    {
+                      "type": "minecraft:solid"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prioritize_tip": true,
+            "layers": [
+              {
+                "height": 200,
+                "provider": {
+                  "type": "minecraft:rule_based_state_provider",
+                  "fallback": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:void_air"
+                    }
+                  },
+                  "rules": [
+                    {
+                      "if_true": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "minecraft:air"
+                      },
+                      "then": {
+                        "type": "minecraft:simple_state_provider",
+                        "state": {
+                          "Name": "minecraft:air"
+                        }
+                      }
+                    },
+                    {
+                      "if_true": {
+                        "type": "minecraft:not",
+                        "predicate": {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "blocks": "minecraft:void_air"
+                        }
+                      },
+                      "then": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "fallback": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:stone"
+                          }
+                        },
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:matching_blocks",
+                              "blocks": "minecraft:deepslate"
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:deepslate"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "type": "minecraft:block_column"
+        },
+        "placement": [
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+          }
+        ]
+      }
+    },
+    "type": "minecraft:vegetation_patch"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 168
+      }
+    }
+  ]
+}

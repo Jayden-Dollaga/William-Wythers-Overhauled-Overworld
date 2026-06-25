@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:sequence",
+  "config": {
+    "features": [
+      {
+        "feature": {
+  "type": "minecraft:template",
+  "config": {
+    "templates": [
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_1"
+        },
+        "weight": 5000
+      },
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_2"
+        },
+        "weight": 5000
+      },
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_3"
+        },
+        "weight": 5000
+      },
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_4"
+        },
+        "weight": 5000
+      },
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_5"
+        },
+        "weight": 5000
+      },
+      {
+        "data": {
+          "id": "wythers:feature/termite_mound_6"
+        },
+        "weight": 5000
+      }
+    ]
+  }
+},
+        "placement": []
+      },
+      {
+  "feature": {
+    "config": {
+      "state_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:brown_concrete_powder"
+            }
+          },
+          {
+            "weight": 2,
+            "data": {
+              "Name": "minecraft:packed_mud"
+            }
+          },
+          {
+            "weight": 1,
+            "data": {
+              "Name": "minecraft:rooted_dirt"
+            }
+          }
+        ]
+      },
+      "radius": 3,
+      "half_height": 2,
+      "target": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:grass_block"
+        ]
+      }
+    },
+    "type": "minecraft:disk"
+  },
+  "placement": [
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": 2
+    }
+  ]
+}
+    ]
+  }
+}

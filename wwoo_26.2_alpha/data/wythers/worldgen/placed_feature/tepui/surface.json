@@ -1,0 +1,18 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/surface_water",
+        "wythers:tepui/surface_roughen",
+        "wythers:tepui/surface_height",
+        "wythers:tepui/surface_caves",
+        "wythers:tepui/surface_caves_2",
+        "wythers:tepui/surface_caves_deeper",
+        "wythers:tepui/texture_cap",
+        "wythers:tepui/surface_roughen_2"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

@@ -1,0 +1,11 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:mushroom/terrain"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

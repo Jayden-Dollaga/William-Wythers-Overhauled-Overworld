@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:gray_concrete_powder",
+    "minecraft:black_concrete_powder"
+  ]
+}

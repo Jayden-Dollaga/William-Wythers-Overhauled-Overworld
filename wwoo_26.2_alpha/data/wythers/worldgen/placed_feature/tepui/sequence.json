@@ -1,0 +1,16 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/base",
+        "wythers:tepui/bulk",
+        "wythers:tepui/cap",
+        "wythers:tepui/texture",
+        "wythers:tepui/surface",
+        "wythers:tepui/caves"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

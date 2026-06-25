@@ -1,0 +1,19 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/reef_wall",
+        "wythers:ocean/reef_cap_59",
+        "wythers:ocean/reef_cap_60",
+        "wythers:ocean/reef_cap_61",
+        "wythers:ocean/reef_cap_62",
+        "wythers:ocean/island_layer_1",
+        "wythers:ocean/island_layer_2",
+        "wythers:ocean/island_layer_3",
+        "wythers:ocean/island_dirt"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/mid_caves_1",
+        "wythers:tepui/mid_caves_2",
+        "wythers:tepui/ravines"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

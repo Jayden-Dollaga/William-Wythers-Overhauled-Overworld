@@ -1,0 +1,111 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -6,
+            "amplitudes": [
+              3,
+              2,
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "scale": 1,
+          "seed": -817103696,
+          "states": [
+            {
+              "Name": "minecraft:calcite"
+            },
+            {
+              "Name": "minecraft:calcite"
+            },
+            {
+              "Name": "minecraft:tuff"
+            },
+            {
+              "Name": "minecraft:smooth_basalt"
+            },
+            {
+              "Name": "minecraft:dripstone_block"
+            },
+            {
+              "Name": "minecraft:dripstone_block"
+            },
+            {
+              "Name": "minecraft:cinnabar"
+            }
+          ]
+        },
+        "rules": []
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 8
+      },
+      "half_height": 0,
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": [
+              "minecraft:air",
+              "minecraft:snow",
+              "minecraft:light"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:dripstone_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 30
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 63
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "river",
+          "frozen_river",
+          "taiga",
+		  "snowy_taiga",
+          "old_growth_spruce_taiga",
+          "old_growth_pine_taiga",
+          "birch_forest",
+          "old_growth_birch_forest"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+              "type": "minecraft:noise_provider",
+              "seed": -817103696,
+              "noise": {
+                "firstOctave": -6,
+                "amplitudes": [
+                  2,
+                  2,
+                  1
+                ]
+              },
+              "scale": 1,
+              "states": [
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:cinnabar"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                },
+                {
+                  "Name": "minecraft:netherrack"
+                }
+              ]
+            },
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:netherrack"
+          },
+          {
+            "type": "minecraft:matching_biomes",
+            "biomes": [
+              "minecraft:nether_wastes"
+            ]
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 8
+      },
+      "half_height": 4
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 10
+    }
+  ]
+}
