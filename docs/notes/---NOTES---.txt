@@ -1,8 +1,5 @@
-# Preview first — nothing gets written
-python3 reorganize_wwoo.py --dry-run
-
-# Actually do it
-python3 reorganize_wwoo.py
+python3 reorganize_wwoo.py --dry-run   # preview
+python3 reorganize_wwoo.py             # apply
 
 
 
