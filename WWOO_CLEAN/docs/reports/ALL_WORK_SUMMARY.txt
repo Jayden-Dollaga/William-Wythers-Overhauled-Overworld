@@ -1,0 +1,66 @@
+William Wythers' Overhauled Overworld - Full Work Summary
+=========================================================
+Date: 2026-06-27
+Project: Clean 26.1.2 datapack port based on the working 26.2 port
+
+Overview
+--------
+We created a new clean datapack output folder named WWOO_26.1.2_CLEAN and worked to make it loadable in Minecraft 26.1.2 without mixing it with the existing data/ tree.
+
+What we did
+-----------
+1. Created the target datapack folder
+- Built a new isolated datapack folder: WWOO_26.1.2_CLEAN
+- Kept it separate from the existing data/ directory
+
+2. Prepared the clean 26.1.2 port
+- Copied the datapack content from the working 26.2-based port
+- Avoided contaminating the main datapack tree with the copied content
+
+3. Removed 26.2-only or invalid content
+- Removed files that were clearly incompatible with 26.1.2
+- Removed random_patch-based content that was not suitable for the target version
+- Removed obviously broken or unsupported worldgen entries that were causing load issues
+
+4. Fixed unsupported feature structures
+- Replaced feature definitions that used unsupported 26.2-era structures
+- Reworked entries that used the unsupported minecraft:sequence type
+- Replaced invalid or incompatible speleothem-style features with compatible alternatives
+- Replaced unsupported dripstone-style feature definitions with a 26.1.2-compatible structure
+
+5. Fixed broken configured-feature references
+- Corrected the complex oak and complex dark oak sequence references so they pointed to valid configured-feature resources instead of unresolved or incompatible targets
+- Updated the mosswood logic so it no longer depended on the broken placed-feature chain
+
+6. Fixed mosswood-related registry issues
+- Replaced the mosswood configured feature entry with a direct feature structure instead of a broken reference path
+- Replaced the mosswood placed-feature sequence file with direct tree feature objects so it would no longer trigger registry binding errors
+
+7. Verified the datapack structure
+- Ran validation on the datapack JSON files
+- Confirmed the datapack had 1667 JSON files and 0 invalid JSON files
+
+8. Performed a final compatibility sweep
+- Searched for known bad patterns such as:
+  - minecraft:sequence
+  - minecraft:speleothem
+  - minecraft:random_patch
+  - broken mosswood placed-feature references
+- No remaining matches were found in the target datapack
+
+Files specifically edited
+-----------------------
+- WWOO_26.1.2_CLEAN/data/wythers/worldgen/configured_feature/vegetation/tree/complex_dark_oak_sequence.json
+- WWOO_26.1.2_CLEAN/data/wythers/worldgen/configured_feature/vegetation/tree/complex_oak_sequence.json
+- WWOO_26.1.2_CLEAN/data/wythers/worldgen/placed_feature/tree/mosswood/sequence_1.json
+- WWOO_26.1.2_CLEAN/data/wythers/worldgen/placed_feature/terrain/feature/tepui_cavern_dripstone_spikes.json
+- WWOO_26.1.2_CLEAN/data/wythers/worldgen/configured_feature/vegetation/tree/moss_tree.json
+
+Validation result
+-----------------
+- JSON validation script: passed
+- Result: 1667 JSON files, 0 bad
+
+Current status
+--------------
+The clean 26.1.2 datapack has been structurally repaired and is now in a much better state for in-game testing. The major known compatibility blockers from the earlier validation and game logs were addressed.

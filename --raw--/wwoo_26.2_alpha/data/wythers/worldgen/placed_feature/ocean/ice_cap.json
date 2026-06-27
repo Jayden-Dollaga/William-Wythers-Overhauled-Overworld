@@ -1,0 +1,35 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/ice_tunnel_1",
+        "wythers:ocean/ice_layer_68",
+        "wythers:ocean/ice_layer_69",
+        "wythers:ocean/ice_tunnel_2",
+        "wythers:ocean/ice_layer_75",
+        "wythers:ocean/ice_layer_76",
+        "wythers:ocean/ice_layer_77",
+        "wythers:ocean/ice_layer_78",
+        "wythers:ocean/ice_layer_79",
+        "wythers:ocean/ice_layer_80",
+        "wythers:ocean/snow_layer",
+        "wythers:ocean/ice_base",
+        "wythers:ocean/ice_layer_53",
+        "wythers:ocean/ice_layer_52",
+        "wythers:ocean/ice_layer_51",
+        "wythers:ocean/ice_banding_1",
+        "wythers:ocean/ice_banding_2"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 20
+    },
+    {
+      "type": "minecraft:in_square"
+    }
+   ]
+}

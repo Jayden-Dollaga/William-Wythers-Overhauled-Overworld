@@ -1,0 +1,52 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:grass_block"
+          }
+        },
+        "rules": []
+      },
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": "minecraft:rooted_dirt"
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 8
+      },
+      "half_height": 0
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 15
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 65
+      }
+    }
+  ]
+}

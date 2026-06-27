@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#minecraft:substrate_overworld",
+    "#minecraft:fences",
+    "#minecraft:logs_that_burn",
+    "minecraft:farmland",
+    "minecraft:cactus",
+    "minecraft:dead_bush",
+    "minecraft:suspicious_sand",
+    "minecraft:suspicious_gravel",
+    "minecraft:mangrove_roots",
+    "minecraft:mossy_cobblestone",
+    "minecraft:composter",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:soul_soil",
+    "minecraft:sunflower"
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        {
+          "feature": {
+            "config": {
+              "state_provider": {
+                "type": "minecraft:noise_provider",
+                "noise": {
+                  "firstOctave": -6,
+                  "amplitudes": [
+                    4,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                  ]
+                },
+                "scale": 1,
+                "seed": -817103696,
+                "states": [
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:raw_copper_block"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  }
+                ]
+              },
+              "radius": 8,
+              "half_height": 1,
+              "target": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:not",
+                    "predicate": {
+                      "type": "minecraft:any_of",
+                      "predicates": [
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            2,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            -1,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            -2,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "type": "minecraft:disk"
+          },
+          "placement": [
+            {
+              "type": "minecraft:noise_based_count",
+              "noise_to_count_ratio": 1,
+              "noise_factor": 200,
+              "noise_offset": 0
+            },
+            {
+              "type": "minecraft:height_range",
+              "height": {
+                "absolute": 151
+              }
+            }
+          ]
+        },
+        {
+          "feature": {
+            "config": {
+              "state_provider": {
+                "type": "minecraft:noise_provider",
+                "noise": {
+                  "firstOctave": -6,
+                  "amplitudes": [
+                    4,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2
+                  ]
+                },
+                "scale": 1,
+                "seed": -817103696,
+                "states": [
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:raw_copper_block"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  },
+                  {
+                    "Name": "minecraft:air"
+                  }
+                ]
+              },
+              "radius": 8,
+              "half_height": 1,
+              "target": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:not",
+                    "predicate": {
+                      "type": "minecraft:any_of",
+                      "predicates": [
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            2,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            -1,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        },
+                        {
+                          "type": "minecraft:matching_blocks",
+                          "offset": [
+                            0,
+                            -2,
+                            0
+                          ],
+                          "blocks": "minecraft:raw_copper_block"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "type": "minecraft:disk"
+          },
+          "placement": [
+            {
+              "type": "minecraft:noise_based_count",
+              "noise_to_count_ratio": -1,
+              "noise_factor": 200,
+              "noise_offset": 0
+            },
+            {
+              "type": "minecraft:height_range",
+              "height": {
+                "absolute": 150
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    }
+  ]
+}

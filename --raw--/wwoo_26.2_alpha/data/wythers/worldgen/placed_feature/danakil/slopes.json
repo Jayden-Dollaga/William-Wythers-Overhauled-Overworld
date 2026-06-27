@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:danakil/base",
+        "wythers:danakil/mounds",
+        "wythers:danakil/activity"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

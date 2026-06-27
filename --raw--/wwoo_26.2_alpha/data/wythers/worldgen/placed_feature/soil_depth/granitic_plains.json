@@ -1,0 +1,404 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -4,
+            "amplitudes": [
+              2,
+              3
+            ]
+          },
+          "scale": 1,
+          "seed": -817103696,
+          "states": [
+            {
+              "Name": "minecraft:granite"
+            },
+            {
+              "Name": "minecraft:rooted_dirt"
+            },
+            {
+              "Name": "minecraft:rooted_dirt"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            },
+            {
+              "Name": "minecraft:grass_block"
+            }
+          ]
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:air"
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:granite"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:rooted_dirt"
+              ]
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -4,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                2,
+                0
+              ],
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:rooted_dirt"
+              ]
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -4,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                3,
+                0
+              ],
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:rooted_dirt"
+              ]
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                4,
+                0
+              ],
+              "blocks": [
+                "minecraft:grass_block",
+                "minecraft:rooted_dirt"
+              ]
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -4,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:granite"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": "minecraft:granite"
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:granite"
+              }
+            }
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 7
+      },
+      "half_height": 4,
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_biomes",
+            "biomes": [
+              "minecraft:plains"
+            ]
+          },
+          {
+            "type": "minecraft:any_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block",
+                  "minecraft:stone"
+                ]
+              },
+              {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "blocks": "minecraft:dirt"
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:grass_block",
+                          "minecraft:rooted_dirt",
+                          "minecraft:granite"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          2,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:grass_block",
+                          "minecraft:rooted_dirt"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          3,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:grass_block",
+                          "minecraft:rooted_dirt"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          4,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:grass_block",
+                          "minecraft:rooted_dirt"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 1000,
+      "noise_offset": 0
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 96
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 86
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": 25
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 76
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 18,
+      "target_condition": {
+        "type": "minecraft:solid"
+      }
+    }
+  ]
+}

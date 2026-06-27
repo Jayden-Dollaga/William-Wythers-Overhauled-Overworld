@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": "wythers:vegetation/tree/complex_dark_oak_1",
+        "placement": []
+      }
+    ]
+  }
+}

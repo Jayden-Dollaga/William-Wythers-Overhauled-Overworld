@@ -1,0 +1,258 @@
+{
+  "feature": {
+    "type": "minecraft:vegetation_patch",
+    "config": {
+      "surface": "floor",
+      "depth": 3,
+      "vertical_range": 7,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0.5,
+      "vegetation_chance": 1,
+      "xz_radius": 7,
+      "replaceable": "sand",
+      "ground_state": {
+        "type": "minecraft:noise_provider",
+        "noise": {
+          "firstOctave": -4,
+          "amplitudes": [
+            2,
+            3
+          ]
+        },
+        "scale": 1,
+        "seed": -817103696,
+        "states": [
+          {
+            "Name": "minecraft:blackstone"
+          },
+          {
+            "Name": "minecraft:smooth_basalt"
+          },
+          {
+            "Name": "minecraft:tuff"
+          },
+          {
+            "Name": "minecraft:coarse_dirt"
+          },
+          {
+            "Name": "minecraft:packed_mud"
+          },
+          {
+            "Name": "minecraft:rooted_dirt"
+          },
+          {
+            "Name": "minecraft:dirt"
+          },
+          {
+            "Name": "minecraft:dirt"
+          }
+        ]
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "state_provider": {
+              "type": "minecraft:rule_based_state_provider",
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:void_air"
+                }
+              },
+              "rules": [
+                {
+                  "if_true": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          2,
+                          0
+                        ],
+                        "blocks": "minecraft:void_air"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": "blackstone"
+                      }
+                    ]
+                  },
+                  "then": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:mud"
+                    }
+                  }
+                }
+              ]
+            },
+            "radius": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 2,
+              "max_inclusive": 5
+            },
+            "half_height": 1,
+            "target": {
+              "type": "minecraft:any_of",
+              "predicates": [
+                {
+                  "type": "minecraft:all_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:mud"
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": "minecraft:blackstone"
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        1,
+                        0,
+                        0
+                      ],
+                      "blocks": [
+                        "minecraft:blackstone",
+                        "minecraft:mud"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        -1,
+                        0,
+                        0
+                      ],
+                      "blocks": [
+                        "minecraft:blackstone",
+                        "minecraft:mud"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        1
+                      ],
+                      "blocks": [
+                        "minecraft:blackstone",
+                        "minecraft:mud"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        -1
+                      ],
+                      "blocks": [
+                        "minecraft:blackstone",
+                        "minecraft:mud"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "minecraft:blackstone"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        2,
+                        0
+                      ],
+                      "blocks": "void_air"
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "blocks": [
+                        "smooth_basalt",
+                        "blackstone"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "minecraft:disk"
+        },
+        "placement": [
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE"
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 10
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 58
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": "savanna"
+      }
+    }
+  ]
+}

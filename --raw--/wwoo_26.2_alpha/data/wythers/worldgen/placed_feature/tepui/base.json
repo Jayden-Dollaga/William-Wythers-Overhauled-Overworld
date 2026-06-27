@@ -1,0 +1,12 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/ground_cover",
+        "wythers:tepui/ground_depth"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

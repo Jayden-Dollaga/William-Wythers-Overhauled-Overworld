@@ -1,0 +1,11 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/pack_1"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

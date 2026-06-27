@@ -1,0 +1,9 @@
+{
+  "spyglass.env.gameVersion": "26.1.2",
+  "spyglass.env.dependencies": [],
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "feature": {
+    "type": "minecraft:ore",
+    "config": {
+      "targets": [
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:grass_block"
+          },
+          "state": {
+            "Name": "stone"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:air"
+          },
+          "state": {
+            "Name": "stone"
+          }
+        },
+        {
+          "target": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:water"
+          },
+          "state": {
+            "Name": "stone"
+          }
+        }
+      ],
+      "size": 30,
+      "discard_chance_on_air_exposure": 0
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 2000
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 55
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:gravel",
+          "minecraft:dirt",
+          "minecraft:sand"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "ocean"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 10,
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "air",
+              "water"
+            ]
+          }
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:true"
+      }
+    }
+  ]
+}

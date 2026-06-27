@@ -1,0 +1,56 @@
+File chekker if ever deleted
+
+
+python3 -c "
+import os, shutil
+
+src_root = 'WWOO_ORIGINAL'
+
+missing = []
+for root, dirs, files in os.walk(src_root):
+    for f in files:
+        if not f.endswith('.json'): continue
+        src = os.path.join(root, f)
+        # Strip WWOO_ORIGINAL\ prefix, keep data\ intact
+        rel = os.path.relpath(src, src_root)
+        if not os.path.exists(rel):
+            missing.append((src, rel))
+
+print(f'Missing files found: {len(missing)}')
+for src, dst in missing[:20]:
+    print(f'  {dst}')
+if len(missing) > 20:
+    print(f'  ... and {len(missing) - 20} more')
+"
+
+
+Run this to copy them all back:
+
+
+python3 -c "
+import os, shutil
+
+src_root = 'WWOO_ORIGINAL'
+restored = 0
+
+for root, dirs, files in os.walk(src_root):
+    for f in files:
+        if not f.endswith('.json'): continue
+        src = os.path.join(root, f)
+        rel = os.path.relpath(src, src_root)
+        if not os.path.exists(rel):
+            os.makedirs(os.path.dirname(rel), exist_ok=True)
+            shutil.copy2(src, rel)
+            restored += 1
+            print(f'Restored: {rel}')
+
+print(f'Total restored: {restored}')
+"
+
+
+Then commit:
+
+git add data/
+git commit -m "restore: recover 324 deleted vanilla minecraft namespace files"
+
+

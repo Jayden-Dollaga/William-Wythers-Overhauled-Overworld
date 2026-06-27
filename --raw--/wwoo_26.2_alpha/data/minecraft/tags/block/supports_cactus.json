@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#minecraft:sand",
+    "#minecraft:fences",
+    "minecraft:packed_mud",
+    "minecraft:rooted_dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:bamboo_block",
+    "minecraft:composter",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:mangrove_roots"
+  ]
+}

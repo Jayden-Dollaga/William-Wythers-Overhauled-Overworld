@@ -1,0 +1,10 @@
+{
+  "config": {
+    "features": [
+      "wythers:tree/birch/straight_trunk",
+      "wythers:tree/birch/branch_base",
+      "wythers:tree/birch/branch"
+    ]
+  },
+  "type": "minecraft:sequence"
+}

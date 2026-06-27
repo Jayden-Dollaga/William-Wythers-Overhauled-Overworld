@@ -1,0 +1,138 @@
+=== WWOO PORT TASK: Round 7 — FINAL FIXES ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only)
+RULE: Only touch exact files listed. No broad scans. No file deletions.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 1 — Fix stone_forest_rock.json (1 file)
+FILE: data/wythers/worldgen/configured_feature/other/stone_forest_rock.json
+STEP 1: Remove any content after the final closing "}" of root object (line 3 col 13 issue)
+STEP 2: Change "type": "minecraft:forest_rock" → "type": "minecraft:block_blob"
+STEP 3: Check ./26.1.2/ for block_blob config — verify config keys are correct
+COMMIT: fix(other): stone_forest_rock.json — forest_rock→block_blob + JSON cleanup
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 2 — Fix out-of-range values (2 files)
+FILES:
+  data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json lines 21-22
+  data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json lines 21-22
+
+ERROR: Numeric values must be between -16 and 16.
+Open each file, go to lines 21-22, find the values that are outside that range
+and clamp them to -16 or 16 as appropriate.
+Check ./26.1.2/ for context on what these values represent.
+COMMIT per file: fix(terrain): <filename> — clamp out-of-range values
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 3 — Add missing "blocks" key (2 files)
+FILES:
+  data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json line 4
+  data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json line 4
+
+ERROR: Missing key "blocks" at line 4 col 15-16
+Open each file, find the object at line 4 missing the "blocks" key.
+Check ./26.1.2/ for the correct structure of whatever feature type this is.
+Add the "blocks" key with the appropriate value based on context.
+If unsure of correct value → restore from WWOO_ORIGINAL instead.
+COMMIT per file: fix(terrain/feature): <filename> — add missing blocks key
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 4 — Add missing "y_spread" to random_offset (4 files)
+FILES:
+  data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json line 141
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json line 91
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json line 91
+  data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json line 11
+
+ERROR: Missing key "y_spread" in random_offset modifier
+Open each file, find the random_offset object at that line.
+Add "y_spread" as an IntProvider object:
+  "y_spread": {"type": "minecraft:constant", "value": 0}
+Or if xz_spread gives context of intended spread:
+  "y_spread": {"type": "minecraft:trapezoid", "max": N, "min": -N, "plateau": 0}
+Check WWOO_ORIGINAL for original values to use.
+COMMIT per file: fix(placed_feature): <filename> — add missing y_spread
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 5 — Remove dirt_provider + force_dirt from mangrove files (4 files)
+FILES:
+  data/minecraft/worldgen/configured_feature/mangrove.json lines 52, 76
+  data/minecraft/worldgen/configured_feature/tall_mangrove.json lines 52, 76
+  data/minecraft/worldgen/placed_feature/mangrove_checked.json lines 45, 69
+  data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json lines 45, 69
+
+Remove "dirt_provider" and "force_dirt" keys from these files.
+NOTE: mangrove.json has mangrove_root_placer — remove ONLY dirt_provider
+and force_dirt from top-level tree config. Do NOT touch root_placer objects.
+COMMIT per file: fix(minecraft/configured_feature): <filename> — remove dirt_provider+force_dirt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 6 — Remove wrongly added "type" from ore files (5 files)
+FILES (all in data/minecraft/worldgen/configured_feature/):
+  ore_andesite.json line 8
+  ore_diorite.json line 8
+  ore_dirt.json line 8
+  ore_granite.json line 8
+  ore_gravel.json line 8
+
+At line 8 col 9-15 there is a "type" field that doesn't belong.
+Open each file, go to line 8, find the object with "type" and remove it.
+Verify against ./26.1.2/data/minecraft/worldgen/configured_feature/ ore files
+to confirm "type" should not be there.
+COMMIT per file: fix(minecraft/configured_feature): <filename> — remove wrongly added type
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 7 — Remove wrongly added "type" from tree placed_feature files (2 files)
+FILES:
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json lines 73, 131
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json lines 53, 105
+
+At those line numbers there are "type" fields that don't belong.
+Remove ONLY the "type" key at those exact lines.
+Verify each against ./26.1.2/ before removing.
+COMMIT per file: fix(placed_feature/trees): <filename> — remove wrongly added type
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 8 — Fix vanilla patch reference names (12 files)
+For each file: check ./26.1.2/data/minecraft/worldgen/configured_feature/
+for the current correct name. If found → update. If not → UNCERTAIN, skip.
+
+  berry_range.json → "minecraft:patch_berry_bush"
+  jungle_cactus.json → "minecraft:patch_cactus"
+  large_fern_forest.json → "minecraft:patch_large_fern"
+  large_fern_taiga.json → "minecraft:patch_large_fern"
+  large_ferns_dense_forests.json → "minecraft:patch_large_fern"
+  marsh_grass.json → "minecraft:patch_bush" + "minecraft:patch_firefly_bush"
+  paddy_fireflies.json → "minecraft:patch_firefly_bush"
+  sugar_cane_desert.json → "minecraft:patch_sugar_cane"
+  sunflower_birch_forest.json → "minecraft:patch_sunflower"
+  tall_grass_savanna.json → "minecraft:patch_tall_grass"
+  waterlily_dense.json → "minecraft:patch_waterlily"
+  wildflowers_birch_forest.json → "minecraft:wildflowers_birch_forest"
+
+COMMIT per file: fix(placed_feature/patch): <filename> — update vanilla CF reference
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SKIP ENTIRELY:
+All data/towns_and_towers/ errors — mod compat, not your problem.
+./26.1.2/ and ./WWOO_ORIGINAL/ — read only.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINAL STEPS (REQUIRED):
+1. python3 check_integrity.py
+   → If issues: python3 check_integrity.py --restore
+2. git add data/
+3. git commit -m "fix(worldgen): Round 7 — final fixes"
+4. Write ROUND7_COMPLETION_REPORT.md

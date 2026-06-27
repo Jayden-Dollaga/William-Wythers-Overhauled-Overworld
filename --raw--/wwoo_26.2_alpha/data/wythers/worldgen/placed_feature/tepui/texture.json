@@ -1,0 +1,15 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/texture_cap",
+        "wythers:tepui/texture_upper",
+        "wythers:tepui/texture_middle",
+        "wythers:tepui/texture_lower",
+        "wythers:tepui/texture_bottom"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

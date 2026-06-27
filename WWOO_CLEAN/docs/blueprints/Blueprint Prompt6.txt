@@ -1,0 +1,308 @@
+=== WWOO PORT TASK: Round 6 — Targeted Surgical Fixes ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only — NEVER modify)
+SOURCE OF ERROR: errors8S.txt (exact file + line numbers provided)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only — NEVER modify)
+TARGET: Minecraft Java 26.1.2
+
+CRITICAL: Every fix in this round has EXACT file names and line numbers.
+Do NOT scan broadly — only touch the specific files listed.
+Do NOT delete any files.
+Run check_integrity.py at the end.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 1 — Restore unparseable file (1 file)
+
+FILE: data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch_set/5.json
+ERROR: "Expected a map-like" + "Encountered unparseable content"
+
+This file is corrupted/invalid JSON. Restore from WWOO_ORIGINAL:
+  import shutil
+  shutil.copy2('WWOO_ORIGINAL/data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch_set/5.json',
+               'data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch_set/5.json')
+
+COMMIT: restore(tree/huge_spruce): branch_set/5.json — corrupted file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 2 — Fix stone_forest_rock.json (2 errors, 1 file)
+
+FILE: data/wythers/worldgen/configured_feature/other/stone_forest_rock.json
+ERRORS:
+  - "Expected nothing" at line 3 col 13 — trailing content after root object
+  - "Cannot find worldgen/feature minecraft:forest_rock" — feature renamed
+
+STEP 1: Open the file. Find and remove any content after the closing "}" of
+the root JSON object.
+
+STEP 2: Change "type": "minecraft:forest_rock" to "type": "minecraft:block_blob"
+
+STEP 3: Verify block_blob config structure against:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/
+  Look for any file using minecraft:block_blob to confirm correct config keys.
+
+COMMIT: fix(configured_feature/other): stone_forest_rock.json — forest_rock→block_blob
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 3 — Remove dirt_provider + force_dirt (exact files only)
+
+Remove "dirt_provider" and "force_dirt" keys from ONLY these files:
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_orange.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_red.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_yellow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_swamp_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_deep.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_middle.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_shallow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_surface_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_surface.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/brazilwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_dark_oak_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_oak_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/eucalyptus_deanei_white.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/9.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/jungle_mangrove.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/kapok.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/live_oak_dark_swamp.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/mega_jungle.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/old_swamp_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_acacia_stump.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pandanus.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/riverside_jungle_tree.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_forest_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_forest_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_gum.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/willow_large.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_brazilwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_kapok.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_mega_jungle.json
+
+IMPORTANT: jungle_mangrove.json has a mangrove_root_placer.
+Remove ONLY "dirt_provider" and "force_dirt" from the top-level tree config.
+Do NOT touch any keys inside the root_placer or root_placement objects.
+
+VERIFY: grep dirt_provider + force_dirt on each file → 0
+
+COMMIT per file: fix(configured_feature): <filename> — remove dirt_provider+force_dirt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 4 — Remove leaf keys from terracotta_mound files (3 files)
+
+FILES:
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_orange.json (line 29-31)
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_red.json (same)
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_yellow.json (same)
+
+Remove "waterlogged", "persistent", "distance" from inside "Properties" objects ONLY.
+
+COMMIT per file: fix(configured_feature/terrain): <filename> — remove leaf blockstate keys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 5 — Remove extra branch keys from elephant bamboo (4 files)
+
+FILES:
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical.json
+
+Remove these keys:
+  "extra_branch_steps" (line 58)
+  "extra_branch_length" (line 67)
+  "place_branch_per_log_probability" (line 76)
+  "can_grow_through" (line 77)
+
+Verify these keys are absent from ./26.1.2/ trunk placers first.
+
+COMMIT per file: fix(configured_feature/tree): <filename> — remove extra branch keys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 6 — Remove ColumnPlacer keys (2 files ONLY)
+
+FILES:
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_orange.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_omphalotus_illudens.json
+
+Remove from ColumnPlacer config objects ONLY (check context first):
+  "exclusion_radius_xz"
+  "exclusion_radius_y"
+  "required_empty_blocks"
+
+Verify: parent object type must contain "column" before deleting.
+Do NOT remove from any other context.
+
+COMMIT per file: fix(configured_feature/fungus): <filename> — remove ColumnPlacer keys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 7 — Remove misc invalid keys (exact files)
+
+For each file listed, remove ONLY the specific key at the line number shown.
+Verify each key is absent from ./26.1.2/ before removing.
+
+"heightmap" key (not inside a placement modifier — wrongly placed):
+  data/wythers/worldgen/configured_feature/terrain/local/deep_lukewarm_island.json (line 113)
+  data/wythers/worldgen/configured_feature/terrain/local/island.json (line 112)
+
+"dusted" key:
+  data/wythers/worldgen/configured_feature/vegetation/patch/cold_island_grass.json (line 36)
+
+"snowy" key:
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dead_pale_oak.json (line 214)
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_pale_oak.json (line 610)
+  data/wythers/worldgen/placed_feature/terrain/extended/dripstone_cliff.json (line 12)
+  data/wythers/worldgen/placed_feature/terrain/local/packed_mud_canyons.json (line 12)
+  data/wythers/worldgen/placed_feature/terrain/local/sea_cliff.json (line 12)
+
+"creaking" key:
+  data/wythers/worldgen/placed_feature/vegetation/local/other/creaking_heart.json (line 138)
+
+"predicate" key (invalid context):
+  data/wythers/worldgen/placed_feature/terrain/extended/coastal_forest_sand.json (line 95)
+  data/wythers/worldgen/placed_feature/terrain/local/sandy_forest.json (line 95)
+  data/wythers/worldgen/placed_feature/terrain/local/sandy_jungle.json (line 95)
+
+"sapling_provider" key:
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_tall.json (line 11)
+
+"blocks" key (wrongly added to palm tree foliage):
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_east.json (line 239)
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_east.json (line 226)
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_west.json
+
+"placement" key (wrongly placed inside configured_feature):
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab_small.json (line 99)
+
+COMMIT per file: fix(<dir>): <filename> — remove invalid key <keyname>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 8 — Fix Unknown key "type" (wrongly added type fields)
+
+These files have "type" added to objects where it doesn't belong.
+EXACT files from errors8S.txt Unknown key "type" section.
+
+For EACH file: open it, go to the line number shown, find the object
+with "type" that doesn't belong, and remove ONLY that "type" key.
+Do NOT remove type fields that are correct.
+
+Verify: check ./26.1.2/ for the correct schema at that location.
+If unsure whether a type field is correct or wrong → ⚠️ UNCERTAIN, skip.
+
+Key pattern: boulder files (beach_rocks, boulder_deepslate etc.) have
+"type" added to individual block state entries inside "states" arrays —
+those should NOT have type fields.
+
+COMMIT per file: fix(<dir>): <filename> — remove wrongly added type field
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 9 — Fix vanilla configured_feature references (12 placed_feature files)
+
+These placed_feature files reference vanilla configured_features that no
+longer exist by those names in 26.1.2.
+
+MANDATORY: For each entry below, check ./26.1.2/data/minecraft/worldgen/
+configured_feature/ to find the current correct name.
+If not found → mark ⚠️ UNCERTAIN, do not change.
+
+FILES AND CURRENT REFERENCES:
+  berry_range.json → "minecraft:patch_berry_bush"
+  jungle_cactus.json → "minecraft:patch_cactus"
+  large_fern_forest.json → "minecraft:patch_large_fern"
+  large_fern_taiga.json → "minecraft:patch_large_fern"
+  large_ferns_dense_forests.json → "minecraft:patch_large_fern"
+  marsh_grass.json → "minecraft:patch_bush" and "minecraft:patch_firefly_bush"
+  paddy_fireflies.json → "minecraft:patch_firefly_bush"
+  sugar_cane_desert.json → "minecraft:patch_sugar_cane"
+  sunflower_birch_forest.json → "minecraft:patch_sunflower"
+  tall_grass_savanna.json → "minecraft:patch_tall_grass"
+  waterlily_dense.json → "minecraft:patch_waterlily"
+  wildflowers_birch_forest.json → "minecraft:wildflowers_birch_forest"
+
+Check ./26.1.2/data/minecraft/worldgen/configured_feature/ for each.
+If the file exists there with a new name, update the reference.
+If it does not exist, mark ⚠️ UNCERTAIN.
+
+COMMIT per file: fix(placed_feature/patch): <filename> — update vanilla CF reference
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 10 — Convert remaining random_patch (exact files only)
+
+These files contain "minecraft:random_patch" references.
+Only convert files where the inner feature is clearly simple_block.
+For complex inner types → UNWRAP only (remove random_patch wrapper,
+keep inner feature intact).
+
+MANDATORY: Read ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+and ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json first.
+
+Files at top level (type = random_patch directly):
+  patch_floating_lanterns.json, dripstone_spikes.json,
+  floating_vegetation_plants.json, patch_enoki.json, patch_morel.json,
+  melon_patch.json, sea_vines.json, seagrass_mixed.json,
+  patch_pumpkin_farmed.json, patch_wheat_farmed.json,
+  thin_jungle_bamboo_patch.json, pale_acacia_stump.json
+
+Files with nested random_patch (inside simple_random_selector etc):
+  giant_tubeworm_1-4.json, giant_groundsel_*.json, agave_*.json,
+  saguaro_*.json, bayou_cypress_*.json, palm tree files, etc.
+
+For EACH file:
+  Step 1 — Identify inner feature type
+  Step 2 — If simple_block → full conversion (new CF + update PF)
+  Step 3 — If NOT simple_block → UNWRAP only:
+    Remove random_patch wrapper
+    Keep inner feature as direct feature reference
+    Merge placement arrays
+  Step 4 — If string reference → update placement wrapper only
+
+NEVER convert complex features (tree, random_selector, block_column)
+to simple_block. Only unwrap.
+
+COMMIT per file: fix(<dir>): <filename> — convert/unwrap random_patch
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTION ORDER:
+1. Fix 1 (restore corrupted file — 30 seconds)
+2. Fix 3 (dirt_provider/force_dirt — exact file list)
+3. Fix 4 (leaf keys — 3 files)
+4. Fix 5 (elephant bamboo — 4 files)
+5. Fix 6 (ColumnPlacer — 2 files only)
+6. Fix 7 (misc invalid keys — exact line numbers)
+7. Fix 8 (wrong type fields)
+8. Fix 2 (stone_forest_rock)
+9. Fix 9 (vanilla CF references)
+10. Fix 10 (random_patch — last, most complex)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SKIP ENTIRELY:
+- All mod biome references (towns_and_towers, terralith, byg, etc.)
+- ./26.1.2/ and ./WWOO_ORIGINAL/ — read only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINAL STEPS (REQUIRED):
+1. python3 check_integrity.py → if issues: python3 check_integrity.py --restore
+2. python3 check_wrong_types.py → should be 0
+3. git add data/
+4. git commit -m "fix(worldgen): Round 6 complete — surgical targeted fixes"
+5. Write ROUND6_COMPLETION_REPORT.md

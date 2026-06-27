@@ -1,0 +1,25 @@
+I will provide an error log from VSCode (spyglassmc) for a Minecraft datapack. Please analyze it and produce a report with the following structure:
+
+1. Group errors by their exact message.
+2. For each error message, list every occurrence with the file path and the exact line/column ranges (as shown in the log).
+3. Then, for each error message, provide a bullet list of unique file paths that contain that error (without repeating line numbers).
+4. Classify each error as 🔴 Critical (severity 8) or 🟡 Warning (severity 4) based on the "severity" field.
+5. At the end, give a summary: total number of error entries (individual line items) and a breakdown of critical vs warning.
+6. Use the exact formatting from the example below.
+
+Example format:
+
+error: Unknown key “type” (severity 4 – Warning)
+- data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json (line 73, col 17–23) (line 131, col 13–19)
+- data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json (line 53, col 17–23) (line 105, col 13–19)
+
+**Affected files:**
+- data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json
+- data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json
+
+(Repeat for each error type)
+
+Then a summary.
+
+Now here is the error log:
+[PASTE YOUR errorsX.txt CONTENT HERE]

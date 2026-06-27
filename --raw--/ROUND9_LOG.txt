@@ -1,0 +1,34 @@
+============================================================
+WWOO Round 9 - Fix nested random_patch
+============================================================
+
+Found 20 files with random_patch
+
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\ancient_swamp_oak.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\banyan.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\cloud_forest_1.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\cloud_forest_2.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\cloud_forest_3.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\cloud_forest_4.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\complex_dark_oak_1.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\complex_dark_oak_2.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\complex_oak_1.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\complex_oak_2.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\dark_banyan.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\glow_banyan.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\live_oak.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\live_oak_bright.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\live_oak_dark.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\live_oak_dark_swamp.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\moss_tree.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\old_swamp_oak.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\riverside_jungle_tree.json
+  Fixed: data\wythers\worldgen\configured_feature\vegetation\tree\witch_tree.json
+
+============================================================
+SUMMARY
+============================================================
+  Files fixed:   20
+  Objects fixed: 25
+
+Remaining random_patch files: 0

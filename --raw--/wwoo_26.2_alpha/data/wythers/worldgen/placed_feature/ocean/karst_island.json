@@ -1,0 +1,20 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/karst_island_base",
+        "wythers:ocean/karst_island_layer_1",
+        "wythers:ocean/karst_island_layer_2",
+        "wythers:ocean/karst_island_layer_3",
+        "wythers:ocean/karst_island_layer_4",
+        "wythers:ocean/karst_island_layer_5",
+        "wythers:ocean/karst_island_layer_6",
+        "wythers:ocean/karst_island_layer_7",
+        "wythers:ocean/karst_island_layer_8",
+        "wythers:ocean/karst_island_layer_9"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

@@ -1,0 +1,12 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/coral/tube_base",
+        "wythers:ocean/coral/tube_liner"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

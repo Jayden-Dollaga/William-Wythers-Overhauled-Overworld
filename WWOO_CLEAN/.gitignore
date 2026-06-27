@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Backups (large — not tracked in git)
+backups/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp / meta
+*.tmp
+*.bak
+list.txt
+list_files.bat
+reorganise.bat
+reorganize_wwoo.py

@@ -1,0 +1,148 @@
+{
+  "feature": {
+    "config": {
+      "surface": "floor",
+      "depth": 1,
+      "vertical_range": 7,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0,
+      "vegetation_chance": 1,
+      "xz_radius": 8,
+      "replaceable": "minecraft:magma_block",
+      "ground_state": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:magma_block"
+        }
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "to_place": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:lava"
+              }
+            }
+          },
+          "type": "minecraft:simple_block"
+        },
+        "placement": [
+          {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "down",
+            "max_steps": 4,
+            "target_condition": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "void_air"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:magma_block"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:magma_block",
+                    "minecraft:lava"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    -1,
+                    0,
+                    0
+                  ],
+                  "blocks": [
+                    "minecraft:magma_block",
+                    "minecraft:lava"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "blocks": [
+                    "minecraft:magma_block",
+                    "minecraft:lava"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    0,
+                    -1
+                  ],
+                  "blocks": [
+                    "minecraft:magma_block",
+                    "minecraft:lava"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "blackstone"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "type": "minecraft:vegetation_patch"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 100
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 27,
+      "target_condition": {
+        "type": "minecraft:solid"
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "desert"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+=== WWOO PORT TASK: Round 6 Part 3 ===
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only)
+RULE: Only touch exact files listed. No broad scans. No file deletions.
+
+FIX 1 — Fix stone_forest_rock.json (1 file)
+FILE: data/wythers/worldgen/configured_feature/other/stone_forest_rock.json
+STEP 1: Remove any content after the final closing "}" of root object
+STEP 2: Change "type": "minecraft:forest_rock" → "type": "minecraft:block_blob"
+STEP 3: Check ./26.1.2/ for block_blob config structure and fix keys if needed
+COMMIT: fix(configured_feature/other): stone_forest_rock.json
+
+FIX 2 — Remove wrongly added "type" fields
+Previous fixes added "type" to objects that don't support it.
+These show as "Unknown key type" in Spyglass.
+
+For each file listed: open → go to exact line → find "type" key at that
+object → check if ./26.1.2/ uses "type" in that same context → if NO,
+remove it. If UNSURE → mark UNCERTAIN, skip.
+
+Boulder files (type wrongly added to block state entries in arrays):
+  data/wythers/worldgen/configured_feature/terrain/local/beach_rocks.json lines 10,20,30,40
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_deepslate.json lines 11,21,31,41,63,73,83,105,115,125,147,157,167,189,199,209
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_diorite.json same pattern
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_granite.json same
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_mossy.json many lines
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_packed_mud.json many
+  data/wythers/worldgen/configured_feature/terrain/local/boulder_stone.json many
+  data/wythers/worldgen/configured_feature/terrain/local/gravelly_beach_rocks.json lines 10,20,30,40
+  data/wythers/worldgen/configured_feature/terrain/local/hole.json many lines
+  data/wythers/worldgen/configured_feature/terrain/local/suspicious_ore_small.json lines 8,18
+  data/wythers/worldgen/configured_feature/terrain/local/suspicious_ore.json lines 8,18
+
+Tree files (type wrongly added at wrong nesting level):
+  data/wythers/worldgen/configured_feature/vegetation/bush/acacia.json line 40
+  data/wythers/worldgen/configured_feature/vegetation/bush/jungle.json line 40
+  data/wythers/worldgen/configured_feature/vegetation/bush/pale.json line 40
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_gray.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/acacia_forest.json line 69
+  data/wythers/worldgen/configured_feature/vegetation/tree/acacia_plains.json line 66
+  data/wythers/worldgen/configured_feature/vegetation/tree/aspen.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/azalea_birch.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/azalea_conifer.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/bamboo_palm.json line 42
+  data/wythers/worldgen/configured_feature/vegetation/tree/birch.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/cold_pine_medium.json line 49
+  data/wythers/worldgen/configured_feature/vegetation/tree/corymbia_aparrerinja.json line 39
+  data/wythers/worldgen/configured_feature/vegetation/tree/ebony.json line 46
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_medium.json line 49
+  data/wythers/worldgen/configured_feature/vegetation/tree/flowering_azalea_bush.json line 52
+  data/wythers/worldgen/configured_feature/vegetation/tree/ground_pine.json line 67
+  data/wythers/worldgen/configured_feature/vegetation/tree/huangshan_pine.json line 60
+  data/wythers/worldgen/configured_feature/vegetation/tree/mahogany.json line 41
+  data/wythers/worldgen/configured_feature/vegetation/tree/maple_tall.json line 53
+  data/wythers/worldgen/configured_feature/vegetation/tree/mpingo.json line 69
+  data/wythers/worldgen/configured_feature/vegetation/tree/oak_bush.json line 39
+  data/wythers/worldgen/configured_feature/vegetation/tree/oak.json line 64
+  data/wythers/worldgen/configured_feature/vegetation/tree/olive.json line 39
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_shroom_forked.json line 37
+  data/wythers/worldgen/configured_feature/vegetation/tree/pine.json line 92
+  data/wythers/worldgen/configured_feature/vegetation/tree/ponderosa_pine.json line 356
+  data/wythers/worldgen/configured_feature/vegetation/tree/red_ivorywood.json line 69
+  data/wythers/worldgen/configured_feature/vegetation/tree/rosewood.json line 73
+  data/wythers/worldgen/configured_feature/vegetation/tree/sandalwood.json line 73
+  data/wythers/worldgen/configured_feature/vegetation/tree/savanna_oak.json line 41
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_acacia.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_azalea.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_birch.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_dark_oak.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_flowering_azalea.json line 48
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_jungle.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_oak.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_spruce.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/stick_plant_small.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/stick_plant.json line 38
+  data/wythers/worldgen/configured_feature/vegetation/tree/teak.json line 78
+  data/wythers/worldgen/configured_feature/vegetation/tree/tundra_bush.json line 55
+  data/wythers/worldgen/configured_feature/vegetation/tree/tundra_spruce.json line 49
+
+Placed feature files (type wrongly added to rule/target objects):
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_badlands_desert.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_badlands_red.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_badlands.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_red.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_savanna.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_white.json line 5
+  data/wythers/worldgen/placed_feature/terrain/extended/coarsify_dirt.json line 9
+  data/wythers/worldgen/placed_feature/terrain/extended/gravelify_packed_mud.json lines 9,19,29,39,49
+  data/wythers/worldgen/placed_feature/terrain/extended/red_sand.json lines 9,19,29
+  data/wythers/worldgen/placed_feature/terrain/local/antarctifier.json line 4
+  data/wythers/worldgen/placed_feature/terrain/local/icelandifier_1.json line 4
+  data/wythers/worldgen/placed_feature/vegetation/extended/trees/cherry_huangshan_pine_snowy.json line 40
+  data/wythers/worldgen/placed_feature/vegetation/extended/trees/cherry_maple_snowy.json line 76
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/cherry_huangshan_pine.json line 70
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/cherry_maple.json line 81
+  + remaining arroyo/replace/volcanic files from errors8S.txt
+
+COMMIT per file: fix(<dir>): <filename> — remove wrongly added type field
+
+FINAL: python3 check_integrity.py → git add data/ → git commit

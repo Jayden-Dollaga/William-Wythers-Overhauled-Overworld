@@ -1,0 +1,263 @@
+=== WWOO PORT TASK: Round 4 — Complete Migration (v2.6.7) ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only vanilla reference — DO NOT modify)
+SOURCE OF ERROR: errors5.txt (Spyglass diagnostics, 2,889 errors)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only original 1.21.11 — DO NOT modify)
+TARGET: Minecraft Java 26.1.2
+
+CRITICAL SAFETY RULES:
+1. NEVER delete a key without confirming it was removed in 26.1.2 via ./26.1.2/ schema
+2. NEVER rename a feature type without confirming the new name exists in ./26.1.2/
+3. NEVER delete files — only modify them
+4. If uncertain about ANY change → mark ⚠️ UNCERTAIN and skip
+5. After every category, run verification grep before moving to next
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 1 — Remove "dirt_provider" and "force_dirt" (650+640 errors)
+AFFECTED: data/wythers/worldgen/configured_feature/ tree files
+
+Write a Python script to recursively scan all JSON files and delete:
+  - "dirt_provider" key and its entire value object
+  - "force_dirt" key and its boolean value
+
+VERIFY against ./26.1.2/data/minecraft/worldgen/configured_feature/oak.json
+→ Confirm neither key exists in vanilla 26.1.2 tree configs before running
+
+SCRIPT PATTERN:
+  def remove_keys(obj, keys_to_remove):
+      if isinstance(obj, dict):
+          for key in keys_to_remove:
+              obj.pop(key, None)
+          for val in obj.values():
+              remove_keys(val, keys_to_remove)
+      elif isinstance(obj, list):
+          for item in obj:
+              remove_keys(item, keys_to_remove)
+
+VERIFY after: grep -r "dirt_provider" data/ → 0 results
+COMMIT: fix(configured_feature): remove dirt_provider and force_dirt — Cat 1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 2 — Remove leaf blockstate inline keys (156 errors)
+AFFECTED: configured_feature tree files with Properties blocks
+
+Remove these keys from any "Properties" object inside a blockstate "state":
+  "waterlogged", "persistent", "distance", "waterwoodged"
+
+IMPORTANT: Only remove from inside "Properties" objects, not from anywhere else.
+
+PATTERN:
+  If obj is dict and parent context is "Properties":
+      remove "waterlogged", "persistent", "distance", "waterwoodged" if present
+
+Also remove "waterwoodged" from anywhere (it's a typo key, never valid).
+
+VERIFY: grep -r '"waterlogged"' data/wythers/ → 0 results
+COMMIT: fix(configured_feature): remove leaf blockstate inline keys — Cat 2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 3 — Remove ColumnPlacer keys (32 errors, 2 files only)
+AFFECTED:
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_orange.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_omphalotus_illudens.json
+
+VERIFY these specific files in ./26.1.2/ schema first.
+Remove from ColumnPlacer config blocks ONLY:
+  "exclusion_radius_xz", "exclusion_radius_y", "required_empty_blocks", "blocks"
+
+DO NOT remove these keys from mangrove or foliage placer contexts.
+Only remove from objects where type contains "column".
+
+COMMIT per file: fix(configured_feature): remove ColumnPlacer keys — Cat 3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 4 — Add missing "type" field (544 errors)
+AFFECTED: configured_feature and placed_feature files
+
+Scan all JSON files for objects missing "type" that have recognizable structure.
+Use ./26.1.2/ as reference to confirm correct type values.
+
+INFERENCE RULES (only apply if confident):
+  Object with "rules" + "fallback" → "minecraft:rule_based_state_provider"
+  Object with "state" + "Name" key (no type) → "minecraft:simple_state_provider"
+  Object with "entries" list where items have "weight" + "data" → "minecraft:weighted_state_provider"
+  Object with "trunk_placer" + "foliage_placer" (no type) → "minecraft:tree"
+
+DO NOT infer type for:
+  - Objects with only 1-2 keys
+  - Objects where type is ambiguous
+  - Mark those ⚠️ UNCERTAIN and skip
+
+VERIFY each inference against ./26.1.2/ before applying.
+COMMIT per file: fix(<dir>): add missing type field — Cat 4
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 5 — Convert random_patch to simple_block (355 errors)
+AFFECTED: configured_feature files with "type": "minecraft:random_patch"
+
+MANDATORY: Read these before touching anything:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+  ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+
+FOR EACH FILE:
+  Step 1 — Read the file and check config.feature.feature.type
+  Step 2 — If inner type is "minecraft:simple_block":
+    → Extract to_place from config.feature.feature.config.to_place
+    → Rewrite configured_feature as:
+      { "type": "minecraft:simple_block", "config": { "to_place": <extracted> } }
+    → Find matching placed_feature (same filename in placed_feature dir)
+    → Update placed_feature placement with count + random_offset pattern
+  Step 3 — If inner type is NOT simple_block:
+    → UNWRAP: remove the random_patch wrapper, keep the inner feature
+    → The file becomes:
+      {
+        "feature": <inner_feature_object>,
+        "placement": [
+          {"type": "minecraft:count", "count": <tries>},
+          {
+            "type": "minecraft:random_offset",
+            "xz_spread": {"type": "minecraft:constant", "value": 0},
+            "y_spread": {"type": "minecraft:constant", "value": 0}
+          },
+          ... existing inner placement modifiers ...
+        ]
+      }
+    → This is now a placed_feature, NOT a configured_feature
+    → Move/rename accordingly if needed
+  Step 4 — If file contains string reference as inner feature:
+    → Keep the reference, just update the placement wrapper
+
+PLACED_FEATURE FORMAT for simple_block conversions:
+{
+  "feature": "wythers:<path/to/configured_feature>",
+  "placement": [
+    { "type": "minecraft:in_square" },
+    { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG" },
+    { "type": "minecraft:biome" },
+    { "type": "minecraft:count", "count": <tries> },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": <xspread>, "min": -<xspread>, "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": <yspread>, "min": -<yspread>, "plateau": 0
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+      }
+    }
+  ]
+}
+
+VERIFY: grep -r "minecraft:random_patch" data/ → 0 results
+COMMIT per file: fix(<dir>): convert random_patch — Cat 5
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 6 — Fix wolf variant keys (9 errors each for wild/tame/angry)
+AFFECTED: data/minecraft/wolf_variant/*.json (9 files)
+
+MANDATORY: Check ./26.1.2/data/minecraft/wolf_variant/ashen.json first
+to confirm the exact correct key names.
+
+The "assets" object uses keys "wild_texture", "tame_texture", "angry_texture"
+not "wild", "tame", "angry". If current files use short keys, rename them.
+
+Also add "baby_assets" if missing (6 errors):
+  Check ./26.1.2/data/minecraft/wolf_variant/ for exact baby_assets structure.
+
+VERIFY: All wolf_variant files match ./26.1.2/ schema exactly.
+COMMIT per file: fix(wolf_variant): fix asset keys — Cat 6
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 7 — Fix remaining IntProvider y_spread (4 errors)
+AFFECTED: 4 placed_feature files with integer y_spread in random_offset
+
+Find files where random_offset has integer xz_spread or y_spread:
+  python3 -c "
+  import os, json
+  for root, dirs, files in os.walk('data'):
+      for f in files:
+          if not f.endswith('.json'): continue
+          path = os.path.join(root, f)
+          try:
+              data = json.load(open(path))
+              content = json.dumps(data)
+              if 'random_offset' in content:
+                  def check(obj):
+                      if isinstance(obj, dict):
+                          if obj.get('type') == 'minecraft:random_offset':
+                              if isinstance(obj.get('xz_spread'), int) or isinstance(obj.get('y_spread'), int):
+                                  print(path)
+                          for v in obj.values():
+                              check(v)
+                      elif isinstance(obj, list):
+                          for i in obj: check(i)
+                  check(data)
+          except: pass
+  "
+
+FIX: Replace integer N with:
+  N == 0 → {"type": "minecraft:constant", "value": 0}
+  N != 0 → {"type": "minecraft:trapezoid", "max": N, "min": -N, "plateau": 0}
+
+VERIFY: 0 integer xz_spread/y_spread remaining in random_offset modifiers
+COMMIT per file: fix(placed_feature): fix IntProvider format — Cat 7
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 8 — Fix baby_asset_id missing (6 errors)
+AFFECTED: data/minecraft/chicken_variant/ or cow_variant/ or pig_variant/
+
+Check ./26.1.2/ for exact structure, then add missing baby_asset_id fields.
+Pattern: "baby_asset_id": "<same as asset_id with _baby appended>"
+
+VERIFY: All chicken/cow/pig variant files have baby_asset_id.
+COMMIT per file: fix(<variant>): add baby_asset_id — Cat 8
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTION ORDER (safest first):
+1. Cat 1 — dirt_provider/force_dirt (pure deletion, lowest risk)
+2. Cat 2 — leaf blockstate keys (pure deletion, scoped to Properties)
+3. Cat 3 — ColumnPlacer keys (2 files only)
+4. Cat 6 — wolf variant keys (small, safe)
+5. Cat 8 — baby_asset_id (small, safe)
+6. Cat 7 — IntProvider (4 files)
+7. Cat 4 — missing type field (requires inference, medium risk)
+8. Cat 5 — random_patch conversion (most complex, do last)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SKIP ENTIRELY:
+- All "Cannot find worldgen/biome" mod compat errors (terralith:, byg:, etc.)
+- Cat F mod biome references — do not touch
+- ./26.1.2/ folder — read only
+- ./WWOO_ORIGINAL/ folder — read only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINAL VERIFICATION CHECKLIST:
+[ ] grep dirt_provider data/ → 0
+[ ] grep force_dirt data/ → 0
+[ ] grep waterlogged data/wythers/ → 0 (in Properties context)
+[ ] grep "minecraft:random_patch" data/ → 0
+[ ] wolf_variant files match ./26.1.2/ schema
+[ ] chicken/cow/pig variants have baby_asset_id
+[ ] No integer xz_spread/y_spread in random_offset modifiers
+[ ] Load in-game → no "Data pack validation failed"
+[ ] File count in data/ matches or exceeds previous count (no deletions)

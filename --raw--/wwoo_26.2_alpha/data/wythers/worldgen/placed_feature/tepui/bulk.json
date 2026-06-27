@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/bulk_1",
+        "wythers:tepui/bulk_2",
+        "wythers:tepui/bulk_3"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

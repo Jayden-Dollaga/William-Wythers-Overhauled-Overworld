@@ -1,0 +1,14 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/volcanic_atoll_base",
+        "wythers:ocean/volcanic_atoll_layer_1",
+        "wythers:ocean/volcanic_atoll_layer_2",
+        "wythers:ocean/volcanic_atoll_layer_3"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

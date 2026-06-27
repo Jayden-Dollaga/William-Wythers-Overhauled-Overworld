@@ -1,0 +1,934 @@
+>> [22:56:02] [Render thread/INFO]: Loaded 1515 recipes
+>> [22:56:02] [Render thread/INFO]: Loaded 1617 advancements
+>> [22:56:34] [Worker-Main-52/ERROR]: Registry loading errors:
+>> > Errors in registry minecraft:root:
+>> >> Errors in element minecraft:worldgen/configured_feature:
+>> java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/configured_feature]: [wythers:decor/patch_floating_lanterns, wythers:decor/stumps, wythers:other/giant_tubeworm_1, wythers:other/giant_tubeworm_2, wythers:other/giant_tubeworm_3, wythers:other/giant_tubeworm_4, wythers:other/hydrothermal_vent, wythers:other/stone_forest_rock, minecraft:patch_berry_bush, minecraft:patch_bush, minecraft:patch_cactus, minecraft:patch_firefly_bush, minecraft:patch_grass, minecraft:patch_large_fern, minecraft:patch_sugar_cane, minecraft:patch_sunflower, minecraft:patch_tall_grass, minecraft:patch_waterlily, wythers:terrain/cliff_dripstone, wythers:terrain/dripstone_spikes, wythers:terrain/dripstone_spikes_1, wythers:terrain/dripstone_spikes_2, wythers:terrain/dripstone_spikes_3, wythers:terrain/dripstone_spikes_4, wythers:terrain/dripstone_spikes_5, wythers:terrain/local/beach_rocks, wythers:terrain/local/bore_hole, wythers:terrain/local/cold_island, wythers:terrain/local/cold_island_processor, wythers:terrain/local/coral_air_pockets, wythers:terrain/local/dead_coral_stack, wythers:terrain/local/dead_coral_stack_2, wythers:terrain/local/fan_corals, wythers:terrain/local/gravel_in_dead_coral, wythers:terrain/local/gravelly_beach_rocks, wythers:terrain/local/huangshan_spires, wythers:terrain/local/iceland, wythers:terrain/local/island, wythers:terrain/local/lukewarm_island, wythers:terrain/local/lukewarm_island_2, wythers:terrain/local/lukewarm_ocean_caves, wythers:terrain/local/lukewarm_ocean_caves_sand, wythers:terrain/local/mushroom_island, wythers:terrain/local/mushroom_island_2, wythers:terrain/local/mushroom_island_table, wythers:terrain/local/mushroom_spires, wythers:terrain/local/volcanic_flooded_cavern_mud, wythers:terrain/local/volcanic_island, wythers:terrain/local/warm_island, wythers:terrain/tuff_spikes_1, wythers:terrain/tuff_spikes_2, wythers:terrain/tuff_spikes_3, wythers:terrain/tuff_spikes_4, wythers:terrain/tuff_spikes_5, wythers:vegetation/floating_vegetation_plants, wythers:vegetation/fungus/colossal_mushroom_24, wythers:vegetation/fungus/colossal_mushroom_26, wythers:vegetation/fungus/colossal_mushroom_28, wythers:vegetation/fungus/colossal_mushroom_30, wythers:vegetation/fungus/colossal_mushroom_32, wythers:vegetation/fungus/patch_enoki, wythers:vegetation/fungus/patch_morel, wythers:vegetation/giant_groundsel_121, wythers:vegetation/giant_groundsel_122, wythers:vegetation/giant_groundsel_123, wythers:vegetation/giant_groundsel_124, wythers:vegetation/giant_groundsel_131, wythers:vegetation/giant_groundsel_132, wythers:vegetation/giant_groundsel_133, wythers:vegetation/giant_groundsel_134, wythers:vegetation/giant_groundsel_135, wythers:vegetation/giant_groundsel_136, wythers:vegetation/giant_groundsel_137, wythers:vegetation/giant_groundsel_138, wythers:vegetation/giant_groundsel_221, wythers:vegetation/giant_groundsel_222, wythers:vegetation/giant_groundsel_223, wythers:vegetation/giant_groundsel_224, wythers:vegetation/giant_groundsel_231, wythers:vegetation/giant_groundsel_232, wythers:vegetation/giant_groundsel_233, wythers:vegetation/giant_groundsel_234, wythers:vegetation/giant_groundsel_235, wythers:vegetation/giant_groundsel_236, wythers:vegetation/giant_groundsel_237, wythers:vegetation/giant_groundsel_238, wythers:vegetation/giant_groundsel_331, wythers:vegetation/giant_groundsel_332, wythers:vegetation/giant_groundsel_333, wythers:vegetation/giant_groundsel_334, wythers:vegetation/giant_groundsel_335, wythers:vegetation/giant_groundsel_336, wythers:vegetation/giant_groundsel_337, wythers:vegetation/giant_groundsel_338, wythers:vegetation/melon_patch, wythers:vegetation/patch/cold_island_grass, wythers:vegetation/patch/floating_leaves, wythers:vegetation/patch/floating_leaves_with_pink_petals, wythers:vegetation/patch/grass_low_swamp, wythers:vegetation/patch/grass_mangrove_swamp, wythers:vegetation/patch/grass_marsh, wythers:vegetation/patch/grass_sudd_marsh, wythers:vegetation/patch/gravel_grass_short, wythers:vegetation/patch/leaf_litter, wythers:vegetation/patch/morning_glory, wythers:vegetation/patch/oasis_pool, wythers:vegetation/patch/reeds, wythers:vegetation/patch/sand_grass_short, wythers:vegetation/patch/sand_grass_tall, wythers:vegetation/patch/sand_reeds, wythers:vegetation/patch/sea_vines, wythers:vegetation/patch/seagrass_mixed, wythers:vegetation/patch/succulents, wythers:vegetation/patch/water_grass, wythers:vegetation/patch/water_grass_with_azure_bluets, wythers:vegetation/patch/water_grass_with_blue_orchids, wythers:vegetation/patch/water_grass_with_lily, wythers:vegetation/patch/waterlily_blue, wythers:vegetation/patch/waterlily_magenta, wythers:vegetation/patch/waterlily_pink, wythers:vegetation/patch_dead_corals_on_gravel, wythers:vegetation/patch_pumpkin_farmed, wythers:vegetation/patch_roses, wythers:vegetation/patch_wheat_farmed, wythers:vegetation/saguaro_1, wythers:vegetation/saguaro_2, wythers:vegetation/saguaro_3, wythers:vegetation/saguaro_4, wythers:vegetation/saguaro_5, wythers:vegetation/saguaro_6, wythers:vegetation/saguaro_7, wythers:vegetation/saguaro_8, wythers:vegetation/thin_jungle_bamboo_patch, wythers:vegetation/tree/ancient_dark_oak, wythers:vegetation/tree/ancient_dead_pale_oak, wythers:vegetation/tree/ancient_pale_oak, wythers:vegetation/tree/ancient_swamp_oak, wythers:vegetation/tree/banyan, wythers:vegetation/tree/baobab, wythers:vegetation/tree/complex_dark_oak_1, wythers:vegetation/tree/complex_dark_oak_2, wythers:vegetation/tree/complex_oak_1, wythers:vegetation/tree/complex_oak_2, wythers:vegetation/tree/dark_banyan, wythers:vegetation/tree/dead_spruce/1, wythers:vegetation/tree/dead_spruce/2, wythers:vegetation/tree/dead_spruce/3, wythers:vegetation/tree/dead_spruce/4, wythers:vegetation/tree/dead_spruce/5, wythers:vegetation/tree/dead_spruce/rooted_dirt, wythers:vegetation/tree/eucalyptus_salubris, wythers:vegetation/tree/forest_birch, wythers:vegetation/tree/giant_magnolia, wythers:vegetation/tree/glow_banyan, wythers:vegetation/tree/huge_jungle/rooted_dirt, wythers:vegetation/tree/huge_sequoia/rooted_dirt/1, wythers:vegetation/tree/huge_sequoia/rooted_dirt/2, wythers:vegetation/tree/huge_sequoia/rooted_dirt/3, wythers:vegetation/tree/huge_spruce/rooted_dirt/1, wythers:vegetation/tree/huge_spruce/rooted_dirt/2, wythers:vegetation/tree/huge_spruce/rooted_dirt/3, wythers:vegetation/tree/larch/rooted_dirt, wythers:vegetation/tree/live_oak, wythers:vegetation/tree/live_oak_bright, wythers:vegetation/tree/live_oak_dark, wythers:vegetation/tree/live_oak_dark_swamp, wythers:vegetation/tree/moss_tree, wythers:vegetation/tree/old_dark_oak, wythers:vegetation/tree/old_oak, wythers:vegetation/tree/old_swamp_oak, wythers:vegetation/tree/pale_acacia_stump, wythers:vegetation/tree/pale_dark_eucalyptus, wythers:vegetation/tree/riverside_jungle_tree, wythers:vegetation/tree/spruce/rooted_dirt, wythers:vegetation/tree/wierwood, wythers:vegetation/tree/witch_tree, minecraft:wildflowers_birch_forest]
+>> 	at knot//net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:300)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask.freezeRegistry(RegistryLoadTask.java:87)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$3(RegistryDataLoader.java:225)
+>> 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+>> 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+>> 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+>> 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:635)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:652)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:658)
+>> 	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:663)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:225)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> >> Errors in element minecraft:worldgen/placed_feature:
+>> java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/placed_feature]: [wythers:farm/harvest_fields_1, wythers:farm/harvest_fields_2, wythers:farm/harvest_fields_3, wythers:palm/coastal_palm_east, wythers:palm/coastal_palm_north, wythers:palm/coastal_palm_south, wythers:palm/coastal_palm_west, wythers:placer/bedrock_sealer, wythers:placer/deep_cold_ocean, wythers:placer/deep_dark, wythers:placer/deep_dark_extended, wythers:placer/dripstone_caves, wythers:placer/dripstone_caves_deep, wythers:placer/frozen_ocean, wythers:placer/ice_spikes, wythers:placer/lukewarm_ocean, wythers:placer/lush_caves, wythers:placer/lush_caves_deep, wythers:placer/plains, wythers:placer/stony_peaks, wythers:placer/swamp, wythers:placer/warm_ocean, wythers:placer/warm_ocean_extender_1, wythers:placer/warm_ocean_extender_2, wythers:placer/warm_ocean_extender_3, wythers:road/harvest_fields_1, wythers:road/harvest_fields_1b, wythers:road/harvest_fields_2, wythers:road/harvest_fields_2b, wythers:road/harvest_fields_3, wythers:road/harvest_fields_4, wythers:terrain/carver/ocean, wythers:terrain/carver/river, wythers:terrain/carver/river_water, wythers:terrain/extended/badlands_edge, wythers:terrain/extended/badlands_muddy_canyon, wythers:terrain/extended/base_mangrove_swamp_jungle, wythers:terrain/extended/base_taiga, wythers:terrain/extended/coral_pools, wythers:terrain/extended/dead_coral_stone, wythers:terrain/extended/dead_coral_stone_2, wythers:terrain/extended/desert_extender, wythers:terrain/extended/disk_clay_dirt_only, wythers:terrain/extended/mangrove_swamp_savanna_filler, wythers:terrain/extended/onsen_calcite, wythers:terrain/extended/onsen_deepslate, wythers:terrain/extended/onsen_pools, wythers:terrain/extended/river_gravel, wythers:terrain/extended/river_soil, wythers:terrain/extended/scree, wythers:terrain/extended/sea_cliff, wythers:terrain/extended/stony_shore_placer, wythers:terrain/extended/thermal_savanna_forest_base, wythers:terrain/extended/volcano_snow_blocks, wythers:terrain/extended/windswept_snow, wythers:terrain/feature/ice_tunnel, wythers:terrain/feature/ice_tunnel_mid, wythers:terrain/feature/tepui_base, wythers:terrain/local/atoll_grass, wythers:terrain/local/badlands_plateau_packed_mud, wythers:terrain/local/badlands_plateau_packed_mud_2, wythers:terrain/local/badlands_plateau_red_sand, wythers:terrain/local/badlands_snow_blocks, wythers:terrain/local/base_jagged_peaks, wythers:terrain/local/beach_mossy_stone, wythers:terrain/local/boggy_moss, wythers:terrain/local/boggy_moss_shore, wythers:terrain/local/bore_hole_corals, wythers:terrain/local/cave_disk_magma, wythers:terrain/local/cave_ice, wythers:terrain/local/cherry_pools, wythers:terrain/local/cherry_pools_edge, wythers:terrain/local/cloud_forest_terrain, wythers:terrain/local/cold_island_mossy_cobblestone, wythers:terrain/local/cold_ocean_gravel, wythers:terrain/local/crust_grass, wythers:terrain/local/danakil_mud, wythers:terrain/local/de_snowify_stone, wythers:terrain/local/deepslate_cliffs, wythers:terrain/local/deglaciator_0, wythers:terrain/local/deglaciator_00, wythers:terrain/local/deglaciator_01, wythers:terrain/local/deglaciator_1, wythers:terrain/local/deglaciator_2, wythers:terrain/local/deglaciator_3, wythers:terrain/local/deglaciator_4, wythers:terrain/local/deglaciator_5, wythers:terrain/local/deglaciator_6, wythers:terrain/local/deglaciator_7, wythers:terrain/local/deglaciator_8, wythers:terrain/local/deglaciator_9, wythers:terrain/local/disk_dead_coral_shore, wythers:terrain/local/disk_gravel_birch_forest, wythers:terrain/local/disk_gravel_forest, wythers:terrain/local/disk_gravel_river, wythers:terrain/local/disk_gravel_shore, wythers:terrain/local/disk_moss_in_mossy_cobblestone, wythers:terrain/local/disk_mossy_cobblestone_in_gravel, wythers:terrain/local/disk_mud_in_muddy_roots, wythers:terrain/local/disk_mud_shore, wythers:terrain/local/disk_mud_shore_jungle, wythers:terrain/local/disk_muddy_roots_in_podzol, wythers:terrain/local/disk_sand_forest, wythers:terrain/local/disk_sand_shore, wythers:terrain/local/disk_sand_tropical_shore, wythers:terrain/local/forest_floor_grass, wythers:terrain/local/forest_snow_blocks, wythers:terrain/local/frozen_ocean_land_replacer, wythers:terrain/local/glacial_pools, wythers:terrain/local/glacial_scree, wythers:terrain/local/glacier_0, wythers:terrain/local/glacier_1, wythers:terrain/local/gravelly_beach_snow, wythers:terrain/local/highland_stone_cliffs, wythers:terrain/local/highland_stone_cliffs_surface, wythers:terrain/local/huangshan_spires_grass, wythers:terrain/local/ice_shelf_0, wythers:terrain/local/ice_shelf_1, wythers:terrain/local/ice_shelf_2, wythers:terrain/local/ice_shelf_3, wythers:terrain/local/ice_shelf_4, wythers:terrain/local/ice_spikes_glacial_dirt, wythers:terrain/local/ice_spikes_glacial_gravel, wythers:terrain/local/ice_spikes_glacial_stone, wythers:terrain/local/iceland_moss, wythers:terrain/local/iceland_snow, wythers:terrain/local/icelandifier_2, wythers:terrain/local/mangrove_swamp_carver, wythers:terrain/local/mangrove_swamp_stone_replacer, wythers:terrain/local/mushroom_fields_grass_surface, wythers:terrain/local/oasis_moss, wythers:terrain/local/pamukkale_calcite, wythers:terrain/local/pamukkale_diorite, wythers:terrain/local/pamukkale_pools, wythers:terrain/local/pelagic_clay, wythers:terrain/local/replace_coarse_dirt_to_moss, wythers:terrain/local/river_clay, wythers:terrain/local/river_grass, wythers:terrain/local/riverbank_packed_mud, wythers:terrain/local/riverbank_plains, wythers:terrain/local/riverbank_red_sand, wythers:terrain/local/rooted_cave_floor, wythers:terrain/local/sandy_jungle_2, wythers:terrain/local/shadow_snow, wythers:terrain/local/snow_blocks, wythers:terrain/local/snowy_edges, wythers:terrain/local/sponge_disks, wythers:terrain/local/stone_cliffs, wythers:terrain/local/stone_cliffs_plus, wythers:terrain/local/stone_cliffs_sheer, wythers:terrain/local/stone_cliffs_surface, wythers:terrain/local/stony_shore_tuff, wythers:terrain/local/sunken_soil, wythers:terrain/local/swamp_carver, wythers:terrain/local/swamp_stone_replacer, wythers:terrain/local/volcano_high_snow_blocks, wythers:terrain/local/yellowstone_path, wythers:terrain/local/yellowstone_pools, wythers:terrain/local/yellowstone_white, wythers:vegetation/extended/patch/flower_dry_mediterranean, wythers:vegetation/extended/patch/flower_humid_mediterranean, wythers:vegetation/local/other/baobab_interior, wythers:vegetation/local/other/coral_disks, wythers:vegetation/local/other/coral_disks_ranged, wythers:vegetation/local/other/coral_disks_small, wythers:vegetation/local/patch/flower_bluebells, wythers:vegetation/local/patch/flower_sunny, wythers:vegetation/local/patch/flower_taiga, wythers:vegetation/local/patch/salt_lake_grass, wythers:vegetation/part/palm_leaves, wythers:vegetation/part/palm_nuts]
+>> 	at knot//net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:300)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask.freezeRegistry(RegistryLoadTask.java:87)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$3(RegistryDataLoader.java:225)
+>> 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+>> 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+>> 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+>> 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:635)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:652)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:658)
+>> 	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:663)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:225)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> > Errors in registry minecraft:worldgen/configured_feature:
+>> >> Errors in element wythers:decor/patch_floating_lanterns:
+>> java.lang.IllegalStateException: Failed to parse wythers:decor/patch_floating_lanterns from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:decor/stumps:
+>> java.lang.IllegalStateException: Failed to parse wythers:decor/stumps from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:other/giant_tubeworm_1:
+>> java.lang.IllegalStateException: Failed to parse wythers:other/giant_tubeworm_1 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:deepslate"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:diorite"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:other/giant_tubeworm_2:
+>> java.lang.IllegalStateException: Failed to parse wythers:other/giant_tubeworm_2 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:deepslate"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:diorite"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:other/giant_tubeworm_3:
+>> java.lang.IllegalStateException: Failed to parse wythers:other/giant_tubeworm_3 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:deepslate"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:diorite"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:other/giant_tubeworm_4:
+>> java.lang.IllegalStateException: Failed to parse wythers:other/giant_tubeworm_4 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:deepslate"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:diorite"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element minecraft:patch_grass:
+>> java.lang.IllegalStateException: Failed to parse minecraft:patch_grass from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/cliff_dripstone:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/cliff_dripstone from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dripstone_block"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/dripstone_spikes:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/dripstone_spikes from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/beach_rocks:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/beach_rocks from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/bore_hole:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/bore_hole from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"water"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/bore_hole_corals:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/bore_hole_corals from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:tube_coral_block"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/cold_island:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/cold_island from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/coral_air_pockets:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/coral_air_pockets from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:glow_lichen","Properties":{"down":"true","north":"true","south":"true","up":"true","west":"true"}}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/dead_coral_stack:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/dead_coral_stack from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_brain_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_bubble_coral_block"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/dead_coral_stack_2:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/dead_coral_stack_2 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_brain_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_bubble_coral_block"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/gravel_in_dead_coral:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/gravel_in_dead_coral from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:weighted_state_provider","entries":[{"weight":3,"data":{"Name":"minecraft:gravel"}},{"weight":1,"data":{"Name":"minecraft:suspicious_gravel"}}]},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/gravelly_beach_rocks:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/gravelly_beach_rocks from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/huangshan_spires:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/huangshan_spires from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"dripstone_block"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/lukewarm_ocean_caves_sand:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/lukewarm_ocean_caves_sand from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:weighted_state_provider","entries":[{"weight":40,"data":{"Name":"sand"}},{"weight":1,"data":{"Name":"minecraft:suspicious_sand"}}]},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/mushroom_island_table:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/mushroom_island_table from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_brain_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dead_brain_coral_block"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/rock_formation_1:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/rock_formation_1 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/volcanic_island:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/volcanic_island from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"stone"}},"rules":[]}]; List must have contents; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/tree/ancient_dark_oak:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/tree/ancient_dark_oak from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:podzol","Properties":{"snowy":"false"}}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/tree/ancient_dead_pale_oak:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/tree/ancient_dead_pale_oak from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:pale_moss_block","Properties":{"snowy":"false"}}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/tree/ancient_pale_oak:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/tree/ancient_pale_oak from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:pale_moss_block","Properties":{"snowy":"false"}}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/tree/baobab:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/tree/baobab from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:cave_air"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/tree/pale_dark_eucalyptus:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/tree/pale_dark_eucalyptus from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"pale_oak_wood"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"pale_oak_wood"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"pale_oak_wood"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> > Errors in registry minecraft:worldgen/placed_feature:
+>> >> Errors in element wythers:palm/coastal_palm_east:
+>> java.lang.IllegalStateException: Failed to parse wythers:palm/coastal_palm_east from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:palm/coastal_palm_north:
+>> java.lang.IllegalStateException: Failed to parse wythers:palm/coastal_palm_north from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:palm/coastal_palm_south:
+>> java.lang.IllegalStateException: Failed to parse wythers:palm/coastal_palm_south from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:palm/coastal_palm_west:
+>> java.lang.IllegalStateException: Failed to parse wythers:palm/coastal_palm_west from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/carver/ocean:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/carver/ocean from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:air"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:air"}},"rules":[]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/feature/tepui_base:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/feature/tepui_base from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:smooth_basalt"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/bore_hole_corals:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/bore_hole_corals from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:bubble_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:brain_coral_block"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/mudflat:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/mudflat from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:mud"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/riverbank_plains:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/riverbank_plains from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:dirt_path"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/local/sponge_disks:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/local/sponge_disks from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:wet_sponge"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/extended/patch/flower_dry_mediterranean:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/extended/patch/flower_dry_mediterranean from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/extended/patch/flower_humid_mediterranean:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/extended/patch/flower_humid_mediterranean from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/other/coral_disks:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/other/coral_disks from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:bubble_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:brain_coral_block"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/other/coral_disks_ranged:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/other/coral_disks_ranged from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:bubble_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:brain_coral_block"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/other/coral_disks_small:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/other/coral_disks_small from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:tube_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:bubble_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:horn_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:fire_coral_block"}},"rules":[]}]; No key type in MapLike[{"fallback":{"type":"minecraft:simple_state_provider","state":{"Name":"minecraft:brain_coral_block"}},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_bluebells:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_bluebells from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_bluebells_2:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_bluebells_2 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_forest:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_forest from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_plains:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_plains from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_sunny:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_sunny from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/flower_taiga:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/flower_taiga from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:flower
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/salt_lake_grass:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/salt_lake_grass from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"fallback":{"type":"minecraft:weighted_state_provider","entries":[{"weight":1,"data":{"Name":"minecraft:short_dry_grass"}},{"weight":1,"data":{"Name":"minecraft:tall_dry_grass"}}]},"rules":[]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> 
+>> [22:56:34] [Render thread/WARN]: Failed to validate datapack
+>> java.util.concurrent.CompletionException: net.minecraft.ReportedException: Registry Loading
+>> 	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+>> 	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359)
+>> 	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:670)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: net.minecraft.ReportedException: Registry Loading
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:297)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.logErrors(RegistryDataLoader.java:262)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:227)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mde74674$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	... 5 more
+>> Caused by: java.lang.IllegalStateException: Failed to load registries due to errors
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:281)
+>> 	... 13 more

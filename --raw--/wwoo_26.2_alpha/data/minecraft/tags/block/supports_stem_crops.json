@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#minecraft:supports_crops",
+	"#minecraft:dirt",
+    "#minecraft:mud",
+    "#minecraft:grass_blocks",
+    "minecraft:packed_mud"
+  ]
+}

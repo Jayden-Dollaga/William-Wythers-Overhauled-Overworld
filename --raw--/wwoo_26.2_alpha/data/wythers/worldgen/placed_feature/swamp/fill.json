@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:swamp/soul_soil",
+        "wythers:swamp/fill_1",
+        "wythers:swamp/fill_2"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

@@ -1,0 +1,80 @@
+=== WWOO PORT TASK: Round 10 — Fix inline configured_feature objects ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only)
+
+CONTEXT:
+In 26.1.2, simple_random_selector.features[] entries must reference features
+by string ID, not inline objects. These files have inline configured_feature
+objects that need to be extracted to separate files.
+
+FAILING FILES (12):
+  data/wythers/worldgen/configured_feature/vegetation/melon_patch.json
+  data/wythers/worldgen/configured_feature/vegetation/patch_wheat_farmed.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_1.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_2.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_3.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_4.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_5.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_6.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_7.json
+  data/wythers/worldgen/configured_feature/vegetation/saguaro_8.json
+  data/wythers/worldgen/configured_feature/vegetation/thin_jungle_bamboo_patch.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/patch_morel.json
+
+THE PATTERN TO FIX:
+In simple_random_selector.config.features[], entries look like:
+{
+  "feature": {
+    "config": { ... },    ← inline configured_feature
+    "type": "minecraft:random_selector"
+  },
+  "placement": [...]
+}
+
+This needs to become a reference by string ID. Since these files ARE the
+configured_feature, the inline object should be the content of THIS file
+and the features[] entry should reference it by its own ID.
+
+FIX STRATEGY per file:
+Step 1 — The top-level file (e.g. saguaro_1.json) currently is:
+  simple_random_selector → features[0] → feature: {inline random_selector}
+
+Step 2 — Rewrite the top-level file as the inner random_selector directly:
+  {
+    "type": "minecraft:random_selector",
+    "config": { <the inner config> }
+  }
+
+Step 3 — The corresponding placed_feature (same name in placed_feature dir)
+already has "feature": "wythers:vegetation/saguaro_1" which will now
+correctly point to a random_selector configured_feature.
+
+IMPORTANT: Check ./WWOO_ORIGINAL/ for the original structure of each file
+to understand what it was before random_patch wrapping.
+
+ALSO FIX these 5 specific files:
+
+1. data/wythers/worldgen/configured_feature/other/stone_forest_rock.json
+   - Change "type": "minecraft:forest_rock" → "type": "minecraft:block_blob"
+   - Check ./26.1.2/ for correct block_blob config structure
+
+2. data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json
+   data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json
+   - Find random_offset with y_spread values outside -16 to 16 range
+   - Clamp to max 16 / min -16
+
+3. data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json
+   data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json
+   - Missing "blocks" key — restore from WWOO_ORIGINAL
+
+4. data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json
+   data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json
+   data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json
+   data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json
+   - Missing "y_spread" in random_offset modifier
+   - Add: "y_spread": {"type": "minecraft:constant", "value": 0}
+
+COMMIT per file.
+Run check_integrity.py at the end.

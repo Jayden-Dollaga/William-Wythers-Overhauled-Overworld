@@ -1,0 +1,776 @@
+=== WWOO PORT TASK: Fix All Breaking Spyglass Errors (26.1.2 Migration) ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack
+SOURCE OF TRUTH: BASE VERSION: 1.21.1 → TARGET: Minecraft Java 26.1.2
+SOURCE OF ERROR: errors.txt in project root
+  This file contains the full Spyglass diagnostic output for the 1.21.1 datapack.
+  Cross-reference file paths and error messages from this file when identifying
+  which specific lines/keys need fixing in each affected file.
+  Do NOT use errors.txt to determine correct fix values — use ./26.1.2/ for that.
+One commit per file. No batching.
+
+TOTAL ERRORS: 2,924 across 796 unique files
+ERROR TYPES: 271 unique messages → grouped into 8 fixable categories + 1 skip
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== SOURCE OF TRUTH REFERENCE ===
+You have access to the extracted vanilla Minecraft 26.1.2 server jar contents in the folder: `./26.1.2/`
+This folder contains the complete vanilla data (worldgen, tags, loot tables, etc.) for version 26.1.2.
+When you encounter any error (unknown key, missing type, moved feature, renamed ID, etc.), you MUST consult the corresponding file or schema inside `./26.1.2/data/minecraft/` to determine the correct replacement or fix.
+DO NOT edit, delete, or add any files inside the `./26.1.2/` folder. It is read‑only reference material.
+If the correct format or value cannot be found in the 26.1.2 source, mark the file as ⚠️ UNCERTAIN and skip it.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== CRITICAL SAFETY RULES ===
+
+1. NEVER rename a feature type without first confirming the new name exists
+   in ./26.1.2/data/minecraft/worldgen/. If it's not there, it doesn't exist.
+
+2. NEVER delete a key without first checking the vanilla 26.1.2 schema to confirm
+   it was actually removed. Some keys (exclusion_radius_xz, required_empty_blocks,
+   can_grow_through) are STILL required by specific feature types.
+
+3. If uncertain about ANY change — mark ⚠️ UNCERTAIN and skip the file.
+   A skipped file is recoverable. A wrongly modified file causes cascading failures.
+
+4. After every 50 files fixed, run the verification grep commands and confirm
+   no new error patterns have appeared before continuing.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY A — dirt_provider / force_dirt removed from TreeFeatureConfig (318 files, 1,298 errors)
+
+WHAT CHANGED: In 26.1.2, "dirt_provider" and "force_dirt" were removed from the
+tree feature configuration schema. These keys are now invalid inside configured_feature
+tree/fungus/bush JSON files that use tree-type features.
+
+FIX: Remove the "dirt_provider": {...} key-value pair entirely.
+     Remove the "force_dirt": true/false key-value pair entirely.
+     Do not replace with anything. Leave the surrounding JSON valid.
+
+AFFECTED FILES (318):
+  data/minecraft/worldgen/configured_feature/acacia.json
+  data/minecraft/worldgen/configured_feature/azalea_tree.json
+  data/minecraft/worldgen/configured_feature/birch.json
+  data/minecraft/worldgen/configured_feature/birch_bees_005.json
+  data/minecraft/worldgen/configured_feature/cherry.json
+  data/minecraft/worldgen/configured_feature/cherry_bees_005.json
+  data/minecraft/worldgen/configured_feature/fancy_oak.json
+  data/minecraft/worldgen/configured_feature/fancy_oak_bees_005.json
+  data/minecraft/worldgen/configured_feature/mangrove.json
+  data/minecraft/worldgen/configured_feature/oak.json
+  data/minecraft/worldgen/configured_feature/oak_bees_005.json
+  data/minecraft/worldgen/configured_feature/tall_mangrove.json
+  data/minecraft/worldgen/placed_feature/acacia.json
+  data/minecraft/worldgen/placed_feature/acacia_checked.json
+  data/minecraft/worldgen/placed_feature/birch_checked.json
+  data/minecraft/worldgen/placed_feature/cherry_bees_005.json
+  data/minecraft/worldgen/placed_feature/cherry_checked.json
+  data/minecraft/worldgen/placed_feature/dark_oak_checked.json
+  data/minecraft/worldgen/placed_feature/fancy_oak_checked.json
+  data/minecraft/worldgen/placed_feature/mangrove_checked.json
+  data/minecraft/worldgen/placed_feature/mega_jungle_tree_checked.json
+  data/minecraft/worldgen/placed_feature/mega_pine_checked.json
+  data/minecraft/worldgen/placed_feature/mega_spruce_checked.json
+  data/minecraft/worldgen/placed_feature/oak.json
+  data/minecraft/worldgen/placed_feature/oak_checked.json
+  data/minecraft/worldgen/placed_feature/spruce.json
+  data/minecraft/worldgen/placed_feature/spruce_checked.json
+  data/minecraft/worldgen/placed_feature/spruce_on_snow.json
+  data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json
+  data/minecraft/worldgen/placed_feature/trees_badlands.json
+  data/minecraft/worldgen/placed_feature/trees_cherry.json
+  data/minecraft/worldgen/placed_feature/trees_snowy.json
+  data/wythers/worldgen/configured_feature/palm/branch/tall_top.json
+  data/wythers/worldgen/configured_feature/palm/tall.json
+  data/wythers/worldgen/configured_feature/terrain/local/giant_mushrooms.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_orange.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_red.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_yellow.json
+  data/wythers/worldgen/configured_feature/vegetation/bush/acacia.json
+  data/wythers/worldgen/configured_feature/vegetation/bush/birch.json
+  data/wythers/worldgen/configured_feature/vegetation/bush/desert.json
+  data/wythers/worldgen/configured_feature/vegetation/bush/jungle.json
+  data/wythers/worldgen/configured_feature/vegetation/bush/pale.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/bracket_fungus.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_24.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_26.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_28.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_30.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_32.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_brown.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_gray.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_orange.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_red.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_enoki.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_matsutake.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_morel.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_muscaria.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_omphalotus_illudens.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/medium_muscaria.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/patch_enoki.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/acacia_forest.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/acacia_plains.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_azalea.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_azalea_old.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_birch_old.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dark_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dark_oak_old.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dead_pale_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_oak_old.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_pale_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_swamp_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/aspen.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/aspen_leaf_litter.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/azalea_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/azalea_conifer.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bamboo_palm.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/banyan.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab_short.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab_small.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_deep.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_middle.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_shallow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_surface.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_surface_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/bent_palm_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/big_spruce/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/big_spruce/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/big_spruce/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/brazilwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/cloud_forest_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/cloud_forest_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/cloud_forest_3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/cloud_forest_4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/coastal_palm_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/cold_pine_medium.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_dark_oak_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_dark_oak_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_oak_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/complex_oak_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/corymbia_aparrerinja.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dark_banyan.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dark_eucalyptus.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/5.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/desert_fan_palm.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/desert_fan_palm_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/desert_fan_palm_tall.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ebony.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_bright.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_dark.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_dependent.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_medium.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/eucalyptus_deanei_gray.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/eucalyptus_deanei_white.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/eucalyptus_salubris.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/fen_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_medium.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_tall.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/flowering_azalea_bush.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/flowering_cassia.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_azalea.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_eucalypt_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_eucalyptus.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_pine_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_pine_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_pine_3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_pine_4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_tropical_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_tropical_pine_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_tropical_pine_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_tropical_pine_3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/forest_tropical_pine_4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/giant_magnolia.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/glow_banyan.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ground_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/holly.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huangshan_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_ne.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_nw.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_se.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_sw.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_jungle/branch_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/5.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/branch/leaves_1_x.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/branch/leaves_1_z.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/branch/leaves_2_x.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/branch/leaves_2_z.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_sequoia/dead.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/10.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/6.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/7.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/8.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/9.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch/leaves_1_x.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch/leaves_1_z.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch/leaves_2_x.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/branch/leaves_2_z.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/huge_spruce/dead.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/jungle_mangrove.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/jungle_palm.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/jungle_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/kapok.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/5.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/6.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/7.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/8.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/1_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/1_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/1_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/1_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/2_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/2_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/2_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/larch/branch/2_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/live_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/live_oak_bright.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/live_oak_dark.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/live_oak_dark_swamp.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/mahogany.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/maple_tall.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/marula.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/mediterranean_cypress.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/mega_jungle.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/montane_forest_spruce.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/moss_tree.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/oak_bush.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/old_dark_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/old_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/old_swamp_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/old_willow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/olive.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_acacia_stump.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_dark_eucalyptus.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_shroom.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_shroom_forked.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pandanus.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pink_lapacho.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pinyon_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ponderosa_1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ponderosa_2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ponderosa_blackjack.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ponderosa_pine.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/red_ivorywood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/riverside_jungle_tree.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/rosewood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/sandalwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/savanna_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/sclerophylous.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/sclerophylous_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/sclerophylous_tall.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_acacia.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_azalea.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_dark_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_flowering_azalea.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_jungle.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/scrub_spruce.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/sparse_jungle_palm.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/5.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/6.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/7.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/8.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/1_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/1_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/1_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/1_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/2_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/2_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/2_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/spruce/branch/2_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/stick_plant.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/stick_plant_small.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/straight_cocoa_palm.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_forest_birch.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_forest_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/swamp_gum.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/teak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/tundra_bush.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/tundra_spruce.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/wierwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/willow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/willow_large.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/witch_tree.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_brazilwood.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_kapok.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/young_mega_jungle.json
+  data/wythers/worldgen/placed_feature/palm/coastal_palm_east.json
+  data/wythers/worldgen/placed_feature/palm/coastal_palm_north.json
+  data/wythers/worldgen/placed_feature/palm/coastal_palm_south.json
+  data/wythers/worldgen/placed_feature/palm/coastal_palm_west.json
+  data/wythers/worldgen/placed_feature/vegetation/extended/trees/cherry_huangshan_pine_snowy.json
+  data/wythers/worldgen/placed_feature/vegetation/extended/trees/cherry_maple_snowy.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_blood_woods.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_jungle_vegetation.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_moss_sprouts.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_powder_spores.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_savanna_vegetation.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_sculk_trees.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/fungal_weeping_growths.json
+  data/wythers/worldgen/placed_feature/vegetation/local/other/white_bracket_fungi.json
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/cherry_huangshan_pine.json
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/cherry_maple.json
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/cherry_pools.json
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json
+  data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY B — Missing key "type" in configured_feature / placed_feature files (382 files, 525 errors)
+
+WHAT CHANGED: In 26.1.2, the "type" field is now required at the top level of both
+configured_feature and placed_feature JSON files. Files that previously omitted it
+now fail validation.
+
+FIX: Open each file. Determine what feature type it is based on its contents.
+     Add the correct "type": "minecraft:XXX" field to the nested object missing it.
+     - For configured_feature files: top-level "type" should match the feature
+       (e.g. "minecraft:simple_block", "minecraft:fill_layer", "minecraft:disk", etc.)
+     - For placed_feature files: DO NOT add top-level "type" — placed_features have
+       no top-level type field. Instead find the nested object missing "type" and
+       fix that (e.g. state providers, block predicates, placement modifiers).
+     Verify against /26.1.2/data/minecraft/worldgen/ schema if unsure.
+     Do NOT guess. If uncertain, mark file with ⚠️ UNCERTAIN and skip.
+
+NOTE: Many of these files overlap with Category A (same files have both errors).
+      Applying Cat A fix first, then Cat B fix, is the correct order.
+
+AFFECTED FILES (382):
+  data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json
+  data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json
+  data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json
+  data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json
+  data/wythers/worldgen/configured_feature/other/hydrothermal_vent.json
+  data/wythers/worldgen/configured_feature/terrain/cliff_dripstone.json
+  data/wythers/worldgen/configured_feature/terrain/local/beach_rocks.json
+  data/wythers/worldgen/configured_feature/terrain/local/bore_hole.json
+  data/wythers/worldgen/configured_feature/terrain/local/bore_hole_corals.json
+  data/wythers/worldgen/configured_feature/terrain/local/cold_island.json
+  data/wythers/worldgen/configured_feature/terrain/local/cold_island_processor.json
+  data/wythers/worldgen/configured_feature/terrain/local/coral_air_pockets.json
+  data/wythers/worldgen/configured_feature/terrain/local/dead_coral_stack.json
+  data/wythers/worldgen/configured_feature/terrain/local/dead_coral_stack_2.json
+  data/wythers/worldgen/configured_feature/terrain/local/fan_corals.json
+  data/wythers/worldgen/configured_feature/terrain/local/giant_mushrooms.json
+  data/wythers/worldgen/configured_feature/terrain/local/gravel_in_dead_coral.json
+  data/wythers/worldgen/configured_feature/terrain/local/gravelly_beach_rocks.json
+  data/wythers/worldgen/configured_feature/terrain/local/huangshan_spires.json
+  data/wythers/worldgen/configured_feature/terrain/local/lukewarm_island.json
+  data/wythers/worldgen/configured_feature/terrain/local/lukewarm_island_2.json
+  data/wythers/worldgen/configured_feature/terrain/local/lukewarm_ocean_caves.json
+  data/wythers/worldgen/configured_feature/terrain/local/lukewarm_ocean_caves_sand.json
+  data/wythers/worldgen/configured_feature/terrain/local/mushroom_island_table.json
+  data/wythers/worldgen/configured_feature/terrain/local/mushroom_spires.json
+  data/wythers/worldgen/configured_feature/terrain/local/rock_formation_1.json
+  data/wythers/worldgen/configured_feature/terrain/local/volcanic_flooded_cavern_mud.json
+  data/wythers/worldgen/configured_feature/terrain/local/volcanic_island.json
+  data/wythers/worldgen/configured_feature/terrain/local/warm_island.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_24.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_26.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_28.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_30.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_32.json
+  data/wythers/worldgen/configured_feature/vegetation/groundsel_leaves.json
+  data/wythers/worldgen/configured_feature/vegetation/patch/oasis_pool.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dark_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_dead_pale_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/ancient_pale_oak.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/baobab.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/eucalyptus_salubris.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/pale_dark_eucalyptus.json
+  data/wythers/worldgen/placed_feature/farm/harvest_fields_1.json
+  data/wythers/worldgen/placed_feature/farm/harvest_fields_2.json
+  data/wythers/worldgen/placed_feature/farm/harvest_fields_3.json
+  data/wythers/worldgen/placed_feature/farm/paddy_water.json
+  data/wythers/worldgen/placed_feature/farm/paddy_water_highlands.json
+  data/wythers/worldgen/placed_feature/placer/badlands.json
+  data/wythers/worldgen/placed_feature/placer/bamboo_jungle.json
+  data/wythers/worldgen/placed_feature/placer/beach.json
+  data/wythers/worldgen/placed_feature/placer/bedrock_sealer.json
+  data/wythers/worldgen/placed_feature/placer/birch_forests.json
+  data/wythers/worldgen/placed_feature/placer/dark_forest.json
+  data/wythers/worldgen/placed_feature/placer/deep_cold_ocean.json
+  data/wythers/worldgen/placed_feature/placer/deep_dark.json
+  data/wythers/worldgen/placed_feature/placer/deep_dark_extended.json
+  data/wythers/worldgen/placed_feature/placer/deep_frozen_ocean.json
+  data/wythers/worldgen/placed_feature/placer/desert.json
+  data/wythers/worldgen/placed_feature/placer/dripstone_caves.json
+  data/wythers/worldgen/placed_feature/placer/dripstone_caves_deep.json
+  data/wythers/worldgen/placed_feature/placer/flower_forest.json
+  data/wythers/worldgen/placed_feature/placer/forest.json
+  data/wythers/worldgen/placed_feature/placer/frozen_ocean.json
+  data/wythers/worldgen/placed_feature/placer/ice_spikes.json
+  data/wythers/worldgen/placed_feature/placer/jungle.json
+  data/wythers/worldgen/placed_feature/placer/lukewarm_ocean.json
+  data/wythers/worldgen/placed_feature/placer/lush_caves.json
+  data/wythers/worldgen/placed_feature/placer/lush_caves_deep.json
+  data/wythers/worldgen/placed_feature/placer/mangrove_swamp.json
+  data/wythers/worldgen/placed_feature/placer/mushroom_fields.json
+  data/wythers/worldgen/placed_feature/placer/plains.json
+  data/wythers/worldgen/placed_feature/placer/river.json
+  data/wythers/worldgen/placed_feature/placer/river_extended.json
+  data/wythers/worldgen/placed_feature/placer/savanna.json
+  data/wythers/worldgen/placed_feature/placer/snowy_taiga.json
+  data/wythers/worldgen/placed_feature/placer/sparse_jungle.json
+  data/wythers/worldgen/placed_feature/placer/stony_peaks.json
+  data/wythers/worldgen/placed_feature/placer/sunflower_plains.json
+  data/wythers/worldgen/placed_feature/placer/swamp.json
+  data/wythers/worldgen/placed_feature/placer/taiga.json
+  data/wythers/worldgen/placed_feature/placer/warm_ocean.json
+  data/wythers/worldgen/placed_feature/placer/warm_ocean_extender_1.json
+  data/wythers/worldgen/placed_feature/placer/warm_ocean_extender_2.json
+  data/wythers/worldgen/placed_feature/placer/warm_ocean_extender_3.json
+  data/wythers/worldgen/placed_feature/placer/wooded_badlands.json
+  data/wythers/worldgen/placed_feature/terrain/carver/ocean.json
+  data/wythers/worldgen/placed_feature/terrain/carver/river.json
+  data/wythers/worldgen/placed_feature/terrain/carver/river_water.json
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_extender.json
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_red_salt_pan.json
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_red_salt_pan_2.json
+  data/wythers/worldgen/placed_feature/terrain/extended/arroyo_red_sandify.json
+  data/wythers/worldgen/placed_feature/terrain/extended/badlands_edge.json
+  data/wythers/worldgen/placed_feature/terrain/extended/badlands_extender.json
+  data/wythers/worldgen/placed_feature/terrain/extended/badlands_muddy_canyon.json
+  data/wythers/worldgen/placed_feature/terrain/extended/badlands_stone_fix.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_frozen_peaks.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_frozen_peaks_snow.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_arid.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_forest.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_jungle.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_plains.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_savanna.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_sparse_jungle.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_mangrove_swamp_sudd.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_savanna.json
+  data/wythers/worldgen/placed_feature/terrain/extended/base_taiga.json
+  data/wythers/worldgen/placed_feature/terrain/extended/coastal_forest_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/coastal_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/cold_ocean_gravel.json
+  data/wythers/worldgen/placed_feature/terrain/extended/coral_pools.json
+  data/wythers/worldgen/placed_feature/terrain/extended/coral_pools_edge.json
+  data/wythers/worldgen/placed_feature/terrain/extended/dead_coral_stone.json
+  data/wythers/worldgen/placed_feature/terrain/extended/dead_coral_stone_2.json
+  data/wythers/worldgen/placed_feature/terrain/extended/desert_edge.json
+  data/wythers/worldgen/placed_feature/terrain/extended/desert_extender.json
+  data/wythers/worldgen/placed_feature/terrain/extended/desert_swamp_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/disk_clay_dirt_only.json
+  data/wythers/worldgen/placed_feature/terrain/extended/dover_cliffs.json
+  data/wythers/worldgen/placed_feature/terrain/extended/dripstone_cliff.json
+  data/wythers/worldgen/placed_feature/terrain/extended/estuary_mud.json
+  data/wythers/worldgen/placed_feature/terrain/extended/mangrove_swamp_savanna_filler.json
+  data/wythers/worldgen/placed_feature/terrain/extended/mudify_rooted_dirt.json
+  data/wythers/worldgen/placed_feature/terrain/extended/ocean_beach_gravel.json
+  data/wythers/worldgen/placed_feature/terrain/extended/ocean_beach_gravel_2.json
+  data/wythers/worldgen/placed_feature/terrain/extended/ocean_beach_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/onsen_calcite.json
+  data/wythers/worldgen/placed_feature/terrain/extended/onsen_deepslate.json
+  data/wythers/worldgen/placed_feature/terrain/extended/onsen_pools.json
+  data/wythers/worldgen/placed_feature/terrain/extended/replace_dirt_to_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/replace_gravel_to_mud.json
+  data/wythers/worldgen/placed_feature/terrain/extended/replace_gravel_to_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/replace_mud_to_sand.json
+  data/wythers/worldgen/placed_feature/terrain/extended/river_gravel.json
+  data/wythers/worldgen/placed_feature/terrain/extended/river_soil.json
+  data/wythers/worldgen/placed_feature/terrain/extended/scree.json
+  data/wythers/worldgen/placed_feature/terrain/extended/sea_cliff.json
+  data/wythers/worldgen/placed_feature/terrain/extended/stony_shore_placer.json
+  data/wythers/worldgen/placed_feature/terrain/extended/thermal_savanna_forest_base.json
+  data/wythers/worldgen/placed_feature/terrain/extended/volcanic_jungle_mud_in_basalt.json
+  data/wythers/worldgen/placed_feature/terrain/extended/volcanic_jungle_muddy_roots_on_basalt.json
+  data/wythers/worldgen/placed_feature/terrain/extended/volcano_snow_blocks.json
+  data/wythers/worldgen/placed_feature/terrain/extended/windswept_snow.json
+  data/wythers/worldgen/placed_feature/terrain/extended/wooded_badlands_extender.json
+  data/wythers/worldgen/placed_feature/terrain/feature/crevasse.json
+  data/wythers/worldgen/placed_feature/terrain/feature/ice_tunnel.json
+  data/wythers/worldgen/placed_feature/terrain/feature/ice_tunnel_mid.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_basalt_layer.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_base.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_cavern_dripstone.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_cavern_lakes.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_cavern_moss.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_caverns.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_chasms.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_falls.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_filler.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_lowland_for_glacier.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_surface.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_terrain.json
+  data/wythers/worldgen/placed_feature/terrain/feature/tepui_tuff_layer.json
+  data/wythers/worldgen/placed_feature/terrain/feature/thermal_vents_iron.json
+  data/wythers/worldgen/placed_feature/terrain/feature/thermal_vents_soul.json
+  [... + remaining 220 placed_feature/terrain/local/ and vegetation/ files from Cat B list above]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY C — random_patch configured_features must be restructured (419 errors)
+
+WHAT CHANGED: minecraft:random_patch, minecraft:flower, and minecraft:flower_no_bonemeal
+have been REMOVED entirely in 26.1.2. They are not renamed — they do not exist.
+Patches are now expressed as:
+  - A configured_feature using minecraft:simple_block (just the block to place)
+  - A placed_feature using count + random_offset placement modifiers
+
+MANDATORY: Before fixing ANY file in this category, open these vanilla reference files:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+  ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+These show the exact new format. Use them as your template.
+
+FIX FOR configured_feature files (type = minecraft:random_patch):
+  Step 1 — Extract the block state from config.feature.feature.config.to_place
+  Step 2 — Rewrite the entire file as:
+  {
+    "type": "minecraft:simple_block",
+    "config": {
+      "to_place": <extracted block state provider>
+    }
+  }
+  Step 3 — Find the matching placed_feature file (same name, placed_feature dir)
+  Step 4 — Rewrite its placement array using count + random_offset pattern
+           (copy from ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+            and substitute the tries/xspread/yspread values from the old config)
+
+EXCEPTION — Complex inner features (random_selector, block_column, tree):
+  If the inner feature inside random_patch is NOT a simple_block
+  (i.e. it's a random_selector, tree, block_column, or string reference),
+  do NOT convert to simple_block. Mark as ⚠️ UNCERTAIN and skip.
+  These require manual restructuring.
+
+EXCEPTION — Placed_feature references:
+  Files in placed_feature/ that REFERENCE a configured_feature by ID string
+  (e.g. "feature": "minecraft:patch_large_fern") — do not convert the placed_feature.
+  Instead update the reference string to the new configured_feature ID.
+  Check ./26.1.2/data/minecraft/worldgen/placed_feature/ for the correct new ID.
+  If not found in vanilla, mark ⚠️ UNCERTAIN.
+
+AFFECTED FILES: All configured_feature files where "type": "minecraft:random_patch"
+  Run: grep -rl '"type": "minecraft:random_patch"' data/ --include="*.json"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY D — Leaf blockstate inline keys removed (16 files, 159 errors)
+
+WHAT CHANGED: In 26.1.2, the "waterlogged", "persistent", and "distance" properties
+can no longer be set inline within blockstate providers inside tree/feature configs.
+These are leaf-specific blockstate properties that the schema no longer accepts here.
+
+FIX: Remove "waterlogged": ..., "persistent": ..., and "distance": ... keys
+     from within blockstate provider blocks inside each affected file.
+     Do not remove the surrounding blockstate provider structure — only the 3 keys.
+
+AFFECTED FILES (16):
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_orange.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_red.json
+  data/wythers/worldgen/configured_feature/terrain/terracotta_mound_yellow.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/1.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/2.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/3.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/4.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/5.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/1_west.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_east.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_north.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_south.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/branch/2_west.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY E — ColumnPlacer / exclusion keys removed (2 files, 32 errors)
+
+WHAT CHANGED: The ColumnPlacer schema in 26.1.2 removed the following keys:
+  - "exclusion_radius_xz"
+  - "exclusion_radius_y"
+  - "required_empty_blocks"
+  - "blocks" (within ColumnPlacer context)
+
+FIX: Remove all four keys from the ColumnPlacer config block in each file.
+     Verify against /26.1.2/data/minecraft/worldgen/ ColumnPlacer schema.
+
+AFFECTED FILES (2):
+  data/wythers/worldgen/configured_feature/vegetation/fungus/fungal_forest_orange.json
+  data/wythers/worldgen/configured_feature/vegetation/fungus/giant_omphalotus_illudens.json
+
+  NOTE: The palm tree files (bent_palm_*, coastal_palm_*) also showed "blocks" errors
+  but those are likely a different context — verify separately before fixing.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY F — Missing baby_assets / baby_asset_id in mob variant files (10 files, 10 errors)
+
+WHAT CHANGED: In 26.1.2, wolf_variant and chicken_variant JSON files now require:
+  - wolf_variant: "baby_assets" key (object with baby texture references)
+  - chicken_variant: "baby_asset_id" key (string reference to baby asset)
+
+FIX: Add the missing required key to each file.
+     Verify the exact required structure by checking /26.1.2/data/minecraft/wolf_variant/
+     and /26.1.2/data/minecraft/chicken_variant/ for a vanilla example with the key present.
+     Copy the key structure from a vanilla file and adapt the asset path appropriately.
+
+AFFECTED FILES (10):
+  data/minecraft/chicken_variant/cold.json        ← needs "baby_asset_id"
+  data/minecraft/wolf_variant/ashen.json          ← needs "baby_assets"
+  data/minecraft/wolf_variant/black.json
+  data/minecraft/wolf_variant/chestnut.json
+  data/minecraft/wolf_variant/pale.json
+  data/minecraft/wolf_variant/rusty.json
+  data/minecraft/wolf_variant/snowy.json
+  data/minecraft/wolf_variant/spotted.json
+  data/minecraft/wolf_variant/striped.json
+  data/minecraft/wolf_variant/woods.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY G — FoliagePlacer extra branch keys removed (4 files, 16 errors)
+
+WHAT CHANGED: In 26.1.2, the FoliagePlacer schema removed these keys:
+  - "extra_branch_steps"
+  - "extra_branch_length"
+  - "place_branch_per_log_probability"
+  - "can_grow_through"
+
+FIX: Remove all four keys from the FoliagePlacer config block in each file.
+
+AFFECTED FILES (4):
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_temperate_gold.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/elephant_bamboo_tropical_gold.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY H — MISC: Individual files needing manual investigation (296 files, 446 errors)
+
+These files have errors that do not fit a clean bulk-fix pattern.
+Each must be opened and assessed individually.
+
+ERROR TYPES IN THIS GROUP:
+  [419] minecraft:random_patch undeclared — also grouped in Cat C; these are the
+        upstream configured_feature files that Cat C placed_features point to
+  [ 8]  Unknown key "blocks" — in palm tree configs (bent_palm_*, coastal_palm_*)
+        Context unclear — may be a different placer type than Cat E
+  [ 6]  Unknown key "waterwoodged" — TYPO in source files (should be "waterlogged"?)
+        Found in: sclerophylous_tall.json (multiple errors same file)
+  [ 4]  Cannot find tag/block "minecraft:stone" — tsingy_ore files reference a
+        block tag that no longer exists or was renamed in 26.1.2
+  [ 3]  Unknown key "predicate" — in placed_feature files
+  [ 2]  Unknown key "heightmap" — in island configured_feature files
+  [ 1]  Unknown key "dusted" — cold_island_grass.json
+  [ 1]  Unknown key "sapling_provider" — fir_tall.json (different from Cat A)
+  [ 1]  Expected nothing — stone_forest_rock.json
+
+FIX APPROACH: Open each file individually. Read the actual content.
+     Check /26.1.2/ schema for the relevant feature type.
+     Fix only what you can confirm. Mark anything uncertain as ⚠️ UNCERTAIN.
+
+REPRESENTATIVE FILES TO START WITH:
+  data/wythers/worldgen/configured_feature/vegetation/tree/sclerophylous_tall.json
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_1.json
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_2.json
+  data/wythers/worldgen/configured_feature/other/stone_forest_rock.json
+  data/wythers/worldgen/configured_feature/vegetation/patch/cold_island_grass.json
+  data/wythers/worldgen/configured_feature/terrain/local/deep_lukewarm_island.json
+  data/wythers/worldgen/configured_feature/terrain/local/island.json
+  data/wythers/worldgen/configured_feature/vegetation/tree/fir_tall.json
+  [See full MISC file list above for all 296]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SKIP ENTIRELY — DO NOT TOUCH:
+
+data/towns_and_towers/tags/worldgen/biome/has_structure/ — ALL 44 files
+  Reason: These reference external mod biomes (terralith:, byg:, biomesoplenty:,
+  wythers:, tectonic:, regions_unexplored:, jermsy:, promenade:, terrestria:,
+  traverse:, biomesoplenty:). Spyglass cannot resolve these without the mods loaded.
+  These are valid compat tag entries. They are NOT broken — Spyglass just can't see
+  the mods. Do not remove or alter these references.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFICATION (run after all fixes):
+
+[ ] grep -r "dirt_provider" data/ --include="*.json" -l
+    → Should return 0 files
+
+[ ] grep -r "force_dirt" data/ --include="*.json" -l
+    → Should return 0 files
+
+[ ] grep -r "exclusion_radius_xz" data/ --include="*.json" -l
+    → Review each result manually — DO NOT expect 0
+    → VALID if inside: mangrove_root_placer, attached_to_leaves
+    → INVALID if inside: foliage_placer types other than the above
+    → Only remove from foliage placers that don't require it per ./26.1.2/ schema
+
+[ ] grep -r "exclusion_radius_y" data/ --include="*.json" -l
+    → Review each result manually — DO NOT expect 0
+    → VALID if inside: mangrove_root_placer, attached_to_leaves
+    → INVALID if inside: foliage_placer types other than the above
+    → Only remove from foliage placers that don't require it per ./26.1.2/ schema
+
+[ ] grep -r "extra_branch_steps" data/ --include="*.json" -l
+    → Should return 0 files
+
+[ ] grep -r "waterwoodged" data/ --include="*.json" -l
+    → Should return 0 files (it's a typo — fix or confirm intentional)
+
+[ ] Confirm commit count = total modified file count
+    → Expected minimum: 318 (A) + 12 (C) + 16 (D) + 2 (E) + 10 (F) + 4 (G) = 362 commits
+       Cat B and H files overlap with others and add to this count

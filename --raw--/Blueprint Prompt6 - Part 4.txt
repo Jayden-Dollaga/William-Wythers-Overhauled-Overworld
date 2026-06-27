@@ -1,0 +1,76 @@
+=== WWOO PORT TASK: Round 6 Part 4 ===
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only)
+RULE: Only touch exact files listed. No broad scans. No file deletions.
+
+FIX 1 — Fix vanilla configured_feature references (12 files)
+Check ./26.1.2/data/minecraft/worldgen/configured_feature/ for each.
+If new name exists → update. If not found → mark UNCERTAIN, skip.
+
+  vegetation/local/patch/berry_range.json → "minecraft:patch_berry_bush"
+  vegetation/local/patch/jungle_cactus.json → "minecraft:patch_cactus"
+  vegetation/local/patch/large_fern_forest.json → "minecraft:patch_large_fern"
+  vegetation/local/patch/large_fern_taiga.json → "minecraft:patch_large_fern"
+  vegetation/local/patch/large_ferns_dense_forests.json → "minecraft:patch_large_fern"
+  vegetation/local/patch/marsh_grass.json → "minecraft:patch_bush" + "minecraft:patch_firefly_bush"
+  vegetation/local/patch/paddy_fireflies.json → "minecraft:patch_firefly_bush"
+  vegetation/local/patch/sugar_cane_desert.json → "minecraft:patch_sugar_cane"
+  vegetation/local/patch/sunflower_birch_forest.json → "minecraft:patch_sunflower"
+  vegetation/local/patch/tall_grass_savanna.json → "minecraft:patch_tall_grass"
+  vegetation/local/patch/waterlily_dense.json → "minecraft:patch_waterlily"
+  vegetation/local/patch/wildflowers_birch_forest.json → "minecraft:wildflowers_birch_forest"
+
+COMMIT per file: fix(placed_feature/patch): <filename> — update vanilla CF reference
+
+FIX 2 — Convert remaining random_patch
+MANDATORY: Read first:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+  ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+
+RULES:
+  inner = simple_block → full conversion + update placed_feature
+  inner = NOT simple_block → UNWRAP ONLY (remove wrapper, keep inner feature)
+  NEVER convert tree/random_selector/block_column to simple_block
+
+Top-level random_patch files (type at root):
+  patch_floating_lanterns.json, dripstone_spikes.json,
+  floating_vegetation_plants.json, patch_enoki.json, patch_morel.json,
+  melon_patch.json, sea_vines.json, seagrass_mixed.json,
+  patch_pumpkin_farmed.json, patch_wheat_farmed.json,
+  thin_jungle_bamboo_patch.json, pale_acacia_stump.json
+
+Nested random_patch files (inside complex features):
+  giant_tubeworm_1-4.json, giant_groundsel_*.json, agave_*.json,
+  saguaro_*.json, bayou_cypress_*.json, palm tree files,
+  tree files with nested patches
+
+PLACED_FEATURE FORMAT for simple_block conversions:
+{
+  "feature": "wythers:<path>",
+  "placement": [
+    {"type": "minecraft:in_square"},
+    {"type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG"},
+    {"type": "minecraft:biome"},
+    {"type": "minecraft:count", "count": <tries>},
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {"type": "minecraft:trapezoid", "max": <x>, "min": -<x>, "plateau": 0},
+      "y_spread": {"type": "minecraft:trapezoid", "max": <y>, "min": -<y>, "plateau": 0}
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {"type": "minecraft:matching_block_tag", "tag": "minecraft:air"}
+    }
+  ]
+}
+
+COMMIT per file: fix(<dir>): <filename> — convert/unwrap random_patch
+
+FINAL STEPS:
+1. python3 check_integrity.py
+   → If issues: python3 check_integrity.py --restore
+2. python3 check_wrong_types.py → should be 0
+3. git add data/
+4. git commit -m "fix(worldgen): Round 6 complete"
+5. Write ROUND6_COMPLETION_REPORT.md
