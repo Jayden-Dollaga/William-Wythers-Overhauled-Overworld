@@ -7,28 +7,225 @@ based on unverified round-report claims, not actual schema checks.
 **This report does not auto-revert anything.** Each commit needs manual
 review — some may have also done other legitimate work in the same file.
 
-**Total commits scanned**: 3367
-**Commits flagged**: 1865
+**Total commits scanned**: 3391
+**Commits flagged**: 1876
 
 ## Commits Per Debunked Category
 
 | Category | Commits |
 |---|---|
-| waterlogged | 875 |
+| waterlogged | 882 |
 | missing_type_field (heuristic match) | 689 |
-| persistent | 674 |
-| distance | 674 |
-| exclusion_radius_xz | 247 |
-| exclusion_radius_y | 247 |
-| required_empty_blocks | 247 |
-| heightmap | 163 |
-| can_grow_through | 100 |
-| snowy | 43 |
-| extra_branch_steps | 38 |
-| extra_branch_length | 38 |
-| place_branch_per_log_probability | 38 |
+| persistent | 680 |
+| distance | 680 |
+| required_empty_blocks | 255 |
+| exclusion_radius_xz | 253 |
+| exclusion_radius_y | 253 |
+| heightmap | 172 |
+| can_grow_through | 108 |
+| snowy | 53 |
+| extra_branch_steps | 45 |
+| extra_branch_length | 45 |
+| place_branch_per_log_probability | 45 |
 
 ## Flagged Commits (Detail)
+
+### `fc381b6388` — Upload All For Debugging
+
+- **Removed debunked keys**: heightmap, snowy
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt, below_trunk_provider — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 775
+  - `---NOTES---.txt`
+  - `Blueprint Promp analyzing.txt`
+  - `Log_Error23.txt`
+  - `WWOO_NF/data/minecraft/worldgen/biome/bamboo_jungle.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/beach.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/birch_forest.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/cold_ocean.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/dark_forest.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/deep_cold_ocean.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/deep_frozen_ocean.json`
+  - ... +765 more
+- **Revert command** (review diff first!): `git show fc381b6388` then `git revert fc381b6388` if confirmed safe
+
+### `adefc8d4c9` — fix: restore valid configured_features from WWOO_ORIGINAL
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 746
+  - `Log_Error21.txt`
+  - `Log_Error22.txt`
+  - `WWOO_NF/data/minecraft/worldgen/biome/badlands.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/bamboo_jungle.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/basalt_deltas.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/beach.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/birch_forest.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/cherry_grove.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/cold_ocean.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/crimson_forest.json`
+  - ... +736 more
+- **Revert command** (review diff first!): `git show adefc8d4c9` then `git revert adefc8d4c9` if confirmed safe
+
+### `20fc5e22ad` — fix: delete remaining wythers files with 26.1.2 breaking changes - Removed 43 configured_features with random_patch type - Removed 258 files with inline random_patch features - Removed 2 files with malformed rule structures - Total: 303 files deleted for 26.1.2 compatibility
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 177
+  - `data/minecraft/worldgen/configured_feature/disk_grass.json`
+  - `data/minecraft/worldgen/configured_feature/disk_sand.json`
+  - `data/minecraft/worldgen/configured_feature/patch_dead_bush.json`
+  - `data/minecraft/worldgen/configured_feature/patch_grass.json`
+  - `data/wythers/worldgen/configured_feature/decor/patch_floating_lanterns.json`
+  - `data/wythers/worldgen/configured_feature/decor/stumps.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json`
+  - ... +167 more
+- **Revert command** (review diff first!): `git show 20fc5e22ad` then `git revert 20fc5e22ad` if confirmed safe
+
+### `561f826d83` — fix: delete wythers placed_features with malformed rule structures - Found 162 files with 'rules' structures missing 'type' field - These were invalid in 26.1.2 serialization format - Deleted to resolve datapack loading failures
+
+- **Removed debunked keys**: heightmap, snowy, waterlogged
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 162
+  - `data/wythers/worldgen/configured_feature/terrain/local/cold_island_processor.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/fan_corals.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/giant_mushrooms.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/lukewarm_island.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/lukewarm_island_2.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/lukewarm_ocean_caves.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/mushroom_spires.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/volcanic_flooded_cavern_mud.json`
+  - `data/wythers/worldgen/configured_feature/terrain/local/warm_island.json`
+  - `data/wythers/worldgen/configured_feature/vegetation/fungus/colossal_mushroom_24.json`
+  - ... +152 more
+- **Revert command** (review diff first!): `git show 561f826d83` then `git revert 561f826d83` if confirmed safe
+
+### `ac9f887ac3` — fix: delete wythers placed_features with inline random_patch - Found 98 placed_feature files that defined inline random_patch features - These are invalid in 26.1.2; removed to allow datapack loading
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 1218
+  - `Log_Error20.txt`
+  - `WWOO_NF/data/minecraft/worldgen/biome/badlands.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/bamboo_jungle.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/beach.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/birch_forest.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/cherry_grove.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/cold_ocean.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/dark_forest.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/deep_cold_ocean.json`
+  - `WWOO_NF/data/minecraft/worldgen/biome/deep_dark.json`
+  - ... +1208 more
+- **Revert command** (review diff first!): `git show ac9f887ac3` then `git revert ac9f887ac3` if confirmed safe
+
+### `1d1c981af5` — restore: integrity check after Round 16 agent deletions
+
+- **Removed debunked keys**: required_empty_blocks, can_grow_through, snowy
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 377
+  - `data/minecraft/worldgen/configured_feature/patch_dead_bush.json`
+  - `data/minecraft/worldgen/configured_feature/patch_grass.json`
+  - `data/wythers/worldgen/configured_feature/decor/patch_floating_lanterns.json`
+  - `data/wythers/worldgen/configured_feature/decor/stumps.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes_1.json`
+  - ... +367 more
+- **Revert command** (review diff first!): `git show 1d1c981af5` then `git revert 1d1c981af5` if confirmed safe
+
+### `fdafe4259a` — fix: delete random_patch configured_features (removed in 26.1.2) - These 41 wythers decorative features used removed random_patch type - Deleted to allow datapack to load; core world gen unaffected - Can be re-implemented with 26.1.2-compatible feature types later
+
+- **Removed debunked keys**: required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy
+- **Files touched**: 278
+  - `data/wythers/worldgen/configured_feature/decor/patch_floating_lanterns.json`
+  - `data/wythers/worldgen/configured_feature/decor/stumps.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes_1.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes_2.json`
+  - `data/wythers/worldgen/configured_feature/terrain/dripstone_spikes_3.json`
+  - ... +268 more
+- **Revert command** (review diff first!): `git show fdafe4259a` then `git revert fdafe4259a` if confirmed safe
+
+### `afce317978` — fix: remove 26.1.2 deprecated keys from wythers features - Removed waterlogged, persistent, distance, exclusion_radius_xz/y - Removed dirt_provider, force_dirt from all wythers worldgen files - Preserves all feature definitions and placements
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 407
+  - `data/wythers/worldgen/configured_feature/decor/campfires.json`
+  - `data/wythers/worldgen/configured_feature/decor/floating_lantern.json`
+  - `data/wythers/worldgen/configured_feature/decor/scarecrow.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json`
+  - `data/wythers/worldgen/configured_feature/other/hydrothermal_vent.json`
+  - `data/wythers/worldgen/configured_feature/other/small_tubeworm.json`
+  - `data/wythers/worldgen/configured_feature/other/tubeworm.json`
+  - ... +397 more
+- **Revert command** (review diff first!): `git show afce317978` then `git revert afce317978` if confirmed safe
+
+### `b4bd7ae1d7` — restore: all wythers customizations from WWOO_ORIGINAL - Restored all wythers configured_features, placed_features, and tags - These contain WWOO's custom world generation features and decorations
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, heightmap, snowy, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 1092
+  - `data/wythers/tags/block/air_and_plants.json`
+  - `data/wythers/tags/block/palm_tree_replaceable.json`
+  - `data/wythers/tags/block/tree_replaceable.json`
+  - `data/wythers/worldgen/configured_feature/decor/campfires.json`
+  - `data/wythers/worldgen/configured_feature/decor/floating_lantern.json`
+  - `data/wythers/worldgen/configured_feature/decor/patch_floating_lanterns.json`
+  - `data/wythers/worldgen/configured_feature/decor/scarecrow.json`
+  - `data/wythers/worldgen/configured_feature/decor/stumps.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json`
+  - `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json`
+  - ... +1082 more
+- **Revert command** (review diff first!): `git show b4bd7ae1d7` then `git revert b4bd7ae1d7` if confirmed safe
+
+### `392400d109` — Update
+
+- **Removed debunked keys**: heightmap, snowy
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: below_trunk_provider — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 1688
+  - `---NOTES---.txt`
+  - `.Blueprint_Prompt_Full_Sweep_v2.txt`
+  - `Blueprint Prompt Error Template.txt`
+  - `Blueprint Prompt Template.txt`
+  - `Blueprint Prompt11.txt`
+  - `Blueprint Prompt12.txt`
+  - `Blueprint Prompt13.txt`
+  - `Blueprint_Prompt_Auto.txt`
+  - `Blueprint_Prompt_Full_Sweep.txt`
+  - `Log_Error13.txt`
+  - ... +1678 more
+- **Revert command** (review diff first!): `git show 392400d109` then `git revert 392400d109` if confirmed safe
+
+### `a0c9b73c80` — fix(configured_feature): remove malformed patch_dead_bush and patch_grass using removed random_patch type
+
+- **Removed debunked keys**: exclusion_radius_xz, exclusion_radius_y, required_empty_blocks, extra_branch_steps, extra_branch_length, place_branch_per_log_probability, can_grow_through, waterlogged, persistent, distance
+- ⚠️ **Also touched CONFIRMED REAL keys** in same commit: dirt_provider, force_dirt, below_trunk_provider — review carefully before reverting, this commit may have mixed a real fix with a debunked one
+- **Files touched**: 22
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/acacia.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/azalea_tree.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/birch.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/birch_bees_005.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/cherry.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/cherry_bees_005.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/dark_oak.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/fancy_oak.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/fancy_oak_bees_005.json`
+  - `WWOO_NF/data/minecraft/worldgen/configured_feature/mangrove.json`
+  - ... +12 more
+- **Revert command** (review diff first!): `git show a0c9b73c80` then `git revert a0c9b73c80` if confirmed safe
 
 ### `694c3a2d4a` — chore(vanilla): replace all minecraft/worldgen, minecraft/tags with authoritative 26.1.2 reference
 

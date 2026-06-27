@@ -1,0 +1,218 @@
+{
+  "attributes": {
+    "minecraft:audio/background_music": {
+      "default": {
+        "max_delay": 24000,
+        "min_delay": 12000,
+        "sound": "minecraft:music.overworld.swamp"
+      }
+    },
+    "minecraft:gameplay/increased_fire_burnout": true,
+    "minecraft:visual/fog_color": "#c0d8ff",
+    "minecraft:visual/sky_color": "#78a7ff",
+    "minecraft:visual/water_fog_color": "#4d7a60",
+    "minecraft:visual/water_fog_end_distance": {
+      "argument": 0.85,
+      "modifier": "multiply"
+    }
+  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "downfall": 0.2,
+  "effects": {
+    "dry_foliage_color": "#7b5334",
+    "foliage_color": "#8db127",
+    "grass_color_modifier": "swamp",
+    "water_color": "#3a7a6a"
+  },
+  "features": [
+    [
+      "wythers:terrain/local/mangrove_swamp_carver",
+      "wythers:terrain/local/mangrove_swamp_stone_replacer"
+    ],
+    [
+      "minecraft:lake_lava_surface",
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:fossil_lower",
+      "minecraft:fossil_upper",
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [
+      "wythers:terrain/local/cave_disk_magma"
+    ],
+    [
+      "minecraft:disk_clay",
+      "minecraft:disk_grass",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_copper",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_medium",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_dirt",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_gravel",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_tuff",
+      "minecraft:underwater_magma"
+    ],
+    [
+      "wythers:terrain/feature/dripstone_cluster",
+      "wythers:terrain/feature/pointed_dripstone"
+    ],
+    [
+      "minecraft:spring_lava",
+      "minecraft:spring_water"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:patch_dead_bush",
+      "minecraft:patch_firefly_bush_near_water",
+      "minecraft:patch_grass_normal",
+      "minecraft:seagrass_swamp",
+      "minecraft:trees_mangrove",
+      "wythers:vegetation/local/patch/duckweed",
+      "wythers:vegetation/local/patch/duckweed_flowering",
+      "wythers:vegetation/local/patch/grass_low_swamp",
+      "wythers:vegetation/local/patch/grass_mangrove_swamp",
+      "wythers:vegetation/local/patch/grass_sudd_marsh",
+      "wythers:vegetation/local/patch/swamp_reeds",
+      "wythers:vegetation/local/patch/water_grass_mangrove_swamp",
+      "wythers:vegetation/local/trees/banyans_swamp",
+      "wythers:vegetation/local/trees/bayou_hills",
+      "wythers:vegetation/local/trees/forest_tropical_pine",
+      "wythers:vegetation/local/trees/jungle_palms",
+      "wythers:vegetation/local/trees/mangrove_swamp",
+      "wythers:vegetation/local/trees/pantanal"
+    ],
+    [
+      "minecraft:freeze_top_layer",
+      "wythers:terrain/local/forest_floor_grass"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "maxCount": 8,
+        "minCount": 8,
+        "weight": 10
+      }
+    ],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:frog",
+        "maxCount": 5,
+        "minCount": 2,
+        "weight": 10
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:spider",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 95
+      },
+      {
+        "type": "minecraft:zombie_villager",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:skeleton",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 70
+      },
+      {
+        "type": "minecraft:creeper",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "minecraft:witch",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "minecraft:bogged",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 30
+      }
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 10
+      }
+    ],
+    "water_ambient": [
+      {
+        "type": "minecraft:tropical_fish",
+        "maxCount": 8,
+        "minCount": 8,
+        "weight": 25
+      }
+    ],
+    "water_creature": []
+  },
+  "temperature": 1.2
+}

@@ -43,6 +43,12 @@ python3 fix_round9_nested.py
 python3 fix_groundsel.py
 
 
+python3git_audit_debunked.py
+
+
+python3 apply_fixes_from_26_2.py
+
+python3 apply_fixes_from_26_2v2.py
 
 
 python3 wwoo_schema_scan.py

@@ -1,284 +1,114 @@
-# Analysis Report: wwoo_26.2_alpha Approach
-
-**Date:** 2026-06-23  
-**Analyzer:** Claude Agent  
-**Scope:** Read-only comparison of Cristelknight's 26.2 migration vs. our 26.1.2 port
-
----
-
-## Executive Summary
-
-Cristelknight's approach to 26.2 (Minecraft 1.21) differs fundamentally from what we need for 26.1.2 (Minecraft 1.20.4):
-- **26.2 alpha:** Total rewrite - deleted 1608 files (90% of WWOO_ORIGINAL), restructured into 581 simplified files
-- **Our 26.1.2 port:** Attempting incremental fixes to ~2700 files with schema conflicts
+# Alpha Analysis Report: wwoo-26.2-port-fixed
 
-**Key Insight:** The `state_provider` structure with empty `rules` array is VALID in 1.21 (format 102) but INVALID in 1.20.4 (format 101.1).
+Date: 2026-06-25
+Scope: Read-only analysis of [wwoo-26.2-port-fixed](wwoo-26.2-port-fixed) versus [WWOO_ORIGINAL](WWOO_ORIGINAL) and [26.1.2](26.1.2).
 
----
-
-## Minecraft Version Differences
-
-| Aspect | Our Port (26.1.2) | 26.2 Alpha |
-|--------|------------------|-----------|
-| Minecraft Version | 1.20.4 | 1.21 |
-| Pack Format | 101.1 | 101, 102 |
-| Total JSON Files | 2,769 | 581 |
-| Approach | Fix/migrate existing | Complete rewrite |
-
----
+## Executive summary
 
-## How Cristelknight Handled Breaking Changes
+The 26.2 alpha is best understood as a selective rewrite and pruning pass rather than a drop-in compatibility port. It removes the old random-patch wrapper entirely, keeps the biome-stage layout intact, and trims a large amount of older feature content. However, it still produces many schema issues when checked against the 26.1.2 reference, so copying the whole folder into the current port would be unsafe.
 
-### 1. **random_patch Removal**
+The main lesson is that Cristelknight’s approach was to simplify the feature tree and preserve the biome customizations, not to preserve every legacy feature file verbatim.
 
-**Status in 26.2 alpha:** ✗ 0 references  
-**Their approach:** Complete deletion
+## 1. Folder structure and counts
 
-- Deleted all 203 placed_features with malformed state_provider
-- Deleted all 539 vegetation configured_features that used random_patch
-- Did NOT attempt conversion to 26.1.2-compatible format
-- **Rationale:** Starting fresh in 1.21 with new feature types
+- Total JSON files in the 26.2 alpha datapack: 1667
+- Top-level namespaces under data/: `minecraft`, `wythers`
+- New top-level namespaces compared with the original: none
 
-**Our Status:** ✓ Consistent (we also deleted these)
+## 2. How random_patch was handled
 
----
+- `minecraft:random_patch` references in the alpha: 0
+- Conclusion: the old wrapper was removed rather than translated into a 26.1.2-compatible pattern.
 
-### 2. **Deprecated Keys**
+Example before/after pattern:
 
-**Checks in 26.2 alpha:**
-- `dirt_provider`: 0 → **Deleted**
-- `force_dirt`: 31 → **KEPT** (valid in 1.21)
-- `exclusion_radius_xz`: 263 → **KEPT** (valid in 1.21)
-- `waterlogged`: 263 → **KEPT** (valid in 1.21)
-- `extra_branch_steps`: 0 → **Deleted**
-
-**Key Finding:** These keys ARE valid in Minecraft 1.21's schema!
-
-They're only "deprecated" relative to older WWOO versions. In 1.21 format, they're legitimate configuration keys.
-
-**Our Status:** ✗ Inconsistent (we removed these thinking they were invalid)
-
----
-
-### 3. **File Organization Strategy**
+Before, [WWOO_ORIGINAL/data/wythers/worldgen/placed_feature/decor/sparse_steam.json](WWOO_ORIGINAL/data/wythers/worldgen/placed_feature/decor/sparse_steam.json) used a feature wrapper around a simple block placement.
 
-**WWOO_ORIGINAL structure:**
-```
-configured_feature/
-  decor/
-  palm/
-  other/
-  terrain/local/
-  vegetation/
-    fungus/
-    patch/
-    tree/
-placed_feature/
-  farm/
-  road/
-  palm/
-  placer/
-  terrain/
-    extended/
-    local/
-  vegetation/
-```
+After, [wwoo-26.2-port-fixed/data/wythers/worldgen/placed_feature/decor/sparse_steam.json](wwoo-26.2-port-fixed/data/wythers/worldgen/placed_feature/decor/sparse_steam.json) uses a direct simple-block placed feature with the placement rules moved out to the surrounding placement list. The older `random_patch` structure is gone.
 
-**26.2 alpha structure (SIMPLIFIED):**
-```
-configured_feature/
-  (flat namespace with descriptive names)
-  - boulder_andesite.json
-  - boulder_granite.json
-  - danakil_springs.json
-  - flower_tundra.json
-  - tree/ (only category kept)
-  - tundra/
-placed_feature/
-  (flat namespace with descriptive names)
-  - andesite_boulders.json
-  - beach_crags.json
-  - danakil/
-  - coast/
-  - border/
-```
+This is the clearest pattern: replace the legacy patch wrapper with a simpler direct feature definition and place the scatter/placement logic in the placement list.
 
-**Why:** Cleaner organization, easier to maintain, maps 1-to-1 between configured/placed features
+## 3. Tree-key compatibility
 
-**Our Status:** Still using complex nested structure
+Counts found in the alpha datapack:
 
----
+- `dirt_provider`: 0
+- `force_dirt`: 0
+- `exclusion_radius_xz`: 124
+- `waterlogged`: 405
+- `extra_branch_steps`: 14
 
-### 4. **State Provider Structure**
+Interpretation:
 
-**WWOO_ORIGINAL (invalid in 1.20.4):**
-```json
-{
-  "state_provider": {
-    "fallback": {"type": "minecraft:simple_state_provider", ...},
-    "rules": []
-  }
-}
-```
+- The alpha removed the old dirt-provider and force-dirt vocabulary entirely.
+- It still keeps several other tree-related keys, especially `exclusion_radius_xz`, `waterlogged`, and `extra_branch_steps`, which appear in tree-like or branch-heavy feature files.
 
-**26.2 alpha (valid in 1.21):**
-Same structure kept - 107 files still use it!
+## 4. Biome structure comparison
 
-**Reason:** Minecraft 1.21 validates this structure correctly. The empty `rules` array is handled by format 102.
+Forest biome comparison:
 
-**Our Status:** ✗ Deleted these files (but they might be valid if format changed)
+| Source | Feature stages | Total features |
+| --- | ---: | ---: |
+| [WWOO_ORIGINAL/data/minecraft/worldgen/biome/forest.json](WWOO_ORIGINAL/data/minecraft/worldgen/biome/forest.json) | 11 | 84 |
+| [wwoo-26.2-port-fixed/data/minecraft/worldgen/biome/forest.json](wwoo-26.2-port-fixed/data/minecraft/worldgen/biome/forest.json) | 11 | 84 |
+| [26.1.2/data/minecraft/worldgen/biome/forest.json](26.1.2/data/minecraft/worldgen/biome/forest.json) | 11 | 48 |
 
----
+Conclusion:
 
-## File Deletion Strategy
+- The 26.2 alpha does not replace biome definitions wholesale.
+- It preserves the vanilla-style stage structure and injects Wythers content into it.
+- Vanilla ore and structure features are still present in the stage list, so the biome files are functioning as a vanilla base plus extra Wythers features.
 
-### Deletions by Category (1,608 total)
+## 5. Files deleted vs. added
 
-| Category | Deleted | Strategy |
-|----------|---------|----------|
-| vegetation configured_features | 539 | Complete category deleted (too many variants) |
-| terrain placed_features | 428 | Simplified to core features only |
-| vegetation placed_features | 362 | Pruned to essential types |
-| terrain configured_features | 58 | Kept only bounder/spikes types |
-| decor | 7 | Deleted (floating_lanterns, stumps, etc.) |
-| palm | 11 | Deleted (farm/road/placer variants) |
-| other | 10 | Deleted (hydrothermal_vent, stone_forest_rock) |
+File-set comparison between [WWOO_ORIGINAL](WWOO_ORIGINAL) and [wwoo-26.2-port-fixed](wwoo-26.2-port-fixed):
 
-**What They Kept (164 files from ORIGINAL):**
-- All 54 biome customizations ✓
-- 44 core placed_features (mainly terrain/coast) ✓
-- 27 block definitions ✓
-- 21 configured_features (only essential types) ✓
-- 13 block tag definitions ✓
+- Deleted in the alpha: 118 JSON files
+- Added in the alpha: 13 JSON files
 
-**What They Created (417 new files):**
-- 351 completely new placed_features (different structure/naming)
-- 32 new configured_features (simplified)
-- 32 new block definitions (additional variants)
+The deleted files are mostly older tags, legacy terrain/feature variants, and old structure-exclusivity files. The added files are mostly newer support files and a small number of feature/test definitions.
 
----
+## 6. Schema scanner results for the alpha
 
-## Biome Structure Comparison
+Running the scanner over the alpha produced:
 
-**Forest biome feature count:**
+- Files scanned: 1648
+- Files with issues: 1264
+- Unbound or dangling references: 1581
 
-| Source | Stages | Total Features |
-|--------|--------|-----------------|
-| WWOO_ORIGINAL | 11 | 84 |
-| 26.2 alpha | 11 | 52 |
-| Vanilla 1.21 | 11 | ~48 |
+Issue categories reported:
 
-**Observation:** 26.2 alpha kept feature stage structure but reduced feature count to near-vanilla levels.
+- `leaf_blockstate_keys`: 2687
+- `misc_removed_keys`: 1085
+- `missing_type_field`: 912
+- `column_placer_keys`: 903
+- `foliage_placer_keys`: 48
 
----
+This means the alpha is not schema-clean for the 26.1.2 reference. It still contains patterns that 26.1.2 would reject, even though the alpha is targeting a newer schema baseline.
 
-## What We CAN'T Copy to 26.1.2
+## 7. What can be copied and what needs adaptation
 
-❌ **Cannot directly use 26.2 alpha files because:**
+### Direct-copy candidates
 
-1. **Format incompatibility** (101.1 vs 102)
-   - 107 placed_features with empty `rules` array state_providers would fail format validation
-   - New feature types in 1.21 don't exist in 1.20.4
+A wholesale copy of [wwoo-26.2-port-fixed/data](wwoo-26.2-port-fixed/data) into the 26.1.2 port is not safe.
 
-2. **Feature type differences**
-   - 1.21 may have removed/renamed some feature types we rely on
-   - Placement modifiers might differ between versions
+The only realistic direct-copy candidates are very small, simple files that do not use the flagged key vocabulary and do not reference missing placed features. In practice, that is a narrow subset rather than the whole datapack.
 
-3. **Structure changes**
-   - Flat namespace vs nested categories
-   - Completely different organized arrangement
+### Files that need adaptation
 
----
+These categories need adaptation before they can be used in the 26.1.2 port:
 
-## What We CAN Learn From 26.2 Alpha
+- Any feature that previously used the old `minecraft:random_patch` wrapper and was rewritten as a direct block/placement structure.
+- Any feature using the removed tree keys `dirt_provider` or `force_dirt`.
+- Any file with a missing `type` field or with structure that the 26.1.2 schema does not accept.
+- Any biome or placed-feature file that references features not available in the 26.1.2 set.
 
-✓ **Lessons to apply to 26.1.2:**
+## Recommendation
 
-1. **Radical simplification approach works**
-   - Deleting 90% of files eliminated cascading errors
-   - Started fresh with only known-valid features
+The 26.2 alpha is useful as a design reference, but it should not be treated as a direct source for the 26.1.2 port. The best approach is to borrow the overall pattern:
 
-2. **Keep biome customizations intact**
-   - All 54 customized biomes were preserved
-   - Biome structure itself doesn't need changing
+1. Keep the biome-based customizations.
+2. Simplify and prune the feature tree.
+3. Replace or remove anything that depends on 26.2-only or 26.1.2-incompatible structures.
 
-3. **Deprecated keys are version-specific**
-   - Keys like `force_dirt`, `exclusion_radius_xz` might be valid in 1.20.5+
-   - Need to check 1.20.4 (format 101.1) schema specifically
-
-4. **Flat namespace for features is cleaner**
-   - Consider reorganizing our placed_features without heavy nesting
-   - Makes feature references simpler
-
-5. **Complete rewrite vs. incremental fix**
-   - They didn't try to fix each broken file
-   - They deleted entire categories and rebuilt from scratch
-   - More reliable than trying to patch 1000 files
-
----
-
-## Recommendations for 26.1.2 Port
-
-### Approach 1: Continue Incremental Fixes (Current Path)
-
-**Pros:**
-- Preserves as much WWOO functionality as possible
-- Maintains detailed feature customization
-
-**Cons:**
-- Complex, error-prone process
-- Still likely to hit unforeseen issues
-- Requires validating each change
-
-### Approach 2: Radical Simplification (Like 26.2 Alpha)
-
-**Recommended:** This approach
-
-**Strategy:**
-1. Delete all problematic feature categories:
-   - Vegetation variants (keep only core trees)
-   - Terrain local/extended variants
-   - Decorative features (stumps, lanterns, etc.)
-   - Farm/road/placer variants
-
-2. Keep stable elements:
-   - All 54 biome customizations
-   - Core terrain features (boulders, coast, etc.)
-   - Essential tree types
-
-3. Result: ~600-800 files instead of 2700
-
-**Expected Outcome:**
-- Clean registry with no unbound references
-- Playable world generation with most WWOO features
-- Stable foundation for future additions
-
----
-
-## Technical Notes
-
-### Version Format Reference
-- Format 100: 1.20 - 1.20.3
-- Format 101: 1.20.4
-- Format 101.1: Snapshot variants (experimental 1.20.5 features)
-- Format 102: 1.21+
-
-### Schema Implications
-Our `WWOO_NF/pack.mcmeta` specifies `101.1`, which is technically between 1.20.4 and 1.20.5 experimental. This might allow some 1.20.5+ features but validation could be strict.
-
-### 26.2 Alpha Files
-Cannot be used as-is, but the structure/organization pattern is valuable for redesigning our 26.1.2 port.
-
----
-
-## Conclusion
-
-Cristelknight's 26.2 alpha represents a **complete redesign** rather than a migration. While we can't copy the files directly, we can adopt their philosophy:
-
-1. **Delete the problematic, not fix it** - 203 malformed files → 0 files
-2. **Preserve biome customizations** - The 54 customized biomes are preserved
-3. **Simplify ruthlessly** - 1,608 files deleted without affecting core functionality
-4. **Organize cleanly** - Flat namespace is easier to maintain
-
-**Recommended next step:** Adopt a "radical simplification" approach similar to 26.2 alpha, but for format 101.1. Delete broken feature categories and rebuild the remaining essential features from clean references.
-
+In short: use the alpha to learn the migration strategy, not to copy the data wholesale.
