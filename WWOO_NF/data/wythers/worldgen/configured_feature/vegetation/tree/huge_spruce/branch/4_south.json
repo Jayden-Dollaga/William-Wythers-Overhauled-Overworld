@@ -31,7 +31,11 @@
                         "provider": {
                           "state": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "1",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "type": "minecraft:simple_state_provider"
                         }

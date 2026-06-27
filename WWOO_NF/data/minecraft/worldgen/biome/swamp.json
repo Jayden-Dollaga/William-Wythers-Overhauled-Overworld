@@ -1,5 +1,6 @@
 {
   "attributes": {
+    "minecraft:gameplay/increased_fire_burnout": true,
     "minecraft:audio/background_music": {
       "default": {
         "max_delay": 24000,
@@ -7,216 +8,125 @@
         "sound": "minecraft:music.overworld.swamp"
       }
     },
-    "minecraft:gameplay/increased_fire_burnout": true,
-    "minecraft:visual/sky_color": "#78a7ff",
-    "minecraft:visual/water_fog_color": "#232317",
-    "minecraft:visual/water_fog_end_distance": {
-      "argument": 0.85,
-      "modifier": "multiply"
+    "minecraft:visual/sky_color": 11842740,
+    "minecraft:visual/fog_color": 13158600,
+    "minecraft:visual/water_fog_color": 2302743,
+    "minecraft:audio/music_volume": 1.0,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000,
+        "block_search_extent": 8,
+        "offset": 2
+      }
     }
   },
-  "carvers": [
-    "minecraft:cave",
-    "minecraft:cave_extra_underground",
-    "minecraft:canyon"
-  ],
+  "temperature": 0.8,
   "downfall": 0.9,
-  "effects": {
-    "dry_foliage_color": "#7b5334",
-    "foliage_color": "#6a7039",
-    "grass_color_modifier": "swamp",
-    "water_color": "#617b64"
-  },
-  "features": [
-    [
-      "wythers:placer/swamp",
-      "wythers:terrain/local/rooted_cave_floor",
-      "wythers:terrain/local/swamp_carver",
-      "wythers:terrain/local/swamp_stone_replacer"
-    ],
-    [
-      "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground"
-    ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:fossil_lower",
-      "minecraft:fossil_upper",
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
-    [
-      "wythers:terrain/local/cave_disk_magma"
-    ],
-    [
-      "minecraft:disk_clay",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_copper",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_medium",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_dirt",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_gravel",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_tuff",
-      "minecraft:underwater_magma"
-    ],
-    [
-      "wythers:terrain/feature/dripstone_cluster",
-      "wythers:terrain/feature/pointed_dripstone"
-    ],
-    [
-      "minecraft:spring_lava",
-      "minecraft:spring_water"
-    ],
-    [
-      "minecraft:brown_mushroom_normal",
-      "minecraft:brown_mushroom_swamp",
-      "minecraft:flower_swamp",
-      "minecraft:glow_lichen",
-      "minecraft:patch_dead_bush",
-      "minecraft:patch_firefly_bush_near_water_swamp",
-      "minecraft:patch_firefly_bush_swamp",
-      "minecraft:patch_grass_normal",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane_swamp",
-      "minecraft:red_mushroom_normal",
-      "minecraft:red_mushroom_swamp",
-      "minecraft:seagrass_swamp",
-      "minecraft:trees_swamp",
-      "wythers:vegetation/local/patch/duckweed_sparse",
-      "wythers:vegetation/local/patch/grass_low_swamp",
-      "wythers:vegetation/local/patch/marsh_grass",
-      "wythers:vegetation/local/patch/water_grass_swamp",
-      "wythers:vegetation/local/trees/birch_swamp",
-      "wythers:vegetation/local/trees/dark_swamp",
-      "wythers:vegetation/local/trees/fen",
-      "wythers:vegetation/local/trees/fen_flooded",
-      "wythers:vegetation/local/trees/oak_swamp",
-      "wythers:vegetation/local/trees/swamp",
-      "wythers:vegetation/local/trees/swamp_hills"
-    ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
-  ],
   "has_precipitation": true,
-  "spawn_costs": {},
+  "effects": {
+    "dry_foliage_color": 7173678,
+    "water_color": 6388580,
+    "grass_color": 6975545,
+    "foliage_color": 6975545
+  },
   "spawners": {
     "ambient": [
       {
         "type": "minecraft:bat",
-        "maxCount": 8,
+        "weight": 10,
         "minCount": 8,
-        "weight": 10
+        "maxCount": 8
       }
     ],
     "axolotls": [],
     "creature": [
       {
         "type": "minecraft:sheep",
-        "maxCount": 4,
+        "weight": 12,
         "minCount": 4,
-        "weight": 12
+        "maxCount": 4
       },
       {
         "type": "minecraft:pig",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:chicken",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:cow",
-        "maxCount": 4,
+        "weight": 8,
         "minCount": 4,
-        "weight": 8
+        "maxCount": 4
       },
       {
         "type": "minecraft:frog",
-        "maxCount": 5,
+        "weight": 10,
         "minCount": 2,
-        "weight": 10
+        "maxCount": 5
       }
     ],
     "misc": [],
     "monster": [
       {
         "type": "minecraft:spider",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:zombie",
-        "maxCount": 4,
+        "weight": 95,
         "minCount": 4,
-        "weight": 95
+        "maxCount": 4
       },
       {
         "type": "minecraft:zombie_villager",
-        "maxCount": 1,
+        "weight": 5,
         "minCount": 1,
-        "weight": 5
+        "maxCount": 1
       },
       {
         "type": "minecraft:skeleton",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 70
+        "maxCount": 4
       },
       {
         "type": "minecraft:creeper",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:slime",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:enderman",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 1,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:witch",
-        "maxCount": 1,
+        "weight": 5,
         "minCount": 1,
-        "weight": 5
+        "maxCount": 1
       },
       {
         "type": "minecraft:slime",
-        "maxCount": 1,
+        "weight": 1,
         "minCount": 1,
-        "weight": 1
+        "maxCount": 1
       },
       {
         "type": "minecraft:bogged",
@@ -228,13 +138,120 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "maxCount": 6,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 6
       }
     ],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.8
+  "spawn_costs": {},
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [
+      "wythers:placer/swamp",
+      "wythers:terrain/local/swamp_carver",
+      "wythers:terrain/local/swamp_pools",
+      "wythers:terrain/local/swamp_ground",
+      "wythers:terrain/local/fen_ground",
+      "wythers:terrain/local/swamp_hills",
+      "wythers:terrain/local/swamp_carver_2",
+      "wythers:terrain/local/swamp_stone_replacer",
+      "wythers:terrain/local/rooted_cave_floor"
+    ],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [
+      "minecraft:amethyst_geode",
+      "minecraft:large_dripstone"
+    ],
+    [
+      "minecraft:fossil_upper",
+      "minecraft:fossil_lower",
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [
+      "wythers:terrain/local/swamp_pools"
+    ],
+    [
+      "wythers:terrain/local/cave_disk_basalt",
+      "wythers:terrain/local/cave_disk_blackstone",
+      "wythers:terrain/local/cave_disk_magma"
+    ],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_clay",
+      "wythers:terrain/local/swamp_gas"
+    ],
+    [
+      "wythers:terrain/feature/dripstone_cluster",
+      "wythers:terrain/feature/pointed_dripstone"
+    ],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "wythers:vegetation/local/patch/water_grass_swamp",
+      "wythers:vegetation/local/patch/grass_low_swamp",
+      "wythers:vegetation/local/trees/fen",
+      "wythers:vegetation/local/trees/fen_flooded",
+      "wythers:vegetation/local/trees/dark_swamp",
+      "wythers:vegetation/local/trees/birch_swamp",
+      "wythers:vegetation/local/trees/oak_swamp",
+      "wythers:vegetation/local/trees/swamp",
+      "wythers:vegetation/local/trees/swamp_hills",
+      "minecraft:flower_swamp",
+      "minecraft:patch_grass_normal",
+      "minecraft:patch_dead_bush",
+      "wythers:vegetation/local/patch/duckweed_sparse",
+      "wythers:vegetation/local/patch/marsh_grass",
+      "minecraft:patch_waterlily",
+      "minecraft:brown_mushroom_swamp",
+      "minecraft:red_mushroom_swamp",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane_swamp",
+      "minecraft:patch_firefly_bush_swamp",
+      "minecraft:patch_firefly_bush_near_water_swamp",
+      "minecraft:seagrass_swamp",
+      "wythers:vegetation/local/patch/hanging_roots"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]
 }

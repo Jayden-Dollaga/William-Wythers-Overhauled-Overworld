@@ -1,5 +1,9 @@
 {
   "values": [
-    "minecraft:grass_block"
+    "minecraft:calcite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:bone_block",
+    "minecraft:moss_block"
   ]
 }

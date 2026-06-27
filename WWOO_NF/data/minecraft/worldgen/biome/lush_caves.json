@@ -7,7 +7,18 @@
         "sound": "minecraft:music.overworld.lush_caves"
       }
     },
-    "minecraft:visual/sky_color": "#7ba4ff"
+    "minecraft:visual/sky_color": 8103167,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 270131,
+    "minecraft:audio/music_volume": 1,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2,
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000
+      }
+    }
   },
   "carvers": [
     "minecraft:cave",
@@ -16,17 +27,20 @@
   ],
   "downfall": 0.5,
   "effects": {
-    "water_color": "#3f76e4"
+    "dry_foliage_color": 11983713,
+    "water_color": 4445678,
+    "grass_color": 10010192,
+    "foliage_color": 10010192
   },
   "features": [
     [
-      "wythers:placer/bedrock_sealer",
       "wythers:placer/lush_caves",
-      "wythers:placer/lush_caves_deep"
+      "wythers:placer/lush_caves_deep",
+      "wythers:placer/bedrock_sealer"
     ],
     [
-      "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground"
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
     ],
     [
       "minecraft:amethyst_geode"
@@ -35,52 +49,53 @@
       "minecraft:monster_room",
       "minecraft:monster_room_deep"
     ],
+    [],
+    [],
     [
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "minecraft:disk_sand",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_clay",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_copper",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_medium",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_diorite_upper",
       "minecraft:ore_dirt",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_granite_upper",
       "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
-      "minecraft:ore_tuff",
-      "minecraft:underwater_magma"
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:ore_clay",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
     ],
     [
-      "minecraft:spring_lava",
-      "minecraft:spring_water"
-    ],
-    [
-      "minecraft:cave_vines",
-      "minecraft:classic_vines_cave_feature",
       "minecraft:glow_lichen",
+      "minecraft:patch_tall_grass_2",
       "minecraft:lush_caves_ceiling_vegetation",
+      "minecraft:cave_vines",
       "minecraft:lush_caves_clay",
       "minecraft:lush_caves_vegetation",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:rooted_azalea_tree",
-      "minecraft:spore_blossom"
+      "minecraft:spore_blossom",
+      "minecraft:classic_vines_cave_feature"
     ],
     [
       "minecraft:freeze_top_layer"

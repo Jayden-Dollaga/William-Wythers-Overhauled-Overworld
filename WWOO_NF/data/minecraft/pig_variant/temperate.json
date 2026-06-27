@@ -1,5 +1,6 @@
 {
-  "asset_id": "minecraft:entity/pig/temperate_pig",
+  "asset_id": "minecraft:entity/pig/pig_temperate",
+  "baby_asset_id": "minecraft:entity/pig/pig_temperate_baby",
   "spawn_conditions": [
     {
       "priority": 0
@@ -14,6 +15,5 @@
       },
       "priority": 1
     }
-  ],
-  "baby_asset_id": "minecraft:entity/pig/temperate_pig_baby"
+  ]
 }

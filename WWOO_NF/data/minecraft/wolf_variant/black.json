@@ -13,7 +13,10 @@
     {
       "condition": {
         "type": "minecraft:biome",
-        "biomes": "minecraft:old_growth_pine_taiga"
+        "biomes": [
+          "minecraft:dark_forest",
+          "minecraft:swamp"
+        ]
       },
       "priority": 1
     }

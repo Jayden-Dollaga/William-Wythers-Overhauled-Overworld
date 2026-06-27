@@ -1,5 +1,6 @@
 {
   "attributes": {
+    "minecraft:gameplay/snow_golem_melts": true,
     "minecraft:audio/background_music": {
       "default": {
         "max_delay": 24000,
@@ -7,8 +8,18 @@
         "sound": "minecraft:music.overworld.desert"
       }
     },
-    "minecraft:gameplay/snow_golem_melts": true,
-    "minecraft:visual/sky_color": "#6eb1ff"
+    "minecraft:visual/sky_color": 6269917,
+    "minecraft:visual/fog_color": 16701835,
+    "minecraft:visual/water_fog_color": 270131,
+    "minecraft:audio/music_volume": 1,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2,
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000
+      }
+    }
   },
   "carvers": [
     "minecraft:cave",
@@ -17,95 +28,107 @@
   ],
   "downfall": 0,
   "effects": {
-    "water_color": "#3f76e4"
+    "water_color": 4445678,
+    "foliage_color": 16768404,
+    "grass_color": 12632678
   },
   "features": [
     [
+      "wythers:placer/desert",
       "wythers:placer/warm_ocean_extender_1",
       "wythers:placer/warm_ocean_extender_2",
       "wythers:placer/warm_ocean_extender_3",
+      "wythers:terrain/local/replace_sandstone_to_smooth_sandstone",
+      "wythers:terrain/extended/replace_gravel_to_sand",
       "wythers:terrain/extended/disk_sand",
-      "wythers:terrain/local/replace_sandstone_to_smooth_sandstone"
+      "wythers:terrain/extended/desert_swamp_sand"
     ],
     [
-      "minecraft:lake_lava_surface",
       "minecraft:lake_lava_underground"
     ],
     [
       "minecraft:amethyst_geode"
     ],
     [
-      "minecraft:fossil_lower",
+      "wythers:terrain/extended/arroyo_white",
       "minecraft:fossil_upper",
+      "minecraft:fossil_lower",
       "minecraft:monster_room",
-      "minecraft:monster_room_deep",
-      "wythers:terrain/extended/arroyo_white"
+      "minecraft:monster_room_deep"
     ],
     [
       "minecraft:desert_well"
     ],
+    [],
     [
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "minecraft:disk_sand",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_copper",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_medium",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_diorite_upper",
       "minecraft:ore_dirt",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_granite_upper",
       "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
       "minecraft:ore_iron_middle",
       "minecraft:ore_iron_small",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
-      "minecraft:ore_tuff",
-      "minecraft:underwater_magma"
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
     ],
     [
-      "wythers:terrain/local/danakil_mud"
+      "wythers:terrain/local/danakil_mud",
+      "wythers:terrain/local/danakil_terracotta",
+      "wythers:terrain/local/danakil_red",
+      "wythers:terrain/local/danakil_orange",
+      "wythers:terrain/local/danakil_yellow",
+      "wythers:terrain/local/danakil_yellow_2",
+      "wythers:terrain/local/danakil_water"
     ],
     [
-      "minecraft:spring_lava",
       "minecraft:spring_water",
+      "minecraft:spring_lava",
       "wythers:terrain/local/boggy_moss",
       "wythers:terrain/local/boggy_moss_shore"
     ],
     [
-      "minecraft:brown_mushroom_normal",
-      "minecraft:flower_default",
       "minecraft:glow_lichen",
-      "minecraft:patch_cactus_desert",
-      "minecraft:patch_dead_bush_2",
-      "minecraft:patch_dry_grass_desert",
-      "minecraft:patch_grass_badlands",
-      "minecraft:patch_pumpkin",
-      "minecraft:patch_sugar_cane_desert",
-      "minecraft:red_mushroom_normal",
-      "wythers:terrain/extended/replace_diorite_and_calcite_to_smooth_sandstone",
       "wythers:terrain/feature/danakil_desert_mounds",
+      "wythers:vegetation/local/trees/desert_bushes",
       "wythers:vegetation/local/patch/fan_palm_oases",
       "wythers:vegetation/local/patch/fan_palm_oases_2",
       "wythers:vegetation/local/patch/fan_palm_oases_3",
       "wythers:vegetation/local/patch/grass_desert",
+      "wythers:vegetation/local/patch/succulents_sparse",
       "wythers:vegetation/local/patch/succulents",
-      "wythers:vegetation/local/patch/succulents_sparse"
+      "wythers:vegetation/local/patch/flowering_agaves",
+      "wythers:vegetation/local/patch/flowering_agaves_red_sand",
+      "minecraft:patch_dry_grass_desert",
+      "minecraft:patch_dead_bush_2",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "wythers:vegetation/local/patch/saguaros_desert",
+      "wythers:vegetation/local/patch/savanna_water_plants",
+      "wythers:terrain/extended/replace_diorite_and_calcite_to_smooth_sandstone"
     ],
     [
-      "minecraft:freeze_top_layer"
+      "minecraft:freeze_top_layer",
+      "wythers:decor/dense_steam",
+      "wythers:decor/desert"
     ]
   ],
   "has_precipitation": false,
@@ -125,7 +148,13 @@
         "type": "minecraft:rabbit",
         "maxCount": 3,
         "minCount": 2,
-        "weight": 12
+        "weight": 4
+      },
+      {
+        "type": "minecraft:wolf",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 2
       },
       {
         "type": "minecraft:camel",
@@ -158,7 +187,7 @@
         "type": "minecraft:skeleton",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 50
+        "weight": 100
       },
       {
         "type": "minecraft:creeper",

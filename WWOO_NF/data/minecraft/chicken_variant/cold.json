@@ -6,7 +6,15 @@
     {
       "condition": {
         "type": "minecraft:biome",
-        "biomes": "#minecraft:spawns_cold_variant_farm_animals"
+        "biomes": [
+          "minecraft:swamp",
+          "minecraft:mangrove_swamp",
+          "minecraft:jungle",
+          "minecraft:dark_forest",
+          "minecraft:old_growth_spruce_taiga",
+          "minecraft:birch_forest",
+          "minecraft:old_growth_birch_forest"
+        ]
       },
       "priority": 1
     }

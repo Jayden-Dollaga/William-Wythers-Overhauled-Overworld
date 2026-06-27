@@ -1,7 +1,10 @@
 {
   "values": [
-    "minecraft:sand",
-    "minecraft:red_sand",
-    "minecraft:suspicious_sand"
+    "minecraft:packed_mud",
+    "minecraft:rooted_dirt",
+    "minecraft:bamboo_block",
+    "minecraft:stripped_bamboo_block",
+    "minecraft:brown_concrete_powder",
+    "minecraft:orange_concrete_powder"
   ]
 }

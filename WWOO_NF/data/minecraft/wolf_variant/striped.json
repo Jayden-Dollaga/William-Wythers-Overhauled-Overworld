@@ -13,7 +13,10 @@
     {
       "condition": {
         "type": "minecraft:biome",
-        "biomes": "#minecraft:is_badlands"
+        "biomes": [
+          "minecraft:desert",
+          "minecraft:savanna"
+        ]
       },
       "priority": 1
     }

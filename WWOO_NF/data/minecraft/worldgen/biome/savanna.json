@@ -1,211 +1,139 @@
 {
   "attributes": {
     "minecraft:gameplay/snow_golem_melts": true,
-    "minecraft:visual/sky_color": "#6eb1ff"
+    "minecraft:audio/background_music": {},
+    "minecraft:visual/sky_color": 6269917,
+    "minecraft:visual/fog_color": 12638463,
+    "minecraft:visual/water_fog_color": 2302743,
+    "minecraft:audio/music_volume": 1.0,
+    "minecraft:audio/ambient_sounds": {
+      "mood": {
+        "sound": "minecraft:ambient.cave",
+        "tick_delay": 6000,
+        "block_search_extent": 8,
+        "offset": 2
+      }
+    }
   },
-  "carvers": [
-    "minecraft:cave",
-    "minecraft:cave_extra_underground",
-    "minecraft:canyon"
-  ],
+  "temperature": 2,
   "downfall": 0,
-  "effects": {
-    "water_color": "#3f76e4"
-  },
-  "features": [
-    [
-      "wythers:terrain/extended/scree",
-      "wythers:terrain/local/packed_mud_boulders",
-      "wythers:terrain/local/stone_cliffs",
-      "wythers:terrain/local/stone_cliffs_surface"
-    ],
-    [
-      "minecraft:lake_lava_surface",
-      "minecraft:lake_lava_underground"
-    ],
-    [
-      "minecraft:amethyst_geode",
-      "wythers:terrain/extended/mangrove_swamp_savanna_filler"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep",
-      "wythers:terrain/extended/arroyo_savanna"
-    ],
-    [
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel",
-      "minecraft:disk_sand",
-      "minecraft:ore_andesite_lower",
-      "minecraft:ore_andesite_upper",
-      "minecraft:ore_coal_lower",
-      "minecraft:ore_coal_upper",
-      "minecraft:ore_copper",
-      "minecraft:ore_diamond",
-      "minecraft:ore_diamond_buried",
-      "minecraft:ore_diamond_large",
-      "minecraft:ore_diamond_medium",
-      "minecraft:ore_diorite_lower",
-      "minecraft:ore_diorite_upper",
-      "minecraft:ore_dirt",
-      "minecraft:ore_gold",
-      "minecraft:ore_gold_lower",
-      "minecraft:ore_granite_lower",
-      "minecraft:ore_granite_upper",
-      "minecraft:ore_gravel",
-      "minecraft:ore_iron_middle",
-      "minecraft:ore_iron_small",
-      "minecraft:ore_iron_upper",
-      "minecraft:ore_lapis",
-      "minecraft:ore_lapis_buried",
-      "minecraft:ore_redstone",
-      "minecraft:ore_redstone_lower",
-      "minecraft:ore_tuff",
-      "minecraft:underwater_magma",
-      "wythers:terrain/extended/badlands_edge",
-      "wythers:terrain/local/riverbank_plains"
-    ],
-    [
-      "minecraft:spring_lava",
-      "minecraft:spring_water",
-      "wythers:terrain/feature/thermal_savanna_block_spikes"
-    ],
-    [
-      "minecraft:brown_mushroom_normal",
-      "minecraft:flower_warm",
-      "minecraft:glow_lichen",
-      "minecraft:patch_firefly_bush_near_water",
-      "minecraft:patch_grass_savanna",
-      "minecraft:patch_pumpkin",
-      "minecraft:red_mushroom_normal",
-      "minecraft:trees_savanna",
-      "wythers:terrain/feature/thermal_savanna_dripstone_spikes",
-      "wythers:vegetation/extended/patch/morning_glory",
-      "wythers:vegetation/extended/trees/savanna_oaks",
-      "wythers:vegetation/local/patch/grass_savanna",
-      "wythers:vegetation/local/patch/tall_grass_savanna",
-      "wythers:vegetation/local/trees/forest_tropical",
-      "wythers:vegetation/local/trees/savanna",
-      "wythers:vegetation/local/trees/savanna_baobabs",
-      "wythers:vegetation/local/trees/savanna_pines",
-      "wythers:vegetation/local/trees/savanna_rare",
-      "wythers:vegetation/local/trees/savanna_sparse",
-      "wythers:vegetation/local/trees/savanna_woodland"
-    ],
-    [
-      "minecraft:freeze_top_layer",
-      "wythers:terrain/local/replace_basalt_to_tuff",
-      "wythers:vegetation/local/other/baobab_interior"
-    ]
-  ],
   "has_precipitation": false,
-  "spawn_costs": {},
+  "effects": {
+    "water_color": 6388580,
+    "grass_color": 14074721
+  },
   "spawners": {
     "ambient": [
       {
         "type": "minecraft:bat",
-        "maxCount": 8,
+        "weight": 10,
         "minCount": 8,
-        "weight": 10
+        "maxCount": 8
       }
     ],
     "axolotls": [],
     "creature": [
       {
         "type": "minecraft:sheep",
-        "maxCount": 4,
+        "weight": 12,
         "minCount": 4,
-        "weight": 12
+        "maxCount": 4
       },
       {
         "type": "minecraft:pig",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:chicken",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:cow",
-        "maxCount": 4,
+        "weight": 8,
         "minCount": 4,
-        "weight": 8
+        "maxCount": 4
       },
       {
         "type": "minecraft:horse",
-        "maxCount": 6,
+        "weight": 1,
         "minCount": 2,
-        "weight": 1
+        "maxCount": 6
       },
       {
         "type": "minecraft:donkey",
-        "maxCount": 1,
+        "weight": 1,
         "minCount": 1,
-        "weight": 1
+        "maxCount": 1
       },
       {
         "type": "minecraft:armadillo",
         "maxCount": 3,
         "minCount": 2,
         "weight": 10
+      },
+      {
+        "type": "minecraft:wolf",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 2
       }
     ],
     "misc": [],
     "monster": [
       {
         "type": "minecraft:spider",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:zombie",
-        "maxCount": 4,
+        "weight": 95,
         "minCount": 4,
-        "weight": 90
+        "maxCount": 4
       },
       {
         "type": "minecraft:zombie_villager",
-        "maxCount": 1,
+        "weight": 5,
         "minCount": 1,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:zombie_horse",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
+        "maxCount": 1
       },
       {
         "type": "minecraft:skeleton",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:creeper",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:slime",
-        "maxCount": 4,
+        "weight": 100,
         "minCount": 4,
-        "weight": 100
+        "maxCount": 4
       },
       {
         "type": "minecraft:enderman",
-        "maxCount": 4,
+        "weight": 10,
         "minCount": 1,
-        "weight": 10
+        "maxCount": 4
       },
       {
         "type": "minecraft:witch",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "minecraft:zombie_horse",
         "maxCount": 1,
         "minCount": 1,
         "weight": 5
@@ -214,13 +142,115 @@
     "underground_water_creature": [
       {
         "type": "minecraft:glow_squid",
-        "maxCount": 6,
+        "weight": 10,
         "minCount": 4,
-        "weight": 10
+        "maxCount": 6
       }
     ],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 2
+  "spawn_costs": {},
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground",
+    "minecraft:canyon"
+  ],
+  "features": [
+    [
+      "wythers:placer/savanna",
+      "wythers:terrain/local/packed_mud_boulders",
+      "wythers:terrain/local/stone_cliffs_surface",
+      "wythers:terrain/local/stone_cliffs",
+      "wythers:terrain/extended/scree",
+      "wythers:terrain/extended/base_savanna"
+    ],
+    [
+      "minecraft:lake_lava_underground",
+      "wythers:terrain/local/savanna_sandy_wash",
+      "minecraft:lake_lava_surface",
+      "wythers:terrain/extended/base_mangrove_swamp_savanna"
+    ],
+    [
+      "minecraft:amethyst_geode",
+      "wythers:terrain/extended/mangrove_swamp_savanna_filler"
+    ],
+    [
+      "wythers:terrain/extended/arroyo_savanna",
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "wythers:terrain/local/riverbank_plains",
+      "wythers:terrain/local/savanna_packed_mud",
+      "wythers:terrain/local/red_sand_spread",
+      "wythers:terrain/extended/coastal_sand",
+      "wythers:terrain/extended/badlands_edge"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava",
+      "wythers:terrain/local/thermal_savanna_mud",
+      "wythers:terrain/local/thermal_savanna_dirt",
+      "wythers:terrain/local/thermal_savanna_brown",
+      "wythers:terrain/local/thermal_savanna_gray",
+      "wythers:terrain/local/thermal_savanna_soul",
+      "wythers:terrain/local/thermal_savanna_dripstone",
+      "wythers:terrain/feature/thermal_savanna_block_spikes"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "wythers:vegetation/local/patch/tall_grass_savanna",
+      "wythers:vegetation/local/trees/forest_tropical",
+      "wythers:vegetation/local/trees/savanna_woodland",
+      "wythers:vegetation/local/trees/savanna",
+      "wythers:vegetation/local/trees/savanna_sparse",
+      "wythers:vegetation/local/trees/savanna_rare",
+      "wythers:vegetation/local/trees/savanna_baobabs",
+      "wythers:vegetation/local/trees/savanna_pines",
+      "wythers:vegetation/extended/trees/savanna_oaks",
+      "wythers:vegetation/local/patch/fern_cane",
+      "wythers:vegetation/local/patch/grass_savanna",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "wythers:terrain/feature/thermal_savanna_dripstone_spikes",
+      "wythers:vegetation/extended/patch/morning_glory",
+      "wythers:vegetation/extended/patch/tropical_water_plants"
+    ],
+    [
+      "minecraft:freeze_top_layer",
+      "wythers:terrain/local/replace_basalt_to_tuff",
+      "wythers:decor/dense_steam",
+      "wythers:vegetation/local/other/baobab_interior"
+    ]
+  ]
 }

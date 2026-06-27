@@ -13,7 +13,25 @@
     {
       "condition": {
         "type": "minecraft:biome",
-        "biomes": "minecraft:old_growth_spruce_taiga"
+        "biomes": [
+          "minecraft:badlands",
+          "minecraft:eroded_badlands",
+          "minecraft:wooded_badlands",
+          "minecraft:forest",
+          "minecraft:old_growth_pine_taiga",
+          "minecraft:old_growth_spruce_taiga",
+          "minecraft:plains",
+          "minecraft:birch_forest",
+          "minecraft:old_growth_birch_forest",
+          "minecraft:taiga",
+          "minecraft:meadow",
+          "minecraft:flower_forest",
+          "minecraft:sunflower_plains",
+          "minecraft:beach",
+          "minecraft:mushroom_fields",
+          "minecraft:pale_garden",
+          "minecraft:lukewarm_ocean"
+        ]
       },
       "priority": 1
     }

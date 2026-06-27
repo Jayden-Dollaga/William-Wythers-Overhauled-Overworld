@@ -1,5 +1,6 @@
 {
-  "asset_id": "minecraft:entity/pig/warm_pig",
+  "asset_id": "minecraft:entity/pig/pig_warm",
+  "baby_asset_id": "minecraft:entity/pig/pig_warm_baby",
   "spawn_conditions": [
     {
       "condition": {
@@ -25,6 +26,5 @@
       },
       "priority": 1
     }
-  ],
-  "baby_asset_id": "minecraft:entity/pig/warm_pig_baby"
+  ]
 }
