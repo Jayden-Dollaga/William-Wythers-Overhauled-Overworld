@@ -2,6 +2,8 @@ import sys
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
+import os
+os.system("")  # enables ANSI color codes on Windows
 import subprocess
 import threading
 import time
@@ -58,7 +60,7 @@ def progress_bar(current, total, width=35):
 def run(cmd, cwd=None, check=True):
     result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
     if check and result.returncode != 0:
-        print(f"\n{C.RED}ERROR:{C.RESET} {result.stderr.strip() or result.stdout.strip()}")
+        print(f"\nERROR: {result.stderr.strip() or result.stdout.strip()}")
         sys.exit(1)
     return result
 
@@ -188,9 +190,9 @@ def auto_message(added, updated):
     return "sync: " + ", ".join(parts)
 
 def ask_commit_msg(auto_msg, label):
-    print(f"\n  {C.CYAN}Commit message for {label}:{C.RESET}")
-    print(f"  {C.DIM}Auto: \"{auto_msg}\"{C.RESET}")
-    ans = input(f"  {C.YELLOW}Use auto? (y) or type your own:{C.RESET} ").strip()
+    print(f"\n  Commit message for {label}:")
+    print(f"  Auto: \"{auto_msg}\"")
+    ans = input(f"  Use auto? (y) or type your own: ").strip()
     if ans.lower() == "y" or ans == "":
         return auto_msg
     return ans
@@ -235,7 +237,7 @@ def do_sync(dry=False, check_only=False):
             for name, dst in updated:
                 print(f"    ~ {name}")
         if not added and not updated:
-            print(f"\n  {C.GREEN}Everything is synced and up to date!{C.RESET}")
+            print(f"\n  Everything is synced and up to date!")
         else:
             print(f"\n  Run option [1] to sync these.")
         print()
@@ -272,7 +274,7 @@ def do_sync(dry=False, check_only=False):
         print("\n  CHANGED:")
         for n in updated: print(f"    ~ {n}")
     if dry:
-        print(f"\n  {C.DIM}(Dry run — nothing written){C.RESET}")
+        print(f"\n  (Dry run — nothing written)")
     print()
     return added, updated, skipped
 
@@ -301,20 +303,37 @@ def push_main():
 
 # ── Menu ──────────────────────────────────────────────────────────────────────
 def menu():
-    print(f"\n{C.BOLD}{'='*44}{C.RESET}")
-    print(f"{C.BOLD}   WWOO Toolkit — PhantomNex44{C.RESET}")
-    print(f"{C.BOLD}{'='*44}{C.RESET}\n")
-    print(f"  {C.CYAN}What do you want to do?{C.RESET}\n")
-    print(f"  {C.YELLOW}[1]{C.RESET} Sync files to organized/")
-    print(f"  {C.YELLOW}[2]{C.RESET} Dry run (preview only)")
-    print(f"  {C.YELLOW}[3]{C.RESET} File check (what's out of sync)")
-    print(f"  {C.YELLOW}[4]{C.RESET} Commit legacy only")
-    print(f"  {C.YELLOW}[5]{C.RESET} Commit main only")
-    print(f"  {C.YELLOW}[6]{C.RESET} Commit both branches")
-    print(f"  {C.YELLOW}[7]{C.RESET} Commit + Push both branches")
-    print(f"  {C.YELLOW}[8]{C.RESET} Push unpushed commits")
-    print(f"  {C.YELLOW}[q]{C.RESET} Quit\n")
-    return input(f"  {C.BOLD}>{C.RESET} ").strip().lower()
+    print("\n\033[1m" + "="*44 + "\033[0m")
+    print("\033[1m   WWOO Toolkit — PhantomNex44\033[0m")
+    print("\033[1m" + "="*44 + "\033[0m\n")
+    print("  \033[96mWhat do you want to do?\033[0m\n")
+    print("  \033[93m[1]\033[0m Sync files to organized/")
+    print("  \033[2m    -> copies new/changed files from root into organized/\033[0m")
+    print()
+    print("  \033[93m[2]\033[0m Dry run (preview only)")
+    print("  \033[2m    -> shows what would sync without copying anything\033[0m")
+    print()
+    print("  \033[93m[3]\033[0m File check (what's out of sync)")
+    print("  \033[2m    -> scan what's new or modified but not synced yet\033[0m")
+    print()
+    print("  \033[93m[4]\033[0m Commit legacy only")
+    print("  \033[2m    -> git commit to legacy branch, no push\033[0m")
+    print()
+    print("  \033[93m[5]\033[0m Commit main only")
+    print("  \033[2m    -> git commit to main (organized/), no push\033[0m")
+    print()
+    print("  \033[93m[6]\033[0m Commit both branches")
+    print("  \033[2m    -> commit to both legacy and main, no push\033[0m")
+    print()
+    print("  \033[93m[7]\033[0m Commit + Push both branches")
+    print("  \033[2m    -> sync + commit + push to legacy and main in one go\033[0m")
+    print()
+    print("  \033[93m[8]\033[0m Push unpushed commits")
+    print("  \033[2m    -> forgot to push? uploads all pending commits\033[0m")
+    print()
+    print("  \033[93m[q]\033[0m Quit")
+    print()
+    return input("  \033[1m>\033[0m ").strip().lower()
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 while True:
@@ -322,7 +341,7 @@ while True:
     print()
 
     if choice == "q":
-        print(f"  {C.DIM}bye!{C.RESET}\n")
+        print(f"  bye!\n")
         break
 
     elif choice == "1":
@@ -354,12 +373,12 @@ while True:
         auto  = auto_message(added, updated)
         msg   = ask_commit_msg(auto, "legacy")
         commit_legacy(msg)
-        print(f"\n  {C.GREEN}Committed to legacy (not pushed yet).{C.RESET}")
-        print(f"  {C.DIM}Run option [8] to push when ready.{C.RESET}\n")
+        print(f"\n  Committed to legacy (not pushed yet).")
+        print(f"  Run option [8] to push when ready.\n")
 
     elif choice == "5":
         # Sync first
-        print(f"  {C.CYAN}Sync organized/ first? (y/n):{C.RESET} ", end="")
+        print(f"  Sync organized/ first? (y/n): ", end="")
         if input().strip().lower() == "y":
             added, updated, _ = do_sync()
         else:
@@ -377,8 +396,8 @@ while True:
         auto = auto_message(added, updated)
         msg  = ask_commit_msg(auto, "main")
         commit_main(msg)
-        print(f"\n  {C.GREEN}Committed to main (not pushed yet).{C.RESET}")
-        print(f"  {C.DIM}Run option [8] to push when ready.{C.RESET}\n")
+        print(f"\n  Committed to main (not pushed yet).")
+        print(f"  Run option [8] to push when ready.\n")
 
     elif choice == "6":
         added, updated, _ = do_sync()
@@ -388,8 +407,8 @@ while True:
         print()
         commit_legacy(leg_msg)
         commit_main(main_msg)
-        print(f"\n  {C.GREEN}Both branches committed (not pushed yet).{C.RESET}")
-        print(f"  {C.DIM}Run option [8] to push when ready.{C.RESET}\n")
+        print(f"\n  Both branches committed (not pushed yet).")
+        print(f"  Run option [8] to push when ready.\n")
 
     elif choice == "7":
         added, updated, _ = do_sync()
@@ -401,11 +420,11 @@ while True:
         push_legacy()
         commit_main(main_msg)
         push_main()
-        print(f"\n{C.BOLD}{'='*44}{C.RESET}")
-        print(f"{C.GREEN}{C.BOLD}  Done! Both branches updated.{C.RESET}")
-        print(f"  {C.DIM}legacy{C.RESET} <- {leg_msg}")
-        print(f"  {C.DIM}main  {C.RESET} <- {main_msg}")
-        print(f"{C.BOLD}{'='*44}{C.RESET}\n")
+        print(f"\n{'='*44}")
+        print(f"  Done! Both branches updated.")
+        print(f"  legacy <- {leg_msg}")
+        print(f"  main   <- {main_msg}")
+        print(f"{'='*44}\n")
 
     elif choice == "8":
         sp = Spinner()
@@ -421,15 +440,15 @@ while True:
         print()
 
         if not legacy_commits and not main_commits:
-            print(f"  {C.GREEN}✅  Everything is already up to date!{C.RESET}\n")
+            print(f"  ✅  Everything is already up to date!\n")
             run(["git", "checkout", "main"], cwd=ROOT, check=False)
         else:
             if legacy_commits:
-                print(f"  {C.YELLOW}legacy{C.RESET} — {len(legacy_commits)} unpushed:")
-                for c in legacy_commits: print(f"    {C.DIM}• {c}{C.RESET}")
+                print(f"  legacy — {len(legacy_commits)} unpushed:")
+                for c in legacy_commits: print(f"    • {c}")
             if main_commits:
-                print(f"\n  {C.YELLOW}main{C.RESET} — {len(main_commits)} unpushed:")
-                for c in main_commits: print(f"    {C.DIM}• {c}{C.RESET}")
+                print(f"\n  main — {len(main_commits)} unpushed:")
+                for c in main_commits: print(f"    • {c}")
             print()
             ans = input(f"  Push all now? (y/n): ").strip().lower()
             if ans == "y":
@@ -443,11 +462,11 @@ while True:
                 sp3.start("Switching back to main...")
                 run(["git", "checkout", "main"], cwd=ROOT, check=False)
                 sp3.stop("Back on main branch")
-                print(f"\n  {C.GREEN}All unpushed commits uploaded!{C.RESET}\n")
+                print(f"\n  All unpushed commits uploaded!\n")
             else:
-                print(f"\n  {C.DIM}Cancelled.{C.RESET}\n")
+                print(f"\n  Cancelled.\n")
                 run(["git", "checkout", "main"], cwd=ROOT, check=False)
     else:
-        print(f"  {C.RED}Invalid option. Pick 1-8 or q.{C.RESET}\n")
+        print(f"  Invalid option. Pick 1-8 or q.\n")
 
-    input(f"  {C.DIM}Press Enter to go back to menu...{C.RESET}")
+    input(f"  Press Enter to go back to menu...")
