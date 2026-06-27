@@ -16,7 +16,8 @@
             "Name": "minecraft:pointed_dripstone",
             "Properties": {
               "thickness": "tip",
-              "vertical_direction": "up"
+              "vertical_direction": "up",
+              "waterlogged": "false"
             }
           }
         }

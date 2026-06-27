@@ -25,7 +25,11 @@
                         "height": 1,
                         "provider": {
                           "state": {
-                            "Properties": {},
+                            "Properties": {
+                              "persistent": "false",
+                              "distance": "1",
+                              "waterlogged": "false"
+                            },
                             "Name": "minecraft:acacia_leaves"
                           },
                           "type": "minecraft:simple_state_provider"

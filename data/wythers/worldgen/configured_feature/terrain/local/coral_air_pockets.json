@@ -2,6 +2,7 @@
   "type": "minecraft:disk",
   "config": {
     "state_provider": {
+      "type": "minecraft:rule_based_state_provider",
       "fallback": {
         "type": "minecraft:simple_state_provider",
         "state": {
@@ -11,6 +12,7 @@
             "north": "true",
             "south": "true",
             "up": "true",
+            "waterlogged": "false",
             "west": "true"
           }
         }

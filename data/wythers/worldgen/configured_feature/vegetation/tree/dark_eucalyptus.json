@@ -37,7 +37,11 @@
                     "weight": 10,
                     "data": {
                       "Name": "minecraft:mangrove_leaves",
-                      "Properties": {}
+                      "Properties": {
+                        "distance": "7",
+                        "persistent": "false",
+                        "waterlogged": "false"
+                      }
                     }
                   }
                 ]
@@ -54,26 +58,6 @@
                 "offset": 0
               },
               "decorators": [
-                {
-                  "type": "minecraft:alter_ground",
-                  "provider": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:coarse_dirt"
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:rooted_dirt"
-                        }
-                      }
-                    ]
-                  }
-                },
                 {
                   "type": "minecraft:place_on_ground",
                   "block_state_provider": {
@@ -376,7 +360,27 @@
                   "radius": 2,
                   "tries": 150
                 }
-              ]
+              ],
+              "below_trunk_provider": {
+                "type": "minecraft:rule_based_state_provider",
+                "rules": [
+                  {
+                    "if_true": {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:cannot_replace_below_tree_trunk"
+                      }
+                    },
+                    "then": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
+                    }
+                  }
+                ]
+              }
             }
           },
           "placement": []
@@ -417,7 +421,11 @@
                     "weight": 10,
                     "data": {
                       "Name": "minecraft:mangrove_leaves",
-                      "Properties": {}
+                      "Properties": {
+                        "distance": "7",
+                        "persistent": "false",
+                        "waterlogged": "false"
+                      }
                     }
                   }
                 ]
@@ -434,26 +442,6 @@
                 "offset": 0
               },
               "decorators": [
-                {
-                  "type": "minecraft:alter_ground",
-                  "provider": {
-                    "type": "minecraft:weighted_state_provider",
-                    "entries": [
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:coarse_dirt"
-                        }
-                      },
-                      {
-                        "weight": 1,
-                        "data": {
-                          "Name": "minecraft:rooted_dirt"
-                        }
-                      }
-                    ]
-                  }
-                },
                 {
                   "type": "minecraft:place_on_ground",
                   "block_state_provider": {
@@ -756,7 +744,27 @@
                   "radius": 2,
                   "tries": 150
                 }
-              ]
+              ],
+              "below_trunk_provider": {
+                "type": "minecraft:rule_based_state_provider",
+                "rules": [
+                  {
+                    "if_true": {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_block_tag",
+                        "tag": "minecraft:cannot_replace_below_tree_trunk"
+                      }
+                    },
+                    "then": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:dirt"
+                      }
+                    }
+                  }
+                ]
+              }
             }
           },
           "placement": []
@@ -796,7 +804,11 @@
                 "weight": 10,
                 "data": {
                   "Name": "minecraft:mangrove_leaves",
-                  "Properties": {}
+                  "Properties": {
+                    "distance": "7",
+                    "persistent": "false",
+                    "waterlogged": "false"
+                  }
                 }
               }
             ]
@@ -813,26 +825,6 @@
             "offset": 0
           },
           "decorators": [
-            {
-              "type": "minecraft:alter_ground",
-              "provider": {
-                "type": "minecraft:weighted_state_provider",
-                "entries": [
-                  {
-                    "weight": 1,
-                    "data": {
-                      "Name": "minecraft:coarse_dirt"
-                    }
-                  },
-                  {
-                    "weight": 1,
-                    "data": {
-                      "Name": "minecraft:rooted_dirt"
-                    }
-                  }
-                ]
-              }
-            },
             {
               "type": "minecraft:place_on_ground",
               "block_state_provider": {
@@ -1135,7 +1127,27 @@
               "radius": 2,
               "tries": 150
             }
-          ]
+          ],
+          "below_trunk_provider": {
+            "type": "minecraft:rule_based_state_provider",
+            "rules": [
+              {
+                "if_true": {
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:matching_block_tag",
+                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                  }
+                },
+                "then": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "minecraft:dirt"
+                  }
+                }
+              }
+            ]
+          }
         }
       },
       "placement": [

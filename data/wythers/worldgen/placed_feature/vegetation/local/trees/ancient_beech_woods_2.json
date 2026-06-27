@@ -12,7 +12,7 @@
         {
           "chance": 0.2,
           "feature": {
-            "feature": "wythers:vegetation/tree/complex_oak_2",
+            "feature": "wythers:vegetation/tree/complex_oak_1",
             "placement": []
           }
         }
@@ -25,6 +25,13 @@
     "type": "minecraft:random_selector"
   },
   "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
     {
       "type": "minecraft:height_range",
       "height": {
@@ -40,7 +47,9 @@
             "type": "minecraft:matching_blocks",
             "blocks": [
               "birch_wood",
-              "dark_oak_wood"
+              "stripped_birch_wood",
+              "dark_oak_wood",
+              "sandstone"
             ]
           },
           {
@@ -73,17 +82,10 @@
       }
     },
     {
-      "type": "minecraft:count",
-      "count": 5
-    },
-    {
       "type": "minecraft:height_range",
       "height": {
         "absolute": 0
       }
-    },
-    {
-      "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:surface_relative_threshold_filter",

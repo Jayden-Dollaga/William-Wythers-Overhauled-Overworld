@@ -24,7 +24,11 @@
           "weight": 6,
           "data": {
             "Name": "minecraft:azalea_leaves",
-            "Properties": {}
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           }
         },
         {
@@ -249,33 +253,16 @@
       {
         "type": "minecraft:leave_vine",
         "probability": 0.125
-      },
-      {
-        "type": "minecraft:alter_ground",
-        "provider": {
-          "type": "minecraft:weighted_state_provider",
-          "entries": [
-            {
-              "weight": 3,
-              "data": {
-                "Name": "minecraft:podzol",
-                "Properties": {
-                  "snowy": "false"
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:grass_block",
-                "Properties": {
-                  "snowy": "false"
-                }
-              }
-            }
-          ]
+      }
+    ],
+    "below_trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:stripped_bamboo_block",
+        "Properties": {
+          "axis": "y"
         }
       }
-    ]
+    }
   }
 }

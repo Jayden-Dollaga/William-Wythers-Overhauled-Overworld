@@ -15,7 +15,8 @@
           {
             "type": "minecraft:matching_blocks",
             "blocks": [
-              "dark_oak_wood"
+              "dark_oak_wood",
+              "sandstone"
             ]
           }
         ]

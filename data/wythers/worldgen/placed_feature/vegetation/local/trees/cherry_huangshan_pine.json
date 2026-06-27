@@ -22,7 +22,11 @@
         "type": "minecraft:simple_state_provider",
         "state": {
           "Name": "minecraft:spruce_leaves",
-          "Properties": {}
+          "Properties": {
+            "waterlogged": "false",
+            "persistent": "false",
+            "distance": "7"
+          }
         }
       },
       "trunk_placer": {
@@ -40,33 +44,53 @@
         {
           "type": "minecraft:alter_ground",
           "provider": {
-            "type": "minecraft:weighted_state_provider",
-            "entries": [
+            "type": "minecraft:rule_based_state_provider",
+            "rules": [
               {
-                "weight": 4,
-                "data": {
-                  "Name": "minecraft:grass_block",
-                  "Properties": {
-                    "snowy": "false"
-                  }
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:coarse_dirt"
-                }
-              },
-              {
-                "weight": 1,
-                "data": {
-                  "Name": "minecraft:rooted_dirt"
+                "if_true": {
+                  "type": "minecraft:matching_block_tag",
+                  "tag": "minecraft:beneath_tree_podzol_replaceable"
+                },
+                "then": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 4,
+                      "data": {
+                        "Name": "minecraft:grass_block",
+                        "Properties": {
+                          "snowy": "false"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:coarse_dirt"
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
+                    }
+                  ]
                 }
               }
             ]
           }
         }
-      ]
+      ],
+      "below_trunk_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:spruce_log",
+          "Properties": {
+            "axis": "y"
+          }
+        }
+      }
     }
   },
   "placement": [

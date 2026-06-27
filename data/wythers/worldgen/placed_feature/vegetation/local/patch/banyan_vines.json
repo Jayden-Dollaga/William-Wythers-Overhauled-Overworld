@@ -24,7 +24,9 @@
                     "type": "minecraft:simple_state_provider",
                     "state": {
                       "Name": "minecraft:mangrove_roots",
-                      "Properties": {}
+                      "Properties": {
+                        "waterlogged": "false"
+                      }
                     }
                   }
                 },
@@ -34,7 +36,9 @@
                     "type": "minecraft:simple_state_provider",
                     "state": {
                       "Name": "minecraft:hanging_roots",
-                      "Properties": {}
+                      "Properties": {
+                        "waterlogged": "false"
+                      }
                     }
                   }
                 }

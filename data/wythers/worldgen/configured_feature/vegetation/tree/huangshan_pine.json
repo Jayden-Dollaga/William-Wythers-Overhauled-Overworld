@@ -21,7 +21,11 @@
       "type": "minecraft:simple_state_provider",
       "state": {
         "Name": "minecraft:spruce_leaves",
-        "Properties": {}
+        "Properties": {
+          "waterlogged": "false",
+          "persistent": "false",
+          "distance": "7"
+        }
       }
     },
     "trunk_placer": {
@@ -35,27 +39,15 @@
       "radius": 2,
       "offset": 0
     },
-    "decorators": [
-      {
-        "type": "minecraft:alter_ground",
-        "provider": {
-          "type": "minecraft:weighted_state_provider",
-          "entries": [
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:coarse_dirt"
-              }
-            },
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:rooted_dirt"
-              }
-            }
-          ]
+    "decorators": [],
+    "below_trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:spruce_log",
+        "Properties": {
+          "axis": "y"
         }
       }
-    ]
+    }
   }
 }

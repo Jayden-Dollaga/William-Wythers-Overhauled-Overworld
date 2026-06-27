@@ -7,7 +7,11 @@
             "to_place": {
               "state": {
                 "Name": "minecraft:jungle_leaves",
-                "Properties": {}
+                "Properties": {
+                  "distance": "2",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
               },
               "type": "minecraft:simple_state_provider"
             }

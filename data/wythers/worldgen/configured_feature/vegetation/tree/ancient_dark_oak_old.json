@@ -51,7 +51,10 @@
                                         "weight": 10,
                                         "data": {
                                           "Name": "minecraft:dark_oak_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "7",
+                                            "persistent": "false"
+                                          }
                                         }
                                       }
                                     ]
@@ -68,31 +71,27 @@
                                     "offset": 1,
                                     "height": 1
                                   },
-                                  "decorators": [
-                                    {
-                                      "type": "minecraft:alter_ground",
-                                      "provider": {
-                                        "type": "minecraft:weighted_state_provider",
-                                        "entries": [
-                                          {
-                                            "weight": 0,
-                                            "data": {
-                                              "Name": "minecraft:moss_block"
-                                            }
-                                          },
-                                          {
-                                            "weight": 1,
-                                            "data": {
-                                              "Name": "minecraft:podzol",
-                                              "Properties": {
-                                                "snowy": "false"
-                                              }
-                                            }
+                                  "decorators": [],
+                                  "below_trunk_provider": {
+                                    "type": "minecraft:rule_based_state_provider",
+                                    "rules": [
+                                      {
+                                        "if_true": {
+                                          "type": "minecraft:not",
+                                          "predicate": {
+                                            "type": "minecraft:matching_block_tag",
+                                            "tag": "minecraft:cannot_replace_below_tree_trunk"
                                           }
-                                        ]
+                                        },
+                                        "then": {
+                                          "type": "minecraft:simple_state_provider",
+                                          "state": {
+                                            "Name": "minecraft:dirt"
+                                          }
+                                        }
                                       }
-                                    }
-                                  ]
+                                    ]
+                                  }
                                 }
                               },
                               "placement": [
@@ -154,7 +153,10 @@
                                         "weight": 10,
                                         "data": {
                                           "Name": "minecraft:dark_oak_leaves",
-                                          "Properties": {}
+                                          "Properties": {
+                                            "distance": "7",
+                                            "persistent": "false"
+                                          }
                                         }
                                       }
                                     ]
@@ -171,31 +173,27 @@
                                     "offset": 1,
                                     "height": 1
                                   },
-                                  "decorators": [
-                                    {
-                                      "type": "minecraft:alter_ground",
-                                      "provider": {
-                                        "type": "minecraft:weighted_state_provider",
-                                        "entries": [
-                                          {
-                                            "weight": 0,
-                                            "data": {
-                                              "Name": "minecraft:moss_block"
-                                            }
-                                          },
-                                          {
-                                            "weight": 1,
-                                            "data": {
-                                              "Name": "minecraft:podzol",
-                                              "Properties": {
-                                                "snowy": "false"
-                                              }
-                                            }
+                                  "decorators": [],
+                                  "below_trunk_provider": {
+                                    "type": "minecraft:rule_based_state_provider",
+                                    "rules": [
+                                      {
+                                        "if_true": {
+                                          "type": "minecraft:not",
+                                          "predicate": {
+                                            "type": "minecraft:matching_block_tag",
+                                            "tag": "minecraft:cannot_replace_below_tree_trunk"
                                           }
-                                        ]
+                                        },
+                                        "then": {
+                                          "type": "minecraft:simple_state_provider",
+                                          "state": {
+                                            "Name": "minecraft:dirt"
+                                          }
+                                        }
                                       }
-                                    }
-                                  ]
+                                    ]
+                                  }
                                 }
                               },
                               "placement": [
@@ -264,31 +262,27 @@
                                 "offset": 0,
                                 "height": 3
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -381,7 +375,10 @@
                                     "weight": 10,
                                     "data": {
                                       "Name": "minecraft:dark_oak_leaves",
-                                      "Properties": {}
+                                      "Properties": {
+                                        "distance": "7",
+                                        "persistent": "false"
+                                      }
                                     }
                                   }
                                 ]
@@ -398,31 +395,27 @@
                                 "offset": 1,
                                 "height": 1
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -484,7 +477,10 @@
                                     "weight": 10,
                                     "data": {
                                       "Name": "minecraft:dark_oak_leaves",
-                                      "Properties": {}
+                                      "Properties": {
+                                        "distance": "7",
+                                        "persistent": "false"
+                                      }
                                     }
                                   }
                                 ]
@@ -501,31 +497,27 @@
                                 "offset": 1,
                                 "height": 1
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -595,31 +587,27 @@
                                 "offset": 0,
                                 "height": 3
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -684,7 +672,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:dark_oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -701,31 +692,27 @@
                             "offset": 1,
                             "height": 1
                           },
-                          "decorators": [
-                            {
-                              "type": "minecraft:alter_ground",
-                              "provider": {
-                                "type": "minecraft:weighted_state_provider",
-                                "entries": [
-                                  {
-                                    "weight": 0,
-                                    "data": {
-                                      "Name": "minecraft:moss_block"
-                                    }
-                                  },
-                                  {
-                                    "weight": 1,
-                                    "data": {
-                                      "Name": "minecraft:podzol",
-                                      "Properties": {
-                                        "snowy": "false"
-                                      }
-                                    }
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
                                   }
-                                ]
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -842,7 +829,10 @@
                                     "weight": 10,
                                     "data": {
                                       "Name": "minecraft:dark_oak_leaves",
-                                      "Properties": {}
+                                      "Properties": {
+                                        "distance": "7",
+                                        "persistent": "false"
+                                      }
                                     }
                                   }
                                 ]
@@ -859,31 +849,27 @@
                                 "offset": 1,
                                 "height": 1
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -945,7 +931,10 @@
                                     "weight": 10,
                                     "data": {
                                       "Name": "minecraft:dark_oak_leaves",
-                                      "Properties": {}
+                                      "Properties": {
+                                        "distance": "7",
+                                        "persistent": "false"
+                                      }
                                     }
                                   }
                                 ]
@@ -962,31 +951,27 @@
                                 "offset": 1,
                                 "height": 1
                               },
-                              "decorators": [
-                                {
-                                  "type": "minecraft:alter_ground",
-                                  "provider": {
-                                    "type": "minecraft:weighted_state_provider",
-                                    "entries": [
-                                      {
-                                        "weight": 0,
-                                        "data": {
-                                          "Name": "minecraft:moss_block"
-                                        }
-                                      },
-                                      {
-                                        "weight": 1,
-                                        "data": {
-                                          "Name": "minecraft:podzol",
-                                          "Properties": {
-                                            "snowy": "false"
-                                          }
-                                        }
+                              "decorators": [],
+                              "below_trunk_provider": {
+                                "type": "minecraft:rule_based_state_provider",
+                                "rules": [
+                                  {
+                                    "if_true": {
+                                      "type": "minecraft:not",
+                                      "predicate": {
+                                        "type": "minecraft:matching_block_tag",
+                                        "tag": "minecraft:cannot_replace_below_tree_trunk"
                                       }
-                                    ]
+                                    },
+                                    "then": {
+                                      "type": "minecraft:simple_state_provider",
+                                      "state": {
+                                        "Name": "minecraft:dirt"
+                                      }
+                                    }
                                   }
-                                }
-                              ]
+                                ]
+                              }
                             }
                           },
                           "placement": [
@@ -1055,31 +1040,27 @@
                             "offset": 0,
                             "height": 3
                           },
-                          "decorators": [
-                            {
-                              "type": "minecraft:alter_ground",
-                              "provider": {
-                                "type": "minecraft:weighted_state_provider",
-                                "entries": [
-                                  {
-                                    "weight": 0,
-                                    "data": {
-                                      "Name": "minecraft:moss_block"
-                                    }
-                                  },
-                                  {
-                                    "weight": 1,
-                                    "data": {
-                                      "Name": "minecraft:podzol",
-                                      "Properties": {
-                                        "snowy": "false"
-                                      }
-                                    }
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
                                   }
-                                ]
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -1172,7 +1153,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:dark_oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -1189,31 +1173,27 @@
                             "offset": 1,
                             "height": 1
                           },
-                          "decorators": [
-                            {
-                              "type": "minecraft:alter_ground",
-                              "provider": {
-                                "type": "minecraft:weighted_state_provider",
-                                "entries": [
-                                  {
-                                    "weight": 0,
-                                    "data": {
-                                      "Name": "minecraft:moss_block"
-                                    }
-                                  },
-                                  {
-                                    "weight": 1,
-                                    "data": {
-                                      "Name": "minecraft:podzol",
-                                      "Properties": {
-                                        "snowy": "false"
-                                      }
-                                    }
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
                                   }
-                                ]
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -1275,7 +1255,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:dark_oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -1292,31 +1275,27 @@
                             "offset": 1,
                             "height": 1
                           },
-                          "decorators": [
-                            {
-                              "type": "minecraft:alter_ground",
-                              "provider": {
-                                "type": "minecraft:weighted_state_provider",
-                                "entries": [
-                                  {
-                                    "weight": 0,
-                                    "data": {
-                                      "Name": "minecraft:moss_block"
-                                    }
-                                  },
-                                  {
-                                    "weight": 1,
-                                    "data": {
-                                      "Name": "minecraft:podzol",
-                                      "Properties": {
-                                        "snowy": "false"
-                                      }
-                                    }
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
                                   }
-                                ]
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -1386,31 +1365,27 @@
                             "offset": 0,
                             "height": 3
                           },
-                          "decorators": [
-                            {
-                              "type": "minecraft:alter_ground",
-                              "provider": {
-                                "type": "minecraft:weighted_state_provider",
-                                "entries": [
-                                  {
-                                    "weight": 0,
-                                    "data": {
-                                      "Name": "minecraft:moss_block"
-                                    }
-                                  },
-                                  {
-                                    "weight": 1,
-                                    "data": {
-                                      "Name": "minecraft:podzol",
-                                      "Properties": {
-                                        "snowy": "false"
-                                      }
-                                    }
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
                                   }
-                                ]
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
                               }
-                            }
-                          ]
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -1475,7 +1450,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:dark_oak_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -1492,31 +1470,27 @@
                         "offset": 1,
                         "height": 1
                       },
-                      "decorators": [
-                        {
-                          "type": "minecraft:alter_ground",
-                          "provider": {
-                            "type": "minecraft:weighted_state_provider",
-                            "entries": [
-                              {
-                                "weight": 0,
-                                "data": {
-                                  "Name": "minecraft:moss_block"
-                                }
-                              },
-                              {
-                                "weight": 1,
-                                "data": {
-                                  "Name": "minecraft:podzol",
-                                  "Properties": {
-                                    "snowy": "false"
-                                  }
-                                }
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
                               }
-                            ]
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
                           }
-                        }
-                      ]
+                        ]
+                      }
                     }
                   },
                   "placement": [

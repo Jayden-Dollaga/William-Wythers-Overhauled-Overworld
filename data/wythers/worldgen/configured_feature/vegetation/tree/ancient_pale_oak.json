@@ -32,7 +32,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:pale_oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -179,7 +183,27 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -211,7 +235,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:pale_oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -385,7 +413,27 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -417,7 +465,11 @@
                         "type": "minecraft:simple_state_provider",
                         "state": {
                           "Name": "minecraft:pale_oak_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false",
+                            "waterlogged": "false"
+                          }
                         }
                       },
                       "trunk_placer": {
@@ -591,7 +643,27 @@
                           "radius": 5,
                           "tries": 500
                         }
-                      ]
+                      ],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": []
@@ -604,6 +676,7 @@
                     "type": "minecraft:disk",
                     "config": {
                       "state_provider": {
+                        "type": "minecraft:rule_based_state_provider",
                         "fallback": {
                           "type": "minecraft:simple_state_provider",
                           "state": {
@@ -804,7 +877,27 @@
                       "radius": 5,
                       "tries": 500
                     }
-                  ]
+                  ],
+                  "below_trunk_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                      {
+                        "if_true": {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:cannot_replace_below_tree_trunk"
+                          }
+                        },
+                        "then": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
+                        }
+                      }
+                    ]
+                  }
                 }
               },
               "placement": [

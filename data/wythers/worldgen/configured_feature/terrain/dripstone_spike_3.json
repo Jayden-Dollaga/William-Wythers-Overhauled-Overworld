@@ -16,7 +16,8 @@
             "Name": "minecraft:pointed_dripstone",
             "Properties": {
               "thickness": "base",
-              "vertical_direction": "up"
+              "vertical_direction": "up",
+              "waterlogged": "false"
             }
           }
         }
@@ -29,7 +30,8 @@
             "Name": "minecraft:pointed_dripstone",
             "Properties": {
               "thickness": "frustum",
-              "vertical_direction": "up"
+              "vertical_direction": "up",
+              "waterlogged": "false"
             }
           }
         }
@@ -42,7 +44,8 @@
             "Name": "minecraft:pointed_dripstone",
             "Properties": {
               "thickness": "tip",
-              "vertical_direction": "up"
+              "vertical_direction": "up",
+              "waterlogged": "false"
             }
           }
         }

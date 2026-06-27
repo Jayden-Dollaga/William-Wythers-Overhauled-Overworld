@@ -52,7 +52,7 @@
                   -1,
                   0
                 ],
-                "tag": "minecraft:dirt"
+                "tag": "minecraft:supports_vegetation"
               }
             ]
           },
@@ -63,7 +63,7 @@
               1,
               0
             ],
-            "tag": "minecraft:dirt"
+            "tag": "minecraft:supports_vegetation"
           }
         ]
       },

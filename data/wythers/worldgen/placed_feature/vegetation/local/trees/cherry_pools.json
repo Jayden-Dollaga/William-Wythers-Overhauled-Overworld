@@ -45,7 +45,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:azalea_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -61,7 +64,27 @@
                             "radius": 1,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -120,7 +143,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:azalea_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -136,7 +162,27 @@
                             "radius": 2,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -194,7 +240,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:azalea_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -210,7 +259,27 @@
                         "radius": 1,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": [
@@ -297,7 +366,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:birch_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -313,7 +385,27 @@
                             "radius": 1,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -372,7 +464,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:birch_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -388,7 +483,27 @@
                             "radius": 2,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -446,7 +561,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:birch_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -462,7 +580,27 @@
                         "radius": 1,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": [
@@ -549,7 +687,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -565,7 +706,27 @@
                             "radius": 1,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -624,7 +785,10 @@
                                 "weight": 10,
                                 "data": {
                                   "Name": "minecraft:oak_leaves",
-                                  "Properties": {}
+                                  "Properties": {
+                                    "distance": "7",
+                                    "persistent": "false"
+                                  }
                                 }
                               }
                             ]
@@ -640,7 +804,27 @@
                             "radius": 2,
                             "offset": 0
                           },
-                          "decorators": []
+                          "decorators": [],
+                          "below_trunk_provider": {
+                            "type": "minecraft:rule_based_state_provider",
+                            "rules": [
+                              {
+                                "if_true": {
+                                  "type": "minecraft:not",
+                                  "predicate": {
+                                    "type": "minecraft:matching_block_tag",
+                                    "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                  }
+                                },
+                                "then": {
+                                  "type": "minecraft:simple_state_provider",
+                                  "state": {
+                                    "Name": "minecraft:dirt"
+                                  }
+                                }
+                              }
+                            ]
+                          }
                         }
                       },
                       "placement": [
@@ -698,7 +882,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:oak_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -714,7 +901,27 @@
                         "radius": 1,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": [
@@ -800,7 +1007,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:spruce_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -816,7 +1026,27 @@
                         "radius": 1,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": [
@@ -875,7 +1105,10 @@
                             "weight": 10,
                             "data": {
                               "Name": "minecraft:spruce_leaves",
-                              "Properties": {}
+                              "Properties": {
+                                "distance": "7",
+                                "persistent": "false"
+                              }
                             }
                           }
                         ]
@@ -891,7 +1124,27 @@
                         "radius": 2,
                         "offset": 0
                       },
-                      "decorators": []
+                      "decorators": [],
+                      "below_trunk_provider": {
+                        "type": "minecraft:rule_based_state_provider",
+                        "rules": [
+                          {
+                            "if_true": {
+                              "type": "minecraft:not",
+                              "predicate": {
+                                "type": "minecraft:matching_block_tag",
+                                "tag": "minecraft:cannot_replace_below_tree_trunk"
+                              }
+                            },
+                            "then": {
+                              "type": "minecraft:simple_state_provider",
+                              "state": {
+                                "Name": "minecraft:dirt"
+                              }
+                            }
+                          }
+                        ]
+                      }
                     }
                   },
                   "placement": [
@@ -949,7 +1202,10 @@
                         "weight": 10,
                         "data": {
                           "Name": "minecraft:spruce_leaves",
-                          "Properties": {}
+                          "Properties": {
+                            "distance": "7",
+                            "persistent": "false"
+                          }
                         }
                       }
                     ]
@@ -965,7 +1221,27 @@
                     "radius": 1,
                     "offset": 0
                   },
-                  "decorators": []
+                  "decorators": [],
+                  "below_trunk_provider": {
+                    "type": "minecraft:rule_based_state_provider",
+                    "rules": [
+                      {
+                        "if_true": {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:matching_block_tag",
+                            "tag": "minecraft:cannot_replace_below_tree_trunk"
+                          }
+                        },
+                        "then": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dirt"
+                          }
+                        }
+                      }
+                    ]
+                  }
                 }
               },
               "placement": [

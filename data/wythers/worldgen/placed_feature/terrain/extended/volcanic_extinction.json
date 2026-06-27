@@ -22,7 +22,8 @@
           "state": {
             "Name": "minecraft:blackstone_slab",
             "Properties": {
-              "type": "double"
+              "type": "double",
+              "waterlogged": "false"
             }
           }
         },
@@ -34,7 +35,8 @@
           "state": {
             "Name": "minecraft:blackstone_slab",
             "Properties": {
-              "type": "double"
+              "type": "double",
+              "waterlogged": "false"
             }
           }
         },

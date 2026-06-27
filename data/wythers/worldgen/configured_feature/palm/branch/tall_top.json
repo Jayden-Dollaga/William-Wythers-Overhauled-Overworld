@@ -27,7 +27,11 @@
               "type": "minecraft:simple_state_provider",
               "state": {
                 "Name": "minecraft:azalea_leaves",
-                "Properties": {}
+                "Properties": {
+                  "distance": "7",
+                  "persistent": "false",
+                  "waterlogged": "false"
+                }
               }
             },
             "trunk_placer": {
@@ -46,7 +50,11 @@
               "hanging_leaves_chance": 0.5,
               "hanging_leaves_extension_chance": 1
             },
-            "decorators": []
+            "decorators": [],
+            "below_trunk_provider": {
+              "type": "minecraft:rule_based_state_provider",
+              "rules": []
+            }
           }
         },
         "placement": [

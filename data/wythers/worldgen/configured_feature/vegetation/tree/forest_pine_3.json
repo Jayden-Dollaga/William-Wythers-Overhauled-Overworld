@@ -23,7 +23,11 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
@@ -56,6 +60,12 @@
                           "axis": "y"
                         }
                       }
+                    },
+                    "below_trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
                     }
                   }
                 },
@@ -78,7 +88,11 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
@@ -111,6 +125,12 @@
                           "axis": "y"
                         }
                       }
+                    },
+                    "below_trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
                     }
                   }
                 },
@@ -133,7 +153,11 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
@@ -166,6 +190,12 @@
                           "axis": "y"
                         }
                       }
+                    },
+                    "below_trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
+                      }
                     }
                   }
                 },
@@ -176,26 +206,6 @@
                   "type": "minecraft:tree",
                   "config": {
                     "decorators": [
-                      {
-                        "type": "minecraft:alter_ground",
-                        "provider": {
-                          "type": "minecraft:weighted_state_provider",
-                          "entries": [
-                            {
-                              "weight": 1,
-                              "data": {
-                                "Name": "minecraft:rooted_dirt"
-                              }
-                            },
-                            {
-                              "weight": 1,
-                              "data": {
-                                "Name": "minecraft:coarse_dirt"
-                              }
-                            }
-                          ]
-                        }
-                      },
                       {
                         "type": "minecraft:place_on_ground",
                         "block_state_provider": {
@@ -529,7 +539,11 @@
                         {
                           "data": {
                             "Name": "minecraft:spruce_leaves",
-                            "Properties": {}
+                            "Properties": {
+                              "distance": "7",
+                              "persistent": "false",
+                              "waterlogged": "false"
+                            }
                           },
                           "weight": 3
                         }
@@ -555,6 +569,12 @@
                         "Properties": {
                           "axis": "y"
                         }
+                      }
+                    },
+                    "below_trunk_provider": {
+                      "type": "minecraft:simple_state_provider",
+                      "state": {
+                        "Name": "minecraft:rooted_dirt"
                       }
                     }
                   }

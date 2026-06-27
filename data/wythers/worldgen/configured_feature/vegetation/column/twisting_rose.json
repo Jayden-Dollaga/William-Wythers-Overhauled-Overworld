@@ -18,7 +18,8 @@
             "Name": "minecraft:small_dripleaf",
             "Properties": {
               "facing": "north",
-              "half": "lower"
+              "half": "lower",
+              "waterlogged": "false"
             }
           }
         }

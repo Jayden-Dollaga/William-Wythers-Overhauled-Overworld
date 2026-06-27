@@ -32,23 +32,8 @@
         "directions": [
           "down"
         ]
-      },
-      {
-        "type": "minecraft:alter_ground",
-        "provider": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "minecraft:mycelium"
-          }
-        }
       }
     ],
-    "dirt_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:mycelium"
-      }
-    },
     "foliage_placer": {
       "type": "minecraft:jungle_foliage_placer",
       "height": 2,
@@ -61,7 +46,6 @@
         "Name": "minecraft:mushroom_stem"
       }
     },
-    "force_dirt": false,
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
@@ -83,6 +67,26 @@
           "axis": "y"
         }
       }
+    },
+    "below_trunk_provider": {
+      "type": "minecraft:rule_based_state_provider",
+      "rules": [
+        {
+          "if_true": {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_block_tag",
+              "tag": "minecraft:cannot_replace_below_tree_trunk"
+            }
+          },
+          "then": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:mycelium"
+            }
+          }
+        }
+      ]
     }
   }
 }

@@ -15,7 +15,8 @@
           "state": {
             "Name": "minecraft:lantern",
             "Properties": {
-              "hanging": "true"
+              "hanging": "true",
+              "waterlogged": "false"
             }
           }
         }

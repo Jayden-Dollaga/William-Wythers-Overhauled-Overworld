@@ -24,7 +24,11 @@
           "weight": 6,
           "data": {
             "Name": "minecraft:acacia_leaves",
-            "Properties": {}
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           }
         }
       ]
@@ -224,33 +228,16 @@
         "height": 4,
         "radius": 4,
         "tries": 1000
-      },
-      {
-        "type": "minecraft:alter_ground",
-        "provider": {
-          "type": "minecraft:weighted_state_provider",
-          "entries": [
-            {
-              "weight": 3,
-              "data": {
-                "Name": "minecraft:podzol",
-                "Properties": {
-                  "snowy": "false"
-                }
-              }
-            },
-            {
-              "weight": 1,
-              "data": {
-                "Name": "minecraft:grass_block",
-                "Properties": {
-                  "snowy": "false"
-                }
-              }
-            }
-          ]
+      }
+    ],
+    "below_trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:bamboo_block",
+        "Properties": {
+          "axis": "y"
         }
       }
-    ]
+    }
   }
 }

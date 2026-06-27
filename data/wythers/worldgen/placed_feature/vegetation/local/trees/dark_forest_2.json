@@ -12,7 +12,7 @@
         {
           "chance": 0.2,
           "feature": {
-            "feature": "wythers:vegetation/tree/complex_dark_oak_2",
+            "feature": "wythers:vegetation/tree/complex_dark_oak_1",
             "placement": []
           }
         }
@@ -41,7 +41,8 @@
             "blocks": [
               "dark_oak_wood",
               "jungle_wood",
-              "bamboo_block"
+              "bamboo_block",
+              "sandstone"
             ]
           }
         ]

@@ -77,6 +77,26 @@
                               "offset": 0,
                               "height": 1,
                               "type": "minecraft:blob_foliage_placer"
+                            },
+                            "below_trunk_provider": {
+                              "type": "minecraft:rule_based_state_provider",
+                              "rules": [
+                                {
+                                  "if_true": {
+                                    "type": "minecraft:not",
+                                    "predicate": {
+                                      "type": "minecraft:matching_block_tag",
+                                      "tag": "minecraft:cannot_replace_below_tree_trunk"
+                                    }
+                                  },
+                                  "then": {
+                                    "state": {
+                                      "Name": "minecraft:rooted_dirt"
+                                    },
+                                    "type": "minecraft:simple_state_provider"
+                                  }
+                                }
+                              ]
                             }
                           },
                           "type": "minecraft:tree"
@@ -250,15 +270,103 @@
                 ]
               },
               {
-                "feature": "wythers:vegetation/tree/huge_sequoia/rooted_dirt/2",
+                "feature": {
+                  "config": {
+                    "layers": [
+                      {
+                        "height": {
+                          "min_inclusive": 1,
+                          "max_inclusive": 2,
+                          "type": "minecraft:uniform"
+                        },
+                        "provider": {
+                          "state": {
+                            "Name": "minecraft:rooted_dirt"
+                          },
+                          "type": "minecraft:simple_state_provider"
+                        }
+                      }
+                    ],
+                    "direction": "down",
+                    "allowed_placement": {
+                      "blocks": "#wythers:dirt",
+                      "type": "minecraft:matching_blocks"
+                    },
+                    "prioritize_tip": false
+                  },
+                  "type": "minecraft:block_column"
+                },
                 "placement": [
                   {
                     "predicate": {
-                      "blocks": [
-                        "minecraft:stripped_acacia_log",
-                        "minecraft:stripped_acacia_log"
+                      "type": "minecraft:all_of",
+                      "predicates": [
+                        {
+                          "blocks": [
+                            "minecraft:stripped_acacia_log",
+                            "minecraft:stripped_acacia_log"
+                          ],
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "type": "minecraft:not",
+                          "predicate": {
+                            "type": "minecraft:matching_blocks",
+                            "blocks": [
+                              "minecraft:stripped_acacia_log",
+                              "minecraft:stripped_acacia_log"
+                            ],
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    "type": "minecraft:block_predicate_filter"
+                  },
+                  {
+                    "type": "minecraft:count",
+                    "count": 24
+                  },
+                  {
+                    "type": "minecraft:random_offset",
+                    "xz_spread": {
+                      "type": "minecraft:trapezoid",
+                      "min": -2,
+                      "max": 2,
+                      "plateau": 0
+                    },
+                    "y_spread": {
+                      "type": "minecraft:trapezoid",
+                      "min": -2,
+                      "max": 0,
+                      "plateau": 0
+                    }
+                  },
+                  {
+                    "predicate": {
+                      "predicates": [
+                        {
+                          "blocks": "#wythers:dirt",
+                          "type": "minecraft:matching_blocks"
+                        },
+                        {
+                          "predicate": {
+                            "offset": [
+                              0,
+                              1,
+                              0
+                            ],
+                            "blocks": "#wythers:dirt",
+                            "type": "minecraft:matching_blocks"
+                          },
+                          "type": "minecraft:not"
+                        }
                       ],
-                      "type": "minecraft:matching_blocks"
+                      "type": "minecraft:all_of"
                     },
                     "type": "minecraft:block_predicate_filter"
                   }

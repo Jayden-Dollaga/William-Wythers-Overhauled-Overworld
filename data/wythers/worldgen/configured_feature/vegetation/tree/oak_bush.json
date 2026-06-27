@@ -10,7 +10,11 @@
     },
     "foliage_provider": {
       "state": {
-        "Properties": {},
+        "Properties": {
+          "waterlogged": "false",
+          "persistent": "false",
+          "distance": "7"
+        },
         "Name": "minecraft:oak_leaves"
       },
       "type": "minecraft:simple_state_provider"
@@ -35,6 +39,12 @@
       "height_rand_a": 0,
       "height_rand_b": 0,
       "type": "minecraft:straight_trunk_placer"
+    },
+    "below_trunk_provider": {
+      "state": {
+        "Name": "minecraft:dirt"
+      },
+      "type": "minecraft:simple_state_provider"
     }
   },
   "type": "minecraft:tree"
