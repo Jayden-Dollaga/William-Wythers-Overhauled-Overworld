@@ -1,0 +1,127 @@
+=== WWOO PORT TASK: Round <N> — Auto Fix from Error Log ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only — NEVER modify)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only — NEVER modify)
+SOURCE OF ERROR: [PASTE ERROR LOG FILENAME HERE e.g. Log_Error14.txt]
+TARGET: Minecraft Java 26.1.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== YOUR ONLY JOB THIS ROUND ===
+
+Read [SOURCE OF ERROR] and fix every error in it.
+That's it. Follow the protocol below exactly.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 1 — PARSE THE ERROR LOG ===
+
+Open [SOURCE OF ERROR] and extract:
+- Every file path mentioned
+- Every error message and line number
+- Group errors by type (Unbound values / No key / Unknown key / Failed to parse)
+
+Print a summary before doing anything else:
+  "Found X errors across Y files. Error types: [list]"
+
+DO NOT touch any files until this summary is printed and verified.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 2 — LOOK UP EACH ERROR IN ./26.1.2/ ===
+
+For EVERY error found in Step 1:
+  1. Find the equivalent file in ./26.1.2/data/minecraft/worldgen/
+  2. Check what the correct value/key/type should be
+  3. Only proceed if you find a 100% confirmed match
+
+If you cannot find the answer in ./26.1.2/ → mark ⚠️ UNCERTAIN and skip.
+NEVER guess. NEVER use memory. ALWAYS check ./26.1.2/ first.
+
+Common lookups:
+  "Unbound values in placed_feature: minecraft:X"
+    → check if minecraft:X exists in ./26.1.2/data/minecraft/worldgen/placed_feature/
+    → if not, find the new name by searching ./26.1.2/data/minecraft/worldgen/placed_feature/
+    → then find which datapack file references the old name and update it
+
+  "Unbound values in configured_feature: minecraft:X"
+    → same but check ./26.1.2/data/minecraft/worldgen/configured_feature/
+
+  "No key Y in MapLike"
+    → find a vanilla file of the same feature type in ./26.1.2/ and check if Y is required
+    → if Y is missing from vanilla → add it with the value from vanilla
+    → if Y doesn't exist in vanilla schema → the key was removed, delete it
+
+  "Unknown key Y"
+    → key was removed in 26.1.2, delete it
+
+  "Failed to parse"
+    → open the file and check for JSON syntax errors or invalid values
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 3 — FIX ONLY THE AFFECTED FILES ===
+
+Rules:
+  - Only touch files explicitly listed in the error log
+  - One fix at a time, verify after each file
+  - Do NOT scan broadly
+  - Do NOT modify ./26.1.2/ or ./WWOO_ORIGINAL/
+  - Do NOT delete any files
+  - If a file needs restoring → copy from ./WWOO_ORIGINAL/ (not delete)
+
+After fixing each file run:
+  python3 -c "import json; json.load(open('[filename]'))" 
+  → confirms the file is still valid JSON
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 4 — COMMIT EACH FILE ===
+
+One commit per file:
+  git add [filename]
+  git commit -m "fix(<dir>): <filename> — <what was fixed>"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 5 — INTEGRITY CHECK ===
+
+After ALL files are fixed:
+  python3 check_integrity.py
+
+If it reports missing or broken files:
+  python3 check_integrity.py --restore
+  git add data/
+  git commit -m "restore: integrity check after Round [N]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 6 — WRITE COMPLETION REPORT ===
+
+Create ROUND[N]_COMPLETION_REPORT.md with:
+  - Total errors found in log
+  - Files fixed (list each one)
+  - Files skipped with ⚠️ UNCERTAIN (list each one + reason)
+  - Integrity check result
+  - Git commit count this round
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== ZERO TOLERANCE RULES (READ BEFORE TOUCHING ANYTHING) ===
+
+1. NEVER modify ./26.1.2/ or ./WWOO_ORIGINAL/
+2. NEVER delete a key without confirming it was removed in ./26.1.2/
+3. NEVER rename a feature without confirming the new name exists in ./26.1.2/
+4. NEVER delete any files from data/
+5. NEVER touch files not listed in the error log
+6. NEVER guess — if unsure → ⚠️ UNCERTAIN and skip
+7. ALWAYS run check_integrity.py before finishing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== SKIP ENTIRELY ===
+
+Any error referencing these mod namespaces — not your problem:
+  terralith: / byg: / biomesoplenty: / tectonic: / regions_unexplored:
+  terrestria: / jermsy: / promenade: / traverse: / towns_and_towers:

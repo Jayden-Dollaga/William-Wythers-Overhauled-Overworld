@@ -1,0 +1,1019 @@
+>> [11:02:18] [Render thread/INFO]: Loaded 1515 recipes
+>> [11:02:18] [Render thread/INFO]: Loaded 1617 advancements
+>> [11:02:32] [Worker-Main-28/ERROR]: Registry loading errors:
+>> > Errors in registry minecraft:root:
+>> >> Errors in element minecraft:worldgen/configured_feature:
+>> java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/configured_feature]: [wythers:decor/patch_floating_lanterns, wythers:other/stone_forest_rock, minecraft:patch_berry_bush, minecraft:patch_bush, minecraft:patch_cactus, minecraft:patch_firefly_bush, minecraft:patch_large_fern, minecraft:patch_sugar_cane, minecraft:patch_sunflower, minecraft:patch_tall_grass, minecraft:patch_waterlily, wythers:vegetation/floating_vegetation_plants, wythers:vegetation/fungus/patch_morel, wythers:vegetation/giant_groundsel_121, wythers:vegetation/giant_groundsel_122, wythers:vegetation/giant_groundsel_123, wythers:vegetation/giant_groundsel_124, wythers:vegetation/giant_groundsel_131, wythers:vegetation/giant_groundsel_132, wythers:vegetation/giant_groundsel_133, wythers:vegetation/giant_groundsel_134, wythers:vegetation/giant_groundsel_135, wythers:vegetation/giant_groundsel_136, wythers:vegetation/giant_groundsel_137, wythers:vegetation/giant_groundsel_138, wythers:vegetation/giant_groundsel_221, wythers:vegetation/giant_groundsel_222, wythers:vegetation/giant_groundsel_223, wythers:vegetation/giant_groundsel_224, wythers:vegetation/giant_groundsel_231, wythers:vegetation/giant_groundsel_232, wythers:vegetation/giant_groundsel_233, wythers:vegetation/giant_groundsel_234, wythers:vegetation/giant_groundsel_235, wythers:vegetation/giant_groundsel_236, wythers:vegetation/giant_groundsel_237, wythers:vegetation/giant_groundsel_238, wythers:vegetation/giant_groundsel_331, wythers:vegetation/giant_groundsel_332, wythers:vegetation/giant_groundsel_333, wythers:vegetation/giant_groundsel_334, wythers:vegetation/giant_groundsel_335, wythers:vegetation/giant_groundsel_336, wythers:vegetation/giant_groundsel_337, wythers:vegetation/giant_groundsel_338, wythers:vegetation/melon_patch, wythers:vegetation/patch_wheat_farmed, wythers:vegetation/saguaro_1, wythers:vegetation/saguaro_2, wythers:vegetation/saguaro_3, wythers:vegetation/saguaro_4, wythers:vegetation/saguaro_5, wythers:vegetation/saguaro_6, wythers:vegetation/saguaro_7, wythers:vegetation/saguaro_8, wythers:vegetation/thin_jungle_bamboo_patch, minecraft:wildflowers_birch_forest]
+>> 	at knot//net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:300)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask.freezeRegistry(RegistryLoadTask.java:87)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$3(RegistryDataLoader.java:225)
+>> 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+>> 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+>> 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+>> 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:635)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:652)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:658)
+>> 	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:663)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:225)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> >> Errors in element minecraft:worldgen/placed_feature:
+>> java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/placed_feature]: [wythers:vegetation/local/trees/bayou, wythers:vegetation/local/trees/bayou_pine_forest]
+>> 	at knot//net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:300)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask.freezeRegistry(RegistryLoadTask.java:87)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$3(RegistryDataLoader.java:225)
+>> 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+>> 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+>> 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+>> 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:635)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:652)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:658)
+>> 	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:663)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:225)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> > Errors in registry minecraft:worldgen/configured_feature:
+>> >> Errors in element wythers:decor/patch_floating_lanterns:
+>> java.lang.IllegalStateException: Failed to parse wythers:decor/patch_floating_lanterns from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:decor/floating_lantern","placement":[{"type":"minecraft:count","count":5},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,1,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[1,1,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[-1,1,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,1,1],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,1,-1],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[1,0,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[-1,0,0],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,0,1],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,0,-1],"blocks":"minecraft:air"}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,1,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,2,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,3,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,-1,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,-2,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,-3,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,-4,0],"blocks":["minecraft:air"]}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:matching_fluids","offset":[0,-5,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-6,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-7,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-8,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-9,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-10,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-11,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-12,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-13,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-14,0],"fluids":"minecraft:water"},{"type":"minecraft:matching_fluids","offset":[0,-15,0],"fluids":"minecraft:water"}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:other/stone_forest_rock:
+>> java.lang.IllegalStateException: Failed to parse wythers:other/stone_forest_rock from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:forest_rock
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/floating_vegetation_plants:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/floating_vegetation_plants from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/mix_floating_vegetation_plants","placement":[{"type":"minecraft:count","count":48},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:height_range","height":{"absolute":62}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:azalea_leaves"]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/fungus/patch_morel:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/fungus/patch_morel from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/fungus/giant_morel","placement":[{"type":"minecraft:count","count":12},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:heightmap","heightmap":"WORLD_SURFACE_WG"},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:would_survive","state":{"Name":"minecraft:fern"}}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[1,0,0],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[0,0,1],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[0,0,-1],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[-1,0,0],"blocks":"minecraft:air"},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":"minecraft:air"}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_121:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_121 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_122:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_122 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_123:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_123 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_124:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_124 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_131:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_131 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_132:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_132 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_133:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_133 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_134:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_134 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_135:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_135 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_136:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_136 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_137:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_137 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_138:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_138 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_221:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_221 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_222:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_222 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_223:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_223 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_224:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_224 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_231:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_231 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_232:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_232 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_233:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_233 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_234:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_234 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_235:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_235 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_236:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_236 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_237:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_237 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_238:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_238 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_2","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_331:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_331 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_332:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_332 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_333:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_333 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_334:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_334 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,0],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,0],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_335:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_335 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_336:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_336 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_337:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_337 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/giant_groundsel_338:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/giant_groundsel_338 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[0,-2,-1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[0,-1,-1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_1","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,-2,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[1,-1,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/groundsel_arm_3","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":8,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,-1,1],"blocks":["minecraft:mangrove_wood"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:mangrove_roots"]}]}]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/melon_patch:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/melon_patch from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/melons_and_stems","placement":[{"type":"minecraft:count","count":24},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:heightmap","heightmap":"MOTION_BLOCKING_NO_LEAVES"},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:would_survive","state":{"Name":"minecraft:bamboo_sapling"}}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/patch_wheat_farmed:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/patch_wheat_farmed from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/mature_wheat","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:dirt_path"]}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_1:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_1 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,1,1],"blocks":["minecraft:cactus"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,1,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,2,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_2:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_2 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,1,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,1,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,2,1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_3:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_3 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,1,1],"blocks":["minecraft:cactus"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,1,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,2,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_4:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_4 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,1,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,1,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,2,1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_5:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_5 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,1,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,2,1],"blocks":["minecraft:cactus"]}]},{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,1,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,2,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_6:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_6 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_short_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,1,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,2,-1],"blocks":["minecraft:cactus"]}]},{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,1,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,2,1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_7:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_7 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,0,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,1,1],"blocks":["minecraft:cactus"]}]},{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,0,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,1,-1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/saguaro_8:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/saguaro_8 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/saguaro_arm_long_base","placement":[{"type":"minecraft:count","count":64},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:environment_scan","direction_of_search":"up","max_steps":6,"target_condition":{"type":"minecraft:any_of","predicates":[{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[1,0,-1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[1,1,-1],"blocks":["minecraft:cactus"]}]},{"type":"minecraft:all_of","predicates":[{"type":"minecraft:matching_blocks","offset":[0,0,0],"blocks":["minecraft:air"]},{"type":"minecraft:matching_blocks","offset":[-1,0,1],"blocks":["minecraft:bamboo_block"]},{"type":"minecraft:matching_blocks","offset":[-1,1,1],"blocks":["minecraft:cactus"]}]}]}}]}]; List must have contents
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/thin_jungle_bamboo_patch:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/thin_jungle_bamboo_patch from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key type in MapLike[{"feature":"wythers:vegetation/column/mix_thin_jungle_bamboo","placement":[{"type":"minecraft:count","count":48},{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:constant","value":0},"y_spread":{"type":"minecraft:constant","value":0}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:would_survive","state":{"Name":"minecraft:bamboo_sapling"}}},{"type":"minecraft:block_predicate_filter","predicate":{"type":"minecraft:matching_blocks","blocks":"minecraft:air"}}]}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> > Errors in registry minecraft:worldgen/placed_feature:
+>> >> Errors in element wythers:terrain/dripstone_spikes_5:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/dripstone_spikes_5 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Value provider too low: -16 [-20-20]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/feature/solid_clouds:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/feature/solid_clouds from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key blocks in MapLike[{"crack":{"base_crack_size":3,"crack_point_offset":2,"generate_crack_chance":0},"distribution_points":{"type":"minecraft:uniform","min_inclusive":3,"max_inclusive":3},"invalid_blocks_threshold":255,"layers":{"filling":2,"inner_layer":2,"middle_layer":2,"outer_layer":2},"max_gen_offset":15,"min_gen_offset":-15,"noise_multiplier":0.035,"placements_require_layer0_alternate":true,"point_offset":{"type":"minecraft:uniform","min_inclusive":5,"max_inclusive":8},"use_alternate_layer0_chance":0.085,"use_potential_placements_chance":0.35}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/feature/solid_clouds_dense:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/feature/solid_clouds_dense from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key blocks in MapLike[{"crack":{"base_crack_size":3,"crack_point_offset":2,"generate_crack_chance":0},"distribution_points":{"type":"minecraft:uniform","min_inclusive":3,"max_inclusive":3},"invalid_blocks_threshold":255,"layers":{"filling":4,"inner_layer":4,"middle_layer":4,"outer_layer":4},"max_gen_offset":15,"min_gen_offset":-15,"noise_multiplier":0.035,"placements_require_layer0_alternate":true,"point_offset":{"type":"minecraft:uniform","min_inclusive":5,"max_inclusive":8},"use_alternate_layer0_chance":0.085,"use_potential_placements_chance":0.35}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:terrain/tuff_spikes_5:
+>> java.lang.IllegalStateException: Failed to parse wythers:terrain/tuff_spikes_5 from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: Value provider too low: -16 [-20-20]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/patch/oasis_vegetation_moss:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/patch/oasis_vegetation_moss from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key y_spread in MapLike[{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:trapezoid","max":7,"min":-7,"plateau":0}}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/trees/bayou:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/trees/bayou from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key y_spread in MapLike[{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:trapezoid","max":8,"min":-8,"plateau":0}}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/local/trees/bayou_pine_forest:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/local/trees/bayou_pine_forest from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key y_spread in MapLike[{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:trapezoid","max":8,"min":-8,"plateau":0}}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> >> Errors in element wythers:vegetation/patch/grass_sudd_marsh:
+>> java.lang.IllegalStateException: Failed to parse wythers:vegetation/patch/grass_sudd_marsh from pack file/WWOO_NF
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:115)
+>> 	at knot//net.minecraft.resources.ResourceManagerRegistryLoadTask.lambda$load$2(ResourceManagerRegistryLoadTask.java:46)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$Container.applyOperation(ParallelMapTransform.java:89)
+>> 	at knot//net.minecraft.util.thread.ParallelMapTransform$BatchedTaskSplitter.lambda$createTask$0(ParallelMapTransform.java:213)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1825)
+>> 	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1817)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: java.lang.IllegalStateException: No key y_spread in MapLike[{"type":"minecraft:random_offset","xz_spread":{"type":"minecraft:trapezoid","max":7,"min":-7,"plateau":0}}]
+>> 	at knot//com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287)
+>> 	at knot//com.mojang.serialization.DataResult.getOrThrow(DataResult.java:81)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask$PendingRegistration.loadFromResource(RegistryLoadTask.java:113)
+>> 	... 9 more
+>> 
+>> [11:02:33] [Render thread/WARN]: Failed to validate datapack
+>> java.util.concurrent.CompletionException: net.minecraft.ReportedException: Registry Loading
+>> 	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+>> 	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359)
+>> 	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:670)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: net.minecraft.ReportedException: Registry Loading
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:297)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.logErrors(RegistryDataLoader.java:262)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:227)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.md9f86cf$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	... 5 more
+>> Caused by: java.lang.IllegalStateException: Failed to load registries due to errors
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:281)
+>> 	... 13 more

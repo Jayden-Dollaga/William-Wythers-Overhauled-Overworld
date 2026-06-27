@@ -1,0 +1,235 @@
+# Preview first — nothing gets written
+python3 reorganize_wwoo.py --dry-run
+
+# Actually do it
+python3 reorganize_wwoo.py
+
+
+
+
+
+git add . && git commit -m "Update"
+
+git add . && git commit -m "Upload All For Debugging"
+
+git push -u origin main --force
+
+
+
+
+git remote add origin https://github.com/Jayden-Dollaga/William-Wythers-Overhauled-Overworld.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+
+python3 check_integrity.py
+
+python3 check_integrity.py --restore
+
+
+
+
+python3 fix_wrong_matching_blocks.py --restore
+
+python3 fix_missing_types.py
+
+
+
+
+python3 fix_round8_unwrap.py
+
+python3 find_patch.py
+
+python3 fix_round9_nested.py
+
+
+python3 fix_groundsel.py
+
+
+python3git_audit_debunked.py
+
+
+python3 apply_fixes_from_26_2.py
+
+python3 apply_fixes_from_26_2v2.py
+
+
+python3 wwoo_schema_scan.py
+
+python3 wwoo_schema_scan_v2.py
+
+
+
+python3 git_audit_debunked.py
+    git revert <hash>
+
+python3 wwoo_schema_scan_v2.py
+
+.Blueprint_Prompt_Full_Sweep_v2.txt
+
+
+
+
+
+
+Yes, proceed. Remember your strict lookup rules: verify everything against ./26.1.2/ and use ⚠️ UNCERTAIN if you cannot find an exact match.
+
+
+
+Status check: You have paused mid-task. State exactly which step (Step 1 through Step 6) you are currently executing, which specific file you were actively processing, and your immediate next action. 
+Do not restart the round. Resume exactly from where you stopped while strictly maintaining the ./26.1.2/ Source of Truth and the Zero Tolerance Rules.
+
+
+
+
+
+
+
+
+Here is the error and the fix. You can use ./26.1.2 as a reference when fixing the code/bugs, and you can use ./WWOO_ORIGINAL to check for missing or removed files in the data folder. Also, commit all your changes and create an .md file detailing them.
+
+
+
+
+
+
+
+
+
+
+=== COGNITIVE AUDIT & RESUME COMMAND ===
+ERROR LOG: [INSERT ERROR LOG NAME, e.g., Log_Error15.txt]
+BLUEPRINT PROMPT: [INSERT BLUEPRINT NAME, e.g., Blueprint Prompt Template_2.txt]
+
+You have paused or experienced a state reset mid-task. Before making any further file modifications, you must perform a strict double-check of your current progress for Round [INSERT ROUND NUMBER].
+
+STEP A: AUDIT CURRENT PROGRESS
+1. Scan your recent actions and identify exactly which files from [ERROR LOG] have already been modified.
+2. Run `git status` and `git log -n 5` to review your recent commits for this round.
+3. Run `python3 check_integrity.py` right now to ensure the current workspace is structurally sound.
+
+STEP B: DOUBLE-CHECK COMPLIANCE
+For every file modified so far during this round, verify that:
+- No keys or names were guessed.
+- Every single change perfectly matches the exact schema found in the ./26.1.2/ Source of Truth.
+- If any modification is found to violate the Zero Tolerance Rules, roll it back immediately using `git checkout` or by restoring from ./WWOO_ORIGINAL/.
+
+STEP C: RESUME EXECUTION
+Once this audit is complete, print a brief status update to the chat:
+  "Audit complete. [X] files successfully fixed/committed so far. [Y] errors remaining in [ERROR LOG]."
+
+After printing the update, immediately resume execution of STEP 3 (Fixing the files) for the remaining errors, following the "[BLUEPRINT PROMPT]" instructions with absolute precision.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> python3 -c "          
+>> import os
+>> 
+>> renames = {
+>>     'minecraft:firefly_bush_near_water': 'minecraft:patch_firefly_bush_near_water',
+>>     'minecraft:firefly_bush_near_water_swamp': 'minecraft:patch_firefly_bush_near_water_swamp',
+>>     'minecraft:firefly_bush_swamp': 'minecraft:patch_firefly_bush_swamp',
+>>     'minecraft:large_fern': 'minecraft:patch_large_fern',
+>>     'minecraft:sugar_cane': 'minecraft:patch_sugar_cane',
+>>     'minecraft:sugar_cane_swamp': 'minecraft:patch_sugar_cane_swamp',
+>>     'minecraft:tall_grass_2': 'minecraft:patch_tall_grass_2',
+>>     'minecraft:waterlily': 'minecraft:patch_waterlily',
+>> }
+>> 
+>> fixed = 0
+>> for root, dirs, files in os.walk('data'):
+>>     for f in files:
+>>         if not f.endswith('.json'): continue
+>>         path = os.path.join(root, f)
+>>         try:
+>>             c = open(path, encoding='utf-8').read()
+>>             changed = False
+>>             for old, new in renames.items():
+>>                 if old in c:
+>>                     c = c.replace(old, new)
+>>                     changed = True
+>>             if changed:
+>>                 open(path, 'w', encoding='utf-8').write(c)
+>>                 fixed += 1
+>>                 print(f'Fixed: {path}')
+>>         except: pass
+>> print(f'Total: {fixed}')
+>> "
+Fixed: data\minecraft\tags\block\mangrove_roots_can_grow_through.json
+Fixed: data\minecraft\tags\blocks\mangrove_roots_can_grow_through.json
+Fixed: data\minecraft\worldgen\biome\birch_forest.json
+Fixed: data\minecraft\worldgen\biome\cherry_grove.json
+Fixed: data\minecraft\worldgen\biome\jungle.json
+Fixed: data\minecraft\worldgen\biome\lukewarm_ocean.json
+Fixed: data\minecraft\worldgen\biome\lush_caves.json
+Fixed: data\minecraft\worldgen\biome\old_growth_birch_forest.json
+Fixed: data\minecraft\worldgen\biome\old_growth_pine_taiga.json
+Fixed: data\minecraft\worldgen\biome\plains.json
+Fixed: data\minecraft\worldgen\biome\savanna.json
+Fixed: data\minecraft\worldgen\biome\savanna_plateau.json
+Fixed: data\minecraft\worldgen\biome\sparse_jungle.json
+Fixed: data\minecraft\worldgen\biome\sunflower_plains.json
+Fixed: data\minecraft\worldgen\biome\swamp.json
+Fixed: data\minecraft\worldgen\biome\windswept_savanna.json
+Fixed: data\wythers\tags\block\air_and_plants.json
+Fixed: data\wythers\tags\block\palm_tree_replaceable.json
+Fixed: data\wythers\tags\block\tree_replaceable.json
+Fixed: data\wythers\tags\blocks\air_and_plants.json
+Fixed: data\wythers\worldgen\configured_feature\vegetation\column\fern_cane.json
+Fixed: data\wythers\worldgen\configured_feature\vegetation\fungus\giant_pale_mosshroom.json
+Fixed: data\wythers\worldgen\placed_feature\farm\paddy_cane.json
+Fixed: data\wythers\worldgen\placed_feature\road\bamboo_jungle.json
+Fixed: data\wythers\worldgen\placed_feature\road\cherry_grove.json
+Fixed: data\wythers\worldgen\placed_feature\terrain\carver\river_water.json
+Fixed: data\wythers\worldgen\placed_feature\terrain\local\cherry_pools_edge.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\other\fungal_jungle_undergrowth.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\fern_cane.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_ferns_dense_forests.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_forest.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\large_fern_taiga.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\sugar_cane_desert.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\temperate_rainforest_undergrowth.json
+Fixed: data\wythers\worldgen\placed_feature\vegetation\local\patch\waterlily_dense.json
+Total: 35
+PS C:\Users\EnforcerX\Downloads\William Wythers' Overhauled Overworld v2.6.7> 
+
+
+
+
+
+
+
+OK, I don't want to import everything I did, but it's finally working. I asked the AI to import all the .json files from 26.1.2, which resulted in a full mass deletion. Then I told it to import everything back again, but to remove the errors. It's finally working now, but this time it has a lot of bugs. All the modifications that were on the deleted .json files are back, but now it just has a few huge generation bugs.  so uhh the devs made a wwoo 26.2 alpha.zip for 26.2 so i wanna use that for 26.1.2 wanna do it? and understand on how they did that.. here is the output 
+
+
+
+This is a really valuable analysis. Key takeaways:
+The big revelation: force_dirt, exclusion_radius_xz, waterlogged etc. are valid in 1.21 — Cristelknight kept them. Our earlier rounds that deleted them were wrong for 26.1.2 too since it's closer to 1.21 than 1.20.4.
+The fundamental problem: We've been trying to incrementally fix 2,700 files when the dev's actual solution was to delete 90% and rebuild clean.
+The good news: The 26.2 alpha can't be used directly, but it proves the approach — keep biomes, ditch most configured/placed features, rebuild only the essentials.
+
+Here's my honest recommendation Jayden:
+Option A — Keep patching the current port. You're actually loading now which is huge. The generation bugs are probably from the biome merge. Fixable.
+Option B — Start fresh using the 26.2 alpha as a guide. Copy the 54 biome files from 26.2 alpha, restore the tree features from WWOO_ORIGINAL (already 26.1.2 compatible), delete the broken vegetation/patch/terrain features, test. Cleaner result, maybe 2 days of work.
+Which direction do you want to go? The loading state you have now is actually closer to done than it looks — the generation bugs might just be the biome merge needing a tweak. What specifically looks wrong in-game?

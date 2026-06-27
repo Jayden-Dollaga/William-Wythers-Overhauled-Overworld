@@ -1,0 +1,54 @@
+{
+  "feature": "wythers:vegetation/tree/huge_spruce/rooted_dirt/2",
+  "placement": [
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 24
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      },
+      "y_spread": {
+        "type": "minecraft:constant",
+        "value": 0
+      }
+    },
+    {
+      "predicate": {
+        "predicates": [
+          {
+            "blocks": "#wythers:dirt",
+            "type": "minecraft:matching_blocks"
+          },
+          {
+            "predicate": {
+              "blocks": "#wythers:dirt",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "type": "minecraft:matching_blocks"
+            },
+            "type": "minecraft:not"
+          }
+        ],
+        "type": "minecraft:all_of"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

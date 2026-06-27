@@ -1,0 +1,270 @@
+=== WWOO PORT TASK: Round 5 — Clean Sweep ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only — NEVER modify)
+SOURCE OF ERROR: errors7.txt (Spyglass, 1,864 errors)
+ORIGINAL REFERENCE: ./WWOO_ORIGINAL/ (read-only — NEVER modify)
+TARGET: Minecraft Java 26.1.2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== CRITICAL SAFETY RULES ===
+
+1. NEVER delete or modify ./26.1.2/ or ./WWOO_ORIGINAL/
+2. NEVER delete a key without confirming it was removed in 26.1.2
+3. NEVER add a "type" field without confirming the exact value in ./26.1.2/
+4. NEVER delete any files from data/
+5. If uncertain → mark ⚠️ UNCERTAIN, log it, skip
+6. Run verification after EVERY category before moving on
+7. Run check_integrity.py as the VERY LAST STEP before finishing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 1 — Remove "dirt_provider" and "force_dirt" (262+259 errors)
+
+These keys were removed from tree configs in 26.1.2.
+Verify: ./26.1.2/data/minecraft/worldgen/configured_feature/oak.json
+→ Confirm neither key exists there before running.
+
+Write Python script to recursively delete ONLY these two keys from all JSON
+files in data/wythers/worldgen/configured_feature/ and
+data/minecraft/worldgen/configured_feature/
+
+def remove_keys(obj, keys):
+    if isinstance(obj, dict):
+        for k in keys: obj.pop(k, None)
+        for v in obj.values(): remove_keys(v, keys)
+    elif isinstance(obj, list):
+        for i in obj: remove_keys(i, keys)
+
+VERIFY: python3 -c "
+import os
+count = 0
+for root,dirs,files in os.walk('data'):
+    for f in files:
+        if f.endswith('.json'):
+            c = open(os.path.join(root,f),encoding='utf-8').read()
+            if 'dirt_provider' in c or 'force_dirt' in c: count+=1
+print('Remaining:', count)
+"
+→ Should be 0
+
+COMMIT: fix(configured_feature): remove dirt_provider and force_dirt — Cat1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 2 — Remove leaf blockstate inline keys (150 errors)
+
+Remove ONLY from inside "Properties" objects:
+  "waterlogged", "persistent", "distance"
+
+PATTERN — only delete when inside a "Properties" dict:
+def fix_properties(obj):
+    if isinstance(obj, dict):
+        if 'Properties' in obj and isinstance(obj['Properties'], dict):
+            for key in ['waterlogged','persistent','distance']:
+                obj['Properties'].pop(key, None)
+            if not obj['Properties']:
+                del obj['Properties']
+        for v in obj.values(): fix_properties(v)
+    elif isinstance(obj, list):
+        for i in obj: fix_properties(i)
+
+DO NOT remove these keys from anywhere outside "Properties" objects.
+
+VERIFY: 0 instances of waterlogged/persistent/distance inside Properties blocks
+COMMIT: fix(configured_feature): remove leaf blockstate keys — Cat2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 3 — Remove extra branch + can_grow_through keys (12 errors)
+
+AFFECTED KEYS (removed from tree trunk placers in 26.1.2):
+  "extra_branch_steps"
+  "extra_branch_length"
+  "place_branch_per_log_probability"
+  "can_grow_through"
+
+Verify each key is absent from the equivalent tree in
+./26.1.2/data/minecraft/worldgen/configured_feature/ before deleting.
+
+IMPORTANT: Only remove "can_grow_through" from trunk_placer objects.
+DO NOT remove it from mangrove_root_placer or mangrove_trunk_placer
+— those still require it in 26.1.2.
+
+Check context before deleting:
+  If parent object type contains "mangrove" → SKIP, do not remove
+  Otherwise → safe to remove
+
+VERIFY: 0 instances of extra_branch_steps/length/place_branch_per_log_probability
+COMMIT per file: fix(configured_feature): remove extra branch keys — Cat3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 4 — Fix wrong "type" fields added by previous run (259 errors)
+
+Previous Cat 4 added incorrect "type" values to some objects.
+These now show as "Unknown key type" in Spyglass.
+
+FIND affected files:
+  grep -rl '"type"' data/ where Spyglass reports "Unknown key type"
+
+Cross-reference errors7.txt to get exact file + line numbers.
+For each: open the file, find the object at that line, check if the
+"type" field belongs there by verifying against ./26.1.2/
+
+If the "type" field is wrong → remove it entirely.
+If the "type" field is missing but needed → add correct value from ./26.1.2/
+
+RULE: Only add "type" if you can find the EXACT same structure in ./26.1.2/
+and confirm the type value. If not found → ⚠️ UNCERTAIN, skip.
+
+VERIFY: Re-run Spyglass, "Unknown key type" should be 0
+COMMIT per file: fix(<dir>): fix wrong type field — Cat4
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 5 — Fix remaining matching_blocks missing "blocks" (58 errors)
+
+58 files still have objects typed as "minecraft:matching_blocks" but
+missing the required "blocks" key.
+
+FIND them:
+  python3 -c "
+  import os,json
+  for root,dirs,files in os.walk('data'):
+      for f in files:
+          if not f.endswith('.json'): continue
+          path=os.path.join(root,f)
+          try:
+              c=open(path,encoding='utf-8').read()
+              if 'matching_blocks' not in c: continue
+              data=json.loads(c)
+              def check(obj):
+                  if isinstance(obj,dict):
+                      if 'matching_blocks' in obj.get('type','') and 'blocks' not in obj:
+                          print(path)
+                      for v in obj.values(): check(v)
+                  elif isinstance(obj,list):
+                      for i in obj: check(i)
+              check(data)
+          except: pass
+  "
+
+FOR EACH FILE: restore from WWOO_ORIGINAL
+  import shutil
+  shutil.copy2('WWOO_ORIGINAL/' + rel_path, rel_path)
+
+These files were incorrectly modified by Cat 4 — original is correct.
+
+VERIFY: 0 matching_blocks objects missing blocks key
+COMMIT: restore(<dir>): fix wrong matching_blocks type — Cat5
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 6 — Fix remaining random_patch (110 errors)
+
+MANDATORY: Read before touching anything:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+  ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+
+FIND remaining random_patch files:
+  python3 -c "
+  import os
+  for root,dirs,files in os.walk('data'):
+      for f in files:
+          if not f.endswith('.json'): continue
+          path=os.path.join(root,f)
+          c=open(path,encoding='utf-8').read()
+          if '\"minecraft:random_patch\"' in c: print(path)
+  "
+
+FOR EACH FILE — check inner feature type:
+  If inner is "minecraft:simple_block" → convert using standard pattern
+  If inner is NOT simple_block → UNWRAP random_patch wrapper only,
+    keep inner feature intact, prepend count+random_offset to placement
+  If inner is a string reference → update placement only, keep reference
+  If uncertain → ⚠️ UNCERTAIN, skip
+
+DO NOT convert complex features (random_selector, block_column, tree)
+to simple_block. Only unwrap the random_patch wrapper.
+
+VERIFY: 0 random_patch references remaining
+COMMIT per file: fix(<dir>): convert random_patch — Cat6
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 7 — Fix IntProvider y_spread (4 errors)
+
+Find placed_feature files where random_offset has integer xz_spread or y_spread.
+Replace integer N with:
+  N == 0 → {"type": "minecraft:constant", "value": 0}
+  N != 0 → {"type": "minecraft:trapezoid", "max": N, "min": -N, "plateau": 0}
+
+Verify format against ./26.1.2/data/minecraft/worldgen/placed_feature/
+
+VERIFY: 0 integer spreads in random_offset modifiers
+COMMIT per file: fix(placed_feature): fix IntProvider — Cat7
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CATEGORY 8 — Fix "predicate" unknown key (3 errors)
+
+Find the 3 files from errors7.txt with "Unknown key predicate".
+For each: open the file and check the context of the "predicate" key.
+Verify against ./26.1.2/ whether "predicate" is valid in that context.
+If not valid → remove it.
+If valid → leave it.
+
+VERIFY: 0 "Unknown key predicate" errors
+COMMIT per file: fix(<dir>): remove invalid predicate key — Cat8
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTION ORDER:
+1. Cat 5 first (restore wrong matching_blocks — cleanest win)
+2. Cat 1 (dirt_provider/force_dirt — pure deletion)
+3. Cat 2 (leaf blockstate — scoped deletion)
+4. Cat 3 (extra branch keys — scoped deletion)
+5. Cat 7 (IntProvider — 4 files)
+6. Cat 8 (predicate — 3 files)
+7. Cat 4 (wrong type fields — careful)
+8. Cat 6 (random_patch — most complex, last)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SKIP ENTIRELY:
+All "Cannot find worldgen/biome" mod compat errors.
+./26.1.2/ and ./WWOO_ORIGINAL/ — read only, never touch.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINAL STEPS (REQUIRED):
+
+Step 1:
+  python3 check_integrity.py
+  → If issues found: python3 check_integrity.py --restore
+
+Step 2:
+  python3 check_wrong_types.py
+  → Should be 0
+
+Step 3 — Verification greps:
+  python3 -c "
+  import os
+  keys=['dirt_provider','force_dirt','random_patch','matching_blocks']
+  counts={k:0 for k in keys}
+  for root,dirs,files in os.walk('data'):
+      for f in files:
+          if not f.endswith('.json'): continue
+          c=open(os.path.join(root,f),encoding='utf-8',errors='replace').read()
+          for k in keys:
+              if k in c: counts[k]+=1
+  for k,v in counts.items(): print(f'{k}: {v}')
+  "
+
+Step 4 — Commit everything:
+  git add data/
+  git commit -m "fix(worldgen): Round 5 complete — Cat 1-8 fixes"
+
+Step 5 — Write ROUND5_COMPLETION_REPORT.md
