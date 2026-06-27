@@ -1,0 +1,9 @@
+{
+  "config": {
+    "features": [
+      "wythers:tree/willow/bottom",
+      "wythers:tree/willow/top"
+    ]
+  },
+  "type": "minecraft:sequence"
+}

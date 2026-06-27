@@ -1,0 +1,522 @@
+## Error Analysis for `error9.txt`
+
+### Criticality Levels
+- **🔴 Critical (severity 8)** – Syntax errors, missing required keys, out-of-range values. These will likely prevent the datapack from loading or cause features to fail.
+- **🟡 Warning (severity 4)** – Missing external references (biomes/features from other mods) or unknown keys. The datapack may still work if the required mods are installed, or if the keys are from custom features.
+
+---
+
+## 1. 🔴 Expected nothing
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json` (line 3, col 13 – line 8, col 4)
+
+**Affected files:**
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json`
+
+---
+
+## 2. 🔴 Expected numeric value to be at least -16 and at most 16
+- `data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json` (line 21, col 16–18) (line 22, col 16–19)
+- `data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json` (line 21, col 16–18) (line 22, col 16–19)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json`
+- `data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json`
+
+---
+
+## 3. 🔴 Missing key “blocks”
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json` (line 4, col 15–16)
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json` (line 4, col 15–16)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json`
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json`
+
+---
+
+## 4. 🔴 Missing key “y_spread”
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json` (line 141, col 5–6)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json` (line 91, col 5–6)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json` (line 91, col 5–6)
+- `data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json` (line 11, col 5–6)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json`
+- `data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json`
+
+---
+
+## 5. 🟡 Cannot find worldgen/feature “minecraft:forest_rock”
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json` (line 2, col 12–33)
+
+**Affected files:**
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json`
+
+---
+
+## 6. 🟡 Unknown key “dirt_provider”
+- `data/minecraft/worldgen/configured_feature/mangrove.json` (line 52, col 21–36)
+- `data/minecraft/worldgen/configured_feature/tall_mangrove.json` (line 52, col 21–36)
+- `data/minecraft/worldgen/placed_feature/mangrove_checked.json` (line 45, col 7–22)
+- `data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json` (line 45, col 7–22)
+
+**Affected files:**
+- `data/minecraft/worldgen/configured_feature/mangrove.json`
+- `data/minecraft/worldgen/configured_feature/tall_mangrove.json`
+- `data/minecraft/worldgen/placed_feature/mangrove_checked.json`
+- `data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json`
+
+---
+
+## 7. 🟡 Unknown key “force_dirt”
+- `data/minecraft/worldgen/configured_feature/mangrove.json` (line 76, col 21–33)
+- `data/minecraft/worldgen/configured_feature/tall_mangrove.json` (line 76, col 21–33)
+- `data/minecraft/worldgen/placed_feature/mangrove_checked.json` (line 69, col 7–19)
+- `data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json` (line 69, col 7–19)
+
+**Affected files:**
+- `data/minecraft/worldgen/configured_feature/mangrove.json`
+- `data/minecraft/worldgen/configured_feature/tall_mangrove.json`
+- `data/minecraft/worldgen/placed_feature/mangrove_checked.json`
+- `data/minecraft/worldgen/placed_feature/tall_mangrove_checked.json`
+
+---
+
+## 8. 🟡 Unknown key “type”
+- `data/minecraft/worldgen/configured_feature/ore_andesite.json` (line 8, col 9–15)
+- `data/minecraft/worldgen/configured_feature/ore_diorite.json` (line 8, col 9–15)
+- `data/minecraft/worldgen/configured_feature/ore_dirt.json` (line 8, col 9–15)
+- `data/minecraft/worldgen/configured_feature/ore_granite.json` (line 8, col 9–15)
+- `data/minecraft/worldgen/configured_feature/ore_gravel.json` (line 8, col 9–15)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json` (line 73, col 17–23) (line 131, col 13–19)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json` (line 53, col 17–23) (line 105, col 13–19)
+
+**Affected files:**
+- `data/minecraft/worldgen/configured_feature/ore_andesite.json`
+- `data/minecraft/worldgen/configured_feature/ore_diorite.json`
+- `data/minecraft/worldgen/configured_feature/ore_dirt.json`
+- `data/minecraft/worldgen/configured_feature/ore_granite.json`
+- `data/minecraft/worldgen/configured_feature/ore_gravel.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/savanna_mossy.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/oasis_palms.json`
+
+---
+
+## 9. 🟡 Cannot find worldgen/biome “...” (missing modded biomes)
+
+These errors appear in multiple tag files under `data/towns_and_towers/tags/worldgen/biome/has_structure/`. Below is the full list with line numbers and columns. The missing biomes are from mods like Terralith, Biomes O’ Plenty, BYG, Regions Unexplored, etc.
+
+### pillager_outpost_oriental.json
+- `terralith:desert_oasis` (line 5, col 20–42)
+- `terralith:warped_mesa` (line 9, col 20–41)
+- `biomesoplenty:lush_desert` (line 13, col 20–45)
+- `byg:windswept_desert` (line 17, col 20–40)
+- `byg:windswept_dunes` (line 21, col 20–39)
+- `wythers:desert_lakes` (line 25, col 20–40)
+- `wythers:desert_island` (line 29, col 20–41)
+- `terrestria:lush_desert` (line 33, col 20–42)
+- `jermsy:desert_hills` (line 37, col 20–39)
+
+### pillager_outpost_swedish.json
+- `terralith:snowy_maple_forest` (line 5, col 20–48)
+- `terralith:forested_highlands` (line 9, col 20–48)
+- `terralith:shield` (line 13, col 20–36)
+- `biomesoplenty:fir_clearing` (line 17, col 20–46)
+- `byg:maple_taiga` (line 21, col 20–35)
+- `byg:zelkova_forest` (line 25, col 20–38)
+- `biomesoplenty:snowy_fir_clearing` (line 29, col 20–52)
+- `biomesoplenty:snowy_maple_forest` (line 33, col 20–52)
+- `wythers:boreal_forest_red` (line 37, col 20–45)
+- `wythers:boreal_forest_yellow` (line 41, col 20–48)
+- `wythers:cold_island` (line 45, col 20–39)
+- `wythers:maple_mountains` (line 49, col 20–43)
+- `regions_unexplored:canadian_forest` (line 53, col 20–54)
+- `regions_unexplored:maple_forest` (line 57, col 20–51)
+- `regions_unexplored:boreal_forest` (line 61, col 20–52)
+- `regions_unexplored:golden_boreal_forest` (line 65, col 20–59)
+- `regions_unexplored:old_growth_boreal_forest` (line 69, col 20–63)
+
+### pillager_outpost_tudor.json
+- `terralith:highlands` (line 5, col 20–39)
+- `biomesoplenty:highland` (line 9, col 20–42)
+- `biomesoplenty:highland_moor` (line 13, col 20–47)
+- `wythers:cold_plains` (line 17, col 20–39)
+- `wythers:temperate_island` (line 21, col 20–44)
+- `tectonic:cold_plains` (line 25, col 20–40)
+
+### village_nilotic.json
+- `wythers:dripleaf_swamp` (line 5, col 20–42)
+- `wythers:flooded_jungle` (line 9, col 20–42)
+- `wythers:flooded_rainforest` (line 13, col 20–46)
+- `wythers:flooded_savanna` (line 17, col 20–43)
+- `wythers:flooded_temperate_rainforest` (line 21, col 20–56)
+- `wythers:pantanal` (line 25, col 20–36)
+
+### village_oriental.json
+- `terralith:desert_oasis` (line 5, col 20–42)
+- `terralith:warped_mesa` (line 9, col 20–41)
+- `biomesoplenty:lush_desert` (line 13, col 20–45)
+- `byg:windswept_desert` (line 17, col 20–40)
+- `byg:windswept_dunes` (line 21, col 20–39)
+- `wythers:desert_lakes` (line 25, col 20–40)
+- `wythers:desert_island` (line 29, col 20–41)
+- `terrestria:volcanic_island` (line 33, col 20–46)
+- `terrestria:lush_desert` (line 37, col 20–42)
+- `terrestria:oasis` (line 41, col 20–36)
+
+### village_swedish.json
+- (same list as pillager_outpost_swedish.json, lines 5–69)
+
+### village_tudor.json
+- (same list as pillager_outpost_tudor.json, lines 5–29)
+
+### pillager_outpost_badlands.json
+- `byg:autacama_desert` (line 6, col 20–39)
+- `terralith:arid_highlands` (line 10, col 20–44)
+- `terralith:red_oasis` (line 14, col 20–39)
+- `terralith:snowy_badlands` (line 18, col 20–44)
+- `wythers:badlands_desert` (line 22, col 20–43)
+- `wythers:kwongan_heath` (line 26, col 20–41)
+- `wythers:outback_desert` (line 30, col 20–42)
+- `wythers:red_desert` (line 34, col 20–38)
+- `tectonic:red_desert` (line 38, col 20–39)
+- `tectonic:red_desert_dunes` (line 42, col 20–45)
+- `jermsy:red_desert` (line 46, col 20–37)
+- `regions_unexplored:outback` (line 50, col 20–46)
+
+### pillager_outpost_beach.json
+- `biomesoplenty:dune_beach` (line 6, col 20–44)
+- `byg:rainbow_beach` (line 10, col 20–37)
+- `terralith:gravel_beach` (line 14, col 20–42)
+- `wythers:black_beach` (line 18, col 20–39)
+- `wythers:desert_beach` (line 22, col 20–40)
+- `wythers:gravelly_beach` (line 26, col 20–42)
+- `wythers:sand_dunes` (line 30, col 20–38)
+- `wythers:tropical_beach` (line 34, col 20–42)
+- `tectonic:cold_beach` (line 38, col 20–39)
+- `tectonic:lukewarm_beach` (line 42, col 20–43)
+- `jermsy:gravelly_beach` (line 46, col 20–41)
+- `regions_unexplored:grassy_beach` (line 50, col 20–51)
+- `regions_unexplored:gravel_beach` (line 54, col 20–51)
+
+### pillager_outpost_birch_forest.json
+- `terralith:birch_taiga` (line 7, col 20–41)
+- `terralith:temperate_highlands` (line 11, col 20–49)
+- `byg:aspen_forest` (line 15, col 20–36)
+- `byg:temperate_grove` (line 19, col 20–39)
+- `wythers:autumnal_birch_forest` (line 23, col 20–49)
+- `wythers:birch_taiga` (line 27, col 20–39)
+- `wythers:warm_birch_forest` (line 31, col 20–45)
+- `tectonic:autumn_birch_forest` (line 35, col 20–48)
+- `regions_unexplored:silver_birch_forest` (line 39, col 20–58)
+
+### pillager_outpost_desert.json
+- `byg:mojave_desert` (line 6, col 20–37)
+- `wythers:cactus_desert` (line 10, col 20–41)
+- `wythers:deep_desert` (line 14, col 20–39)
+- `wythers:temperate_rainforest` (line 18, col 20–48)
+- `wythers:wooded_desert` (line 22, col 20–41)
+- `tectonic:desert_dunes` (line 26, col 20–41)
+- `regions_unexplored:joshua_desert` (line 30, col 20–52)
+- `regions_unexplored:saguaro_desert` (line 34, col 20–53)
+
+### pillager_outpost_flower_forest.json
+- `terralith:cloud_forest` (line 9, col 20–42)
+- `terralith:sakura_grove` (line 13, col 20–42)
+- `promenade:white_cherry_oak_forest` (line 17, col 20–53)
+- `promenade:pink_cherry_oak_forest` (line 21, col 20–52)
+- `biomesoplenty:bamboo_grove` (line 25, col 20–46)
+- `biomesoplenty:cherry_blossom_grove` (line 29, col 20–54)
+- `byg:cherry_blossom_forest` (line 33, col 20–45)
+- `wythers:jade_highlands` (line 37, col 20–42)
+- `wythers:sakura_forest` (line 41, col 20–41)
+- `terrestria:japanese_maple_forest` (line 45, col 20–52)
+- `terrestria:sakura_forest` (line 49, col 20–44)
+- `jermsy:flower_fields` (line 53, col 20–40)
+- `regions_unexplored:cherry_hills` (line 57, col 20–51)
+
+### pillager_outpost_forest.json
+- `biomesoplenty:old_growth_woodland` (line 6, col 20–53)
+- `biomesoplenty:woodland` (line 10, col 20–42)
+- `byg:ebony_woods` (line 14, col 20–35)
+- `byg:red_oak_forest` (line 18, col 20–38)
+- `wythers:ancient_copper_beech_forest` (line 22, col 20–55)
+- `wythers:ancient_emerald_beech_forest` (line 26, col 20–56)
+- `wythers:ancient_golden_beech_forest` (line 30, col 20–55)
+- `wythers:ancient_moss_forest` (line 34, col 20–47)
+- `wythers:forest_edge` (line 38, col 20–39)
+- `terrestria:dense_woodlands` (line 42, col 20–46)
+- `jermsy:sparse_forest` (line 46, col 20–40)
+- `regions_unexplored:deciduous_forest` (line 50, col 20–55)
+- `regions_unexplored:willow_forest` (line 54, col 20–52)
+
+### pillager_outpost_grove.json
+- `byg:holing_peaks` (line 6, col 20–36)
+- `terralith:alpine_grove` (line 10, col 20–42)
+- `terralith:siberian_grove` (line 14, col 20–44)
+- `regions_unexplored:temperate_grove` (line 18, col 20–54)
+
+### pillager_outpost_jungle.json
+- `terralith:amethyst_rainforest` (line 6, col 20–49)
+- `terralith:rocky_jungle` (line 10, col 20–42)
+- `byg:tropical_rainforest` (line 14, col 20–43)
+- `biomesoplenty:rainforest` (line 18, col 20–44)
+- `biomesoplenty:rocky_rainforest` (line 22, col 20–50)
+- `wythers:eucalyptus_deanei_forest` (line 26, col 20–52)
+- `wythers:eucalyptus_jungle` (line 30, col 20–45)
+- `wythers:highland_tropical_rainforest` (line 34, col 20–56)
+- `wythers:jungle_island` (line 38, col 20–41)
+- `wythers:tropical_rainforest` (line 42, col 20–47)
+- `jermsy:rainforest` (line 46, col 20–37)
+- `regions_unexplored:old_growth_rainforest` (line 50, col 20–60)
+- `regions_unexplored:rainforest` (line 54, col 20–49)
+
+### pillager_outpost_meadow.json
+- `terralith:blooming_plateau` (line 6, col 20–46)
+- `biomesoplenty:clover_patch` (line 10, col 20–46)
+- `biomesoplenty:field` (line 14, col 20–39)
+- `wythers:highland_plains` (line 18, col 20–43)
+- `wythers:highlands` (line 22, col 20–37)
+- `tectonic:alpine_meadow` (line 26, col 20–42)
+- `regions_unexplored:highland_fields` (line 30, col 20–54)
+- `regions_unexplored:meadow` (line 34, col 20–45)
+
+### pillager_outpost_mushroom_fields.json
+- `biomesoplenty:mystic_forest` (line 6, col 20–47)
+- `biomesoplenty:raimbow_hills` (line 10, col 20–47)
+
+### pillager_outpost_old_growth_taiga.json
+- `terralith:siberian_taiga` (line 7, col 20–44)
+- `terralith:valley_clearing` (line 11, col 20–45)
+- `byg:black_forest` (line 15, col 20–36)
+- `byg:dacite_ridges` (line 18, col 20–37)
+- `wythers:ancient_taiga` (line 22, col 20–41)
+- `wythers:old_growth_taiga_swamp` (line 26, col 20–50)
+- `wythers:temperate_rainforest` (line 30, col 20–48)
+- `tectonic:old_growth_snowy_taiga` (line 34, col 20–51)
+- `regions_unexplored:redwoods` (line 38, col 20–47)
+- `regions_unexplored:sparse_redwoods` (line 42, col 20–54)
+
+### pillager_outpost_savanna.json
+- `terralith:shrubland` (line 6, col 20–39)
+- `terralith:savanna_slopes` (line 10, col 20–44)
+- `biomesoplenty:wooded_scrubland` (line 14, col 20–50)
+- `byg:araucaria_savanna` (line 18, col 20–41)
+- `byg:baobab_savanna` (line 22, col 20–38)
+- `byg:firecracker_shrubland` (line 26, col 20–45)
+- `wythers:eucalyptus_salubris_woodland` (line 30, col 20–56)
+- `wythers:eucalyptus_woodland` (line 34, col 20–47)
+- `wythers:sparse_eucalyptus_woodland` (line 38, col 20–54)
+- `wythers:wooded_savanna` (line 42, col 20–42)
+
+### pillager_outpost_snowy_beach.json
+- `byg:shattered_glacier` (line 6, col 20–41)
+- `byg:glacial_chasm` (line 10, col 20–37)
+
+### pillager_outpost_snowy_plains.json
+- `biomesoplenty:cold_desert` (line 6, col 20–45)
+- `biomesoplenty:muskeg` (line 10, col 20–40)
+- `byg:frosted_coniferous_forest` (line 14, col 20–49)
+- `wythers:deep_snowy_taiga` (line 18, col 20–44)
+- `wythers:snowy_bog` (line 22, col 20–37)
+- `wythers:snowy_fen` (line 26, col 20–37)
+- `wythers:snowy_tundra` (line 30, col 20–40)
+
+### pillager_outpost_snowy_slopes.json
+- `byg:zelkova_forest` (line 6, col 20–38)
+- `terralith:rocky_shrubland` (line 10, col 20–45)
+- `regions_unexplored:icy_heights` (line 14, col 20–50)
+
+### pillager_outpost_snowy_taiga.json
+- `terralith:forested_highlands` (line 6, col 20–48)
+- `terralith:shield` (line 10, col 20–36)
+- `terralith:shield_clearing` (line 14, col 20–45)
+- `terralith:snowy_maple_forest` (line 18, col 20–48)
+- `terralith:snowy_shield` (line 22, col 20–42)
+- `wythers:berry_bog` (line 26, col 20–37)
+- `wythers:crimson_tundra` (line 30, col 20–42)
+- `wythers:frigid_island` (line 34, col 20–41)
+- `wythers:frozen_island` (line 38, col 20–41)
+- `wythers:tundra` (line 42, col 20–34)
+- `tectonic:old_growth_snowy_taiga` (line 46, col 20–51)
+- `minecraft:snowy_coniferious_forest` (line 50, col 20–44) – note the misspelling “coniferious”
+- `jermsy:tundra` (line 54, col 20–33)
+- `regions_unexplored:cold_boreal_forest` (line 58, col 20–57)
+- `regions_unexplored:cold_deciduous_forest` (line 62, col 20–60)
+- `regions_unexplored:frozen_forest` (line 66, col 20–52)
+- `regions_unexplored:frozen_tundra` (line 70, col 20–52)
+
+### pillager_outpost_sparse_jungle.json
+- `terralith:tropical_jungle` (line 6, col 20–45)
+- `biomesoplenty:floodplain` (line 10, col 20–44)
+- `biomesoplenty:tropics` (line 14, col 20–41)
+- `byg:jacaranda_forest` (line 18, col 20–40)
+- `wythers:sandy_jungle` (line 22, col 20–40)
+- `wythers:sparse_bamboo_jungle` (line 26, col 20–48)
+- `wythers:sparse_eucalyptus_jungle` (line 30, col 20–52)
+- `wythers:tropical_forest` (line 34, col 20–43)
+- `wythers:tropical_island` (line 38, col 20–43)
+- `traverse:flatlands` (line 42, col 20–38)
+- `terrestria:volcanic_island` (line 46, col 20–46) (duplicate line 50)
+- `regions_unexplored:eucalyptus_forest` (line 54, col 20–56)
+- `regions_unexplored:tropics` (line 58, col 20–46)
+
+### pillager_outpost_sunflower_plains.json
+- `terralith:steppe` (line 7, col 20–36)
+- `biomesoplenty:pasture` (line 11, col 20–41)
+- `byg:prairie` (line 15, col 20–31)
+- `byg:autumnal_valley` (line 19, col 20–39)
+- `biomesoplenty:pumpkin_patch` (line 23, col 20–47)
+- `regions_unexplored:barley_fields` (line 27, col 20–52)
+- `regions_unexplored:flower_field` (line 31, col 20–51)
+- `regions_unexplored:pumpkin_fields` (line 35, col 20–53)
+
+### pillager_outpost_swamp.json
+- `terralith:ice_marsh` (line 6, col 20–39)
+- `terralith:orchid_swamp` (line 10, col 20–42)
+- `biomesoplenty:wetland` (line 14, col 20–41)
+- `byg:cypress_swamplands` (line 18, col 20–42)
+- `wythers:ancient_mossy_swamp` (line 22, col 20–47)
+- `wythers:ancient_oak_swamp` (line 26, col 20–45)
+- `wythers:marsh` (line 30, col 20–33)
+- `wythers:waterlilly_swamp` (line 34, col 20–44)
+- `regions_unexplored:fen` (line 38, col 20–42)
+
+### pillager_outpost_taiga.json
+- `biomesoplenty:coniferous_forest` (line 6, col 20–51)
+- `biomesoplenty:crag` (line 10, col 20–38)
+- `biomesoplenty:fir_clearing` (line 14, col 20–46)
+- `byg:autumnal_taiga` (line 18, col 20–38)
+- `byg:black_forest` (line 22, col 20–36)
+- `byg:canadian_shield` (line 26, col 20–39)
+- `byg:coniferous_forest` (line 30, col 20–41)
+- `byg:dacite_ridges` (line 34, col 20–37)
+- `terralith:alpine_highlands` (line 38, col 20–46)
+- `terralith:lush_valley` (line 42, col 20–41)
+- `terralith:shield_clearing` (line 46, col 20–45)
+- `terralith:shield` (line 50, col 20–36)
+- `terralith:yosemite_lowlands` (line 54, col 20–47)
+- `wythers:forested_highlands` (line 58, col 20–46)
+- `wythers:larch_taiga` (line 62, col 20–39)
+- `wythers:pine_barrens` (line 66, col 20–40)
+- `traverse:coniferious_forest` (line 70, col 20–47)
+- `terrestria:snowy_hemlock_forest` (line 74, col 20–51)
+- `terrestria:hemlock_rainforest` (line 78, col 20–49)
+- `regions_unexplored:pine_forest` (line 82, col 20–50)
+- `regions_unexplored:pine_slopes` (line 86, col 20–50)
+
+### pillager_outpost_wooded_badlands.json
+- `terralith:bryce_canyon` (line 6, col 20–42)
+- `terralith:painted_mountains` (line 10, col 20–47)
+- `byg:sierra_badlands` (line 14, col 20–39)
+- `wythers:chaparral` (line 18, col 20–37)
+- `terrestria:outback` (line 22, col 20–38)
+- `regions_unexplored:dry_bushland` (line 26, col 20–51)
+- `regions_unexplored:prairie` (line 30, col 20–46)
+- `regions_unexplored:wooded_arid_mountains` (line 34, col 20–60)
+
+### shallow_oceans_wreckage.json
+- `tectonic:lagoon` (line 9, col 20–35)
+
+### village_badlands_pueblo.json
+- (same as pillager_outpost_badlands.json lines 6–50)
+
+### village_beach_lighthouse.json
+- (same as pillager_outpost_beach.json lines 6–54)
+
+### village_birch_forest_romanian.json
+- (same as pillager_outpost_birch_forest.json lines 7–39)
+
+### village_flower_forest_japanese.json
+- (same as pillager_outpost_flower_forest.json lines 9–57)
+
+### village_forest_ruins.json
+- (same as pillager_outpost_forest.json lines 6–54, plus extra at lines 42 and 46 for `terrestria:cypress_forest` and `terrestria:dense_woodlands` – see original log)
+
+### village_grove_villager_outpost.json
+- `terralith:siberian_grove` (line 6, col 20–44)
+- `regions_unexplored:temperate_grove` (line 10, col 20–54)
+
+### village_jungle_tribal.json
+- (same as pillager_outpost_jungle.json lines 6–54)
+
+### village_meadow_swiss.json
+- (same as pillager_outpost_meadow.json lines 6–34)
+
+### village_old_growth_taiga_polish.json
+- (same as pillager_outpost_old_growth_taiga.json lines 7–42)
+
+### village_snowy_slopes_inn.json
+- `byg:howling_peaks` (line 6, col 20–37)
+- `terralith:alpine_grove` (line 10, col 20–42)
+- `regions_unexplored:icy_heights` (line 14, col 20–50)
+
+### village_snowy_taiga_viking.json
+- (same as pillager_outpost_snowy_taiga.json lines 6–70)
+
+### village_sparse_jungle_polynesian.json
+- (same as pillager_outpost_sparse_jungle.json lines 6–58)
+
+### village_sunflower_plains_farm.json
+- (same as pillager_outpost_sunflower_plains.json lines 7–35)
+
+### village_swamp_boat.json
+- (same as pillager_outpost_swamp.json lines 6–38)
+
+### village_wooded_badlands_tipi.json
+- `terralith:bryce_canyon` (line 6, col 20–42)
+- `terralith:painted_mountains` (line 10, col 20–47)
+- `byg:sierra_badlands` (line 14, col 20–39)
+- `regions_unexplored:dry_bushland` (line 18, col 20–51)
+- `regions_unexplored:prairie` (line 22, col 20–46)
+- `regions_unexplored:wooded_arid_mountains` (line 26, col 20–60)
+
+---
+
+**Affected files (all tag files):**
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/pillager_outpost_oriental.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/pillager_outpost_swedish.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/pillager_outpost_tudor.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/village_nilotic.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/village_oriental.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/village_swedish.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/exclusives/village_tudor.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_badlands.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_beach.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_birch_forest.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_desert.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_flower_forest.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_forest.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_grove.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_jungle.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_meadow.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_mushroom_fields.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_old_growth_taiga.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_savanna.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_snowy_beach.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_snowy_plains.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_snowy_slopes.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_snowy_taiga.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_sparse_jungle.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_sunflower_plains.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_swamp.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_taiga.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/pillager_outpost_wooded_badlands.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/shallow_oceans_wreckage.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_badlands_pueblo.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_beach_lighthouse.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_birch_forest_romanian.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_flower_forest_japanese.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_forest_ruins.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_grove_villager_outpost.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_jungle_tribal.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_meadow_swiss.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_old_growth_taiga_polish.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_snowy_slopes_inn.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_snowy_taiga_viking.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_sparse_jungle_polynesian.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_sunflower_plains_farm.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_swamp_boat.json`
+- `data/towns_and_towers/tags/worldgen/biome/has_structure/village_wooded_badlands_tipi.json`

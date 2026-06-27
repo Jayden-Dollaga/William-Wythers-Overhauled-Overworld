@@ -1,0 +1,285 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -5,
+            "amplitudes": [
+              2,
+              3
+            ]
+          },
+          "scale": 1,
+          "seed": -817103696,
+          "states": [
+            {
+              "Name": "minecraft:calcite"
+            },
+            {
+              "Name": "minecraft:calcite"
+            },
+            {
+              "Name": "minecraft:cinnabar"
+            },
+            {
+              "Name": "minecraft:cinnabar"
+            }
+          ]
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:any_of",
+                  "predicates": [
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          1,
+                          1,
+                          1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          1,
+                          1,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          1,
+                          1,
+                          -1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          -1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          -1,
+                          1,
+                          1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          -1,
+                          1,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "minecraft:not",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          -1,
+                          1,
+                          -1
+                        ],
+                        "blocks": [
+                          "minecraft:air",
+                          "minecraft:calcite",
+                          "minecraft:cinnabar",
+                          "minecraft:white_concrete_powder"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:red_sand"
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                1,
+                0
+              ],
+              "blocks": "minecraft:air"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:white_concrete_powder"
+                },
+                {
+                  "Name": "minecraft:calcite"
+                },
+                {
+                  "Name": "minecraft:cinnabar"
+                },
+                {
+                  "Name": "minecraft:cinnabar"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "radius": 8,
+      "half_height": 4,
+      "target": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:smooth_red_sandstone",
+          "red_sand"
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": -51
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": "dripstone_caves"
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 58
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "river",
+          "wooded_badlands"
+        ]
+      }
+    }
+  ]
+}

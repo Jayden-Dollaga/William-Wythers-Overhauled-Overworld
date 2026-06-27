@@ -1,0 +1,105 @@
+{
+  "feature": {
+    "type": "minecraft:vegetation_patch",
+    "config": {
+      "surface": "floor",
+      "depth": 1,
+      "vertical_range": 1,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0.5,
+      "vegetation_chance": 1,
+      "xz_radius": 8,
+      "replaceable": [
+        "minecraft:packed_ice"
+      ],
+      "ground_state": {
+        "type": "minecraft:noise_provider",
+        "noise": {
+          "firstOctave": -6,
+          "amplitudes": [
+            3,
+            4
+          ]
+        },
+        "scale": 1,
+        "seed": 1234,
+        "states": [
+          {
+            "Name": "minecraft:packed_ice"
+          },
+          {
+            "Name": "minecraft:packed_ice"
+          },
+          {
+            "Name": "minecraft:void_air"
+          },
+          {
+            "Name": "minecraft:cave_air"
+          },
+          {
+            "Name": "minecraft:void_air"
+          },
+          {
+            "Name": "minecraft:packed_ice"
+          },
+          {
+            "Name": "minecraft:packed_ice"
+          }
+        ]
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "state_provider": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:water"
+              }
+            },
+            "radius": 2,
+            "half_height": 2,
+            "target": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:packed_ice"
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "blocks": "minecraft:cave_air"
+                }
+              ]
+            }
+          },
+          "type": "minecraft:disk"
+        },
+        "placement": []
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 1
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 80
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": "deep_frozen_ocean"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:danakil/valleys",
+        "wythers:danakil/valley_pools"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

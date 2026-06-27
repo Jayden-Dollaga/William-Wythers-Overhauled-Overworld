@@ -1,0 +1,266 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:water",
+            "Properties": {
+              "level": "0"
+            }
+          }
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                -1,
+                0
+              ],
+              "blocks": "minecraft:smooth_sandstone"
+            },
+            "then": {
+              "type": "minecraft:simple_state_provider",
+              "state": {
+                "Name": "minecraft:fire_coral",
+                "Properties": {
+                  "waterlogged": "true"
+                }
+              }
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                1,
+                0,
+                0
+              ],
+              "blocks": [
+                "minecraft:smooth_sandstone"
+              ]
+            },
+            "then": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 3,
+                  "data": {
+                    "Name": "minecraft:fire_coral_wall_fan",
+                    "Properties": {
+                      "facing": "west",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 9,
+                  "data": {
+                    "Name": "minecraft:water",
+                    "Properties": {
+                      "level": "0"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:cinnabar_slab",
+                    "Properties": {
+                      "type": "bottom",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                -1,
+                0,
+                0
+              ],
+              "blocks": [
+                "minecraft:smooth_sandstone"
+              ]
+            },
+            "then": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 3,
+                  "data": {
+                    "Name": "minecraft:fire_coral_wall_fan",
+                    "Properties": {
+                      "facing": "east",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 9,
+                  "data": {
+                    "Name": "minecraft:water",
+                    "Properties": {
+                      "level": "0"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:cinnabar_slab",
+                    "Properties": {
+                      "type": "bottom",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                1
+              ],
+              "blocks": [
+                "minecraft:smooth_sandstone"
+              ]
+            },
+            "then": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 3,
+                  "data": {
+                    "Name": "minecraft:fire_coral_wall_fan",
+                    "Properties": {
+                      "facing": "north",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 9,
+                  "data": {
+                    "Name": "minecraft:water",
+                    "Properties": {
+                      "level": "0"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:cinnabar_slab",
+                    "Properties": {
+                      "type": "bottom",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "offset": [
+                0,
+                0,
+                -1
+              ],
+              "blocks": [
+                "minecraft:smooth_sandstone"
+              ]
+            },
+            "then": {
+              "type": "minecraft:weighted_state_provider",
+              "entries": [
+                {
+                  "weight": 3,
+                  "data": {
+                    "Name": "minecraft:fire_coral_wall_fan",
+                    "Properties": {
+                      "facing": "south",
+                      "waterlogged": "true"
+                    }
+                  }
+                },
+                {
+                  "weight": 9,
+                  "data": {
+                    "Name": "minecraft:water",
+                    "Properties": {
+                      "level": "0"
+                    }
+                  }
+                },
+                {
+                  "weight": 1,
+                  "data": {
+                    "Name": "minecraft:cinnabar_slab",
+                    "Properties": {
+                      "type": "bottom",
+                      "waterlogged": "true"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "type": "minecraft:rule_based_state_provider"
+      },
+      "radius": 8,
+      "half_height": 0,
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:water"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 15
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 35
+        },
+        "max_inclusive": {
+          "absolute": 55
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

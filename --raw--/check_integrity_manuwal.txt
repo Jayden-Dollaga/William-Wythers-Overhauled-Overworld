@@ -1,0 +1,13 @@
+Yeah absolutely, save it as a reusable checker script. Here's a cleaner version you can run anytime:Drop this in your datapack root alongside `pack.mcmeta`. Two modes:
+
+```cmd
+python3 check_integrity.py
+```
+Just checks and reports — doesn't touch anything.
+
+```cmd
+python3 check_integrity.py --restore
+```
+Checks AND auto-restores everything broken from `WWOO_ORIGINAL`.
+
+Run it after every agent round before testing in-game. If it finds issues, `--restore` fixes them, then commit and you're good. No more surprises.

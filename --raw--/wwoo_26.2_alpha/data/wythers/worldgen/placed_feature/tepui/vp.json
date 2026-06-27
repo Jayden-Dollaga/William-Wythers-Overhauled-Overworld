@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:tepui/vp_1",
+        "wythers:tepui/vp_2",
+        "wythers:tepui/vp_3"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

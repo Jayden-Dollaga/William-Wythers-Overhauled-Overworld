@@ -1,0 +1,17 @@
+============================================================
+Fix giant_groundsel and complex random_patch files
+============================================================
+
+Found 0 top-level random_patch files
+
+
+============================================================
+SUMMARY
+============================================================
+  Fixed: 0
+  Remaining random_patch: 8
+    data\wythers\worldgen\configured_feature\vegetation\saguaro_1.json
+    data\wythers\worldgen\configured_feature\vegetation\saguaro_2.json
+    data\wythers\worldgen\configured_feature\vegetation\saguaro_3.json
+    data\wythers\worldgen\configured_feature\vegetation\saguaro_4.json
+    data\wythers\worldgen\configured_feature\vegetation\saguaro_5.json

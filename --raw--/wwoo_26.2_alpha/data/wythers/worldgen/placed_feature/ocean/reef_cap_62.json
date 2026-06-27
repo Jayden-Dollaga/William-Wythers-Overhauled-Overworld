@@ -1,0 +1,160 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:noise_provider",
+          "noise": {
+            "firstOctave": -6,
+            "amplitudes": [
+              2,
+              2,
+              2
+            ]
+          },
+          "scale": 1,
+          "seed": -817103696,
+          "states": [
+            {
+              "Name": "minecraft:dead_brain_coral_block"
+            },
+            {
+              "Name": "minecraft:dead_brain_coral_block"
+            },
+            {
+              "Name": "minecraft:dead_brain_coral_block"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            },
+            {
+              "Name": "minecraft:sand"
+            }
+          ]
+        },
+        "rules": []
+      },
+      "target": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:water",
+              "minecraft:seagrass",
+              "minecraft:tall_seagrass",
+              "minecraft:kelp",
+              "minecraft:dead_brain_coral_block",
+              "minecraft:dead_bubble_coral_block",
+              "minecraft:dead_fire_coral_block",
+              "minecraft:dead_horn_coral_block",
+              "minecraft:dead_tube_coral_block"
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              1,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              -1,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              0,
+              -1,
+              1
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              0,
+              -1,
+              -1
+            ]
+          },
+          {
+            "type": "minecraft:matching_biomes",
+            "biomes": [
+              "minecraft:lukewarm_ocean"
+            ]
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 5,
+        "max_inclusive": 7
+      },
+      "half_height": 0
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 10
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 55
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:solid"
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 62
+        },
+        "max_inclusive": {
+          "absolute": 62
+        }
+      }
+    }
+  ]
+}

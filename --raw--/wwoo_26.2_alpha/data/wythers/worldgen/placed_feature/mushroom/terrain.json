@@ -1,0 +1,220 @@
+{
+  "feature": {
+    "config": {
+      "surface": "floor",
+      "depth": 10,
+      "vertical_range": 10,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0.5,
+      "vegetation_chance": 1,
+      "xz_radius": 5,
+      "replaceable": [
+        "minecraft:mycelium",
+        "minecraft:dead_bubble_coral_block"
+      ],
+      "ground_state": {
+        "type": "minecraft:noise_provider",
+        "noise": {
+          "firstOctave": -6,
+          "amplitudes": [
+            2,
+            3
+          ]
+        },
+        "scale": 1,
+        "seed": -817103696,
+        "states": [
+          {
+            "Name": "minecraft:dead_bubble_coral_block"
+          },
+          {
+            "Name": "minecraft:dead_bubble_coral_block"
+          },
+          {
+            "Name": "minecraft:dead_bubble_coral_block"
+          },
+          {
+            "Name": "minecraft:dead_bubble_coral_block"
+          },
+          {
+            "Name": "minecraft:mycelium"
+          },
+          {
+            "Name": "minecraft:mycelium"
+          },
+          {
+            "Name": "minecraft:mycelium"
+          },
+          {
+            "Name": "minecraft:mycelium"
+          },
+          {
+            "Name": "minecraft:mycelium"
+          }
+        ]
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "state_provider": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -6,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:dead_bubble_coral_block"
+                },
+                {
+                  "Name": "minecraft:dead_bubble_coral_block"
+                },
+                {
+                  "Name": "minecraft:dead_bubble_coral_block"
+                },
+                {
+                  "Name": "minecraft:dead_bubble_coral_block"
+                },
+                {
+                  "Name": "minecraft:air"
+                },
+                {
+                  "Name": "minecraft:air"
+                },
+                {
+                  "Name": "minecraft:air"
+                },
+                {
+                  "Name": "minecraft:air"
+                },
+                {
+                  "Name": "minecraft:air"
+                }
+              ]
+            },
+            "radius": 0,
+            "half_height": 4,
+            "target": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ]
+                }
+              ]
+            }
+          },
+          "type": "minecraft:disk"
+        },
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 15
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "MOTION_BLOCKING"
+          },
+          {
+            "type": "minecraft:environment_scan",
+            "direction_of_search": "up",
+            "max_steps": 30,
+            "target_condition": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:solid",
+                  "offset": [
+                    0,
+                    -4,
+                    0
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -3,
+                    0
+                  ],
+                  "blocks": "minecraft:air"
+                },
+                {
+                  "type": "minecraft:not",
+                  "predicate": {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          1,
+                          -4,
+                          0
+                        ],
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          -1,
+                          -4,
+                          0
+                        ],
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -4,
+                          1
+                        ],
+                        "blocks": "minecraft:air"
+                      },
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -4,
+                          -1
+                        ],
+                        "blocks": "minecraft:air"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "type": "minecraft:vegetation_patch"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 15
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    }
+  ]
+}

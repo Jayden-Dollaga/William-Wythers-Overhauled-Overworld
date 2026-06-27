@@ -1,0 +1,56 @@
+>> [10:30:10] [Render thread/INFO]: Loaded 1515 recipes
+>> [10:30:10] [Render thread/INFO]: Loaded 1617 advancements
+>> [10:30:53] [Worker-Main-42/ERROR]: Registry loading errors:
+>> > Errors in registry minecraft:root:
+>> >> Errors in element minecraft:worldgen/configured_feature:
+>> java.lang.IllegalStateException: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/configured_feature]: [minecraft:patch_berry_bush, minecraft:patch_bush, minecraft:patch_cactus, minecraft:patch_firefly_bush, minecraft:patch_large_fern, minecraft:patch_sugar_cane, minecraft:patch_sunflower, minecraft:patch_tall_grass, minecraft:patch_waterlily, minecraft:wildflowers_birch_forest]
+>> 	at knot//net.minecraft.core.MappedRegistry.freeze(MappedRegistry.java:300)
+>> 	at knot//net.minecraft.resources.RegistryLoadTask.freezeRegistry(RegistryLoadTask.java:87)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$3(RegistryDataLoader.java:225)
+>> 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+>> 	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+>> 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+>> 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:635)
+>> 	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:291)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:652)
+>> 	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:658)
+>> 	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:663)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:225)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mda828fc$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mda828fc$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> 
+>> [10:30:53] [Render thread/WARN]: Failed to validate datapack
+>> java.util.concurrent.CompletionException: net.minecraft.ReportedException: Registry Loading
+>> 	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+>> 	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359)
+>> 	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:670)
+>> 	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:504)
+>> 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511)
+>> 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450)
+>> 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019)
+>> 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+>> Caused by: net.minecraft.ReportedException: Registry Loading
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:297)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.logErrors(RegistryDataLoader.java:262)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.lambda$load$2(RegistryDataLoader.java:227)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mda828fc$fabric-registry-sync-v0$lambda$thenApplyAsync$1$1(RegistryDataLoader.java:565)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.callWithoutScope(ScopedValueContainer.java:162)
+>> 	at java.base/jdk.internal.vm.ScopedValueContainer.call(ScopedValueContainer.java:147)
+>> 	at java.base/java.lang.ScopedValue$Carrier.call(ScopedValue.java:419)
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.mda828fc$fabric-registry-sync-v0$lambda$thenApplyAsync$0$0(RegistryDataLoader.java:565)
+>> 	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:667)
+>> 	... 5 more
+>> Caused by: java.lang.IllegalStateException: Failed to load registries due to errors
+>> 	at knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:281)
+>> 	... 13 more

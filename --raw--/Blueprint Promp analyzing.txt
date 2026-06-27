@@ -1,0 +1,157 @@
+=== WWOO PORT TASK: Analyze wwoo_26.2_alpha — Learn the Dev's Approach ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack
+FOLDER TO ANALYZE: ./wwoo_26.2_alpha/ (read-only — DO NOT modify)
+REFERENCE: ./26.1.2/ (read-only — DO NOT modify)
+CURRENT WORKING PORT: ./data/ (this is what we're trying to fix)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== GOAL ===
+
+Cristelknight made an official 26.2 alpha of WWOO. We want to understand
+HOW they solved the same schema migration problems we've been fighting.
+This is a READ-ONLY analysis session — no files are modified.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 1 — MAP THE FOLDER STRUCTURE ===
+
+Run:
+  find wwoo_26.2_alpha -name "*.json" | wc -l
+  ls wwoo_26.2_alpha/data/
+
+Print:
+  - Total JSON files in 26.2 alpha
+  - Top-level namespace folders (minecraft, wythers, etc.)
+  - Any new folders/namespaces not present in WWOO_ORIGINAL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 2 — CHECK HOW THEY HANDLED random_patch ===
+
+Run:
+  grep -r "minecraft:random_patch" wwoo_26.2_alpha/ --include="*.json" | wc -l
+
+If 0 → they removed it entirely. Check how:
+  Compare a file that used random_patch in WWOO_ORIGINAL with the
+  equivalent file in wwoo_26.2_alpha — what did they replace it with?
+
+  Example files to compare:
+    WWOO_ORIGINAL/data/wythers/worldgen/configured_feature/vegetation/patch/morning_glory.json
+    wwoo_26.2_alpha/data/wythers/worldgen/configured_feature/vegetation/patch/morning_glory.json
+    (or whatever equivalent exists)
+
+Print:
+  - Count of random_patch references in 26.2 alpha
+  - What feature type replaced it (simple_block? vegetation_patch? deleted?)
+  - Example before/after diff for 1 patch file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 3 — CHECK HOW THEY HANDLED TREE KEYS ===
+
+Run these checks on wwoo_26.2_alpha/:
+  grep -r "dirt_provider" wwoo_26.2_alpha/ --include="*.json" | wc -l
+  grep -r "force_dirt" wwoo_26.2_alpha/ --include="*.json" | wc -l
+  grep -r "exclusion_radius_xz" wwoo_26.2_alpha/ --include="*.json" | wc -l
+  grep -r "waterlogged" wwoo_26.2_alpha/ --include="*.json" | wc -l
+  grep -r "extra_branch_steps" wwoo_26.2_alpha/ --include="*.json" | wc -l
+
+Print count for each. If any are 0 → they removed them.
+If any are non-zero → they kept them. Check the context to understand why.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 4 — CHECK BIOME FILE STRUCTURE ===
+
+Compare a biome file across all three versions:
+  cat WWOO_ORIGINAL/data/minecraft/worldgen/biome/forest.json | python3 -c "import sys,json; d=json.load(sys.stdin); print('feature stages:', len(d.get('features',[])), 'total features:', sum(len(s) for s in d.get('features',[])))"
+  cat wwoo_26.2_alpha/data/minecraft/worldgen/biome/forest.json | python3 -c "import sys,json; d=json.load(sys.stdin); print('feature stages:', len(d.get('features',[])), 'total features:', sum(len(s) for s in d.get('features',[])))"
+  cat 26.1.2/data/minecraft/worldgen/biome/forest.json | python3 -c "import sys,json; d=json.load(sys.stdin); print('feature stages:', len(d.get('features',[])), 'total features:', sum(len(s) for s in d.get('features',[])))"
+
+Print comparison table:
+  - Does 26.2 alpha use vanilla biome as base + inject wythers features?
+  - Or does it have its own complete biome definitions?
+  - Are vanilla ore/structure features preserved?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 5 — CHECK WHAT FILES WERE DELETED vs KEPT ===
+
+Find files in WWOO_ORIGINAL that are missing from 26.2 alpha:
+  python3 -c "
+  import os
+  orig = set()
+  alpha = set()
+  for root,dirs,files in os.walk('WWOO_ORIGINAL/data'):
+      for f in files:
+          if f.endswith('.json'):
+              orig.add(os.path.relpath(os.path.join(root,f), 'WWOO_ORIGINAL/data'))
+  for root,dirs,files in os.walk('wwoo_26.2_alpha/data'):
+      for f in files:
+          if f.endswith('.json'):
+              alpha.add(os.path.relpath(os.path.join(root,f), 'wwoo_26.2_alpha/data'))
+  deleted = orig - alpha
+  added = alpha - orig
+  print(f'Deleted in 26.2 alpha: {len(deleted)}')
+  for f in sorted(deleted)[:30]: print(f'  {f}')
+  print(f'New in 26.2 alpha: {len(added)}')
+  for f in sorted(added)[:30]: print(f'  {f}')
+  "
+
+Print:
+  - How many files were deleted (and which categories)
+  - How many new files were added (new feature types?)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 6 — RUN THE SCHEMA SCANNER ON 26.2 ALPHA ===
+
+Run:
+  python3 wwoo_schema_scan_v2.py --root wwoo_26.2_alpha --out alpha_scan
+
+This tells us if the 26.2 alpha still has any issues that would
+break 26.1.2 (since 26.2 schema may differ slightly from 26.1.2).
+
+Read alpha_scan.md and print:
+  - Total issues found
+  - Which categories have issues (if any)
+  - Any keys present in 26.2 alpha that don't exist in 26.1.2 schema
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 7 — IDENTIFY WHAT WE CAN COPY ===
+
+Based on Steps 1-6, answer these questions:
+
+1. Can we directly copy wwoo_26.2_alpha/data/ into our port?
+   → Check: does 26.2 use any feature types or keys that 26.1.2 doesn't have?
+   → Run: grep -r "type" wwoo_26.2_alpha/data/wythers --include="*.json" |
+           grep -v "minecraft:" | sort -u | head -30
+
+2. Which files from 26.2 alpha are SAFE to copy directly to our 26.1.2 port?
+   → These are files where 26.2 and 26.1.2 schemas are identical
+
+3. Which files need adaptation (26.2 uses a feature not in 26.1.2)?
+   → List them with the specific incompatibility
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== STEP 8 — WRITE ANALYSIS REPORT ===
+
+Create ALPHA_ANALYSIS_REPORT.md with:
+  - Summary of how Cristelknight handled each breaking change
+  - List of files safe to copy directly to 26.1.2 port
+  - List of files needing adaptation + what adaptation is needed
+  - Recommendation: should we base our 26.1.2 port on the 26.2 alpha?
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== RULES ===
+
+1. DO NOT modify any files — this is analysis only
+2. DO NOT modify ./26.1.2/ or ./WWOO_ORIGINAL/ or ./wwoo_26.2_alpha/
+3. If a file exists in 26.2 alpha but not in ./26.1.2/, note it as
+   "26.2 only — needs verification before using in 26.1.2 port"
+4. Focus on UNDERSTANDING the pattern, not fixing individual files

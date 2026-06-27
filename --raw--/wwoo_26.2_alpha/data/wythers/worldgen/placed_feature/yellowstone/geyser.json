@@ -1,0 +1,85 @@
+{
+  "feature": {
+    "type": "minecraft:sequence",
+    "config": {
+      "features": [
+        "wythers:yellowstone/geyser/cone",
+        "wythers:yellowstone/geyser/core",
+        "wythers:yellowstone/geyser/pool",
+        "wythers:yellowstone/geyser/roughen"
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": -51
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": "dripstone_caves"
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 63
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              6,
+              0,
+              0
+            ],
+            "blocks": "calcite"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              -6,
+              0,
+              0
+            ],
+            "blocks": "calcite"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              6
+            ],
+            "blocks": "calcite"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              -6
+            ],
+            "blocks": "calcite"
+          }
+        ]
+      }
+    }
+  ]
+}

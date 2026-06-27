@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:sequence",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:template",
+          "config": {
+            "templates": [
+              {
+                "data": {
+                  "id": "wythers:feature/thermal_ice_pool"
+                },
+                "weight": 5000
+              }
+            ]
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

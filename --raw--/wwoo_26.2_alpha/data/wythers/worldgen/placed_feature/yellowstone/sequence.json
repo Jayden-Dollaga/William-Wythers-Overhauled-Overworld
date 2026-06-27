@@ -1,0 +1,20 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:yellowstone/planer",
+        "wythers:yellowstone/base",
+        "wythers:yellowstone/surface",
+        "wythers:yellowstone/pool",
+        "wythers:yellowstone/pool_depth",
+		"wythers:yellowstone/surface_colours",
+		"wythers:yellowstone/surface_colours",
+		"wythers:yellowstone/depth_colours",
+		"wythers:yellowstone/depth_colours",
+		"wythers:yellowstone/steam"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

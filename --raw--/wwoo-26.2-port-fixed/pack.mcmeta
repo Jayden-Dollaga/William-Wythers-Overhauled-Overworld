@@ -1,0 +1,25 @@
+{
+    "pack": {
+        "min_format": [
+            107,
+            1
+        ],
+        "max_format": [
+            107,
+            1
+        ],
+        "description": [
+            {
+                "text": "Created by "
+            },
+            {
+                "text": "William Wythers"
+            },
+            "\n",
+            {
+                "text": "Your Adventure Starts Here"
+            }
+        ],
+        "pack_format": 107
+    }
+}

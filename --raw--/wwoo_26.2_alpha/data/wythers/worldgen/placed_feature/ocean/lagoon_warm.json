@@ -1,0 +1,26 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ocean/coral_base_warm",
+        "wythers:ocean/lagoon_sand_warm",
+        "wythers:ocean/coral_depth_warm"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 49
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:solid"
+      }
+    }
+  ]
+}

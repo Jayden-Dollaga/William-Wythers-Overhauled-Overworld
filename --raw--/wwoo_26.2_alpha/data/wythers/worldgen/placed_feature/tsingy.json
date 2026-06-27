@@ -1,0 +1,142 @@
+{
+  "feature": {
+    "type": "minecraft:vegetation_patch",
+    "config": {
+      "surface": "floor",
+      "depth": 3,
+      "vertical_range": 8,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0.5,
+      "vegetation_chance": 1,
+      "xz_radius": 7,
+      "replaceable": [
+        "minecraft:dirt",
+        "minecraft:grass_block"
+      ],
+      "ground_state": {
+        "type": "minecraft:dual_noise_provider",
+        "noise": {
+          "firstOctave": -4,
+          "amplitudes": [
+            2,
+            3
+          ]
+        },
+        "scale": 1,
+        "seed": 0,
+        "variety": 1,
+        "slow_noise": {
+          "firstOctave": -5,
+          "amplitudes": [
+            2,
+            3
+          ]
+        },
+        "slow_scale": 1,
+        "states": [
+          {
+            "Name": "minecraft:tuff"
+          },
+          {
+            "Name": "minecraft:tuff"
+          },
+          {
+            "Name": "minecraft:grass_block"
+          },
+          {
+            "Name": "minecraft:grass_block"
+          },
+          {
+            "Name": "minecraft:grass_block"
+          },
+          {
+            "Name": "minecraft:tuff"
+          },
+          {
+            "Name": "minecraft:tuff"
+          }
+        ]
+      },
+      "vegetation_feature": {
+        "feature": {
+          "config": {
+            "state_provider": {
+              "type": "minecraft:rule_based_state_provider",
+              "fallback": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:tuff"
+                }
+              },
+              "rules": []
+            },
+            "radius": {
+              "type": "minecraft:uniform",
+              "min_inclusive": 3,
+              "max_inclusive": 5
+            },
+            "half_height": 2,
+            "target": {
+              "type": "minecraft:all_of",
+              "predicates": [
+                {
+                  "type": "minecraft:matching_blocks",
+                  "blocks": [
+                    "minecraft:short_grass",
+                    "air"
+                  ]
+                },
+                {
+                  "type": "minecraft:matching_blocks",
+                  "offset": [
+                    0,
+                    -1,
+                    0
+                  ],
+                  "blocks": "tuff"
+                }
+              ]
+            }
+          },
+          "type": "minecraft:disk"
+        },
+        "placement": [
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE"
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "absolute": 0
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 58
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      }
+    }
+  ]
+}

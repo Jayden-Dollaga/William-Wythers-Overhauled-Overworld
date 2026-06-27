@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:sequence",
+  "config": {
+    "features": [
+      "wythers:tree/complex_dark_oak/1"
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+=== WWOO PORT TASK: Round 2 — Finish Incomplete Fixes (v2.6.7) ===
+
+PROJECT: William-Wythers-Overhauled-Overworld-Datapack (fresh copy v2.6.7)
+SOURCE OF TRUTH: ./26.1.2/ (read-only vanilla reference)
+SOURCE OF ERROR: Log_Error.txt (game crash log) + errors2.txt (Spyglass)
+TARGET: Minecraft Java 26.1.2
+
+REMAINING ISSUES (467 files failing in-game):
+  384x No key "type" in configured_feature files
+  117x minecraft:random_patch still present
+    8x minecraft:flower still present
+   18x Missing baby_asset_id / baby_assets
+    4x Cannot find tag/block "minecraft:stone"
+    3x Unknown key "predicate"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 1 — Add missing "type" field to configured_feature files (384 errors)
+
+CONTEXT: The previous Cat C conversion rewrote random_patch files as simple_block
+but some are missing the top-level "type" field entirely.
+
+STEP 1 — Find all affected files:
+  grep -rl '"to_place"' data/wythers/worldgen/configured_feature --include="*.json" | xargs grep -L '"type"'
+
+STEP 2 — For each file found, add "type": "minecraft:simple_block" as the
+first key in the root object.
+
+BEFORE (broken):
+{
+  "config": {
+    "to_place": { ... }
+  }
+}
+
+AFTER (fixed):
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": { ... }
+  }
+}
+
+VERIFY: grep -rl '"to_place"' data/ --include="*.json" | xargs grep -L '"type"'
+→ Should return 0 files
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 2 — Convert remaining minecraft:random_patch files (117 errors)
+
+CONTEXT: 117 configured_feature files still use random_patch. The previous
+run missed these. Convert them using the same pattern as before.
+
+MANDATORY: Read these vanilla reference files FIRST before touching anything:
+  ./26.1.2/data/minecraft/worldgen/configured_feature/grass.json
+  ./26.1.2/data/minecraft/worldgen/placed_feature/patch_grass_normal.json
+
+FIND affected files:
+  grep -rl '"type": "minecraft:random_patch"' data/ --include="*.json"
+
+FOR EACH FILE — apply this conversion:
+
+Step 1 — Check the inner feature type inside config.feature.feature
+  If inner type is "minecraft:simple_block" → auto-convert (see below)
+  If inner type is random_selector, block_column, tree, or a string ref → mark
+  ⚠️ UNCERTAIN and skip. Do NOT touch it.
+
+Step 2 — Extract to_place from config.feature.feature.config.to_place
+
+Step 3 — Rewrite configured_feature file as:
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": <extracted to_place value>
+  }
+}
+
+Step 4 — Find matching placed_feature file (same filename, placed_feature dir)
+  If exists → update its placement array
+  If not → create it at same relative path under placed_feature/
+
+Step 5 — Placed_feature format (copy tries/xspread/yspread from old config):
+{
+  "feature": "wythers:<path/to/configured_feature>",
+  "placement": [
+    { "type": "minecraft:in_square" },
+    { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG" },
+    { "type": "minecraft:biome" },
+    { "type": "minecraft:count", "count": <tries> },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:trapezoid",
+        "max": <xspread>, "min": -<xspread>, "plateau": 0
+      },
+      "y_spread": {
+        "type": "minecraft:trapezoid",
+        "max": <yspread>, "min": -<yspread>, "plateau": 0
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "tag": "minecraft:air"
+      }
+    }
+  ]
+}
+
+VERIFY: grep -r '"type": "minecraft:random_patch"' data/ --include="*.json"
+→ Should return 0 results (or only ⚠️ UNCERTAIN files)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 3 — Remove minecraft:flower references (8 errors)
+
+FIND:
+  grep -rl '"type": "minecraft:flower"' data/ --include="*.json"
+
+FOR EACH FILE: Change "type": "minecraft:flower" → "type": "minecraft:random_patch"
+
+NOTE: minecraft:flower does not exist in 26.1.2. minecraft:random_patch is
+also removed. So after this revert, these files will still need Fix 2 applied.
+Apply Fix 2 to them immediately after this step.
+
+VERIFY: grep -r '"type": "minecraft:flower"' data/ --include="*.json"
+→ Should return 0 results
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 4 — Add missing baby asset keys (18 errors)
+
+FIND chicken_variant files missing baby_asset_id:
+  grep -rl '"asset_id"' data/minecraft/chicken_variant --include="*.json" | xargs grep -L '"baby_asset_id"'
+
+FIND cow_variant and pig_variant files missing baby_asset_id:
+  grep -rl '"asset_id"' data/minecraft/cow_variant --include="*.json" | xargs grep -L '"baby_asset_id"'
+  grep -rl '"asset_id"' data/minecraft/pig_variant --include="*.json" | xargs grep -L '"baby_asset_id"'
+
+FIND wolf_variant files missing baby_assets:
+  grep -rl '"assets"' data/minecraft/wolf_variant --include="*.json" | xargs grep -L '"baby_assets"'
+
+MANDATORY: Before adding any values, open the corresponding vanilla file in
+./26.1.2/data/minecraft/<variant_type>/ to get the exact correct structure.
+Copy the baby_asset_id or baby_assets value from there and adapt the path.
+
+FOR chicken/cow/pig variants — add after "asset_id":
+  "baby_asset_id": "<same path as asset_id but with _baby appended>"
+
+FOR wolf variants — add after "assets":
+  "baby_assets": {
+    "angry_texture": "<angry path>_baby",
+    "tame_texture": "<tame path>_baby",
+    "wild_texture": "<wild path>_baby"
+  }
+
+VERIFY:
+  grep -r '"baby_asset_id"' data/minecraft/chicken_variant --include="*.json" | wc -l → 3
+  grep -r '"baby_asset_id"' data/minecraft/cow_variant --include="*.json" | wc -l → 3
+  grep -r '"baby_asset_id"' data/minecraft/pig_variant --include="*.json" | wc -l → 3
+  grep -r '"baby_assets"' data/minecraft/wolf_variant --include="*.json" | wc -l → 9
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 5 — Fix minecraft:stone block tag (4 errors)
+
+AFFECTED FILES:
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_1.json
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_2.json
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_rare_1.json
+  data/wythers/worldgen/placed_feature/terrain/local/tsingy_ore_rare_2.json
+
+FIX: In each file find any tag_match predicate referencing "minecraft:stone"
+and change to "minecraft:base_stone_overworld"
+
+BEFORE:
+{ "predicate_type": "minecraft:tag_match", "tag": "minecraft:stone" }
+
+AFTER:
+{ "predicate_type": "minecraft:tag_match", "tag": "minecraft:base_stone_overworld" }
+
+VERIFY: grep -r '"tag": "minecraft:stone"' data/ --include="*.json"
+→ Should return 0 results
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIX 6 — Remove unknown key "predicate" (3 errors)
+
+FIND:
+  grep -rn '"predicate"' data/wythers/worldgen/placed_feature --include="*.json"
+
+CHECK each result against ./26.1.2/ schema. If the placement modifier type
+does NOT use "predicate" as a key in vanilla 26.1.2 → remove it.
+If it DOES use it (e.g. block_predicate_filter) → leave it alone.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTION ORDER:
+1. Fix 1 (missing type) — fastest win, pure addition
+2. Fix 4 (baby assets) — small, safe
+3. Fix 5 (stone tag) — 4 files, safe
+4. Fix 6 (predicate) — 3 files, check first
+5. Fix 3 (flower revert) — then immediately apply Fix 2 to those files
+6. Fix 2 (remaining random_patch) — biggest, save for last
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMMIT FORMAT: fix(<short_dir>): <filename> — <fix number + description>
+
+FINAL VERIFICATION:
+[ ] grep -r '"type": "minecraft:random_patch"' data/ --include="*.json" → 0
+[ ] grep -r '"type": "minecraft:flower"' data/ --include="*.json" → 0
+[ ] grep -rl '"to_place"' data/ --include="*.json" | xargs grep -L '"type"' → 0
+[ ] grep -r '"tag": "minecraft:stone"' data/ --include="*.json" → 0
+[ ] Load datapack in-game — no "Data pack validation failed" screen
+
+SKIP ENTIRELY:
+All "Cannot find worldgen/biome" mod compat errors — Cat F, do not touch.

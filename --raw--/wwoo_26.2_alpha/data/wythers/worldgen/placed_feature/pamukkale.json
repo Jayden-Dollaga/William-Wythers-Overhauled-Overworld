@@ -1,0 +1,156 @@
+{
+  "feature": {
+    "type": "minecraft:disk",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:rule_based_state_provider",
+        "fallback": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:diorite"
+          }
+        },
+        "rules": [
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:grass_block"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:calcite"
+                },
+                {
+                  "Name": "minecraft:calcite"
+                },
+                {
+                  "Name": "minecraft:diorite"
+                },
+                {
+                  "Name": "minecraft:grass_block"
+                },
+                {
+                  "Name": "minecraft:grass_block"
+                },
+                {
+                  "Name": "minecraft:grass_block"
+                }
+              ]
+            }
+          },
+          {
+            "if_true": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:dirt"
+            },
+            "then": {
+              "type": "minecraft:noise_provider",
+              "noise": {
+                "firstOctave": -5,
+                "amplitudes": [
+                  2,
+                  3
+                ]
+              },
+              "scale": 1,
+              "seed": -817103696,
+              "states": [
+                {
+                  "Name": "minecraft:calcite"
+                },
+                {
+                  "Name": "minecraft:calcite"
+                },
+                {
+                  "Name": "minecraft:diorite"
+                },
+                {
+                  "Name": "minecraft:diorite"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                },
+                {
+                  "Name": "minecraft:dirt"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "radius": {
+        "type": "minecraft:uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 7
+      },
+      "half_height": 4,
+      "target": {
+        "type": "minecraft:any_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:grass_block",
+              "minecraft:dirt",
+              "minecraft:stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 100
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "above_bottom": 1
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:sulfur"
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 70
+        },
+        "max_inclusive": {
+          "absolute": 85
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_biomes",
+        "biomes": [
+          "flower_forest"
+        ]
+      }
+    }
+  ]
+}

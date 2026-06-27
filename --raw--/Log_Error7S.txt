@@ -1,0 +1,213 @@
+---
+
+**error: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/configured_feature] (severity 8 – Critical)**
+
+- `minecraft:worldgen/configured_feature` registry (line unknown, col unknown) – values: [wythers:decor/patch_floating_lanterns, wythers:other/giant_tubeworm_1, wythers:other/giant_tubeworm_2, wythers:other/giant_tubeworm_3, wythers:other/giant_tubeworm_4, wythers:other/stone_forest_rock, minecraft:patch_berry_bush, minecraft:patch_bush, minecraft:patch_cactus, minecraft:patch_firefly_bush, minecraft:patch_large_fern, minecraft:patch_sugar_cane, minecraft:patch_sunflower, minecraft:patch_tall_grass, minecraft:patch_waterlily, wythers:terrain/local/iceland, wythers:terrain/local/island, wythers:terrain/local/mushroom_island, wythers:terrain/local/mushroom_island_2, wythers:vegetation/floating_vegetation_plants, wythers:vegetation/fungus/colossal_mushroom_24, wythers:vegetation/fungus/colossal_mushroom_26, wythers:vegetation/fungus/colossal_mushroom_28, wythers:vegetation/fungus/colossal_mushroom_30, wythers:vegetation/fungus/colossal_mushroom_32, wythers:vegetation/fungus/patch_morel, wythers:vegetation/giant_groundsel_121, wythers:vegetation/giant_groundsel_122, wythers:vegetation/giant_groundsel_123, wythers:vegetation/giant_groundsel_124, wythers:vegetation/giant_groundsel_131, wythers:vegetation/giant_groundsel_132, wythers:vegetation/giant_groundsel_133, wythers:vegetation/giant_groundsel_134, wythers:vegetation/giant_groundsel_135, wythers:vegetation/giant_groundsel_136, wythers:vegetation/giant_groundsel_137, wythers:vegetation/giant_groundsel_138, wythers:vegetation/giant_groundsel_221, wythers:vegetation/giant_groundsel_222, wythers:vegetation/giant_groundsel_223, wythers:vegetation/giant_groundsel_224, wythers:vegetation/giant_groundsel_231, wythers:vegetation/giant_groundsel_232, wythers:vegetation/giant_groundsel_233, wythers:vegetation/giant_groundsel_234, wythers:vegetation/giant_groundsel_235, wythers:vegetation/giant_groundsel_236, wythers:vegetation/giant_groundsel_237, wythers:vegetation/giant_groundsel_238, wythers:vegetation/giant_groundsel_331, wythers:vegetation/giant_groundsel_332, wythers:vegetation/giant_groundsel_333, wythers:vegetation/giant_groundsel_334, wythers:vegetation/giant_groundsel_335, wythers:vegetation/giant_groundsel_336, wythers:vegetation/giant_groundsel_337, wythers:vegetation/giant_groundsel_338, wythers:vegetation/melon_patch, wythers:vegetation/other/agave_flowering, wythers:vegetation/other/agave_flowering_large, wythers:vegetation/other/agave_spiking, wythers:vegetation/other/agave_spiking_large, wythers:vegetation/patch/cold_island_grass, wythers:vegetation/patch/floating_leaves, wythers:vegetation/patch/floating_leaves_with_pink_petals, wythers:vegetation/patch/gravel_grass_short, wythers:vegetation/patch/morning_glory, wythers:vegetation/patch/oasis_pool, wythers:vegetation/patch/reeds, wythers:vegetation/patch/sand_grass_short, wythers:vegetation/patch/sand_grass_tall, wythers:vegetation/patch/sand_reeds, wythers:vegetation/patch/succulents, wythers:vegetation/patch/water_grass, wythers:vegetation/patch/water_grass_with_azure_bluets, wythers:vegetation/patch/water_grass_with_blue_orchids, wythers:vegetation/patch/water_grass_with_lily, wythers:vegetation/patch/waterlily_blue, wythers:vegetation/patch/waterlily_magenta, wythers:vegetation/patch/waterlily_pink, wythers:vegetation/patch_wheat_farmed, wythers:vegetation/saguaro_1, wythers:vegetation/saguaro_2, wythers:vegetation/saguaro_3, wythers:vegetation/saguaro_4, wythers:vegetation/saguaro_5, wythers:vegetation/saguaro_6, wythers:vegetation/saguaro_7, wythers:vegetation/saguaro_8, wythers:vegetation/thin_jungle_bamboo_patch, wythers:vegetation/tree/ancient_swamp_oak, wythers:vegetation/tree/banyan, wythers:vegetation/tree/bayou_cypress, wythers:vegetation/tree/bayou_cypress_1, wythers:vegetation/tree/bayou_cypress_2, wythers:vegetation/tree/bayou_cypress_3, wythers:vegetation/tree/bayou_cypress_4, wythers:vegetation/tree/cloud_forest_1, wythers:vegetation/tree/cloud_forest_2, wythers:vegetation/tree/cloud_forest_3, wythers:vegetation/tree/cloud_forest_4, wythers:vegetation/tree/complex_dark_oak_1, wythers:vegetation/tree/complex_dark_oak_2, wythers:vegetation/tree/complex_oak_1, wythers:vegetation/tree/complex_oak_2, wythers:vegetation/tree/dark_banyan, wythers:vegetation/tree/dead_spruce/1, wythers:vegetation/tree/dead_spruce/2, wythers:vegetation/tree/dead_spruce/3, wythers:vegetation/tree/dead_spruce/4, wythers:vegetation/tree/dead_spruce/5, wythers:vegetation/tree/desert_fan_palm, wythers:vegetation/tree/desert_fan_palm_tall, wythers:vegetation/tree/forest_birch, wythers:vegetation/tree/giant_magnolia, wythers:vegetation/tree/glow_banyan, wythers:vegetation/tree/live_oak, wythers:vegetation/tree/live_oak_bright, wythers:vegetation/tree/live_oak_dark, wythers:vegetation/tree/live_oak_dark_swamp, wythers:vegetation/tree/moss_tree, wythers:vegetation/tree/old_dark_oak, wythers:vegetation/tree/old_oak, wythers:vegetation/tree/old_swamp_oak, wythers:vegetation/tree/riverside_jungle_tree, wythers:vegetation/tree/wierwood, wythers:vegetation/tree/witch_tree, minecraft:wildflowers_birch_forest]
+
+**Affected files:**
+- `minecraft:worldgen/configured_feature` registry (the entire registry)
+
+---
+
+**error: Unbound values in registry ResourceKey[minecraft:root / minecraft:worldgen/placed_feature] (severity 8 – Critical)**
+
+- `minecraft:worldgen/placed_feature` registry (line unknown, col unknown) – values: [wythers:decor/badlands, wythers:decor/cold_ocean, wythers:decor/dense_steam, wythers:decor/desert, wythers:decor/sparse_steam, wythers:farm/harvest_fields_hay, wythers:farm/harvest_fields_hay_2, wythers:farm/paddy_cane, wythers:farm/paddy_crops, wythers:farm/paddy_leaf, wythers:palm/coastal_palm_east, wythers:palm/coastal_palm_north, wythers:palm/coastal_palm_south, wythers:palm/coastal_palm_west, wythers:road/andesite, wythers:road/sunflower_plains, wythers:terrain/extended/beach_cliffs, wythers:terrain/extended/scree_spread, wythers:terrain/local/red_sand_spread, wythers:terrain/local/savanna_packed_mud, wythers:terrain/local/snow_spread, wythers:terrain/local/swamp_gas, wythers:terrain/local/volcanic_basalt_cliffs, wythers:vegetation/extended/patch/flower_dry_mediterranean, wythers:vegetation/extended/patch/flower_humid_mediterranean, wythers:vegetation/extended/patch/sunflower, wythers:vegetation/extended/patch/tropical_water_plants, wythers:vegetation/extended/trees/jungle_volcanic, wythers:vegetation/local/other/coral_blobs, wythers:vegetation/local/patch/berries_badlands, wythers:vegetation/local/patch/fern_montane_forest, wythers:vegetation/local/patch/flower_bluebells, wythers:vegetation/local/patch/flower_cloud_forest, wythers:vegetation/local/patch/flower_mediterranean_lilacs, wythers:vegetation/local/patch/flower_peony, wythers:vegetation/local/patch/flower_sunny, wythers:vegetation/local/patch/flower_taiga, wythers:vegetation/local/patch/flower_tropical_roses, wythers:vegetation/local/patch/grass_and_ferns_range, wythers:vegetation/local/patch/grass_iceland, wythers:vegetation/local/patch/grass_jungle, wythers:vegetation/local/patch/grass_mushroom_fields, wythers:vegetation/local/patch/grass_snowy_taiga, wythers:vegetation/local/patch/hanging_roots, wythers:vegetation/local/patch/mushrooms, wythers:vegetation/local/patch/pale_pumpkin, wythers:vegetation/local/patch/pineapples, wythers:vegetation/local/patch/red_coral, wythers:vegetation/local/patch/sandy_marsh_dripleaf, wythers:vegetation/local/patch/savanna_water_plants, wythers:vegetation/local/patch/seagrass_wrecks, wythers:vegetation/local/patch/tall_grass_sudd_marsh, wythers:vegetation/local/patch/temperate_rainforest_undergrowth, wythers:vegetation/local/patch/temperate_rainforest_vines, wythers:vegetation/local/patch/windswept_forest_flowers, wythers:vegetation/local/patch/yellowstone_grass, wythers:vegetation/local/trees/bayou, wythers:vegetation/local/trees/bayou_pine_forest, wythers:vegetation/local/trees/mesa_shrubs]
+
+**Affected files:**
+- `minecraft:worldgen/placed_feature` registry
+
+---
+
+**error: Unknown registry key in ResourceKey[minecraft:root / minecraft:worldgen/feature]: minecraft:random_patch (severity 8 – Critical)**
+
+- `data/wythers/worldgen/configured_feature/decor/patch_floating_lanterns.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/other/giant_tubeworm_1.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/other/giant_tubeworm_2.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/other/giant_tubeworm_3.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/other/giant_tubeworm_4.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/floating_vegetation_plants.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/fungus/patch_morel.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/melon_patch.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/patch_wheat_farmed.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/thin_jungle_bamboo_patch.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_1.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_2.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_3.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/bayou_cypress_4.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/1.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/2.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/3.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/4.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/dead_spruce/5.json` (line unknown, col unknown)
+- `data/wythers/worldgen/configured_feature/vegetation/tree/forest_birch.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/decor/badlands.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/decor/cold_ocean.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/decor/dense_steam.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/decor/desert.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/decor/sparse_steam.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/farm/harvest_fields_hay.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/farm/harvest_fields_hay_2.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/farm/paddy_cane.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/farm/paddy_crops.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/farm/paddy_leaf.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/palm/coastal_palm_east.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/palm/coastal_palm_north.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/palm/coastal_palm_south.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/palm/coastal_palm_west.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/road/andesite.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/road/sunflower_plains.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/extended/beach_cliffs.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/extended/scree_spread.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/local/red_sand_spread.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/local/savanna_packed_mud.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/local/snow_spread.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/local/swamp_gas.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/local/volcanic_basalt_cliffs.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/extended/patch/flower_dry_mediterranean.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/extended/patch/flower_humid_mediterranean.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/extended/patch/sunflower.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/extended/patch/tropical_water_plants.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/extended/trees/jungle_volcanic.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/other/coral_blobs.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/berries_badlands.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/fern_montane_forest.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_bluebells.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_mediterranean_lilacs.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_peony.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_sunny.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_taiga.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/flower_tropical_roses.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/grass_and_ferns_range.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/grass_iceland.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/grass_jungle.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/grass_mushroom_fields.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/grass_snowy_taiga.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/hanging_roots.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/mushrooms.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/pale_pumpkin.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/pineapples.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/red_coral.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/sandy_marsh_dripleaf.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/savanna_water_plants.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/seagrass_wrecks.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/tall_grass_sudd_marsh.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/temperate_rainforest_undergrowth.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/yellowstone_grass.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/mesa_shrubs.json` (line unknown, col unknown) (plus others with same cause but multiple random_patch occurrences – see next group for combined messages)
+
+**Affected files (unique):**  
+List is too long to repeat each unique path here – essentially all configured_feature and placed_feature files that reference `minecraft:random_patch` as a feature type. The error indicates that `minecraft:random_patch` is not a registered feature type (likely missing or renamed in this Minecraft version).
+
+---
+
+**error: Unknown registry key: minecraft:random_patch; Unknown registry key: minecraft:random_patch (multiple times) and/or List must have contents (severity 8 – Critical)**
+
+This group combines many errors where the same unknown key appears multiple times in one file, often with `List must have contents`. The affected elements include:
+
+- `wythers:other/giant_tubeworm_1`, `_2`, `_3`, `_4` (multiple random_patch)
+- `wythers:terrain/local/giant_mushrooms`
+- `wythers:vegetation/fungus/colossal_mushroom_24`, `_26`, `_28`, `_30`, `_32`
+- `wythers:vegetation/giant_groundsel_131` through `_138`, `_231` through `_238`, `_331` through `_338`
+- `wythers:vegetation/patch/morning_glory`
+- `wythers:vegetation/patch/oasis_pool`
+- `wythers:vegetation/saguaro_1` through `_8`
+- `wythers:vegetation/tree/bent_palm_east`, `_north`, `_south`, `_west`
+- `wythers:vegetation/tree/coastal_palm_east`, `_north`, `_south`, `_west`
+- `wythers:vegetation/tree/riverside_jungle_tree`
+- `wythers:vegetation/local/patch/flower_cloud_forest`
+- `wythers:vegetation/local/patch/temperate_rainforest_vines`
+- `wythers:vegetation/local/patch/windswept_forest_flowers`
+- `wythers:vegetation/local/trees/mesa_shrubs` and `mesa_shrubs_2`
+- `wythers:terrain/local/iceland`, `island`, `mushroom_island`, `mushroom_island_2` (with "List must have contents")
+- `wythers:vegetation/other/agave*` series (with "List must have contents")
+- `wythers:vegetation/patch/cold_island_grass`, `floating_leaves`, `floating_leaves_with_pink_petals`, `gravel_grass_short`, `reeds`, `sand_grass_short`, `sand_grass_tall`, `sand_reeds`, `succulents`, `water_grass`, `water_grass_with_azure_bluets`, `water_grass_with_blue_orchids`, `water_grass_with_lily`, `waterlily_blue`, `waterlily_magenta`, `waterlily_pink`
+- `wythers:vegetation/tree/ancient_swamp_oak`, `banyan`, `cloud_forest_1`–`4`, `complex_dark_oak_1`–`2`, `complex_oak_1`–`2`, `dark_banyan`, `desert_fan_palm`, `desert_fan_palm_tall`, `giant_magnolia`, `glow_banyan`, `live_oak*`, `moss_tree`, `old_dark_oak`, `old_oak`, `old_swamp_oak`, `wierwood`, `witch_tree`
+
+**Affected files (unique):**  
+Every file listed in the previous bullet points (too many to enumerate fully, but all are under `data/wythers/worldgen/configured_feature/` or `.../placed_feature/` with the above base names).
+
+---
+
+**error: Unknown registry key in ...: minecraft:forest_rock (severity 8 – Critical)**
+
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json` (line unknown, col unknown)
+
+**Affected files:**
+- `data/wythers/worldgen/configured_feature/other/stone_forest_rock.json`
+
+---
+
+**error: No key y_spread in MapLike[...] (severity 8 – Critical)**
+
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json` (line unknown, col unknown)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/vegetation/local/patch/oasis_vegetation_moss.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou.json`
+- `data/wythers/worldgen/placed_feature/vegetation/local/trees/bayou_pine_forest.json`
+- `data/wythers/worldgen/placed_feature/vegetation/patch/grass_sudd_marsh.json`
+
+---
+
+**error: Value provider too low: -16 [-20-20] (severity 8 – Critical)**
+
+- `data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json` (line unknown, col unknown)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/terrain/dripstone_spikes_5.json`
+- `data/wythers/worldgen/placed_feature/terrain/tuff_spikes_5.json`
+
+---
+
+**error: No key blocks in MapLike[...] (severity 8 – Critical)**
+
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json` (line unknown, col unknown)
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json` (line unknown, col unknown)
+
+**Affected files:**
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds.json`
+- `data/wythers/worldgen/placed_feature/terrain/feature/solid_clouds_dense.json`
+
+---
+
+**error: Unknown registry key ... in ... (various other single occurrences – aggregated) (severity 8 – Critical)**
+
+- `wythers:terrain/local/deep_lukewarm_island` (unknown registry key + List must have contents)
+- `wythers:terrain/local/iceland`, `island`, `mushroom_island`, `mushroom_island_2` (already covered above)
+- `wythers:vegetation/other/agave`, `agave_dead`, `agave_flowering`, `agave_flowering_2`, `agave_flowering_dead`, `agave_flowering_large`, `agave_spiking`, `agave_spiking_large` (unknown + List must have contents)
+- `wythers:vegetation/patch/floating_leaves_with_wild_flowers` (unknown + List must have contents)
+- `wythers:vegetation/local/patch/flower_forest`, `flower_plains` (unknown random_patch)
+- `wythers:vegetation/local/patch/mycelial_grass` (unknown random_patch)
+- `wythers:vegetation/local/patch/pale_flower` (unknown random_patch)
+- `wythers:vegetation/tree/desert_fan_palm_2` (unknown random_patch + List must have contents)
+- `wythers:vegetation/tree/saguaro_0x`, `saguaro_1x`, `saguaro_2x`, `saguaro_large_1`–`4`, `saguaro_x`, `saguaro_y`, `straight_cocoa_palm` (unknown random_patch + List must have contents)
+- `wythers:terrain/feature/mushroom_island_plateau`, `tepui_crystals`, `tepui_plants` (unknown random_patch)
+- `wythers:terrain/local/fungal_basalt_cliffs`, `powder_snow`, `red_sand_scree` (unknown random_patch)
+- `wythers:vegetation/local/other/fungal_blood_woods`, `fungal_moss_sprouts`, `fungal_twisted_reef_vegetation`, `fungal_weeping_growths` (unknown random_patch)
+- `wythers:vegetation/local/patch/crimson_roots`, `floating_vegetation`, `flower_bluebells_2` (unknown random_patch)
+
+**Affected files (unique):**  
+Each of the above elements corresponds to a JSON file under `data/wythers/worldgen/configured_feature/` or `.../placed_feature/` with the given path.
+
+---
+
+## Summary
+
+**Total error entries (individual line items):** 193 (approximate, based on counted element failures – the exact number exceeds 150 distinct file references)
+
+**Breakdown:**
+- 🔴 Critical (severity 8): 193
+- 🟡 Warning (severity 4): 0
+
+All errors are critical because they prevent the datapack from loading properly, causing registry freeze failures and world generation issues. The root causes include:
+- Use of unknown feature type `minecraft:random_patch` (likely from an older Minecraft version or missing mod)
+- Use of unknown feature type `minecraft:forest_rock`
+- Missing required field `y_spread` in `random_offset` placement modifiers
+- Out-of-range value provider values
+- Missing `blocks` field in a custom structure configuration
+- Unbound registry entries due to the above parse failures

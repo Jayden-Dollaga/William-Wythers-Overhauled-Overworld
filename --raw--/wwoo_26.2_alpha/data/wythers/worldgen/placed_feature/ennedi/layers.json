@@ -1,0 +1,57 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:ennedi/granite_70",
+        "wythers:ennedi/granite_75",
+        "wythers:ennedi/dripstone_75",
+        "wythers:ennedi/granite_80",
+        "wythers:ennedi/granite_85",
+        "wythers:ennedi/dripstone_85",
+        "wythers:ennedi/granite_90",
+        "wythers:ennedi/granite_95",
+        "wythers:ennedi/dripstone_95"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "above_bottom": 0
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              1,
+              0
+            ],
+            "blocks": "minecraft:sulfur"
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:smooth_sandstone"
+          }
+        ]
+      }
+    },
+	{
+      "type": "minecraft:biome"
+    }
+  ]
+}

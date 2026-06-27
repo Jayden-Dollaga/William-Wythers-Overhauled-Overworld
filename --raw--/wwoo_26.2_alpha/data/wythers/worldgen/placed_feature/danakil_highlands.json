@@ -1,0 +1,13 @@
+{
+  "feature": {
+    "config": {
+      "features": [
+        "wythers:danakil_hills_ground",
+        "wythers:volcanic_sinks",
+        "wythers:volcanic_pools"
+      ]
+    },
+    "type": "minecraft:sequence"
+  },
+  "placement": []
+}

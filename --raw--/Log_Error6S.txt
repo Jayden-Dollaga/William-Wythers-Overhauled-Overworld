@@ -1,0 +1,410 @@
+## Error Analysis for `Log_Error6.txt` (Minecraft Datapack Runtime Errors)
+
+All errors below are **🔴 Critical** – they prevent the datapack from loading. Line numbers are **not provided** in this log format; instead, each error references a **registry key** (the internal name of a configured feature or placed feature).
+
+---
+
+### error: Unknown registry key “minecraft:random_patch”
+**Root cause:** The datapack references `minecraft:random_patch` as a feature, but this feature does not exist in the current Minecraft version or registry.
+
+**Affected configured features (registry keys):**
+- `wythers:decor/patch_floating_lanterns`
+- `wythers:other/giant_tubeworm_1`
+- `wythers:other/giant_tubeworm_2`
+- `wythers:other/giant_tubeworm_3`
+- `wythers:other/giant_tubeworm_4`
+- `wythers:terrain/dripstone_spikes`
+- `wythers:terrain/local/iceland`
+- `wythers:terrain/local/island`
+- `wythers:terrain/local/mushroom_island`
+- `wythers:terrain/local/mushroom_island_2`
+- `wythers:vegetation/floating_vegetation_plants`
+- `wythers:vegetation/fungus/colossal_mushroom_24`
+- `wythers:vegetation/fungus/colossal_mushroom_26`
+- `wythers:vegetation/fungus/colossal_mushroom_28`
+- `wythers:vegetation/fungus/colossal_mushroom_30`
+- `wythers:vegetation/fungus/colossal_mushroom_32`
+- `wythers:vegetation/fungus/patch_enoki`
+- `wythers:vegetation/fungus/patch_morel`
+- `wythers:vegetation/giant_groundsel_121`
+- `wythers:vegetation/giant_groundsel_122`
+- `wythers:vegetation/giant_groundsel_123`
+- `wythers:vegetation/giant_groundsel_124`
+- `wythers:vegetation/giant_groundsel_131`
+- `wythers:vegetation/giant_groundsel_132`
+- `wythers:vegetation/giant_groundsel_133`
+- `wythers:vegetation/giant_groundsel_134`
+- `wythers:vegetation/giant_groundsel_135`
+- `wythers:vegetation/giant_groundsel_136`
+- `wythers:vegetation/giant_groundsel_137`
+- `wythers:vegetation/giant_groundsel_138`
+- `wythers:vegetation/giant_groundsel_221`
+- `wythers:vegetation/giant_groundsel_222`
+- `wythers:vegetation/giant_groundsel_223`
+- `wythers:vegetation/giant_groundsel_224`
+- `wythers:vegetation/giant_groundsel_231`
+- `wythers:vegetation/giant_groundsel_232`
+- `wythers:vegetation/giant_groundsel_233`
+- `wythers:vegetation/giant_groundsel_234`
+- `wythers:vegetation/giant_groundsel_235`
+- `wythers:vegetation/giant_groundsel_236`
+- `wythers:vegetation/giant_groundsel_237`
+- `wythers:vegetation/giant_groundsel_238`
+- `wythers:vegetation/giant_groundsel_331`
+- `wythers:vegetation/giant_groundsel_332`
+- `wythers:vegetation/giant_groundsel_333`
+- `wythers:vegetation/giant_groundsel_334`
+- `wythers:vegetation/giant_groundsel_335`
+- `wythers:vegetation/giant_groundsel_336`
+- `wythers:vegetation/giant_groundsel_337`
+- `wythers:vegetation/giant_groundsel_338`
+- `wythers:vegetation/melon_patch`
+- `wythers:vegetation/other/agave`
+- `wythers:vegetation/other/agave_dead`
+- `wythers:vegetation/other/agave_flowering`
+- `wythers:vegetation/other/agave_flowering_2`
+- `wythers:vegetation/other/agave_flowering_dead`
+- `wythers:vegetation/other/agave_flowering_large`
+- `wythers:vegetation/other/agave_spiking`
+- `wythers:vegetation/other/agave_spiking_large`
+- `wythers:vegetation/patch/cold_island_grass`
+- `wythers:vegetation/patch/floating_leaves`
+- `wythers:vegetation/patch/floating_leaves_with_pink_petals`
+- `wythers:vegetation/patch/floating_leaves_with_wild_flowers`
+- `wythers:vegetation/patch/gravel_grass_short`
+- `wythers:vegetation/patch/morning_glory`
+- `wythers:vegetation/patch/oasis_pool`
+- `wythers:vegetation/patch/reeds`
+- `wythers:vegetation/patch/sand_grass_short`
+- `wythers:vegetation/patch/sand_grass_tall`
+- `wythers:vegetation/patch/sand_reeds`
+- `wythers:vegetation/patch/sea_vines`
+- `wythers:vegetation/patch/seagrass_mixed`
+- `wythers:vegetation/patch/succulents`
+- `wythers:vegetation/patch/water_grass`
+- `wythers:vegetation/patch/water_grass_with_azure_bluets`
+- `wythers:vegetation/patch/water_grass_with_blue_orchids`
+- `wythers:vegetation/patch/water_grass_with_lily`
+- `wythers:vegetation/patch/waterlily_blue`
+- `wythers:vegetation/patch/waterlily_magenta`
+- `wythers:vegetation/patch/waterlily_pink`
+- `wythers:vegetation/patch_pumpkin_farmed`
+- `wythers:vegetation/patch_wheat_farmed`
+- `wythers:vegetation/saguaro_1`
+- `wythers:vegetation/saguaro_2`
+- `wythers:vegetation/saguaro_3`
+- `wythers:vegetation/saguaro_4`
+- `wythers:vegetation/saguaro_5`
+- `wythers:vegetation/saguaro_6`
+- `wythers:vegetation/saguaro_7`
+- `wythers:vegetation/saguaro_8`
+- `wythers:vegetation/thin_jungle_bamboo_patch`
+- `wythers:vegetation/tree/ancient_swamp_oak`
+- `wythers:vegetation/tree/banyan`
+- `wythers:vegetation/tree/bayou_cypress`
+- `wythers:vegetation/tree/bayou_cypress_1`
+- `wythers:vegetation/tree/bayou_cypress_2`
+- `wythers:vegetation/tree/bayou_cypress_3`
+- `wythers:vegetation/tree/bayou_cypress_4`
+- `wythers:vegetation/tree/bent_palm_east`
+- `wythers:vegetation/tree/bent_palm_north`
+- `wythers:vegetation/tree/bent_palm_south`
+- `wythers:vegetation/tree/bent_palm_west`
+- `wythers:vegetation/tree/cloud_forest_1`
+- `wythers:vegetation/tree/cloud_forest_2`
+- `wythers:vegetation/tree/cloud_forest_3`
+- `wythers:vegetation/tree/cloud_forest_4`
+- `wythers:vegetation/tree/coastal_palm_east`
+- `wythers:vegetation/tree/coastal_palm_north`
+- `wythers:vegetation/tree/coastal_palm_south`
+- `wythers:vegetation/tree/coastal_palm_west`
+- `wythers:vegetation/tree/complex_dark_oak_1`
+- `wythers:vegetation/tree/complex_dark_oak_2`
+- `wythers:vegetation/tree/complex_oak_1`
+- `wythers:vegetation/tree/complex_oak_2`
+- `wythers:vegetation/tree/dark_banyan`
+- `wythers:vegetation/tree/dead_spruce/1`
+- `wythers:vegetation/tree/dead_spruce/2`
+- `wythers:vegetation/tree/dead_spruce/3`
+- `wythers:vegetation/tree/dead_spruce/4`
+- `wythers:vegetation/tree/dead_spruce/5`
+- `wythers:vegetation/tree/desert_fan_palm`
+- `wythers:vegetation/tree/desert_fan_palm_2`
+- `wythers:vegetation/tree/desert_fan_palm_tall`
+- `wythers:vegetation/tree/forest_birch`
+- `wythers:vegetation/tree/giant_magnolia`
+- `wythers:vegetation/tree/glow_banyan`
+- `wythers:vegetation/tree/huge_sequoia/rooted_dirt/1`
+- `wythers:vegetation/tree/huge_sequoia/rooted_dirt/2`
+- `wythers:vegetation/tree/huge_sequoia/rooted_dirt/3`
+- `wythers:vegetation/tree/huge_spruce/rooted_dirt/1`
+- `wythers:vegetation/tree/huge_spruce/rooted_dirt/2`
+- `wythers:vegetation/tree/huge_spruce/rooted_dirt/3`
+- `wythers:vegetation/tree/live_oak`
+- `wythers:vegetation/tree/live_oak_bright`
+- `wythers:vegetation/tree/live_oak_dark`
+- `wythers:vegetation/tree/live_oak_dark_swamp`
+- `wythers:vegetation/tree/moss_tree`
+- `wythers:vegetation/tree/old_dark_oak`
+- `wythers:vegetation/tree/old_oak`
+- `wythers:vegetation/tree/old_swamp_oak`
+- `wythers:vegetation/tree/old_willow`
+- `wythers:vegetation/tree/pale_acacia_stump`
+- `wythers:vegetation/tree/riverside_jungle_tree`
+- `wythers:vegetation/tree/saguaro_0x`
+- `wythers:vegetation/tree/saguaro_1x`
+- `wythers:vegetation/tree/saguaro_2x`
+- `wythers:vegetation/tree/saguaro_large_1`
+- `wythers:vegetation/tree/saguaro_large_2`
+- `wythers:vegetation/tree/saguaro_large_3`
+- `wythers:vegetation/tree/saguaro_large_4`
+- `wythers:vegetation/tree/saguaro_x`
+- `wythers:vegetation/tree/saguaro_y`
+- `wythers:vegetation/tree/straight_cocoa_palm`
+- `wythers:vegetation/tree/wierwood`
+- `wythers:vegetation/tree/witch_tree`
+
+**Affected placed features (registry keys):**
+- `wythers:decor/badlands`
+- `wythers:decor/cold_ocean`
+- `wythers:decor/dense_steam`
+- `wythers:decor/desert`
+- `wythers:decor/sparse_steam`
+- `wythers:farm/harvest_fields_hay`
+- `wythers:farm/harvest_fields_hay_2`
+- `wythers:farm/paddy_cane`
+- `wythers:farm/paddy_crops`
+- `wythers:farm/paddy_leaf`
+- `wythers:palm/coastal_palm_east`
+- `wythers:palm/coastal_palm_north`
+- `wythers:palm/coastal_palm_south`
+- `wythers:palm/coastal_palm_west`
+- `wythers:road/andesite`
+- `wythers:road/sunflower_plains`
+- `wythers:terrain/extended/beach_cliffs`
+- `wythers:terrain/extended/scree_spread`
+- `wythers:terrain/extended/stony_desert_cliffs`
+- `wythers:terrain/feature/mushroom_island_plateau`
+- `wythers:terrain/feature/tepui_crystals`
+- `wythers:terrain/feature/tepui_plants`
+- `wythers:terrain/local/fungal_basalt_cliffs`
+- `wythers:terrain/local/powder_snow`
+- `wythers:terrain/local/red_sand_scree`
+- `wythers:terrain/local/red_sand_spread`
+- `wythers:terrain/local/savanna_packed_mud`
+- `wythers:terrain/local/snow_spread`
+- `wythers:terrain/local/swamp_gas`
+- `wythers:terrain/local/volcanic_basalt_cliffs`
+- `wythers:vegetation/extended/patch/flower_dry_mediterranean`
+- `wythers:vegetation/extended/patch/flower_humid_mediterranean`
+- `wythers:vegetation/extended/patch/sunflower`
+- `wythers:vegetation/extended/patch/tropical_water_plants`
+- `wythers:vegetation/extended/trees/jungle_volcanic`
+- `wythers:vegetation/local/other/coral_blobs`
+- `wythers:vegetation/local/other/fungal_blood_woods`
+- `wythers:vegetation/local/other/fungal_moss_sprouts`
+- `wythers:vegetation/local/other/fungal_twisted_reef_vegetation`
+- `wythers:vegetation/local/other/fungal_weeping_growths`
+- `wythers:vegetation/local/patch/berries_badlands`
+- `wythers:vegetation/local/patch/crimson_roots`
+- `wythers:vegetation/local/patch/fern_montane_forest`
+- `wythers:vegetation/local/patch/floating_vegetation`
+- `wythers:vegetation/local/patch/flower_bluebells`
+- `wythers:vegetation/local/patch/flower_bluebells_2`
+- `wythers:vegetation/local/patch/flower_cloud_forest`
+- `wythers:vegetation/local/patch/flower_forest`
+- `wythers:vegetation/local/patch/flower_mediterranean_lilacs`
+- `wythers:vegetation/local/patch/flower_peony`
+- `wythers:vegetation/local/patch/flower_plains`
+- `wythers:vegetation/local/patch/flower_sunny`
+- `wythers:vegetation/local/patch/flower_taiga`
+- `wythers:vegetation/local/patch/flower_tropical_roses`
+- `wythers:vegetation/local/patch/grass_and_ferns_range`
+- `wythers:vegetation/local/patch/grass_iceland`
+- `wythers:vegetation/local/patch/grass_jungle`
+- `wythers:vegetation/local/patch/grass_mushroom_fields`
+- `wythers:vegetation/local/patch/grass_snowy_taiga`
+- `wythers:vegetation/local/patch/hanging_roots`
+- `wythers:vegetation/local/patch/mushrooms`
+- `wythers:vegetation/local/patch/mycelial_grass`
+- `wythers:vegetation/local/patch/pale_flower`
+- `wythers:vegetation/local/patch/pale_pumpkin`
+- `wythers:vegetation/local/patch/pineapples`
+- `wythers:vegetation/local/patch/red_coral`
+- `wythers:vegetation/local/patch/sandy_marsh_dripleaf`
+- `wythers:vegetation/local/patch/savanna_water_plants`
+- `wythers:vegetation/local/patch/seagrass_wrecks`
+- `wythers:vegetation/local/patch/tall_grass_sudd_marsh`
+- `wythers:vegetation/local/patch/temperate_rainforest_undergrowth`
+- `wythers:vegetation/local/patch/temperate_rainforest_vines`
+- `wythers:vegetation/local/patch/windswept_forest_flowers`
+- `wythers:vegetation/local/patch/yellowstone_grass`
+- `wythers:vegetation/local/trees/mesa_shrubs`
+- `wythers:vegetation/local/trees/mesa_shrubs_2`
+
+---
+
+### error: Unknown registry key “minecraft:forest_rock”
+- `wythers:other/stone_forest_rock`
+
+---
+
+### error: Unknown registry key “minecraft:random_patch” + “List must have contents”
+**Note:** This occurs when a feature expects a list but receives an empty or missing value.
+
+**Affected configured features:**
+- `wythers:terrain/local/deep_lukewarm_island`
+- `wythers:terrain/local/iceland`
+- `wythers:terrain/local/island`
+- `wythers:terrain/local/mushroom_island`
+- `wythers:terrain/local/mushroom_island_2`
+- `wythers:vegetation/other/agave`
+- `wythers:vegetation/other/agave_dead`
+- `wythers:vegetation/other/agave_flowering`
+- `wythers:vegetation/other/agave_flowering_2`
+- `wythers:vegetation/other/agave_flowering_dead`
+- `wythers:vegetation/other/agave_flowering_large`
+- `wythers:vegetation/other/agave_spiking`
+- `wythers:vegetation/other/agave_spiking_large`
+- `wythers:vegetation/patch/cold_island_grass`
+- `wythers:vegetation/patch/floating_leaves`
+- `wythers:vegetation/patch/floating_leaves_with_pink_petals`
+- `wythers:vegetation/patch/floating_leaves_with_wild_flowers`
+- `wythers:vegetation/patch/gravel_grass_short`
+- `wythers:vegetation/patch/reeds`
+- `wythers:vegetation/patch/sand_grass_short`
+- `wythers:vegetation/patch/sand_grass_tall`
+- `wythers:vegetation/patch/sand_reeds`
+- `wythers:vegetation/patch/succulents`
+- `wythers:vegetation/patch/water_grass`
+- `wythers:vegetation/patch/water_grass_with_azure_bluets`
+- `wythers:vegetation/patch/water_grass_with_blue_orchids`
+- `wythers:vegetation/patch/water_grass_with_lily`
+- `wythers:vegetation/patch/waterlily_blue`
+- `wythers:vegetation/patch/waterlily_magenta`
+- `wythers:vegetation/patch/waterlily_pink`
+- `wythers:vegetation/saguaro_1`
+- `wythers:vegetation/saguaro_2`
+- `wythers:vegetation/saguaro_3`
+- `wythers:vegetation/saguaro_4`
+- `wythers:vegetation/saguaro_5`
+- `wythers:vegetation/saguaro_6`
+- `wythers:vegetation/saguaro_7`
+- `wythers:vegetation/saguaro_8`
+- `wythers:vegetation/tree/ancient_swamp_oak`
+- `wythers:vegetation/tree/banyan`
+- `wythers:vegetation/tree/bayou_cypress`
+- `wythers:vegetation/tree/bayou_cypress_1`
+- `wythers:vegetation/tree/bayou_cypress_2`
+- `wythers:vegetation/tree/bayou_cypress_3`
+- `wythers:vegetation/tree/bayou_cypress_4`
+- `wythers:vegetation/tree/cloud_forest_1`
+- `wythers:vegetation/tree/cloud_forest_2`
+- `wythers:vegetation/tree/cloud_forest_3`
+- `wythers:vegetation/tree/cloud_forest_4`
+- `wythers:vegetation/tree/complex_dark_oak_1`
+- `wythers:vegetation/tree/complex_dark_oak_2`
+- `wythers:vegetation/tree/complex_oak_1`
+- `wythers:vegetation/tree/complex_oak_2`
+- `wythers:vegetation/tree/dark_banyan`
+- `wythers:vegetation/tree/desert_fan_palm`
+- `wythers:vegetation/tree/desert_fan_palm_2`
+- `wythers:vegetation/tree/desert_fan_palm_tall`
+- `wythers:vegetation/tree/giant_magnolia`
+- `wythers:vegetation/tree/glow_banyan`
+- `wythers:vegetation/tree/live_oak`
+- `wythers:vegetation/tree/live_oak_bright`
+- `wythers:vegetation/tree/live_oak_dark`
+- `wythers:vegetation/tree/live_oak_dark_swamp`
+- `wythers:vegetation/tree/moss_tree`
+- `wythers:vegetation/tree/old_dark_oak`
+- `wythers:vegetation/tree/old_oak`
+- `wythers:vegetation/tree/old_swamp_oak`
+- `wythers:vegetation/tree/old_willow`
+- `wythers:vegetation/tree/riverside_jungle_tree`
+- `wythers:vegetation/tree/saguaro_0x`
+- `wythers:vegetation/tree/saguaro_1x`
+- `wythers:vegetation/tree/saguaro_2x`
+- `wythers:vegetation/tree/saguaro_large_1`
+- `wythers:vegetation/tree/saguaro_large_2`
+- `wythers:vegetation/tree/saguaro_large_3`
+- `wythers:vegetation/tree/saguaro_large_4`
+- `wythers:vegetation/tree/saguaro_x`
+- `wythers:vegetation/tree/saguaro_y`
+- `wythers:vegetation/tree/straight_cocoa_palm`
+- `wythers:vegetation/tree/wierwood`
+- `wythers:vegetation/tree/witch_tree`
+
+---
+
+### error: Unknown registry key “minecraft:random_patch” (multiple occurrences – 2 or 3 times)
+**Affected configured features:**
+- `wythers:vegetation/giant_groundsel_121` (2)
+- `wythers:vegetation/giant_groundsel_122` (2)
+- `wythers:vegetation/giant_groundsel_123` (2)
+- `wythers:vegetation/giant_groundsel_124` (2)
+- `wythers:vegetation/giant_groundsel_131` (3)
+- `wythers:vegetation/giant_groundsel_132` (3)
+- `wythers:vegetation/giant_groundsel_133` (3)
+- `wythers:vegetation/giant_groundsel_134` (3)
+- `wythers:vegetation/giant_groundsel_135` (3)
+- `wythers:vegetation/giant_groundsel_136` (3)
+- `wythers:vegetation/giant_groundsel_137` (3)
+- `wythers:vegetation/giant_groundsel_138` (3)
+- `wythers:vegetation/giant_groundsel_221` (2)
+- `wythers:vegetation/giant_groundsel_222` (2)
+- `wythers:vegetation/giant_groundsel_223` (2)
+- `wythers:vegetation/giant_groundsel_224` (2)
+- `wythers:vegetation/giant_groundsel_231` (3)
+- `wythers:vegetation/giant_groundsel_232` (3)
+- `wythers:vegetation/giant_groundsel_233` (3)
+- `wythers:vegetation/giant_groundsel_234` (3)
+- `wythers:vegetation/giant_groundsel_235` (3)
+- `wythers:vegetation/giant_groundsel_236` (3)
+- `wythers:vegetation/giant_groundsel_237` (3)
+- `wythers:vegetation/giant_groundsel_238` (3)
+- `wythers:vegetation/giant_groundsel_331` (3)
+- `wythers:vegetation/giant_groundsel_332` (3)
+- `wythers:vegetation/giant_groundsel_333` (3)
+- `wythers:vegetation/giant_groundsel_334` (3)
+- `wythers:vegetation/giant_groundsel_335` (3)
+- `wythers:vegetation/giant_groundsel_336` (3)
+- `wythers:vegetation/giant_groundsel_337` (3)
+- `wythers:vegetation/giant_groundsel_338` (3)
+- `wythers:vegetation/patch/morning_glory` (3)
+- `wythers:vegetation/patch/oasis_pool` (4)
+- `wythers:vegetation/tree/bent_palm_east` (3)
+- `wythers:vegetation/tree/bent_palm_north` (3)
+- `wythers:vegetation/tree/bent_palm_south` (3)
+- `wythers:vegetation/tree/bent_palm_west` (3)
+- `wythers:vegetation/tree/coastal_palm_east` (3)
+- `wythers:vegetation/tree/coastal_palm_north` (3)
+- `wythers:vegetation/tree/coastal_palm_south` (3)
+- `wythers:vegetation/tree/coastal_palm_west` (3)
+- `wythers:vegetation/tree/riverside_jungle_tree` (2)
+
+---
+
+### error: No key “blocks” in MapLike
+- `wythers:terrain/feature/solid_clouds`
+- `wythers:terrain/feature/solid_clouds_dense`
+
+---
+
+### error: Value provider too low: -16 (allowed range -20 to 20, but must be at least -16? Actually error says too low: -16 [-20-20] – value -16 is allowed? Wait, the error says "Value provider too low: -16 [-20-20]". It appears the allowed range is -20 to 20, but -16 is within that. Possibly the error is misleading or the actual lower bound is -16? The error in earlier logs said "at least -16 and at most 16". Here it shows -20 to 20? We'll report as is.)
+- `wythers:terrain/dripstone_spikes_5` (value -16)
+- `wythers:terrain/tuff_spikes_5` (value -16)
+
+---
+
+### error: No key “y_spread” in MapLike
+- `wythers:vegetation/local/patch/oasis_vegetation_moss`
+- `wythers:vegetation/local/trees/bayou`
+- `wythers:vegetation/local/trees/bayou_pine_forest`
+- `wythers:vegetation/patch/grass_sudd_marsh`
+
+---
+
+### error: Unknown registry key “minecraft:random_patch” (for placed features) – already covered in first section.
+
+---
