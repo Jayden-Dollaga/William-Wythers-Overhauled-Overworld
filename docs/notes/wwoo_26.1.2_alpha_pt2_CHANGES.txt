@@ -1,0 +1,26 @@
+wwoo_26.1.2_alpha_pt2 - Change Summary
+Date: 2026-06-27
+
+Summary of fixes found in folder: wwoo_26.1.2_alpha_pt2
+
+Edits performed by fork author:
+- Removed an empty/outdated predicate under "type": "minecraft:matching_block_tag" in the following placed_feature terrain files:
+  - data/wythers/worldgen/placed_feature/terrain/local/sandy_jungle.json
+  - data/wythers/worldgen/placed_feature/terrain/local/sandy_forest.json
+  - data/wythers/worldgen/placed_feature/terrain/extended/coastal_forest_sand.json
+  (In our copy these files contained a "predicate": { "type": "" } entry; the fork versions have that entry removed.)
+
+- Deleted two testing configured_feature JSON files from:
+  - data/wythers/worldgen/configured_feature/
+  - Files deleted in our clean copy: zz_test_van_disk.json, zz_test_wwoo_disk.json
+  (The fork's configured_feature tree does not include these test files.)
+
+Notes:
+- The author reports there may be a few orphaned flower entries left, but no game-breaking issues were found.
+- These changes are small and safe to merge; they remove an invalid/empty predicate and two test resources.
+
+Suggested next steps:
+- Option A: Accept and merge these edits into WWOO_26.1.2_CLEAN (safe and low-risk).
+- Option B: Keep them separate and cherry-pick the three placed_feature edits and the two deletions into WWOO_26.1.2_CLEAN.
+
+If you'd like, I can apply these three predicate removals and delete the two test files from `WWOO_26.1.2_CLEAN` now and re-run the JSON validator.

@@ -1,15 +1,4 @@
-python3 reorganize_wwoo.py --dry-run   # preview
-python3 reorganize_wwoo.py             # apply
-
-
-
-
-
-git add . && git commit -m "Update"
-
-git add . && git commit -m "Upload All For Debugging"
-
-git push -u origin main --force
+python3 wwoo.py
 
 
 
@@ -17,6 +6,38 @@ git push -u origin main --force
 git remote add origin https://github.com/Jayden-Dollaga/William-Wythers-Overhauled-Overworld.git
 git branch -M main
 git push -u origin main
+
+
+git checkout -b legacy
+
+
+
+# ── main (organized/ folder) ──────────────────
+git checkout main
+
+cd organized
+git add .
+git commit -m "fix: whatever you fixed"
+git push origin main
+
+# ── legacy (root folder, full progress) ───────
+git checkout legacy
+
+cd ..
+git add .
+git commit -m "session notes or whatever"
+git push origin legacy
+
+# ── both at once ──────────────────────────────
+just double-click push.bat
+
+
+
+
+
+
+
+
 
 
 
