@@ -14,3 +14,4 @@ echo Last commit: %LAST_COMMIT%
 echo.
 git status --short --branch
 endlocal
+exit /b 0
