@@ -13,5 +13,8 @@ echo Branch: %CURRENT_BRANCH%
 echo Last commit: %LAST_COMMIT%
 echo.
 git status --short --branch
+echo.
+echo Press any key to close this window...
+pause >nul
 endlocal
 exit /b 0

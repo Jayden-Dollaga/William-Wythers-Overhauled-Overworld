@@ -36,5 +36,8 @@ git push origin "!TAG!"
 if errorlevel 1 exit /b 1
 
 echo Release tag pushed.
+echo.
+echo Press any key to close this window...
+pause >nul
 endlocal
 exit /b 0

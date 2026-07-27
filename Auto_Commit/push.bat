@@ -37,23 +37,19 @@ if not defined MSG (
 )
 
 echo.
-echo [1/4] Adding files...
 git add .
 if errorlevel 1 exit /b 1
 
-echo [2/4] Creating commit...
 git commit -m "!MSG!"
 if errorlevel 1 (
   echo Nothing new to commit or commit failed.
   exit /b 0
 )
-echo [3/4] Pushing to remote...
 git push origin HEAD
 if errorlevel 1 (
   echo Push failed. Check your remote URL and credentials.
   exit /b 1
 )
-echo [4/4] Done.
 echo Changes pushed successfully.
 
 for /f "delims=" %%R in ('git remote get-url origin 2^>nul') do set "REMOTE_URL=%%R"
@@ -67,5 +63,8 @@ if defined REMOTE_URL (
     start "" "!GITHUB_URL!"
   )
 )
+echo.
+echo Press any key to close this window...
+pause >nul
 endlocal
 exit /b 0

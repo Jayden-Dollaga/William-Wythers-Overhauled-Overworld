@@ -21,5 +21,8 @@ powershell -NoProfile -Command "& { $proj = [System.IO.Path]::GetFullPath(\"%PRO
 if errorlevel 1 exit /b 1
 
 echo Backup created: %ARCHIVE_PATH%
+echo.
+echo Press any key to close this window...
+pause >nul
 endlocal
 exit /b 0

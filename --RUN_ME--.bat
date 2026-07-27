@@ -1,7 +1,9 @@
 @echo off
 setlocal EnableExtensions EnableDelayedExpansion
-cd /d "%~dp0"
+set "ROOT=%~dp0"
 
+:menu
+cls
 echo.
 echo ================================
 echo   Git Helper Suite
@@ -14,24 +16,18 @@ echo 4. Release
 echo 5. Backup
 echo 6. Exit
 echo.
-set "CHOICE=%~1"
-if not defined CHOICE set /p "CHOICE=Select an option [1-6]: "
+set /p "CHOICE=Select an option [1-6]: "
 
 if /I "!CHOICE!"=="1" (
-    call "%~dp0Auto_Commit\status.bat" "" "--noninteractive"
-    goto :done
+    start "Git Status" cmd /c "cd /d ""!ROOT!"" && Auto_Commit\status.bat"
 ) else if /I "!CHOICE!"=="2" (
-    call "%~dp0Auto_Commit\commit.bat" "" "--noninteractive"
-    goto :done
+    start "Git Commit" cmd /c "cd /d ""!ROOT!"" && Auto_Commit\commit.bat"
 ) else if /I "!CHOICE!"=="3" (
-    call "%~dp0Auto_Commit\push.bat" "" "--noninteractive"
-    goto :done
+    start "Git Push" cmd /c "cd /d ""!ROOT!"" && Auto_Commit\push.bat"
 ) else if /I "!CHOICE!"=="4" (
-    call "%~dp0Auto_Commit\release.bat" "" "--noninteractive"
-    goto :done
+    start "Git Release" cmd /c "cd /d ""!ROOT!"" && Auto_Commit\release.bat"
 ) else if /I "!CHOICE!"=="5" (
-    call "%~dp0Auto_Commit\backup.bat" "" "--noninteractive"
-    goto :done
+    start "Git Backup" cmd /c "cd /d ""!ROOT!"" && Auto_Commit\backup.bat"
 ) else if /I "!CHOICE!"=="6" (
     echo Exiting.
     goto :done
@@ -39,5 +35,8 @@ if /I "!CHOICE!"=="1" (
     echo Invalid option.
 )
 
+goto :menu
+
 :done
+endlocal
 exit /b 0

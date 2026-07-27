@@ -37,17 +37,17 @@ if not defined MSG (
 )
 
 echo.
-echo [1/3] Adding files...
 git add .
 if errorlevel 1 exit /b 1
 
-echo [2/3] Creating commit...
 git commit -m "!MSG!"
 if errorlevel 1 (
   echo Nothing new to commit or commit failed.
   exit /b 0
 )
-echo [3/3] Done.
 echo Commit created successfully.
+echo.
+echo Press any key to close this window...
+pause >nul
 endlocal
 exit /b 0
